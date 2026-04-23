@@ -1,95 +1,46 @@
-# NYC Data Audit Checklist
+# NYC Data Audit — Completed
 
-**Date**: [Fill in]  
+**Date**: April 23, 2026  
 **City**: New York City, NY  
-**Auditor**: Peter Durand  
-
-Use this checklist to verify data availability for each metric. For each metric:
-- **Available?**: ✓ (yes), ✗ (no), ? (uncertain - needs investigation)
-- **Difficulty**: Low (download/API), Medium (some processing), High (complex/manual)
-- **Notes**: URL, access method, any issues
+**Status**: Audit complete. All V1 sources confirmed and downloaded.
 
 ---
 
-## Pillar 1: Social Support & Connection
+## V1 Scored Metrics — Status
 
-| Metric | Available? | Difficulty | Notes |
-|--------|------------|------------|-------|
-| Volunteering rate (% of pop) | ? | Medium | Check Census CEVS or NYC Dept of Youth & Community Development |
-| Social-connection nonprofit density | ✓ | Low | IRS EO BMF (filter NTEE A/B/P for NYC) |
-| Library usage per capita | ✓ | Low | IMLS Public Libraries Survey (NYC library system data) |
-| Residential stability (% in same home ≥2 years) | ✓ | Low | Census ACS API (borough-level) |
-| **Community sentiment** (optional) | ? | High | Twitter/X API (keywords: "NYC care", "New York community") |
-
----
-
-## Pillar 2: Institutions of Care
-
-| Metric | Available? | Difficulty | Notes |
-|--------|------------|------------|-------|
-| Human-service nonprofit density | ✓ | Low | IRS EO BMF (filter NTEE D/E/F for NYC) |
-| Community health center density | ✓ | Low | HRSA directory (search NYC zip codes) |
-| Senior services (count or density) | ✓ | Medium | NYC Dept for the Aging (public data portal) |
-| Child care/youth services (count) | ✓ | Medium | NYC Dept of Education (child care licensing) |
-| Faith-based participation (count/density) | ✓ | Low | IRS EO BMF (filter NTEE P for NYC) |
+| Metric | Source | Status | Notes |
+|--------|--------|--------|-------|
+| Residential stability (% same home 1+ yr) | Census ACS API (B07003) | **LIVE** | Borough-level via API; 88.47% city-wide |
+| Human-services nonprofit density (NTEE P) | IRS EO BMF Region 1 CSV | **LIVE** | City-name filter covers all 5 boroughs |
+| Health/mental health/food nonprofit density (NTEE E/F/K) | IRS EO BMF Region 1 CSV | **LIVE** | Same file, filtered by NTEE prefix |
+| Faith-based org density (NTEE X) | IRS EO BMF Region 1 CSV | **LIVE** | 7,770 orgs in NYC |
+| Library locations per 100k | IMLS PLS FY2023 outlet CSV | **LIVE** | 174 outlets; 2.09 per 100k |
+| Library visits per capita | IMLS PLS FY2023 AE CSV | **LIVE** | 2.79 visits/capita |
+| Health center density (FQHCs) | HRSA Service Delivery xlsx | **LIVE** | 411 FQHCs; 4.93 per 100k |
 
 ---
 
-## Pillar 3: Responsiveness
+## Deferred / Out of Scope for V1
 
-| Metric | Available? | Difficulty | Notes |
-|--------|------------|------------|-------|
-| 311 closure time (median) | ✓ | Low | NYC Open Data: 311 Service Requests dataset |
-| Crisis service access (mental health, DV) | ✓ | Medium | NYC Dept of Health (crisis services data) |
-| Service utilization rate | ? | Hard | May need administrative data or surveys |
-
----
-
-## Key NYC Data Sources to Check
-
-1. **NYC Open Data Portal**: https://opendata.cityofnewyork.us/
-   - 311 Service Requests
-   - Demographics
-   - Permits
-   - Health data
-
-2. **IRS EO BMF**: https://www.irs.gov/charities-non-profits/form-990-series-downloads
-   - Download latest CSV
-   - Filter for New York, NY
-
-3. **Census API**: https://api.census.gov/data.html
-   - Get free API key
-   - ACS 5-year data for NYC
-
-4. **IMLS Libraries**: https://www.imls.gov/research-tools/data-tools
-   - Public Libraries Survey
-
-5. **HRSA Health Centers**: https://findahealthcenter.hrsa.gov/
-   - Searchable by location
-
-6. **NYC Government Sites**:
-   - Dept for the Aging: https://www.nyc.gov/site/dfta/index.page
-   - Dept of Health: https://www.nyc.gov/site/doh/index.page
-   - Dept of Education: https://www.nyc.gov/site/education/index.page
+| Metric | Status | Notes |
+|--------|--------|-------|
+| Volunteering rate | Deferred | No reliable city-level national source |
+| 311 closure time | Deferred | Not available cross-city from national source |
+| Crisis service access | Deferred | Fragmented across agencies; not national |
+| Community sentiment | Deferred | Experimental; excluded from scored baseline |
+| Senior services count | Deferred | No clean national source identified |
+| Child care density | Deferred | State licensing data varies; not national |
 
 ---
 
-## Audit Instructions
+## Downloaded Data Files
 
-1. **Visit each data source** listed above
-2. **Search for the metric** (e.g., in NYC Open Data, search "311")
-3. **Check accessibility**: Can you download/export the data? Is it API-accessible?
-4. **Note any barriers**: Login required? Fee? Outdated data?
-5. **Estimate difficulty**: How much coding/cleaning needed?
-
-**Goal**: By end of audit, know which metrics are "ready to collect" vs. "need workarounds" vs. "skip for Phase 1"
-
-**Output**: Update this checklist and save as `docs/nyc_data_audit_[date].md`
-
----
-
-## Next Steps After Audit
-
-- **If most metrics are available**: Proceed to Week 2 (build collectors)
-- **If gaps found**: Note workarounds or Phase 2 extensions
-- **Share findings**: We'll use this to prioritize which collectors to build first
+| File | Location |
+|------|----------|
+| IRS EO BMF Region 1 (Northeast) | `Downloaded Data/IRS EO BMF/Region 1_Northeast_4.21.26.csv` |
+| IRS EO BMF Region 2 (Mid-Atlantic/Great Lakes) | `Downloaded Data/IRS EO BMF/Region 2_Mid-Atlantic and Great Lakes_4.21.26.csv` |
+| IRS EO BMF Region 3 (Gulf Coast/Pacific) | `Downloaded Data/IRS EO BMF/Region 3_Gulf Coast and Pacific Coast_4.21.26.csv` |
+| IMLS Outlet FY2023 | `Downloaded Data/Public Libraries Survey (PLS)/pls_fy23_outlet_pud23i.csv` |
+| IMLS Administrative Entity FY2023 | `Downloaded Data/Public Libraries Survey (PLS)/PLS_FY23_AE_pud23i.csv` |
+| HRSA Health Centers | `Downloaded Data/Health_Center_Service_Delivery_and_LookAlike_Sites.xlsx` |
+| Census API key | Stored in `.env` (not in source control) |

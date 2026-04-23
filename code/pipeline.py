@@ -13,6 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import CITIES
 from collectors import nonprofit_density, residential_stability, library_density, health_centers
 import etl
+import score as scorer
 
 
 def run_city(city_key: str):
@@ -47,6 +48,10 @@ def main():
 
     print("\n\nRunning ETL -> DuckDB...")
     etl.run()
+
+    print("\n\nScoring...")
+    scorer.run()
+
     print("\nDone.")
 
 

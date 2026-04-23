@@ -109,13 +109,20 @@ CITIES = {
 
 # ── NTEE codes ────────────────────────────────────────────────────────────────
 # Pillar 1 — Social Support & Connection
-NTEE_SOCIAL_SUPPORT = ["A", "B", "P"]   # Arts/culture, Education, Human Services
+# P = Human Services (mutual aid, community centers, social services)
+# NOTE: A (Arts/Culture) and B (Education) deliberately excluded — they
+# correlate with affluence, not care capacity, and would bias the index.
+NTEE_SOCIAL_SUPPORT = ["P"]
+
 # Pillar 2 — Institutions of Care
-NTEE_CARE_INSTITUTIONS = ["D", "E", "F", "K"]  # Health, Mental Health, Substance Abuse, Food
-# Faith-based (spans both pillars)
+# D = Animal-related (excluded), E = Health, F = Mental Health,
+# G/H = Disease-specific (excluded as too narrow), K = Food Agriculture & Nutrition
+NTEE_CARE_INSTITUTIONS = ["E", "F", "K"]  # Health, Mental Health, Food programs
+
+# Faith-based — spans both pillars (community support + direct services)
 NTEE_FAITH_BASED = ["X"]   # Religion-related
 
-# All care-relevant codes combined
+# All care-relevant codes combined (used for broad diagnostic counts)
 NTEE_ALL_CARE = list(set(NTEE_SOCIAL_SUPPORT + NTEE_CARE_INSTITUTIONS + NTEE_FAITH_BASED))
 
 # ── Census ACS variables ──────────────────────────────────────────────────────
