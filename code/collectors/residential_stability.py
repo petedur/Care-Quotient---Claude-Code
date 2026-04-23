@@ -42,7 +42,7 @@ def collect(city_key: str = "nyc") -> dict:
 
     rows = []
     for county_name, county_fips in city["county_fips"].items():
-        print(f"  Querying {county_name} (FIPS {state_fips}{county_fips})…")
+        print(f"  Querying {county_name} (FIPS {state_fips}{county_fips})...")
         try:
             data = _get([same_house_var, pop_var], state_fips, county_fips)
             # data[0] = headers, data[1] = values

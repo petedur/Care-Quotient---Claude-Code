@@ -62,7 +62,7 @@ def load_nonprofit_density(conn, city_key: str):
         return
 
     import pandas as pd
-    df = pd.read_csv(raw, dtype=str, low_memory=False)
+    df = pd.read_csv(raw, dtype=str, low_memory=False, encoding="latin-1")
 
     # Re-derive counts from raw file using same logic as collector
     from config import NTEE_CARE_INSTITUTIONS, NTEE_FAITH_BASED, NTEE_ALL_CARE, CITIES
@@ -124,10 +124,28 @@ def load_library_density(conn, city_key: str):
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
+def load_health_centers(conn, city_key: str):
+    raw = DATA_RAW / city_key / "health_centers.csv"
+    if not raw.exists():
+        print(f"  SKIP health_center_density for {city_key} (no raw file)")
+        return
+
+    import pandas as pd
+    from config import CITIES
+    df  = pd.read_csv(raw, dtype=str, low_memory=False)
+    pop = CITIES[city_key]["population"]
+
+    count   = len(df)
+    density = round(count / pop * 100_000, 2)
+    upsert(conn, city_key, "health_center_density", "density_per_100k", value=density, count=count)
+    print(f"  health_center_density loaded for {city_key}: {count} FQHCs")
+
+
 LOADERS = [
     load_nonprofit_density,
     load_residential_stability,
     load_library_density,
+    load_health_centers,
 ]
 
 
@@ -136,12 +154,12 @@ def run():
     print(f"DuckDB: {DB_PATH}\n")
 
     for city_key in CITIES:
-        print(f"── {CITIES[city_key]['name']} ──")
+        print(f"-- {CITIES[city_key]['name']} --")
         for loader in LOADERS:
             loader(conn, city_key)
 
     # Show summary
-    print("\n── Summary ──")
+    print("\n-- Summary --")
     result = conn.execute("""
         SELECT city, metric, sub_metric, value, count
         FROM metrics

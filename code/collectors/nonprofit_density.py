@@ -13,17 +13,20 @@ import pandas as pd
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from config import IRS_DATA_PATH, DATA_RAW, CITIES, NTEE_ALL_CARE, NTEE_CARE_INSTITUTIONS, NTEE_FAITH_BASED
+from config import IRS_DATA_PATH, DATA_RAW, CITIES, NTEE_ALL_CARE, NTEE_CARE_INSTITUTIONS, NTEE_FAITH_BASED, IRS_STATE_TO_REGION
 
 
 def find_irs_file(state: str) -> Path:
-    """Find the IRS EO BMF CSV for a given state abbreviation."""
+    """Find the IRS EO BMF CSV for a given state using the region mapping."""
+    region_prefix = IRS_STATE_TO_REGION.get(state.upper())
+    if not region_prefix:
+        raise ValueError(f"No IRS region mapping for state '{state}'")
     candidates = list(Path(IRS_DATA_PATH).glob("*.csv"))
     for f in candidates:
-        if state.lower() in f.name.lower():
+        if f.name.startswith(region_prefix):
             return f
     raise FileNotFoundError(
-        f"No IRS EO BMF CSV found for state '{state}' in {IRS_DATA_PATH}.\n"
+        f"No IRS file matching '{region_prefix}' in {IRS_DATA_PATH}.\n"
         f"Available files: {[f.name for f in candidates]}"
     )
 
@@ -31,7 +34,7 @@ def find_irs_file(state: str) -> Path:
 def load_irs_data(state: str) -> pd.DataFrame:
     path = find_irs_file(state)
     print(f"  Loading IRS data: {path.name}")
-    df = pd.read_csv(path, dtype=str, low_memory=False)
+    df = pd.read_csv(path, dtype=str, low_memory=False, encoding="latin-1")
     # Normalise column names — IRS files use uppercase
     df.columns = [c.strip().upper() for c in df.columns]
     return df
@@ -75,7 +78,7 @@ def collect(city_key: str = "nyc") -> dict:
         count = len(subset)
         density = round((count / pop) * 10_000, 2)
         results[label] = {"count": count, "density_per_10k": density}
-        print(f"  {label}: {count} orgs → {density} per 10,000")
+        print(f"  {label}: {count} orgs -> {density} per 10,000")
 
     # Save raw filtered data
     out_dir = DATA_RAW / city_key

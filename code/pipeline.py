@@ -11,7 +11,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import CITIES
-from collectors import nonprofit_density, residential_stability, library_density
+from collectors import nonprofit_density, residential_stability, library_density, health_centers
 import etl
 
 
@@ -24,6 +24,7 @@ def run_city(city_key: str):
         nonprofit_density.collect,
         residential_stability.collect,
         library_density.collect,
+        health_centers.collect,
     ]
 
     for collector in collectors:
@@ -44,7 +45,7 @@ def main():
             continue
         run_city(city_key)
 
-    print("\n\nRunning ETL → DuckDB…")
+    print("\n\nRunning ETL -> DuckDB...")
     etl.run()
     print("\nDone.")
 

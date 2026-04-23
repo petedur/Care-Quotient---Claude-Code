@@ -20,6 +20,19 @@ DATA_PROCESSED      = PROJECT_ROOT / "data" / "processed"
 DB_PATH             = PROJECT_ROOT / "data" / "care_capacity.duckdb"
 
 IRS_DATA_PATH       = DOWNLOADED_DATA / "IRS EO BMF"
+
+# IRS EO BMF files are split by region, not by state.
+# Maps state abbreviation → which regional CSV to use.
+IRS_STATE_TO_REGION = {
+    # Region 1 — Northeast
+    **{s: "Region 1_Northeast" for s in ["CT","ME","MA","NH","NJ","NY","RI","VT"]},
+    # Region 2 — Mid-Atlantic & Great Lakes
+    **{s: "Region 2_Mid-Atlantic and Great Lakes" for s in
+       ["DE","DC","IL","IN","IA","KY","MD","MI","MN","NE","NC","ND","OH","PA","SC","SD","VA","WV","WI"]},
+    # Region 3 — Gulf Coast & Pacific
+    **{s: "Region 3_Gulf Coast and Pacific Coast" for s in
+       ["AL","AK","AR","AZ","CA","CO","FL","GA","HI","ID","KS","LA","MS","MO","MT","NV","NM","OK","OR","TX","TN","UT","WA","WY"]},
+}
 IMLS_DATA_PATH      = DOWNLOADED_DATA / "Public Libraries Survey (PLS)"
 HRSA_DATA_PATH      = DOWNLOADED_DATA / "Health_Center_Service_Delivery_and_LookAlike_Sites.xlsx"
 
