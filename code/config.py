@@ -108,21 +108,30 @@ CITIES = {
 }
 
 # ── NTEE codes ────────────────────────────────────────────────────────────────
+# Values can be single-character (match first letter only) or multi-character
+# (matched as a prefix). E.g. "X3" matches X30, X31, etc.
+#
 # Pillar 1 — Social Support & Connection
-# P = Human Services (mutual aid, community centers, social services)
+# P = Human Services: community centers, mutual aid, social services.
 # NOTE: A (Arts/Culture) and B (Education) deliberately excluded — they
 # correlate with affluence, not care capacity, and would bias the index.
 NTEE_SOCIAL_SUPPORT = ["P"]
 
 # Pillar 2 — Institutions of Care
-# D = Animal-related (excluded), E = Health, F = Mental Health,
-# G/H = Disease-specific (excluded as too narrow), K = Food Agriculture & Nutrition
-NTEE_CARE_INSTITUTIONS = ["E", "F", "K"]  # Health, Mental Health, Food programs
+# E = Health (hospitals, clinics, health services)
+# F = Mental Health & Crisis Intervention
+# K = Food, Agriculture & Nutrition (food banks, food pantries)
+NTEE_CARE_INSTITUTIONS = ["E", "F", "K"]
 
-# Faith-based — spans both pillars (community support + direct services)
-NTEE_FAITH_BASED = ["X"]   # Religion-related
+# Faith-based human services only — NOT all religious organizations.
+# X3x = Faith-Based Human Services & Issues (NTEE X30 category).
+# Narrowed from all X codes to avoid counting purely devotional orgs
+# (churches, synagogues, mosques) as care infrastructure. This understates
+# faith-based care since many congregations doing real service work file
+# under P or E rather than X — documented limitation.
+NTEE_FAITH_BASED = ["X3"]
 
-# All care-relevant codes combined (used for broad diagnostic counts)
+# All care-relevant codes combined (used for broad diagnostic counts only)
 NTEE_ALL_CARE = list(set(NTEE_SOCIAL_SUPPORT + NTEE_CARE_INSTITUTIONS + NTEE_FAITH_BASED))
 
 # ── Census ACS variables ──────────────────────────────────────────────────────

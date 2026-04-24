@@ -62,19 +62,23 @@ def load_nonprofit_density(conn, city_key: str):
         return
 
     import pandas as pd
-    df = pd.read_csv(raw, dtype=str, low_memory=False, encoding="latin-1")
+    from config import (
+        NTEE_SOCIAL_SUPPORT, NTEE_CARE_INSTITUTIONS,
+        NTEE_FAITH_BASED, NTEE_ALL_CARE, CITIES,
+    )
+    from collectors.nonprofit_density import _ntee_mask
 
-    # Re-derive counts from raw file using same logic as collector
-    from config import NTEE_CARE_INSTITUTIONS, NTEE_FAITH_BASED, NTEE_ALL_CARE, CITIES
+    df  = pd.read_csv(raw, dtype=str, low_memory=False, encoding="latin-1")
     pop = CITIES[city_key]["population"]
 
     for label, codes in [
+        ("social_support",    NTEE_SOCIAL_SUPPORT),
         ("care_institutions", NTEE_CARE_INSTITUTIONS),
         ("faith_based",       NTEE_FAITH_BASED),
         ("all_care",          NTEE_ALL_CARE),
     ]:
-        subset = df[df["NTEE_CD"].str[0].isin([c.upper() for c in codes])]
-        count  = len(subset)
+        subset  = df[_ntee_mask(df["NTEE_CD"], codes)]
+        count   = len(subset)
         density = round(count / pop * 10_000, 2)
         upsert(conn, city_key, "nonprofit_density", label, value=density, count=count)
 

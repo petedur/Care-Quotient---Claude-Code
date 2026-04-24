@@ -30,17 +30,68 @@ OUTPUTS_DIR.mkdir(exist_ok=True)
 # Weights within a pillar sum to 1.0.
 # "higher is better" is assumed for all metrics here.
 
+# ── Scored metrics with literature-based weights ──────────────────────────────
+#
+# Pillar 1: Social Support & Connection (50% of overall score)
+#
+#   Residential stability — weight 0.60
+#   Strongest predictor of social capital in the literature. Putnam (2000)
+#   "Bowling Alone" identifies residential stability as one of the top
+#   structural predictors of civic engagement and social trust. Sampson,
+#   Raudenbush & Earls (1997) demonstrate that stability enables "collective
+#   efficacy" — the shared willingness of residents to intervene for each
+#   other. Evidence quality: HIGH.
+#
+#   Human services nonprofit density (NTEE P) — weight 0.40
+#   Salamon & Anheier (1998) establish nonprofit density as an indicator of
+#   civil society infrastructure. Boris & Steuerle (2006) link human-service
+#   nonprofits directly to care provision for vulnerable populations. Weaker
+#   than residential stability because density does not guarantee utilization
+#   or accessibility. Evidence quality: MODERATE.
+#
+# Pillar 2: Institutions of Care (50% of overall score)
+#
+#   FQHC density — weight 0.50
+#   Strongest evidence base of all scored metrics. Rosenbaum et al. (2011)
+#   show FQHCs significantly reduce ER utilization among low-income patients.
+#   Shi et al. (multiple studies) link FQHC access to reduced mortality from
+#   chronic disease and improved preventive care uptake. CBO analyses
+#   consistently find FQHCs save ~$2,371/user in avoided ER costs. Evidence
+#   derives from quasi-experimental designs. Evidence quality: VERY HIGH.
+#
+#   Health/mental health/food nonprofit density (NTEE E/F/K) — weight 0.30
+#   Kim & Jennings (2012) find nonprofit human service density correlates with
+#   lower poverty rates and better health outcomes at the county level.
+#   Pettijohn & Boris (2013) document the direct care role of health and food
+#   nonprofits for populations unable to access formal services. Evidence
+#   quality: MODERATE-HIGH.
+#
+#   Faith-based human services (NTEE X3x) — weight 0.20
+#   Cnaan et al. (2006) "The Other Philadelphia Story" documents meaningful
+#   social service provision through congregations, estimating $140k-$265k
+#   annual value per active congregation. Johnson, Tompkins & Webb (2002)
+#   find faith-based programs effective for food security and crisis response.
+#   Weight is intentionally lower than the others: evidence is compelling in
+#   specific contexts but harder to generalize, and our X30 filter understates
+#   actual faith-based care (many orgs file under P rather than X). Evidence
+#   quality: MODERATE.
+
 SCORED_METRICS = [
     # Pillar 1 — Social Support & Connection
-    ("residential_stability",  "pct_same_house",    "pillar1", 0.30),
-    ("nonprofit_density",      "care_institutions", "pillar1", 0.40),
-    ("library_density",        "density_per_100k",  "pillar1", 0.15),
-    ("library_density",        "visits_per_capita", "pillar1", 0.15),
+    ("residential_stability", "pct_same_house",   "pillar1", 0.60),
+    ("nonprofit_density",     "social_support",   "pillar1", 0.40),
 
     # Pillar 2 — Institutions of Care
-    ("health_center_density",  "density_per_100k",  "pillar2", 0.40),
-    ("nonprofit_density",      "faith_based",       "pillar2", 0.30),
-    ("nonprofit_density",      "care_institutions", "pillar2", 0.30),
+    ("health_center_density", "density_per_100k", "pillar2", 0.50),
+    ("nonprofit_density",     "care_institutions","pillar2", 0.30),
+    ("nonprofit_density",     "faith_based",      "pillar2", 0.20),
+]
+
+# Diagnostic metrics — collected and reported, but not included in scored pillars
+DIAGNOSTIC_METRICS = [
+    ("library_density",   "density_per_100k",  "Libraries per 100k residents"),
+    ("library_density",   "visits_per_capita", "Library visits per capita"),
+    ("nonprofit_density", "all_care",          "All care-related nonprofits per 10k (diagnostic)"),
 ]
 
 PILLAR_WEIGHTS = {
@@ -161,7 +212,18 @@ def run():
     print("\n-- Care Capacity Index --")
     print(summary.to_string())
 
-    # Also write full metric dict to JSON
+    # Print diagnostic metrics (not scored, reported separately)
+    print("\n-- Diagnostic Metrics (not scored) --")
+    raw_df = load_metrics(conn)
+    for metric, sub_metric, label in DIAGNOSTIC_METRICS:
+        diag = raw_df[(raw_df["metric"] == metric) & (raw_df["sub_metric"] == sub_metric)][["city", "value"]]
+        if not diag.empty:
+            diag = diag.set_index("city").sort_values("value", ascending=False)
+            print(f"\n  {label}:")
+            for city, row in diag.iterrows():
+                print(f"    {city:<15} {row['value']:.2f}")
+
+    # Write JSON output
     metric_dict = {}
     for city in results.index:
         metric_dict[city] = {
@@ -173,7 +235,7 @@ def run():
     json_path = OUTPUTS_DIR / "care_capacity_scores.json"
     with open(json_path, "w") as f:
         json.dump(metric_dict, f, indent=2)
-    print(f"  JSON saved to {json_path}")
+    print(f"\n  JSON saved to {json_path}")
 
     conn.close()
 

@@ -1,0 +1,27 @@
+{
+  "boston": {
+    "overall": 15.0,
+    "pillar1_social_support": 0.0,
+    "pillar2_institutions_of_care": 30.0
+  },
+  "chicago": {
+    "overall": 67.4,
+    "pillar1_social_support": 62.1,
+    "pillar2_institutions_of_care": 72.7
+  },
+  "houston": {
+    "overall": 48.7,
+    "pillar1_social_support": 64.3,
+    "pillar2_institutions_of_care": 33.1
+  },
+  "los_angeles": {
+    "overall": 51.3,
+    "pillar1_social_support": 61.8,
+    "pillar2_institutions_of_care": 40.8
+  },
+  "nyc": {
+    "overall": 47.7,
+    "pillar1_social_support": 57.1,
+    "pillar2_institutions_of_care": 38.2
+  }
+}
