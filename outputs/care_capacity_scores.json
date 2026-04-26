@@ -1,27 +1,152 @@
 {
   "boston": {
-    "overall": 15.0,
-    "pillar1_social_support": 0.0,
-    "pillar2_institutions_of_care": 30.0
+    "pillar1_social_support": 74.4,
+    "pillar2_institutions_of_care": 64.6,
+    "metrics": {
+      "Residential Stability": {
+        "score": 84.7,
+        "raw_value": 80.48,
+        "benchmark": 95.0,
+        "pillar": "Social Support & Connection"
+      },
+      "Human Services Nonprofits (per 10k)": {
+        "score": 64.2,
+        "raw_value": 6.42,
+        "benchmark": 10.0,
+        "pillar": "Social Support & Connection"
+      },
+      "FQHCs (per 100k)": {
+        "score": 64.1,
+        "raw_value": 9.62,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health/MH/Food Nonprofits (per 10k)": {
+        "score": 65.1,
+        "raw_value": 5.21,
+        "benchmark": 8.0,
+        "pillar": "Institutions of Care"
+      }
+    }
   },
   "chicago": {
-    "overall": 67.4,
-    "pillar1_social_support": 62.1,
-    "pillar2_institutions_of_care": 72.7
+    "pillar1_social_support": 73.7,
+    "pillar2_institutions_of_care": 42.4,
+    "metrics": {
+      "Residential Stability": {
+        "score": 91.5,
+        "raw_value": 86.92,
+        "benchmark": 95.0,
+        "pillar": "Social Support & Connection"
+      },
+      "Human Services Nonprofits (per 10k)": {
+        "score": 55.9,
+        "raw_value": 5.59,
+        "benchmark": 10.0,
+        "pillar": "Social Support & Connection"
+      },
+      "FQHCs (per 100k)": {
+        "score": 47.9,
+        "raw_value": 7.19,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health/MH/Food Nonprofits (per 10k)": {
+        "score": 36.9,
+        "raw_value": 2.95,
+        "benchmark": 8.0,
+        "pillar": "Institutions of Care"
+      }
+    }
   },
   "houston": {
-    "overall": 48.7,
-    "pillar1_social_support": 64.3,
-    "pillar2_institutions_of_care": 33.1
+    "pillar1_social_support": 82.4,
+    "pillar2_institutions_of_care": 35.7,
+    "metrics": {
+      "Residential Stability": {
+        "score": 88.6,
+        "raw_value": 84.14,
+        "benchmark": 95.0,
+        "pillar": "Social Support & Connection"
+      },
+      "Human Services Nonprofits (per 10k)": {
+        "score": 76.1,
+        "raw_value": 7.61,
+        "benchmark": 10.0,
+        "pillar": "Social Support & Connection"
+      },
+      "FQHCs (per 100k)": {
+        "score": 29.2,
+        "raw_value": 4.38,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health/MH/Food Nonprofits (per 10k)": {
+        "score": 42.2,
+        "raw_value": 3.38,
+        "benchmark": 8.0,
+        "pillar": "Institutions of Care"
+      }
+    }
   },
   "los_angeles": {
-    "overall": 51.3,
-    "pillar1_social_support": 61.8,
-    "pillar2_institutions_of_care": 40.8
+    "pillar1_social_support": 66.6,
+    "pillar2_institutions_of_care": 32.3,
+    "metrics": {
+      "Residential Stability": {
+        "score": 94.2,
+        "raw_value": 89.5,
+        "benchmark": 95.0,
+        "pillar": "Social Support & Connection"
+      },
+      "Human Services Nonprofits (per 10k)": {
+        "score": 38.9,
+        "raw_value": 3.89,
+        "benchmark": 10.0,
+        "pillar": "Social Support & Connection"
+      },
+      "FQHCs (per 100k)": {
+        "score": 43.1,
+        "raw_value": 6.46,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health/MH/Food Nonprofits (per 10k)": {
+        "score": 21.5,
+        "raw_value": 1.72,
+        "benchmark": 8.0,
+        "pillar": "Institutions of Care"
+      }
+    }
   },
   "nyc": {
-    "overall": 47.7,
-    "pillar1_social_support": 57.1,
-    "pillar2_institutions_of_care": 38.2
+    "pillar1_social_support": 67.0,
+    "pillar2_institutions_of_care": 29.0,
+    "metrics": {
+      "Residential Stability": {
+        "score": 93.1,
+        "raw_value": 88.47,
+        "benchmark": 95.0,
+        "pillar": "Social Support & Connection"
+      },
+      "Human Services Nonprofits (per 10k)": {
+        "score": 41.0,
+        "raw_value": 4.1,
+        "benchmark": 10.0,
+        "pillar": "Social Support & Connection"
+      },
+      "FQHCs (per 100k)": {
+        "score": 32.9,
+        "raw_value": 4.93,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health/MH/Food Nonprofits (per 10k)": {
+        "score": 25.2,
+        "raw_value": 2.02,
+        "benchmark": 8.0,
+        "pillar": "Institutions of Care"
+      }
+    }
   }
 }

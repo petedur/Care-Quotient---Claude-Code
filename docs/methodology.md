@@ -68,55 +68,65 @@ This metric receives the highest weight in Pillar 1 because the evidence is both
 **Definition**: Registered 501(c)(3) organizations with NTEE major groups E (Health), F (Mental Health and Crisis Intervention), or K (Food, Agriculture, and Nutrition) per 10,000 residents.  
 **Source**: IRS EO BMF, filtered by NTEE first characters E, F, or K.  
 **Unit**: orgs per 10,000 residents (higher = better).  
-**Weight within Pillar 2**: **30%**
+**Weight within Pillar 2**: **50%**
 
-**Rationale**: Kim & Jennings (2012) find that nonprofit human service density at the county level correlates with lower poverty rates and better health outcomes, with particularly strong effects for health and food organizations serving low-income populations. Pettijohn & Boris (2013) document the direct care role of these nonprofits for populations that cannot access formal healthcare or government food programs. The weight is moderate because, as with all IRS-based measures, registration does not guarantee activity or impact.
+**Rationale**: Kim & Jennings (2012) find that nonprofit human service density at the county level correlates with lower poverty rates and better health outcomes, with particularly strong effects for health and food organizations serving low-income populations. Pettijohn & Boris (2013) document the direct care role of these nonprofits for populations that cannot access formal healthcare or government food programs. The weight is equal to FQHCs within Pillar 2 (both 50%) because, as with all IRS-based measures, registration does not guarantee activity or impact — the organizational density signal is valuable but noisier than the FQHC evidence base, and treating the two metrics as equal counterbalances FQHC's stronger but narrower evidence.
 
-#### 3.5 Faith-Based Human Services Density
-**Definition**: Registered 501(c)(3) organizations with NTEE prefix X3 (Faith-Based Human Services and Issues) per 10,000 residents.  
+#### 3.5 Faith-Based Human Services — Diagnostic Only (Not Scored in V1)
+**Definition**: Registered 501(c)(3) organizations with NTEE prefix X3 per 10,000 residents.  
 **Source**: IRS EO BMF, filtered by NTEE prefix "X3".  
-**Unit**: orgs per 10,000 residents (higher = better).  
-**Weight within Pillar 2**: **20%**
+**Unit**: orgs per 10,000 residents (reported, not scored).
 
-**Rationale**: Faith-based organizations are a meaningful component of care infrastructure, particularly for food security, crisis response, and social connection. Cnaan et al. (2006) estimate that active service-providing congregations contribute $140,000–$265,000 in annual social services per congregation. Johnson, Tompkins & Webb (2002) find faith-based programs effective across multiple domains of care. Chaves & Tsitsos (2001) document that a meaningful portion of congregations provide direct social services beyond worship.
+**Why excluded from scoring**: Faith-based organizations are a meaningful component of care infrastructure, and the literature supports their importance (Cnaan et al. 2006; Johnson, Tompkins & Webb 2002; Chaves & Tsitsos 2001). However, IRS NTEE code X30 functions as a catch-all for religious organizations rather than specifically capturing human-service providers. Inspection of X30-coded organizations in V1 cities reveals that the category is dominated by congregations — Orthodox and Hasidic synagogues, churches, mosques — that registered under X30 as their primary identity, not organizations whose primary activity is delivering social services.
 
-The weight is intentionally the lowest of the three Pillar 2 metrics for two reasons:
+This is not a limitation that weighting can correct. Including X30 counts as a scored metric would essentially be scoring the density of congregations, not the density of faith-based care providers — a different and less relevant quantity.
 
-1. **Methodological limitation**: This metric almost certainly *understates* faith-based care. Many faith organizations that primarily deliver social services register under NTEE P (Human Services) or E/K rather than X, because those codes better describe their primary activity. Filtering to X30 captures only organizations that self-identify their primary purpose as faith-based human services. The true contribution of faith-based institutions is larger than this metric reflects.
+A second compounding limitation: many faith organizations that *do* primarily deliver social services register under NTEE P (Human Services) or E/K rather than X, because those codes better describe their program work. The true contribution of faith-based care infrastructure is both undercounted in X30 and distributed across other NTEE categories.
 
-2. **Evidence generalizability**: The evidence for faith-based programs is compelling in specific contexts (disaster relief, food provision, addiction recovery) but less consistent than the evidence for FQHCs or residential stability effects.
-
-This limitation is documented explicitly rather than hidden. Future versions will explore whether combining X3x with faith-affiliated organizations registered under other NTEE codes produces a more complete picture.
+This metric is retained as a diagnostic indicator and reported alongside scores. **V2 will explore whether combining X3x with faith-affiliated organizations registered under P/E/K produces a more complete and reliable measure.** The intent is to capture faith-based care — the exclusion is methodological, not conceptual.
 
 ---
 
 ## 4. Normalization Method
 
-Raw metric values are normalized to a 0–100 scale using min-max scaling across the configured city set:
+Raw metric values are scored against **absolute benchmarks** representing theoretical ideals — the level at which a city would be considered to fully meet that dimension of care need:
 
 ```
-normalized = (value - min_across_cities) / (max_across_cities - min_across_cities) * 100
+score = min(value / benchmark × 100, 100)
 ```
 
-The city with the highest value on a given metric receives 100; the lowest receives 0. All cities fall between these bounds.
+A city at or above the benchmark receives 100. A city at half the benchmark receives 50. Scores are capped at 100.
 
-**Implication**: Scores are relative to the current city set, not absolute. Adding or removing cities will shift scores. This is a known limitation of V1 and a primary motivation for the planned 100-city expansion.
+| Metric | Benchmark | Rationale |
+|--------|-----------|-----------|
+| Residential stability | 95% | Near-zero involuntary displacement; ~5% natural annual mobility |
+| Human services nonprofits (NTEE P) | 10 per 10,000 | 1 org per 1,000 residents; saturation across all sub-categories |
+| FQHC density | 15 per 100,000 | Eliminates HRSA shortage designation plus geographic redundancy |
+| Health/MH/Food nonprofits (NTEE E/F/K) | 8 per 10,000 | Coverage saturation; lower than NTEE P because orgs operate at larger scale |
 
-**Special case**: If all cities have the same value on a metric (no variation), every city receives 50.
+**Advantage over min-max scaling**: Scores are absolute — adding or removing cities does not change existing scores. A city's score reflects its performance against a standard, not against whoever else is in the comparison set.
+
+**Benchmark derivation**: Residential stability and FQHC benchmarks are grounded in empirical evidence (ACS data for high-stability neighborhoods; HRSA HPSA elimination criteria). Nonprofit density benchmarks are judgment thresholds without a policy-derived standard. Both types are documented explicitly in Section 3.
+
+**Full rationale for each benchmark**: See Section 3 metric entries.
 
 ---
 
-## 5. Pillar and Overall Score Calculation
+## 5. Pillar Structure and Presentation
 
-Pillar scores are weighted averages of normalized metric scores:
+The index presents **each metric as its own score** (0–100 against benchmark), grouped under two pillar headers for narrative context. Pillar groupings organize the story; they are not used to compress metrics into a single composite number.
 
-```
-Pillar 1 = (residential_stability_norm * 0.60) + (social_support_density_norm * 0.40)
-Pillar 2 = (fqhc_density_norm * 0.50) + (care_institution_density_norm * 0.30) + (faith_based_density_norm * 0.20)
-Overall  = (Pillar 1 * 0.50) + (Pillar 2 * 0.50)
-```
+**Pillar 1 — Social Support & Connection**
+- Residential Stability (benchmark: 95%)
+- Human Services Nonprofits per 10k (benchmark: 10)
 
-Pillars are weighted equally (50/50) in V1. Neither pillar has theoretical priority over the other: social networks and direct institutional care are both necessary conditions for care capacity, and the literature does not establish one as more predictive than the other at the city level.
+**Pillar 2 — Institutions of Care**
+- FQHCs per 100,000 (benchmark: 15)
+- Health/MH/Food Nonprofits per 10k (benchmark: 8)
+
+Pillar averages (simple mean of constituent metric scores) are computed and available as summary context, but the individual metric scores are the primary output. Forcing metrics into a single composite number would compress meaningful variation — a city could look average overall while being strong on institutional care and weak on residential stability, or vice versa. Showing metrics independently preserves that diagnostic signal.
+
+A single composite overall score is deferred to V2, where empirically derived weights (from regression against care outcome variables across 100 cities) will replace the judgment-based weights used here.
 
 ---
 
@@ -159,13 +169,13 @@ All four sources are national, free, and scriptable. No city-specific open data 
 
 ## 9. Known Limitations
 
-1. **Relative scoring**: Min-max normalization means scores are relative to the current 5-city set. Adding cities will change scores.
+1. **Benchmark judgment**: Nonprofit density benchmarks (NTEE P at 10/10k, NTEE E/F/K at 8/10k) are reasoned thresholds without a policy-derived standard. The FQHC and residential stability benchmarks are more firmly grounded. All benchmarks are documented explicitly and subject to revision in V2.
 
 2. **IRS data lag**: EO BMF data may lag registrations by 1–2 years. Inactive organizations may remain registered.
 
 3. **City-name matching**: IRS city-name filtering uses known borough/neighborhood variants for each configured city. Less common organizational addresses may be missed.
 
-4. **Faith-based undercount**: X3x-coded organizations underrepresent total faith-based care (see Section 3.5).
+4. **Faith-based measurement**: X30 codes capture congregations, not specifically human-service providers. Faith-based density is reported as a diagnostic metric rather than scored (see Section 3.5).
 
 5. **No Pillar 3**: Responsiveness is not scored in V1. This is the most significant conceptual gap.
 

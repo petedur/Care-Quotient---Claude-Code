@@ -103,7 +103,14 @@ CITIES = {
         "county_fips": {
             "Suffolk": "025",
         },
-        "irs_city_names": ["BOSTON"],
+        # Boston orgs and library branches are filed under neighborhood names,
+        # not "BOSTON". All confirmed present in both IRS EO BMF and IMLS data.
+        "irs_city_names": [
+            "BOSTON", "DORCHESTER", "ROXBURY", "JAMAICA PLAIN",
+            "BRIGHTON", "CHARLESTOWN", "HYDE PARK", "MATTAPAN",
+            "ROSLINDALE", "WEST ROXBURY", "EAST BOSTON",
+            "SOUTH BOSTON", "ALLSTON",
+        ],
     },
 }
 
