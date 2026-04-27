@@ -1,6 +1,6 @@
-city,Care Quotient,Social Support & Connection,Institutions of Care,Residential Stability,Human Services Nonprofits (per 10k),FQHCs (per 100k),Health/MH/Food Nonprofits (per 10k)
-boston,70.6,75.5,64.6,84.7,64.2,64.1,65.1
-houston,61.4,83.0,35.1,88.6,76.1,29.2,42.2
-chicago,60.9,75.5,43.0,91.5,55.9,47.9,36.9
-los_angeles,53.1,69.3,33.4,94.2,38.9,43.1,21.5
-nyc,51.6,69.7,29.4,93.1,41.0,32.9,25.2
+city,Care Quotient,Social Support & Connection,Institutions of Care,Residential Stability,Human Services Nonprofits (per 10k),Housing Affordability (% not cost-burdened),FQHCs (per 100k),Health/MH/Food Nonprofits (per 10k),SNAP Coverage Rate,Health Insurance Coverage Rate
+boston,71.6,77.8,64.6,84.7,64.2,95.6,64.1,65.1,100.0,100.0
+houston,61.7,85.0,35.1,88.6,76.1,100.0,29.2,42.2,98.9,82.9
+chicago,61.5,77.6,43.0,91.5,55.9,94.1,47.9,36.9,100.0,95.8
+los_angeles,54.3,72.5,33.4,94.2,38.9,97.5,43.1,21.5,98.5,95.8
+nyc,52.2,72.1,29.4,93.1,41.0,91.4,32.9,25.2,100.0,98.2

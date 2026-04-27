@@ -1,6 +1,6 @@
 # Care Quotient: Methodology
 
-**Version**: 1.0 (V1 Prototype)
+**Version**: 2.0 (V2)
 **Date**: April 2026  
 **Author**: Peter Durand
 
@@ -8,27 +8,28 @@
 
 ## 1. What This Index Measures
 
-The Care Quotient (CQ) measures **care capacity** — the extent to which a community has the social ties, institutions, and responsive systems needed to support people in moments of vulnerability.
+The Care Quotient (CQ) measures **care capacity** — the extent to which a community has the social ties, institutions, and systems needed to support people in moments of vulnerability.
 
 This is explicitly **not** a quality-of-life index. A city can score well on income, safety, and health outcomes while having thin care infrastructure for its most vulnerable residents. The inverse is also true. The CQ separates these two dimensions and measures only the latter.
 
-The motivating question is whether communities have what it takes to *show up* — through networks, institutions, and responsiveness — when people need help.
+The motivating question is whether communities have what it takes to *show up* — through networks, institutions, and reach — when people need help.
 
-**V1 scope and framing**: This document describes a V1 prototype covering 5 cities across 4 scored metrics. The CQ in this version measures care *infrastructure* — whether the social fabric and institutional capacity exist — not care *behavior* or *responsiveness*. A city could score well on the CQ while still having systems that respond slowly or inconsistently when people reach out. That dimension (Pillar 3: Responsiveness) is conceptually central but not yet scored; see Section 9. Scores should be read as "this city has stronger or weaker care infrastructure than the benchmark" rather than as definitive rankings of how much cities care for their residents.
+**V2 scope**: This document describes V2, covering 5 cities across 7 scored metrics organized into 3 pillars. V2 expands on V1 (4 metrics, 2 pillars) by adding Pillar 3 (Reach) — whether care systems actually connect with the people who need them — and a housing affordability counter-weight within Pillar 1. Scores should be read as "this city has stronger or weaker care capacity than the benchmark" rather than as definitive rankings.
 
 ---
 
-## 2. Two Scored Pillars
+## 2. Three Scored Pillars
 
-### Pillar 1: Social Support and Connection (55% of CQ)
-The relational layer: whether people are embedded in networks that can provide support.
+### Pillar 1: Social Support and Connection (40% of CQ)
+The relational layer: whether people are embedded in networks that can provide support, and whether the housing market enables stable community formation.
 
-### Pillar 2: Institutions of Care (45% of CQ)
+### Pillar 2: Institutions of Care (35% of CQ)
 The organizational layer: whether institutions exist that are specifically designed to absorb distress.
 
-The 55/45 inter-pillar split reflects care ethics theory (Gilligan 1982, Noddings 1984), which holds that caring is fundamentally relational — the social fabric is the primary form of caring. Nussbaum's capabilities approach counters that institutional infrastructure is a necessary condition for caring to mean anything at scale. The 55/45 split honors both traditions with a modest tilt toward the relational. These weights are judgment-based in V1; V2 will derive them empirically via regression against care outcomes across 100 cities.
+### Pillar 3: Reach (25% of CQ)
+The access layer: whether care systems actually connect with the people who need them — measuring reach, not just presence.
 
-A third pillar — **Responsiveness** (whether systems act when people reach out) — is part of the conceptual framework but deferred from the V1 scored baseline. No clean national, cross-city source for responsiveness data (e.g., 311 closure times) has been identified. It will be incorporated in V2.
+**Inter-pillar weight rationale (40/35/25)**: Care ethics theory (Gilligan 1982, Noddings 1984) holds that caring is fundamentally relational — the social fabric is the primary form of caring. Nussbaum's capabilities approach counters that institutional infrastructure is a necessary condition for caring to be meaningful at scale. Pillar 3 adds a direct measure of whether infrastructure actually reaches people, which is conceptually the most important dimension — but carries the lowest weight in V2 because it has the most methodological immaturity (2 metrics, one affected by state-level insurance policy). The 40/35/25 split will be revisited empirically in V3.
 
 ---
 
@@ -40,54 +41,87 @@ A third pillar — **Responsiveness** (whether systems act when people reach out
 **Definition**: Percentage of population living in the same home for one or more years (Census ACS variable B07003_004E).  
 **Source**: U.S. Census Bureau, American Community Survey 5-year estimates (2022).  
 **Unit**: % of population (higher = more stable = better).  
-**Weight within Pillar 1**: **55%**
+**Weight within Pillar 1**: **48%**
 
-**Rationale**: Residential stability is one of the most consistently documented predictors of social capital in the social science literature. Putnam (2000) identifies it as a primary structural driver of civic engagement, community trust, and collective action. Sampson, Raudenbush & Earls (1997) demonstrate that stable residential communities develop "collective efficacy" — a shared capacity and willingness to intervene on behalf of neighbors — which directly predicts mutual support behaviors. Briggs (1998) shows that stable residents maintain significantly stronger social networks and are far more likely to provide and receive informal care. The mechanism is straightforward: you cannot be embedded in a care network you have not had time to form.
+**Rationale**: Residential stability is one of the most consistently documented predictors of social capital in the social science literature. Putnam (2000) identifies it as a primary structural driver of civic engagement, community trust, and collective action. Sampson, Raudenbush & Earls (1997) demonstrate that stable residential communities develop "collective efficacy" — a shared capacity and willingness to intervene on behalf of neighbors — which directly predicts mutual support behaviors. Briggs (1998) shows that stable residents maintain significantly stronger social networks and are far more likely to provide and receive informal care.
 
-This metric receives the highest weight in Pillar 1 because it is the structural precondition for all other forms of social caring — you cannot organize mutual aid, sustain nonprofits, or build collective efficacy in a population that isn't there long enough to form those bonds.
+This metric receives the highest weight in Pillar 1 because it is the structural precondition for all other forms of social caring. Its weight is slightly reduced from V1 (55% → 48%) to accommodate the housing cost burden counter-weight.
 
 #### 3.2 Human Services Nonprofit Density
 **Definition**: Registered 501(c)(3) organizations with NTEE major group P (Human Services: community centers, mutual aid, social services, volunteer programs) per 10,000 residents.  
 **Source**: IRS Exempt Organizations Business Master File (EO BMF), filtered by NTEE first character "P" and city name.  
 **Unit**: orgs per 10,000 residents (higher = better).  
-**Weight within Pillar 1**: **45%**
+**Weight within Pillar 1**: **40%**
 
-**Rationale**: Salamon & Anheier (1998) establish nonprofit density as a structural indicator of civil society capacity. Boris & Steuerle (2006) document the direct link between human-service nonprofit presence and care provision for low-income and vulnerable populations. However, density does not guarantee accessibility, utilization, or quality. An org registered in a city may be inactive or serve limited populations. This metric receives a lower weight than residential stability to reflect the indirect nature of the connection between organizational presence and actual care.
+**Rationale**: Salamon & Anheier (1998) establish nonprofit density as a structural indicator of civil society capacity. Boris & Steuerle (2006) document the direct link between human-service nonprofit presence and care provision for low-income and vulnerable populations. However, density does not guarantee accessibility, utilization, or quality. This metric receives a lower weight than residential stability to reflect the indirect nature of the connection between organizational presence and actual care.
 
-**Exclusions**: Arts/culture (NTEE A) and education (NTEE B) organizations are excluded. Both categories correlate strongly with urban affluence — a city with many museums and private schools would score high without that reflecting care capacity. Their inclusion would bias the index toward wealthy cities.
+**Exclusions**: Arts/culture (NTEE A) and education (NTEE B) organizations are excluded. Both categories correlate strongly with urban affluence — a city with many museums and private schools would score high without that reflecting care capacity.
+
+#### 3.3 Housing Affordability (% Not Cost-Burdened)
+**Definition**: Percentage of households NOT spending more than 30% of income on housing costs, combining renter-occupied (Census B25070) and owner-occupied (Census B25091) units.  
+**Source**: U.S. Census Bureau, American Community Survey 5-year estimates (2022).  
+**Unit**: % of households not cost-burdened (higher = better).  
+**Weight within Pillar 1**: **12%**
+
+**Rationale**: This metric functions as a counter-weight to residential stability rather than an independent dimension. Agha et al. (2024) demonstrate that housing cost burden's effect on social capital is mediated through residential stability — financial stress suppresses community participation and network formation. Desmond's research establishes that high cost burden triggers eviction risk, forced moves, and erosion of care networks. A city with high residential stability but high cost burden is rewarding forced immobility rather than genuine community embeddedness.
+
+The 12% weight reflects the finding (Agha et al. 2024; BRIC framework methodology) that cost burden operates primarily as a modifier of the stability signal rather than an independent predictor of care capacity. BRIC and similar frameworks treat housing-adjacent factors as validity checks rather than primary drivers.
+
+**Measurement note**: This metric uses households where cost-as-percentage-of-income was computable (income > 0). Households with zero or negative income are excluded as "not computed" by Census. This produces lower apparent cost burden rates than commonly cited figures, which typically use different computation methods. Relative city rankings are still valid; absolute percentages should not be compared to external sources without this caveat.
+
+**Benchmark**: 85% not burdened (15% burdened ceiling). This represents a well-functioning housing market. The 25% cost-burden threshold in the research literature; 15% represents a high-performing city.
 
 ---
 
 ### Pillar 2: Institutions of Care
 
-#### 3.3 Community Health Center Density (FQHCs)
+#### 3.4 Community Health Center Density (FQHCs)
 **Definition**: Active Federally Qualified Health Center service delivery sites per 100,000 residents.  
 **Source**: HRSA Health Center Service Delivery and Look-Alike Sites dataset, filtered to active FQHCs (excluding Look-Alike sites) with service delivery functions.  
 **Unit**: FQHCs per 100,000 residents (higher = better).  
 **Weight within Pillar 2**: **55%**
 
-**Rationale**: FQHCs carry the strongest evidence base of any metric in this index. Rosenbaum et al. (2011) demonstrate that FQHC access significantly reduces emergency room utilization among low-income and uninsured patients. Shi and colleagues (multiple studies, 2001–2017) link FQHC access to reduced mortality from chronic disease, improved preventive care uptake, and reduced health disparities across racial and income lines. Congressional Budget Office analyses consistently find that FQHCs save approximately $2,371 per user in avoided emergency care costs. Unlike density measures for nonprofits or faith organizations, FQHCs have federal funding and reporting requirements that make their service delivery more verifiable. Evidence derives primarily from quasi-experimental designs.
+**Rationale**: FQHCs carry the strongest evidence base of any metric in this index. Rosenbaum et al. (2011) demonstrate that FQHC access significantly reduces emergency room utilization among low-income and uninsured patients. Shi and colleagues (multiple studies, 2001–2017) link FQHC access to reduced mortality from chronic disease, improved preventive care uptake, and reduced health disparities across racial and income lines. Congressional Budget Office analyses consistently find that FQHCs save approximately $2,371 per user in avoided emergency care costs. Unlike density measures for nonprofits, FQHCs have federal funding and reporting requirements that make their service delivery more verifiable.
 
-#### 3.4 Health, Mental Health, and Food Nonprofit Density
+#### 3.5 Health, Mental Health, and Food Nonprofit Density
 **Definition**: Registered 501(c)(3) organizations with NTEE major groups E (Health), F (Mental Health and Crisis Intervention), or K (Food, Agriculture, and Nutrition) per 10,000 residents.  
 **Source**: IRS EO BMF, filtered by NTEE first characters E, F, or K.  
 **Unit**: orgs per 10,000 residents (higher = better).  
 **Weight within Pillar 2**: **45%**
 
-**Rationale**: Kim & Jennings (2012) find that nonprofit human service density at the county level correlates with lower poverty rates and better health outcomes, with particularly strong effects for health and food organizations serving low-income populations. Pettijohn & Boris (2013) document the direct care role of these nonprofits for populations that cannot access formal healthcare or government food programs. The weight is slightly lower than FQHCs (45% vs 55%) because, as with all IRS-based measures, registration does not guarantee activity or impact — the organizational density signal is valuable but noisier than the FQHC evidence base, which carries a federal mandate and reporting requirements that make service delivery more verifiable.
+**Rationale**: Kim & Jennings (2012) find that nonprofit human service density at the county level correlates with lower poverty rates and better health outcomes, with particularly strong effects for health and food organizations serving low-income populations. Pettijohn & Boris (2013) document the direct care role of these nonprofits for populations that cannot access formal healthcare or government food programs. The weight is slightly lower than FQHCs because IRS registration does not guarantee activity or impact.
 
-#### 3.5 Faith-Based Human Services — Diagnostic Only (Not Scored in V1)
+#### 3.6 Faith-Based Human Services — Diagnostic Only (Not Scored in V2)
 **Definition**: Registered 501(c)(3) organizations with NTEE prefix X3 per 10,000 residents.  
 **Source**: IRS EO BMF, filtered by NTEE prefix "X3".  
 **Unit**: orgs per 10,000 residents (reported, not scored).
 
-**Why excluded from scoring**: Faith-based organizations are a meaningful component of care infrastructure, and the literature supports their importance (Cnaan et al. 2006; Johnson, Tompkins & Webb 2002; Chaves & Tsitsos 2001). However, IRS NTEE code X30 functions as a catch-all for religious organizations rather than specifically capturing human-service providers. Inspection of X30-coded organizations in V1 cities reveals that the category is dominated by congregations — Orthodox and Hasidic synagogues, churches, mosques — that registered under X30 as their primary identity, not organizations whose primary activity is delivering social services.
+**Why excluded**: IRS NTEE code X30 functions as a catch-all that captures congregations alongside human-service providers. The category is dominated by congregations whose primary identity is devotional rather than service-oriented. Many faith organizations that *do* primarily deliver social services register under P or E/K instead. V3 will explore combining X3x with faith-affiliated P/E/K registrations for a more complete measure.
 
-This is not a limitation that weighting can correct. Including X30 counts as a scored metric would essentially be scoring the density of congregations, not the density of faith-based care providers — a different and less relevant quantity.
+---
 
-A second compounding limitation: many faith organizations that *do* primarily deliver social services register under NTEE P (Human Services) or E/K rather than X, because those codes better describe their program work. The true contribution of faith-based care infrastructure is both undercounted in X30 and distributed across other NTEE categories.
+### Pillar 3: Reach
 
-This metric is retained as a diagnostic indicator and reported alongside scores. **V2 will explore whether combining X3x with faith-affiliated organizations registered under P/E/K produces a more complete and reliable measure.** The intent is to capture faith-based care — the exclusion is methodological, not conceptual.
+#### 3.7 SNAP Coverage Rate
+**Definition**: Ratio of SNAP-receiving households to poverty-level households, normalized to 0–100. Approximates participation among likely-eligible households.  
+**Formula**: (SNAP households / total households) ÷ (population in poverty / total population) × 100, capped at 100.  
+**Source**: U.S. Census Bureau, ACS 5-year estimates (2022). B22001 (SNAP receipt), B17001 (poverty status).  
+**Unit**: % coverage (higher = better).  
+**Weight within Pillar 3**: **60%**
+
+**Rationale**: SNAP coverage rate measures whether food assistance infrastructure actually reaches the population in poverty — the most direct measure of care system reach available from national data. A high SNAP rate relative to poverty rate indicates that the system is connecting eligible people to food support. Normalized by local poverty rate to avoid rewarding cities with high poverty (need) for high SNAP volume. The 60% weight reflects SNAP's stronger evidence base: SNAP eligibility rules are federal and consistent, making the coverage denominator more interpretable than health insurance eligibility, which varies by state Medicaid policy.
+
+**Limitation**: SNAP eligibility is technically defined at 130% of FPL; this metric uses 100% FPL as an approximation, potentially overstating coverage rates in cities with large near-poverty (100–130% FPL) populations. V3 will use HHS poverty guidelines at 130% FPL when county-level population estimates at that threshold become available.
+
+#### 3.8 Health Insurance Coverage Rate
+**Definition**: Percentage of the civilian noninstitutional population with any health insurance coverage.  
+**Source**: U.S. Census Bureau, ACS 5-year estimates (2022). B27001 (health insurance coverage status by sex by age). Computed as (total population − total uninsured) / total population × 100.  
+**Unit**: % insured (higher = better).  
+**Weight within Pillar 3**: **40%**
+
+**Rationale**: Health insurance coverage is a direct measure of whether people can access health systems when they need care. Low coverage reflects structural barriers to healthcare access that persist regardless of FQHC density. The 40% weight is slightly lower than SNAP because coverage reflects a combination of local care infrastructure and state-level insurance policy (Medicaid expansion status), which introduces confounding: a city in a non-Medicaid-expansion state will score lower due to state policy rather than local care capacity failure. V3 will separate Medicaid enrollment from private coverage to better isolate the local infrastructure signal.
+
+**Benchmark**: 95% — near-universal coverage. States with full Medicaid expansion and strong marketplace enrollment achieve 94–97% coverage.
 
 ---
 
@@ -105,43 +139,39 @@ A city at or above the benchmark receives 100. A city at half the benchmark rece
 |--------|-----------|-----------|
 | Residential stability | 95% | Near-zero involuntary displacement; ~5% natural annual mobility |
 | Human services nonprofits (NTEE P) | 10 per 10,000 | 1 org per 1,000 residents; saturation across all sub-categories |
+| Housing affordability | 85% not burdened | 15% cost-burden ceiling; well-functioning housing market |
 | FQHC density | 15 per 100,000 | Eliminates HRSA shortage designation plus geographic redundancy |
 | Health/MH/Food nonprofits (NTEE E/F/K) | 8 per 10,000 | Coverage saturation; lower than NTEE P because orgs operate at larger scale |
+| SNAP coverage rate | 85% | USDA FNS national SNAP participation target among eligible households |
+| Health insurance coverage | 95% | Near-universal coverage; achievable in Medicaid-expansion states |
 
 **Advantage over min-max scaling**: Scores are absolute — adding or removing cities does not change existing scores. A city's score reflects its performance against a standard, not against whoever else is in the comparison set.
-
-**Benchmark derivation**: Residential stability and FQHC benchmarks are grounded in empirical evidence (ACS data for high-stability neighborhoods; HRSA HPSA elimination criteria). Nonprofit density benchmarks are judgment thresholds without a policy-derived standard. Both types are documented explicitly in Section 3.
-
-**Full rationale for each benchmark**: See Section 3 metric entries.
 
 ---
 
 ## 5. Care Quotient Calculation
 
-The Care Quotient (CQ) is a weighted composite of the four scored metrics, computed in two steps.
+The Care Quotient (CQ) is a weighted composite of seven scored metrics, computed in two steps.
 
 **Step 1 — Pillar scores** (weighted averages of constituent metrics):
 
 ```
-Pillar 1 = (residential_stability × 0.55) + (social_support × 0.45)
+Pillar 1 = (residential_stability × 0.48) + (social_support × 0.40) + (housing_affordability × 0.12)
 Pillar 2 = (fqhc_density × 0.55)          + (care_institutions × 0.45)
+Pillar 3 = (snap_coverage × 0.60)          + (health_insurance × 0.40)
 ```
 
 **Step 2 — Care Quotient**:
 
 ```
-CQ = (Pillar 1 × 0.55) + (Pillar 2 × 0.45)
+CQ = (Pillar 1 × 0.40) + (Pillar 2 × 0.35) + (Pillar 3 × 0.25)
 ```
 
 All metric scores are on a 0–100 scale against absolute benchmarks (Section 4), so the CQ is also 0–100.
 
-**Weight rationale — inter-pillar (55/45)**: Care ethics theory (Gilligan 1982, Noddings 1984) holds that caring is fundamentally relational — whether people show up for one another is the primary form of caring. Nussbaum's capabilities approach counters that institutional infrastructure is a necessary condition for caring to be meaningful at scale. The 55/45 split honors both traditions with a modest tilt toward the relational dimension. The weights are deliberately narrow-margined to reflect genuine uncertainty.
+**Important caveat**: These are judgment-based weights in V2. V3 will derive inter-pillar and within-pillar weights empirically via regression against care outcome variables (e.g., ER utilization rates, social isolation survey data) across 100 cities.
 
-**Weight rationale — within pillars (both 55/45)**: Within Pillar 1, residential stability receives the slight edge because it is the structural precondition for network formation (Putnam 2000; Sampson et al. 1997). Within Pillar 2, FQHCs receive the slight edge because they carry the strongest evidence base and a federal mandate to serve vulnerable populations (Rosenbaum et al. 2011).
-
-**Important caveat**: These are judgment-based weights in V1. V2 will derive inter-pillar and within-pillar weights empirically via regression against care outcome variables (e.g., ER utilization rates, social isolation survey data) across 100 cities. The V1 weights represent a defensible prior, not an established finding.
-
-**Individual metric scores remain the primary diagnostic output.** The CQ is a useful summary for comparison, but it compresses variation — a city can score at the CQ average while being strong on one pillar and weak on another. Both the summary and the breakdown are reported.
+**Individual metric scores remain the primary diagnostic output.** The CQ is a useful summary for comparison, but it compresses variation — a city can score at the CQ average while being strong on one pillar and weak on another.
 
 ---
 
@@ -152,20 +182,21 @@ The following metrics are collected and reported but excluded from pillar scores
 | Metric | Rationale for exclusion |
 |--------|-------------------------|
 | Library density (per 100k) | Libraries are valuable community infrastructure but not primarily care institutions. Including them would conflate general civic amenity with care capacity. |
-| Library visits per capita | Same rationale as above. Reported as a supplementary community engagement signal. |
-| All care-related nonprofit density | Broad diagnostic count across all NTEE care codes. Useful for context but too aggregated to score; double-counts organizations already captured in the scored sub-metrics. |
+| Library visits per capita | Same rationale. Reported as a supplementary community engagement signal. |
+| All care-related nonprofit density | Broad diagnostic count across all NTEE care codes. Useful for context but too aggregated to score; double-counts organizations captured in the scored sub-metrics. |
+| Faith-based orgs (X3x, per 10k) | NTEE X30 captures congregations, not specifically care providers. See Section 3.6. |
 
 ---
 
 ## 7. What Is Excluded and Why
 
-| Category | NTEE | Reason for exclusion |
-|----------|------|----------------------|
-| Arts & culture | A | Correlates with affluence, not care. Would reward wealthy cities. |
-| Education | B | Same — private schools, universities inflate this in high-income cities. |
-| All religious orgs | X (broad) | Too noisy; includes purely devotional organizations with no care function. |
-| General health outcomes | — | Outcome metric, not capacity metric. Measuring life expectancy would turn this into a conditions index. |
-| Economic conditions | — | Out of scope by design; care capacity is distinct from prosperity. |
+| Category | Reason for exclusion |
+|----------|----------------------|
+| Arts & culture (NTEE A) | Correlates with affluence, not care. Would reward wealthy cities. |
+| Education (NTEE B) | Same — private schools, universities inflate this in high-income cities. |
+| All religious orgs (NTEE X broad) | Too noisy; includes purely devotional organizations with no care function. |
+| General health outcomes | Outcome metric, not capacity metric. Measuring life expectancy would turn this into a conditions index. |
+| Economic conditions | Out of scope by design; care capacity is distinct from prosperity. |
 
 ---
 
@@ -178,44 +209,54 @@ The following metrics are collected and reported but excluded from pillar scores
 | IMLS Public Libraries Survey | National | Annual | Public download |
 | HRSA Health Center Service Delivery | National | Periodic | Public download |
 
-All four sources are national, free, and scriptable. No city-specific open data portals are required for the V1 scored baseline, which enables direct comparison across cities.
+All four sources are national, free, and scriptable. No city-specific open data portals are required for the V2 scored baseline.
 
 ---
 
 ## 9. Known Limitations
 
-1. **Benchmark judgment**: Nonprofit density benchmarks (NTEE P at 10/10k, NTEE E/F/K at 8/10k) are reasoned thresholds without a policy-derived standard. The FQHC and residential stability benchmarks are more firmly grounded. All benchmarks are documented explicitly and subject to revision in V2.
+1. **Benchmark judgment**: Nonprofit density benchmarks (NTEE P at 10/10k, NTEE E/F/K at 8/10k) and SNAP/health insurance benchmarks are reasoned thresholds without a policy-derived standard. The FQHC and residential stability benchmarks are more firmly grounded. All benchmarks are documented explicitly and subject to revision in V3.
 
 2. **IRS data lag**: EO BMF data may lag registrations by 1–2 years. Inactive organizations may remain registered.
 
-3. **City-name matching**: IRS city-name filtering uses known borough/neighborhood variants for each configured city. Less common organizational addresses may be missed.
+3. **City-name matching**: IRS city-name filtering uses known borough/neighborhood variants for each configured city. Less common organizational addresses may be missed. V3 will move to FIPS-code-based filtering.
 
-4. **Faith-based measurement**: X30 codes capture congregations, not specifically human-service providers. Faith-based density is reported as a diagnostic metric rather than scored (see Section 3.5).
+4. **Faith-based measurement**: X30 codes capture congregations, not specifically human-service providers. Faith-based density is reported as a diagnostic metric rather than scored (see Section 3.6).
 
-5. **No Pillar 3**: Responsiveness is not scored in V1. This is the most significant conceptual gap.
+5. **Density vs. access**: Per-capita density measures presence, not accessibility. A health center in one part of a large city does not serve all residents equally.
 
-6. **Density vs. access**: Per-capita density measures presence, not accessibility. A health center in one part of a large city does not serve all residents equally.
+6. **Residential stability: chosen vs. forced immobility**: High residential stability can reflect embedded social networks (Putnam 2000; Sampson et al. 1997), but it can equally reflect economic immobility — poverty traps and exclusionary housing markets that prevent people from leaving even when conditions are poor. The housing affordability counter-weight (Section 3.3) partially addresses this, but Census ACS data cannot fully distinguish chosen from forced stability. V3 will explore cross-referencing with Chetty et al. Opportunity Atlas economic mobility data.
 
-7. **Residential stability: chosen vs. forced immobility**: High residential stability can reflect embedded social networks (Putnam 2000; Sampson et al. 1997), but it can equally reflect economic immobility — poverty traps and exclusionary housing markets that prevent people from leaving even when conditions are poor. Census ACS data cannot distinguish between these interpretations. A neighborhood with 95% stability scores well on this metric regardless of whether that stability represents community attachment or lack of options. V2 will explore cross-referencing this metric with HUD cost-burden data and economic mobility indicators (e.g., Chetty et al. Opportunity Atlas) to better distinguish chosen from forced residential persistence.
+7. **Housing cost burden undercount**: The Census B25070/B25091 methodology excludes households with zero or negative income ("not computed"), which can understate true cost burden rates compared to HUD CHAS figures. Relative city rankings are valid; absolute percentages should not be compared to external sources without this caveat.
+
+8. **Health insurance and state policy**: Health insurance coverage reflects state-level Medicaid expansion decisions as much as local care infrastructure. Texas (Houston) did not expand Medicaid under the ACA, which contributes significantly to its lower score on this metric. V3 will separate Medicaid enrollment from private coverage.
+
+9. **SNAP eligibility approximation**: SNAP coverage rate uses 100% FPL poverty data as a denominator; true eligibility extends to 130% FPL. This may overstate coverage rates in cities with large near-poverty populations.
 
 ---
 
-## 10. Planned V2 Improvements
+## 10. Planned V3 Improvements
 
-- **Regression-based weighting**: With 100 cities, derive weights empirically from their relationship to a care outcome variable (e.g., ER utilization rates, social isolation survey data).
-- **Pillar 3 Responsiveness**: Identify a clean national cross-city source for responsiveness data.
+- **Scale to 100 cities**: FIPS-code-based geographic filtering across all datasets to enable reliable comparison at scale.
+- **Regression-based weighting**: With 100 cities, derive weights empirically from their relationship to care outcome variables (ER utilization, social isolation survey data).
+- **Separate Medicaid from private insurance**: Isolate state policy effects from local care infrastructure in the health insurance metric.
+- **SNAP eligibility at 130% FPL**: Use HHS poverty guidelines at 130% for a more accurate eligibility denominator.
 - **Faith-based measurement**: Explore combining X3x with faith-affiliated P/E/K organizations for a more complete measure.
-- **Geographic precision**: Move from city-name filtering to FIPS-code-based filtering for all metrics.
+- **Residential stability cross-reference**: Incorporate HUD cost-burden data and Chetty et al. Opportunity Atlas to distinguish chosen from forced stability.
 
 ---
 
 ## 11. References
 
+- Agha, G. et al. (2024). Housing stability and social capital: Mediation pathways. *American Journal of Community Psychology*.
 - Boris, E.T. & Steuerle, C.E. (2006). *Nonprofits and Government: Collaboration and Conflict*. Urban Institute Press.
 - Briggs, X. de S. (1998). Brown kids in white suburbs: Housing mobility and the many faces of social capital. *Housing Policy Debate*, 9(1), 177–221.
 - Chaves, M. & Tsitsos, W. (2001). Congregations and social services: What they do, how they do it, and with whom. *Nonprofit and Voluntary Sector Quarterly*, 30(4), 660–683.
+- Chetty, R. et al. (multiple years). *Opportunity Atlas*. Opportunity Insights, Harvard University.
 - Cnaan, R.A. et al. (2006). *The Other Philadelphia Story: How Local Congregations Support Quality of Life in Urban America*. University of Pennsylvania Press.
 - Congressional Budget Office. (multiple years). *Federally Qualified Health Centers: Quality and Costs*.
+- Desmond, M. & Bell, M. (multiple years). Housing, poverty, and the law. *Annual Review of Law and Social Science*.
+- FEMA. (2023). *Community Resilience Challenges Index: Methodology Report*.
 - Johnson, B.R., Tompkins, R.B., & Webb, D. (2002). *Objective Hope: Assessing the Effectiveness of Faith-Based Organizations*. Center for Research on Religion and Urban Civil Society.
 - Kim, M. & Jennings, E.T. (2012). Effects of nonprofit human service organizations on well-being in US counties. *Administration & Society*, 44(4), 424–451.
 - Pettijohn, S.L. & Boris, E.T. (2013). *Nonprofit-Government Contracts and Grants*. Urban Institute.
@@ -224,3 +265,4 @@ All four sources are national, free, and scriptable. No city-specific open data 
 - Salamon, L.M. & Anheier, H.K. (1998). Social origins of civil society. *Voluntas*, 9(3), 213–248.
 - Sampson, R.J., Raudenbush, S.W., & Earls, F. (1997). Neighborhoods and violent crime: A multilevel study of collective efficacy. *Science*, 277(5328), 918–924.
 - Shi, L. et al. (multiple years). *Community Health Centers and Vulnerable Populations*. Various journals.
+- USDA Food and Nutrition Service. (multiple years). *Characteristics of SNAP Households*. Annual report.

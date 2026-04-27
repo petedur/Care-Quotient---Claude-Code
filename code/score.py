@@ -10,10 +10,18 @@ capped at 100). Benchmarks represent the level at which a city would be consider
 to fully meet that dimension of care need. See methodology.md for full rationale.
 
 Benchmarks:
-  residential_stability   95%      — near-zero involuntary displacement
-  social_support (NTEE P) 10/10k   — organizational saturation across all human service sub-categories
-  fqhc_density            15/100k  — eliminates HRSA shortage designation + geographic redundancy
-  care_institutions (EFK) 8/10k    — saturation of health, mental health, and food org coverage
+  Pillar 1 — Social Support & Connection (40% of CQ)
+    residential_stability    95%     — near-zero involuntary displacement
+    social_support (NTEE P)  10/10k  — organizational saturation
+    housing_cost_burden      75%     — 75% not burdened (25% burdened ceiling)
+
+  Pillar 2 — Institutions of Care (35% of CQ)
+    fqhc_density             15/100k — eliminates HRSA shortage designation
+    care_institutions (EFK)  8/10k   — saturation of health/MH/food coverage
+
+  Pillar 3 — Reach (25% of CQ)
+    snap_coverage_rate       85%     — USDA FNS national participation target
+    health_insurance         95%     — near-universal coverage
 
 Usage:
     python code/score.py
@@ -102,16 +110,31 @@ SCORED_METRICS = [
     #   Weights are judgment-based in V1; V2 will derive empirically via
     #   regression against care outcomes across 100 cities.
 
-    ("residential_stability", "pct_same_house",    "pillar1", 95.0, 0.55),
-    ("nonprofit_density",     "social_support",    "pillar1", 10.0, 0.45),
+    # Pillar 1 — Social Support & Connection (40% of CQ)
+    #   Residential stability:  48% — foundational precondition for network formation
+    #   Human services nonprofits: 40% — organized expression of civic caring
+    #   Housing cost burden:    12% — counter-weight; flags forced vs. chosen stability
+    #     (Agha et al. 2024; Desmond & Bell — burden operates via stability, not independently)
+    ("residential_stability",     "pct_same_house",    "pillar1", 95.0, 0.48),
+    ("nonprofit_density",         "social_support",    "pillar1", 10.0, 0.40),
+    ("housing_cost_burden",       "pct_not_burdened",  "pillar1", 85.0, 0.12),
 
-    # Pillar 2 — Institutions of Care (45% of CQ)
-    ("health_center_density", "density_per_100k",  "pillar2", 15.0, 0.55),
-    ("nonprofit_density",     "care_institutions", "pillar2",  8.0, 0.45),
+    # Pillar 2 — Institutions of Care (35% of CQ) — unchanged
+    ("health_center_density",     "density_per_100k",  "pillar2", 15.0, 0.55),
+    ("nonprofit_density",         "care_institutions", "pillar2",  8.0, 0.45),
+
+    # Pillar 3 — Reach (25% of CQ)
+    #   SNAP coverage rate:      60% — food assistance reach among poverty households
+    #   Health insurance:        40% — whether people can access health systems
+    ("snap_participation",        "coverage_rate",     "pillar3", 85.0, 0.60),
+    ("health_insurance_coverage", "pct_insured",       "pillar3", 95.0, 0.40),
 ]
 
 # Inter-pillar weights for the Care Quotient
-PILLAR_WEIGHTS = {"pillar1": 0.55, "pillar2": 0.45}
+# 40/35/25: Pillar 1 primary (care ethics, relational primacy); Pillar 2 institutional
+# necessity (Nussbaum capabilities); Pillar 3 most direct impact measure but lowest
+# data maturity in V2 — weight will rise as methodology matures.
+PILLAR_WEIGHTS = {"pillar1": 0.40, "pillar2": 0.35, "pillar3": 0.25}
 
 # Diagnostic metrics — collected and reported, not scored
 DIAGNOSTIC_METRICS = [
@@ -125,14 +148,18 @@ DIAGNOSTIC_METRICS = [
 PILLAR_LABELS = {
     "pillar1": "Social Support & Connection",
     "pillar2": "Institutions of Care",
+    "pillar3": "Reach",
 }
 
 # Human-readable metric labels for output
 METRIC_LABELS = {
-    "residential_stability.pct_same_house":    "Residential Stability",
-    "nonprofit_density.social_support":        "Human Services Nonprofits (per 10k)",
-    "health_center_density.density_per_100k":  "FQHCs (per 100k)",
-    "nonprofit_density.care_institutions":     "Health/MH/Food Nonprofits (per 10k)",
+    "residential_stability.pct_same_house":        "Residential Stability",
+    "nonprofit_density.social_support":            "Human Services Nonprofits (per 10k)",
+    "housing_cost_burden.pct_not_burdened":        "Housing Affordability (% not cost-burdened)",
+    "health_center_density.density_per_100k":      "FQHCs (per 100k)",
+    "nonprofit_density.care_institutions":         "Health/MH/Food Nonprofits (per 10k)",
+    "snap_participation.coverage_rate":            "SNAP Coverage Rate",
+    "health_insurance_coverage.pct_insured":       "Health Insurance Coverage Rate",
 }
 
 
@@ -248,8 +275,9 @@ def write_results(conn, results: pd.DataFrame, raw_df: pd.DataFrame):
     output = {}
     for city in results.index:
         output[city] = {
-            "pillar1_social_support": results.loc[city, "pillar1"] if "pillar1" in results.columns else None,
+            "pillar1_social_support":      results.loc[city, "pillar1"] if "pillar1" in results.columns else None,
             "pillar2_institutions_of_care": results.loc[city, "pillar2"] if "pillar2" in results.columns else None,
+            "pillar3_reach":               results.loc[city, "pillar3"] if "pillar3" in results.columns else None,
             "metrics": {},
         }
         for metric, sub_metric, pillar, benchmark, w in SCORED_METRICS:
@@ -282,6 +310,7 @@ def write_results(conn, results: pd.DataFrame, raw_df: pd.DataFrame):
 # ── Dashboard metric display config ──────────────────────────────────────────
 # Maps internal metric keys to the display format expected by the dashboard JS.
 DASHBOARD_METRICS = {
+    # Pillar 1
     "residential_stability": {
         "key": "residential_stability",
         "raw_key": ("residential_stability", "pct_same_house"),
@@ -294,6 +323,13 @@ DASHBOARD_METRICS = {
         "benchmark": "10 / 10k", "unit": "human services nonprofits per 10k",
         "fmt": lambda v: f"{v:.2f}",
     },
+    "housing_cost_burden": {
+        "key": "housing_cost_burden",
+        "raw_key": ("housing_cost_burden", "pct_not_burdened"),
+        "benchmark": "85%", "unit": "% households not cost-burdened",
+        "fmt": lambda v: f"{v:.1f}%",
+    },
+    # Pillar 2
     "fqhc": {
         "key": "fqhc",
         "raw_key": ("health_center_density", "density_per_100k"),
@@ -305,6 +341,19 @@ DASHBOARD_METRICS = {
         "raw_key": ("nonprofit_density", "care_institutions"),
         "benchmark": "8 / 10k", "unit": "health/MH/food nonprofits per 10k",
         "fmt": lambda v: f"{v:.2f}",
+    },
+    # Pillar 3
+    "snap_coverage": {
+        "key": "snap_coverage",
+        "raw_key": ("snap_participation", "coverage_rate"),
+        "benchmark": "85%", "unit": "% SNAP coverage among poverty households",
+        "fmt": lambda v: f"{v:.1f}%",
+    },
+    "health_insurance": {
+        "key": "health_insurance",
+        "raw_key": ("health_insurance_coverage", "pct_insured"),
+        "benchmark": "95%", "unit": "% population with health insurance",
+        "fmt": lambda v: f"{v:.1f}%",
     },
 }
 
@@ -327,8 +376,11 @@ CITY_DISPLAY = {
 SCORE_COL = {
     "residential_stability": "score_residential_stability.pct_same_house",
     "social_support":        "score_nonprofit_density.social_support",
+    "housing_cost_burden":   "score_housing_cost_burden.pct_not_burdened",
     "fqhc":                  "score_health_center_density.density_per_100k",
     "care_institutions":     "score_nonprofit_density.care_institutions",
+    "snap_coverage":         "score_snap_participation.coverage_rate",
+    "health_insurance":      "score_health_insurance_coverage.pct_insured",
 }
 
 
@@ -370,6 +422,7 @@ def write_dashboard_data(score_output: dict, raw_df: pd.DataFrame):
             "cq":         city_scores.get("care_quotient", 0),
             "pillar1":    city_scores.get("pillar1_social_support", 0),
             "pillar2":    city_scores.get("pillar2_institutions_of_care", 0),
+            "pillar3":    city_scores.get("pillar3_reach", 0),
             "metrics":    metrics,
             "diagnostic": {},  # filled below
         }

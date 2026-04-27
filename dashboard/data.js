@@ -6,9 +6,10 @@ const CITIES = {
     "name": "Boston",
     "state": "MA",
     "population": "676k residents",
-    "cq": 70.6,
-    "pillar1": 75.5,
+    "cq": 71.6,
+    "pillar1": 77.8,
     "pillar2": 64.6,
+    "pillar3": null,
     "metrics": {
       "residential_stability": {
         "score": 84.7,
@@ -24,6 +25,13 @@ const CITIES = {
         "benchmark": "10 / 10k",
         "unit": "human services nonprofits per 10k"
       },
+      "housing_cost_burden": {
+        "score": 95.6,
+        "raw": 81.24,
+        "rawFmt": "81.2%",
+        "benchmark": "85%",
+        "unit": "% households not cost-burdened"
+      },
       "fqhc": {
         "score": 64.1,
         "raw": 9.62,
@@ -37,6 +45,20 @@ const CITIES = {
         "rawFmt": "5.21",
         "benchmark": "8 / 10k",
         "unit": "health/MH/food nonprofits per 10k"
+      },
+      "snap_coverage": {
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
+        "benchmark": "85%",
+        "unit": "% SNAP coverage among poverty households"
+      },
+      "health_insurance": {
+        "score": 100.0,
+        "raw": 96.52,
+        "rawFmt": "96.5%",
+        "benchmark": "95%",
+        "unit": "% population with health insurance"
       }
     },
     "diagnostic": {
@@ -58,9 +80,10 @@ const CITIES = {
     "name": "Chicago",
     "state": "IL",
     "population": "2.7M residents",
-    "cq": 60.9,
-    "pillar1": 75.5,
+    "cq": 61.5,
+    "pillar1": 77.6,
     "pillar2": 43.0,
+    "pillar3": null,
     "metrics": {
       "residential_stability": {
         "score": 91.5,
@@ -76,6 +99,13 @@ const CITIES = {
         "benchmark": "10 / 10k",
         "unit": "human services nonprofits per 10k"
       },
+      "housing_cost_burden": {
+        "score": 94.1,
+        "raw": 79.97,
+        "rawFmt": "80.0%",
+        "benchmark": "85%",
+        "unit": "% households not cost-burdened"
+      },
       "fqhc": {
         "score": 47.9,
         "raw": 7.19,
@@ -89,6 +119,20 @@ const CITIES = {
         "rawFmt": "2.95",
         "benchmark": "8 / 10k",
         "unit": "health/MH/food nonprofits per 10k"
+      },
+      "snap_coverage": {
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
+        "benchmark": "85%",
+        "unit": "% SNAP coverage among poverty households"
+      },
+      "health_insurance": {
+        "score": 95.8,
+        "raw": 90.99,
+        "rawFmt": "91.0%",
+        "benchmark": "95%",
+        "unit": "% population with health insurance"
       }
     },
     "diagnostic": {
@@ -110,9 +154,10 @@ const CITIES = {
     "name": "Houston",
     "state": "TX",
     "population": "2.3M residents",
-    "cq": 61.4,
-    "pillar1": 83.0,
+    "cq": 61.7,
+    "pillar1": 85.0,
     "pillar2": 35.1,
+    "pillar3": null,
     "metrics": {
       "residential_stability": {
         "score": 88.6,
@@ -128,6 +173,13 @@ const CITIES = {
         "benchmark": "10 / 10k",
         "unit": "human services nonprofits per 10k"
       },
+      "housing_cost_burden": {
+        "score": 100.0,
+        "raw": 86.2,
+        "rawFmt": "86.2%",
+        "benchmark": "85%",
+        "unit": "% households not cost-burdened"
+      },
       "fqhc": {
         "score": 29.2,
         "raw": 4.38,
@@ -141,6 +193,20 @@ const CITIES = {
         "rawFmt": "3.38",
         "benchmark": "8 / 10k",
         "unit": "health/MH/food nonprofits per 10k"
+      },
+      "snap_coverage": {
+        "score": 98.9,
+        "raw": 84.03,
+        "rawFmt": "84.0%",
+        "benchmark": "85%",
+        "unit": "% SNAP coverage among poverty households"
+      },
+      "health_insurance": {
+        "score": 82.9,
+        "raw": 78.78,
+        "rawFmt": "78.8%",
+        "benchmark": "95%",
+        "unit": "% population with health insurance"
       }
     },
     "diagnostic": {
@@ -162,9 +228,10 @@ const CITIES = {
     "name": "Los Angeles",
     "state": "CA",
     "population": "3.9M residents",
-    "cq": 53.1,
-    "pillar1": 69.3,
+    "cq": 54.3,
+    "pillar1": 72.5,
     "pillar2": 33.4,
+    "pillar3": null,
     "metrics": {
       "residential_stability": {
         "score": 94.2,
@@ -180,6 +247,13 @@ const CITIES = {
         "benchmark": "10 / 10k",
         "unit": "human services nonprofits per 10k"
       },
+      "housing_cost_burden": {
+        "score": 97.5,
+        "raw": 82.91,
+        "rawFmt": "82.9%",
+        "benchmark": "85%",
+        "unit": "% households not cost-burdened"
+      },
       "fqhc": {
         "score": 43.1,
         "raw": 6.46,
@@ -193,6 +267,20 @@ const CITIES = {
         "rawFmt": "1.72",
         "benchmark": "8 / 10k",
         "unit": "health/MH/food nonprofits per 10k"
+      },
+      "snap_coverage": {
+        "score": 98.5,
+        "raw": 83.7,
+        "rawFmt": "83.7%",
+        "benchmark": "85%",
+        "unit": "% SNAP coverage among poverty households"
+      },
+      "health_insurance": {
+        "score": 95.8,
+        "raw": 90.99,
+        "rawFmt": "91.0%",
+        "benchmark": "95%",
+        "unit": "% population with health insurance"
       }
     },
     "diagnostic": {
@@ -214,9 +302,10 @@ const CITIES = {
     "name": "New York City",
     "state": "NY",
     "population": "8.3M residents",
-    "cq": 51.6,
-    "pillar1": 69.7,
+    "cq": 52.2,
+    "pillar1": 72.1,
     "pillar2": 29.4,
+    "pillar3": null,
     "metrics": {
       "residential_stability": {
         "score": 93.1,
@@ -232,6 +321,13 @@ const CITIES = {
         "benchmark": "10 / 10k",
         "unit": "human services nonprofits per 10k"
       },
+      "housing_cost_burden": {
+        "score": 91.4,
+        "raw": 77.65,
+        "rawFmt": "77.7%",
+        "benchmark": "85%",
+        "unit": "% households not cost-burdened"
+      },
       "fqhc": {
         "score": 32.9,
         "raw": 4.93,
@@ -245,6 +341,20 @@ const CITIES = {
         "rawFmt": "2.02",
         "benchmark": "8 / 10k",
         "unit": "health/MH/food nonprofits per 10k"
+      },
+      "snap_coverage": {
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
+        "benchmark": "85%",
+        "unit": "% SNAP coverage among poverty households"
+      },
+      "health_insurance": {
+        "score": 98.2,
+        "raw": 93.26,
+        "rawFmt": "93.3%",
+        "benchmark": "95%",
+        "unit": "% population with health insurance"
       }
     },
     "diagnostic": {

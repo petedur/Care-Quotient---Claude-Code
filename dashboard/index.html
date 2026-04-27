@@ -19,6 +19,7 @@
       --border:    #E2E8F0;
       --p1:        #C2410C;   /* Pillar 1 — Social — terra cotta */
       --p2:        #1D4ED8;   /* Pillar 2 — Institutions — blue  */
+      --p3:        #0F766E;   /* Pillar 3 — Reach — teal         */
       --track:     #E2E8F0;
       --radius:    12px;
       --shadow:    0 1px 3px rgba(0,0,0,.07), 0 4px 12px rgba(0,0,0,.05);
@@ -254,6 +255,7 @@
     }
     .pillar-tag.p1 { background: #FEF3EC; color: var(--p1); }
     .pillar-tag.p2 { background: #EFF6FF; color: var(--p2); }
+    .pillar-tag.p3 { background: #F0FDFA; color: var(--p3); }
 
     .metric-name {
       font-size: .95rem;
@@ -751,7 +753,49 @@ const METRICS = {
         "Mirae Kim and Edward Jennings found that nonprofit human service density at the county level correlates with lower poverty rates and better health outcomes, with particularly strong effects for health and food organizations serving low-income populations. Sarah Pettijohn and Elizabeth Boris documented the direct care role of these nonprofits for populations that cannot access formal healthcare or government food programs.",
         "As with all IRS-based measures, registration does not guarantee activity or impact — but the density of registered organizations reflects the depth of a city's organized care sector."
       ],
-      limitation: "Limitation: Combining health (E), mental health (F), and food (K) into one metric conflates distinct missions. A city could score well with concentrated hospital infrastructure and minimal mental health or food coverage. V2 will report these as separate sub-metrics."
+      limitation: "Limitation: Combining health (E), mental health (F), and food (K) into one metric conflates distinct missions. A city could score well with concentrated hospital infrastructure and minimal mental health or food coverage. V3 will report these as separate sub-metrics."
+    }
+  },
+  housing_cost_burden: {
+    name: "Housing Affordability",
+    pillar: 1,
+    pillarName: "Social Support & Connection",
+    modal: {
+      benchmark: "Benchmark: 85% not cost-burdened — a city where only 15% of households spend more than 30% of income on housing. This represents a well-functioning housing market that does not trap residents.",
+      body: [
+        "This metric measures the share of households that are NOT spending more than 30% of household income on housing costs — combining renters and homeowners. It acts as a counter-weight to residential stability: high stability paired with high cost burden may indicate forced immobility rather than genuine community embeddedness.",
+        "Agha et al. (2024) demonstrate that housing cost burden's effect on social capital is mediated through stability — financial stress suppresses community participation and network formation. Matthew Desmond's research establishes that high cost burden triggers eviction risk, forced moves, and erosion of care networks.",
+        "Cities where people stay but can barely afford to do so are not building the same quality of social fabric as cities where stability is chosen. The 12% weight within Pillar 1 reflects cost burden's role as a validity check on the stability signal, not an independent dimension of care capacity."
+      ],
+      limitation: "Limitation: The Census methodology excludes households with zero or negative income ('not computed'), which can produce lower apparent burden rates than commonly cited HUD figures. Relative city rankings are valid; absolute percentages should not be compared to external sources without this caveat."
+    }
+  },
+  snap_coverage: {
+    name: "SNAP Coverage Rate",
+    pillar: 3,
+    pillarName: "Reach",
+    modal: {
+      benchmark: "Benchmark: 85% — the USDA Food and Nutrition Service national participation target. Strong-performing states regularly achieve 80–90%+ of eligible households enrolled.",
+      body: [
+        "This metric measures whether food assistance systems actually connect with the population in poverty. It computes the ratio of SNAP-receiving households to poverty-level households — approximating what share of likely-eligible households are enrolled in food support.",
+        "A city with 15% of households receiving SNAP and 15% of the population in poverty scores near 100%; a city with 15% SNAP receipt but 25% poverty scores around 60%, indicating the system is not reaching a large share of eligible people.",
+        "SNAP coverage is the most direct measure of care system reach available from national data. It captures whether the infrastructure exists to connect vulnerable residents to food support — and whether it's actually doing so."
+      ],
+      limitation: "Limitation: SNAP eligibility is technically defined at 130% of the federal poverty line; this metric uses 100% FPL poverty data as an approximation, which may overstate coverage rates in cities with large near-poverty populations. V3 will use 130% FPL estimates when available."
+    }
+  },
+  health_insurance: {
+    name: "Health Insurance Coverage",
+    pillar: 3,
+    pillarName: "Reach",
+    modal: {
+      benchmark: "Benchmark: 95% — near-universal coverage. States with full Medicaid expansion and strong ACA marketplace enrollment achieve 94–97% coverage of the civilian noninstitutional population.",
+      body: [
+        "Health insurance coverage measures whether people can actually access health systems when they need care. We compute the percentage of the civilian noninstitutional population with any form of health insurance (employer-based, Medicaid/CHIP, ACA marketplace, Medicare, or other).",
+        "Even in cities with high FQHC density (Pillar 2), uninsured residents face structural barriers to accessing routine and preventive care. Coverage gaps cluster in low-income and immigrant communities — the same populations that care infrastructure is designed to serve.",
+        "This metric captures a different dimension of reach than SNAP: not whether a specific program is connecting with eligible people, but whether the population has the basic means to engage with health systems at all."
+      ],
+      limitation: "Limitation: Coverage reflects state-level Medicaid expansion decisions as much as local care infrastructure. Texas did not expand Medicaid under the ACA, contributing significantly to Houston's lower score here. V3 will separate Medicaid enrollment from private coverage to better isolate local infrastructure from state policy."
     }
   }
 };
@@ -802,14 +846,21 @@ function renderCity(key) {
     b.classList.toggle('active', b.dataset.city === key);
   });
 
-  const metricOrder = ['residential_stability', 'social_support', 'fqhc', 'care_institutions'];
+  const metricOrder = [
+    'residential_stability', 'social_support', 'housing_cost_burden',
+    'fqhc', 'care_institutions',
+    'snap_coverage', 'health_insurance'
+  ];
+
+  const pillarColor = p => p === 1 ? 'var(--p1)' : p === 2 ? 'var(--p2)' : 'var(--p3)';
+  const pillarClass = p => p === 1 ? 'p1' : p === 2 ? 'p2' : 'p3';
 
   const cards = metricOrder.map(mKey => {
     const m = city.metrics[mKey];
+    if (!m) return '';
     const meta = METRICS[mKey];
-    const pClass = meta.pillar === 1 ? 'p1' : 'p2';
+    const pClass = pillarClass(meta.pillar);
     const gaugeId = `arc-${mKey}-${key}`;
-    const offset = CIRC - (m.score / 100) * CIRC;
 
     return `
       <div class="metric-card" onclick="openModal('${mKey}','${key}')">
@@ -819,7 +870,7 @@ function renderCity(key) {
           <svg class="gauge-svg" viewBox="0 0 100 100" width="90" height="90">
             <circle class="gauge-track" cx="50" cy="50" r="38" fill="none" stroke-width="8"/>
             <circle class="gauge-arc" id="${gaugeId}" cx="50" cy="50" r="38"
-              fill="none" stroke="${meta.pillar === 1 ? 'var(--p1)' : 'var(--p2)'}" stroke-width="8"
+              fill="none" stroke="${pillarColor(meta.pillar)}" stroke-width="8"
               transform="rotate(-90 50 50)"
               stroke-dasharray="${CIRC}"
               stroke-dashoffset="${CIRC}"/>
@@ -879,8 +930,8 @@ function renderCity(key) {
   requestAnimationFrame(() => {
     metricOrder.forEach(mKey => {
       const arc = document.getElementById(`arc-${mKey}-${key}`);
-      const score = city.metrics[mKey].score;
-      if (arc) arc.style.strokeDashoffset = CIRC - (score / 100) * CIRC;
+      const m = city.metrics[mKey];
+      if (arc && m) arc.style.strokeDashoffset = CIRC - (m.score / 100) * CIRC;
     });
   });
 }
@@ -892,13 +943,19 @@ function renderComparison() {
     b.classList.toggle('active', b.dataset.city === 'compare');
   });
 
-  const metricOrder = ['residential_stability', 'social_support', 'fqhc', 'care_institutions'];
+  const metricOrder = [
+    'residential_stability', 'social_support', 'housing_cost_burden',
+    'fqhc', 'care_institutions',
+    'snap_coverage', 'health_insurance'
+  ];
   const cityKeys = Object.keys(CITIES);
+  const pillarColor = p => p === 1 ? 'var(--p1)' : p === 2 ? 'var(--p2)' : 'var(--p3)';
+  const pillarClass = p => p === 1 ? 'p1' : p === 2 ? 'p2' : 'p3';
 
   const cards = metricOrder.map(mKey => {
     const meta = METRICS[mKey];
-    const pClass = meta.pillar === 1 ? 'p1' : 'p2';
-    const color  = meta.pillar === 1 ? 'var(--p1)' : 'var(--p2)';
+    const pClass = pillarClass(meta.pillar);
+    const color  = pillarColor(meta.pillar);
 
     const sorted = cityKeys.map(ck => ({
       key: ck, name: CITIES[ck].name, score: CITIES[ck].metrics[mKey].score
@@ -950,7 +1007,7 @@ function renderComparison() {
     <div style="background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.5rem;margin-bottom:1rem;">
       <div style="font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;">Care Quotient — Overall Score</div>
       <div class="compare-rows" style="gap:.8rem">${cqRows}</div>
-      <div style="font-size:.72rem;color:var(--muted);margin-top:1rem;font-style:italic;">Click a city to see its full breakdown. CQ = 55% Social Support &amp; Connection + 45% Institutions of Care.</div>
+      <div style="font-size:.72rem;color:var(--muted);margin-top:1rem;font-style:italic;">Click a city to see its full breakdown. CQ = 40% Social Support &amp; Connection + 35% Institutions of Care + 25% Reach.</div>
     </div>
     <div class="compare-grid">${cards}</div>`;
 
@@ -965,19 +1022,16 @@ function renderComparison() {
 // ── MODAL ─────────────────────────────────────────────────────────────────────
 function openModal(metricKey, cityKey) {
   const meta = METRICS[metricKey];
-  const city = CITIES[cityKey];
-  const m = city.metrics[metricKey];
-  const pClass = meta.pillar === 1 ? 'p1' : 'p2';
+  const city = cityKey ? CITIES[cityKey] : null;
+  const m = city ? city.metrics[metricKey] : null;
+  const pClass = meta.pillar === 1 ? 'p1' : meta.pillar === 2 ? 'p2' : 'p3';
 
-  const cityStatBlock = cityKey ? (() => {
-    const city = CITIES[cityKey];
-    const m = city.metrics[metricKey];
-    return `<div class="modal-city-stat">
+  const cityStatBlock = (city && m) ? `
+    <div class="modal-city-stat">
       <div class="modal-city-stat-label">${city.name}</div>
       <div class="modal-city-stat-value">${Math.round(m.score)} / 100</div>
       <div class="modal-city-stat-sub">${m.rawFmt} ${m.unit} &mdash; benchmark ${m.benchmark}</div>
-    </div>`;
-  })() : '';
+    </div>` : '';
 
   document.getElementById('modalContent').innerHTML = `
     <div class="modal-pillar-tag">

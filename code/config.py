@@ -158,6 +158,38 @@ NTEE_ALL_CARE = list(set(NTEE_SOCIAL_SUPPORT + NTEE_CARE_INSTITUTIONS + NTEE_FAI
 
 # ── Census ACS variables ──────────────────────────────────────────────────────
 CENSUS_ACS_VARIABLES = {
-    "same_house_1yr": "B07003_004E",   # Population in same house 1 year ago (residential stability proxy)
+    # Residential stability (B07003)
+    "same_house_1yr":   "B07003_004E",  # Population in same house 1 year ago
     "total_population": "B01003_001E",
+
+    # Housing cost burden — renters (B25070)
+    "renter_total":           "B25070_001E",
+    "renter_not_computed":    "B25070_011E",
+    "renter_burden_30_34":    "B25070_007E",
+    "renter_burden_35_39":    "B25070_008E",
+    "renter_burden_40_49":    "B25070_009E",
+    "renter_burden_50plus":   "B25070_010E",
+    # Housing cost burden — owners with mortgage (B25091)
+    "owner_mtg_total":        "B25091_002E",
+    "owner_mtg_not_computed": "B25091_012E",
+    "owner_mtg_burden_30_34": "B25091_008E",
+    "owner_mtg_burden_35_39": "B25091_009E",
+    "owner_mtg_burden_40_49": "B25091_010E",
+    "owner_mtg_burden_50plus": "B25091_011E",
+    # Housing cost burden — owners without mortgage (B25091)
+    "owner_no_mtg_total":        "B25091_013E",
+    "owner_no_mtg_not_computed": "B25091_023E",
+    "owner_no_mtg_burden_30_34": "B25091_019E",
+    "owner_no_mtg_burden_35_39": "B25091_020E",
+    "owner_no_mtg_burden_40_49": "B25091_021E",
+    "owner_no_mtg_burden_50plus": "B25091_022E",
+
+    # SNAP participation (B22001, B17001)
+    "snap_total_households": "B22001_001E",
+    "snap_households":       "B22001_002E",
+    "poverty_total_pop":     "B17001_001E",
+    "poverty_pop":           "B17001_002E",
+
+    # Health insurance coverage (B27001) — total + 18 uninsured cells
+    "health_ins_total_pop":  "B27001_001E",
 }

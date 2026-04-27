@@ -1,7 +1,8 @@
 {
   "boston": {
-    "pillar1_social_support": 75.5,
+    "pillar1_social_support": 77.8,
     "pillar2_institutions_of_care": 64.6,
+    "pillar3_reach": null,
     "metrics": {
       "Residential Stability": {
         "score": 84.7,
@@ -15,6 +16,12 @@
         "benchmark": 10.0,
         "pillar": "Social Support & Connection"
       },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 95.6,
+        "raw_value": 81.24,
+        "benchmark": 85.0,
+        "pillar": "Social Support & Connection"
+      },
       "FQHCs (per 100k)": {
         "score": 64.1,
         "raw_value": 9.62,
@@ -26,13 +33,26 @@
         "raw_value": 5.21,
         "benchmark": 8.0,
         "pillar": "Institutions of Care"
+      },
+      "SNAP Coverage Rate": {
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 100.0,
+        "raw_value": 96.52,
+        "benchmark": 95.0,
+        "pillar": "Reach"
       }
     },
-    "care_quotient": 70.6
+    "care_quotient": 71.6
   },
   "chicago": {
-    "pillar1_social_support": 75.5,
+    "pillar1_social_support": 77.6,
     "pillar2_institutions_of_care": 43.0,
+    "pillar3_reach": null,
     "metrics": {
       "Residential Stability": {
         "score": 91.5,
@@ -46,6 +66,12 @@
         "benchmark": 10.0,
         "pillar": "Social Support & Connection"
       },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 94.1,
+        "raw_value": 79.97,
+        "benchmark": 85.0,
+        "pillar": "Social Support & Connection"
+      },
       "FQHCs (per 100k)": {
         "score": 47.9,
         "raw_value": 7.19,
@@ -57,13 +83,26 @@
         "raw_value": 2.95,
         "benchmark": 8.0,
         "pillar": "Institutions of Care"
+      },
+      "SNAP Coverage Rate": {
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 95.8,
+        "raw_value": 90.99,
+        "benchmark": 95.0,
+        "pillar": "Reach"
       }
     },
-    "care_quotient": 60.9
+    "care_quotient": 61.5
   },
   "houston": {
-    "pillar1_social_support": 83.0,
+    "pillar1_social_support": 85.0,
     "pillar2_institutions_of_care": 35.1,
+    "pillar3_reach": null,
     "metrics": {
       "Residential Stability": {
         "score": 88.6,
@@ -77,6 +116,12 @@
         "benchmark": 10.0,
         "pillar": "Social Support & Connection"
       },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 100.0,
+        "raw_value": 86.2,
+        "benchmark": 85.0,
+        "pillar": "Social Support & Connection"
+      },
       "FQHCs (per 100k)": {
         "score": 29.2,
         "raw_value": 4.38,
@@ -88,13 +133,26 @@
         "raw_value": 3.38,
         "benchmark": 8.0,
         "pillar": "Institutions of Care"
+      },
+      "SNAP Coverage Rate": {
+        "score": 98.9,
+        "raw_value": 84.03,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 82.9,
+        "raw_value": 78.78,
+        "benchmark": 95.0,
+        "pillar": "Reach"
       }
     },
-    "care_quotient": 61.4
+    "care_quotient": 61.7
   },
   "los_angeles": {
-    "pillar1_social_support": 69.3,
+    "pillar1_social_support": 72.5,
     "pillar2_institutions_of_care": 33.4,
+    "pillar3_reach": null,
     "metrics": {
       "Residential Stability": {
         "score": 94.2,
@@ -108,6 +166,12 @@
         "benchmark": 10.0,
         "pillar": "Social Support & Connection"
       },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 97.5,
+        "raw_value": 82.91,
+        "benchmark": 85.0,
+        "pillar": "Social Support & Connection"
+      },
       "FQHCs (per 100k)": {
         "score": 43.1,
         "raw_value": 6.46,
@@ -119,13 +183,26 @@
         "raw_value": 1.72,
         "benchmark": 8.0,
         "pillar": "Institutions of Care"
+      },
+      "SNAP Coverage Rate": {
+        "score": 98.5,
+        "raw_value": 83.7,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 95.8,
+        "raw_value": 90.99,
+        "benchmark": 95.0,
+        "pillar": "Reach"
       }
     },
-    "care_quotient": 53.1
+    "care_quotient": 54.3
   },
   "nyc": {
-    "pillar1_social_support": 69.7,
+    "pillar1_social_support": 72.1,
     "pillar2_institutions_of_care": 29.4,
+    "pillar3_reach": null,
     "metrics": {
       "Residential Stability": {
         "score": 93.1,
@@ -139,6 +216,12 @@
         "benchmark": 10.0,
         "pillar": "Social Support & Connection"
       },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 91.4,
+        "raw_value": 77.65,
+        "benchmark": 85.0,
+        "pillar": "Social Support & Connection"
+      },
       "FQHCs (per 100k)": {
         "score": 32.9,
         "raw_value": 4.93,
@@ -150,8 +233,20 @@
         "raw_value": 2.02,
         "benchmark": 8.0,
         "pillar": "Institutions of Care"
+      },
+      "SNAP Coverage Rate": {
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 98.2,
+        "raw_value": 93.26,
+        "benchmark": 95.0,
+        "pillar": "Reach"
       }
     },
-    "care_quotient": 51.6
+    "care_quotient": 52.2
   }
 }

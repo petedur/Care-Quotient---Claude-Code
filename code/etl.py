@@ -145,11 +145,68 @@ def load_health_centers(conn, city_key: str):
     print(f"  health_center_density loaded for {city_key}: {count} FQHCs")
 
 
+def load_housing_cost_burden(conn, city_key: str):
+    raw = DATA_RAW / city_key / "housing_cost_burden.csv"
+    if not raw.exists():
+        print(f"  SKIP housing_cost_burden for {city_key} (no raw file)")
+        return
+
+    import pandas as pd
+    df = pd.read_csv(raw)
+    total_burdened = df["burdened"].sum()
+    total_hh       = df["total"].sum()
+    pct_not_burdened = round((1 - total_burdened / total_hh) * 100, 2) if total_hh else 0
+
+    upsert(conn, city_key, "housing_cost_burden", "pct_not_burdened", value=pct_not_burdened)
+    print(f"  housing_cost_burden loaded for {city_key}: {pct_not_burdened}% not burdened")
+
+
+def load_snap_participation(conn, city_key: str):
+    raw = DATA_RAW / city_key / "snap_participation.csv"
+    if not raw.exists():
+        print(f"  SKIP snap_participation for {city_key} (no raw file)")
+        return
+
+    import pandas as pd
+    df = pd.read_csv(raw)
+    total_snap = df["snap_households"].sum()
+    total_hh   = df["total_households"].sum()
+    total_pov  = df["poverty_pop"].sum()
+    total_pop  = df["total_pop"].sum()
+
+    snap_rate    = total_snap / total_hh if total_hh else 0
+    poverty_rate = total_pov / total_pop if total_pop else 0
+    coverage = round(min((snap_rate / poverty_rate) * 100, 100.0), 2) \
+        if poverty_rate > 0 else 0.0
+
+    upsert(conn, city_key, "snap_participation", "coverage_rate", value=coverage)
+    print(f"  snap_participation loaded for {city_key}: {coverage}% coverage rate")
+
+
+def load_health_insurance(conn, city_key: str):
+    raw = DATA_RAW / city_key / "health_insurance.csv"
+    if not raw.exists():
+        print(f"  SKIP health_insurance_coverage for {city_key} (no raw file)")
+        return
+
+    import pandas as pd
+    df = pd.read_csv(raw)
+    total_pop     = df["total_pop"].sum()
+    total_insured = df["insured"].sum()
+    pct_insured   = round(total_insured / total_pop * 100, 2) if total_pop else 0
+
+    upsert(conn, city_key, "health_insurance_coverage", "pct_insured", value=pct_insured)
+    print(f"  health_insurance_coverage loaded for {city_key}: {pct_insured}% insured")
+
+
 LOADERS = [
     load_nonprofit_density,
     load_residential_stability,
     load_library_density,
     load_health_centers,
+    load_housing_cost_burden,
+    load_snap_participation,
+    load_health_insurance,
 ]
 
 # ── Validation ────────────────────────────────────────────────────────────────
@@ -171,14 +228,23 @@ VALIDATION_RULES = [
     # Library density: per 100k — 0 possible; 50 would be anomalous
     ("library_density",       "density_per_100k",  0.0,   50.0),
     ("library_density",       "visits_per_capita", 0.0, 1000.0),
+    # Housing cost burden: % not burdened — must be 0–100
+    ("housing_cost_burden",       "pct_not_burdened", 0.0, 100.0),
+    # SNAP coverage rate: 0–100 (capped in collector)
+    ("snap_participation",        "coverage_rate",    0.0, 100.0),
+    # Health insurance: % insured — must be 0–100
+    ("health_insurance_coverage", "pct_insured",      0.0, 100.0),
 ]
 
 # Scored metrics that must be present for every city; missing = pipeline gap
 REQUIRED_SCORED = [
-    ("residential_stability", "pct_same_house"),
-    ("nonprofit_density",     "social_support"),
-    ("nonprofit_density",     "care_institutions"),
-    ("health_center_density", "density_per_100k"),
+    ("residential_stability",     "pct_same_house"),
+    ("nonprofit_density",         "social_support"),
+    ("nonprofit_density",         "care_institutions"),
+    ("health_center_density",     "density_per_100k"),
+    ("housing_cost_burden",       "pct_not_burdened"),
+    ("snap_participation",        "coverage_rate"),
+    ("health_insurance_coverage", "pct_insured"),
 ]
 
 
