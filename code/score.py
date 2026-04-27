@@ -26,7 +26,7 @@ import duckdb
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from config import DB_PATH, PROJECT_ROOT
+from config import DB_PATH, PROJECT_ROOT, CITIES as CITY_CONFIG
 
 OUTPUTS_DIR = PROJECT_ROOT / "outputs"
 OUTPUTS_DIR.mkdir(exist_ok=True)
@@ -272,6 +272,132 @@ def write_results(conn, results: pd.DataFrame, raw_df: pd.DataFrame):
     with open(json_path, "w") as f:
         json.dump(output, f, indent=2)
     print(f"  JSON saved to {json_path}")
+
+    # ── Dashboard data.js ─────────────────────────────────────────────────────
+    # Generates dashboard/data.js so the site always reflects the latest run.
+    # The dashboard loads this file instead of hardcoding city data.
+    write_dashboard_data(output, raw_df)
+
+
+# ── Dashboard metric display config ──────────────────────────────────────────
+# Maps internal metric keys to the display format expected by the dashboard JS.
+DASHBOARD_METRICS = {
+    "residential_stability": {
+        "key": "residential_stability",
+        "raw_key": ("residential_stability", "pct_same_house"),
+        "benchmark": "95%", "unit": "% same house 1+ yr",
+        "fmt": lambda v: f"{v:.1f}%",
+    },
+    "social_support": {
+        "key": "social_support",
+        "raw_key": ("nonprofit_density", "social_support"),
+        "benchmark": "10 / 10k", "unit": "human services nonprofits per 10k",
+        "fmt": lambda v: f"{v:.2f}",
+    },
+    "fqhc": {
+        "key": "fqhc",
+        "raw_key": ("health_center_density", "density_per_100k"),
+        "benchmark": "15 / 100k", "unit": "FQHCs per 100,000 residents",
+        "fmt": lambda v: f"{v:.2f}",
+    },
+    "care_institutions": {
+        "key": "care_institutions",
+        "raw_key": ("nonprofit_density", "care_institutions"),
+        "benchmark": "8 / 10k", "unit": "health/MH/food nonprofits per 10k",
+        "fmt": lambda v: f"{v:.2f}",
+    },
+}
+
+DASHBOARD_DIAGNOSTIC = {
+    "libraries":   ("library_density",   "density_per_100k",  "libraries per 100k"),
+    "lib_visits":  ("library_density",   "visits_per_capita", "library visits per capita"),
+    "faith_based": ("nonprofit_density", "faith_based",       "faith-based orgs per 10k (X3x)"),
+}
+
+# City display metadata (population string, etc.) not stored in DuckDB
+CITY_DISPLAY = {
+    "nyc":         {"state": "NY", "population": "8.3M residents"},
+    "chicago":     {"state": "IL", "population": "2.7M residents"},
+    "los_angeles": {"state": "CA", "population": "3.9M residents"},
+    "houston":     {"state": "TX", "population": "2.3M residents"},
+    "boston":      {"state": "MA", "population": "676k residents"},
+}
+
+# Score key mapping: dashboard metric key -> score.py results column name
+SCORE_COL = {
+    "residential_stability": "score_residential_stability.pct_same_house",
+    "social_support":        "score_nonprofit_density.social_support",
+    "fqhc":                  "score_health_center_density.density_per_100k",
+    "care_institutions":     "score_nonprofit_density.care_institutions",
+}
+
+
+def write_dashboard_data(score_output: dict, raw_df: pd.DataFrame):
+    """
+    Write dashboard/data.js from the current scored output.
+    The dashboard loads this file so city data is never hardcoded in index.html.
+
+    raw_df: the full metrics DataFrame already loaded from DuckDB (avoids
+    opening a second connection while the main connection is still open).
+    """
+    dashboard_dir = PROJECT_ROOT / "dashboard"
+    dashboard_dir.mkdir(exist_ok=True)
+
+    cities_js = {}
+    for city_key, city_scores in score_output.items():
+        display = CITY_DISPLAY.get(city_key, {"state": "", "population": ""})
+        cfg = CITY_CONFIG.get(city_key, {})
+
+        metrics = {}
+        for dash_key, meta in DASHBOARD_METRICS.items():
+            label = METRIC_LABELS.get(
+                f"{meta['raw_key'][0]}.{meta['raw_key'][1]}", dash_key
+            )
+            m = city_scores.get("metrics", {}).get(label, {})
+            raw = m.get("raw_value", 0) or 0
+            metrics[dash_key] = {
+                "score": m.get("score", 0),
+                "raw":   raw,
+                "rawFmt": meta["fmt"](raw),
+                "benchmark": meta["benchmark"],
+                "unit": meta["unit"],
+            }
+
+        cities_js[city_key] = {
+            "name":       cfg.get("name", city_key),
+            "state":      display["state"],
+            "population": display["population"],
+            "cq":         city_scores.get("care_quotient", 0),
+            "pillar1":    city_scores.get("pillar1_social_support", 0),
+            "pillar2":    city_scores.get("pillar2_institutions_of_care", 0),
+            "metrics":    metrics,
+            "diagnostic": {},  # filled below
+        }
+
+    for city_key in cities_js:
+        diag = {}
+        for dash_key, (metric, sub_metric, unit) in DASHBOARD_DIAGNOSTIC.items():
+            rows = raw_df[
+                (raw_df["city"] == city_key) &
+                (raw_df["metric"] == metric) &
+                (raw_df["sub_metric"] == sub_metric)
+            ]["value"].values
+            diag[dash_key] = {
+                "value": f"{rows[0]:.2f}" if len(rows) else "n/a",
+                "unit":  unit,
+            }
+        cities_js[city_key]["diagnostic"] = diag
+
+    # Write data.js
+    data_js_path = dashboard_dir / "data.js"
+    js_content = (
+        "// Auto-generated by score.py — do not edit manually.\n"
+        "// Re-run `python code/score.py` (or `python code/pipeline.py`) to update.\n\n"
+        f"const CITIES = {json.dumps(cities_js, indent=2)};\n"
+    )
+    with open(data_js_path, "w", encoding="utf-8") as f:
+        f.write(js_content)
+    print(f"  Dashboard data written to {data_js_path}")
 
 
 def run():

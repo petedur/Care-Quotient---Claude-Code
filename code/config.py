@@ -13,8 +13,16 @@ load_dotenv(_PROJECT_ROOT / ".env")
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
 
-PROJECT_ROOT        = _PROJECT_ROOT
-DOWNLOADED_DATA     = Path(r"C:\Users\peter\OneDrive\Documents\Coding\Vibecoding\VS Code Projects\PP\Downloaded Data")
+PROJECT_ROOT = _PROJECT_ROOT
+
+# DOWNLOADED_DATA: override via env var CCI_DATA_DIR, else default to a sibling
+# "Downloaded Data" folder next to the project root.
+# Set CCI_DATA_DIR in your .env or shell to point at your local downloads folder.
+_data_dir_env = os.environ.get("CCI_DATA_DIR")
+DOWNLOADED_DATA = Path(_data_dir_env) if _data_dir_env else (
+    _PROJECT_ROOT.parent / "Downloaded Data"
+)
+
 DATA_RAW            = PROJECT_ROOT / "data" / "raw"
 DATA_PROCESSED      = PROJECT_ROOT / "data" / "processed"
 DB_PATH             = PROJECT_ROOT / "data" / "care_capacity.duckdb"
@@ -38,9 +46,16 @@ HRSA_DATA_PATH      = DOWNLOADED_DATA / "Health_Center_Service_Delivery_and_Look
 
 # ── API Keys ──────────────────────────────────────────────────────────────────
 
-CENSUS_API_KEY = os.environ.get("CENSUS_API_KEY")
-if not CENSUS_API_KEY:
-    raise EnvironmentError("CENSUS_API_KEY not set. Copy .env.example to .env and add your key.")
+# Lazy accessor — raises only when actually called by a collector, not at import.
+# score.py and etl.py import config but don't need the Census key, so this avoids
+# breaking those scripts when running without a .env file.
+def get_census_api_key() -> str:
+    key = os.environ.get("CENSUS_API_KEY")
+    if not key:
+        raise EnvironmentError(
+            "CENSUS_API_KEY not set. Copy .env.example to .env and add your key."
+        )
+    return key
 
 # ── City definitions ──────────────────────────────────────────────────────────
 # Each city entry contains everything needed to filter national datasets.

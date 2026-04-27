@@ -14,7 +14,7 @@ import pandas as pd
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from config import CENSUS_API_KEY, DATA_RAW, CITIES, CENSUS_ACS_VARIABLES
+from config import get_census_api_key, DATA_RAW, CITIES, CENSUS_ACS_VARIABLES
 
 ACS_URL = "https://api.census.gov/data/2022/acs/acs5"
 
@@ -22,7 +22,7 @@ ACS_URL = "https://api.census.gov/data/2022/acs/acs5"
 def _get(variables: list, state_fips: str, county_fips: str) -> list:
     """Single Census API request for a list of variables for one county."""
     params = {
-        "key": CENSUS_API_KEY,
+        "key": get_census_api_key(),
         "get": ",".join(variables),
         "for": f"county:{county_fips}",
         "in":  f"state:{state_fips}",
