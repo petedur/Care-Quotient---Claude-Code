@@ -77,15 +77,41 @@ OUTPUTS_DIR.mkdir(exist_ok=True)
 #   with faith-affiliated P/E/K registrations. See methodology.md.
 
 SCORED_METRICS = [
-    # (metric, sub_metric, pillar, benchmark)
-    # Pillar 1 — Social Support & Connection
-    ("residential_stability", "pct_same_house",    "pillar1", 95.0),
-    ("nonprofit_density",     "social_support",    "pillar1", 10.0),
+    # (metric, sub_metric, pillar, benchmark, within_pillar_weight)
+    #
+    # Within-pillar weights reflect the relative strength of evidence and
+    # philosophical primacy of each metric within its pillar.
+    #
+    # Pillar 1 — Social Support & Connection (55% of CQ)
+    #   Residential stability: 55% — foundational precondition for network formation.
+    #     Putnam (2000) and Sampson et al. (1997) establish it as the primary
+    #     structural driver of all other forms of social capital.
+    #   Human services nonprofits: 45% — organized expression of civic caring.
+    #
+    # Pillar 2 — Institutions of Care (45% of CQ)
+    #   FQHCs: 55% — strongest evidence base; federal mandate; most directly
+    #     serves vulnerable populations. Rosenbaum et al. (2011); Shi et al.
+    #   Health/MH/Food nonprofits: 45% — broader institutional coverage,
+    #     noisier signal than FQHCs.
+    #
+    # Inter-pillar weights: 55% Social / 45% Institutional
+    #   Care ethics tradition (Gilligan 1982, Noddings 1984) holds caring is
+    #   fundamentally relational — the social fabric is primary. But Nussbaum's
+    #   capabilities approach demands institutional infrastructure as a necessary
+    #   condition. 55/45 honors both with a modest tilt toward the relational.
+    #   Weights are judgment-based in V1; V2 will derive empirically via
+    #   regression against care outcomes across 100 cities.
 
-    # Pillar 2 — Institutions of Care
-    ("health_center_density", "density_per_100k",  "pillar2", 15.0),
-    ("nonprofit_density",     "care_institutions", "pillar2",  8.0),
+    ("residential_stability", "pct_same_house",    "pillar1", 95.0, 0.55),
+    ("nonprofit_density",     "social_support",    "pillar1", 10.0, 0.45),
+
+    # Pillar 2 — Institutions of Care (45% of CQ)
+    ("health_center_density", "density_per_100k",  "pillar2", 15.0, 0.55),
+    ("nonprofit_density",     "care_institutions", "pillar2",  8.0, 0.45),
 ]
+
+# Inter-pillar weights for the Care Quotient
+PILLAR_WEIGHTS = {"pillar1": 0.55, "pillar2": 0.45}
 
 # Diagnostic metrics — collected and reported, not scored
 DIAGNOSTIC_METRICS = [
@@ -132,7 +158,7 @@ def score(df: pd.DataFrame) -> pd.DataFrame:
     results = pd.DataFrame(index=wide.index)
 
     # Score each metric against its absolute benchmark
-    for metric, sub_metric, pillar, benchmark in SCORED_METRICS:
+    for metric, sub_metric, pillar, benchmark, w in SCORED_METRICS:
         key = f"{metric}.{sub_metric}"
         if key not in wide.columns:
             print(f"  WARNING: missing metric '{key}' — skipping")
@@ -140,15 +166,27 @@ def score(df: pd.DataFrame) -> pd.DataFrame:
         col = f"score_{key}"
         results[col] = wide[key].apply(lambda v: normalize_to_benchmark(v, benchmark))
 
-    # Pillar averages (simple mean of constituent metric scores — for context only)
+    # Weighted pillar scores
     for pillar in ["pillar1", "pillar2"]:
-        pillar_cols = [
-            f"score_{m}.{s}"
-            for m, s, p, _ in SCORED_METRICS
-            if p == pillar and f"score_{m}.{s}" in results.columns
-        ]
-        if pillar_cols:
-            results[pillar] = results[pillar_cols].mean(axis=1).round(1)
+        pillar_metrics = [(m, s, w) for m, s, p, _, w in SCORED_METRICS if p == pillar]
+        available = [(m, s, w) for m, s, w in pillar_metrics
+                     if f"score_{m}.{s}" in results.columns]
+        if not available:
+            results[pillar] = float("nan")
+            continue
+        total_w = sum(w for _, _, w in available)
+        results[pillar] = sum(
+            results[f"score_{m}.{s}"] * (w / total_w)
+            for m, s, w in available
+        ).round(1)
+
+    # Care Quotient — weighted average of pillar scores
+    available_pillars = [(p, w) for p, w in PILLAR_WEIGHTS.items()
+                         if p in results.columns]
+    total_pw = sum(w for _, w in available_pillars)
+    results["care_quotient"] = sum(
+        results[p] * (w / total_pw) for p, w in available_pillars
+    ).round(1)
 
     return results
 
@@ -160,10 +198,17 @@ def write_results(conn, results: pd.DataFrame, raw_df: pd.DataFrame):
     conn.execute("CREATE TABLE scores AS SELECT * FROM results")
 
     # ── Terminal summary ──────────────────────────────────────────────────────
-    print("\n-- Care Capacity Index: Per-Metric Scores (0-100 vs. benchmark) --\n")
+    # CQ summary
+    if "care_quotient" in results.columns:
+        print("\n-- Care Quotient (CQ) --")
+        cq_sorted = results["care_quotient"].sort_values(ascending=False)
+        for city, cq in cq_sorted.items():
+            print(f"  {city:<15} {cq:.1f}")
+
+    print("\n-- Per-Metric Scores (0-100 vs. benchmark) --\n")
 
     pillar_groups = {}
-    for metric, sub_metric, pillar, benchmark in SCORED_METRICS:
+    for metric, sub_metric, pillar, benchmark, w in SCORED_METRICS:
         pillar_groups.setdefault(pillar, []).append((metric, sub_metric, benchmark))
 
     for pillar, metrics in pillar_groups.items():
@@ -185,11 +230,16 @@ def write_results(conn, results: pd.DataFrame, raw_df: pd.DataFrame):
         print()
 
     # ── CSV ───────────────────────────────────────────────────────────────────
-    score_cols = [f"score_{m}.{s}" for m, s, p, _ in SCORED_METRICS
+    score_cols = [f"score_{m}.{s}" for m, s, p, _, w in SCORED_METRICS
                   if f"score_{m}.{s}" in results.columns]
-    csv_out = results[score_cols].copy()
+    cq_col = ["care_quotient", "pillar1", "pillar2"] + score_cols
+    csv_out = results[[c for c in cq_col if c in results.columns]].copy()
     csv_out.index.name = "city"
-    csv_out.columns = [METRIC_LABELS.get(c.replace("score_", ""), c) for c in csv_out.columns]
+    csv_out = csv_out.sort_values("care_quotient", ascending=False)
+    rename = {"care_quotient": "Care Quotient", "pillar1": "Social Support & Connection",
+               "pillar2": "Institutions of Care"}
+    rename.update({c: METRIC_LABELS.get(c.replace("score_", ""), c) for c in score_cols})
+    csv_out.columns = [rename.get(c, c) for c in csv_out.columns]
     csv_path = OUTPUTS_DIR / "care_capacity_scores.csv"
     csv_out.to_csv(csv_path)
     print(f"  Scores saved to {csv_path}")
@@ -202,7 +252,7 @@ def write_results(conn, results: pd.DataFrame, raw_df: pd.DataFrame):
             "pillar2_institutions_of_care": results.loc[city, "pillar2"] if "pillar2" in results.columns else None,
             "metrics": {},
         }
-        for metric, sub_metric, pillar, benchmark in SCORED_METRICS:
+        for metric, sub_metric, pillar, benchmark, w in SCORED_METRICS:
             key = f"score_{metric}.{sub_metric}"
             label = METRIC_LABELS.get(f"{metric}.{sub_metric}", f"{metric}.{sub_metric}")
             raw_val = raw_df[
@@ -215,6 +265,8 @@ def write_results(conn, results: pd.DataFrame, raw_df: pd.DataFrame):
                 "benchmark": benchmark,
                 "pillar": PILLAR_LABELS[pillar],
             }
+        output[city]["care_quotient"] = float(results.loc[city, "care_quotient"]) \
+            if "care_quotient" in results.columns else None
 
     json_path = OUTPUTS_DIR / "care_capacity_scores.json"
     with open(json_path, "w") as f:
