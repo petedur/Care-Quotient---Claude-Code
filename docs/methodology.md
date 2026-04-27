@@ -196,6 +196,8 @@ All four sources are national, free, and scriptable. No city-specific open data 
 
 6. **Density vs. access**: Per-capita density measures presence, not accessibility. A health center in one part of a large city does not serve all residents equally.
 
+7. **Residential stability: chosen vs. forced immobility**: High residential stability can reflect embedded social networks (Putnam 2000; Sampson et al. 1997), but it can equally reflect economic immobility — poverty traps and exclusionary housing markets that prevent people from leaving even when conditions are poor. Census ACS data cannot distinguish between these interpretations. A neighborhood with 95% stability scores well on this metric regardless of whether that stability represents community attachment or lack of options. V2 will explore cross-referencing this metric with HUD cost-burden data and economic mobility indicators (e.g., Chetty et al. Opportunity Atlas) to better distinguish chosen from forced residential persistence.
+
 ---
 
 ## 10. Planned V2 Improvements

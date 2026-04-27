@@ -152,6 +152,88 @@ LOADERS = [
     load_health_centers,
 ]
 
+# ── Validation ────────────────────────────────────────────────────────────────
+# Each entry: (metric, sub_metric, min_valid, max_valid)
+# Checked after all loaders run. Failures are printed as WARNINGs — the
+# pipeline does not abort, but the scoring step will produce unreliable
+# results until flagged rows are investigated.
+
+VALIDATION_RULES = [
+    # Residential stability: a percentage — must be 0–100
+    ("residential_stability", "pct_same_house",    0.0,  100.0),
+    # Nonprofit density: per 10k — 0 is possible; 200 would be anomalous
+    ("nonprofit_density",     "social_support",    0.0,  200.0),
+    ("nonprofit_density",     "care_institutions", 0.0,  200.0),
+    ("nonprofit_density",     "faith_based",       0.0,  200.0),
+    ("nonprofit_density",     "all_care",          0.0,  500.0),
+    # FQHC density: per 100k — 0 is possible; 100 would be anomalous
+    ("health_center_density", "density_per_100k",  0.0,  100.0),
+    # Library density: per 100k — 0 possible; 50 would be anomalous
+    ("library_density",       "density_per_100k",  0.0,   50.0),
+    ("library_density",       "visits_per_capita", 0.0, 1000.0),
+]
+
+# Scored metrics that must be present for every city; missing = pipeline gap
+REQUIRED_SCORED = [
+    ("residential_stability", "pct_same_house"),
+    ("nonprofit_density",     "social_support"),
+    ("nonprofit_density",     "care_institutions"),
+    ("health_center_density", "density_per_100k"),
+]
+
+
+def validate(conn) -> bool:
+    """
+    Run schema and range checks on the loaded metrics table.
+    Prints warnings for any anomalies. Returns True if all checks pass.
+    """
+    import math
+
+    df = conn.execute(
+        "SELECT city, metric, sub_metric, value FROM metrics WHERE value IS NOT NULL"
+    ).fetchdf()
+
+    issues = []
+
+    # 1. Required scored metrics present for every city
+    for city_key in CITIES:
+        for metric, sub_metric in REQUIRED_SCORED:
+            rows = df[
+                (df["city"] == city_key) &
+                (df["metric"] == metric) &
+                (df["sub_metric"] == sub_metric)
+            ]
+            if rows.empty:
+                issues.append(
+                    f"MISSING  {city_key}: {metric}.{sub_metric} — city will be unscored"
+                )
+
+    # 2. Value type and range checks
+    for metric, sub_metric, lo, hi in VALIDATION_RULES:
+        subset = df[(df["metric"] == metric) & (df["sub_metric"] == sub_metric)]
+        for _, row in subset.iterrows():
+            v = row["value"]
+            city = row["city"]
+            if not isinstance(v, (int, float)) or math.isnan(v):
+                issues.append(
+                    f"NON-NUMERIC  {city}: {metric}.{sub_metric} = {v!r}"
+                )
+            elif not (lo <= v <= hi):
+                issues.append(
+                    f"OUT-OF-RANGE  {city}: {metric}.{sub_metric} = {v} "
+                    f"(expected {lo}–{hi})"
+                )
+
+    # Report
+    print("\n-- Validation --")
+    if not issues:
+        print("  All checks passed.")
+        return True
+    for msg in issues:
+        print(f"  WARNING: {msg}")
+    print(f"\n  {len(issues)} issue(s) found. Investigate before scoring.")
+    return False
+
 
 def run():
     conn = get_conn()
@@ -161,6 +243,8 @@ def run():
         print(f"-- {CITIES[city_key]['name']} --")
         for loader in LOADERS:
             loader(conn, city_key)
+
+    validate(conn)
 
     # Show summary
     print("\n-- Summary --")
