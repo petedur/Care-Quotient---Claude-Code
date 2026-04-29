@@ -24,6 +24,8 @@ from config import (
     IRS_DATA_PATH, IRS_STATE_TO_REGION, DATA_RAW, CITIES,
     NTEE_SOCIAL_SUPPORT, NTEE_CARE_INSTITUTIONS, NTEE_FAITH_BASED, NTEE_ALL_CARE,
 )
+from geo.zip_fips import normalize_zip
+from geo.city_zips import city_to_zips
 
 
 def find_irs_file(state: str) -> Path:
@@ -65,12 +67,14 @@ def _ntee_mask(series: pd.Series, codes: list) -> pd.Series:
     return mask
 
 
-def filter_city(df: pd.DataFrame, city_cfg: dict) -> pd.DataFrame:
-    city_names = [n.upper() for n in city_cfg["irs_city_names"]]
-    state = city_cfg["state"].upper()
+def filter_city(df: pd.DataFrame, city_key: str) -> pd.DataFrame:
+    """Filter IRS data to orgs whose ZIP falls within the city's ZCTA boundary."""
+    valid_zips = city_to_zips(city_key)
+    state = CITIES[city_key]["state"].upper()
+    normalized = df["ZIP"].apply(normalize_zip)
     return df[
-        df["CITY"].str.upper().isin(city_names) &
-        (df["STATE"].str.upper() == state)
+        (df["STATE"].str.upper() == state) &
+        normalized.isin(valid_zips)
     ].copy()
 
 
@@ -80,7 +84,7 @@ def collect(city_key: str = "nyc") -> dict:
     print(f"\n=== Nonprofit Density -- {city['name']} ===")
 
     df      = load_irs_data(city["state"])
-    city_df = filter_city(df, city)
+    city_df = filter_city(df, city_key)
     print(f"  {len(city_df)} total orgs in city")
 
     results = {}

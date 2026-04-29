@@ -1,252 +1,2994 @@
 {
-  "boston": {
-    "pillar1_social_support": 77.8,
-    "pillar2_institutions_of_care": 64.6,
-    "pillar3_reach": null,
+  "albuquerque": {
+    "pillar1_social_fabric": 83.1,
+    "pillar2_institutions_of_care": 20.8,
+    "pillar3_reach": 88.6,
     "metrics": {
       "Residential Stability": {
-        "score": 84.7,
-        "raw_value": 80.48,
+        "score": 88.3,
+        "raw_value": 83.85,
         "benchmark": 95.0,
-        "pillar": "Social Support & Connection"
-      },
-      "Human Services Nonprofits (per 10k)": {
-        "score": 64.2,
-        "raw_value": 6.42,
-        "benchmark": 10.0,
-        "pillar": "Social Support & Connection"
+        "pillar": "Social Fabric"
       },
       "Housing Affordability (% not cost-burdened)": {
-        "score": 95.6,
-        "raw_value": 81.24,
-        "benchmark": 85.0,
-        "pillar": "Social Support & Connection"
+        "score": 73.5,
+        "raw_value": 66.18,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 19.2,
+        "raw_value": 4.8,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 64.1,
-        "raw_value": 9.62,
+        "score": 22.5,
+        "raw_value": 3.37,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
-      "Health/MH/Food Nonprofits (per 10k)": {
-        "score": 65.1,
-        "raw_value": 5.21,
-        "benchmark": 8.0,
-        "pillar": "Institutions of Care"
-      },
-      "SNAP Coverage Rate": {
-        "score": 100.0,
-        "raw_value": 100.0,
-        "benchmark": 85.0,
+      "Health Insurance Coverage Rate": {
+        "score": 97.4,
+        "raw_value": 92.56,
+        "benchmark": 95.0,
         "pillar": "Reach"
       },
-      "Health Insurance Coverage Rate": {
-        "score": 100.0,
-        "raw_value": 96.52,
-        "benchmark": 95.0,
+      "SNAP Coverage Rate": {
+        "score": 72.4,
+        "raw_value": 61.58,
+        "benchmark": 85.0,
         "pillar": "Reach"
       }
     },
-    "care_quotient": 71.6
+    "care_quotient": 62.7
+  },
+  "anchorage": {
+    "pillar1_social_fabric": 82.7,
+    "pillar2_institutions_of_care": 35.6,
+    "pillar3_reach": 84.4,
+    "metrics": {
+      "Residential Stability": {
+        "score": 86.8,
+        "raw_value": 82.46,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 75.2,
+        "raw_value": 67.67,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 23.2,
+        "raw_value": 5.8,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 48.1,
+        "raw_value": 7.21,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 94.4,
+        "raw_value": 89.68,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 65.8,
+        "raw_value": 55.9,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 66.6
+  },
+  "atlanta": {
+    "pillar1_social_fabric": 78.1,
+    "pillar2_institutions_of_care": 61.7,
+    "pillar3_reach": 82.0,
+    "metrics": {
+      "Residential Stability": {
+        "score": 82.5,
+        "raw_value": 78.33,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 70.0,
+        "raw_value": 63.02,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 72.6,
+        "raw_value": 18.15,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 50.8,
+        "raw_value": 7.62,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 94.2,
+        "raw_value": 89.53,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 59.4,
+        "raw_value": 50.52,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 73.3
+  },
+  "aurora": {
+    "pillar1_social_fabric": 79.5,
+    "pillar2_institutions_of_care": 18.9,
+    "pillar3_reach": 81.9,
+    "metrics": {
+      "Residential Stability": {
+        "score": 85.8,
+        "raw_value": 81.54,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 67.7,
+        "raw_value": 60.91,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 32.3,
+        "raw_value": 8.07,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 5.5,
+        "raw_value": 0.82,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 92.3,
+        "raw_value": 87.67,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 62.6,
+        "raw_value": 53.24,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 58.9
+  },
+  "austin": {
+    "pillar1_social_fabric": 77.9,
+    "pillar2_institutions_of_care": 28.4,
+    "pillar3_reach": 73.6,
+    "metrics": {
+      "Residential Stability": {
+        "score": 81.8,
+        "raw_value": 77.71,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 70.7,
+        "raw_value": 63.62,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 32.6,
+        "raw_value": 8.15,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 24.3,
+        "raw_value": 3.64,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 91.6,
+        "raw_value": 87.01,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 40.1,
+        "raw_value": 34.07,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 59.5
+  },
+  "bakersfield": {
+    "pillar1_social_fabric": 82.0,
+    "pillar2_institutions_of_care": 56.2,
+    "pillar3_reach": 88.6,
+    "metrics": {
+      "Residential Stability": {
+        "score": 90.9,
+        "raw_value": 86.31,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 65.6,
+        "raw_value": 59.07,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 12.5,
+        "raw_value": 3.12,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 100.0,
+        "raw_value": 20.12,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 97.2,
+        "raw_value": 92.33,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 72.6,
+        "raw_value": 61.67,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 74.6
+  },
+  "baltimore": {
+    "pillar1_social_fabric": 81.5,
+    "pillar2_institutions_of_care": 49.4,
+    "pillar3_reach": 97.6,
+    "metrics": {
+      "Residential Stability": {
+        "score": 89.0,
+        "raw_value": 84.52,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 67.7,
+        "raw_value": 60.94,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 54.5,
+        "raw_value": 13.62,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 44.4,
+        "raw_value": 6.66,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 99.6,
+        "raw_value": 94.61,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 94.0,
+        "raw_value": 79.93,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 74.3
+  },
+  "baton_rouge": {
+    "pillar1_social_fabric": 76.3,
+    "pillar2_institutions_of_care": 64.0,
+    "pillar3_reach": 82.2,
+    "metrics": {
+      "Residential Stability": {
+        "score": 81.5,
+        "raw_value": 77.39,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 66.7,
+        "raw_value": 60.0,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 28.1,
+        "raw_value": 7.03,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 100.0,
+        "raw_value": 18.02,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 93.9,
+        "raw_value": 89.22,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 60.4,
+        "raw_value": 51.31,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 73.5
+  },
+  "birmingham": {
+    "pillar1_social_fabric": 77.2,
+    "pillar2_institutions_of_care": 44.6,
+    "pillar3_reach": 83.3,
+    "metrics": {
+      "Residential Stability": {
+        "score": 84.5,
+        "raw_value": 80.23,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 63.7,
+        "raw_value": 57.32,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 35.8,
+        "raw_value": 8.95,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 53.4,
+        "raw_value": 8.01,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 91.5,
+        "raw_value": 86.89,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 68.0,
+        "raw_value": 57.84,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 67.3
+  },
+  "boston": {
+    "pillar1_social_fabric": 77.0,
+    "pillar2_institutions_of_care": 69.8,
+    "pillar3_reach": 94.6,
+    "metrics": {
+      "Residential Stability": {
+        "score": 83.8,
+        "raw_value": 79.63,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 64.5,
+        "raw_value": 58.03,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 46.9,
+        "raw_value": 11.72,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 92.7,
+        "raw_value": 13.91,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 100.0,
+        "raw_value": 96.74,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 84.7,
+        "raw_value": 72.01,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 78.9
+  },
+  "buffalo": {
+    "pillar1_social_fabric": 82.8,
+    "pillar2_institutions_of_care": 42.4,
+    "pillar3_reach": 96.0,
+    "metrics": {
+      "Residential Stability": {
+        "score": 88.9,
+        "raw_value": 84.5,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 71.4,
+        "raw_value": 64.28,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 39.2,
+        "raw_value": 9.81,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 45.5,
+        "raw_value": 6.83,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 100.0,
+        "raw_value": 96.05,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 88.7,
+        "raw_value": 75.42,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 72.0
+  },
+  "charlotte": {
+    "pillar1_social_fabric": 82.1,
+    "pillar2_institutions_of_care": 26.2,
+    "pillar3_reach": 79.3,
+    "metrics": {
+      "Residential Stability": {
+        "score": 86.6,
+        "raw_value": 82.23,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 73.7,
+        "raw_value": 66.32,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 43.3,
+        "raw_value": 10.82,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 9.1,
+        "raw_value": 1.37,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 92.1,
+        "raw_value": 87.49,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 55.4,
+        "raw_value": 47.05,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 61.8
   },
   "chicago": {
-    "pillar1_social_support": 77.6,
-    "pillar2_institutions_of_care": 43.0,
-    "pillar3_reach": null,
+    "pillar1_social_fabric": 81.3,
+    "pillar2_institutions_of_care": 44.2,
+    "pillar3_reach": 90.5,
     "metrics": {
       "Residential Stability": {
-        "score": 91.5,
-        "raw_value": 86.92,
+        "score": 88.7,
+        "raw_value": 84.29,
         "benchmark": 95.0,
-        "pillar": "Social Support & Connection"
-      },
-      "Human Services Nonprofits (per 10k)": {
-        "score": 55.9,
-        "raw_value": 5.59,
-        "benchmark": 10.0,
-        "pillar": "Social Support & Connection"
+        "pillar": "Social Fabric"
       },
       "Housing Affordability (% not cost-burdened)": {
-        "score": 94.1,
-        "raw_value": 79.97,
-        "benchmark": 85.0,
-        "pillar": "Social Support & Connection"
+        "score": 67.5,
+        "raw_value": 60.71,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 33.7,
+        "raw_value": 8.42,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 47.9,
-        "raw_value": 7.19,
+        "score": 54.7,
+        "raw_value": 8.2,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
-      "Health/MH/Food Nonprofits (per 10k)": {
-        "score": 36.9,
-        "raw_value": 2.95,
-        "benchmark": 8.0,
-        "pillar": "Institutions of Care"
-      },
-      "SNAP Coverage Rate": {
-        "score": 100.0,
-        "raw_value": 100.0,
-        "benchmark": 85.0,
+      "Health Insurance Coverage Rate": {
+        "score": 94.9,
+        "raw_value": 90.14,
+        "benchmark": 95.0,
         "pillar": "Reach"
       },
-      "Health Insurance Coverage Rate": {
-        "score": 95.8,
-        "raw_value": 90.99,
-        "benchmark": 95.0,
+      "SNAP Coverage Rate": {
+        "score": 82.3,
+        "raw_value": 69.94,
+        "benchmark": 85.0,
         "pillar": "Reach"
       }
     },
-    "care_quotient": 61.5
+    "care_quotient": 70.6
   },
-  "houston": {
-    "pillar1_social_support": 85.0,
-    "pillar2_institutions_of_care": 35.1,
-    "pillar3_reach": null,
+  "cincinnati": {
+    "pillar1_social_fabric": 78.2,
+    "pillar2_institutions_of_care": 71.1,
+    "pillar3_reach": 84.8,
     "metrics": {
       "Residential Stability": {
-        "score": 88.6,
-        "raw_value": 84.14,
+        "score": 82.5,
+        "raw_value": 78.4,
         "benchmark": 95.0,
-        "pillar": "Social Support & Connection"
-      },
-      "Human Services Nonprofits (per 10k)": {
-        "score": 76.1,
-        "raw_value": 7.61,
-        "benchmark": 10.0,
-        "pillar": "Social Support & Connection"
+        "pillar": "Social Fabric"
       },
       "Housing Affordability (% not cost-burdened)": {
-        "score": 100.0,
-        "raw_value": 86.2,
-        "benchmark": 85.0,
-        "pillar": "Social Support & Connection"
+        "score": 70.3,
+        "raw_value": 63.27,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 49.5,
+        "raw_value": 12.38,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 29.2,
-        "raw_value": 4.38,
+        "score": 92.7,
+        "raw_value": 13.9,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
-      "Health/MH/Food Nonprofits (per 10k)": {
-        "score": 42.2,
-        "raw_value": 3.38,
-        "benchmark": 8.0,
-        "pillar": "Institutions of Care"
-      },
-      "SNAP Coverage Rate": {
-        "score": 98.9,
-        "raw_value": 84.03,
-        "benchmark": 85.0,
+      "Health Insurance Coverage Rate": {
+        "score": 97.5,
+        "raw_value": 92.65,
+        "benchmark": 95.0,
         "pillar": "Reach"
       },
-      "Health Insurance Coverage Rate": {
-        "score": 82.9,
-        "raw_value": 78.78,
+      "SNAP Coverage Rate": {
+        "score": 61.2,
+        "raw_value": 52.04,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 77.4
+  },
+  "cleveland": {
+    "pillar1_social_fabric": 78.8,
+    "pillar2_institutions_of_care": 65.6,
+    "pillar3_reach": 92.7,
+    "metrics": {
+      "Residential Stability": {
+        "score": 85.0,
+        "raw_value": 80.79,
         "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 67.3,
+        "raw_value": 60.59,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 47.2,
+        "raw_value": 11.81,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 84.1,
+        "raw_value": 12.61,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 97.3,
+        "raw_value": 92.39,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 84.2,
+        "raw_value": 71.61,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 77.7
+  },
+  "colorado_springs": {
+    "pillar1_social_fabric": 79.1,
+    "pillar2_institutions_of_care": 28.2,
+    "pillar3_reach": 85.2,
+    "metrics": {
+      "Residential Stability": {
+        "score": 83.1,
+        "raw_value": 78.92,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 71.8,
+        "raw_value": 64.64,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 25.7,
+        "raw_value": 6.43,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 30.6,
+        "raw_value": 4.59,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 96.4,
+        "raw_value": 91.6,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 64.5,
+        "raw_value": 54.82,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 62.8
+  },
+  "columbus": {
+    "pillar1_social_fabric": 79.5,
+    "pillar2_institutions_of_care": 34.1,
+    "pillar3_reach": 81.8,
+    "metrics": {
+      "Residential Stability": {
+        "score": 83.1,
+        "raw_value": 78.99,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 72.9,
+        "raw_value": 65.58,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 32.1,
+        "raw_value": 8.03,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 36.1,
+        "raw_value": 5.41,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 94.1,
+        "raw_value": 89.38,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 59.0,
+        "raw_value": 50.14,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 64.2
+  },
+  "corpus_christi": {
+    "pillar1_social_fabric": 82.4,
+    "pillar2_institutions_of_care": 13.5,
+    "pillar3_reach": 83.6,
+    "metrics": {
+      "Residential Stability": {
+        "score": 87.2,
+        "raw_value": 82.84,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 73.5,
+        "raw_value": 66.13,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 10.2,
+        "raw_value": 2.55,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 16.8,
+        "raw_value": 2.52,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 86.3,
+        "raw_value": 81.97,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 78.6,
+        "raw_value": 66.78,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 58.6
+  },
+  "dallas": {
+    "pillar1_social_fabric": 80.5,
+    "pillar2_institutions_of_care": 25.4,
+    "pillar3_reach": 69.3,
+    "metrics": {
+      "Residential Stability": {
+        "score": 87.6,
+        "raw_value": 83.18,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 67.4,
+        "raw_value": 60.7,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 36.0,
+        "raw_value": 8.99,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 14.8,
+        "raw_value": 2.22,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 80.6,
+        "raw_value": 76.53,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 48.4,
+        "raw_value": 41.11,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 58.4
+  },
+  "denver": {
+    "pillar1_social_fabric": 78.8,
+    "pillar2_institutions_of_care": 50.0,
+    "pillar3_reach": 80.4,
+    "metrics": {
+      "Residential Stability": {
+        "score": 82.9,
+        "raw_value": 78.71,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 71.1,
+        "raw_value": 64.01,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 41.3,
+        "raw_value": 10.33,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 58.7,
+        "raw_value": 8.8,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 95.7,
+        "raw_value": 90.9,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 52.0,
+        "raw_value": 44.21,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 69.1
+  },
+  "des_moines": {
+    "pillar1_social_fabric": 83.0,
+    "pillar2_institutions_of_care": 43.6,
+    "pillar3_reach": 91.5,
+    "metrics": {
+      "Residential Stability": {
+        "score": 86.6,
+        "raw_value": 82.23,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 76.4,
+        "raw_value": 68.8,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 34.2,
+        "raw_value": 8.54,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 52.9,
+        "raw_value": 7.94,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 98.9,
+        "raw_value": 93.92,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 77.8,
+        "raw_value": 66.09,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 71.3
+  },
+  "detroit": {
+    "pillar1_social_fabric": 82.0,
+    "pillar2_institutions_of_care": 48.6,
+    "pillar3_reach": 97.4,
+    "metrics": {
+      "Residential Stability": {
+        "score": 91.8,
+        "raw_value": 87.18,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 63.8,
+        "raw_value": 57.43,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 55.0,
+        "raw_value": 13.74,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 42.1,
+        "raw_value": 6.32,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 97.1,
+        "raw_value": 92.23,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 98.0,
+        "raw_value": 83.26,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 74.2
+  },
+  "durham": {
+    "pillar1_social_fabric": 83.2,
+    "pillar2_institutions_of_care": 23.6,
+    "pillar3_reach": 81.6,
+    "metrics": {
+      "Residential Stability": {
+        "score": 86.0,
+        "raw_value": 81.68,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 78.1,
+        "raw_value": 70.3,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 28.5,
+        "raw_value": 7.13,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 18.8,
+        "raw_value": 2.82,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 92.4,
+        "raw_value": 87.74,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 61.5,
+        "raw_value": 52.28,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 61.9
+  },
+  "el_paso": {
+    "pillar1_social_fabric": 83.9,
+    "pillar2_institutions_of_care": 37.6,
+    "pillar3_reach": 78.4,
+    "metrics": {
+      "Residential Stability": {
+        "score": 90.0,
+        "raw_value": 85.53,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 72.6,
+        "raw_value": 65.38,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 12.2,
+        "raw_value": 3.05,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 62.9,
+        "raw_value": 9.43,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 82.4,
+        "raw_value": 78.31,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 71.1,
+        "raw_value": 60.4,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 66.3
+  },
+  "fort_worth": {
+    "pillar1_social_fabric": 82.1,
+    "pillar2_institutions_of_care": 12.4,
+    "pillar3_reach": 76.6,
+    "metrics": {
+      "Residential Stability": {
+        "score": 88.5,
+        "raw_value": 84.08,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 70.1,
+        "raw_value": 63.11,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 24.8,
+        "raw_value": 6.19,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 0.0,
+        "raw_value": 0.0,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 83.8,
+        "raw_value": 79.62,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 63.2,
+        "raw_value": 53.71,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 56.3
+  },
+  "fresno": {
+    "pillar1_social_fabric": 81.7,
+    "pillar2_institutions_of_care": 45.3,
+    "pillar3_reach": 90.8,
+    "metrics": {
+      "Residential Stability": {
+        "score": 90.6,
+        "raw_value": 86.08,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 65.1,
+        "raw_value": 58.59,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 25.4,
+        "raw_value": 6.36,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 65.2,
+        "raw_value": 9.78,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 98.3,
+        "raw_value": 93.43,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 76.9,
+        "raw_value": 65.34,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 71.2
+  },
+  "honolulu": {
+    "pillar1_social_fabric": 92.4,
+    "pillar2_institutions_of_care": 83.5,
+    "pillar3_reach": 92.9,
+    "metrics": {
+      "Residential Stability": {
+        "score": 89.8,
+        "raw_value": 85.27,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 97.1,
+        "raw_value": 87.41,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 67.0,
+        "raw_value": 16.75,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 100.0,
+        "raw_value": 15.67,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 100.0,
+        "raw_value": 96.5,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 79.7,
+        "raw_value": 67.72,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 89.4
+  },
+  "houston": {
+    "pillar1_social_fabric": 80.7,
+    "pillar2_institutions_of_care": 29.0,
+    "pillar3_reach": 71.8,
+    "metrics": {
+      "Residential Stability": {
+        "score": 87.2,
+        "raw_value": 82.81,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 68.7,
+        "raw_value": 61.85,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 30.8,
+        "raw_value": 7.7,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 27.2,
+        "raw_value": 4.08,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 79.9,
+        "raw_value": 75.86,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 56.7,
+        "raw_value": 48.19,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 60.4
+  },
+  "indianapolis": {
+    "pillar1_social_fabric": 83.4,
+    "pillar2_institutions_of_care": 66.9,
+    "pillar3_reach": 81.3,
+    "metrics": {
+      "Residential Stability": {
+        "score": 88.5,
+        "raw_value": 84.12,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 74.0,
+        "raw_value": 66.64,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 47.4,
+        "raw_value": 11.85,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 86.4,
+        "raw_value": 12.96,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 95.1,
+        "raw_value": 90.35,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 55.8,
+        "raw_value": 47.46,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 77.1
+  },
+  "jacksonville": {
+    "pillar1_social_fabric": 81.4,
+    "pillar2_institutions_of_care": 21.2,
+    "pillar3_reach": 86.8,
+    "metrics": {
+      "Residential Stability": {
+        "score": 86.6,
+        "raw_value": 82.28,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 71.6,
+        "raw_value": 64.47,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 34.0,
+        "raw_value": 8.51,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 8.4,
+        "raw_value": 1.26,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 92.8,
+        "raw_value": 88.2,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 75.8,
+        "raw_value": 64.42,
+        "benchmark": 85.0,
         "pillar": "Reach"
       }
     },
     "care_quotient": 61.7
   },
-  "los_angeles": {
-    "pillar1_social_support": 72.5,
-    "pillar2_institutions_of_care": 33.4,
-    "pillar3_reach": null,
+  "kansas_city": {
+    "pillar1_social_fabric": 82.8,
+    "pillar2_institutions_of_care": 44.6,
+    "pillar3_reach": 78.4,
     "metrics": {
       "Residential Stability": {
-        "score": 94.2,
-        "raw_value": 89.5,
+        "score": 86.9,
+        "raw_value": 82.52,
         "benchmark": 95.0,
-        "pillar": "Social Support & Connection"
-      },
-      "Human Services Nonprofits (per 10k)": {
-        "score": 38.9,
-        "raw_value": 3.89,
-        "benchmark": 10.0,
-        "pillar": "Social Support & Connection"
+        "pillar": "Social Fabric"
       },
       "Housing Affordability (% not cost-burdened)": {
-        "score": 97.5,
-        "raw_value": 82.91,
-        "benchmark": 85.0,
-        "pillar": "Social Support & Connection"
+        "score": 75.3,
+        "raw_value": 67.79,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 42.0,
+        "raw_value": 10.49,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 43.1,
-        "raw_value": 6.46,
+        "score": 47.3,
+        "raw_value": 7.09,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
-      "Health/MH/Food Nonprofits (per 10k)": {
-        "score": 21.5,
-        "raw_value": 1.72,
-        "benchmark": 8.0,
-        "pillar": "Institutions of Care"
-      },
-      "SNAP Coverage Rate": {
-        "score": 98.5,
-        "raw_value": 83.7,
-        "benchmark": 85.0,
+      "Health Insurance Coverage Rate": {
+        "score": 92.9,
+        "raw_value": 88.27,
+        "benchmark": 95.0,
         "pillar": "Reach"
       },
-      "Health Insurance Coverage Rate": {
-        "score": 95.8,
-        "raw_value": 90.99,
-        "benchmark": 95.0,
+      "SNAP Coverage Rate": {
+        "score": 51.5,
+        "raw_value": 43.76,
+        "benchmark": 85.0,
         "pillar": "Reach"
       }
     },
-    "care_quotient": 54.3
+    "care_quotient": 68.3
   },
-  "nyc": {
-    "pillar1_social_support": 72.1,
-    "pillar2_institutions_of_care": 29.4,
-    "pillar3_reach": null,
+  "las_vegas": {
+    "pillar1_social_fabric": 81.3,
+    "pillar2_institutions_of_care": 17.8,
+    "pillar3_reach": 82.8,
     "metrics": {
       "Residential Stability": {
-        "score": 93.1,
-        "raw_value": 88.47,
+        "score": 88.1,
+        "raw_value": 83.71,
         "benchmark": 95.0,
-        "pillar": "Social Support & Connection"
-      },
-      "Human Services Nonprofits (per 10k)": {
-        "score": 41.0,
-        "raw_value": 4.1,
-        "benchmark": 10.0,
-        "pillar": "Social Support & Connection"
+        "pillar": "Social Fabric"
       },
       "Housing Affordability (% not cost-burdened)": {
-        "score": 91.4,
-        "raw_value": 77.65,
-        "benchmark": 85.0,
-        "pillar": "Social Support & Connection"
+        "score": 68.6,
+        "raw_value": 61.74,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 32.4,
+        "raw_value": 8.1,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 32.9,
-        "raw_value": 4.93,
+        "score": 3.1,
+        "raw_value": 0.47,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
-      "Health/MH/Food Nonprofits (per 10k)": {
-        "score": 25.2,
-        "raw_value": 2.02,
-        "benchmark": 8.0,
-        "pillar": "Institutions of Care"
+      "Health Insurance Coverage Rate": {
+        "score": 92.3,
+        "raw_value": 87.7,
+        "benchmark": 95.0,
+        "pillar": "Reach"
       },
       "SNAP Coverage Rate": {
-        "score": 100.0,
-        "raw_value": 100.0,
+        "score": 65.1,
+        "raw_value": 55.36,
         "benchmark": 85.0,
         "pillar": "Reach"
+      }
+    },
+    "care_quotient": 59.4
+  },
+  "lexington": {
+    "pillar1_social_fabric": 80.0,
+    "pillar2_institutions_of_care": 45.2,
+    "pillar3_reach": 78.9,
+    "metrics": {
+      "Residential Stability": {
+        "score": 81.8,
+        "raw_value": 77.73,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 76.6,
+        "raw_value": 68.97,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 32.6,
+        "raw_value": 8.15,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 57.9,
+        "raw_value": 8.68,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 98.0,
+        "raw_value": 93.11,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 43.3,
+        "raw_value": 36.82,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 67.5
+  },
+  "los_angeles": {
+    "pillar1_social_fabric": 79.0,
+    "pillar2_institutions_of_care": 41.6,
+    "pillar3_reach": 80.9,
+    "metrics": {
+      "Residential Stability": {
+        "score": 92.4,
+        "raw_value": 87.79,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 54.0,
+        "raw_value": 48.57,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 32.2,
+        "raw_value": 8.05,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 50.9,
+        "raw_value": 7.64,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 94.2,
+        "raw_value": 89.46,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 56.1,
+        "raw_value": 47.65,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 66.4
+  },
+  "louisville": {
+    "pillar1_social_fabric": 87.1,
+    "pillar2_institutions_of_care": 8.2,
+    "pillar3_reach": 81.3,
+    "metrics": {
+      "Residential Stability": {
+        "score": 90.4,
+        "raw_value": 85.84,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 81.1,
+        "raw_value": 72.99,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 16.5,
+        "raw_value": 4.12,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 0.0,
+        "raw_value": 0.0,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 99.2,
+        "raw_value": 94.25,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 48.1,
+        "raw_value": 40.88,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 58.0
+  },
+  "madison": {
+    "pillar1_social_fabric": 74.8,
+    "pillar2_institutions_of_care": 28.0,
+    "pillar3_reach": 80.7,
+    "metrics": {
+      "Residential Stability": {
+        "score": 77.2,
+        "raw_value": 73.3,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 70.4,
+        "raw_value": 63.39,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 36.2,
+        "raw_value": 9.06,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 19.8,
+        "raw_value": 2.97,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 100.0,
+        "raw_value": 95.42,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 44.8,
+        "raw_value": 38.1,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 59.9
+  },
+  "memphis": {
+    "pillar1_social_fabric": 81.5,
+    "pillar2_institutions_of_care": 33.7,
+    "pillar3_reach": 82.8,
+    "metrics": {
+      "Residential Stability": {
+        "score": 89.1,
+        "raw_value": 84.61,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 67.5,
+        "raw_value": 60.75,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 43.2,
+        "raw_value": 10.8,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 24.2,
+        "raw_value": 3.63,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 90.5,
+        "raw_value": 85.95,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 68.4,
+        "raw_value": 58.11,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 65.1
+  },
+  "milwaukee": {
+    "pillar1_social_fabric": 81.4,
+    "pillar2_institutions_of_care": 42.1,
+    "pillar3_reach": 93.6,
+    "metrics": {
+      "Residential Stability": {
+        "score": 89.5,
+        "raw_value": 85.02,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 66.4,
+        "raw_value": 59.77,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 35.7,
+        "raw_value": 8.92,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 48.5,
+        "raw_value": 7.28,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 95.6,
+        "raw_value": 90.78,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 89.8,
+        "raw_value": 76.36,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 70.7
+  },
+  "minneapolis": {
+    "pillar1_social_fabric": 78.0,
+    "pillar2_institutions_of_care": 43.3,
+    "pillar3_reach": 84.8,
+    "metrics": {
+      "Residential Stability": {
+        "score": 80.6,
+        "raw_value": 76.53,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 73.3,
+        "raw_value": 65.98,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 44.7,
+        "raw_value": 11.17,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 41.9,
+        "raw_value": 6.28,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 99.0,
+        "raw_value": 94.07,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 58.3,
+        "raw_value": 49.54,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 67.6
+  },
+  "nashville": {
+    "pillar1_social_fabric": 79.3,
+    "pillar2_institutions_of_care": 28.4,
+    "pillar3_reach": 76.4,
+    "metrics": {
+      "Residential Stability": {
+        "score": 83.4,
+        "raw_value": 79.27,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 71.6,
+        "raw_value": 64.46,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 36.6,
+        "raw_value": 9.15,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 20.3,
+        "raw_value": 3.05,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 91.8,
+        "raw_value": 87.22,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 47.9,
+        "raw_value": 40.68,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 60.8
+  },
+  "new_orleans": {
+    "pillar1_social_fabric": 80.5,
+    "pillar2_institutions_of_care": 72.7,
+    "pillar3_reach": 84.6,
+    "metrics": {
+      "Residential Stability": {
+        "score": 90.4,
+        "raw_value": 85.91,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 62.1,
+        "raw_value": 55.89,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 45.4,
+        "raw_value": 11.35,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 100.0,
+        "raw_value": 21.09,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 96.3,
+        "raw_value": 91.48,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 63.0,
+        "raw_value": 53.55,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 78.8
+  },
+  "nyc": {
+    "pillar1_social_fabric": 81.7,
+    "pillar2_institutions_of_care": 31.4,
+    "pillar3_reach": 95.0,
+    "metrics": {
+      "Residential Stability": {
+        "score": 93.5,
+        "raw_value": 88.87,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 59.8,
+        "raw_value": 53.82,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 27.8,
+        "raw_value": 6.94,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 35.0,
+        "raw_value": 5.25,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
       },
       "Health Insurance Coverage Rate": {
         "score": 98.2,
-        "raw_value": 93.26,
+        "raw_value": 93.28,
         "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 89.0,
+        "raw_value": 75.68,
+        "benchmark": 85.0,
         "pillar": "Reach"
       }
     },
-    "care_quotient": 52.2
+    "care_quotient": 67.4
+  },
+  "oklahoma_city": {
+    "pillar1_social_fabric": 83.6,
+    "pillar2_institutions_of_care": 39.7,
+    "pillar3_reach": 80.2,
+    "metrics": {
+      "Residential Stability": {
+        "score": 86.2,
+        "raw_value": 81.92,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 78.9,
+        "raw_value": 71.02,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 42.1,
+        "raw_value": 10.53,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 37.2,
+        "raw_value": 5.58,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 90.6,
+        "raw_value": 86.05,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 60.9,
+        "raw_value": 51.78,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 67.4
+  },
+  "omaha": {
+    "pillar1_social_fabric": 84.2,
+    "pillar2_institutions_of_care": 44.8,
+    "pillar3_reach": 81.2,
+    "metrics": {
+      "Residential Stability": {
+        "score": 88.3,
+        "raw_value": 83.84,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 76.6,
+        "raw_value": 68.96,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 33.3,
+        "raw_value": 8.33,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 56.3,
+        "raw_value": 8.44,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 94.4,
+        "raw_value": 89.67,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 56.7,
+        "raw_value": 48.21,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 69.7
+  },
+  "philadelphia": {
+    "pillar1_social_fabric": 82.1,
+    "pillar2_institutions_of_care": 34.2,
+    "pillar3_reach": 95.9,
+    "metrics": {
+      "Residential Stability": {
+        "score": 89.6,
+        "raw_value": 85.08,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 68.1,
+        "raw_value": 61.31,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 35.9,
+        "raw_value": 8.97,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 32.4,
+        "raw_value": 4.86,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 97.5,
+        "raw_value": 92.65,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 92.8,
+        "raw_value": 78.89,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 68.8
+  },
+  "phoenix": {
+    "pillar1_social_fabric": 83.1,
+    "pillar2_institutions_of_care": 36.0,
+    "pillar3_reach": 77.4,
+    "metrics": {
+      "Residential Stability": {
+        "score": 88.3,
+        "raw_value": 83.93,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 73.4,
+        "raw_value": 66.06,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 25.5,
+        "raw_value": 6.37,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 46.4,
+        "raw_value": 6.96,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 89.1,
+        "raw_value": 84.69,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 55.7,
+        "raw_value": 47.37,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 65.2
+  },
+  "pittsburgh": {
+    "pillar1_social_fabric": 79.5,
+    "pillar2_institutions_of_care": 61.7,
+    "pillar3_reach": 89.0,
+    "metrics": {
+      "Residential Stability": {
+        "score": 82.3,
+        "raw_value": 78.18,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 74.3,
+        "raw_value": 66.85,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 64.0,
+        "raw_value": 16.01,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 59.4,
+        "raw_value": 8.91,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 99.9,
+        "raw_value": 94.92,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 68.7,
+        "raw_value": 58.4,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 75.6
+  },
+  "portland": {
+    "pillar1_social_fabric": 80.3,
+    "pillar2_institutions_of_care": 48.0,
+    "pillar3_reach": 94.1,
+    "metrics": {
+      "Residential Stability": {
+        "score": 86.1,
+        "raw_value": 81.79,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 69.5,
+        "raw_value": 62.59,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 34.7,
+        "raw_value": 8.67,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 61.3,
+        "raw_value": 9.2,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 99.0,
+        "raw_value": 94.05,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 84.9,
+        "raw_value": 72.13,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 72.4
+  },
+  "providence": {
+    "pillar1_social_fabric": 81.0,
+    "pillar2_institutions_of_care": 43.6,
+    "pillar3_reach": 98.8,
+    "metrics": {
+      "Residential Stability": {
+        "score": 88.1,
+        "raw_value": 83.71,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 67.7,
+        "raw_value": 60.94,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 41.7,
+        "raw_value": 10.42,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 45.4,
+        "raw_value": 6.81,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 98.1,
+        "raw_value": 93.18,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 100.0,
+        "raw_value": 88.25,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 72.4
+  },
+  "raleigh": {
+    "pillar1_social_fabric": 81.4,
+    "pillar2_institutions_of_care": 23.2,
+    "pillar3_reach": 78.0,
+    "metrics": {
+      "Residential Stability": {
+        "score": 83.8,
+        "raw_value": 79.63,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 76.8,
+        "raw_value": 69.09,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 29.3,
+        "raw_value": 7.33,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 17.1,
+        "raw_value": 2.57,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 95.4,
+        "raw_value": 90.59,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 45.7,
+        "raw_value": 38.87,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 60.2
+  },
+  "richmond": {
+    "pillar1_social_fabric": 76.5,
+    "pillar2_institutions_of_care": 31.1,
+    "pillar3_reach": 79.7,
+    "metrics": {
+      "Residential Stability": {
+        "score": 81.5,
+        "raw_value": 77.46,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 67.1,
+        "raw_value": 60.4,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 32.8,
+        "raw_value": 8.21,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 29.4,
+        "raw_value": 4.41,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 94.6,
+        "raw_value": 89.88,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 52.1,
+        "raw_value": 44.31,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 61.4
+  },
+  "rochester": {
+    "pillar1_social_fabric": 75.8,
+    "pillar2_institutions_of_care": 62.2,
+    "pillar3_reach": 95.4,
+    "metrics": {
+      "Residential Stability": {
+        "score": 83.5,
+        "raw_value": 79.34,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 61.4,
+        "raw_value": 55.22,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 29.7,
+        "raw_value": 7.43,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 94.7,
+        "raw_value": 14.2,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 100.0,
+        "raw_value": 95.16,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 86.8,
+        "raw_value": 73.81,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 75.9
+  },
+  "sacramento": {
+    "pillar1_social_fabric": 81.0,
+    "pillar2_institutions_of_care": 70.8,
+    "pillar3_reach": 88.6,
+    "metrics": {
+      "Residential Stability": {
+        "score": 88.9,
+        "raw_value": 84.43,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 66.4,
+        "raw_value": 59.75,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 52.6,
+        "raw_value": 13.16,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 88.9,
+        "raw_value": 13.33,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 99.2,
+        "raw_value": 94.26,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 68.9,
+        "raw_value": 58.53,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 79.3
+  },
+  "salt_lake_city": {
+    "pillar1_social_fabric": 79.4,
+    "pillar2_institutions_of_care": 23.1,
+    "pillar3_reach": 72.3,
+    "metrics": {
+      "Residential Stability": {
+        "score": 82.9,
+        "raw_value": 78.76,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 73.0,
+        "raw_value": 65.71,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 32.9,
+        "raw_value": 8.23,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 13.3,
+        "raw_value": 1.99,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 92.4,
+        "raw_value": 87.8,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 34.9,
+        "raw_value": 29.67,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 57.9
+  },
+  "san_antonio": {
+    "pillar1_social_fabric": 80.3,
+    "pillar2_institutions_of_care": 16.6,
+    "pillar3_reach": 79.3,
+    "metrics": {
+      "Residential Stability": {
+        "score": 85.7,
+        "raw_value": 81.44,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 70.3,
+        "raw_value": 63.27,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 18.0,
+        "raw_value": 4.5,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 15.3,
+        "raw_value": 2.3,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 86.7,
+        "raw_value": 82.33,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 65.5,
+        "raw_value": 55.64,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 57.8
+  },
+  "san_diego": {
+    "pillar1_social_fabric": 79.2,
+    "pillar2_institutions_of_care": 50.8,
+    "pillar3_reach": 81.9,
+    "metrics": {
+      "Residential Stability": {
+        "score": 87.6,
+        "raw_value": 83.21,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 63.6,
+        "raw_value": 57.26,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 25.6,
+        "raw_value": 6.39,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 75.9,
+        "raw_value": 11.39,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 98.0,
+        "raw_value": 93.14,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 52.1,
+        "raw_value": 44.31,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 69.9
+  },
+  "san_francisco": {
+    "pillar1_social_fabric": 83.2,
+    "pillar2_institutions_of_care": 37.8,
+    "pillar3_reach": 85.9,
+    "metrics": {
+      "Residential Stability": {
+        "score": 88.3,
+        "raw_value": 83.9,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 73.8,
+        "raw_value": 66.38,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 32.1,
+        "raw_value": 8.03,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 43.5,
+        "raw_value": 6.52,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 100.0,
+        "raw_value": 96.41,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 59.8,
+        "raw_value": 50.8,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 68.0
+  },
+  "san_jose": {
+    "pillar1_social_fabric": 83.3,
+    "pillar2_institutions_of_care": 30.9,
+    "pillar3_reach": 86.3,
+    "metrics": {
+      "Residential Stability": {
+        "score": 90.9,
+        "raw_value": 86.33,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 69.3,
+        "raw_value": 62.4,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 15.7,
+        "raw_value": 3.92,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 46.1,
+        "raw_value": 6.91,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 99.7,
+        "raw_value": 94.76,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 61.3,
+        "raw_value": 52.13,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 65.7
+  },
+  "seattle": {
+    "pillar1_social_fabric": 77.0,
+    "pillar2_institutions_of_care": 65.1,
+    "pillar3_reach": 85.7,
+    "metrics": {
+      "Residential Stability": {
+        "score": 79.4,
+        "raw_value": 75.43,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 72.6,
+        "raw_value": 65.32,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 30.2,
+        "raw_value": 7.54,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 100.0,
+        "raw_value": 22.65,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 100.0,
+        "raw_value": 95.7,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 59.2,
+        "raw_value": 50.31,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 75.0
+  },
+  "spokane": {
+    "pillar1_social_fabric": 79.4,
+    "pillar2_institutions_of_care": 61.0,
+    "pillar3_reach": 99.5,
+    "metrics": {
+      "Residential Stability": {
+        "score": 83.2,
+        "raw_value": 79.0,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 72.4,
+        "raw_value": 65.14,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 22.9,
+        "raw_value": 5.72,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 99.0,
+        "raw_value": 14.85,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 99.2,
+        "raw_value": 94.21,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 100.0,
+        "raw_value": 85.0,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 78.0
+  },
+  "st_louis": {
+    "pillar1_social_fabric": 82.2,
+    "pillar2_institutions_of_care": 63.8,
+    "pillar3_reach": 86.4,
+    "metrics": {
+      "Residential Stability": {
+        "score": 87.4,
+        "raw_value": 83.06,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 72.5,
+        "raw_value": 65.29,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 52.4,
+        "raw_value": 13.1,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 75.1,
+        "raw_value": 11.27,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 94.6,
+        "raw_value": 89.88,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 71.2,
+        "raw_value": 60.49,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 76.8
+  },
+  "st_paul": {
+    "pillar1_social_fabric": 81.4,
+    "pillar2_institutions_of_care": 44.4,
+    "pillar3_reach": 87.0,
+    "metrics": {
+      "Residential Stability": {
+        "score": 85.7,
+        "raw_value": 81.43,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 73.5,
+        "raw_value": 66.13,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 41.7,
+        "raw_value": 10.43,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 47.1,
+        "raw_value": 7.06,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 98.8,
+        "raw_value": 93.9,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 65.0,
+        "raw_value": 55.25,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 69.8
+  },
+  "stockton": {
+    "pillar1_social_fabric": 82.3,
+    "pillar2_institutions_of_care": 45.0,
+    "pillar3_reach": 97.5,
+    "metrics": {
+      "Residential Stability": {
+        "score": 92.3,
+        "raw_value": 87.67,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 63.6,
+        "raw_value": 57.26,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 15.1,
+        "raw_value": 3.77,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 74.9,
+        "raw_value": 11.23,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 98.0,
+        "raw_value": 93.12,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 96.5,
+        "raw_value": 82.02,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 73.0
+  },
+  "tampa": {
+    "pillar1_social_fabric": 77.4,
+    "pillar2_institutions_of_care": 33.7,
+    "pillar3_reach": 86.1,
+    "metrics": {
+      "Residential Stability": {
+        "score": 81.9,
+        "raw_value": 77.78,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 68.9,
+        "raw_value": 61.98,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 34.2,
+        "raw_value": 8.55,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 33.1,
+        "raw_value": 4.96,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 93.8,
+        "raw_value": 89.13,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 71.9,
+        "raw_value": 61.12,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 64.3
+  },
+  "tucson": {
+    "pillar1_social_fabric": 77.8,
+    "pillar2_institutions_of_care": 28.8,
+    "pillar3_reach": 81.1,
+    "metrics": {
+      "Residential Stability": {
+        "score": 82.6,
+        "raw_value": 78.48,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 68.8,
+        "raw_value": 61.91,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 20.7,
+        "raw_value": 5.18,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 36.9,
+        "raw_value": 5.53,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 92.4,
+        "raw_value": 87.78,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 60.1,
+        "raw_value": 51.07,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 61.5
+  },
+  "virginia_beach": {
+    "pillar1_social_fabric": 82.3,
+    "pillar2_institutions_of_care": 14.1,
+    "pillar3_reach": 81.8,
+    "metrics": {
+      "Residential Stability": {
+        "score": 87.1,
+        "raw_value": 82.76,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 73.5,
+        "raw_value": 66.13,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 28.2,
+        "raw_value": 7.05,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 0.0,
+        "raw_value": 0.0,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 98.0,
+        "raw_value": 93.13,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 51.7,
+        "raw_value": 43.91,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 58.3
+  },
+  "washington_dc": {
+    "pillar1_social_fabric": 79.4,
+    "pillar2_institutions_of_care": 84.6,
+    "pillar3_reach": 90.4,
+    "metrics": {
+      "Residential Stability": {
+        "score": 84.0,
+        "raw_value": 79.76,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 71.0,
+        "raw_value": 63.88,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 84.0,
+        "raw_value": 21.0,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 85.1,
+        "raw_value": 12.76,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 100.0,
+        "raw_value": 96.59,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 72.5,
+        "raw_value": 61.61,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 84.0
+  },
+  "wichita": {
+    "pillar1_social_fabric": 83.7,
+    "pillar2_institutions_of_care": 29.4,
+    "pillar3_reach": 78.6,
+    "metrics": {
+      "Residential Stability": {
+        "score": 85.7,
+        "raw_value": 81.46,
+        "benchmark": 95.0,
+        "pillar": "Social Fabric"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 80.0,
+        "raw_value": 71.98,
+        "benchmark": 90.0,
+        "pillar": "Social Fabric"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 25.2,
+        "raw_value": 6.31,
+        "benchmark": 25.0,
+        "pillar": "Institutions of Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 33.5,
+        "raw_value": 5.03,
+        "benchmark": 15.0,
+        "pillar": "Institutions of Care"
+      },
+      "Health Insurance Coverage Rate": {
+        "score": 91.9,
+        "raw_value": 87.3,
+        "benchmark": 95.0,
+        "pillar": "Reach"
+      },
+      "SNAP Coverage Rate": {
+        "score": 54.0,
+        "raw_value": 45.86,
+        "benchmark": 85.0,
+        "pillar": "Reach"
+      }
+    },
+    "care_quotient": 63.4
   }
 }

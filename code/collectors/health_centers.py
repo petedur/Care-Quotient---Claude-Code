@@ -2,6 +2,10 @@
 Collector: Community Health Center Density (HRSA)
 Counts Federally Qualified Health Centers (FQHCs) per 100,000 residents.
 
+Geography: ZIP-based filtering using the city's ZCTA boundary (>= 50% of
+ZCTA land area within the city). Replaces county FIPS filtering to eliminate
+county-sharing inflation for cities that are a fraction of their county.
+
 Data source: HRSA Health Center Service Delivery and Look-Alike Sites
   - Downloaded as: Health_Center_Service_Delivery_and_LookAlike_Sites.xlsx
   - Place in: Downloaded Data/
@@ -14,6 +18,17 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from config import HRSA_DATA_PATH, DATA_RAW, CITIES
+from geo.zip_fips import normalize_zip
+from geo.city_zips import city_to_zips
+
+# HRSA ZIP column — check multiple possible names for robustness
+_ZIP_COL_CANDIDATES = [
+    "Site Address Zip Code",
+    "Site Zip Code",
+    "ZIP Code",
+    "Zip Code",
+    "ZIP",
+]
 
 
 def load_hrsa() -> pd.DataFrame:
@@ -26,27 +41,40 @@ def load_hrsa() -> pd.DataFrame:
     return df
 
 
-def filter_city(df: pd.DataFrame, city_cfg: dict) -> pd.DataFrame:
+def _find_zip_col(df: pd.DataFrame) -> str:
+    for candidate in _ZIP_COL_CANDIDATES:
+        if candidate in df.columns:
+            return candidate
+    # Fallback: any column with "zip" in the name
+    for col in df.columns:
+        if "zip" in col.lower():
+            return col
+    raise KeyError(
+        f"No ZIP column found in HRSA data. Columns present: {list(df.columns)}"
+    )
+
+
+def filter_city(df: pd.DataFrame, city_key: str) -> pd.DataFrame:
     """
-    Filter HRSA data to active FQHC sites for a given city.
-    Uses state + city name matching; excludes Look-Alike sites (not federally funded).
+    Filter HRSA data to active FQHC service-delivery sites within the city's
+    ZCTA boundary. Excludes Look-Alike sites (not federally funded) and
+    admin-only locations.
     """
-    state = city_cfg["state"].upper()
-    city_names = [n.upper() for n in city_cfg["irs_city_names"]]
+    valid_zips = city_to_zips(city_key)
+    zip_col    = _find_zip_col(df)
+    state      = CITIES[city_key]["state"].upper()
 
-    state_mask = df["Site State Abbreviation"].str.upper() == state
-    city_mask  = df["Site City"].str.upper().isin(city_names)
+    zip_mask      = df[zip_col].apply(normalize_zip).isin(valid_zips)
+    state_mask    = df["Site Address State Abbreviation"].str.upper() == state \
+                    if "Site Address State Abbreviation" in df.columns \
+                    else pd.Series(True, index=df.index)
+    status_mask   = df["Site Status Description"].str.upper() == "ACTIVE"
+    fqhc_mask     = df["Health Center Type"].str.contains("Look-Alike", na=False) == False
+    delivery_mask = df["Health Center Type Description"].str.upper().str.contains(
+        "SERVICE DELIVERY", na=False
+    )
 
-    # Active sites only
-    status_mask = df["Site Status Description"].str.upper() == "ACTIVE"
-
-    # FQHCs only — exclude Look-Alike sites (not federally funded)
-    fqhc_mask = df["Health Center Type"].str.contains("Look-Alike", na=False) == False
-
-    # Service delivery sites only — exclude admin-only locations
-    delivery_mask = df["Health Center Type Description"].str.upper().str.contains("SERVICE DELIVERY", na=False)
-
-    return df[state_mask & city_mask & status_mask & fqhc_mask & delivery_mask].copy()
+    return df[zip_mask & state_mask & status_mask & fqhc_mask & delivery_mask].copy()
 
 
 def collect(city_key: str = "nyc") -> dict:
@@ -55,13 +83,12 @@ def collect(city_key: str = "nyc") -> dict:
     print(f"\n=== Health Center Density — {city['name']} ===")
 
     df      = load_hrsa()
-    city_df = filter_city(df, city)
+    city_df = filter_city(df, city_key)
 
     count   = len(city_df)
     density = round(count / pop * 100_000, 2)
     print(f"  {count} FQHCs -> {density} per 100,000")
 
-    # Save
     out_dir = DATA_RAW / city_key
     out_dir.mkdir(parents=True, exist_ok=True)
     city_df.to_csv(out_dir / "health_centers.csv", index=False)

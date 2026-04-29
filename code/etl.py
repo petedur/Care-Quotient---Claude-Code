@@ -64,7 +64,7 @@ def load_nonprofit_density(conn, city_key: str):
     import pandas as pd
     from config import (
         NTEE_SOCIAL_SUPPORT, NTEE_CARE_INSTITUTIONS,
-        NTEE_FAITH_BASED, NTEE_ALL_CARE, CITIES,
+        NTEE_COMBINED_CARE, NTEE_FAITH_BASED, NTEE_ALL_CARE, CITIES,
     )
     from collectors.nonprofit_density import _ntee_mask
 
@@ -74,6 +74,7 @@ def load_nonprofit_density(conn, city_key: str):
     for label, codes in [
         ("social_support",    NTEE_SOCIAL_SUPPORT),
         ("care_institutions", NTEE_CARE_INSTITUTIONS),
+        ("combined_care",     NTEE_COMBINED_CARE),   # scored metric: P+E+F+K
         ("faith_based",       NTEE_FAITH_BASED),
         ("all_care",          NTEE_ALL_CARE),
     ]:
@@ -169,15 +170,15 @@ def load_snap_participation(conn, city_key: str):
 
     import pandas as pd
     df = pd.read_csv(raw)
-    total_snap = df["snap_households"].sum()
-    total_hh   = df["total_households"].sum()
-    total_pov  = df["poverty_pop"].sum()
-    total_pop  = df["total_pop"].sum()
+    total_snap     = df["snap_households"].sum()
+    total_hh       = df["total_households"].sum()
+    total_eligible = df["eligible_pop_0_149pct_fpl"].sum()
+    total_pop      = df["total_pop"].sum()
 
-    snap_rate    = total_snap / total_hh if total_hh else 0
-    poverty_rate = total_pov / total_pop if total_pop else 0
-    coverage = round(min((snap_rate / poverty_rate) * 100, 100.0), 2) \
-        if poverty_rate > 0 else 0.0
+    snap_rate      = total_snap / total_hh if total_hh else 0
+    eligible_rate  = total_eligible / total_pop if total_pop else 0
+    coverage = round(min((snap_rate / eligible_rate) * 100, 100.0), 2) \
+        if eligible_rate > 0 else 0.0
 
     upsert(conn, city_key, "snap_participation", "coverage_rate", value=coverage)
     print(f"  snap_participation loaded for {city_key}: {coverage}% coverage rate")
@@ -261,8 +262,9 @@ def validate(conn) -> bool:
 
     issues = []
 
-    # 1. Required scored metrics present for every city
-    for city_key in CITIES:
+    # 1. Required scored metrics present for every city that has any data
+    cities_with_data = set(df["city"].unique())
+    for city_key in cities_with_data:
         for metric, sub_metric in REQUIRED_SCORED:
             rows = df[
                 (df["city"] == city_key) &

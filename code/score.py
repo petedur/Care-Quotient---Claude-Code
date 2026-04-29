@@ -10,18 +10,17 @@ capped at 100). Benchmarks represent the level at which a city would be consider
 to fully meet that dimension of care need. See methodology.md for full rationale.
 
 Benchmarks:
-  Pillar 1 — Social Support & Connection (40% of CQ)
+  Pillar 1 — Social Fabric (40% of CQ)
     residential_stability    95%     — near-zero involuntary displacement
-    social_support (NTEE P)  10/10k  — organizational saturation
-    housing_cost_burden      75%     — 75% not burdened (25% burdened ceiling)
+    housing_cost_burden      90%     — 90% not burdened (10% burdened ceiling)
 
   Pillar 2 — Institutions of Care (35% of CQ)
+    combined_care (PEFK)     15/10k  — combined P+E+F+K nonprofit density
     fqhc_density             15/100k — eliminates HRSA shortage designation
-    care_institutions (EFK)  8/10k   — saturation of health/MH/food coverage
 
   Pillar 3 — Reach (25% of CQ)
-    snap_coverage_rate       85%     — USDA FNS national participation target
     health_insurance         95%     — near-universal coverage
+    snap_coverage_rate       85%     — USDA FNS national participation target
 
 Usage:
     python code/score.py
@@ -110,43 +109,57 @@ SCORED_METRICS = [
     #   Weights are judgment-based in V1; V2 will derive empirically via
     #   regression against care outcomes across 100 cities.
 
-    # Pillar 1 — Social Support & Connection (40% of CQ)
-    #   Residential stability:  48% — foundational precondition for network formation
-    #   Human services nonprofits: 40% — organized expression of civic caring
-    #   Housing cost burden:    12% — counter-weight; flags forced vs. chosen stability
-    #     (Agha et al. 2024; Desmond & Bell — burden operates via stability, not independently)
-    ("residential_stability",     "pct_same_house",    "pillar1", 95.0, 0.48),
-    ("nonprofit_density",         "social_support",    "pillar1", 10.0, 0.40),
-    ("housing_cost_burden",       "pct_not_burdened",  "pillar1", 85.0, 0.12),
+    # Pillar 1 — Social Fabric (40% of CQ)
+    #   Residential stability:  65% — foundational precondition for network formation.
+    #     Factor analysis confirms this as the dominant signal in its dimension (loading 0.70).
+    #     Putnam (2000); Sampson et al. (1997).
+    #   Housing cost burden:    35% — counter-weight; flags forced vs. chosen stability.
+    #     Agha et al. (2024); Desmond & Bell. Raised from 12% after factor analysis showed
+    #     it loads cleanly with stability as a distinct housing/stability dimension.
+    ("residential_stability",     "pct_same_house",   "pillar1", 95.0, 0.65),
+    ("housing_cost_burden",       "pct_not_burdened", "pillar1", 90.0, 0.35),
 
-    # Pillar 2 — Institutions of Care (35% of CQ) — unchanged
-    ("health_center_density",     "density_per_100k",  "pillar2", 15.0, 0.55),
-    ("nonprofit_density",         "care_institutions", "pillar2",  8.0, 0.45),
+    # Pillar 2 — Institutions of Care (35% of CQ)
+    #   Combined NP density (NTEE P+E+F+K): 50% — care nonprofit organizational density.
+    #     Factor analysis showed NTEE P and NTEE E/F/K correlate at r=0.85 across 71 cities
+    #     and load on the same factor — they measure one underlying dimension. Collapsed into
+    #     a single metric. Benchmark: 25/10k combined — raised from 15/10k after 50%+ of
+    #     cities hit the ceiling using county-based data. ZCTA-based filtering will reduce
+    #     raw counts; 25/10k maintains meaningful discrimination for top performers.
+    #   FQHC density: 50% — strongest evidence base; federal mandate; most directly serves
+    #     vulnerable populations. Rosenbaum et al. (2011); Shi et al.
+    ("nonprofit_density",         "combined_care",    "pillar2", 25.0, 0.50),
+    ("health_center_density",     "density_per_100k", "pillar2", 15.0, 0.50),
 
     # Pillar 3 — Reach (25% of CQ)
-    #   SNAP coverage rate:      60% — food assistance reach among poverty households
-    #   Health insurance:        40% — whether people can access health systems
-    ("snap_participation",        "coverage_rate",     "pillar3", 85.0, 0.60),
-    ("health_insurance_coverage", "pct_insured",       "pillar3", 95.0, 0.40),
+    #   Health insurance:        65% — dominant signal in Reach dimension (factor loading 0.84).
+    #     Whether people can access health systems when they need care.
+    #   SNAP coverage rate:      35% — food assistance reach among likely-eligible households.
+    #     Independent signal from health insurance (r=0.33); captures a different failure mode.
+    ("health_insurance_coverage", "pct_insured",      "pillar3", 95.0, 0.65),
+    ("snap_participation",        "coverage_rate",    "pillar3", 85.0, 0.35),
 ]
 
 # Inter-pillar weights for the Care Quotient
-# 40/35/25: Pillar 1 primary (care ethics, relational primacy); Pillar 2 institutional
-# necessity (Nussbaum capabilities); Pillar 3 most direct impact measure but lowest
-# data maturity in V2 — weight will rise as methodology matures.
+# 40/35/25: Pillar 1 primary (care ethics, relational primacy — social fabric is the
+# precondition for all other care); Pillar 2 institutional necessity (Nussbaum capabilities);
+# Pillar 3 reach. Retained from V2; V4 will revisit after Medicaid/CHIP metric replacement.
 PILLAR_WEIGHTS = {"pillar1": 0.40, "pillar2": 0.35, "pillar3": 0.25}
 
 # Diagnostic metrics — collected and reported, not scored
 DIAGNOSTIC_METRICS = [
     ("library_density",   "density_per_100k",  "Libraries per 100k residents"),
     ("library_density",   "visits_per_capita", "Library visits per capita"),
-    ("nonprofit_density", "all_care",          "All care-related nonprofits per 10k (diagnostic)"),
+    # NP sub-components retained as diagnostics after collapsing into combined_care
+    ("nonprofit_density", "social_support",    "Human services nonprofits per 10k (NTEE P)"),
+    ("nonprofit_density", "care_institutions", "Health/MH/food nonprofits per 10k (NTEE E/F/K)"),
+    ("nonprofit_density", "all_care",          "All care-related nonprofits per 10k (P+E+F+K+X3x)"),
     # Faith-based: X30 captures congregations, not specifically care orgs.
     ("nonprofit_density", "faith_based",       "Faith-based orgs per 10k (X3x, diagnostic only)"),
 ]
 
 PILLAR_LABELS = {
-    "pillar1": "Social Support & Connection",
+    "pillar1": "Social Fabric",
     "pillar2": "Institutions of Care",
     "pillar3": "Reach",
 }
@@ -154,12 +167,14 @@ PILLAR_LABELS = {
 # Human-readable metric labels for output
 METRIC_LABELS = {
     "residential_stability.pct_same_house":        "Residential Stability",
-    "nonprofit_density.social_support":            "Human Services Nonprofits (per 10k)",
     "housing_cost_burden.pct_not_burdened":        "Housing Affordability (% not cost-burdened)",
+    "nonprofit_density.combined_care":             "Care Nonprofits (P+E+F+K per 10k)",
     "health_center_density.density_per_100k":      "FQHCs (per 100k)",
-    "nonprofit_density.care_institutions":         "Health/MH/Food Nonprofits (per 10k)",
-    "snap_participation.coverage_rate":            "SNAP Coverage Rate",
     "health_insurance_coverage.pct_insured":       "Health Insurance Coverage Rate",
+    "snap_participation.coverage_rate":            "SNAP Coverage Rate",
+    # Diagnostic only (not scored)
+    "nonprofit_density.social_support":            "Human Services Nonprofits (NTEE P, per 10k)",
+    "nonprofit_density.care_institutions":         "Health/MH/Food Nonprofits (NTEE E/F/K, per 10k)",
 }
 
 
@@ -194,7 +209,7 @@ def score(df: pd.DataFrame) -> pd.DataFrame:
         results[col] = wide[key].apply(lambda v: normalize_to_benchmark(v, benchmark))
 
     # Weighted pillar scores
-    for pillar in ["pillar1", "pillar2"]:
+    for pillar in ["pillar1", "pillar2", "pillar3"]:
         pillar_metrics = [(m, s, w) for m, s, p, _, w in SCORED_METRICS if p == pillar]
         available = [(m, s, w) for m, s, w in pillar_metrics
                      if f"score_{m}.{s}" in results.columns]
@@ -259,12 +274,12 @@ def write_results(conn, results: pd.DataFrame, raw_df: pd.DataFrame):
     # ── CSV ───────────────────────────────────────────────────────────────────
     score_cols = [f"score_{m}.{s}" for m, s, p, _, w in SCORED_METRICS
                   if f"score_{m}.{s}" in results.columns]
-    cq_col = ["care_quotient", "pillar1", "pillar2"] + score_cols
+    cq_col = ["care_quotient", "pillar1", "pillar2", "pillar3"] + score_cols
     csv_out = results[[c for c in cq_col if c in results.columns]].copy()
     csv_out.index.name = "city"
     csv_out = csv_out.sort_values("care_quotient", ascending=False)
-    rename = {"care_quotient": "Care Quotient", "pillar1": "Social Support & Connection",
-               "pillar2": "Institutions of Care"}
+    rename = {"care_quotient": "Care Quotient", "pillar1": "Social Fabric",
+               "pillar2": "Institutions of Care", "pillar3": "Reach"}
     rename.update({c: METRIC_LABELS.get(c.replace("score_", ""), c) for c in score_cols})
     csv_out.columns = [rename.get(c, c) for c in csv_out.columns]
     csv_path = OUTPUTS_DIR / "care_capacity_scores.csv"
@@ -275,9 +290,9 @@ def write_results(conn, results: pd.DataFrame, raw_df: pd.DataFrame):
     output = {}
     for city in results.index:
         output[city] = {
-            "pillar1_social_support":      results.loc[city, "pillar1"] if "pillar1" in results.columns else None,
+            "pillar1_social_fabric":        results.loc[city, "pillar1"] if "pillar1" in results.columns else None,
             "pillar2_institutions_of_care": results.loc[city, "pillar2"] if "pillar2" in results.columns else None,
-            "pillar3_reach":               results.loc[city, "pillar3"] if "pillar3" in results.columns else None,
+            "pillar3_reach":                results.loc[city, "pillar3"] if "pillar3" in results.columns else None,
             "metrics": {},
         }
         for metric, sub_metric, pillar, benchmark, w in SCORED_METRICS:
@@ -302,7 +317,7 @@ def write_results(conn, results: pd.DataFrame, raw_df: pd.DataFrame):
     print(f"  JSON saved to {json_path}")
 
     # ── Dashboard data.js ─────────────────────────────────────────────────────
-    # Generates dashboard/data.js so the site always reflects the latest run.
+    # Generates docs/data.js so the site always reflects the latest run.
     # The dashboard loads this file instead of hardcoding city data.
     write_dashboard_data(output, raw_df)
 
@@ -310,49 +325,43 @@ def write_results(conn, results: pd.DataFrame, raw_df: pd.DataFrame):
 # ── Dashboard metric display config ──────────────────────────────────────────
 # Maps internal metric keys to the display format expected by the dashboard JS.
 DASHBOARD_METRICS = {
-    # Pillar 1
+    # Pillar 1 — Social Fabric
     "residential_stability": {
         "key": "residential_stability",
         "raw_key": ("residential_stability", "pct_same_house"),
         "benchmark": "95%", "unit": "% same house 1+ yr",
         "fmt": lambda v: f"{v:.1f}%",
     },
-    "social_support": {
-        "key": "social_support",
-        "raw_key": ("nonprofit_density", "social_support"),
-        "benchmark": "10 / 10k", "unit": "human services nonprofits per 10k",
-        "fmt": lambda v: f"{v:.2f}",
-    },
     "housing_cost_burden": {
         "key": "housing_cost_burden",
         "raw_key": ("housing_cost_burden", "pct_not_burdened"),
-        "benchmark": "85%", "unit": "% households not cost-burdened",
+        "benchmark": "90%", "unit": "% households not cost-burdened",
         "fmt": lambda v: f"{v:.1f}%",
     },
-    # Pillar 2
+    # Pillar 2 — Institutions of Care
+    "combined_care": {
+        "key": "combined_care",
+        "raw_key": ("nonprofit_density", "combined_care"),
+        "benchmark": "25 / 10k", "unit": "care nonprofits (P+E+F+K) per 10k",
+        "fmt": lambda v: f"{v:.2f}",
+    },
     "fqhc": {
         "key": "fqhc",
         "raw_key": ("health_center_density", "density_per_100k"),
         "benchmark": "15 / 100k", "unit": "FQHCs per 100,000 residents",
         "fmt": lambda v: f"{v:.2f}",
     },
-    "care_institutions": {
-        "key": "care_institutions",
-        "raw_key": ("nonprofit_density", "care_institutions"),
-        "benchmark": "8 / 10k", "unit": "health/MH/food nonprofits per 10k",
-        "fmt": lambda v: f"{v:.2f}",
-    },
-    # Pillar 3
-    "snap_coverage": {
-        "key": "snap_coverage",
-        "raw_key": ("snap_participation", "coverage_rate"),
-        "benchmark": "85%", "unit": "% SNAP coverage among poverty households",
-        "fmt": lambda v: f"{v:.1f}%",
-    },
+    # Pillar 3 — Reach
     "health_insurance": {
         "key": "health_insurance",
         "raw_key": ("health_insurance_coverage", "pct_insured"),
         "benchmark": "95%", "unit": "% population with health insurance",
+        "fmt": lambda v: f"{v:.1f}%",
+    },
+    "snap_coverage": {
+        "key": "snap_coverage",
+        "raw_key": ("snap_participation", "coverage_rate"),
+        "benchmark": "85%", "unit": "% SNAP coverage among likely-eligible households",
         "fmt": lambda v: f"{v:.1f}%",
     },
 }
@@ -363,36 +372,44 @@ DASHBOARD_DIAGNOSTIC = {
     "faith_based": ("nonprofit_density", "faith_based",       "faith-based orgs per 10k (X3x)"),
 }
 
-# City display metadata (population string, etc.) not stored in DuckDB
+def _fmt_population(n: int) -> str:
+    if n >= 1_000_000:
+        return f"{n/1_000_000:.1f}M residents"
+    if n >= 1_000:
+        return f"{n/1_000:.0f}k residents"
+    return f"{n} residents"
+
+
+# City display metadata — built from cities.csv at import time so it
+# automatically covers every city in the file, not just the original 5.
 CITY_DISPLAY = {
-    "nyc":         {"state": "NY", "population": "8.3M residents"},
-    "chicago":     {"state": "IL", "population": "2.7M residents"},
-    "los_angeles": {"state": "CA", "population": "3.9M residents"},
-    "houston":     {"state": "TX", "population": "2.3M residents"},
-    "boston":      {"state": "MA", "population": "676k residents"},
+    city_key: {
+        "state":      cfg["state"],
+        "population": _fmt_population(cfg["population"]),
+    }
+    for city_key, cfg in CITY_CONFIG.items()
 }
 
 # Score key mapping: dashboard metric key -> score.py results column name
 SCORE_COL = {
     "residential_stability": "score_residential_stability.pct_same_house",
-    "social_support":        "score_nonprofit_density.social_support",
     "housing_cost_burden":   "score_housing_cost_burden.pct_not_burdened",
+    "combined_care":         "score_nonprofit_density.combined_care",
     "fqhc":                  "score_health_center_density.density_per_100k",
-    "care_institutions":     "score_nonprofit_density.care_institutions",
-    "snap_coverage":         "score_snap_participation.coverage_rate",
     "health_insurance":      "score_health_insurance_coverage.pct_insured",
+    "snap_coverage":         "score_snap_participation.coverage_rate",
 }
 
 
 def write_dashboard_data(score_output: dict, raw_df: pd.DataFrame):
     """
-    Write dashboard/data.js from the current scored output.
+    Write docs/data.js from the current scored output.
     The dashboard loads this file so city data is never hardcoded in index.html.
 
     raw_df: the full metrics DataFrame already loaded from DuckDB (avoids
     opening a second connection while the main connection is still open).
     """
-    dashboard_dir = PROJECT_ROOT / "dashboard"
+    dashboard_dir = PROJECT_ROOT / "docs"
     dashboard_dir.mkdir(exist_ok=True)
 
     cities_js = {}
@@ -420,7 +437,7 @@ def write_dashboard_data(score_output: dict, raw_df: pd.DataFrame):
             "state":      display["state"],
             "population": display["population"],
             "cq":         city_scores.get("care_quotient", 0),
-            "pillar1":    city_scores.get("pillar1_social_support", 0),
+            "pillar1":    city_scores.get("pillar1_social_fabric", 0),
             "pillar2":    city_scores.get("pillar2_institutions_of_care", 0),
             "pillar3":    city_scores.get("pillar3_reach", 0),
             "metrics":    metrics,

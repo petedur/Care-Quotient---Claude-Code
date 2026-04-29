@@ -14,6 +14,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from config import IMLS_DATA_PATH, DATA_RAW, CITIES
+from geo.zip_fips import normalize_zip
+from geo.city_zips import city_to_zips
 
 IMLS_DIR = Path(IMLS_DATA_PATH)
 
@@ -28,12 +30,13 @@ def _load(pattern: str) -> pd.DataFrame:
     return df
 
 
-def _filter_city(df: pd.DataFrame, city_cfg: dict,
-                 state_col: str = "STABR", city_col: str = "CITY") -> pd.DataFrame:
-    state_mask = df[state_col].str.upper() == city_cfg["state"].upper()
-    city_names = [n.upper() for n in city_cfg["irs_city_names"]]
-    city_mask  = df[city_col].str.upper().isin(city_names)
-    return df[state_mask & city_mask].copy()
+def _filter_city(df: pd.DataFrame, city_key: str,
+                 state_col: str = "STABR", zip_col: str = "ZIP") -> pd.DataFrame:
+    """Filter IMLS data to outlets whose ZIP falls within the city's ZCTA boundary."""
+    valid_zips = city_to_zips(city_key)
+    state_mask = df[state_col].str.upper() == CITIES[city_key]["state"].upper()
+    zip_mask   = df[zip_col].apply(normalize_zip).isin(valid_zips)
+    return df[state_mask & zip_mask].copy()
 
 
 def collect(city_key: str = "nyc") -> dict:
@@ -43,7 +46,7 @@ def collect(city_key: str = "nyc") -> dict:
 
     # ── Outlet file: count physical locations ─────────────────────────────────
     outlet_df  = _load("*outlet*.csv")
-    city_outlets = _filter_city(outlet_df, city)
+    city_outlets = _filter_city(outlet_df, city_key)
     count   = len(city_outlets)
     density = round(count / pop * 100_000, 2)
     print(f"  {count} library outlets -> {density} per 100,000")
@@ -53,7 +56,7 @@ def collect(city_key: str = "nyc") -> dict:
     # ── AE file: visits per capita ────────────────────────────────────────────
     try:
         ae_df      = _load("*AE*.csv")
-        city_ae    = _filter_city(ae_df, city)
+        city_ae    = _filter_city(ae_df, city_key)
         total_visits = pd.to_numeric(city_ae["VISITS"], errors="coerce").sum()
         vpc = round(total_visits / pop, 2)
         metrics["total_visits"]      = int(total_visits)

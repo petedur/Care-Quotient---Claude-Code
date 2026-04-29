@@ -11,7 +11,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import CITIES
-from collectors import nonprofit_density, residential_stability, library_density, health_centers
+from collectors import (
+    nonprofit_density, residential_stability, library_density, health_centers,
+    housing_cost_burden, snap_participation, health_insurance_coverage,
+)
 import etl
 import score as scorer
 
@@ -26,6 +29,9 @@ def run_city(city_key: str):
         residential_stability.collect,
         library_density.collect,
         health_centers.collect,
+        housing_cost_burden.collect,
+        snap_participation.collect,
+        health_insurance_coverage.collect,
     ]
 
     for collector in collectors:

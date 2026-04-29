@@ -6,6 +6,7 @@ API keys are loaded from the .env file in the project root — never hardcoded.
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+import pandas as pd
 
 # Load .env from the project root (one level above /code)
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -58,76 +59,52 @@ def get_census_api_key() -> str:
     return key
 
 # ── City definitions ──────────────────────────────────────────────────────────
-# Each city entry contains everything needed to filter national datasets.
-# county_fips: list of "SSCCC" strings (state FIPS + county FIPS, zero-padded)
-# irs_city_names: all city-name variants that appear in IRS EO BMF for this city
-# state_fips: 2-digit string
+# Cities are loaded from data/cities.csv, which contains one row per city with
+# pipe-separated 5-digit county FIPS codes (e.g. "36061|36005|36047").
+#
+# The resulting CITIES dict has this shape per entry:
+#   {
+#     "name":        str,           # display name
+#     "state":       str,           # state abbreviation e.g. "NY"
+#     "state_fips":  str,           # 2-digit state FIPS e.g. "36"
+#     "population":  int,
+#     "county_fips": set[str],      # set of 5-digit county FIPS strings
+#   }
+#
+# Collectors use county_fips to look up the matching ZIP codes via
+# geo.zip_fips.county_to_zips(), then filter datasets by ZIP.
 
-CITIES = {
-    "nyc": {
-        "name": "New York City",
-        "state": "NY",
-        "state_fips": "36",
-        "population": 8_335_897,
-        "county_fips": {
-            "New York (Manhattan)": "061",
-            "Bronx":               "005",
-            "Kings (Brooklyn)":    "047",
-            "Queens":              "081",
-            "Richmond (Staten Island)": "001",
-        },
-        # IRS EO BMF uses city names at the borough level
-        "irs_city_names": ["NEW YORK", "BROOKLYN", "BRONX", "QUEENS",
-                           "STATEN ISLAND", "FLUSHING", "JAMAICA"],
-    },
-    "chicago": {
-        "name": "Chicago",
-        "state": "IL",
-        "state_fips": "17",
-        "population": 2_696_555,
-        "county_fips": {
-            "Cook": "031",
-        },
-        "irs_city_names": ["CHICAGO"],
-    },
-    "los_angeles": {
-        "name": "Los Angeles",
-        "state": "CA",
-        "state_fips": "06",
-        "population": 3_898_747,
-        "county_fips": {
-            "Los Angeles": "037",
-        },
-        "irs_city_names": ["LOS ANGELES"],
-    },
-    "houston": {
-        "name": "Houston",
-        "state": "TX",
-        "state_fips": "48",
-        "population": 2_304_580,
-        "county_fips": {
-            "Harris": "201",
-        },
-        "irs_city_names": ["HOUSTON"],
-    },
-    "boston": {
-        "name": "Boston",
-        "state": "MA",
-        "state_fips": "25",
-        "population": 675_647,
-        "county_fips": {
-            "Suffolk": "025",
-        },
-        # Boston orgs and library branches are filed under neighborhood names,
-        # not "BOSTON". All confirmed present in both IRS EO BMF and IMLS data.
-        "irs_city_names": [
-            "BOSTON", "DORCHESTER", "ROXBURY", "JAMAICA PLAIN",
-            "BRIGHTON", "CHARLESTOWN", "HYDE PARK", "MATTAPAN",
-            "ROSLINDALE", "WEST ROXBURY", "EAST BOSTON",
-            "SOUTH BOSTON", "ALLSTON",
-        ],
-    },
-}
+_CITIES_CSV = PROJECT_ROOT / "data" / "cities.csv"
+
+
+def _load_cities() -> dict:
+    if not _CITIES_CSV.exists():
+        raise FileNotFoundError(
+            f"cities.csv not found at {_CITIES_CSV}. "
+            "Ensure care-capacity-index/data/cities.csv is present."
+        )
+    df = pd.read_csv(_CITIES_CSV, dtype=str)
+    cities = {}
+    for _, row in df.iterrows():
+        fips_set = set(row["county_fips"].split("|"))
+        # place_fips: 5-digit Census incorporated place code.
+        # Used by geo.city_zips.city_to_zips() for ZCTA-based geographic filtering.
+        # Run setup/lookup_place_fips.py to populate this column.
+        place_fips = row.get("place_fips", "")
+        if pd.isna(place_fips):
+            place_fips = ""
+        cities[row["city_key"]] = {
+            "name":        row["name"],
+            "state":       row["state"],
+            "state_fips":  row["state_fips"].zfill(2),
+            "population":  int(row["population"]),
+            "county_fips": fips_set,
+            "place_fips":  str(place_fips).strip().zfill(5) if place_fips else "",
+        }
+    return cities
+
+
+CITIES = _load_cities()
 
 # ── NTEE codes ────────────────────────────────────────────────────────────────
 # Values can be single-character (match first letter only) or multi-character
@@ -144,6 +121,13 @@ NTEE_SOCIAL_SUPPORT = ["P"]
 # F = Mental Health & Crisis Intervention
 # K = Food, Agriculture & Nutrition (food banks, food pantries)
 NTEE_CARE_INSTITUTIONS = ["E", "F", "K"]
+
+# Combined scored nonprofit metric (V3): P + E + F + K without faith-based.
+# Factor analysis showed NTEE P and NTEE E/F/K correlate at r=0.85 across
+# 71 cities — they measure the same underlying dimension (nonprofit density)
+# rather than distinct pillar-level constructs. Combined into one scored metric
+# in Pillar 2; individual P and E/F/K counts retained as diagnostics.
+NTEE_COMBINED_CARE = ["P", "E", "F", "K"]
 
 # Faith-based human services only — NOT all religious organizations.
 # X3x = Faith-Based Human Services & Issues (NTEE X30 category).
@@ -184,11 +168,16 @@ CENSUS_ACS_VARIABLES = {
     "owner_no_mtg_burden_40_49": "B25091_021E",
     "owner_no_mtg_burden_50plus": "B25091_022E",
 
-    # SNAP participation (B22001, B17001)
+    # SNAP participation (B22001, C17002)
+    # Denominator uses C17002 (0–149% FPL) to approximate 130% FPL SNAP eligibility.
+    # Prior version used B17001 (100% FPL) which understated eligibility.
     "snap_total_households": "B22001_001E",
     "snap_households":       "B22001_002E",
-    "poverty_total_pop":     "B17001_001E",
-    "poverty_pop":           "B17001_002E",
+    "snap_total_pop":        "C17002_001E",   # C17002 universe
+    "fpl_under_50":          "C17002_002E",   # under 0.50 FPL
+    "fpl_50_99":             "C17002_003E",   # 0.50–0.99 FPL
+    "fpl_100_124":           "C17002_004E",   # 1.00–1.24 FPL
+    "fpl_125_149":           "C17002_005E",   # 1.25–1.49 FPL
 
     # Health insurance coverage (B27001) — total + 18 uninsured cells
     "health_ins_total_pop":  "B27001_001E",
