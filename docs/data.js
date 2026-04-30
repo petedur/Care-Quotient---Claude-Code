@@ -6,29 +6,29 @@ const CITIES = {
     "name": "Albuquerque",
     "state": "NM",
     "population": "565k residents",
-    "cq": 63.0,
-    "pillar1": 83.1,
-    "pillar2": 21.7,
-    "pillar3": 88.6,
+    "cq": 63.2,
+    "pillar1": 83.3,
+    "pillar2": 21.8,
+    "pillar3": 88.8,
     "metrics": {
       "residential_stability": {
-        "score": 88.3,
-        "raw": 83.85,
-        "rawFmt": "83.8%",
+        "score": 88.5,
+        "raw": 84.04,
+        "rawFmt": "84.0%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 73.5,
-        "raw": 66.18,
-        "rawFmt": "66.2%",
+        "score": 73.7,
+        "raw": 66.32,
+        "rawFmt": "66.3%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 18.6,
-        "raw": 4.64,
-        "rawFmt": "4.64",
+        "score": 18.9,
+        "raw": 4.73,
+        "rawFmt": "4.73",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -40,16 +40,16 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 97.4,
-        "raw": 92.56,
+        "score": 97.5,
+        "raw": 92.64,
         "rawFmt": "92.6%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 72.4,
-        "raw": 61.58,
-        "rawFmt": "61.6%",
+        "score": 72.6,
+        "raw": 61.72,
+        "rawFmt": "61.7%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
@@ -140,57 +140,57 @@ const CITIES = {
     "name": "Atlanta",
     "state": "GA",
     "population": "499k residents",
-    "cq": 69.3,
-    "pillar1": 78.1,
-    "pillar2": 50.1,
-    "pillar3": 82.0,
+    "cq": 73.4,
+    "pillar1": 79.5,
+    "pillar2": 59.0,
+    "pillar3": 83.9,
     "metrics": {
       "residential_stability": {
-        "score": 82.5,
-        "raw": 78.33,
-        "rawFmt": "78.3%",
+        "score": 84.2,
+        "raw": 80.01,
+        "rawFmt": "80.0%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 70.0,
-        "raw": 63.02,
-        "rawFmt": "63.0%",
+        "score": 70.7,
+        "raw": 63.64,
+        "rawFmt": "63.6%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 72.1,
-        "raw": 18.03,
-        "rawFmt": "18.03",
+        "score": 86.0,
+        "raw": 21.5,
+        "rawFmt": "21.50",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 28.1,
-        "raw": 4.21,
-        "rawFmt": "4.21",
+        "score": 32.1,
+        "raw": 4.81,
+        "rawFmt": "4.81",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 94.2,
-        "raw": 89.53,
-        "rawFmt": "89.5%",
+        "score": 94.1,
+        "raw": 89.38,
+        "rawFmt": "89.4%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 59.4,
-        "raw": 50.52,
-        "rawFmt": "50.5%",
+        "score": 64.9,
+        "raw": 55.2,
+        "rawFmt": "55.2%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "3.81",
+        "value": "4.41",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -198,7 +198,7 @@ const CITIES = {
         "unit": "library visits per capita"
       },
       "faith_based": {
-        "value": "0.14",
+        "value": "0.34",
         "unit": "faith-based orgs per 10k (X3x)"
       }
     }
@@ -274,29 +274,29 @@ const CITIES = {
     "name": "Austin",
     "state": "TX",
     "population": "962k residents",
-    "cq": 60.5,
-    "pillar1": 77.9,
-    "pillar2": 31.2,
-    "pillar3": 73.6,
+    "cq": 60.9,
+    "pillar1": 78.1,
+    "pillar2": 32.2,
+    "pillar3": 73.7,
     "metrics": {
       "residential_stability": {
-        "score": 81.8,
-        "raw": 77.71,
-        "rawFmt": "77.7%",
+        "score": 82.0,
+        "raw": 77.86,
+        "rawFmt": "77.9%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 70.7,
-        "raw": 63.62,
-        "rawFmt": "63.6%",
+        "score": 70.9,
+        "raw": 63.8,
+        "rawFmt": "63.8%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 31.8,
-        "raw": 7.96,
-        "rawFmt": "7.96",
+        "score": 33.9,
+        "raw": 8.48,
+        "rawFmt": "8.48",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -308,23 +308,23 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 91.6,
-        "raw": 87.01,
-        "rawFmt": "87.0%",
+        "score": 91.9,
+        "raw": 87.29,
+        "rawFmt": "87.3%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 40.1,
-        "raw": 34.07,
-        "rawFmt": "34.1%",
+        "score": 39.9,
+        "raw": 33.95,
+        "rawFmt": "34.0%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "2.39",
+        "value": "2.50",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -332,7 +332,7 @@ const CITIES = {
         "unit": "library visits per capita"
       },
       "faith_based": {
-        "value": "0.18",
+        "value": "0.19",
         "unit": "faith-based orgs per 10k (X3x)"
       }
     }
@@ -408,29 +408,29 @@ const CITIES = {
     "name": "Baltimore",
     "state": "MD",
     "population": "586k residents",
-    "cq": 71.8,
-    "pillar1": 81.5,
-    "pillar2": 42.4,
-    "pillar3": 97.6,
+    "cq": 72.4,
+    "pillar1": 81.8,
+    "pillar2": 43.6,
+    "pillar3": 97.7,
     "metrics": {
       "residential_stability": {
-        "score": 89.0,
-        "raw": 84.52,
-        "rawFmt": "84.5%",
+        "score": 89.2,
+        "raw": 84.72,
+        "rawFmt": "84.7%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 67.7,
-        "raw": 60.94,
-        "rawFmt": "60.9%",
+        "score": 68.1,
+        "raw": 61.26,
+        "rawFmt": "61.3%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 54.2,
-        "raw": 13.54,
-        "rawFmt": "13.54",
+        "score": 56.6,
+        "raw": 14.15,
+        "rawFmt": "14.15",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -442,16 +442,16 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 99.6,
-        "raw": 94.61,
-        "rawFmt": "94.6%",
+        "score": 99.7,
+        "raw": 94.69,
+        "rawFmt": "94.7%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 94.0,
-        "raw": 79.93,
-        "rawFmt": "79.9%",
+        "score": 94.1,
+        "raw": 79.98,
+        "rawFmt": "80.0%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
@@ -466,7 +466,7 @@ const CITIES = {
         "unit": "library visits per capita"
       },
       "faith_based": {
-        "value": "0.87",
+        "value": "1.55",
         "unit": "faith-based orgs per 10k (X3x)"
       }
     }
@@ -475,57 +475,57 @@ const CITIES = {
     "name": "Baton Rouge",
     "state": "LA",
     "population": "228k residents",
-    "cq": 69.5,
-    "pillar1": 76.3,
-    "pillar2": 52.6,
-    "pillar3": 82.2,
+    "cq": 72.8,
+    "pillar1": 78.2,
+    "pillar2": 59.7,
+    "pillar3": 82.6,
     "metrics": {
       "residential_stability": {
-        "score": 81.5,
-        "raw": 77.39,
-        "rawFmt": "77.4%",
+        "score": 83.5,
+        "raw": 79.35,
+        "rawFmt": "79.3%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 66.7,
-        "raw": 60.0,
-        "rawFmt": "60.0%",
+        "score": 68.5,
+        "raw": 61.63,
+        "rawFmt": "61.6%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 26.2,
-        "raw": 6.55,
-        "rawFmt": "6.55",
+        "score": 37.3,
+        "raw": 9.32,
+        "rawFmt": "9.32",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 79.1,
-        "raw": 11.87,
-        "rawFmt": "11.87",
+        "score": 82.1,
+        "raw": 12.31,
+        "rawFmt": "12.31",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 93.9,
-        "raw": 89.22,
-        "rawFmt": "89.2%",
+        "score": 93.7,
+        "raw": 89.04,
+        "rawFmt": "89.0%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 60.4,
-        "raw": 51.31,
-        "rawFmt": "51.3%",
+        "score": 62.0,
+        "raw": 52.68,
+        "rawFmt": "52.7%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "3.52",
+        "value": "4.39",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -542,29 +542,29 @@ const CITIES = {
     "name": "Birmingham",
     "state": "AL",
     "population": "212k residents",
-    "cq": 67.7,
-    "pillar1": 77.2,
-    "pillar2": 45.8,
-    "pillar3": 83.3,
+    "cq": 68.9,
+    "pillar1": 78.1,
+    "pillar2": 47.4,
+    "pillar3": 84.1,
     "metrics": {
       "residential_stability": {
-        "score": 84.5,
-        "raw": 80.23,
-        "rawFmt": "80.2%",
+        "score": 85.1,
+        "raw": 80.8,
+        "rawFmt": "80.8%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 63.7,
-        "raw": 57.32,
-        "rawFmt": "57.3%",
+        "score": 65.1,
+        "raw": 58.61,
+        "rawFmt": "58.6%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 35.2,
-        "raw": 8.81,
-        "rawFmt": "8.81",
+        "score": 38.4,
+        "raw": 9.61,
+        "rawFmt": "9.61",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -576,16 +576,16 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 91.5,
-        "raw": 86.89,
-        "rawFmt": "86.9%",
+        "score": 92.4,
+        "raw": 87.79,
+        "rawFmt": "87.8%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 68.0,
-        "raw": 57.84,
-        "rawFmt": "57.8%",
+        "score": 68.8,
+        "raw": 58.45,
+        "rawFmt": "58.5%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
@@ -810,57 +810,57 @@ const CITIES = {
     "name": "Chicago",
     "state": "IL",
     "population": "2.7M residents",
-    "cq": 69.3,
-    "pillar1": 81.3,
-    "pillar2": 40.4,
-    "pillar3": 90.5,
+    "cq": 69.5,
+    "pillar1": 81.4,
+    "pillar2": 40.8,
+    "pillar3": 90.6,
     "metrics": {
       "residential_stability": {
-        "score": 88.7,
-        "raw": 84.29,
-        "rawFmt": "84.3%",
+        "score": 88.9,
+        "raw": 84.47,
+        "rawFmt": "84.5%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
         "score": 67.5,
-        "raw": 60.71,
-        "rawFmt": "60.7%",
+        "raw": 60.78,
+        "rawFmt": "60.8%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 33.2,
-        "raw": 8.3,
-        "rawFmt": "8.30",
+        "score": 33.8,
+        "raw": 8.46,
+        "rawFmt": "8.46",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 47.7,
-        "raw": 7.16,
-        "rawFmt": "7.16",
+        "score": 47.9,
+        "raw": 7.19,
+        "rawFmt": "7.19",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
         "score": 94.9,
-        "raw": 90.14,
+        "raw": 90.11,
         "rawFmt": "90.1%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 82.3,
-        "raw": 69.94,
-        "rawFmt": "69.9%",
+        "score": 82.6,
+        "raw": 70.19,
+        "rawFmt": "70.2%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "2.93",
+        "value": "3.00",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -877,57 +877,57 @@ const CITIES = {
     "name": "Cincinnati",
     "state": "OH",
     "population": "309k residents",
-    "cq": 74.3,
-    "pillar1": 78.2,
-    "pillar2": 62.4,
+    "cq": 76.0,
+    "pillar1": 78.5,
+    "pillar2": 66.8,
     "pillar3": 84.8,
     "metrics": {
       "residential_stability": {
-        "score": 82.5,
-        "raw": 78.4,
-        "rawFmt": "78.4%",
+        "score": 82.8,
+        "raw": 78.62,
+        "rawFmt": "78.6%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 70.3,
-        "raw": 63.27,
-        "rawFmt": "63.3%",
+        "score": 70.4,
+        "raw": 63.4,
+        "rawFmt": "63.4%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 49.2,
-        "raw": 12.29,
-        "rawFmt": "12.29",
+        "score": 51.8,
+        "raw": 12.96,
+        "rawFmt": "12.96",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 75.5,
-        "raw": 11.32,
-        "rawFmt": "11.32",
+        "score": 81.9,
+        "raw": 12.29,
+        "rawFmt": "12.29",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 97.5,
-        "raw": 92.65,
-        "rawFmt": "92.7%",
+        "score": 97.7,
+        "raw": 92.85,
+        "rawFmt": "92.8%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 61.2,
-        "raw": 52.04,
-        "rawFmt": "52.0%",
+        "score": 60.7,
+        "raw": 51.62,
+        "rawFmt": "51.6%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "5.17",
+        "value": "5.82",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -944,29 +944,29 @@ const CITIES = {
     "name": "Cleveland",
     "state": "OH",
     "population": "373k residents",
-    "cq": 76.0,
-    "pillar1": 78.8,
-    "pillar2": 61.0,
-    "pillar3": 92.7,
+    "cq": 77.3,
+    "pillar1": 79.3,
+    "pillar2": 64.0,
+    "pillar3": 92.6,
     "metrics": {
       "residential_stability": {
-        "score": 85.0,
-        "raw": 80.79,
-        "rawFmt": "80.8%",
+        "score": 85.7,
+        "raw": 81.4,
+        "rawFmt": "81.4%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 67.3,
-        "raw": 60.59,
+        "score": 67.4,
+        "raw": 60.65,
         "rawFmt": "60.6%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 47.0,
-        "raw": 11.75,
-        "rawFmt": "11.75",
+        "score": 53.0,
+        "raw": 13.26,
+        "rawFmt": "13.26",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -978,23 +978,23 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 97.3,
-        "raw": 92.39,
-        "rawFmt": "92.4%",
+        "score": 97.6,
+        "raw": 92.74,
+        "rawFmt": "92.7%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 84.2,
-        "raw": 71.61,
-        "rawFmt": "71.6%",
+        "score": 83.2,
+        "raw": 70.7,
+        "rawFmt": "70.7%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "6.71",
+        "value": "7.78",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -1011,29 +1011,29 @@ const CITIES = {
     "name": "Colorado Springs",
     "state": "CO",
     "population": "479k residents",
-    "cq": 61.3,
+    "cq": 61.5,
     "pillar1": 79.1,
-    "pillar2": 23.8,
-    "pillar3": 85.2,
+    "pillar2": 24.5,
+    "pillar3": 85.1,
     "metrics": {
       "residential_stability": {
         "score": 83.1,
-        "raw": 78.92,
+        "raw": 78.91,
         "rawFmt": "78.9%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 71.8,
-        "raw": 64.64,
-        "rawFmt": "64.6%",
+        "score": 71.6,
+        "raw": 64.45,
+        "rawFmt": "64.5%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 25.3,
-        "raw": 6.33,
-        "rawFmt": "6.33",
+        "score": 26.6,
+        "raw": 6.64,
+        "rawFmt": "6.64",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -1046,22 +1046,22 @@ const CITIES = {
       },
       "health_insurance": {
         "score": 96.4,
-        "raw": 91.6,
+        "raw": 91.59,
         "rawFmt": "91.6%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 64.5,
-        "raw": 54.82,
-        "rawFmt": "54.8%",
+        "score": 64.1,
+        "raw": 54.49,
+        "rawFmt": "54.5%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "1.46",
+        "value": "1.67",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -1078,29 +1078,29 @@ const CITIES = {
     "name": "Columbus",
     "state": "OH",
     "population": "906k residents",
-    "cq": 61.6,
+    "cq": 61.7,
     "pillar1": 79.5,
-    "pillar2": 26.8,
-    "pillar3": 81.8,
+    "pillar2": 27.2,
+    "pillar3": 81.6,
     "metrics": {
       "residential_stability": {
         "score": 83.1,
-        "raw": 78.99,
-        "rawFmt": "79.0%",
+        "raw": 78.92,
+        "rawFmt": "78.9%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
         "score": 72.9,
-        "raw": 65.58,
+        "raw": 65.61,
         "rawFmt": "65.6%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 31.5,
-        "raw": 7.88,
-        "rawFmt": "7.88",
+        "score": 32.4,
+        "raw": 8.11,
+        "rawFmt": "8.11",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -1112,23 +1112,23 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 94.1,
-        "raw": 89.38,
-        "rawFmt": "89.4%",
+        "score": 94.3,
+        "raw": 89.58,
+        "rawFmt": "89.6%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 59.0,
-        "raw": 50.14,
-        "rawFmt": "50.1%",
+        "score": 58.0,
+        "raw": 49.32,
+        "rawFmt": "49.3%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "2.21",
+        "value": "2.54",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -1145,29 +1145,29 @@ const CITIES = {
     "name": "Corpus Christi",
     "state": "TX",
     "population": "318k residents",
-    "cq": 56.7,
-    "pillar1": 82.4,
-    "pillar2": 8.2,
-    "pillar3": 83.6,
+    "cq": 56.9,
+    "pillar1": 82.6,
+    "pillar2": 9.2,
+    "pillar3": 82.5,
     "metrics": {
       "residential_stability": {
         "score": 87.2,
-        "raw": 82.84,
+        "raw": 82.82,
         "rawFmt": "82.8%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 73.5,
-        "raw": 66.13,
-        "rawFmt": "66.1%",
+        "score": 74.2,
+        "raw": 66.74,
+        "rawFmt": "66.7%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 10.1,
-        "raw": 2.52,
-        "rawFmt": "2.52",
+        "score": 12.1,
+        "raw": 3.02,
+        "rawFmt": "3.02",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -1179,23 +1179,23 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 86.3,
-        "raw": 81.97,
-        "rawFmt": "82.0%",
+        "score": 86.8,
+        "raw": 82.43,
+        "rawFmt": "82.4%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 78.6,
-        "raw": 66.78,
-        "rawFmt": "66.8%",
+        "score": 74.6,
+        "raw": 63.43,
+        "rawFmt": "63.4%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "1.89",
+        "value": "2.52",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -1212,29 +1212,29 @@ const CITIES = {
     "name": "Dallas",
     "state": "TX",
     "population": "1.3M residents",
-    "cq": 57.8,
+    "cq": 58.0,
     "pillar1": 80.5,
-    "pillar2": 23.6,
-    "pillar3": 69.3,
+    "pillar2": 24.1,
+    "pillar3": 69.4,
     "metrics": {
       "residential_stability": {
-        "score": 87.6,
-        "raw": 83.18,
-        "rawFmt": "83.2%",
+        "score": 87.5,
+        "raw": 83.13,
+        "rawFmt": "83.1%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 67.4,
-        "raw": 60.7,
-        "rawFmt": "60.7%",
+        "score": 67.6,
+        "raw": 60.8,
+        "rawFmt": "60.8%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 35.5,
-        "raw": 8.87,
-        "rawFmt": "8.87",
+        "score": 36.5,
+        "raw": 9.12,
+        "rawFmt": "9.12",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -1246,16 +1246,16 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 80.6,
-        "raw": 76.53,
-        "rawFmt": "76.5%",
+        "score": 80.7,
+        "raw": 76.64,
+        "rawFmt": "76.6%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 48.4,
-        "raw": 41.11,
-        "rawFmt": "41.1%",
+        "score": 48.3,
+        "raw": 41.03,
+        "rawFmt": "41.0%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
@@ -1480,50 +1480,50 @@ const CITIES = {
     "name": "Durham",
     "state": "NC",
     "population": "284k residents",
-    "cq": 61.5,
-    "pillar1": 83.2,
-    "pillar2": 22.4,
-    "pillar3": 81.6,
+    "cq": 62.2,
+    "pillar1": 82.6,
+    "pillar2": 26.7,
+    "pillar3": 79.2,
     "metrics": {
       "residential_stability": {
-        "score": 86.0,
-        "raw": 81.68,
-        "rawFmt": "81.7%",
+        "score": 85.5,
+        "raw": 81.21,
+        "rawFmt": "81.2%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 78.1,
-        "raw": 70.3,
-        "rawFmt": "70.3%",
+        "score": 77.1,
+        "raw": 69.37,
+        "rawFmt": "69.4%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 28.2,
-        "raw": 7.05,
-        "rawFmt": "7.05",
+        "score": 34.6,
+        "raw": 8.64,
+        "rawFmt": "8.64",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 16.5,
-        "raw": 2.47,
-        "rawFmt": "2.47",
+        "score": 18.8,
+        "raw": 2.82,
+        "rawFmt": "2.82",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 92.4,
-        "raw": 87.74,
-        "rawFmt": "87.7%",
+        "score": 92.7,
+        "raw": 88.02,
+        "rawFmt": "88.0%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 61.5,
-        "raw": 52.28,
-        "rawFmt": "52.3%",
+        "score": 54.1,
+        "raw": 46.02,
+        "rawFmt": "46.0%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
@@ -1538,7 +1538,7 @@ const CITIES = {
         "unit": "library visits per capita"
       },
       "faith_based": {
-        "value": "0.18",
+        "value": "0.25",
         "unit": "faith-based orgs per 10k (X3x)"
       }
     }
@@ -1614,57 +1614,57 @@ const CITIES = {
     "name": "Fort Worth",
     "state": "TX",
     "population": "919k residents",
-    "cq": 56.4,
-    "pillar1": 82.1,
-    "pillar2": 12.6,
-    "pillar3": 76.6,
+    "cq": 57.2,
+    "pillar1": 82.6,
+    "pillar2": 14.0,
+    "pillar3": 76.9,
     "metrics": {
       "residential_stability": {
-        "score": 88.5,
-        "raw": 84.08,
-        "rawFmt": "84.1%",
+        "score": 89.0,
+        "raw": 84.52,
+        "rawFmt": "84.5%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 70.1,
-        "raw": 63.11,
-        "rawFmt": "63.1%",
+        "score": 70.7,
+        "raw": 63.66,
+        "rawFmt": "63.7%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 24.5,
-        "raw": 6.13,
-        "rawFmt": "6.13",
+        "score": 26.6,
+        "raw": 6.64,
+        "rawFmt": "6.64",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 0.7,
-        "raw": 0.11,
-        "rawFmt": "0.11",
+        "score": 1.5,
+        "raw": 0.22,
+        "rawFmt": "0.22",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 83.8,
-        "raw": 79.62,
-        "rawFmt": "79.6%",
+        "score": 84.1,
+        "raw": 79.86,
+        "rawFmt": "79.9%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 63.2,
-        "raw": 53.71,
-        "rawFmt": "53.7%",
+        "score": 63.4,
+        "raw": 53.9,
+        "rawFmt": "53.9%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "2.07",
+        "value": "2.29",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -1682,28 +1682,28 @@ const CITIES = {
     "state": "CA",
     "population": "542k residents",
     "cq": 70.2,
-    "pillar1": 81.7,
-    "pillar2": 42.2,
-    "pillar3": 90.8,
+    "pillar1": 81.8,
+    "pillar2": 42.4,
+    "pillar3": 90.7,
     "metrics": {
       "residential_stability": {
         "score": 90.6,
-        "raw": 86.08,
+        "raw": 86.11,
         "rawFmt": "86.1%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 65.1,
-        "raw": 58.59,
-        "rawFmt": "58.6%",
+        "score": 65.4,
+        "raw": 58.89,
+        "rawFmt": "58.9%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 25.3,
-        "raw": 6.33,
-        "rawFmt": "6.33",
+        "score": 25.8,
+        "raw": 6.46,
+        "rawFmt": "6.46",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -1715,16 +1715,16 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 98.3,
-        "raw": 93.43,
-        "rawFmt": "93.4%",
+        "score": 98.4,
+        "raw": 93.49,
+        "rawFmt": "93.5%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 76.9,
-        "raw": 65.34,
-        "rawFmt": "65.3%",
+        "score": 76.3,
+        "raw": 64.84,
+        "rawFmt": "64.8%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
@@ -1815,57 +1815,57 @@ const CITIES = {
     "name": "Houston",
     "state": "TX",
     "population": "2.3M residents",
-    "cq": 59.9,
-    "pillar1": 80.7,
-    "pillar2": 27.6,
-    "pillar3": 71.8,
+    "cq": 60.5,
+    "pillar1": 80.8,
+    "pillar2": 29.0,
+    "pillar3": 72.0,
     "metrics": {
       "residential_stability": {
         "score": 87.2,
-        "raw": 82.81,
+        "raw": 82.82,
         "rawFmt": "82.8%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 68.7,
-        "raw": 61.85,
+        "score": 68.8,
+        "raw": 61.94,
         "rawFmt": "61.9%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 30.5,
-        "raw": 7.62,
-        "rawFmt": "7.62",
+        "score": 32.2,
+        "raw": 8.04,
+        "rawFmt": "8.04",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 24.6,
-        "raw": 3.69,
-        "rawFmt": "3.69",
+        "score": 25.7,
+        "raw": 3.86,
+        "rawFmt": "3.86",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 79.9,
-        "raw": 75.86,
-        "rawFmt": "75.9%",
+        "score": 80.3,
+        "raw": 76.29,
+        "rawFmt": "76.3%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 56.7,
-        "raw": 48.19,
-        "rawFmt": "48.2%",
+        "score": 56.6,
+        "raw": 48.15,
+        "rawFmt": "48.1%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "2.17",
+        "value": "2.30",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -1873,7 +1873,7 @@ const CITIES = {
         "unit": "library visits per capita"
       },
       "faith_based": {
-        "value": "0.18",
+        "value": "0.19",
         "unit": "faith-based orgs per 10k (X3x)"
       }
     }
@@ -1882,29 +1882,29 @@ const CITIES = {
     "name": "Indianapolis",
     "state": "IN",
     "population": "887k residents",
-    "cq": 72.2,
-    "pillar1": 83.4,
-    "pillar2": 53.0,
-    "pillar3": 81.3,
+    "cq": 72.5,
+    "pillar1": 83.7,
+    "pillar2": 53.2,
+    "pillar3": 81.4,
     "metrics": {
       "residential_stability": {
-        "score": 88.5,
-        "raw": 84.12,
-        "rawFmt": "84.1%",
+        "score": 88.7,
+        "raw": 84.28,
+        "rawFmt": "84.3%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 74.0,
-        "raw": 66.64,
-        "rawFmt": "66.6%",
+        "score": 74.5,
+        "raw": 67.04,
+        "rawFmt": "67.0%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 46.8,
-        "raw": 11.69,
-        "rawFmt": "11.69",
+        "score": 47.2,
+        "raw": 11.79,
+        "rawFmt": "11.79",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -1916,23 +1916,23 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 95.1,
-        "raw": 90.35,
-        "rawFmt": "90.3%",
+        "score": 95.2,
+        "raw": 90.41,
+        "rawFmt": "90.4%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 55.8,
-        "raw": 47.46,
-        "rawFmt": "47.5%",
+        "score": 55.7,
+        "raw": 47.36,
+        "rawFmt": "47.4%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "2.71",
+        "value": "2.82",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -1949,29 +1949,29 @@ const CITIES = {
     "name": "Jacksonville",
     "state": "FL",
     "population": "950k residents",
-    "cq": 61.4,
-    "pillar1": 81.3,
-    "pillar2": 20.4,
-    "pillar3": 86.8,
+    "cq": 61.5,
+    "pillar1": 81.4,
+    "pillar2": 20.6,
+    "pillar3": 86.9,
     "metrics": {
       "residential_stability": {
         "score": 86.5,
-        "raw": 82.15,
-        "rawFmt": "82.2%",
+        "raw": 82.13,
+        "rawFmt": "82.1%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 71.6,
-        "raw": 64.47,
-        "rawFmt": "64.5%",
+        "score": 71.8,
+        "raw": 64.6,
+        "rawFmt": "64.6%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 33.9,
-        "raw": 8.47,
-        "rawFmt": "8.47",
+        "score": 34.2,
+        "raw": 8.56,
+        "rawFmt": "8.56",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -1983,8 +1983,8 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 92.8,
-        "raw": 88.2,
+        "score": 92.9,
+        "raw": 88.23,
         "rawFmt": "88.2%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
@@ -1999,7 +1999,7 @@ const CITIES = {
     },
     "diagnostic": {
       "libraries": {
-        "value": "2.00",
+        "value": "2.11",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -2083,57 +2083,57 @@ const CITIES = {
     "name": "Las Vegas",
     "state": "NV",
     "population": "642k residents",
-    "cq": 61.4,
-    "pillar1": 81.3,
-    "pillar2": 23.3,
-    "pillar3": 82.8,
+    "cq": 63.3,
+    "pillar1": 81.1,
+    "pillar2": 29.2,
+    "pillar3": 82.7,
     "metrics": {
       "residential_stability": {
-        "score": 88.1,
-        "raw": 83.71,
-        "rawFmt": "83.7%",
+        "score": 88.3,
+        "raw": 83.89,
+        "rawFmt": "83.9%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 68.6,
-        "raw": 61.74,
-        "rawFmt": "61.7%",
+        "score": 67.8,
+        "raw": 61.02,
+        "rawFmt": "61.0%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 32.1,
-        "raw": 8.02,
-        "rawFmt": "8.02",
+        "score": 37.6,
+        "raw": 9.39,
+        "rawFmt": "9.39",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 14.5,
-        "raw": 2.18,
-        "rawFmt": "2.18",
+        "score": 20.8,
+        "raw": 3.12,
+        "rawFmt": "3.12",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 92.3,
-        "raw": 87.7,
-        "rawFmt": "87.7%",
+        "score": 91.0,
+        "raw": 86.41,
+        "rawFmt": "86.4%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 65.1,
-        "raw": 55.36,
-        "rawFmt": "55.4%",
+        "score": 67.4,
+        "raw": 57.28,
+        "rawFmt": "57.3%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "1.09",
+        "value": "1.40",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -2217,57 +2217,57 @@ const CITIES = {
     "name": "Los Angeles",
     "state": "CA",
     "population": "3.9M residents",
-    "cq": 66.3,
+    "cq": 66.6,
     "pillar1": 79.0,
-    "pillar2": 41.3,
+    "pillar2": 42.1,
     "pillar3": 80.9,
     "metrics": {
       "residential_stability": {
-        "score": 92.4,
-        "raw": 87.79,
+        "score": 92.5,
+        "raw": 87.84,
         "rawFmt": "87.8%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 54.0,
-        "raw": 48.57,
-        "rawFmt": "48.6%",
+        "score": 53.9,
+        "raw": 48.5,
+        "rawFmt": "48.5%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 31.8,
-        "raw": 7.95,
-        "rawFmt": "7.95",
+        "score": 32.4,
+        "raw": 8.09,
+        "rawFmt": "8.09",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 50.8,
-        "raw": 7.62,
-        "rawFmt": "7.62",
+        "score": 51.8,
+        "raw": 7.77,
+        "rawFmt": "7.77",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 94.2,
-        "raw": 89.46,
-        "rawFmt": "89.5%",
+        "score": 94.1,
+        "raw": 89.42,
+        "rawFmt": "89.4%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 56.1,
-        "raw": 47.65,
-        "rawFmt": "47.6%",
+        "score": 56.4,
+        "raw": 47.98,
+        "rawFmt": "48.0%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "1.95",
+        "value": "2.00",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -2284,29 +2284,29 @@ const CITIES = {
     "name": "Louisville",
     "state": "KY",
     "population": "633k residents",
-    "cq": 58.9,
-    "pillar1": 87.1,
-    "pillar2": 10.8,
-    "pillar3": 81.3,
+    "cq": 59.6,
+    "pillar1": 87.3,
+    "pillar2": 12.8,
+    "pillar3": 80.8,
     "metrics": {
       "residential_stability": {
         "score": 90.4,
-        "raw": 85.84,
-        "rawFmt": "85.8%",
+        "raw": 85.91,
+        "rawFmt": "85.9%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 81.1,
-        "raw": 72.99,
-        "rawFmt": "73.0%",
+        "score": 81.6,
+        "raw": 73.4,
+        "rawFmt": "73.4%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 16.2,
-        "raw": 4.06,
-        "rawFmt": "4.06",
+        "score": 20.2,
+        "raw": 5.05,
+        "rawFmt": "5.05",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -2318,23 +2318,23 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 99.2,
-        "raw": 94.25,
-        "rawFmt": "94.2%",
+        "score": 99.4,
+        "raw": 94.47,
+        "rawFmt": "94.5%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 48.1,
-        "raw": 40.88,
-        "rawFmt": "40.9%",
+        "score": 46.3,
+        "raw": 39.35,
+        "rawFmt": "39.4%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "1.11",
+        "value": "1.42",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -2418,57 +2418,57 @@ const CITIES = {
     "name": "Memphis",
     "state": "TN",
     "population": "633k residents",
-    "cq": 64.3,
-    "pillar1": 81.5,
-    "pillar2": 31.3,
+    "cq": 64.8,
+    "pillar1": 81.6,
+    "pillar2": 32.8,
     "pillar3": 82.8,
     "metrics": {
       "residential_stability": {
-        "score": 89.1,
-        "raw": 84.61,
-        "rawFmt": "84.6%",
+        "score": 89.4,
+        "raw": 84.91,
+        "rawFmt": "84.9%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 67.5,
-        "raw": 60.75,
-        "rawFmt": "60.8%",
+        "score": 67.0,
+        "raw": 60.31,
+        "rawFmt": "60.3%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 42.6,
-        "raw": 10.66,
-        "rawFmt": "10.66",
+        "score": 44.4,
+        "raw": 11.1,
+        "rawFmt": "11.10",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 20.0,
-        "raw": 3.0,
-        "rawFmt": "3.00",
+        "score": 21.1,
+        "raw": 3.16,
+        "rawFmt": "3.16",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 90.5,
-        "raw": 85.95,
-        "rawFmt": "86.0%",
+        "score": 90.4,
+        "raw": 85.85,
+        "rawFmt": "85.8%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 68.4,
-        "raw": 58.11,
-        "rawFmt": "58.1%",
+        "score": 68.7,
+        "raw": 58.41,
+        "rawFmt": "58.4%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "2.69",
+        "value": "2.84",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -2485,29 +2485,29 @@ const CITIES = {
     "name": "Milwaukee",
     "state": "WI",
     "population": "577k residents",
-    "cq": 70.3,
-    "pillar1": 81.4,
-    "pillar2": 40.9,
-    "pillar3": 93.6,
+    "cq": 70.2,
+    "pillar1": 81.1,
+    "pillar2": 41.5,
+    "pillar3": 92.8,
     "metrics": {
       "residential_stability": {
-        "score": 89.5,
-        "raw": 85.02,
-        "rawFmt": "85.0%",
+        "score": 88.8,
+        "raw": 84.32,
+        "rawFmt": "84.3%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 66.4,
-        "raw": 59.77,
-        "rawFmt": "59.8%",
+        "score": 66.8,
+        "raw": 60.08,
+        "rawFmt": "60.1%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 35.6,
-        "raw": 8.89,
-        "rawFmt": "8.89",
+        "score": 36.8,
+        "raw": 9.2,
+        "rawFmt": "9.20",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -2519,23 +2519,23 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 95.6,
-        "raw": 90.78,
-        "rawFmt": "90.8%",
+        "score": 95.8,
+        "raw": 91.05,
+        "rawFmt": "91.0%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 89.8,
-        "raw": 76.36,
-        "rawFmt": "76.4%",
+        "score": 87.2,
+        "raw": 74.13,
+        "rawFmt": "74.1%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "2.43",
+        "value": "2.77",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -2543,7 +2543,7 @@ const CITIES = {
         "unit": "library visits per capita"
       },
       "faith_based": {
-        "value": "0.31",
+        "value": "0.38",
         "unit": "faith-based orgs per 10k (X3x)"
       }
     }
@@ -2619,29 +2619,29 @@ const CITIES = {
     "name": "Nashville",
     "state": "TN",
     "population": "689k residents",
-    "cq": 59.9,
-    "pillar1": 79.3,
-    "pillar2": 25.9,
-    "pillar3": 76.4,
+    "cq": 60.7,
+    "pillar1": 79.7,
+    "pillar2": 27.7,
+    "pillar3": 76.6,
     "metrics": {
       "residential_stability": {
-        "score": 83.4,
-        "raw": 79.27,
-        "rawFmt": "79.3%",
+        "score": 83.8,
+        "raw": 79.58,
+        "rawFmt": "79.6%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 71.6,
-        "raw": 64.46,
-        "rawFmt": "64.5%",
+        "score": 72.1,
+        "raw": 64.89,
+        "rawFmt": "64.9%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 36.3,
-        "raw": 9.08,
-        "rawFmt": "9.08",
+        "score": 39.9,
+        "raw": 9.98,
+        "rawFmt": "9.98",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -2653,23 +2653,23 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 91.8,
-        "raw": 87.22,
-        "rawFmt": "87.2%",
+        "score": 92.4,
+        "raw": 87.8,
+        "rawFmt": "87.8%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 47.9,
-        "raw": 40.68,
-        "rawFmt": "40.7%",
+        "score": 47.4,
+        "raw": 40.27,
+        "rawFmt": "40.3%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "2.76",
+        "value": "3.19",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -2677,7 +2677,7 @@ const CITIES = {
         "unit": "library visits per capita"
       },
       "faith_based": {
-        "value": "0.06",
+        "value": "0.07",
         "unit": "faith-based orgs per 10k (X3x)"
       }
     }
@@ -2821,28 +2821,28 @@ const CITIES = {
     "state": "OK",
     "population": "681k residents",
     "cq": 62.6,
-    "pillar1": 83.6,
-    "pillar2": 26.1,
+    "pillar1": 83.5,
+    "pillar2": 26.2,
     "pillar3": 80.2,
     "metrics": {
       "residential_stability": {
-        "score": 86.2,
-        "raw": 81.92,
-        "rawFmt": "81.9%",
+        "score": 86.1,
+        "raw": 81.83,
+        "rawFmt": "81.8%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 78.9,
-        "raw": 71.02,
-        "rawFmt": "71.0%",
+        "score": 78.7,
+        "raw": 70.84,
+        "rawFmt": "70.8%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 27.7,
-        "raw": 6.93,
-        "rawFmt": "6.93",
+        "score": 28.0,
+        "raw": 6.99,
+        "rawFmt": "6.99",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -2854,16 +2854,16 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 90.6,
-        "raw": 86.05,
+        "score": 90.5,
+        "raw": 85.98,
         "rawFmt": "86.0%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 60.9,
-        "raw": 51.78,
-        "rawFmt": "51.8%",
+        "score": 61.2,
+        "raw": 52.02,
+        "rawFmt": "52.0%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
@@ -2887,29 +2887,29 @@ const CITIES = {
     "name": "Omaha",
     "state": "NE",
     "population": "486k residents",
-    "cq": 68.8,
-    "pillar1": 84.2,
-    "pillar2": 42.4,
-    "pillar3": 81.2,
+    "cq": 69.3,
+    "pillar1": 84.4,
+    "pillar2": 43.2,
+    "pillar3": 81.6,
     "metrics": {
       "residential_stability": {
         "score": 88.3,
-        "raw": 83.84,
-        "rawFmt": "83.8%",
+        "raw": 83.87,
+        "rawFmt": "83.9%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 76.6,
-        "raw": 68.96,
-        "rawFmt": "69.0%",
+        "score": 77.3,
+        "raw": 69.58,
+        "rawFmt": "69.6%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 32.8,
-        "raw": 8.21,
-        "rawFmt": "8.21",
+        "score": 34.3,
+        "raw": 8.58,
+        "rawFmt": "8.58",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -2921,23 +2921,23 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 94.4,
-        "raw": 89.67,
-        "rawFmt": "89.7%",
+        "score": 94.9,
+        "raw": 90.15,
+        "rawFmt": "90.2%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 56.7,
-        "raw": 48.21,
-        "rawFmt": "48.2%",
+        "score": 56.9,
+        "raw": 48.37,
+        "rawFmt": "48.4%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "2.47",
+        "value": "2.67",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -3021,29 +3021,29 @@ const CITIES = {
     "name": "Phoenix",
     "state": "AZ",
     "population": "1.6M residents",
-    "cq": 62.2,
-    "pillar1": 83.1,
-    "pillar2": 27.5,
-    "pillar3": 77.4,
+    "cq": 62.6,
+    "pillar1": 83.4,
+    "pillar2": 28.0,
+    "pillar3": 77.7,
     "metrics": {
       "residential_stability": {
-        "score": 88.3,
-        "raw": 83.93,
-        "rawFmt": "83.9%",
+        "score": 88.6,
+        "raw": 84.14,
+        "rawFmt": "84.1%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 73.4,
-        "raw": 66.06,
-        "rawFmt": "66.1%",
+        "score": 73.8,
+        "raw": 66.38,
+        "rawFmt": "66.4%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 25.1,
-        "raw": 6.27,
-        "rawFmt": "6.27",
+        "score": 26.0,
+        "raw": 6.49,
+        "rawFmt": "6.49",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -3055,23 +3055,23 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 89.1,
-        "raw": 84.69,
-        "rawFmt": "84.7%",
+        "score": 89.5,
+        "raw": 85.03,
+        "rawFmt": "85.0%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 55.7,
-        "raw": 47.37,
-        "rawFmt": "47.4%",
+        "score": 55.9,
+        "raw": 47.55,
+        "rawFmt": "47.5%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "0.93",
+        "value": "1.06",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -3079,7 +3079,7 @@ const CITIES = {
         "unit": "library visits per capita"
       },
       "faith_based": {
-        "value": "0.24",
+        "value": "0.25",
         "unit": "faith-based orgs per 10k (X3x)"
       }
     }
@@ -3088,57 +3088,57 @@ const CITIES = {
     "name": "Pittsburgh",
     "state": "PA",
     "population": "303k residents",
-    "cq": 72.4,
-    "pillar1": 79.5,
-    "pillar2": 52.4,
+    "cq": 73.8,
+    "pillar1": 80.0,
+    "pillar2": 55.8,
     "pillar3": 89.0,
     "metrics": {
       "residential_stability": {
-        "score": 82.3,
-        "raw": 78.18,
-        "rawFmt": "78.2%",
+        "score": 82.6,
+        "raw": 78.48,
+        "rawFmt": "78.5%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 74.3,
-        "raw": 66.85,
-        "rawFmt": "66.8%",
+        "score": 75.2,
+        "raw": 67.68,
+        "rawFmt": "67.7%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 63.1,
-        "raw": 15.78,
-        "rawFmt": "15.78",
+        "score": 65.4,
+        "raw": 16.34,
+        "rawFmt": "16.34",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 41.8,
-        "raw": 6.27,
-        "rawFmt": "6.27",
+        "score": 46.2,
+        "raw": 6.93,
+        "rawFmt": "6.93",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 99.9,
-        "raw": 94.92,
-        "rawFmt": "94.9%",
+        "score": 100.0,
+        "raw": 95.05,
+        "rawFmt": "95.0%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 68.7,
-        "raw": 58.4,
-        "rawFmt": "58.4%",
+        "score": 68.5,
+        "raw": 58.24,
+        "rawFmt": "58.2%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "7.26",
+        "value": "7.92",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -3155,50 +3155,50 @@ const CITIES = {
     "name": "Portland",
     "state": "OR",
     "population": "653k residents",
-    "cq": 71.0,
-    "pillar1": 80.3,
-    "pillar2": 43.8,
-    "pillar3": 94.1,
+    "cq": 71.3,
+    "pillar1": 80.5,
+    "pillar2": 44.9,
+    "pillar3": 93.6,
     "metrics": {
       "residential_stability": {
-        "score": 86.1,
-        "raw": 81.79,
-        "rawFmt": "81.8%",
+        "score": 86.5,
+        "raw": 82.17,
+        "rawFmt": "82.2%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 69.5,
-        "raw": 62.59,
-        "rawFmt": "62.6%",
+        "score": 69.3,
+        "raw": 62.35,
+        "rawFmt": "62.4%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 33.5,
-        "raw": 8.38,
-        "rawFmt": "8.38",
+        "score": 34.6,
+        "raw": 8.64,
+        "rawFmt": "8.64",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 54.1,
-        "raw": 8.12,
-        "rawFmt": "8.12",
+        "score": 55.2,
+        "raw": 8.28,
+        "rawFmt": "8.28",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 99.0,
-        "raw": 94.05,
-        "rawFmt": "94.0%",
+        "score": 98.9,
+        "raw": 93.92,
+        "rawFmt": "93.9%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 84.9,
-        "raw": 72.13,
-        "rawFmt": "72.1%",
+        "score": 83.7,
+        "raw": 71.12,
+        "rawFmt": "71.1%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
@@ -3289,57 +3289,57 @@ const CITIES = {
     "name": "Raleigh",
     "state": "NC",
     "population": "468k residents",
-    "cq": 57.3,
-    "pillar1": 81.4,
-    "pillar2": 15.0,
-    "pillar3": 78.0,
+    "cq": 60.1,
+    "pillar1": 81.9,
+    "pillar2": 20.5,
+    "pillar3": 80.5,
     "metrics": {
       "residential_stability": {
-        "score": 83.8,
-        "raw": 79.63,
-        "rawFmt": "79.6%",
+        "score": 85.1,
+        "raw": 80.82,
+        "rawFmt": "80.8%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 76.8,
-        "raw": 69.09,
-        "rawFmt": "69.1%",
+        "score": 75.9,
+        "raw": 68.31,
+        "rawFmt": "68.3%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 28.6,
-        "raw": 7.16,
-        "rawFmt": "7.16",
+        "score": 35.2,
+        "raw": 8.79,
+        "rawFmt": "8.79",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 1.4,
-        "raw": 0.21,
-        "rawFmt": "0.21",
+        "score": 5.7,
+        "raw": 0.86,
+        "rawFmt": "0.86",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 95.4,
-        "raw": 90.59,
-        "rawFmt": "90.6%",
+        "score": 93.9,
+        "raw": 89.17,
+        "rawFmt": "89.2%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 45.7,
-        "raw": 38.87,
-        "rawFmt": "38.9%",
+        "score": 55.6,
+        "raw": 47.23,
+        "rawFmt": "47.2%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "1.07",
+        "value": "1.71",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -3356,57 +3356,57 @@ const CITIES = {
     "name": "Richmond",
     "state": "VA",
     "population": "227k residents",
-    "cq": 61.8,
-    "pillar1": 76.5,
-    "pillar2": 32.2,
-    "pillar3": 79.7,
+    "cq": 63.6,
+    "pillar1": 76.9,
+    "pillar2": 35.6,
+    "pillar3": 81.4,
     "metrics": {
       "residential_stability": {
-        "score": 81.5,
-        "raw": 77.46,
-        "rawFmt": "77.5%",
+        "score": 82.4,
+        "raw": 78.24,
+        "rawFmt": "78.2%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 67.1,
-        "raw": 60.4,
-        "rawFmt": "60.4%",
+        "score": 66.6,
+        "raw": 59.96,
+        "rawFmt": "60.0%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 32.0,
-        "raw": 7.99,
-        "rawFmt": "7.99",
+        "score": 35.8,
+        "raw": 8.96,
+        "rawFmt": "8.96",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 32.3,
-        "raw": 4.85,
-        "rawFmt": "4.85",
+        "score": 35.3,
+        "raw": 5.3,
+        "rawFmt": "5.30",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 94.6,
-        "raw": 89.88,
-        "rawFmt": "89.9%",
+        "score": 95.0,
+        "raw": 90.27,
+        "rawFmt": "90.3%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 52.1,
-        "raw": 44.31,
-        "rawFmt": "44.3%",
+        "score": 56.0,
+        "raw": 47.56,
+        "rawFmt": "47.6%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "2.65",
+        "value": "3.09",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -3423,57 +3423,57 @@ const CITIES = {
     "name": "Rochester",
     "state": "NY",
     "population": "211k residents",
-    "cq": 70.9,
-    "pillar1": 75.8,
-    "pillar2": 47.9,
-    "pillar3": 95.4,
+    "cq": 73.3,
+    "pillar1": 78.4,
+    "pillar2": 52.3,
+    "pillar3": 94.6,
     "metrics": {
       "residential_stability": {
-        "score": 83.5,
-        "raw": 79.34,
-        "rawFmt": "79.3%",
+        "score": 85.5,
+        "raw": 81.21,
+        "rawFmt": "81.2%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 61.4,
-        "raw": 55.22,
-        "rawFmt": "55.2%",
+        "score": 65.1,
+        "raw": 58.55,
+        "rawFmt": "58.5%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 29.5,
-        "raw": 7.38,
-        "rawFmt": "7.38",
+        "score": 35.2,
+        "raw": 8.8,
+        "rawFmt": "8.80",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 66.3,
-        "raw": 9.94,
-        "rawFmt": "9.94",
+        "score": 69.4,
+        "raw": 10.41,
+        "rawFmt": "10.41",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
         "score": 100.0,
-        "raw": 95.16,
-        "rawFmt": "95.2%",
+        "raw": 95.45,
+        "rawFmt": "95.5%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 86.8,
-        "raw": 73.81,
-        "rawFmt": "73.8%",
+        "score": 84.6,
+        "raw": 71.93,
+        "rawFmt": "71.9%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "3.31",
+        "value": "4.26",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -3481,7 +3481,7 @@ const CITIES = {
         "unit": "library visits per capita"
       },
       "faith_based": {
-        "value": "0.19",
+        "value": "0.24",
         "unit": "faith-based orgs per 10k (X3x)"
       }
     }
@@ -3490,36 +3490,36 @@ const CITIES = {
     "name": "Sacramento",
     "state": "CA",
     "population": "525k residents",
-    "cq": 72.6,
+    "cq": 72.9,
     "pillar1": 81.0,
-    "pillar2": 51.6,
-    "pillar3": 88.6,
+    "pillar2": 52.4,
+    "pillar3": 88.7,
     "metrics": {
       "residential_stability": {
         "score": 88.9,
-        "raw": 84.43,
-        "rawFmt": "84.4%",
+        "raw": 84.49,
+        "rawFmt": "84.5%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 66.4,
-        "raw": 59.75,
-        "rawFmt": "59.8%",
+        "score": 66.3,
+        "raw": 59.71,
+        "rawFmt": "59.7%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 51.1,
-        "raw": 12.78,
-        "rawFmt": "12.78",
+        "score": 51.4,
+        "raw": 12.86,
+        "rawFmt": "12.86",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 52.1,
-        "raw": 7.81,
-        "rawFmt": "7.81",
+        "score": 53.3,
+        "raw": 8.0,
+        "rawFmt": "8.00",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -3531,9 +3531,9 @@ const CITIES = {
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 68.9,
-        "raw": 58.53,
-        "rawFmt": "58.5%",
+        "score": 69.3,
+        "raw": 58.93,
+        "rawFmt": "58.9%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
@@ -3624,57 +3624,57 @@ const CITIES = {
     "name": "San Antonio",
     "state": "TX",
     "population": "1.4M residents",
-    "cq": 58.0,
-    "pillar1": 80.3,
-    "pillar2": 17.4,
+    "cq": 58.7,
+    "pillar1": 80.5,
+    "pillar2": 19.2,
     "pillar3": 79.3,
     "metrics": {
       "residential_stability": {
-        "score": 85.7,
-        "raw": 81.44,
-        "rawFmt": "81.4%",
+        "score": 86.1,
+        "raw": 81.78,
+        "rawFmt": "81.8%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 70.3,
-        "raw": 63.27,
-        "rawFmt": "63.3%",
+        "score": 70.2,
+        "raw": 63.17,
+        "rawFmt": "63.2%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 17.6,
-        "raw": 4.41,
-        "rawFmt": "4.41",
+        "score": 19.2,
+        "raw": 4.79,
+        "rawFmt": "4.79",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 17.2,
-        "raw": 2.58,
-        "rawFmt": "2.58",
+        "score": 19.1,
+        "raw": 2.86,
+        "rawFmt": "2.86",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 86.7,
-        "raw": 82.33,
-        "rawFmt": "82.3%",
+        "score": 86.6,
+        "raw": 82.25,
+        "rawFmt": "82.2%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 65.5,
-        "raw": 55.64,
-        "rawFmt": "55.6%",
+        "score": 65.7,
+        "raw": 55.82,
+        "rawFmt": "55.8%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "2.23",
+        "value": "2.44",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -3682,7 +3682,7 @@ const CITIES = {
         "unit": "library visits per capita"
       },
       "faith_based": {
-        "value": "0.04",
+        "value": "0.06",
         "unit": "faith-based orgs per 10k (X3x)"
       }
     }
@@ -3691,29 +3691,29 @@ const CITIES = {
     "name": "San Diego",
     "state": "CA",
     "population": "1.4M residents",
-    "cq": 65.0,
-    "pillar1": 79.2,
-    "pillar2": 36.8,
-    "pillar3": 81.9,
+    "cq": 65.2,
+    "pillar1": 79.3,
+    "pillar2": 37.0,
+    "pillar3": 82.0,
     "metrics": {
       "residential_stability": {
         "score": 87.6,
-        "raw": 83.21,
+        "raw": 83.22,
         "rawFmt": "83.2%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 63.6,
-        "raw": 57.26,
-        "rawFmt": "57.3%",
+        "score": 63.8,
+        "raw": 57.43,
+        "rawFmt": "57.4%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 25.4,
-        "raw": 6.35,
-        "rawFmt": "6.35",
+        "score": 26.0,
+        "raw": 6.51,
+        "rawFmt": "6.51",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -3725,23 +3725,23 @@ const CITIES = {
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 98.0,
-        "raw": 93.14,
-        "rawFmt": "93.1%",
+        "score": 98.1,
+        "raw": 93.2,
+        "rawFmt": "93.2%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 52.1,
-        "raw": 44.31,
-        "rawFmt": "44.3%",
+        "score": 52.0,
+        "raw": 44.21,
+        "rawFmt": "44.2%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "2.74",
+        "value": "2.81",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -3749,7 +3749,7 @@ const CITIES = {
         "unit": "library visits per capita"
       },
       "faith_based": {
-        "value": "0.20",
+        "value": "0.21",
         "unit": "faith-based orgs per 10k (X3x)"
       }
     }
@@ -3825,50 +3825,50 @@ const CITIES = {
     "name": "San Jose",
     "state": "CA",
     "population": "1.0M residents",
-    "cq": 65.1,
-    "pillar1": 83.3,
-    "pillar2": 29.2,
-    "pillar3": 86.3,
+    "cq": 65.5,
+    "pillar1": 83.4,
+    "pillar2": 30.0,
+    "pillar3": 86.4,
     "metrics": {
       "residential_stability": {
         "score": 90.9,
-        "raw": 86.33,
-        "rawFmt": "86.3%",
+        "raw": 86.37,
+        "rawFmt": "86.4%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 69.3,
-        "raw": 62.4,
-        "rawFmt": "62.4%",
+        "score": 69.4,
+        "raw": 62.5,
+        "rawFmt": "62.5%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 15.7,
-        "raw": 3.92,
-        "rawFmt": "3.92",
+        "score": 16.6,
+        "raw": 4.15,
+        "rawFmt": "4.15",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 42.8,
-        "raw": 6.42,
-        "rawFmt": "6.42",
+        "score": 43.4,
+        "raw": 6.51,
+        "rawFmt": "6.51",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 99.7,
-        "raw": 94.76,
+        "score": 99.8,
+        "raw": 94.78,
         "rawFmt": "94.8%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 61.3,
-        "raw": 52.13,
-        "rawFmt": "52.1%",
+        "score": 61.4,
+        "raw": 52.16,
+        "rawFmt": "52.2%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
@@ -3892,57 +3892,57 @@ const CITIES = {
     "name": "Seattle",
     "state": "WA",
     "population": "737k residents",
-    "cq": 69.1,
-    "pillar1": 77.0,
-    "pillar2": 48.1,
-    "pillar3": 85.7,
+    "cq": 70.2,
+    "pillar1": 77.2,
+    "pillar2": 50.7,
+    "pillar3": 86.5,
     "metrics": {
       "residential_stability": {
-        "score": 79.4,
-        "raw": 75.43,
-        "rawFmt": "75.4%",
+        "score": 79.9,
+        "raw": 75.89,
+        "rawFmt": "75.9%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 72.6,
-        "raw": 65.32,
-        "rawFmt": "65.3%",
+        "score": 72.1,
+        "raw": 64.88,
+        "rawFmt": "64.9%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 29.3,
-        "raw": 7.32,
-        "rawFmt": "7.32",
+        "score": 30.9,
+        "raw": 7.72,
+        "rawFmt": "7.72",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 66.9,
-        "raw": 10.04,
-        "rawFmt": "10.04",
+        "score": 70.5,
+        "raw": 10.58,
+        "rawFmt": "10.58",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
         "score": 100.0,
-        "raw": 95.7,
-        "rawFmt": "95.7%",
+        "raw": 95.59,
+        "rawFmt": "95.6%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 59.2,
-        "raw": 50.31,
-        "rawFmt": "50.3%",
+        "score": 61.5,
+        "raw": 52.27,
+        "rawFmt": "52.3%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "3.80",
+        "value": "3.93",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -3950,7 +3950,7 @@ const CITIES = {
         "unit": "library visits per capita"
       },
       "faith_based": {
-        "value": "0.26",
+        "value": "0.27",
         "unit": "faith-based orgs per 10k (X3x)"
       }
     }
@@ -4093,57 +4093,57 @@ const CITIES = {
     "name": "St. Paul",
     "state": "MN",
     "population": "312k residents",
-    "cq": 68.2,
-    "pillar1": 81.4,
-    "pillar2": 39.6,
-    "pillar3": 87.0,
+    "cq": 71.1,
+    "pillar1": 82.1,
+    "pillar2": 46.7,
+    "pillar3": 87.8,
     "metrics": {
       "residential_stability": {
-        "score": 85.7,
-        "raw": 81.43,
-        "rawFmt": "81.4%",
+        "score": 86.4,
+        "raw": 82.1,
+        "rawFmt": "82.1%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 73.5,
-        "raw": 66.13,
-        "rawFmt": "66.1%",
+        "score": 74.0,
+        "raw": 66.64,
+        "rawFmt": "66.6%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 40.7,
-        "raw": 10.18,
-        "rawFmt": "10.18",
+        "score": 46.2,
+        "raw": 11.56,
+        "rawFmt": "11.56",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 38.5,
-        "raw": 5.78,
-        "rawFmt": "5.78",
+        "score": 47.1,
+        "raw": 7.06,
+        "rawFmt": "7.06",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
-        "score": 98.8,
-        "raw": 93.9,
-        "rawFmt": "93.9%",
+        "score": 98.6,
+        "raw": 93.65,
+        "rawFmt": "93.7%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 65.0,
-        "raw": 55.25,
-        "rawFmt": "55.2%",
+        "score": 67.8,
+        "raw": 57.67,
+        "rawFmt": "57.7%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "3.85",
+        "value": "4.49",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -4495,57 +4495,57 @@ const CITIES = {
     "name": "Wichita",
     "state": "KS",
     "population": "398k residents",
-    "cq": 61.6,
+    "cq": 61.9,
     "pillar1": 83.7,
-    "pillar2": 24.2,
-    "pillar3": 78.6,
+    "pillar2": 25.2,
+    "pillar3": 78.5,
     "metrics": {
       "residential_stability": {
         "score": 85.7,
-        "raw": 81.46,
-        "rawFmt": "81.5%",
+        "raw": 81.4,
+        "rawFmt": "81.4%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
         "score": 80.0,
-        "raw": 71.98,
+        "raw": 72.03,
         "rawFmt": "72.0%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 25.0,
-        "raw": 6.24,
-        "rawFmt": "6.24",
+        "score": 25.4,
+        "raw": 6.36,
+        "rawFmt": "6.36",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 23.5,
-        "raw": 3.52,
-        "rawFmt": "3.52",
+        "score": 25.1,
+        "raw": 3.77,
+        "rawFmt": "3.77",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
       "health_insurance": {
         "score": 91.9,
-        "raw": 87.3,
+        "raw": 87.31,
         "rawFmt": "87.3%",
         "benchmark": "95%",
         "unit": "% population with health insurance"
       },
       "snap_coverage": {
-        "score": 54.0,
-        "raw": 45.86,
-        "rawFmt": "45.9%",
+        "score": 53.7,
+        "raw": 45.63,
+        "rawFmt": "45.6%",
         "benchmark": "85%",
         "unit": "% SNAP coverage among likely-eligible households"
       }
     },
     "diagnostic": {
       "libraries": {
-        "value": "2.01",
+        "value": "2.26",
         "unit": "libraries per 100k"
       },
       "lib_visits": {
@@ -4553,7 +4553,7 @@ const CITIES = {
         "unit": "library visits per capita"
       },
       "faith_based": {
-        "value": "0.08",
+        "value": "0.10",
         "unit": "faith-based orgs per 10k (X3x)"
       }
     }

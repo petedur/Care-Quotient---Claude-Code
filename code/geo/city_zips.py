@@ -5,8 +5,9 @@ Maps a Census incorporated place (city) to the ZIP Code Tabulation Areas
 (ZCTAs) that predominantly fall within its boundaries, using the Census 2020
 ZCTA-to-Place relationship file.
 
-A ZCTA is included if >= threshold (default 50%) of its land area falls within
-the city's Census place boundary. This produces a consistent geographic
+A ZCTA is included if >= threshold (default 40%) of its land area falls within
+the city's Census place boundary. The 40% threshold captures near-boundary ZCTAs
+that genuinely serve city residents without including truly suburban ZCTAs. This produces a consistent geographic
 definition of "the city" across all data sources: IRS, IMLS, HRSA, and ACS.
 
 Fallback for CDPs and unincorporated places (e.g. Honolulu, HI):
@@ -104,10 +105,16 @@ def _zips_from_crosswalk(cw: pd.DataFrame, geoid: str, threshold: float) -> set:
     return set(subset.loc[subset["pct"] >= threshold, "zip"].str.zfill(5))
 
 
-def city_to_zips(city_key: str, threshold: float = 0.5) -> set:
+def city_to_zips(city_key: str, threshold: float = 0.4) -> set:
     """
     Return 5-digit ZCTAs (zero-padded strings) where at least `threshold`
     fraction of the ZCTA's land area falls within the city boundary.
+
+    Default threshold is 0.40 (40% land area overlap). This captures near-boundary
+    ZCTAs that genuinely serve city residents (the 40-49% band are near-urban-core
+    ZCTAs, not suburban fringe). A 50% threshold was found to systematically miss
+    FQHCs in cities like Raleigh (ZIP 27610 at 48.9%) and Fort Worth (ZIP 76114 at
+    41.2%) — sites explicitly named for those cities.
 
     Primary lookup: Census incorporated place boundary (ZCTA-to-Place file).
     Fallback:       County boundary (ZCTA-to-County file), used when the city
@@ -116,7 +123,7 @@ def city_to_zips(city_key: str, threshold: float = 0.5) -> set:
 
     Args:
         city_key:  Key from CITIES config (e.g. "los_angeles")
-        threshold: Minimum fraction of ZCTA land area within city (default 0.5)
+        threshold: Minimum fraction of ZCTA land area within city (default 0.4)
 
     Returns:
         Set of zero-padded 5-digit ZIP strings, e.g. {"90001", "90002", ...}

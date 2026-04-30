@@ -1,8 +1,7 @@
-,Resid. Stability,Social Support NPs,Housing Affordability,FQHC Density,Care Institution NPs,SNAP Coverage,Health Insurance
-Resid. Stability,1.0,0.176,-0.335,0.428,0.051,0.357,0.184
-Social Support NPs,0.176,1.0,-0.087,0.281,0.848,-0.014,0.122
-Housing Affordability,-0.335,-0.087,1.0,-0.326,-0.019,-0.292,-0.151
-FQHC Density,0.428,0.281,-0.326,1.0,0.352,0.264,0.455
-Care Institution NPs,0.051,0.848,-0.019,0.352,1.0,-0.006,0.288
-SNAP Coverage,0.357,-0.014,-0.292,0.264,-0.006,1.0,0.328
-Health Insurance,0.184,0.122,-0.151,0.455,0.288,0.328,1.0
+,Resid. Stability,Housing Affordability,Combined Care NPs,FQHC Density,Health Insurance,SNAP Coverage
+Resid. Stability,1.0,-0.295,-0.123,0.054,0.031,0.395
+Housing Affordability,-0.295,1.0,-0.156,-0.378,-0.116,-0.424
+Combined Care NPs,-0.123,-0.156,1.0,0.398,0.247,0.112
+FQHC Density,0.054,-0.378,0.398,1.0,0.509,0.299
+Health Insurance,0.031,-0.116,0.247,0.509,1.0,0.33
+SNAP Coverage,0.395,-0.424,0.112,0.299,0.33,1.0

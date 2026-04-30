@@ -34,14 +34,21 @@ _ZIP_COL_CANDIDATES = [
 ]
 
 
+# Module-level cache: HRSA Excel is large — load once per process.
+_hrsa_df: pd.DataFrame | None = None
+
+
 def load_hrsa() -> pd.DataFrame:
+    global _hrsa_df
+    if _hrsa_df is not None:
+        return _hrsa_df
     path = Path(HRSA_DATA_PATH)
     if not path.exists():
         raise FileNotFoundError(f"HRSA file not found at {path}")
     print(f"  Loading {path.name}...")
-    df = pd.read_excel(path, dtype=str)
-    df.columns = [c.strip() for c in df.columns]
-    return df
+    _hrsa_df = pd.read_excel(path, dtype=str)
+    _hrsa_df.columns = [c.strip() for c in _hrsa_df.columns]
+    return _hrsa_df
 
 
 def _find_zip_col(df: pd.DataFrame) -> str:

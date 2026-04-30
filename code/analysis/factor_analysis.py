@@ -23,10 +23,15 @@ Usage
 
 Dependencies (in addition to existing requirements):
     pip install scikit-learn scipy
+    (Both are pinned in requirements.txt — scikit-learn==1.8.0, scipy==1.17.1)
 """
 
 import sys
 import json
+
+# Ensure UTF-8 output on Windows (box-drawing characters used in report)
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 import numpy as np
 import pandas as pd
 import duckdb
@@ -329,8 +334,11 @@ def run():
             "note": "Empirical weights for review only. V3 implements theory-based inter-pillar weights. See methodology.md Section 5.",
         },
         "inter_pillar_note": (
-            "Factor analysis recommends pillar2 (Institutions) as dominant. "
-            "V3 retains Social Fabric primary per care ethics theory. V4 will revisit."
+            "V3.1 data (68 cities, 6 metrics, 75.5% variance explained): empirical weights "
+            "recommend Institutions of Care as dominant pillar (0.496 vs 0.328 Social Fabric). "
+            "V3 retains Social Fabric primary (0.40) per care ethics theory. "
+            "Kaiser criterion suggests 2 factors, but 3-factor solution aligns cleanly to "
+            "pillars with no cross-pillar correlation above 0.60. V4 will revisit inter-pillar weights."
         ),
         "inter_pillar_weights": {
             "empirical": empirical_inter,

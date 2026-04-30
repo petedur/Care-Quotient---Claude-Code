@@ -42,11 +42,32 @@ def find_irs_file(state: str) -> Path:
     )
 
 
+# Module-level cache: IRS data is large (150+ MB) — cache by region filename
+# to avoid reloading when called for multiple cities in the same pipeline run.
+_irs_cache: dict[str, pd.DataFrame] = {}
+
+# Only the columns needed for filtering and NTEE analysis.
+# Avoids loading 20+ unused columns from the 950k-row file.
+_IRS_NEEDED_COLS = ["EIN", "NAME", "STATE", "ZIP", "NTEE_CD", "SUBSECTION", "STATUS"]
+
+
 def load_irs_data(state: str) -> pd.DataFrame:
     path = find_irs_file(state)
+    key = path.name
+    if key in _irs_cache:
+        return _irs_cache[key]
     print(f"  Loading IRS data: {path.name}")
-    df = pd.read_csv(path, dtype=str, low_memory=False, encoding="latin-1")
+    # Read only needed columns; on_bad_lines='skip' handles trailing-comma rows
+    # in newer IRS file formats.
+    df = pd.read_csv(
+        path,
+        dtype=str,
+        usecols=lambda c: c.strip().upper() in _IRS_NEEDED_COLS,
+        on_bad_lines="skip",
+        encoding="latin-1",
+    )
     df.columns = [c.strip().upper() for c in df.columns]
+    _irs_cache[key] = df
     return df
 
 

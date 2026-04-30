@@ -1,20 +1,20 @@
 {
   "meta": {
-    "n_cities": 71,
-    "variance_explained_3f": 0.735,
+    "n_cities": 68,
+    "variance_explained_3f": 0.755,
     "kaiser_factors": 2,
     "pillar_structure_supported": true,
-    "note": "V3 within-pillar weights updated to reflect empirical loadings. Inter-pillar weights remain theory-based (40/35/25) — see inter_pillar_note below."
+    "note": "Empirical weights for review only. V3 implements theory-based inter-pillar weights. See methodology.md Section 5."
   },
-  "inter_pillar_note": "Factor analysis recommends pillar2 (Institutions) as the dominant inter-pillar weight (0.484). V3 retains the theory-based 40/35/25 split (Social Fabric primary) per care ethics tradition (Gilligan 1982, Noddings 1984). V4 will reconsider after adding Medicaid/CHIP and expanding to 100 cities.",
+  "inter_pillar_note": "V3.1 data (68 cities, 6 metrics, 75.5% variance explained): empirical weights recommend Institutions of Care as dominant pillar (0.496 vs 0.328 Social Fabric). V3 retains Social Fabric primary (0.40) per care ethics theory. Kaiser criterion suggests 2 factors, but 3-factor solution aligns cleanly to pillars with no cross-pillar correlation above 0.60. V4 will revisit inter-pillar weights.",
   "inter_pillar_weights": {
     "empirical": {
-      "pillar2": 0.484,
-      "pillar1": 0.351,
-      "pillar3": 0.165
+      "pillar2": 0.496,
+      "pillar1": 0.328,
+      "pillar3": 0.176
     },
     "v3_implemented": {
-      "pillar1": 0.40,
+      "pillar1": 0.4,
       "pillar2": 0.35,
       "pillar3": 0.25
     }
@@ -23,33 +23,32 @@
     "residential_stability.pct_same_house": {
       "pillar": "pillar1",
       "v3_weight": 0.65,
-      "empirical_weight": 0.692
+      "empirical_weight": 0.832
     },
     "housing_cost_burden.pct_not_burdened": {
       "pillar": "pillar1",
       "v3_weight": 0.35,
-      "empirical_weight": 0.304
+      "empirical_weight": 0.168
     },
     "nonprofit_density.combined_care": {
       "pillar": "pillar2",
-      "v3_weight": 0.50,
-      "empirical_weight": null,
-      "note": "P and E/F/K collapsed into combined_care after r=0.85 correlation. Individual loadings: social_support 0.666 (Factor 1), care_institutions 0.641 (Factor 1)."
+      "v3_weight": 0.5,
+      "empirical_weight": 0.466
     },
     "health_center_density.density_per_100k": {
       "pillar": "pillar2",
-      "v3_weight": 0.50,
-      "empirical_weight": 0.125
-    },
-    "snap_participation.coverage_rate": {
-      "pillar": "pillar3",
-      "v3_weight": 0.35,
-      "empirical_weight": 0.125
+      "v3_weight": 0.5,
+      "empirical_weight": 0.534
     },
     "health_insurance_coverage.pct_insured": {
       "pillar": "pillar3",
       "v3_weight": 0.65,
-      "empirical_weight": 0.875
+      "empirical_weight": 0.817
+    },
+    "snap_participation.coverage_rate": {
+      "pillar": "pillar3",
+      "v3_weight": 0.35,
+      "empirical_weight": 0.183
     }
   }
 }
