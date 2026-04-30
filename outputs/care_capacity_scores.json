@@ -1,7 +1,7 @@
 {
   "albuquerque": {
     "pillar1_social_fabric": 83.1,
-    "pillar2_institutions_of_care": 20.8,
+    "pillar2_institutions_of_care": 21.7,
     "pillar3_reach": 88.6,
     "metrics": {
       "Residential Stability": {
@@ -17,14 +17,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 19.2,
-        "raw_value": 4.8,
+        "score": 18.6,
+        "raw_value": 4.64,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 22.5,
-        "raw_value": 3.37,
+        "score": 24.8,
+        "raw_value": 3.72,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -41,11 +41,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 62.7
+    "care_quotient": 63.0
   },
   "anchorage": {
     "pillar1_social_fabric": 82.7,
-    "pillar2_institutions_of_care": 35.6,
+    "pillar2_institutions_of_care": 16.0,
     "pillar3_reach": 84.4,
     "metrics": {
       "Residential Stability": {
@@ -61,14 +61,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 23.2,
-        "raw_value": 5.8,
+        "score": 22.8,
+        "raw_value": 5.7,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 48.1,
-        "raw_value": 7.21,
+        "score": 9.1,
+        "raw_value": 1.37,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -85,11 +85,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 66.6
+    "care_quotient": 59.8
   },
   "atlanta": {
     "pillar1_social_fabric": 78.1,
-    "pillar2_institutions_of_care": 61.7,
+    "pillar2_institutions_of_care": 50.1,
     "pillar3_reach": 82.0,
     "metrics": {
       "Residential Stability": {
@@ -105,14 +105,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 72.6,
-        "raw_value": 18.15,
+        "score": 72.1,
+        "raw_value": 18.03,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 50.8,
-        "raw_value": 7.62,
+        "score": 28.1,
+        "raw_value": 4.21,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -129,11 +129,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 73.3
+    "care_quotient": 69.3
   },
   "aurora": {
     "pillar1_social_fabric": 79.5,
-    "pillar2_institutions_of_care": 18.9,
+    "pillar2_institutions_of_care": 22.4,
     "pillar3_reach": 81.9,
     "metrics": {
       "Residential Stability": {
@@ -149,14 +149,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 32.3,
-        "raw_value": 8.07,
+        "score": 32.1,
+        "raw_value": 8.02,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 5.5,
-        "raw_value": 0.82,
+        "score": 12.7,
+        "raw_value": 1.91,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -173,11 +173,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 58.9
+    "care_quotient": 60.1
   },
   "austin": {
     "pillar1_social_fabric": 77.9,
-    "pillar2_institutions_of_care": 28.4,
+    "pillar2_institutions_of_care": 31.2,
     "pillar3_reach": 73.6,
     "metrics": {
       "Residential Stability": {
@@ -193,14 +193,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 32.6,
-        "raw_value": 8.15,
+        "score": 31.8,
+        "raw_value": 7.96,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 24.3,
-        "raw_value": 3.64,
+        "score": 30.5,
+        "raw_value": 4.57,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -217,11 +217,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 59.5
+    "care_quotient": 60.5
   },
   "bakersfield": {
     "pillar1_social_fabric": 82.0,
-    "pillar2_institutions_of_care": 56.2,
+    "pillar2_institutions_of_care": 21.7,
     "pillar3_reach": 88.6,
     "metrics": {
       "Residential Stability": {
@@ -237,14 +237,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 12.5,
-        "raw_value": 3.12,
+        "score": 12.3,
+        "raw_value": 3.07,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 100.0,
-        "raw_value": 20.12,
+        "score": 31.1,
+        "raw_value": 4.66,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -261,11 +261,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 74.6
+    "care_quotient": 62.5
   },
   "baltimore": {
     "pillar1_social_fabric": 81.5,
-    "pillar2_institutions_of_care": 49.4,
+    "pillar2_institutions_of_care": 42.4,
     "pillar3_reach": 97.6,
     "metrics": {
       "Residential Stability": {
@@ -281,14 +281,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 54.5,
-        "raw_value": 13.62,
+        "score": 54.2,
+        "raw_value": 13.54,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 44.4,
-        "raw_value": 6.66,
+        "score": 30.7,
+        "raw_value": 4.61,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -305,11 +305,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 74.3
+    "care_quotient": 71.8
   },
   "baton_rouge": {
     "pillar1_social_fabric": 76.3,
-    "pillar2_institutions_of_care": 64.0,
+    "pillar2_institutions_of_care": 52.6,
     "pillar3_reach": 82.2,
     "metrics": {
       "Residential Stability": {
@@ -325,14 +325,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 28.1,
-        "raw_value": 7.03,
+        "score": 26.2,
+        "raw_value": 6.55,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 100.0,
-        "raw_value": 18.02,
+        "score": 79.1,
+        "raw_value": 11.87,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -349,11 +349,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 73.5
+    "care_quotient": 69.5
   },
   "birmingham": {
     "pillar1_social_fabric": 77.2,
-    "pillar2_institutions_of_care": 44.6,
+    "pillar2_institutions_of_care": 45.8,
     "pillar3_reach": 83.3,
     "metrics": {
       "Residential Stability": {
@@ -369,14 +369,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 35.8,
-        "raw_value": 8.95,
+        "score": 35.2,
+        "raw_value": 8.81,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 53.4,
-        "raw_value": 8.01,
+        "score": 56.5,
+        "raw_value": 8.48,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -393,11 +393,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 67.3
+    "care_quotient": 67.7
   },
   "boston": {
     "pillar1_social_fabric": 77.0,
-    "pillar2_institutions_of_care": 69.8,
+    "pillar2_institutions_of_care": 58.0,
     "pillar3_reach": 94.6,
     "metrics": {
       "Residential Stability": {
@@ -413,14 +413,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 46.9,
-        "raw_value": 11.72,
+        "score": 46.0,
+        "raw_value": 11.5,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 92.7,
-        "raw_value": 13.91,
+        "score": 70.1,
+        "raw_value": 10.51,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -437,11 +437,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 78.9
+    "care_quotient": 74.8
   },
   "buffalo": {
     "pillar1_social_fabric": 82.8,
-    "pillar2_institutions_of_care": 42.4,
+    "pillar2_institutions_of_care": 35.0,
     "pillar3_reach": 96.0,
     "metrics": {
       "Residential Stability": {
@@ -457,14 +457,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 39.2,
-        "raw_value": 9.81,
+        "score": 38.8,
+        "raw_value": 9.7,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 45.5,
-        "raw_value": 6.83,
+        "score": 31.1,
+        "raw_value": 4.67,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -481,11 +481,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 72.0
+    "care_quotient": 69.4
   },
   "charlotte": {
     "pillar1_social_fabric": 82.1,
-    "pillar2_institutions_of_care": 26.2,
+    "pillar2_institutions_of_care": 29.1,
     "pillar3_reach": 79.3,
     "metrics": {
       "Residential Stability": {
@@ -501,14 +501,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 43.3,
-        "raw_value": 10.82,
+        "score": 42.9,
+        "raw_value": 10.73,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 9.1,
-        "raw_value": 1.37,
+        "score": 15.3,
+        "raw_value": 2.29,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -525,11 +525,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 61.8
+    "care_quotient": 62.8
   },
   "chicago": {
     "pillar1_social_fabric": 81.3,
-    "pillar2_institutions_of_care": 44.2,
+    "pillar2_institutions_of_care": 40.4,
     "pillar3_reach": 90.5,
     "metrics": {
       "Residential Stability": {
@@ -545,14 +545,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 33.7,
-        "raw_value": 8.42,
+        "score": 33.2,
+        "raw_value": 8.3,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 54.7,
-        "raw_value": 8.2,
+        "score": 47.7,
+        "raw_value": 7.16,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -569,11 +569,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 70.6
+    "care_quotient": 69.3
   },
   "cincinnati": {
     "pillar1_social_fabric": 78.2,
-    "pillar2_institutions_of_care": 71.1,
+    "pillar2_institutions_of_care": 62.4,
     "pillar3_reach": 84.8,
     "metrics": {
       "Residential Stability": {
@@ -589,14 +589,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 49.5,
-        "raw_value": 12.38,
+        "score": 49.2,
+        "raw_value": 12.29,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 92.7,
-        "raw_value": 13.9,
+        "score": 75.5,
+        "raw_value": 11.32,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -613,11 +613,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 77.4
+    "care_quotient": 74.3
   },
   "cleveland": {
     "pillar1_social_fabric": 78.8,
-    "pillar2_institutions_of_care": 65.6,
+    "pillar2_institutions_of_care": 61.0,
     "pillar3_reach": 92.7,
     "metrics": {
       "Residential Stability": {
@@ -633,14 +633,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 47.2,
-        "raw_value": 11.81,
+        "score": 47.0,
+        "raw_value": 11.75,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 84.1,
-        "raw_value": 12.61,
+        "score": 75.1,
+        "raw_value": 11.27,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -657,11 +657,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 77.7
+    "care_quotient": 76.0
   },
   "colorado_springs": {
     "pillar1_social_fabric": 79.1,
-    "pillar2_institutions_of_care": 28.2,
+    "pillar2_institutions_of_care": 23.8,
     "pillar3_reach": 85.2,
     "metrics": {
       "Residential Stability": {
@@ -677,14 +677,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 25.7,
-        "raw_value": 6.43,
+        "score": 25.3,
+        "raw_value": 6.33,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 30.6,
-        "raw_value": 4.59,
+        "score": 22.3,
+        "raw_value": 3.34,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -701,11 +701,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 62.8
+    "care_quotient": 61.3
   },
   "columbus": {
     "pillar1_social_fabric": 79.5,
-    "pillar2_institutions_of_care": 34.1,
+    "pillar2_institutions_of_care": 26.8,
     "pillar3_reach": 81.8,
     "metrics": {
       "Residential Stability": {
@@ -721,14 +721,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 32.1,
-        "raw_value": 8.03,
+        "score": 31.5,
+        "raw_value": 7.88,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 36.1,
-        "raw_value": 5.41,
+        "score": 22.1,
+        "raw_value": 3.31,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -745,11 +745,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 64.2
+    "care_quotient": 61.6
   },
   "corpus_christi": {
     "pillar1_social_fabric": 82.4,
-    "pillar2_institutions_of_care": 13.5,
+    "pillar2_institutions_of_care": 8.2,
     "pillar3_reach": 83.6,
     "metrics": {
       "Residential Stability": {
@@ -765,14 +765,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 10.2,
-        "raw_value": 2.55,
+        "score": 10.1,
+        "raw_value": 2.52,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 16.8,
-        "raw_value": 2.52,
+        "score": 6.3,
+        "raw_value": 0.94,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -789,11 +789,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 58.6
+    "care_quotient": 56.7
   },
   "dallas": {
     "pillar1_social_fabric": 80.5,
-    "pillar2_institutions_of_care": 25.4,
+    "pillar2_institutions_of_care": 23.6,
     "pillar3_reach": 69.3,
     "metrics": {
       "Residential Stability": {
@@ -809,14 +809,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 36.0,
-        "raw_value": 8.99,
+        "score": 35.5,
+        "raw_value": 8.87,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 14.8,
-        "raw_value": 2.22,
+        "score": 11.7,
+        "raw_value": 1.76,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -833,11 +833,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 58.4
+    "care_quotient": 57.8
   },
   "denver": {
     "pillar1_social_fabric": 78.8,
-    "pillar2_institutions_of_care": 50.0,
+    "pillar2_institutions_of_care": 48.7,
     "pillar3_reach": 80.4,
     "metrics": {
       "Residential Stability": {
@@ -853,14 +853,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 41.3,
-        "raw_value": 10.33,
+        "score": 40.5,
+        "raw_value": 10.12,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 58.7,
-        "raw_value": 8.8,
+        "score": 56.9,
+        "raw_value": 8.53,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -877,11 +877,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 69.1
+    "care_quotient": 68.7
   },
   "des_moines": {
     "pillar1_social_fabric": 83.0,
-    "pillar2_institutions_of_care": 43.6,
+    "pillar2_institutions_of_care": 35.1,
     "pillar3_reach": 91.5,
     "metrics": {
       "Residential Stability": {
@@ -897,14 +897,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 34.2,
-        "raw_value": 8.54,
+        "score": 32.9,
+        "raw_value": 8.22,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 52.9,
-        "raw_value": 7.94,
+        "score": 37.3,
+        "raw_value": 5.6,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -921,11 +921,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 71.3
+    "care_quotient": 68.4
   },
   "detroit": {
     "pillar1_social_fabric": 82.0,
-    "pillar2_institutions_of_care": 48.6,
+    "pillar2_institutions_of_care": 55.6,
     "pillar3_reach": 97.4,
     "metrics": {
       "Residential Stability": {
@@ -941,14 +941,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 55.0,
-        "raw_value": 13.74,
+        "score": 54.3,
+        "raw_value": 13.58,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 42.1,
-        "raw_value": 6.32,
+        "score": 56.9,
+        "raw_value": 8.54,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -965,11 +965,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 74.2
+    "care_quotient": 76.6
   },
   "durham": {
     "pillar1_social_fabric": 83.2,
-    "pillar2_institutions_of_care": 23.6,
+    "pillar2_institutions_of_care": 22.4,
     "pillar3_reach": 81.6,
     "metrics": {
       "Residential Stability": {
@@ -985,14 +985,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 28.5,
-        "raw_value": 7.13,
+        "score": 28.2,
+        "raw_value": 7.05,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 18.8,
-        "raw_value": 2.82,
+        "score": 16.5,
+        "raw_value": 2.47,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1009,11 +1009,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 61.9
+    "care_quotient": 61.5
   },
   "el_paso": {
     "pillar1_social_fabric": 83.9,
-    "pillar2_institutions_of_care": 37.6,
+    "pillar2_institutions_of_care": 20.3,
     "pillar3_reach": 78.4,
     "metrics": {
       "Residential Stability": {
@@ -1029,14 +1029,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 12.2,
-        "raw_value": 3.05,
+        "score": 12.1,
+        "raw_value": 3.02,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 62.9,
-        "raw_value": 9.43,
+        "score": 28.5,
+        "raw_value": 4.27,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1053,11 +1053,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 66.3
+    "care_quotient": 60.3
   },
   "fort_worth": {
     "pillar1_social_fabric": 82.1,
-    "pillar2_institutions_of_care": 12.4,
+    "pillar2_institutions_of_care": 12.6,
     "pillar3_reach": 76.6,
     "metrics": {
       "Residential Stability": {
@@ -1073,14 +1073,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 24.8,
-        "raw_value": 6.19,
+        "score": 24.5,
+        "raw_value": 6.13,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 0.0,
-        "raw_value": 0.0,
+        "score": 0.7,
+        "raw_value": 0.11,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1097,11 +1097,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 56.3
+    "care_quotient": 56.4
   },
   "fresno": {
     "pillar1_social_fabric": 81.7,
-    "pillar2_institutions_of_care": 45.3,
+    "pillar2_institutions_of_care": 42.2,
     "pillar3_reach": 90.8,
     "metrics": {
       "Residential Stability": {
@@ -1117,14 +1117,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 25.4,
-        "raw_value": 6.36,
+        "score": 25.3,
+        "raw_value": 6.33,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 65.2,
-        "raw_value": 9.78,
+        "score": 59.0,
+        "raw_value": 8.85,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1141,11 +1141,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 71.2
+    "care_quotient": 70.2
   },
   "honolulu": {
-    "pillar1_social_fabric": 92.4,
-    "pillar2_institutions_of_care": 83.5,
+    "pillar1_social_fabric": 81.2,
+    "pillar2_institutions_of_care": 83.0,
     "pillar3_reach": 92.9,
     "metrics": {
       "Residential Stability": {
@@ -1155,14 +1155,14 @@
         "pillar": "Social Fabric"
       },
       "Housing Affordability (% not cost-burdened)": {
-        "score": 97.1,
-        "raw_value": 87.41,
+        "score": 65.1,
+        "raw_value": 58.59,
         "benchmark": 90.0,
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 67.0,
-        "raw_value": 16.75,
+        "score": 65.9,
+        "raw_value": 16.47,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
@@ -1185,11 +1185,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 89.4
+    "care_quotient": 84.8
   },
   "houston": {
     "pillar1_social_fabric": 80.7,
-    "pillar2_institutions_of_care": 29.0,
+    "pillar2_institutions_of_care": 27.6,
     "pillar3_reach": 71.8,
     "metrics": {
       "Residential Stability": {
@@ -1205,14 +1205,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 30.8,
-        "raw_value": 7.7,
+        "score": 30.5,
+        "raw_value": 7.62,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 27.2,
-        "raw_value": 4.08,
+        "score": 24.6,
+        "raw_value": 3.69,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1229,11 +1229,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 60.4
+    "care_quotient": 59.9
   },
   "indianapolis": {
     "pillar1_social_fabric": 83.4,
-    "pillar2_institutions_of_care": 66.9,
+    "pillar2_institutions_of_care": 53.0,
     "pillar3_reach": 81.3,
     "metrics": {
       "Residential Stability": {
@@ -1249,14 +1249,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 47.4,
-        "raw_value": 11.85,
+        "score": 46.8,
+        "raw_value": 11.69,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 86.4,
-        "raw_value": 12.96,
+        "score": 59.3,
+        "raw_value": 8.9,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1273,16 +1273,16 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 77.1
+    "care_quotient": 72.2
   },
   "jacksonville": {
-    "pillar1_social_fabric": 81.4,
-    "pillar2_institutions_of_care": 21.2,
+    "pillar1_social_fabric": 81.3,
+    "pillar2_institutions_of_care": 20.4,
     "pillar3_reach": 86.8,
     "metrics": {
       "Residential Stability": {
-        "score": 86.6,
-        "raw_value": 82.28,
+        "score": 86.5,
+        "raw_value": 82.15,
         "benchmark": 95.0,
         "pillar": "Social Fabric"
       },
@@ -1293,14 +1293,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 34.0,
-        "raw_value": 8.51,
+        "score": 33.9,
+        "raw_value": 8.47,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 8.4,
-        "raw_value": 1.26,
+        "score": 7.0,
+        "raw_value": 1.05,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1317,11 +1317,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 61.7
+    "care_quotient": 61.4
   },
   "kansas_city": {
     "pillar1_social_fabric": 82.8,
-    "pillar2_institutions_of_care": 44.6,
+    "pillar2_institutions_of_care": 38.4,
     "pillar3_reach": 78.4,
     "metrics": {
       "Residential Stability": {
@@ -1337,14 +1337,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 42.0,
-        "raw_value": 10.49,
+        "score": 41.5,
+        "raw_value": 10.37,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 47.3,
-        "raw_value": 7.09,
+        "score": 35.4,
+        "raw_value": 5.31,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1361,11 +1361,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 68.3
+    "care_quotient": 66.2
   },
   "las_vegas": {
     "pillar1_social_fabric": 81.3,
-    "pillar2_institutions_of_care": 17.8,
+    "pillar2_institutions_of_care": 23.3,
     "pillar3_reach": 82.8,
     "metrics": {
       "Residential Stability": {
@@ -1381,14 +1381,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 32.4,
-        "raw_value": 8.1,
+        "score": 32.1,
+        "raw_value": 8.02,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 3.1,
-        "raw_value": 0.47,
+        "score": 14.5,
+        "raw_value": 2.18,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1405,11 +1405,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 59.4
+    "care_quotient": 61.4
   },
   "lexington": {
     "pillar1_social_fabric": 80.0,
-    "pillar2_institutions_of_care": 45.2,
+    "pillar2_institutions_of_care": 41.8,
     "pillar3_reach": 78.9,
     "metrics": {
       "Residential Stability": {
@@ -1425,14 +1425,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 32.6,
-        "raw_value": 8.15,
+        "score": 31.9,
+        "raw_value": 7.97,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 57.9,
-        "raw_value": 8.68,
+        "score": 51.7,
+        "raw_value": 7.75,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1449,11 +1449,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 67.5
+    "care_quotient": 66.4
   },
   "los_angeles": {
     "pillar1_social_fabric": 79.0,
-    "pillar2_institutions_of_care": 41.6,
+    "pillar2_institutions_of_care": 41.3,
     "pillar3_reach": 80.9,
     "metrics": {
       "Residential Stability": {
@@ -1469,14 +1469,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 32.2,
-        "raw_value": 8.05,
+        "score": 31.8,
+        "raw_value": 7.95,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 50.9,
-        "raw_value": 7.64,
+        "score": 50.8,
+        "raw_value": 7.62,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1493,11 +1493,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 66.4
+    "care_quotient": 66.3
   },
   "louisville": {
     "pillar1_social_fabric": 87.1,
-    "pillar2_institutions_of_care": 8.2,
+    "pillar2_institutions_of_care": 10.8,
     "pillar3_reach": 81.3,
     "metrics": {
       "Residential Stability": {
@@ -1513,14 +1513,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 16.5,
-        "raw_value": 4.12,
+        "score": 16.2,
+        "raw_value": 4.06,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 0.0,
-        "raw_value": 0.0,
+        "score": 5.3,
+        "raw_value": 0.79,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1537,11 +1537,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 58.0
+    "care_quotient": 58.9
   },
   "madison": {
     "pillar1_social_fabric": 74.8,
-    "pillar2_institutions_of_care": 28.0,
+    "pillar2_institutions_of_care": 22.2,
     "pillar3_reach": 80.7,
     "metrics": {
       "Residential Stability": {
@@ -1557,14 +1557,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 36.2,
-        "raw_value": 9.06,
+        "score": 34.5,
+        "raw_value": 8.62,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 19.8,
-        "raw_value": 2.97,
+        "score": 9.9,
+        "raw_value": 1.49,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1581,11 +1581,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 59.9
+    "care_quotient": 57.9
   },
   "memphis": {
     "pillar1_social_fabric": 81.5,
-    "pillar2_institutions_of_care": 33.7,
+    "pillar2_institutions_of_care": 31.3,
     "pillar3_reach": 82.8,
     "metrics": {
       "Residential Stability": {
@@ -1601,14 +1601,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 43.2,
-        "raw_value": 10.8,
+        "score": 42.6,
+        "raw_value": 10.66,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 24.2,
-        "raw_value": 3.63,
+        "score": 20.0,
+        "raw_value": 3.0,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1625,11 +1625,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 65.1
+    "care_quotient": 64.3
   },
   "milwaukee": {
     "pillar1_social_fabric": 81.4,
-    "pillar2_institutions_of_care": 42.1,
+    "pillar2_institutions_of_care": 40.9,
     "pillar3_reach": 93.6,
     "metrics": {
       "Residential Stability": {
@@ -1645,14 +1645,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 35.7,
-        "raw_value": 8.92,
+        "score": 35.6,
+        "raw_value": 8.89,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 48.5,
-        "raw_value": 7.28,
+        "score": 46.2,
+        "raw_value": 6.93,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1669,11 +1669,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 70.7
+    "care_quotient": 70.3
   },
   "minneapolis": {
     "pillar1_social_fabric": 78.0,
-    "pillar2_institutions_of_care": 43.3,
+    "pillar2_institutions_of_care": 46.0,
     "pillar3_reach": 84.8,
     "metrics": {
       "Residential Stability": {
@@ -1689,14 +1689,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 44.7,
-        "raw_value": 11.17,
+        "score": 43.8,
+        "raw_value": 10.94,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 41.9,
-        "raw_value": 6.28,
+        "score": 48.1,
+        "raw_value": 7.22,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1713,11 +1713,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 67.6
+    "care_quotient": 68.5
   },
   "nashville": {
     "pillar1_social_fabric": 79.3,
-    "pillar2_institutions_of_care": 28.4,
+    "pillar2_institutions_of_care": 25.9,
     "pillar3_reach": 76.4,
     "metrics": {
       "Residential Stability": {
@@ -1733,14 +1733,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 36.6,
-        "raw_value": 9.15,
+        "score": 36.3,
+        "raw_value": 9.08,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 20.3,
-        "raw_value": 3.05,
+        "score": 15.5,
+        "raw_value": 2.32,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1757,11 +1757,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 60.8
+    "care_quotient": 59.9
   },
   "new_orleans": {
     "pillar1_social_fabric": 80.5,
-    "pillar2_institutions_of_care": 72.7,
+    "pillar2_institutions_of_care": 72.4,
     "pillar3_reach": 84.6,
     "metrics": {
       "Residential Stability": {
@@ -1777,14 +1777,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 45.4,
-        "raw_value": 11.35,
+        "score": 44.8,
+        "raw_value": 11.2,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
         "score": 100.0,
-        "raw_value": 21.09,
+        "raw_value": 19.27,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1801,11 +1801,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 78.8
+    "care_quotient": 78.7
   },
   "nyc": {
     "pillar1_social_fabric": 81.7,
-    "pillar2_institutions_of_care": 31.4,
+    "pillar2_institutions_of_care": 31.3,
     "pillar3_reach": 95.0,
     "metrics": {
       "Residential Stability": {
@@ -1821,14 +1821,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 27.8,
-        "raw_value": 6.94,
+        "score": 27.4,
+        "raw_value": 6.84,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 35.0,
-        "raw_value": 5.25,
+        "score": 35.2,
+        "raw_value": 5.28,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1849,7 +1849,7 @@
   },
   "oklahoma_city": {
     "pillar1_social_fabric": 83.6,
-    "pillar2_institutions_of_care": 39.7,
+    "pillar2_institutions_of_care": 26.1,
     "pillar3_reach": 80.2,
     "metrics": {
       "Residential Stability": {
@@ -1865,14 +1865,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 42.1,
-        "raw_value": 10.53,
+        "score": 27.7,
+        "raw_value": 6.93,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 37.2,
-        "raw_value": 5.58,
+        "score": 24.5,
+        "raw_value": 3.67,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1889,11 +1889,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 67.4
+    "care_quotient": 62.6
   },
   "omaha": {
     "pillar1_social_fabric": 84.2,
-    "pillar2_institutions_of_care": 44.8,
+    "pillar2_institutions_of_care": 42.4,
     "pillar3_reach": 81.2,
     "metrics": {
       "Residential Stability": {
@@ -1909,14 +1909,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 33.3,
-        "raw_value": 8.33,
+        "score": 32.8,
+        "raw_value": 8.21,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 56.3,
-        "raw_value": 8.44,
+        "score": 52.1,
+        "raw_value": 7.82,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1933,11 +1933,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 69.7
+    "care_quotient": 68.8
   },
   "philadelphia": {
     "pillar1_social_fabric": 82.1,
-    "pillar2_institutions_of_care": 34.2,
+    "pillar2_institutions_of_care": 33.4,
     "pillar3_reach": 95.9,
     "metrics": {
       "Residential Stability": {
@@ -1953,14 +1953,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 35.9,
-        "raw_value": 8.97,
+        "score": 35.7,
+        "raw_value": 8.92,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 32.4,
-        "raw_value": 4.86,
+        "score": 31.2,
+        "raw_value": 4.68,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -1977,11 +1977,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 68.8
+    "care_quotient": 68.5
   },
   "phoenix": {
     "pillar1_social_fabric": 83.1,
-    "pillar2_institutions_of_care": 36.0,
+    "pillar2_institutions_of_care": 27.5,
     "pillar3_reach": 77.4,
     "metrics": {
       "Residential Stability": {
@@ -1997,14 +1997,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 25.5,
-        "raw_value": 6.37,
+        "score": 25.1,
+        "raw_value": 6.27,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 46.4,
-        "raw_value": 6.96,
+        "score": 29.9,
+        "raw_value": 4.48,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2021,11 +2021,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 65.2
+    "care_quotient": 62.2
   },
   "pittsburgh": {
     "pillar1_social_fabric": 79.5,
-    "pillar2_institutions_of_care": 61.7,
+    "pillar2_institutions_of_care": 52.4,
     "pillar3_reach": 89.0,
     "metrics": {
       "Residential Stability": {
@@ -2041,14 +2041,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 64.0,
-        "raw_value": 16.01,
+        "score": 63.1,
+        "raw_value": 15.78,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 59.4,
-        "raw_value": 8.91,
+        "score": 41.8,
+        "raw_value": 6.27,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2065,11 +2065,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 75.6
+    "care_quotient": 72.4
   },
   "portland": {
     "pillar1_social_fabric": 80.3,
-    "pillar2_institutions_of_care": 48.0,
+    "pillar2_institutions_of_care": 43.8,
     "pillar3_reach": 94.1,
     "metrics": {
       "Residential Stability": {
@@ -2085,14 +2085,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 34.7,
-        "raw_value": 8.67,
+        "score": 33.5,
+        "raw_value": 8.38,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 61.3,
-        "raw_value": 9.2,
+        "score": 54.1,
+        "raw_value": 8.12,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2109,11 +2109,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 72.4
+    "care_quotient": 71.0
   },
   "providence": {
     "pillar1_social_fabric": 81.0,
-    "pillar2_institutions_of_care": 43.6,
+    "pillar2_institutions_of_care": 37.6,
     "pillar3_reach": 98.8,
     "metrics": {
       "Residential Stability": {
@@ -2129,14 +2129,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 41.7,
-        "raw_value": 10.42,
+        "score": 40.4,
+        "raw_value": 10.11,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 45.4,
-        "raw_value": 6.81,
+        "score": 34.9,
+        "raw_value": 5.24,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2153,11 +2153,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 72.4
+    "care_quotient": 70.3
   },
   "raleigh": {
     "pillar1_social_fabric": 81.4,
-    "pillar2_institutions_of_care": 23.2,
+    "pillar2_institutions_of_care": 15.0,
     "pillar3_reach": 78.0,
     "metrics": {
       "Residential Stability": {
@@ -2173,14 +2173,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 29.3,
-        "raw_value": 7.33,
+        "score": 28.6,
+        "raw_value": 7.16,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 17.1,
-        "raw_value": 2.57,
+        "score": 1.4,
+        "raw_value": 0.21,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2197,11 +2197,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 60.2
+    "care_quotient": 57.3
   },
   "richmond": {
     "pillar1_social_fabric": 76.5,
-    "pillar2_institutions_of_care": 31.1,
+    "pillar2_institutions_of_care": 32.2,
     "pillar3_reach": 79.7,
     "metrics": {
       "Residential Stability": {
@@ -2217,14 +2217,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 32.8,
-        "raw_value": 8.21,
+        "score": 32.0,
+        "raw_value": 7.99,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 29.4,
-        "raw_value": 4.41,
+        "score": 32.3,
+        "raw_value": 4.85,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2241,11 +2241,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 61.4
+    "care_quotient": 61.8
   },
   "rochester": {
     "pillar1_social_fabric": 75.8,
-    "pillar2_institutions_of_care": 62.2,
+    "pillar2_institutions_of_care": 47.9,
     "pillar3_reach": 95.4,
     "metrics": {
       "Residential Stability": {
@@ -2261,14 +2261,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 29.7,
-        "raw_value": 7.43,
+        "score": 29.5,
+        "raw_value": 7.38,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 94.7,
-        "raw_value": 14.2,
+        "score": 66.3,
+        "raw_value": 9.94,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2285,11 +2285,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 75.9
+    "care_quotient": 70.9
   },
   "sacramento": {
     "pillar1_social_fabric": 81.0,
-    "pillar2_institutions_of_care": 70.8,
+    "pillar2_institutions_of_care": 51.6,
     "pillar3_reach": 88.6,
     "metrics": {
       "Residential Stability": {
@@ -2305,14 +2305,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 52.6,
-        "raw_value": 13.16,
+        "score": 51.1,
+        "raw_value": 12.78,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 88.9,
-        "raw_value": 13.33,
+        "score": 52.1,
+        "raw_value": 7.81,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2329,11 +2329,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 79.3
+    "care_quotient": 72.6
   },
   "salt_lake_city": {
     "pillar1_social_fabric": 79.4,
-    "pillar2_institutions_of_care": 23.1,
+    "pillar2_institutions_of_care": 22.4,
     "pillar3_reach": 72.3,
     "metrics": {
       "Residential Stability": {
@@ -2349,8 +2349,8 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 32.9,
-        "raw_value": 8.23,
+        "score": 31.5,
+        "raw_value": 7.88,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
@@ -2373,11 +2373,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 57.9
+    "care_quotient": 57.7
   },
   "san_antonio": {
     "pillar1_social_fabric": 80.3,
-    "pillar2_institutions_of_care": 16.6,
+    "pillar2_institutions_of_care": 17.4,
     "pillar3_reach": 79.3,
     "metrics": {
       "Residential Stability": {
@@ -2393,14 +2393,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 18.0,
-        "raw_value": 4.5,
+        "score": 17.6,
+        "raw_value": 4.41,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 15.3,
-        "raw_value": 2.3,
+        "score": 17.2,
+        "raw_value": 2.58,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2417,11 +2417,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 57.8
+    "care_quotient": 58.0
   },
   "san_diego": {
     "pillar1_social_fabric": 79.2,
-    "pillar2_institutions_of_care": 50.8,
+    "pillar2_institutions_of_care": 36.8,
     "pillar3_reach": 81.9,
     "metrics": {
       "Residential Stability": {
@@ -2437,14 +2437,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 25.6,
-        "raw_value": 6.39,
+        "score": 25.4,
+        "raw_value": 6.35,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 75.9,
-        "raw_value": 11.39,
+        "score": 48.1,
+        "raw_value": 7.21,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2461,11 +2461,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 69.9
+    "care_quotient": 65.0
   },
   "san_francisco": {
     "pillar1_social_fabric": 83.2,
-    "pillar2_institutions_of_care": 37.8,
+    "pillar2_institutions_of_care": 46.2,
     "pillar3_reach": 85.9,
     "metrics": {
       "Residential Stability": {
@@ -2481,14 +2481,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 32.1,
-        "raw_value": 8.03,
+        "score": 31.4,
+        "raw_value": 7.86,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 43.5,
-        "raw_value": 6.52,
+        "score": 61.0,
+        "raw_value": 9.15,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2505,11 +2505,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 68.0
+    "care_quotient": 70.9
   },
   "san_jose": {
     "pillar1_social_fabric": 83.3,
-    "pillar2_institutions_of_care": 30.9,
+    "pillar2_institutions_of_care": 29.2,
     "pillar3_reach": 86.3,
     "metrics": {
       "Residential Stability": {
@@ -2531,8 +2531,8 @@
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 46.1,
-        "raw_value": 6.91,
+        "score": 42.8,
+        "raw_value": 6.42,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2549,11 +2549,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 65.7
+    "care_quotient": 65.1
   },
   "seattle": {
     "pillar1_social_fabric": 77.0,
-    "pillar2_institutions_of_care": 65.1,
+    "pillar2_institutions_of_care": 48.1,
     "pillar3_reach": 85.7,
     "metrics": {
       "Residential Stability": {
@@ -2569,14 +2569,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 30.2,
-        "raw_value": 7.54,
+        "score": 29.3,
+        "raw_value": 7.32,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 100.0,
-        "raw_value": 22.65,
+        "score": 66.9,
+        "raw_value": 10.04,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2593,11 +2593,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 75.0
+    "care_quotient": 69.1
   },
   "spokane": {
     "pillar1_social_fabric": 79.4,
-    "pillar2_institutions_of_care": 61.0,
+    "pillar2_institutions_of_care": 33.1,
     "pillar3_reach": 99.5,
     "metrics": {
       "Residential Stability": {
@@ -2613,14 +2613,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 22.9,
-        "raw_value": 5.72,
+        "score": 22.5,
+        "raw_value": 5.63,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 99.0,
-        "raw_value": 14.85,
+        "score": 43.7,
+        "raw_value": 6.55,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2637,11 +2637,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 78.0
+    "care_quotient": 68.2
   },
   "st_louis": {
     "pillar1_social_fabric": 82.2,
-    "pillar2_institutions_of_care": 63.8,
+    "pillar2_institutions_of_care": 52.5,
     "pillar3_reach": 86.4,
     "metrics": {
       "Residential Stability": {
@@ -2657,14 +2657,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 52.4,
-        "raw_value": 13.1,
+        "score": 51.9,
+        "raw_value": 12.97,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 75.1,
-        "raw_value": 11.27,
+        "score": 53.1,
+        "raw_value": 7.96,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2681,11 +2681,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 76.8
+    "care_quotient": 72.9
   },
   "st_paul": {
     "pillar1_social_fabric": 81.4,
-    "pillar2_institutions_of_care": 44.4,
+    "pillar2_institutions_of_care": 39.6,
     "pillar3_reach": 87.0,
     "metrics": {
       "Residential Stability": {
@@ -2701,14 +2701,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 41.7,
-        "raw_value": 10.43,
+        "score": 40.7,
+        "raw_value": 10.18,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 47.1,
-        "raw_value": 7.06,
+        "score": 38.5,
+        "raw_value": 5.78,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2725,11 +2725,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 69.8
+    "care_quotient": 68.2
   },
   "stockton": {
     "pillar1_social_fabric": 82.3,
-    "pillar2_institutions_of_care": 45.0,
+    "pillar2_institutions_of_care": 30.4,
     "pillar3_reach": 97.5,
     "metrics": {
       "Residential Stability": {
@@ -2751,8 +2751,8 @@
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 74.9,
-        "raw_value": 11.23,
+        "score": 45.7,
+        "raw_value": 6.86,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2769,11 +2769,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 73.0
+    "care_quotient": 67.9
   },
   "tampa": {
     "pillar1_social_fabric": 77.4,
-    "pillar2_institutions_of_care": 33.7,
+    "pillar2_institutions_of_care": 26.0,
     "pillar3_reach": 86.1,
     "metrics": {
       "Residential Stability": {
@@ -2789,14 +2789,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 34.2,
-        "raw_value": 8.55,
+        "score": 33.8,
+        "raw_value": 8.45,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 33.1,
-        "raw_value": 4.96,
+        "score": 18.2,
+        "raw_value": 2.73,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2813,11 +2813,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 64.3
+    "care_quotient": 61.6
   },
   "tucson": {
     "pillar1_social_fabric": 77.8,
-    "pillar2_institutions_of_care": 28.8,
+    "pillar2_institutions_of_care": 20.1,
     "pillar3_reach": 81.1,
     "metrics": {
       "Residential Stability": {
@@ -2833,14 +2833,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 20.7,
-        "raw_value": 5.18,
+        "score": 20.5,
+        "raw_value": 5.12,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 36.9,
-        "raw_value": 5.53,
+        "score": 19.7,
+        "raw_value": 2.95,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2857,11 +2857,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 61.5
+    "care_quotient": 58.4
   },
   "virginia_beach": {
     "pillar1_social_fabric": 82.3,
-    "pillar2_institutions_of_care": 14.1,
+    "pillar2_institutions_of_care": 15.4,
     "pillar3_reach": 81.8,
     "metrics": {
       "Residential Stability": {
@@ -2877,14 +2877,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 28.2,
-        "raw_value": 7.05,
+        "score": 27.8,
+        "raw_value": 6.96,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 0.0,
-        "raw_value": 0.0,
+        "score": 2.9,
+        "raw_value": 0.44,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2901,11 +2901,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 58.3
+    "care_quotient": 58.8
   },
   "washington_dc": {
     "pillar1_social_fabric": 79.4,
-    "pillar2_institutions_of_care": 84.6,
+    "pillar2_institutions_of_care": 75.8,
     "pillar3_reach": 90.4,
     "metrics": {
       "Residential Stability": {
@@ -2921,14 +2921,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 84.0,
-        "raw_value": 21.0,
+        "score": 78.1,
+        "raw_value": 19.52,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 85.1,
-        "raw_value": 12.76,
+        "score": 73.5,
+        "raw_value": 11.02,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2945,11 +2945,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 84.0
+    "care_quotient": 80.9
   },
   "wichita": {
     "pillar1_social_fabric": 83.7,
-    "pillar2_institutions_of_care": 29.4,
+    "pillar2_institutions_of_care": 24.2,
     "pillar3_reach": 78.6,
     "metrics": {
       "Residential Stability": {
@@ -2965,14 +2965,14 @@
         "pillar": "Social Fabric"
       },
       "Care Nonprofits (P+E+F+K per 10k)": {
-        "score": 25.2,
-        "raw_value": 6.31,
+        "score": 25.0,
+        "raw_value": 6.24,
         "benchmark": 25.0,
         "pillar": "Institutions of Care"
       },
       "FQHCs (per 100k)": {
-        "score": 33.5,
-        "raw_value": 5.03,
+        "score": 23.5,
+        "raw_value": 3.52,
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
@@ -2989,6 +2989,6 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 63.4
+    "care_quotient": 61.6
   }
 }

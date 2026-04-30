@@ -1,0 +1,69 @@
+city_key,name,state,state_fips,county_fips,population,place_fips
+nyc,New York City,NY,36,36061|36005|36047|36081|36085,8335897,51000
+chicago,Chicago,IL,17,17031,2696555,14000
+los_angeles,Los Angeles,CA,06,06037,3898747,44000
+houston,Houston,TX,48,48201,2304580,35000
+boston,Boston,MA,25,25025,675647,07000
+phoenix,Phoenix,AZ,04,04013,1608139,55000
+philadelphia,Philadelphia,PA,42,42101,1603797,60000
+san_antonio,San Antonio,TX,48,48029,1434625,65000
+san_diego,San Diego,CA,06,06073,1386932,66000
+dallas,Dallas,TX,48,48113,1304379,19000
+san_jose,San Jose,CA,06,06085,1013240,68000
+austin,Austin,TX,48,48453,961855,05000
+jacksonville,Jacksonville,FL,12,12031,949611,35000
+fort_worth,Fort Worth,TX,48,48439,918915,27000
+columbus,Columbus,OH,39,39049,905748,18000
+charlotte,Charlotte,NC,37,37119,874579,12000
+indianapolis,Indianapolis,IN,18,18097,887232,36003
+san_francisco,San Francisco,CA,06,06075,873965,67000
+seattle,Seattle,WA,53,53033,737255,63000
+denver,Denver,CO,08,08031,715522,20000
+washington_dc,Washington DC,DC,11,11001,689545,50000
+nashville,Nashville,TN,47,47037,689447,52006
+oklahoma_city,Oklahoma City,OK,40,40109,681054,55000
+el_paso,El Paso,TX,48,48141,678815,24000
+las_vegas,Las Vegas,NV,32,32003,641903,40000
+louisville,Louisville,KY,21,21111,633045,48006
+memphis,Memphis,TN,47,47157,633104,48000
+detroit,Detroit,MI,26,26163,632464,22000
+portland,Portland,OR,41,41051,652503,59000
+baltimore,Baltimore,MD,24,24510,585708,04000
+milwaukee,Milwaukee,WI,55,55079,577222,53000
+albuquerque,Albuquerque,NM,35,35001,564559,02000
+tucson,Tucson,AZ,04,04019,542629,77000
+fresno,Fresno,CA,06,06019,542107,27000
+sacramento,Sacramento,CA,06,06067,524943,64000
+kansas_city,Kansas City,MO,29,29095|29047|29165,508090,38000
+atlanta,Atlanta,GA,13,13121|13089,498715,04000
+omaha,Omaha,NE,31,31055,486051,37000
+colorado_springs,Colorado Springs,CO,08,08041,478961,16000
+raleigh,Raleigh,NC,37,37183,467665,55000
+virginia_beach,Virginia Beach,VA,51,51810,459470,82000
+minneapolis,Minneapolis,MN,27,27053,429606,43000
+wichita,Wichita,KS,20,20173,397532,79000
+tampa,Tampa,FL,12,12057,403364,71000
+new_orleans,New Orleans,LA,22,22071,383997,55000
+bakersfield,Bakersfield,CA,06,06029,407459,03526
+cleveland,Cleveland,OH,39,39035,372624,16000
+aurora,Aurora,CO,08,08005|08001,366623,04000
+honolulu,Honolulu,HI,15,15003,350964,17000
+lexington,Lexington,KY,21,21067,322570,46027
+stockton,Stockton,CA,06,06077,320554,75000
+corpus_christi,Corpus Christi,TX,48,48355,317863,17000
+st_louis,St. Louis,MO,29,29510,301578,65000
+pittsburgh,Pittsburgh,PA,42,42003,302971,61000
+anchorage,Anchorage,AK,02,02020,291247,03000
+buffalo,Buffalo,NY,36,36029,278349,11000
+durham,Durham,NC,37,37063,283506,19000
+madison,Madison,WI,55,55025,269196,48000
+spokane,Spokane,WA,53,53063,228989,67000
+salt_lake_city,Salt Lake City,UT,49,49035,200567,67000
+baton_rouge,Baton Rouge,LA,22,22033,227549,05000
+des_moines,Des Moines,IA,19,19153,214237,21000
+birmingham,Birmingham,AL,01,01073,212237,07000
+rochester,Rochester,NY,36,36055,211328,63000
+richmond,Richmond,VA,51,51760,226610,67000
+st_paul,St. Paul,MN,27,27123,311527,58000
+cincinnati,Cincinnati,OH,39,39061,309317,15000
+providence,Providence,RI,44,44007,190934,59000

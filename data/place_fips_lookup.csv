@@ -1,0 +1,69 @@
+city_key,city_name,state,place_fips,matched_name,confidence,needs_review
+nyc,New York City,NY,51000,"New York city, New York",1.0,no
+chicago,Chicago,IL,14000,"Chicago city, Illinois",0.95,no
+los_angeles,Los Angeles,CA,44000,"Los Angeles city, California",0.95,no
+houston,Houston,TX,35000,"Houston city, Texas",0.95,no
+boston,Boston,MA,07000,"Boston city, Massachusetts",0.95,no
+phoenix,Phoenix,AZ,55000,"Phoenix city, Arizona",0.95,no
+philadelphia,Philadelphia,PA,60000,"Philadelphia city, Pennsylvania",0.95,no
+san_antonio,San Antonio,TX,65000,"San Antonio city, Texas",0.95,no
+san_diego,San Diego,CA,66000,"San Diego city, California",0.95,no
+dallas,Dallas,TX,19000,"Dallas city, Texas",0.95,no
+san_jose,San Jose,CA,68000,"San Jose city, California",0.95,no
+austin,Austin,TX,05000,"Austin city, Texas",0.95,no
+jacksonville,Jacksonville,FL,35000,"Jacksonville city, Florida",0.95,no
+fort_worth,Fort Worth,TX,27000,"Fort Worth city, Texas",0.95,no
+columbus,Columbus,OH,18000,"Columbus city, Ohio",0.95,no
+charlotte,Charlotte,NC,12000,"Charlotte city, North Carolina",0.95,no
+indianapolis,Indianapolis,IN,36003,"Indianapolis city (balance), Indiana",override,no
+san_francisco,San Francisco,CA,67000,"San Francisco city, California",override,no
+seattle,Seattle,WA,63000,"Seattle city, Washington",0.95,no
+denver,Denver,CO,20000,"Denver city, Colorado",0.95,no
+washington_dc,Washington DC,DC,50000,District of Columbia,override,no
+nashville,Nashville,TN,52006,"Nashville-Davidson metropolitan government (balance), Tennessee",override,no
+oklahoma_city,Oklahoma City,OK,55000,"Oklahoma City city, Oklahoma",0.9,no
+el_paso,El Paso,TX,24000,"El Paso city, Texas",0.95,no
+las_vegas,Las Vegas,NV,40000,"Las Vegas city, Nevada",0.95,no
+louisville,Louisville,KY,48006,"Louisville/Jefferson County metro government (balance), Kentucky",override,no
+memphis,Memphis,TN,48000,"Memphis city, Tennessee",0.95,no
+detroit,Detroit,MI,22000,"Detroit city, Michigan",0.95,no
+portland,Portland,OR,59000,"Portland city, Oregon",0.95,no
+baltimore,Baltimore,MD,04000,"Baltimore city, Maryland",0.95,no
+milwaukee,Milwaukee,WI,53000,"Milwaukee city, Wisconsin",0.95,no
+albuquerque,Albuquerque,NM,02000,"Albuquerque city, New Mexico",0.95,no
+tucson,Tucson,AZ,77000,"Tucson city, Arizona",0.95,no
+fresno,Fresno,CA,27000,"Fresno city, California",0.95,no
+sacramento,Sacramento,CA,64000,"Sacramento city, California",0.95,no
+kansas_city,Kansas City,MO,38000,"Kansas City city, Missouri",0.9,no
+atlanta,Atlanta,GA,04000,"Atlanta city, Georgia",0.95,no
+omaha,Omaha,NE,37000,"Omaha city, Nebraska",0.95,no
+colorado_springs,Colorado Springs,CO,16000,"Colorado Springs city, Colorado",0.95,no
+raleigh,Raleigh,NC,55000,"Raleigh city, North Carolina",0.95,no
+virginia_beach,Virginia Beach,VA,82000,"Virginia Beach city, Virginia",0.95,no
+minneapolis,Minneapolis,MN,43000,"Minneapolis city, Minnesota",0.95,no
+wichita,Wichita,KS,79000,"Wichita city, Kansas",0.95,no
+tampa,Tampa,FL,71000,"Tampa city, Florida",0.95,no
+new_orleans,New Orleans,LA,55000,"New Orleans city, Louisiana",0.95,no
+bakersfield,Bakersfield,CA,03526,"Bakersfield city, California",0.95,no
+cleveland,Cleveland,OH,16000,"Cleveland city, Ohio",0.95,no
+aurora,Aurora,CO,04000,"Aurora city, Colorado",0.95,no
+honolulu,Honolulu,HI,17000,"Urban Honolulu CDP, Hawaii",override,no
+lexington,Lexington,KY,46027,"Lexington-Fayette urban county, Kentucky",override,no
+stockton,Stockton,CA,75000,"Stockton city, California",0.95,no
+corpus_christi,Corpus Christi,TX,17000,"Corpus Christi city, Texas",0.95,no
+st_louis,St. Louis,MO,65000,"St. Louis city, Missouri",0.95,no
+pittsburgh,Pittsburgh,PA,61000,"Pittsburgh city, Pennsylvania",0.95,no
+anchorage,Anchorage,AK,03000,"Anchorage municipality, Alaska",override,no
+buffalo,Buffalo,NY,11000,"Buffalo city, New York",0.95,no
+durham,Durham,NC,19000,"Durham city, North Carolina",0.95,no
+madison,Madison,WI,48000,"Madison city, Wisconsin",0.95,no
+spokane,Spokane,WA,67000,"Spokane city, Washington",0.95,no
+salt_lake_city,Salt Lake City,UT,67000,"Salt Lake City city, Utah",0.9,no
+baton_rouge,Baton Rouge,LA,05000,"Baton Rouge city, Louisiana",0.95,no
+des_moines,Des Moines,IA,21000,"Des Moines city, Iowa",0.95,no
+birmingham,Birmingham,AL,07000,"Birmingham city, Alabama",0.95,no
+rochester,Rochester,NY,63000,"Rochester city, New York",0.95,no
+richmond,Richmond,VA,67000,"Richmond city, Virginia",0.95,no
+st_paul,St. Paul,MN,58000,"St. Paul city, Minnesota",0.95,no
+cincinnati,Cincinnati,OH,15000,"Cincinnati city, Ohio",0.95,no
+providence,Providence,RI,59000,"Providence city, Rhode Island",0.95,no

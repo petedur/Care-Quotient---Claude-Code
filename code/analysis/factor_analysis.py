@@ -1,22 +1,21 @@
 """
 Factor Analysis — Care Capacity Index
 ======================================
-Tests whether the assumed 3-pillar structure (Social Support, Institutions of
-Care, Reach) holds empirically by running PCA on the 7 scored metrics across
-all cities with complete data.
+Tests whether the assumed 3-pillar structure holds empirically by running PCA
+on the scored metrics across all cities with complete data.
+
+Metric definitions are imported directly from score.py so this script can
+never drift out of sync with the scoring model.
 
 Outputs
 -------
   1. Correlation matrix of raw metric scores
   2. Scree plot data (variance explained per principal component)
   3. Varimax-rotated factor loadings (3-factor solution)
-  4. Proposed empirical weights vs. current theory-based weights
-  5. Pillar alignment scores (how well each factor maps to a pillar)
-  6. outputs/factor_analysis.csv  — loadings table for inspection
-  7. outputs/factor_analysis_weights.json — proposed weights in score.py format
-
-This is a diagnostic tool, not a scoring tool. No scoring changes are made here.
-Review the output and decide whether to adopt the empirical weights in V3.
+  4. Proposed empirical weights vs. current V3 weights
+  5. outputs/factor_analysis_loadings.csv  — loadings table
+  6. outputs/factor_analysis_correlations.csv — correlation matrix
+  7. outputs/factor_analysis_weights.json  — proposed weights (review before adopting)
 
 Usage
 -----
@@ -36,6 +35,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from config import DB_PATH, PROJECT_ROOT
 
+# ── Import metric definitions directly from score.py ─────────────────────────
+# This is the single source of truth. factor_analysis.py never re-declares
+# SCORED_METRICS or PILLAR_WEIGHTS — it reads them from the live scoring model.
+from score import SCORED_METRICS, PILLAR_WEIGHTS, PILLAR_LABELS
+
 try:
     from sklearn.decomposition import PCA
     from sklearn.preprocessing import StandardScaler
@@ -48,55 +52,31 @@ except ImportError:
 OUTPUTS_DIR = PROJECT_ROOT / "outputs"
 OUTPUTS_DIR.mkdir(exist_ok=True)
 
-# ── Metric definitions (mirrors score.py SCORED_METRICS) ─────────────────────
-# (metric, sub_metric, pillar, benchmark, current_within_pillar_weight)
-SCORED_METRICS = [
-    ("residential_stability",     "pct_same_house",    "pillar1", 95.0,  0.48),
-    ("nonprofit_density",         "social_support",    "pillar1", 10.0,  0.40),
-    ("housing_cost_burden",       "pct_not_burdened",  "pillar1", 85.0,  0.12),
-    ("health_center_density",     "density_per_100k",  "pillar2", 15.0,  0.55),
-    ("nonprofit_density",         "care_institutions", "pillar2",  8.0,  0.45),
-    ("snap_participation",        "coverage_rate",     "pillar3", 85.0,  0.60),
-    ("health_insurance_coverage", "pct_insured",       "pillar3", 95.0,  0.40),
-]
-
-# Current inter-pillar weights
-CURRENT_PILLAR_WEIGHTS = {"pillar1": 0.40, "pillar2": 0.35, "pillar3": 0.25}
-
+# Build derived lookup structures from the imported SCORED_METRICS
 SHORT_LABELS = {
+    f"{metric}.{sub_metric}": f"{metric.replace('_', ' ').title()} / {sub_metric}"
+    for metric, sub_metric, pillar, benchmark, weight in SCORED_METRICS
+}
+# Override with concise display names
+_DISPLAY = {
     "residential_stability.pct_same_house":       "Resid. Stability",
-    "nonprofit_density.social_support":           "Social Support NPs",
     "housing_cost_burden.pct_not_burdened":       "Housing Affordability",
+    "nonprofit_density.combined_care":            "Combined Care NPs",
     "health_center_density.density_per_100k":     "FQHC Density",
-    "nonprofit_density.care_institutions":        "Care Institution NPs",
     "snap_participation.coverage_rate":           "SNAP Coverage",
     "health_insurance_coverage.pct_insured":      "Health Insurance",
 }
+SHORT_LABELS.update(_DISPLAY)
 
-PILLAR_LABELS = {
-    "pillar1": "Social Support & Connection",
-    "pillar2": "Institutions of Care",
-    "pillar3": "Reach",
-}
-
-# Expected pillar membership for each metric (for alignment scoring)
 PILLAR_MEMBERSHIP = {
-    "Resid. Stability":       "pillar1",
-    "Social Support NPs":     "pillar1",
-    "Housing Affordability":  "pillar1",
-    "FQHC Density":           "pillar2",
-    "Care Institution NPs":   "pillar2",
-    "SNAP Coverage":          "pillar3",
-    "Health Insurance":       "pillar3",
+    SHORT_LABELS[f"{m}.{s}"]: p
+    for m, s, p, _, _ in SCORED_METRICS
 }
 
 
 # ── Varimax rotation ──────────────────────────────────────────────────────────
 def varimax(loadings: np.ndarray, tol: float = 1e-6, max_iter: int = 1000) -> np.ndarray:
-    """
-    Apply varimax rotation to a (n_variables × n_factors) loading matrix.
-    Returns the rotated loading matrix.
-    """
+    """Apply varimax rotation to a (n_variables × n_factors) loading matrix."""
     n_vars, n_factors = loadings.shape
     rotation = np.eye(n_factors)
 
@@ -132,6 +112,7 @@ def load_scores() -> pd.DataFrame:
     """
     Load raw metric values from DuckDB, normalize against benchmarks,
     and return a city × metric DataFrame of normalized scores (0–100).
+    Uses the same benchmarks as score.py.
     """
     conn = duckdb.connect(str(DB_PATH), read_only=True)
     df = conn.execute(
@@ -140,18 +121,16 @@ def load_scores() -> pd.DataFrame:
     conn.close()
 
     if df.empty:
-        raise RuntimeError(
-            "No data in metrics table. Run pipeline.py first."
-        )
+        raise RuntimeError("No data in metrics table. Run pipeline.py first.")
 
     df["key"] = df["metric"] + "." + df["sub_metric"]
 
-    # Build scored wide table
     rows = {}
     for metric, sub_metric, pillar, benchmark, _ in SCORED_METRICS:
         key = f"{metric}.{sub_metric}"
+        label = SHORT_LABELS.get(key, key)
         sub = df[df["key"] == key][["city", "value"]].set_index("city")["value"]
-        rows[SHORT_LABELS[key]] = sub.apply(lambda v: min(v / benchmark * 100, 100.0))
+        rows[label] = sub.apply(lambda v: min(v / benchmark * 100, 100.0))
 
     wide = pd.DataFrame(rows)
     n_before = len(wide)
@@ -169,6 +148,7 @@ def load_scores() -> pd.DataFrame:
 def run():
     print("=" * 70)
     print("  Care Capacity Index — Factor Analysis")
+    print(f"  {len(SCORED_METRICS)} metrics  |  {len(PILLAR_WEIGHTS)} pillars")
     print("=" * 70)
 
     print("\nLoading and normalizing metric scores from DuckDB...")
@@ -182,15 +162,13 @@ def run():
     print("\n" + "─" * 70)
     print("1. SPEARMAN CORRELATION MATRIX")
     print("─" * 70)
-    corr_matrix, p_values = spearmanr(scores.values)
+    corr_matrix, _ = spearmanr(scores.values)
     if n_metrics == 2:
-        # spearmanr returns scalars for 2 vars
         corr_matrix = np.array([[1.0, corr_matrix], [corr_matrix, 1.0]])
 
     corr_df = pd.DataFrame(corr_matrix, index=metric_names, columns=metric_names)
     print("\n" + corr_df.round(2).to_string())
 
-    # Flag strong cross-pillar correlations (r > 0.6) as potential restructuring signals
     print("\n  Strong correlations (|r| > 0.60):")
     found_strong = False
     for i, m1 in enumerate(metric_names):
@@ -229,57 +207,54 @@ def run():
 
     n_factors_kaiser = sum(1 for ev in eigenvalues if ev > 1.0)
     print(f"\n  Kaiser criterion suggests {n_factors_kaiser} factor(s).")
-    print(f"  Current model assumes 3 pillars.")
+    print(f"  Current model assumes {len(PILLAR_WEIGHTS)} pillars.")
 
     # ── 3. 3-Factor PCA + Varimax ─────────────────────────────────────────────
+    n_factors = len(PILLAR_WEIGHTS)
     print("\n" + "─" * 70)
-    print("3. 3-FACTOR SOLUTION (VARIMAX ROTATED)")
+    print(f"3. {n_factors}-FACTOR SOLUTION (VARIMAX ROTATED)")
     print("─" * 70)
 
-    pca3 = PCA(n_components=3)
+    pca3 = PCA(n_components=n_factors)
     pca3.fit(X)
-    loadings_raw = pca3.components_.T  # shape: (n_metrics, 3)
+    loadings_raw = pca3.components_.T
     loadings = varimax(loadings_raw)
 
-    var_3f = pca3.explained_variance_ratio_
-    print(f"\n  3-factor model explains {sum(var_3f)*100:.1f}% of total variance.")
-    print(f"  (Pre-rotation: PC1={var_3f[0]*100:.1f}%, PC2={var_3f[1]*100:.1f}%, PC3={var_3f[2]*100:.1f}%)")
+    var_nf = pca3.explained_variance_ratio_
+    print(f"\n  {n_factors}-factor model explains {sum(var_nf)*100:.1f}% of total variance.")
 
-    loadings_df = pd.DataFrame(
-        loadings,
-        index=metric_names,
-        columns=["Factor 1", "Factor 2", "Factor 3"],
-    )
+    factor_cols = [f"Factor {i+1}" for i in range(n_factors)]
+    loadings_df = pd.DataFrame(loadings, index=metric_names, columns=factor_cols)
 
     print("\n  Varimax-rotated factor loadings (|loading| ≥ 0.40 shown with **):\n")
-    header = f"  {'Metric':<25} {'F1':>8} {'F2':>8} {'F3':>8}   Assigned pillar"
+    header = f"  {'Metric':<25} " + " ".join(f"{'F'+str(i+1):>8}" for i in range(n_factors)) + "   Pillar"
     print(header)
     print("  " + "-" * (len(header) - 2))
     for metric in metric_names:
         row = loadings_df.loc[metric]
-        f1, f2, f3 = row["Factor 1"], row["Factor 2"], row["Factor 3"]
-        flags = [("**" if abs(v) >= 0.40 else "  ") for v in [f1, f2, f3]]
-        assigned = PILLAR_MEMBERSHIP[metric]
-        print(f"  {metric:<25} {flags[0]}{f1:>6.2f} {flags[1]}{f2:>6.2f} {flags[2]}{f3:>6.2f}   {assigned}")
+        vals = [row[f] for f in factor_cols]
+        flags_vals = " ".join(
+            f"{'**' if abs(v) >= 0.40 else '  '}{v:>6.2f}" for v in vals
+        )
+        assigned = PILLAR_MEMBERSHIP.get(metric, "?")
+        print(f"  {metric:<25} {flags_vals}   {assigned}")
 
     # ── 4. Pillar alignment ───────────────────────────────────────────────────
     print("\n" + "─" * 70)
     print("4. PILLAR ALIGNMENT")
     print("─" * 70)
-    print("\n  For each factor, which pillar's metrics load most strongly on it?")
 
-    pillar_metrics = {
-        "pillar1": [m for m in metric_names if PILLAR_MEMBERSHIP[m] == "pillar1"],
-        "pillar2": [m for m in metric_names if PILLAR_MEMBERSHIP[m] == "pillar2"],
-        "pillar3": [m for m in metric_names if PILLAR_MEMBERSHIP[m] == "pillar3"],
+    pillar_metrics_map = {
+        p: [m for m in metric_names if PILLAR_MEMBERSHIP.get(m) == p]
+        for p in PILLAR_WEIGHTS
     }
 
     factor_pillar_affinity = {}
-    for fi, factor in enumerate(["Factor 1", "Factor 2", "Factor 3"]):
+    for fi, factor in enumerate(factor_cols):
         affinities = {}
-        for pillar, metrics in pillar_metrics.items():
-            # Mean absolute loading for metrics assigned to this pillar
-            affinities[pillar] = np.mean([abs(loadings_df.loc[m, factor]) for m in metrics])
+        for pillar, metrics in pillar_metrics_map.items():
+            if metrics:
+                affinities[pillar] = np.mean([abs(loadings_df.loc[m, factor]) for m in metrics])
         best_pillar = max(affinities, key=affinities.get)
         factor_pillar_affinity[factor] = best_pillar
         aff_str = "  |  ".join(
@@ -288,130 +263,98 @@ def run():
         print(f"\n  {factor} → {PILLAR_LABELS[best_pillar]}")
         print(f"    Mean |loading|: {aff_str}")
 
-    all_aligned = len(set(factor_pillar_affinity.values())) == 3
-    if all_aligned:
-        print("\n  RESULT: Each factor aligns cleanly to a different pillar.")
-        print("          The 3-pillar structure is empirically supported.")
-    else:
-        print("\n  RESULT: Factor-pillar alignment is ambiguous.")
-        print("          Some pillars may be measuring the same underlying dimension.")
-        print("          Consider merging or restructuring pillars before V3.")
+    all_aligned = len(set(factor_pillar_affinity.values())) == len(PILLAR_WEIGHTS)
+    print(f"\n  RESULT: {'Each factor aligns to a distinct pillar — 3-pillar structure supported.' if all_aligned else 'Factor-pillar alignment is ambiguous — consider revising pillar structure.'}")
 
     # ── 5. Empirical weight derivation ────────────────────────────────────────
     print("\n" + "─" * 70)
     print("5. EMPIRICAL WEIGHT DERIVATION")
     print("─" * 70)
-    print("""
-  Method: for each factor aligned to a pillar, the within-pillar weight of
-  each metric is proportional to its squared loading on that factor (communality
-  contribution). Inter-pillar weights are proportional to the variance explained
-  by each factor after rotation (approximated from pre-rotation eigenvalues
-  weighted by factor alignment quality).
-""")
 
-    # Map each factor to its best pillar
-    factor_to_pillar = factor_pillar_affinity  # Factor N -> pillar key
+    factor_to_pillar = factor_pillar_affinity
 
-    # Within-pillar empirical weights
     empirical_within = {}
     for factor, pillar in factor_to_pillar.items():
-        metrics_in_pillar = pillar_metrics[pillar]
+        metrics_in_pillar = pillar_metrics_map[pillar]
         sq_loadings = {m: loadings_df.loc[m, factor] ** 2 for m in metrics_in_pillar}
         total = sum(sq_loadings.values())
-        if total > 0:
-            empirical_within[pillar] = {m: round(v / total, 3) for m, v in sq_loadings.items()}
-        else:
-            empirical_within[pillar] = {m: 1.0 / len(metrics_in_pillar) for m in metrics_in_pillar}
+        empirical_within[pillar] = {
+            m: round(v / total, 3) for m, v in sq_loadings.items()
+        } if total > 0 else {m: 1.0 / len(metrics_in_pillar) for m in metrics_in_pillar}
 
-    # Inter-pillar empirical weights: variance explained by each aligned factor
-    # Use pre-rotation explained variance (post-rotation is harder to attribute)
-    # The factor that best aligns to each pillar gets that PC's variance share
-    pillar_var = {}
-    for fi, (factor, pillar) in enumerate(factor_to_pillar.items()):
-        pillar_var[pillar] = var_3f[fi]
+    pillar_var = {
+        pillar: var_nf[fi]
+        for fi, (factor, pillar) in enumerate(factor_to_pillar.items())
+    }
     total_var = sum(pillar_var.values())
     empirical_inter = {p: round(v / total_var, 3) for p, v in pillar_var.items()}
 
-    # Print comparison
-    print(f"  {'Pillar':<35} {'Current':>10} {'Empirical':>12}")
-    print("  " + "-" * 60)
-    for pillar in ["pillar1", "pillar2", "pillar3"]:
-        curr = CURRENT_PILLAR_WEIGHTS.get(pillar, "n/a")
+    print(f"\n  Inter-pillar weights:")
+    print(f"  {'Pillar':<35} {'V3 (theory)':>12} {'Empirical':>12}")
+    print("  " + "-" * 62)
+    for pillar in PILLAR_WEIGHTS:
+        curr = PILLAR_WEIGHTS[pillar]
         emp  = empirical_inter.get(pillar, "n/a")
-        print(f"  {PILLAR_LABELS[pillar]:<35} {curr:>10.2f} {emp:>12.3f}")
+        print(f"  {PILLAR_LABELS[pillar]:<35} {curr:>12.2f} {emp:>12.3f}")
 
-    print()
-    for pillar in ["pillar1", "pillar2", "pillar3"]:
-        print(f"\n  {PILLAR_LABELS[pillar]} — within-pillar weights:")
-        within_curr = {
-            SHORT_LABELS[f"{m}.{s}"]: w
-            for m, s, p, _, w in [
-                ("residential_stability", "pct_same_house", "pillar1", None, 0.48),
-                ("nonprofit_density", "social_support", "pillar1", None, 0.40),
-                ("housing_cost_burden", "pct_not_burdened", "pillar1", None, 0.12),
-                ("health_center_density", "density_per_100k", "pillar2", None, 0.55),
-                ("nonprofit_density", "care_institutions", "pillar2", None, 0.45),
-                ("snap_participation", "coverage_rate", "pillar3", None, 0.60),
-                ("health_insurance_coverage", "pct_insured", "pillar3", None, 0.40),
-            ] if p == pillar
-        }
+    print(f"\n  Within-pillar weights:")
+    for pillar in PILLAR_WEIGHTS:
+        print(f"\n  {PILLAR_LABELS[pillar]}:")
         emp_w = empirical_within.get(pillar, {})
-        for metric_short, curr_w in within_curr.items():
-            emp_w_val = emp_w.get(metric_short, "n/a")
-            print(f"    {metric_short:<25}  current: {curr_w:.2f}  empirical: "
-                  f"{emp_w_val:.3f}" if isinstance(emp_w_val, float) else
-                  f"    {metric_short:<25}  current: {curr_w:.2f}  empirical: {emp_w_val}")
+        for metric, sub_metric, p, _, curr_w in SCORED_METRICS:
+            if p != pillar:
+                continue
+            short = SHORT_LABELS.get(f"{metric}.{sub_metric}", f"{metric}.{sub_metric}")
+            emp_val = emp_w.get(short, "n/a")
+            emp_str = f"{emp_val:.3f}" if isinstance(emp_val, float) else emp_val
+            print(f"    {short:<30}  V3: {curr_w:.2f}  empirical: {emp_str}")
 
-    # ── 6. Outputs ────────────────────────────────────────────────────────────
+    # ── 6. Save outputs ───────────────────────────────────────────────────────
     print("\n" + "─" * 70)
     print("6. SAVING OUTPUTS")
     print("─" * 70)
 
-    # Loadings CSV
-    loadings_csv_path = OUTPUTS_DIR / "factor_analysis_loadings.csv"
-    loadings_df.to_csv(loadings_csv_path)
-    print(f"\n  Loadings table  → {loadings_csv_path}")
+    loadings_df.to_csv(OUTPUTS_DIR / "factor_analysis_loadings.csv")
+    print(f"\n  Loadings      → {OUTPUTS_DIR / 'factor_analysis_loadings.csv'}")
 
-    # Correlation CSV
-    corr_csv_path = OUTPUTS_DIR / "factor_analysis_correlations.csv"
-    corr_df.round(3).to_csv(corr_csv_path)
-    print(f"  Correlation matrix → {corr_csv_path}")
+    corr_df.round(3).to_csv(OUTPUTS_DIR / "factor_analysis_correlations.csv")
+    print(f"  Correlations  → {OUTPUTS_DIR / 'factor_analysis_correlations.csv'}")
 
-    # Proposed weights JSON
-    # Build in score.py SCORED_METRICS format for easy manual adoption
-    proposed_weights_output = {
+    weights_out = {
         "meta": {
             "n_cities": n_cities,
-            "variance_explained_3f": round(float(sum(var_3f)), 3),
+            "variance_explained_3f": round(float(sum(var_nf)), 3),
             "kaiser_factors": n_factors_kaiser,
             "pillar_structure_supported": all_aligned,
+            "note": "Empirical weights for review only. V3 implements theory-based inter-pillar weights. See methodology.md Section 5.",
         },
-        "inter_pillar_weights": empirical_inter,
+        "inter_pillar_note": (
+            "Factor analysis recommends pillar2 (Institutions) as dominant. "
+            "V3 retains Social Fabric primary per care ethics theory. V4 will revisit."
+        ),
+        "inter_pillar_weights": {
+            "empirical": empirical_inter,
+            "v3_implemented": {p: PILLAR_WEIGHTS[p] for p in PILLAR_WEIGHTS},
+        },
         "within_pillar_weights": {},
     }
-    # Flatten within-pillar weights to (metric, sub_metric) key format
+
     for metric, sub_metric, pillar, benchmark, curr_w in SCORED_METRICS:
-        short = SHORT_LABELS[f"{metric}.{sub_metric}"]
+        short = SHORT_LABELS.get(f"{metric}.{sub_metric}", f"{metric}.{sub_metric}")
         emp_w = empirical_within.get(pillar, {}).get(short, curr_w)
-        proposed_weights_output["within_pillar_weights"][f"{metric}.{sub_metric}"] = {
+        weights_out["within_pillar_weights"][f"{metric}.{sub_metric}"] = {
             "pillar": pillar,
-            "current_weight":  curr_w,
+            "v3_weight": curr_w,
             "empirical_weight": round(float(emp_w), 3),
         }
 
-    weights_json_path = OUTPUTS_DIR / "factor_analysis_weights.json"
-    with open(weights_json_path, "w") as f:
-        json.dump(proposed_weights_output, f, indent=2)
-    print(f"  Proposed weights    → {weights_json_path}")
+    with open(OUTPUTS_DIR / "factor_analysis_weights.json", "w") as f:
+        json.dump(weights_out, f, indent=2)
+    print(f"  Weights JSON  → {OUTPUTS_DIR / 'factor_analysis_weights.json'}")
 
     print("\n" + "=" * 70)
     print("  Factor analysis complete.")
-    if all_aligned:
-        print("  The 3-pillar structure is supported. Review proposed weights")
-        print("  in factor_analysis_weights.json before adopting them in score.py.")
-    else:
-        print("  The 3-pillar structure is NOT clearly supported by the data.")
-        print("  Consider reviewing pillar definitions before updating weights.")
+    print("  Review factor_analysis_weights.json before adopting any weight changes.")
     print("=" * 70)
 
 

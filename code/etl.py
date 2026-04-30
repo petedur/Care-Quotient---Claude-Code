@@ -71,6 +71,12 @@ def load_nonprofit_density(conn, city_key: str):
     df  = pd.read_csv(raw, dtype=str, low_memory=False, encoding="latin-1")
     pop = CITIES[city_key]["population"]
 
+    # Quality filter: 501(c)(3) only (SUBSECTION=03) and active status (01/02).
+    # IRS BMF includes 501(c)(4)/(5)/(6) orgs with NTEE P/E/F/K codes (~2% of
+    # care orgs). Methodology commits to 501(c)(3) organizations; filter here
+    # to match. STATUS 01=unconditional exemption, 02=conditional exemption.
+    df = df[df["SUBSECTION"].isin(["03"]) & df["STATUS"].isin(["01", "02"])].copy()
+
     for label, codes in [
         ("social_support",    NTEE_SOCIAL_SUPPORT),
         ("care_institutions", NTEE_CARE_INSTITUTIONS),
@@ -237,11 +243,12 @@ VALIDATION_RULES = [
     ("health_insurance_coverage", "pct_insured",      0.0, 100.0),
 ]
 
-# Scored metrics that must be present for every city; missing = pipeline gap
+# Scored metrics that must be present for every city; missing = pipeline gap.
+# V3: combined_care replaces the separate social_support + care_institutions
+# scored metrics. Sub-components are retained as diagnostics, not scored.
 REQUIRED_SCORED = [
     ("residential_stability",     "pct_same_house"),
-    ("nonprofit_density",         "social_support"),
-    ("nonprofit_density",         "care_institutions"),
+    ("nonprofit_density",         "combined_care"),
     ("health_center_density",     "density_per_100k"),
     ("housing_cost_burden",       "pct_not_burdened"),
     ("snap_participation",        "coverage_rate"),

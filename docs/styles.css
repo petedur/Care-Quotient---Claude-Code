@@ -306,6 +306,19 @@ body {
   padding: clamp(2rem, 5vw, 3.5rem) var(--pad) clamp(3rem, 6vw, 5rem);
 }
 
+.geo-caveat {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--ink-mid);
+  background: var(--accent-bg);
+  border-left: 3px solid var(--accent-dim);
+  padding: 0.65rem 0.9rem;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+.geo-caveat a { color: var(--accent); }
+
 .back-link {
   font-family: var(--mono);
   font-size: 0.7rem;

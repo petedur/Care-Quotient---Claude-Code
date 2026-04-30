@@ -21,8 +21,11 @@ from config import HRSA_DATA_PATH, DATA_RAW, CITIES
 from geo.zip_fips import normalize_zip
 from geo.city_zips import city_to_zips
 
-# HRSA ZIP column — check multiple possible names for robustness
+# HRSA site ZIP column — must be the SITE address ZIP, not the organization HQ ZIP.
+# "Site Postal Code" is the correct column in current HRSA exports. Fallback
+# candidates included for older file formats.
 _ZIP_COL_CANDIDATES = [
+    "Site Postal Code",
     "Site Address Zip Code",
     "Site Zip Code",
     "ZIP Code",
@@ -65,9 +68,13 @@ def filter_city(df: pd.DataFrame, city_key: str) -> pd.DataFrame:
     state      = CITIES[city_key]["state"].upper()
 
     zip_mask      = df[zip_col].apply(normalize_zip).isin(valid_zips)
-    state_mask    = df["Site Address State Abbreviation"].str.upper() == state \
-                    if "Site Address State Abbreviation" in df.columns \
-                    else pd.Series(True, index=df.index)
+    # "Site State Abbreviation" is the correct site-level state column.
+    # "Site Address State Abbreviation" was an older column name — check both.
+    state_col = "Site State Abbreviation" if "Site State Abbreviation" in df.columns \
+                else "Site Address State Abbreviation" if "Site Address State Abbreviation" in df.columns \
+                else None
+    state_mask    = df[state_col].str.upper() == state \
+                    if state_col else pd.Series(True, index=df.index)
     status_mask   = df["Site Status Description"].str.upper() == "ACTIVE"
     fqhc_mask     = df["Health Center Type"].str.contains("Look-Alike", na=False) == False
     delivery_mask = df["Health Center Type Description"].str.upper().str.contains(

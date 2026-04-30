@@ -294,10 +294,25 @@ function renderCity(app, key) {
     return pillarBreak + row;
   }).join('');
 
+  // Geography caveat for CDP cities where county fallback was used
+  var geoCaveat = '';
+  if (key === 'honolulu') {
+    geoCaveat = [
+      '<div class="geo-caveat">',
+        '<strong>Geography note:</strong> Hawaii has no incorporated municipalities. ',
+        'Honolulu is a Census Designated Place, so data reflects Honolulu County ',
+        'boundaries rather than the urban core. Density metrics may be modestly overstated ',
+        'relative to other cities. See <a href="#/methodology">Methodology &sect;9</a>.',
+      '</div>',
+    ].join('');
+  }
+
   app.innerHTML = [
     '<div class="city-page">',
 
       '<a href="#/" class="back-link">&#8592; All cities</a>',
+
+      geoCaveat,
 
       '<div class="city-title">', city.name, '</div>',
       '<div class="city-meta">', city.state, ' &nbsp;&middot;&nbsp; ', city.population, '</div>',

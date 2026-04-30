@@ -15,7 +15,7 @@ Benchmarks:
     housing_cost_burden      90%     — 90% not burdened (10% burdened ceiling)
 
   Pillar 2 — Institutions of Care (35% of CQ)
-    combined_care (PEFK)     15/10k  — combined P+E+F+K nonprofit density
+    combined_care (PEFK)     25/10k  — combined P+E+F+K nonprofit density
     fqhc_density             15/100k — eliminates HRSA shortage designation
 
   Pillar 3 — Reach (25% of CQ)
@@ -39,76 +39,13 @@ OUTPUTS_DIR = PROJECT_ROOT / "outputs"
 OUTPUTS_DIR.mkdir(exist_ok=True)
 
 # ── Metric definitions ────────────────────────────────────────────────────────
-# Each entry: (metric, sub_metric, pillar, benchmark)
+# Each entry: (metric, sub_metric, pillar, benchmark, within_pillar_weight)
 # benchmark: the raw value that earns a score of 100.
 # Scores are computed as min(value / benchmark * 100, 100).
 # "higher is better" is assumed for all metrics here.
-#
-# ── Scored metrics with literature-based benchmarks ──────────────────────────
-#
-# Pillar 1: Social Support & Connection
-#
-#   Residential stability — benchmark 95%
-#   95% represents near-zero involuntary displacement: ~5% annual mobility
-#   accounts for natural/voluntary movement (employment, life transitions).
-#   Stable, low-poverty US neighborhoods regularly achieve 93-95% in ACS data.
-#   Putnam (2000) and Sampson et al. (1997) establish stability as the primary
-#   structural driver of collective efficacy and care network formation.
-#
-#   Human services nonprofit density (NTEE P) — benchmark 10 per 10,000
-#   1 organization per 1,000 residents — a density at which every major
-#   sub-category of human services (housing, food, youth, elderly, disability,
-#   immigrant services) would be covered with meaningful redundancy.
-#   Judgment threshold; no policy standard exists. Documented as such.
-#   Salamon & Anheier (1998); Boris & Steuerle (2006).
-#
-# Pillar 2: Institutions of Care
-#
-#   FQHC density — benchmark 15 per 100,000
-#   Derived from HRSA Health Professional Shortage Area (HPSA) criteria:
-#   shortage designation requires population:physician ratio > 3,500:1.
-#   HRSA UDS data shows average FQHC site capacity at ~3,500-5,000 patients/yr
-#   with 2-3 FTE physicians/site. Eliminating shortage designation requires
-#   ~9.5-14 FQHCs per 100k. Benchmark set at 15 to add geographic redundancy
-#   within large cities. Rosenbaum et al. (2011); Shi et al. (multiple years).
-#
-#   Health/mental health/food nonprofit density (NTEE E/F/K) — benchmark 8/10k
-#   Slightly lower than NTEE P because E/F/K orgs operate at larger scale
-#   (hospital systems, regional food banks) — fewer orgs needed per capita for
-#   coverage saturation. Judgment threshold; documented as such.
-#   Kim & Jennings (2012); Pettijohn & Boris (2013).
-#
-#   Faith-based (NTEE X3x) — DIAGNOSTIC ONLY (not scored in V1)
-#   IRS X30 is a catch-all that captures congregations alongside human-service
-#   orgs, making it an unreliable scored metric. V2 will explore combining X3x
-#   with faith-affiliated P/E/K registrations. See methodology.md.
+# See methodology.md for full benchmark rationale and literature citations.
 
 SCORED_METRICS = [
-    # (metric, sub_metric, pillar, benchmark, within_pillar_weight)
-    #
-    # Within-pillar weights reflect the relative strength of evidence and
-    # philosophical primacy of each metric within its pillar.
-    #
-    # Pillar 1 — Social Support & Connection (55% of CQ)
-    #   Residential stability: 55% — foundational precondition for network formation.
-    #     Putnam (2000) and Sampson et al. (1997) establish it as the primary
-    #     structural driver of all other forms of social capital.
-    #   Human services nonprofits: 45% — organized expression of civic caring.
-    #
-    # Pillar 2 — Institutions of Care (45% of CQ)
-    #   FQHCs: 55% — strongest evidence base; federal mandate; most directly
-    #     serves vulnerable populations. Rosenbaum et al. (2011); Shi et al.
-    #   Health/MH/Food nonprofits: 45% — broader institutional coverage,
-    #     noisier signal than FQHCs.
-    #
-    # Inter-pillar weights: 55% Social / 45% Institutional
-    #   Care ethics tradition (Gilligan 1982, Noddings 1984) holds caring is
-    #   fundamentally relational — the social fabric is primary. But Nussbaum's
-    #   capabilities approach demands institutional infrastructure as a necessary
-    #   condition. 55/45 honors both with a modest tilt toward the relational.
-    #   Weights are judgment-based in V1; V2 will derive empirically via
-    #   regression against care outcomes across 100 cities.
-
     # Pillar 1 — Social Fabric (40% of CQ)
     #   Residential stability:  65% — foundational precondition for network formation.
     #     Factor analysis confirms this as the dominant signal in its dimension (loading 0.70).
@@ -233,8 +170,43 @@ def score(df: pd.DataFrame) -> pd.DataFrame:
     return results
 
 
+def _drop_incomplete_cities(results: pd.DataFrame) -> pd.DataFrame:
+    """
+    Remove cities that are missing any required scored metric.
+
+    When a collector fails, the city still appears in the DB (from a prior run)
+    and score() silently reweights available metrics — producing a CQ from
+    incomplete data. This function enforces fail-closed behavior: any city
+    missing a required score column is excluded from all public outputs.
+
+    Returns the filtered DataFrame and prints a warning for each dropped city.
+    """
+    required_cols = [f"score_{m}.{s}" for m, s, p, _, w in SCORED_METRICS]
+    missing_cols  = [c for c in required_cols if c not in results.columns]
+
+    if missing_cols:
+        print(f"\n  WARNING: entire metric columns absent — {missing_cols}")
+        print("  Run pipeline.py to collect missing data.")
+        return results.iloc[0:0]  # empty — nothing is publishable
+
+    # Per-city check: NaN in any required column = incomplete
+    incomplete = results[required_cols].isnull().any(axis=1)
+    if incomplete.any():
+        bad = results.index[incomplete].tolist()
+        print(f"\n  WARNING: {len(bad)} city/cities excluded from output — "
+              f"missing required metrics: {bad}")
+        print("  Re-run pipeline.py for these cities to restore them.")
+        results = results[~incomplete].copy()
+
+    return results
+
+
 def write_results(conn, results: pd.DataFrame, raw_df: pd.DataFrame):
     """Save scored results to DuckDB, CSV, and JSON."""
+
+    # Fail closed: exclude cities with any missing required scored metric
+    results = _drop_incomplete_cities(results)
+
     conn.execute("DROP TABLE IF EXISTS scores")
     conn.register("results", results.reset_index())
     conn.execute("CREATE TABLE scores AS SELECT * FROM results")

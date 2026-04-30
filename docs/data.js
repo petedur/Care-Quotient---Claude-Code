@@ -6,9 +6,9 @@ const CITIES = {
     "name": "Albuquerque",
     "state": "NM",
     "population": "565k residents",
-    "cq": 62.7,
+    "cq": 63.0,
     "pillar1": 83.1,
-    "pillar2": 20.8,
+    "pillar2": 21.7,
     "pillar3": 88.6,
     "metrics": {
       "residential_stability": {
@@ -26,16 +26,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 19.2,
-        "raw": 4.8,
-        "rawFmt": "4.80",
+        "score": 18.6,
+        "raw": 4.64,
+        "rawFmt": "4.64",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 22.5,
-        "raw": 3.37,
-        "rawFmt": "3.37",
+        "score": 24.8,
+        "raw": 3.72,
+        "rawFmt": "3.72",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -73,9 +73,9 @@ const CITIES = {
     "name": "Anchorage",
     "state": "AK",
     "population": "291k residents",
-    "cq": 66.6,
+    "cq": 59.8,
     "pillar1": 82.7,
-    "pillar2": 35.6,
+    "pillar2": 16.0,
     "pillar3": 84.4,
     "metrics": {
       "residential_stability": {
@@ -93,16 +93,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 23.2,
-        "raw": 5.8,
-        "rawFmt": "5.80",
+        "score": 22.8,
+        "raw": 5.7,
+        "rawFmt": "5.70",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 48.1,
-        "raw": 7.21,
-        "rawFmt": "7.21",
+        "score": 9.1,
+        "raw": 1.37,
+        "rawFmt": "1.37",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -140,9 +140,9 @@ const CITIES = {
     "name": "Atlanta",
     "state": "GA",
     "population": "499k residents",
-    "cq": 73.3,
+    "cq": 69.3,
     "pillar1": 78.1,
-    "pillar2": 61.7,
+    "pillar2": 50.1,
     "pillar3": 82.0,
     "metrics": {
       "residential_stability": {
@@ -160,16 +160,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 72.6,
-        "raw": 18.15,
-        "rawFmt": "18.15",
+        "score": 72.1,
+        "raw": 18.03,
+        "rawFmt": "18.03",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 50.8,
-        "raw": 7.62,
-        "rawFmt": "7.62",
+        "score": 28.1,
+        "raw": 4.21,
+        "rawFmt": "4.21",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -207,9 +207,9 @@ const CITIES = {
     "name": "Aurora",
     "state": "CO",
     "population": "367k residents",
-    "cq": 58.9,
+    "cq": 60.1,
     "pillar1": 79.5,
-    "pillar2": 18.9,
+    "pillar2": 22.4,
     "pillar3": 81.9,
     "metrics": {
       "residential_stability": {
@@ -227,16 +227,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 32.3,
-        "raw": 8.07,
-        "rawFmt": "8.07",
+        "score": 32.1,
+        "raw": 8.02,
+        "rawFmt": "8.02",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 5.5,
-        "raw": 0.82,
-        "rawFmt": "0.82",
+        "score": 12.7,
+        "raw": 1.91,
+        "rawFmt": "1.91",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -274,9 +274,9 @@ const CITIES = {
     "name": "Austin",
     "state": "TX",
     "population": "962k residents",
-    "cq": 59.5,
+    "cq": 60.5,
     "pillar1": 77.9,
-    "pillar2": 28.4,
+    "pillar2": 31.2,
     "pillar3": 73.6,
     "metrics": {
       "residential_stability": {
@@ -294,16 +294,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 32.6,
-        "raw": 8.15,
-        "rawFmt": "8.15",
+        "score": 31.8,
+        "raw": 7.96,
+        "rawFmt": "7.96",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 24.3,
-        "raw": 3.64,
-        "rawFmt": "3.64",
+        "score": 30.5,
+        "raw": 4.57,
+        "rawFmt": "4.57",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -341,9 +341,9 @@ const CITIES = {
     "name": "Bakersfield",
     "state": "CA",
     "population": "407k residents",
-    "cq": 74.6,
+    "cq": 62.5,
     "pillar1": 82.0,
-    "pillar2": 56.2,
+    "pillar2": 21.7,
     "pillar3": 88.6,
     "metrics": {
       "residential_stability": {
@@ -361,16 +361,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 12.5,
-        "raw": 3.12,
-        "rawFmt": "3.12",
+        "score": 12.3,
+        "raw": 3.07,
+        "rawFmt": "3.07",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 100.0,
-        "raw": 20.12,
-        "rawFmt": "20.12",
+        "score": 31.1,
+        "raw": 4.66,
+        "rawFmt": "4.66",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -408,9 +408,9 @@ const CITIES = {
     "name": "Baltimore",
     "state": "MD",
     "population": "586k residents",
-    "cq": 74.3,
+    "cq": 71.8,
     "pillar1": 81.5,
-    "pillar2": 49.4,
+    "pillar2": 42.4,
     "pillar3": 97.6,
     "metrics": {
       "residential_stability": {
@@ -428,16 +428,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 54.5,
-        "raw": 13.62,
-        "rawFmt": "13.62",
+        "score": 54.2,
+        "raw": 13.54,
+        "rawFmt": "13.54",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 44.4,
-        "raw": 6.66,
-        "rawFmt": "6.66",
+        "score": 30.7,
+        "raw": 4.61,
+        "rawFmt": "4.61",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -475,9 +475,9 @@ const CITIES = {
     "name": "Baton Rouge",
     "state": "LA",
     "population": "228k residents",
-    "cq": 73.5,
+    "cq": 69.5,
     "pillar1": 76.3,
-    "pillar2": 64.0,
+    "pillar2": 52.6,
     "pillar3": 82.2,
     "metrics": {
       "residential_stability": {
@@ -495,16 +495,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 28.1,
-        "raw": 7.03,
-        "rawFmt": "7.03",
+        "score": 26.2,
+        "raw": 6.55,
+        "rawFmt": "6.55",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 100.0,
-        "raw": 18.02,
-        "rawFmt": "18.02",
+        "score": 79.1,
+        "raw": 11.87,
+        "rawFmt": "11.87",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -542,9 +542,9 @@ const CITIES = {
     "name": "Birmingham",
     "state": "AL",
     "population": "212k residents",
-    "cq": 67.3,
+    "cq": 67.7,
     "pillar1": 77.2,
-    "pillar2": 44.6,
+    "pillar2": 45.8,
     "pillar3": 83.3,
     "metrics": {
       "residential_stability": {
@@ -562,16 +562,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 35.8,
-        "raw": 8.95,
-        "rawFmt": "8.95",
+        "score": 35.2,
+        "raw": 8.81,
+        "rawFmt": "8.81",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 53.4,
-        "raw": 8.01,
-        "rawFmt": "8.01",
+        "score": 56.5,
+        "raw": 8.48,
+        "rawFmt": "8.48",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -609,9 +609,9 @@ const CITIES = {
     "name": "Boston",
     "state": "MA",
     "population": "676k residents",
-    "cq": 78.9,
+    "cq": 74.8,
     "pillar1": 77.0,
-    "pillar2": 69.8,
+    "pillar2": 58.0,
     "pillar3": 94.6,
     "metrics": {
       "residential_stability": {
@@ -629,16 +629,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 46.9,
-        "raw": 11.72,
-        "rawFmt": "11.72",
+        "score": 46.0,
+        "raw": 11.5,
+        "rawFmt": "11.50",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 92.7,
-        "raw": 13.91,
-        "rawFmt": "13.91",
+        "score": 70.1,
+        "raw": 10.51,
+        "rawFmt": "10.51",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -676,9 +676,9 @@ const CITIES = {
     "name": "Buffalo",
     "state": "NY",
     "population": "278k residents",
-    "cq": 72.0,
+    "cq": 69.4,
     "pillar1": 82.8,
-    "pillar2": 42.4,
+    "pillar2": 35.0,
     "pillar3": 96.0,
     "metrics": {
       "residential_stability": {
@@ -696,16 +696,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 39.2,
-        "raw": 9.81,
-        "rawFmt": "9.81",
+        "score": 38.8,
+        "raw": 9.7,
+        "rawFmt": "9.70",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 45.5,
-        "raw": 6.83,
-        "rawFmt": "6.83",
+        "score": 31.1,
+        "raw": 4.67,
+        "rawFmt": "4.67",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -743,9 +743,9 @@ const CITIES = {
     "name": "Charlotte",
     "state": "NC",
     "population": "875k residents",
-    "cq": 61.8,
+    "cq": 62.8,
     "pillar1": 82.1,
-    "pillar2": 26.2,
+    "pillar2": 29.1,
     "pillar3": 79.3,
     "metrics": {
       "residential_stability": {
@@ -763,16 +763,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 43.3,
-        "raw": 10.82,
-        "rawFmt": "10.82",
+        "score": 42.9,
+        "raw": 10.73,
+        "rawFmt": "10.73",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 9.1,
-        "raw": 1.37,
-        "rawFmt": "1.37",
+        "score": 15.3,
+        "raw": 2.29,
+        "rawFmt": "2.29",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -810,9 +810,9 @@ const CITIES = {
     "name": "Chicago",
     "state": "IL",
     "population": "2.7M residents",
-    "cq": 70.6,
+    "cq": 69.3,
     "pillar1": 81.3,
-    "pillar2": 44.2,
+    "pillar2": 40.4,
     "pillar3": 90.5,
     "metrics": {
       "residential_stability": {
@@ -830,16 +830,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 33.7,
-        "raw": 8.42,
-        "rawFmt": "8.42",
+        "score": 33.2,
+        "raw": 8.3,
+        "rawFmt": "8.30",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 54.7,
-        "raw": 8.2,
-        "rawFmt": "8.20",
+        "score": 47.7,
+        "raw": 7.16,
+        "rawFmt": "7.16",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -877,9 +877,9 @@ const CITIES = {
     "name": "Cincinnati",
     "state": "OH",
     "population": "309k residents",
-    "cq": 77.4,
+    "cq": 74.3,
     "pillar1": 78.2,
-    "pillar2": 71.1,
+    "pillar2": 62.4,
     "pillar3": 84.8,
     "metrics": {
       "residential_stability": {
@@ -897,16 +897,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 49.5,
-        "raw": 12.38,
-        "rawFmt": "12.38",
+        "score": 49.2,
+        "raw": 12.29,
+        "rawFmt": "12.29",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 92.7,
-        "raw": 13.9,
-        "rawFmt": "13.90",
+        "score": 75.5,
+        "raw": 11.32,
+        "rawFmt": "11.32",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -944,9 +944,9 @@ const CITIES = {
     "name": "Cleveland",
     "state": "OH",
     "population": "373k residents",
-    "cq": 77.7,
+    "cq": 76.0,
     "pillar1": 78.8,
-    "pillar2": 65.6,
+    "pillar2": 61.0,
     "pillar3": 92.7,
     "metrics": {
       "residential_stability": {
@@ -964,16 +964,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 47.2,
-        "raw": 11.81,
-        "rawFmt": "11.81",
+        "score": 47.0,
+        "raw": 11.75,
+        "rawFmt": "11.75",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 84.1,
-        "raw": 12.61,
-        "rawFmt": "12.61",
+        "score": 75.1,
+        "raw": 11.27,
+        "rawFmt": "11.27",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -1011,9 +1011,9 @@ const CITIES = {
     "name": "Colorado Springs",
     "state": "CO",
     "population": "479k residents",
-    "cq": 62.8,
+    "cq": 61.3,
     "pillar1": 79.1,
-    "pillar2": 28.2,
+    "pillar2": 23.8,
     "pillar3": 85.2,
     "metrics": {
       "residential_stability": {
@@ -1031,16 +1031,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 25.7,
-        "raw": 6.43,
-        "rawFmt": "6.43",
+        "score": 25.3,
+        "raw": 6.33,
+        "rawFmt": "6.33",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 30.6,
-        "raw": 4.59,
-        "rawFmt": "4.59",
+        "score": 22.3,
+        "raw": 3.34,
+        "rawFmt": "3.34",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -1078,9 +1078,9 @@ const CITIES = {
     "name": "Columbus",
     "state": "OH",
     "population": "906k residents",
-    "cq": 64.2,
+    "cq": 61.6,
     "pillar1": 79.5,
-    "pillar2": 34.1,
+    "pillar2": 26.8,
     "pillar3": 81.8,
     "metrics": {
       "residential_stability": {
@@ -1098,16 +1098,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 32.1,
-        "raw": 8.03,
-        "rawFmt": "8.03",
+        "score": 31.5,
+        "raw": 7.88,
+        "rawFmt": "7.88",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 36.1,
-        "raw": 5.41,
-        "rawFmt": "5.41",
+        "score": 22.1,
+        "raw": 3.31,
+        "rawFmt": "3.31",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -1145,9 +1145,9 @@ const CITIES = {
     "name": "Corpus Christi",
     "state": "TX",
     "population": "318k residents",
-    "cq": 58.6,
+    "cq": 56.7,
     "pillar1": 82.4,
-    "pillar2": 13.5,
+    "pillar2": 8.2,
     "pillar3": 83.6,
     "metrics": {
       "residential_stability": {
@@ -1165,16 +1165,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 10.2,
-        "raw": 2.55,
-        "rawFmt": "2.55",
+        "score": 10.1,
+        "raw": 2.52,
+        "rawFmt": "2.52",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 16.8,
-        "raw": 2.52,
-        "rawFmt": "2.52",
+        "score": 6.3,
+        "raw": 0.94,
+        "rawFmt": "0.94",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -1212,9 +1212,9 @@ const CITIES = {
     "name": "Dallas",
     "state": "TX",
     "population": "1.3M residents",
-    "cq": 58.4,
+    "cq": 57.8,
     "pillar1": 80.5,
-    "pillar2": 25.4,
+    "pillar2": 23.6,
     "pillar3": 69.3,
     "metrics": {
       "residential_stability": {
@@ -1232,16 +1232,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 36.0,
-        "raw": 8.99,
-        "rawFmt": "8.99",
+        "score": 35.5,
+        "raw": 8.87,
+        "rawFmt": "8.87",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 14.8,
-        "raw": 2.22,
-        "rawFmt": "2.22",
+        "score": 11.7,
+        "raw": 1.76,
+        "rawFmt": "1.76",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -1279,9 +1279,9 @@ const CITIES = {
     "name": "Denver",
     "state": "CO",
     "population": "716k residents",
-    "cq": 69.1,
+    "cq": 68.7,
     "pillar1": 78.8,
-    "pillar2": 50.0,
+    "pillar2": 48.7,
     "pillar3": 80.4,
     "metrics": {
       "residential_stability": {
@@ -1299,16 +1299,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 41.3,
-        "raw": 10.33,
-        "rawFmt": "10.33",
+        "score": 40.5,
+        "raw": 10.12,
+        "rawFmt": "10.12",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 58.7,
-        "raw": 8.8,
-        "rawFmt": "8.80",
+        "score": 56.9,
+        "raw": 8.53,
+        "rawFmt": "8.53",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -1346,9 +1346,9 @@ const CITIES = {
     "name": "Des Moines",
     "state": "IA",
     "population": "214k residents",
-    "cq": 71.3,
+    "cq": 68.4,
     "pillar1": 83.0,
-    "pillar2": 43.6,
+    "pillar2": 35.1,
     "pillar3": 91.5,
     "metrics": {
       "residential_stability": {
@@ -1366,16 +1366,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 34.2,
-        "raw": 8.54,
-        "rawFmt": "8.54",
+        "score": 32.9,
+        "raw": 8.22,
+        "rawFmt": "8.22",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 52.9,
-        "raw": 7.94,
-        "rawFmt": "7.94",
+        "score": 37.3,
+        "raw": 5.6,
+        "rawFmt": "5.60",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -1413,9 +1413,9 @@ const CITIES = {
     "name": "Detroit",
     "state": "MI",
     "population": "632k residents",
-    "cq": 74.2,
+    "cq": 76.6,
     "pillar1": 82.0,
-    "pillar2": 48.6,
+    "pillar2": 55.6,
     "pillar3": 97.4,
     "metrics": {
       "residential_stability": {
@@ -1433,16 +1433,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 55.0,
-        "raw": 13.74,
-        "rawFmt": "13.74",
+        "score": 54.3,
+        "raw": 13.58,
+        "rawFmt": "13.58",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 42.1,
-        "raw": 6.32,
-        "rawFmt": "6.32",
+        "score": 56.9,
+        "raw": 8.54,
+        "rawFmt": "8.54",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -1480,9 +1480,9 @@ const CITIES = {
     "name": "Durham",
     "state": "NC",
     "population": "284k residents",
-    "cq": 61.9,
+    "cq": 61.5,
     "pillar1": 83.2,
-    "pillar2": 23.6,
+    "pillar2": 22.4,
     "pillar3": 81.6,
     "metrics": {
       "residential_stability": {
@@ -1500,16 +1500,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 28.5,
-        "raw": 7.13,
-        "rawFmt": "7.13",
+        "score": 28.2,
+        "raw": 7.05,
+        "rawFmt": "7.05",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 18.8,
-        "raw": 2.82,
-        "rawFmt": "2.82",
+        "score": 16.5,
+        "raw": 2.47,
+        "rawFmt": "2.47",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -1547,9 +1547,9 @@ const CITIES = {
     "name": "El Paso",
     "state": "TX",
     "population": "679k residents",
-    "cq": 66.3,
+    "cq": 60.3,
     "pillar1": 83.9,
-    "pillar2": 37.6,
+    "pillar2": 20.3,
     "pillar3": 78.4,
     "metrics": {
       "residential_stability": {
@@ -1567,16 +1567,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 12.2,
-        "raw": 3.05,
-        "rawFmt": "3.05",
+        "score": 12.1,
+        "raw": 3.02,
+        "rawFmt": "3.02",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 62.9,
-        "raw": 9.43,
-        "rawFmt": "9.43",
+        "score": 28.5,
+        "raw": 4.27,
+        "rawFmt": "4.27",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -1614,9 +1614,9 @@ const CITIES = {
     "name": "Fort Worth",
     "state": "TX",
     "population": "919k residents",
-    "cq": 56.3,
+    "cq": 56.4,
     "pillar1": 82.1,
-    "pillar2": 12.4,
+    "pillar2": 12.6,
     "pillar3": 76.6,
     "metrics": {
       "residential_stability": {
@@ -1634,16 +1634,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 24.8,
-        "raw": 6.19,
-        "rawFmt": "6.19",
+        "score": 24.5,
+        "raw": 6.13,
+        "rawFmt": "6.13",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 0.0,
-        "raw": 0,
-        "rawFmt": "0.00",
+        "score": 0.7,
+        "raw": 0.11,
+        "rawFmt": "0.11",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -1681,9 +1681,9 @@ const CITIES = {
     "name": "Fresno",
     "state": "CA",
     "population": "542k residents",
-    "cq": 71.2,
+    "cq": 70.2,
     "pillar1": 81.7,
-    "pillar2": 45.3,
+    "pillar2": 42.2,
     "pillar3": 90.8,
     "metrics": {
       "residential_stability": {
@@ -1701,16 +1701,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 25.4,
-        "raw": 6.36,
-        "rawFmt": "6.36",
+        "score": 25.3,
+        "raw": 6.33,
+        "rawFmt": "6.33",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 65.2,
-        "raw": 9.78,
-        "rawFmt": "9.78",
+        "score": 59.0,
+        "raw": 8.85,
+        "rawFmt": "8.85",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -1748,9 +1748,9 @@ const CITIES = {
     "name": "Honolulu",
     "state": "HI",
     "population": "351k residents",
-    "cq": 89.4,
-    "pillar1": 92.4,
-    "pillar2": 83.5,
+    "cq": 84.8,
+    "pillar1": 81.2,
+    "pillar2": 83.0,
     "pillar3": 92.9,
     "metrics": {
       "residential_stability": {
@@ -1761,16 +1761,16 @@ const CITIES = {
         "unit": "% same house 1+ yr"
       },
       "housing_cost_burden": {
-        "score": 97.1,
-        "raw": 87.41,
-        "rawFmt": "87.4%",
+        "score": 65.1,
+        "raw": 58.59,
+        "rawFmt": "58.6%",
         "benchmark": "90%",
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 67.0,
-        "raw": 16.75,
-        "rawFmt": "16.75",
+        "score": 65.9,
+        "raw": 16.47,
+        "rawFmt": "16.47",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -1815,9 +1815,9 @@ const CITIES = {
     "name": "Houston",
     "state": "TX",
     "population": "2.3M residents",
-    "cq": 60.4,
+    "cq": 59.9,
     "pillar1": 80.7,
-    "pillar2": 29.0,
+    "pillar2": 27.6,
     "pillar3": 71.8,
     "metrics": {
       "residential_stability": {
@@ -1835,16 +1835,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 30.8,
-        "raw": 7.7,
-        "rawFmt": "7.70",
+        "score": 30.5,
+        "raw": 7.62,
+        "rawFmt": "7.62",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 27.2,
-        "raw": 4.08,
-        "rawFmt": "4.08",
+        "score": 24.6,
+        "raw": 3.69,
+        "rawFmt": "3.69",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -1882,9 +1882,9 @@ const CITIES = {
     "name": "Indianapolis",
     "state": "IN",
     "population": "887k residents",
-    "cq": 77.1,
+    "cq": 72.2,
     "pillar1": 83.4,
-    "pillar2": 66.9,
+    "pillar2": 53.0,
     "pillar3": 81.3,
     "metrics": {
       "residential_stability": {
@@ -1902,16 +1902,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 47.4,
-        "raw": 11.85,
-        "rawFmt": "11.85",
+        "score": 46.8,
+        "raw": 11.69,
+        "rawFmt": "11.69",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 86.4,
-        "raw": 12.96,
-        "rawFmt": "12.96",
+        "score": 59.3,
+        "raw": 8.9,
+        "rawFmt": "8.90",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -1949,15 +1949,15 @@ const CITIES = {
     "name": "Jacksonville",
     "state": "FL",
     "population": "950k residents",
-    "cq": 61.7,
-    "pillar1": 81.4,
-    "pillar2": 21.2,
+    "cq": 61.4,
+    "pillar1": 81.3,
+    "pillar2": 20.4,
     "pillar3": 86.8,
     "metrics": {
       "residential_stability": {
-        "score": 86.6,
-        "raw": 82.28,
-        "rawFmt": "82.3%",
+        "score": 86.5,
+        "raw": 82.15,
+        "rawFmt": "82.2%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -1969,16 +1969,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 34.0,
-        "raw": 8.51,
-        "rawFmt": "8.51",
+        "score": 33.9,
+        "raw": 8.47,
+        "rawFmt": "8.47",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 8.4,
-        "raw": 1.26,
-        "rawFmt": "1.26",
+        "score": 7.0,
+        "raw": 1.05,
+        "rawFmt": "1.05",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -2016,9 +2016,9 @@ const CITIES = {
     "name": "Kansas City",
     "state": "MO",
     "population": "508k residents",
-    "cq": 68.3,
+    "cq": 66.2,
     "pillar1": 82.8,
-    "pillar2": 44.6,
+    "pillar2": 38.4,
     "pillar3": 78.4,
     "metrics": {
       "residential_stability": {
@@ -2036,16 +2036,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 42.0,
-        "raw": 10.49,
-        "rawFmt": "10.49",
+        "score": 41.5,
+        "raw": 10.37,
+        "rawFmt": "10.37",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 47.3,
-        "raw": 7.09,
-        "rawFmt": "7.09",
+        "score": 35.4,
+        "raw": 5.31,
+        "rawFmt": "5.31",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -2083,9 +2083,9 @@ const CITIES = {
     "name": "Las Vegas",
     "state": "NV",
     "population": "642k residents",
-    "cq": 59.4,
+    "cq": 61.4,
     "pillar1": 81.3,
-    "pillar2": 17.8,
+    "pillar2": 23.3,
     "pillar3": 82.8,
     "metrics": {
       "residential_stability": {
@@ -2103,16 +2103,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 32.4,
-        "raw": 8.1,
-        "rawFmt": "8.10",
+        "score": 32.1,
+        "raw": 8.02,
+        "rawFmt": "8.02",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 3.1,
-        "raw": 0.47,
-        "rawFmt": "0.47",
+        "score": 14.5,
+        "raw": 2.18,
+        "rawFmt": "2.18",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -2150,9 +2150,9 @@ const CITIES = {
     "name": "Lexington",
     "state": "KY",
     "population": "323k residents",
-    "cq": 67.5,
+    "cq": 66.4,
     "pillar1": 80.0,
-    "pillar2": 45.2,
+    "pillar2": 41.8,
     "pillar3": 78.9,
     "metrics": {
       "residential_stability": {
@@ -2170,16 +2170,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 32.6,
-        "raw": 8.15,
-        "rawFmt": "8.15",
+        "score": 31.9,
+        "raw": 7.97,
+        "rawFmt": "7.97",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 57.9,
-        "raw": 8.68,
-        "rawFmt": "8.68",
+        "score": 51.7,
+        "raw": 7.75,
+        "rawFmt": "7.75",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -2217,9 +2217,9 @@ const CITIES = {
     "name": "Los Angeles",
     "state": "CA",
     "population": "3.9M residents",
-    "cq": 66.4,
+    "cq": 66.3,
     "pillar1": 79.0,
-    "pillar2": 41.6,
+    "pillar2": 41.3,
     "pillar3": 80.9,
     "metrics": {
       "residential_stability": {
@@ -2237,16 +2237,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 32.2,
-        "raw": 8.05,
-        "rawFmt": "8.05",
+        "score": 31.8,
+        "raw": 7.95,
+        "rawFmt": "7.95",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 50.9,
-        "raw": 7.64,
-        "rawFmt": "7.64",
+        "score": 50.8,
+        "raw": 7.62,
+        "rawFmt": "7.62",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -2284,9 +2284,9 @@ const CITIES = {
     "name": "Louisville",
     "state": "KY",
     "population": "633k residents",
-    "cq": 58.0,
+    "cq": 58.9,
     "pillar1": 87.1,
-    "pillar2": 8.2,
+    "pillar2": 10.8,
     "pillar3": 81.3,
     "metrics": {
       "residential_stability": {
@@ -2304,16 +2304,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 16.5,
-        "raw": 4.12,
-        "rawFmt": "4.12",
+        "score": 16.2,
+        "raw": 4.06,
+        "rawFmt": "4.06",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 0.0,
-        "raw": 0,
-        "rawFmt": "0.00",
+        "score": 5.3,
+        "raw": 0.79,
+        "rawFmt": "0.79",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -2351,9 +2351,9 @@ const CITIES = {
     "name": "Madison",
     "state": "WI",
     "population": "269k residents",
-    "cq": 59.9,
+    "cq": 57.9,
     "pillar1": 74.8,
-    "pillar2": 28.0,
+    "pillar2": 22.2,
     "pillar3": 80.7,
     "metrics": {
       "residential_stability": {
@@ -2371,16 +2371,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 36.2,
-        "raw": 9.06,
-        "rawFmt": "9.06",
+        "score": 34.5,
+        "raw": 8.62,
+        "rawFmt": "8.62",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 19.8,
-        "raw": 2.97,
-        "rawFmt": "2.97",
+        "score": 9.9,
+        "raw": 1.49,
+        "rawFmt": "1.49",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -2418,9 +2418,9 @@ const CITIES = {
     "name": "Memphis",
     "state": "TN",
     "population": "633k residents",
-    "cq": 65.1,
+    "cq": 64.3,
     "pillar1": 81.5,
-    "pillar2": 33.7,
+    "pillar2": 31.3,
     "pillar3": 82.8,
     "metrics": {
       "residential_stability": {
@@ -2438,16 +2438,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 43.2,
-        "raw": 10.8,
-        "rawFmt": "10.80",
+        "score": 42.6,
+        "raw": 10.66,
+        "rawFmt": "10.66",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 24.2,
-        "raw": 3.63,
-        "rawFmt": "3.63",
+        "score": 20.0,
+        "raw": 3.0,
+        "rawFmt": "3.00",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -2485,9 +2485,9 @@ const CITIES = {
     "name": "Milwaukee",
     "state": "WI",
     "population": "577k residents",
-    "cq": 70.7,
+    "cq": 70.3,
     "pillar1": 81.4,
-    "pillar2": 42.1,
+    "pillar2": 40.9,
     "pillar3": 93.6,
     "metrics": {
       "residential_stability": {
@@ -2505,16 +2505,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 35.7,
-        "raw": 8.92,
-        "rawFmt": "8.92",
+        "score": 35.6,
+        "raw": 8.89,
+        "rawFmt": "8.89",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 48.5,
-        "raw": 7.28,
-        "rawFmt": "7.28",
+        "score": 46.2,
+        "raw": 6.93,
+        "rawFmt": "6.93",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -2552,9 +2552,9 @@ const CITIES = {
     "name": "Minneapolis",
     "state": "MN",
     "population": "430k residents",
-    "cq": 67.6,
+    "cq": 68.5,
     "pillar1": 78.0,
-    "pillar2": 43.3,
+    "pillar2": 46.0,
     "pillar3": 84.8,
     "metrics": {
       "residential_stability": {
@@ -2572,16 +2572,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 44.7,
-        "raw": 11.17,
-        "rawFmt": "11.17",
+        "score": 43.8,
+        "raw": 10.94,
+        "rawFmt": "10.94",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 41.9,
-        "raw": 6.28,
-        "rawFmt": "6.28",
+        "score": 48.1,
+        "raw": 7.22,
+        "rawFmt": "7.22",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -2619,9 +2619,9 @@ const CITIES = {
     "name": "Nashville",
     "state": "TN",
     "population": "689k residents",
-    "cq": 60.8,
+    "cq": 59.9,
     "pillar1": 79.3,
-    "pillar2": 28.4,
+    "pillar2": 25.9,
     "pillar3": 76.4,
     "metrics": {
       "residential_stability": {
@@ -2639,16 +2639,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 36.6,
-        "raw": 9.15,
-        "rawFmt": "9.15",
+        "score": 36.3,
+        "raw": 9.08,
+        "rawFmt": "9.08",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 20.3,
-        "raw": 3.05,
-        "rawFmt": "3.05",
+        "score": 15.5,
+        "raw": 2.32,
+        "rawFmt": "2.32",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -2686,9 +2686,9 @@ const CITIES = {
     "name": "New Orleans",
     "state": "LA",
     "population": "384k residents",
-    "cq": 78.8,
+    "cq": 78.7,
     "pillar1": 80.5,
-    "pillar2": 72.7,
+    "pillar2": 72.4,
     "pillar3": 84.6,
     "metrics": {
       "residential_stability": {
@@ -2706,16 +2706,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 45.4,
-        "raw": 11.35,
-        "rawFmt": "11.35",
+        "score": 44.8,
+        "raw": 11.2,
+        "rawFmt": "11.20",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
         "score": 100.0,
-        "raw": 21.09,
-        "rawFmt": "21.09",
+        "raw": 19.27,
+        "rawFmt": "19.27",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -2755,7 +2755,7 @@ const CITIES = {
     "population": "8.3M residents",
     "cq": 67.4,
     "pillar1": 81.7,
-    "pillar2": 31.4,
+    "pillar2": 31.3,
     "pillar3": 95.0,
     "metrics": {
       "residential_stability": {
@@ -2773,16 +2773,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 27.8,
-        "raw": 6.94,
-        "rawFmt": "6.94",
+        "score": 27.4,
+        "raw": 6.84,
+        "rawFmt": "6.84",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 35.0,
-        "raw": 5.25,
-        "rawFmt": "5.25",
+        "score": 35.2,
+        "raw": 5.28,
+        "rawFmt": "5.28",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -2820,9 +2820,9 @@ const CITIES = {
     "name": "Oklahoma City",
     "state": "OK",
     "population": "681k residents",
-    "cq": 67.4,
+    "cq": 62.6,
     "pillar1": 83.6,
-    "pillar2": 39.7,
+    "pillar2": 26.1,
     "pillar3": 80.2,
     "metrics": {
       "residential_stability": {
@@ -2840,16 +2840,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 42.1,
-        "raw": 10.53,
-        "rawFmt": "10.53",
+        "score": 27.7,
+        "raw": 6.93,
+        "rawFmt": "6.93",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 37.2,
-        "raw": 5.58,
-        "rawFmt": "5.58",
+        "score": 24.5,
+        "raw": 3.67,
+        "rawFmt": "3.67",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -2887,9 +2887,9 @@ const CITIES = {
     "name": "Omaha",
     "state": "NE",
     "population": "486k residents",
-    "cq": 69.7,
+    "cq": 68.8,
     "pillar1": 84.2,
-    "pillar2": 44.8,
+    "pillar2": 42.4,
     "pillar3": 81.2,
     "metrics": {
       "residential_stability": {
@@ -2907,16 +2907,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 33.3,
-        "raw": 8.33,
-        "rawFmt": "8.33",
+        "score": 32.8,
+        "raw": 8.21,
+        "rawFmt": "8.21",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 56.3,
-        "raw": 8.44,
-        "rawFmt": "8.44",
+        "score": 52.1,
+        "raw": 7.82,
+        "rawFmt": "7.82",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -2954,9 +2954,9 @@ const CITIES = {
     "name": "Philadelphia",
     "state": "PA",
     "population": "1.6M residents",
-    "cq": 68.8,
+    "cq": 68.5,
     "pillar1": 82.1,
-    "pillar2": 34.2,
+    "pillar2": 33.4,
     "pillar3": 95.9,
     "metrics": {
       "residential_stability": {
@@ -2974,16 +2974,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 35.9,
-        "raw": 8.97,
-        "rawFmt": "8.97",
+        "score": 35.7,
+        "raw": 8.92,
+        "rawFmt": "8.92",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 32.4,
-        "raw": 4.86,
-        "rawFmt": "4.86",
+        "score": 31.2,
+        "raw": 4.68,
+        "rawFmt": "4.68",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -3012,7 +3012,7 @@ const CITIES = {
         "unit": "library visits per capita"
       },
       "faith_based": {
-        "value": "0.33",
+        "value": "0.32",
         "unit": "faith-based orgs per 10k (X3x)"
       }
     }
@@ -3021,9 +3021,9 @@ const CITIES = {
     "name": "Phoenix",
     "state": "AZ",
     "population": "1.6M residents",
-    "cq": 65.2,
+    "cq": 62.2,
     "pillar1": 83.1,
-    "pillar2": 36.0,
+    "pillar2": 27.5,
     "pillar3": 77.4,
     "metrics": {
       "residential_stability": {
@@ -3041,16 +3041,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 25.5,
-        "raw": 6.37,
-        "rawFmt": "6.37",
+        "score": 25.1,
+        "raw": 6.27,
+        "rawFmt": "6.27",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 46.4,
-        "raw": 6.96,
-        "rawFmt": "6.96",
+        "score": 29.9,
+        "raw": 4.48,
+        "rawFmt": "4.48",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -3088,9 +3088,9 @@ const CITIES = {
     "name": "Pittsburgh",
     "state": "PA",
     "population": "303k residents",
-    "cq": 75.6,
+    "cq": 72.4,
     "pillar1": 79.5,
-    "pillar2": 61.7,
+    "pillar2": 52.4,
     "pillar3": 89.0,
     "metrics": {
       "residential_stability": {
@@ -3108,16 +3108,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 64.0,
-        "raw": 16.01,
-        "rawFmt": "16.01",
+        "score": 63.1,
+        "raw": 15.78,
+        "rawFmt": "15.78",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 59.4,
-        "raw": 8.91,
-        "rawFmt": "8.91",
+        "score": 41.8,
+        "raw": 6.27,
+        "rawFmt": "6.27",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -3155,9 +3155,9 @@ const CITIES = {
     "name": "Portland",
     "state": "OR",
     "population": "653k residents",
-    "cq": 72.4,
+    "cq": 71.0,
     "pillar1": 80.3,
-    "pillar2": 48.0,
+    "pillar2": 43.8,
     "pillar3": 94.1,
     "metrics": {
       "residential_stability": {
@@ -3175,16 +3175,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 34.7,
-        "raw": 8.67,
-        "rawFmt": "8.67",
+        "score": 33.5,
+        "raw": 8.38,
+        "rawFmt": "8.38",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 61.3,
-        "raw": 9.2,
-        "rawFmt": "9.20",
+        "score": 54.1,
+        "raw": 8.12,
+        "rawFmt": "8.12",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -3222,9 +3222,9 @@ const CITIES = {
     "name": "Providence",
     "state": "RI",
     "population": "191k residents",
-    "cq": 72.4,
+    "cq": 70.3,
     "pillar1": 81.0,
-    "pillar2": 43.6,
+    "pillar2": 37.6,
     "pillar3": 98.8,
     "metrics": {
       "residential_stability": {
@@ -3242,16 +3242,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 41.7,
-        "raw": 10.42,
-        "rawFmt": "10.42",
+        "score": 40.4,
+        "raw": 10.11,
+        "rawFmt": "10.11",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 45.4,
-        "raw": 6.81,
-        "rawFmt": "6.81",
+        "score": 34.9,
+        "raw": 5.24,
+        "rawFmt": "5.24",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -3289,9 +3289,9 @@ const CITIES = {
     "name": "Raleigh",
     "state": "NC",
     "population": "468k residents",
-    "cq": 60.2,
+    "cq": 57.3,
     "pillar1": 81.4,
-    "pillar2": 23.2,
+    "pillar2": 15.0,
     "pillar3": 78.0,
     "metrics": {
       "residential_stability": {
@@ -3309,16 +3309,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 29.3,
-        "raw": 7.33,
-        "rawFmt": "7.33",
+        "score": 28.6,
+        "raw": 7.16,
+        "rawFmt": "7.16",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 17.1,
-        "raw": 2.57,
-        "rawFmt": "2.57",
+        "score": 1.4,
+        "raw": 0.21,
+        "rawFmt": "0.21",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -3356,9 +3356,9 @@ const CITIES = {
     "name": "Richmond",
     "state": "VA",
     "population": "227k residents",
-    "cq": 61.4,
+    "cq": 61.8,
     "pillar1": 76.5,
-    "pillar2": 31.1,
+    "pillar2": 32.2,
     "pillar3": 79.7,
     "metrics": {
       "residential_stability": {
@@ -3376,16 +3376,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 32.8,
-        "raw": 8.21,
-        "rawFmt": "8.21",
+        "score": 32.0,
+        "raw": 7.99,
+        "rawFmt": "7.99",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 29.4,
-        "raw": 4.41,
-        "rawFmt": "4.41",
+        "score": 32.3,
+        "raw": 4.85,
+        "rawFmt": "4.85",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -3423,9 +3423,9 @@ const CITIES = {
     "name": "Rochester",
     "state": "NY",
     "population": "211k residents",
-    "cq": 75.9,
+    "cq": 70.9,
     "pillar1": 75.8,
-    "pillar2": 62.2,
+    "pillar2": 47.9,
     "pillar3": 95.4,
     "metrics": {
       "residential_stability": {
@@ -3443,16 +3443,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 29.7,
-        "raw": 7.43,
-        "rawFmt": "7.43",
+        "score": 29.5,
+        "raw": 7.38,
+        "rawFmt": "7.38",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 94.7,
-        "raw": 14.2,
-        "rawFmt": "14.20",
+        "score": 66.3,
+        "raw": 9.94,
+        "rawFmt": "9.94",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -3490,9 +3490,9 @@ const CITIES = {
     "name": "Sacramento",
     "state": "CA",
     "population": "525k residents",
-    "cq": 79.3,
+    "cq": 72.6,
     "pillar1": 81.0,
-    "pillar2": 70.8,
+    "pillar2": 51.6,
     "pillar3": 88.6,
     "metrics": {
       "residential_stability": {
@@ -3510,16 +3510,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 52.6,
-        "raw": 13.16,
-        "rawFmt": "13.16",
+        "score": 51.1,
+        "raw": 12.78,
+        "rawFmt": "12.78",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 88.9,
-        "raw": 13.33,
-        "rawFmt": "13.33",
+        "score": 52.1,
+        "raw": 7.81,
+        "rawFmt": "7.81",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -3557,9 +3557,9 @@ const CITIES = {
     "name": "Salt Lake City",
     "state": "UT",
     "population": "201k residents",
-    "cq": 57.9,
+    "cq": 57.7,
     "pillar1": 79.4,
-    "pillar2": 23.1,
+    "pillar2": 22.4,
     "pillar3": 72.3,
     "metrics": {
       "residential_stability": {
@@ -3577,9 +3577,9 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 32.9,
-        "raw": 8.23,
-        "rawFmt": "8.23",
+        "score": 31.5,
+        "raw": 7.88,
+        "rawFmt": "7.88",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
@@ -3624,9 +3624,9 @@ const CITIES = {
     "name": "San Antonio",
     "state": "TX",
     "population": "1.4M residents",
-    "cq": 57.8,
+    "cq": 58.0,
     "pillar1": 80.3,
-    "pillar2": 16.6,
+    "pillar2": 17.4,
     "pillar3": 79.3,
     "metrics": {
       "residential_stability": {
@@ -3644,16 +3644,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 18.0,
-        "raw": 4.5,
-        "rawFmt": "4.50",
+        "score": 17.6,
+        "raw": 4.41,
+        "rawFmt": "4.41",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 15.3,
-        "raw": 2.3,
-        "rawFmt": "2.30",
+        "score": 17.2,
+        "raw": 2.58,
+        "rawFmt": "2.58",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -3691,9 +3691,9 @@ const CITIES = {
     "name": "San Diego",
     "state": "CA",
     "population": "1.4M residents",
-    "cq": 69.9,
+    "cq": 65.0,
     "pillar1": 79.2,
-    "pillar2": 50.8,
+    "pillar2": 36.8,
     "pillar3": 81.9,
     "metrics": {
       "residential_stability": {
@@ -3711,16 +3711,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 25.6,
-        "raw": 6.39,
-        "rawFmt": "6.39",
+        "score": 25.4,
+        "raw": 6.35,
+        "rawFmt": "6.35",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 75.9,
-        "raw": 11.39,
-        "rawFmt": "11.39",
+        "score": 48.1,
+        "raw": 7.21,
+        "rawFmt": "7.21",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -3758,9 +3758,9 @@ const CITIES = {
     "name": "San Francisco",
     "state": "CA",
     "population": "874k residents",
-    "cq": 68.0,
+    "cq": 70.9,
     "pillar1": 83.2,
-    "pillar2": 37.8,
+    "pillar2": 46.2,
     "pillar3": 85.9,
     "metrics": {
       "residential_stability": {
@@ -3778,16 +3778,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 32.1,
-        "raw": 8.03,
-        "rawFmt": "8.03",
+        "score": 31.4,
+        "raw": 7.86,
+        "rawFmt": "7.86",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 43.5,
-        "raw": 6.52,
-        "rawFmt": "6.52",
+        "score": 61.0,
+        "raw": 9.15,
+        "rawFmt": "9.15",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -3825,9 +3825,9 @@ const CITIES = {
     "name": "San Jose",
     "state": "CA",
     "population": "1.0M residents",
-    "cq": 65.7,
+    "cq": 65.1,
     "pillar1": 83.3,
-    "pillar2": 30.9,
+    "pillar2": 29.2,
     "pillar3": 86.3,
     "metrics": {
       "residential_stability": {
@@ -3852,9 +3852,9 @@ const CITIES = {
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 46.1,
-        "raw": 6.91,
-        "rawFmt": "6.91",
+        "score": 42.8,
+        "raw": 6.42,
+        "rawFmt": "6.42",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -3892,9 +3892,9 @@ const CITIES = {
     "name": "Seattle",
     "state": "WA",
     "population": "737k residents",
-    "cq": 75.0,
+    "cq": 69.1,
     "pillar1": 77.0,
-    "pillar2": 65.1,
+    "pillar2": 48.1,
     "pillar3": 85.7,
     "metrics": {
       "residential_stability": {
@@ -3912,16 +3912,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 30.2,
-        "raw": 7.54,
-        "rawFmt": "7.54",
+        "score": 29.3,
+        "raw": 7.32,
+        "rawFmt": "7.32",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 100.0,
-        "raw": 22.65,
-        "rawFmt": "22.65",
+        "score": 66.9,
+        "raw": 10.04,
+        "rawFmt": "10.04",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -3959,9 +3959,9 @@ const CITIES = {
     "name": "Spokane",
     "state": "WA",
     "population": "229k residents",
-    "cq": 78.0,
+    "cq": 68.2,
     "pillar1": 79.4,
-    "pillar2": 61.0,
+    "pillar2": 33.1,
     "pillar3": 99.5,
     "metrics": {
       "residential_stability": {
@@ -3979,16 +3979,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 22.9,
-        "raw": 5.72,
-        "rawFmt": "5.72",
+        "score": 22.5,
+        "raw": 5.63,
+        "rawFmt": "5.63",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 99.0,
-        "raw": 14.85,
-        "rawFmt": "14.85",
+        "score": 43.7,
+        "raw": 6.55,
+        "rawFmt": "6.55",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -4026,9 +4026,9 @@ const CITIES = {
     "name": "St. Louis",
     "state": "MO",
     "population": "302k residents",
-    "cq": 76.8,
+    "cq": 72.9,
     "pillar1": 82.2,
-    "pillar2": 63.8,
+    "pillar2": 52.5,
     "pillar3": 86.4,
     "metrics": {
       "residential_stability": {
@@ -4046,16 +4046,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 52.4,
-        "raw": 13.1,
-        "rawFmt": "13.10",
+        "score": 51.9,
+        "raw": 12.97,
+        "rawFmt": "12.97",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 75.1,
-        "raw": 11.27,
-        "rawFmt": "11.27",
+        "score": 53.1,
+        "raw": 7.96,
+        "rawFmt": "7.96",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -4093,9 +4093,9 @@ const CITIES = {
     "name": "St. Paul",
     "state": "MN",
     "population": "312k residents",
-    "cq": 69.8,
+    "cq": 68.2,
     "pillar1": 81.4,
-    "pillar2": 44.4,
+    "pillar2": 39.6,
     "pillar3": 87.0,
     "metrics": {
       "residential_stability": {
@@ -4113,16 +4113,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 41.7,
-        "raw": 10.43,
-        "rawFmt": "10.43",
+        "score": 40.7,
+        "raw": 10.18,
+        "rawFmt": "10.18",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 47.1,
-        "raw": 7.06,
-        "rawFmt": "7.06",
+        "score": 38.5,
+        "raw": 5.78,
+        "rawFmt": "5.78",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -4160,9 +4160,9 @@ const CITIES = {
     "name": "Stockton",
     "state": "CA",
     "population": "321k residents",
-    "cq": 73.0,
+    "cq": 67.9,
     "pillar1": 82.3,
-    "pillar2": 45.0,
+    "pillar2": 30.4,
     "pillar3": 97.5,
     "metrics": {
       "residential_stability": {
@@ -4187,9 +4187,9 @@ const CITIES = {
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 74.9,
-        "raw": 11.23,
-        "rawFmt": "11.23",
+        "score": 45.7,
+        "raw": 6.86,
+        "rawFmt": "6.86",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -4227,9 +4227,9 @@ const CITIES = {
     "name": "Tampa",
     "state": "FL",
     "population": "403k residents",
-    "cq": 64.3,
+    "cq": 61.6,
     "pillar1": 77.4,
-    "pillar2": 33.7,
+    "pillar2": 26.0,
     "pillar3": 86.1,
     "metrics": {
       "residential_stability": {
@@ -4247,16 +4247,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 34.2,
-        "raw": 8.55,
-        "rawFmt": "8.55",
+        "score": 33.8,
+        "raw": 8.45,
+        "rawFmt": "8.45",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 33.1,
-        "raw": 4.96,
-        "rawFmt": "4.96",
+        "score": 18.2,
+        "raw": 2.73,
+        "rawFmt": "2.73",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -4294,9 +4294,9 @@ const CITIES = {
     "name": "Tucson",
     "state": "AZ",
     "population": "543k residents",
-    "cq": 61.5,
+    "cq": 58.4,
     "pillar1": 77.8,
-    "pillar2": 28.8,
+    "pillar2": 20.1,
     "pillar3": 81.1,
     "metrics": {
       "residential_stability": {
@@ -4314,16 +4314,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 20.7,
-        "raw": 5.18,
-        "rawFmt": "5.18",
+        "score": 20.5,
+        "raw": 5.12,
+        "rawFmt": "5.12",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 36.9,
-        "raw": 5.53,
-        "rawFmt": "5.53",
+        "score": 19.7,
+        "raw": 2.95,
+        "rawFmt": "2.95",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -4361,9 +4361,9 @@ const CITIES = {
     "name": "Virginia Beach",
     "state": "VA",
     "population": "459k residents",
-    "cq": 58.3,
+    "cq": 58.8,
     "pillar1": 82.3,
-    "pillar2": 14.1,
+    "pillar2": 15.4,
     "pillar3": 81.8,
     "metrics": {
       "residential_stability": {
@@ -4381,16 +4381,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 28.2,
-        "raw": 7.05,
-        "rawFmt": "7.05",
+        "score": 27.8,
+        "raw": 6.96,
+        "rawFmt": "6.96",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 0.0,
-        "raw": 0,
-        "rawFmt": "0.00",
+        "score": 2.9,
+        "raw": 0.44,
+        "rawFmt": "0.44",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -4428,9 +4428,9 @@ const CITIES = {
     "name": "Washington DC",
     "state": "DC",
     "population": "690k residents",
-    "cq": 84.0,
+    "cq": 80.9,
     "pillar1": 79.4,
-    "pillar2": 84.6,
+    "pillar2": 75.8,
     "pillar3": 90.4,
     "metrics": {
       "residential_stability": {
@@ -4448,16 +4448,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 84.0,
-        "raw": 21.0,
-        "rawFmt": "21.00",
+        "score": 78.1,
+        "raw": 19.52,
+        "rawFmt": "19.52",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 85.1,
-        "raw": 12.76,
-        "rawFmt": "12.76",
+        "score": 73.5,
+        "raw": 11.02,
+        "rawFmt": "11.02",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
@@ -4495,9 +4495,9 @@ const CITIES = {
     "name": "Wichita",
     "state": "KS",
     "population": "398k residents",
-    "cq": 63.4,
+    "cq": 61.6,
     "pillar1": 83.7,
-    "pillar2": 29.4,
+    "pillar2": 24.2,
     "pillar3": 78.6,
     "metrics": {
       "residential_stability": {
@@ -4515,16 +4515,16 @@ const CITIES = {
         "unit": "% households not cost-burdened"
       },
       "combined_care": {
-        "score": 25.2,
-        "raw": 6.31,
-        "rawFmt": "6.31",
+        "score": 25.0,
+        "raw": 6.24,
+        "rawFmt": "6.24",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
       },
       "fqhc": {
-        "score": 33.5,
-        "raw": 5.03,
-        "rawFmt": "5.03",
+        "score": 23.5,
+        "raw": 3.52,
+        "rawFmt": "3.52",
         "benchmark": "15 / 100k",
         "unit": "FQHCs per 100,000 residents"
       },
