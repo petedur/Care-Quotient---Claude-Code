@@ -144,7 +144,7 @@ function renderHome(app) {
           '<div class="pillar-card-weight">25% of CQ</div>',
           '<div class="pillar-card-name">Reach</div>',
           '<div class="pillar-card-desc">',
-            'Whether care systems actually connect with the people who need them &mdash; ',
+            'Whether care systems connect with the people who need them &mdash; ',
             'measuring health insurance coverage and SNAP participation among likely-eligible households.',
           '</div>',
         '</div>',
@@ -163,7 +163,7 @@ function renderHome(app) {
             '<li>Whether stable social networks exist for people to lean on</li>',
             '<li>Whether nonprofits and health centers are present relative to population need</li>',
             '<li>Whether safety-net programs are reaching the people they&rsquo;re designed for</li>',
-            '<li>Whether the organizations, health centers, and systems to support people in difficulty actually exist at the scale the population needs</li>',
+            '<li>Whether the organizations, health centers, and systems to support people in difficulty exist at the scale the population needs</li>',
           '</ul>',
         '</div>',
 
