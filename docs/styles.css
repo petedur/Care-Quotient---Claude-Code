@@ -640,6 +640,271 @@ body {
 }
 .footer-links a:hover { color: var(--ink); }
 
+/* ── Ranking header actions ─────────────────────────────────────────────── */
+.ranking-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.compare-link {
+  font-family: var(--mono);
+  font-size: 0.67rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.15s;
+}
+.compare-link:hover { opacity: 0.7; }
+
+/* ── Bands note ─────────────────────────────────────────────────────────── */
+.bands-note {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  line-height: 1.6;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ink-faint);
+  font-style: italic;
+}
+
+/* ── Context notes (city-specific interpretation) ───────────────────────── */
+.context-note {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--ink-mid);
+  line-height: 1.6;
+  border-radius: 4px;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1.5rem;
+}
+.context-note a { color: var(--accent); }
+.context-note-geo  { background: var(--accent-bg); border-left: 3px solid var(--accent); }
+.context-note-info { background: var(--p2-bg);     border-left: 3px solid var(--p2); }
+
+/* ── Compare inline link on city pages ──────────────────────────────────── */
+.compare-inline-link {
+  font-family: var(--mono);
+  font-size: 0.67rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+.compare-inline-link:hover { text-decoration: underline; }
+
+/* ── What this is section ───────────────────────────────────────────────── */
+.what-is-section {
+  border-top: 1px solid var(--ink-faint);
+  padding-top: 2.5rem;
+}
+
+.what-is-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1.25rem;
+}
+
+.what-is-heading {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+.what-is-yes { color: var(--accent); }
+.what-is-no  { color: var(--ink-muted); }
+
+.what-is-list {
+  padding-left: 1.1rem;
+  margin: 0;
+}
+.what-is-list li {
+  font-size: 0.85rem;
+  color: var(--ink-mid);
+  line-height: 1.7;
+  margin-bottom: 0.35rem;
+}
+.what-is-list em { font-style: italic; }
+
+.what-is-note {
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  font-style: italic;
+  line-height: 1.6;
+  margin-top: 0.75rem;
+}
+
+/* ── Compare page ───────────────────────────────────────────────────────── */
+.compare-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 3.5rem) var(--pad) clamp(3rem, 6vw, 5rem);
+}
+
+.compare-eyebrow {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 0.5rem;
+}
+
+.compare-title {
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 400;
+  color: var(--ink);
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.compare-intro {
+  font-size: 0.88rem;
+  color: var(--ink-mid);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.compare-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.compare-picker { flex: 1; min-width: 200px; }
+
+.compare-picker-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 0.4rem;
+}
+
+.compare-select {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--ink-faint);
+  border-radius: 4px;
+  appearance: none;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+.compare-select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.compare-vs {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--ink-muted);
+  padding-top: 1.25rem;
+  align-self: center;
+}
+
+.compare-prompt {
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  font-style: italic;
+  padding: 2rem 0;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cmp-city-head {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--ink);
+  text-align: left;
+  padding: 0.6rem 0.75rem 0.75rem;
+  border-bottom: 2px solid var(--ink-faint);
+  letter-spacing: -0.01em;
+}
+
+.cmp-label {
+  font-family: var(--mono);
+  font-size: 0.67rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  padding: 0.5rem 0.75rem 0.5rem 0;
+  white-space: nowrap;
+  min-width: 160px;
+}
+
+.cmp-label-metric {
+  color: var(--ink-mid);
+  padding-left: 0.75rem;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0;
+}
+
+.cmp-cell {
+  padding: 0.5rem 0.75rem;
+  font-family: var(--mono);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--ink);
+  vertical-align: middle;
+  min-width: 120px;
+}
+
+.cmp-row-cq td {
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+}
+.cmp-row-cq .cmp-cell {
+  font-size: 1.35rem;
+  font-family: var(--serif);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.cmp-row-pillar .cmp-label {
+  color: var(--ink);
+  font-size: 0.7rem;
+}
+.cmp-row-pillar .cmp-cell {
+  font-size: 1rem;
+}
+
+.cmp-divider-row td {
+  height: 0.15rem;
+  background: var(--ink-faint);
+  padding: 0;
+}
+
+.cmp-bar-track {
+  height: 3px;
+  background: var(--ink-faint);
+  border-radius: 2px;
+  margin-top: 4px;
+  overflow: hidden;
+}
+.cmp-bar-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 2px;
+  transition: width 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 /* ── Not found ──────────────────────────────────────────────────────────── */
 .not-found {
   text-align: center;
@@ -665,6 +930,20 @@ body {
   .ranking-row {
     grid-template-columns: 1.8rem 1fr 2.2rem minmax(70px, 1fr) 3.5rem;
   }
+
+  .what-is-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .ranking-header-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .compare-controls { flex-direction: column; }
+  .compare-vs { padding-top: 0; }
 
   .metric-row {
     grid-template-columns: 1fr;

@@ -16,7 +16,7 @@ function getRank(cityKey) {
 
 function animateBars(containerEl, selector, delay) {
   delay = delay || 80;
-  const fills = containerEl.querySelectorAll(selector);
+  var fills = containerEl.querySelectorAll(selector);
   fills.forEach(function(fill, i) {
     setTimeout(function() {
       fill.style.width = fill.dataset.target + '%';
@@ -36,6 +36,8 @@ function route() {
     renderCity(app, hash.slice(6));
   } else if (hash === '/methodology') {
     renderMethodology(app);
+  } else if (hash === '/compare') {
+    renderCompare(app);
   } else {
     app.innerHTML = [
       '<div class="not-found">',
@@ -76,11 +78,11 @@ function renderHome(app) {
   app.innerHTML = [
     // ── Hero ──────────────────────────────────────────────────────────────
     '<section class="hero">',
-      '<div class="hero-eyebrow">Care Quotient &mdash; V3 &mdash; 68 American Cities</div>',
+      '<div class="hero-eyebrow">Care Quotient &mdash; V3</div>',
       '<h1 class="hero-headline">When someone needs help,<br>can their city show up?</h1>',
       '<div class="hero-rule"></div>',
       '<p class="hero-subhead">',
-        'A data-driven index measuring care capacity across 68 American cities &mdash; ',
+        'A data-driven index measuring care capacity for American cities &mdash; ',
         'not prosperity, not health outcomes, but the social networks, institutions, ',
         'and systems that determine whether people can get help when they need it.',
       '</p>',
@@ -90,8 +92,11 @@ function renderHome(app) {
     '<section class="section-wrap">',
       '<div class="ranking-header">',
         '<span class="section-label">The Index &mdash; ', total, ' Cities</span>',
-        '<input class="city-search" id="city-search" type="search"',
-          ' placeholder="Find a city&hellip;" autocomplete="off" spellcheck="false">',
+        '<div class="ranking-header-actions">',
+          '<a class="compare-link" href="#/compare">Compare cities &rarr;</a>',
+          '<input class="city-search" id="city-search" type="search"',
+            ' placeholder="Find a city&hellip;" autocomplete="off" spellcheck="false">',
+        '</div>',
       '</div>',
 
       '<div class="col-headers">',
@@ -104,6 +109,12 @@ function renderHome(app) {
 
       '<div id="ranking-table">', rows, '</div>',
       '<div class="no-results" id="no-results">No cities match your search.</div>',
+
+      '<p class="bands-note">',
+        'Scores are measured against absolute benchmarks, not relative to other cities. ',
+        'Cities within 3&ndash;4 points should be read as rough peers &mdash; small differences ',
+        'may fall within data collection variance. Click any city for a full breakdown.',
+      '</p>',
     '</section>',
 
     // ── Pillars ───────────────────────────────────────────────────────────
@@ -141,6 +152,38 @@ function renderHome(app) {
       '</div>',
     '</section>',
 
+    // ── What this is / is not ─────────────────────────────────────────────
+    '<section class="section-wrap what-is-section">',
+      '<span class="section-label">What This Index Measures</span>',
+      '<div class="what-is-grid">',
+
+        '<div class="what-is-col">',
+          '<div class="what-is-heading what-is-yes">What the CQ measures</div>',
+          '<ul class="what-is-list">',
+            '<li>Whether stable social networks exist for people to lean on</li>',
+            '<li>Whether nonprofits and health centers are present relative to population need</li>',
+            '<li>Whether safety-net programs are reaching the people they&rsquo;re designed for</li>',
+            '<li>Whether the infrastructure to <em>show up</em> exists &mdash; not just the intention</li>',
+          '</ul>',
+        '</div>',
+
+        '<div class="what-is-col">',
+          '<div class="what-is-heading what-is-no">What the CQ does not measure</div>',
+          '<ul class="what-is-list">',
+            '<li>Prosperity, income, or economic growth</li>',
+            '<li>Health outcomes (life expectancy, disease rates)</li>',
+            '<li>Safety or crime</li>',
+            '<li>General quality of life</li>',
+          '</ul>',
+          '<p class="what-is-note">',
+            'A city can score well on all of those and still have thin care infrastructure. ',
+            'The inverse is equally true &mdash; and the rankings reflect it.',
+          '</p>',
+        '</div>',
+
+      '</div>',
+    '</section>',
+
     renderFooter(),
   ].join('');
 
@@ -167,6 +210,111 @@ function renderHome(app) {
     noResults.style.display = visible === 0 ? 'block' : 'none';
   });
 }
+
+// ── City context notes ──────────────────────────────────────────────────────
+// Contextual interpretation notes shown on city pages for cases where the score
+// requires explanation that the raw numbers alone won't convey.
+
+var CITY_CONTEXT = {
+  honolulu: {
+    type: 'geo',
+    text: [
+      '<strong>Geography note:</strong> Hawaii has no incorporated municipalities. ',
+      'Honolulu is a Census Designated Place, so data reflects Honolulu County ',
+      'boundaries rather than the urban core. Density metrics may be modestly overstated ',
+      'relative to other cities. See <a href="#/methodology">Methodology &sect;9</a>.',
+    ].join(''),
+  },
+  nyc: {
+    type: 'info',
+    text: [
+      '<strong>Scale note:</strong> New York City has more nonprofits than almost any city in the country, ',
+      'but the Care Quotient measures density per resident. With 8.3 million people, even a large absolute count ',
+      'spreads thin on a per-capita basis. NYC&rsquo;s FQHC network is strong; the combined nonprofit score ',
+      'reflects this scale effect, not an absence of care infrastructure.',
+    ].join(''),
+  },
+  cleveland: {
+    type: 'info',
+    text: [
+      '<strong>Rust Belt pattern:</strong> Cleveland scores higher than many larger, wealthier cities. ',
+      'Decades of economic decline attracted sustained federal investment in FQHCs and social services &mdash; ',
+      'infrastructure that persists even as the broader economy contracted. Ohio expanded Medicaid, ',
+      'further strengthening the Reach pillar. High care capacity and low prosperity are not contradictions.',
+    ].join(''),
+  },
+  detroit: {
+    type: 'info',
+    text: [
+      '<strong>Rust Belt pattern:</strong> Detroit scores higher than many larger, wealthier cities. ',
+      'Sustained federal investment in FQHCs and nonprofits during decades of economic difficulty built ',
+      'dense care infrastructure relative to the current population. Michigan expanded Medicaid. ',
+      'These cities demonstrate that care capacity and prosperity are genuinely separate dimensions.',
+    ].join(''),
+  },
+  pittsburgh: {
+    type: 'info',
+    text: [
+      '<strong>Rust Belt pattern:</strong> Pittsburgh&rsquo;s care infrastructure density reflects a city ',
+      'that built robust social services during its industrial decline. Pennsylvania expanded Medicaid, ',
+      'and the city&rsquo;s nonprofit and FQHC density is high relative to its current population size.',
+    ].join(''),
+  },
+  cincinnati: {
+    type: 'info',
+    text: [
+      '<strong>Rust Belt pattern:</strong> Cincinnati&rsquo;s high score reflects sustained investment in care ',
+      'infrastructure relative to its current population. Ohio expanded Medicaid, contributing to strong ',
+      'health insurance coverage. High care capacity in economically stressed cities is a recurring ',
+      'finding in this data.',
+    ].join(''),
+  },
+  dallas: {
+    type: 'info',
+    text: [
+      '<strong>Texas and Medicaid:</strong> Texas has not expanded Medicaid under the Affordable Care Act. ',
+      'The health insurance coverage metric reflects this directly &mdash; it is a real barrier to care ',
+      'access, and the CQ treats it as one. All Texas cities carry a structural disadvantage on the Reach ',
+      'pillar as a result of this state policy decision. Rapid population growth also means care ',
+      'infrastructure has not scaled proportionally with the population.',
+    ].join(''),
+  },
+  fort_worth: {
+    type: 'info',
+    text: [
+      '<strong>Texas and Medicaid:</strong> Texas has not expanded Medicaid under the Affordable Care Act. ',
+      'This directly suppresses health insurance coverage and SNAP participation rates for all Texas cities. ',
+      'Fort Worth also has very few FQHC sites within its city limits relative to its population, ',
+      'reflecting both the state policy environment and rapid suburban growth outpacing service infrastructure.',
+    ].join(''),
+  },
+  san_antonio: {
+    type: 'info',
+    text: [
+      '<strong>Texas and Medicaid:</strong> Texas has not expanded Medicaid. The health insurance metric ',
+      'reflects this state policy directly as a real care access barrier. San Antonio also has a large ',
+      'population relative to its nonprofit and FQHC density, a pattern common to fast-growing Sun Belt cities.',
+    ].join(''),
+  },
+  houston: {
+    type: 'info',
+    text: [
+      '<strong>Texas and Medicaid:</strong> Texas has not expanded Medicaid under the Affordable Care Act. ',
+      'Houston&rsquo;s health insurance coverage is notably below the national benchmark as a direct result. ',
+      'The city&rsquo;s large and fast-growing population also means nonprofit and FQHC density trails ',
+      'slower-growing cities with comparable total counts.',
+    ].join(''),
+  },
+  raleigh: {
+    type: 'info',
+    text: [
+      '<strong>Growing city, thin infrastructure:</strong> Raleigh is one of the fastest-growing cities in the US, ',
+      'but care infrastructure &mdash; nonprofits, FQHCs, safety-net program reach &mdash; has not scaled ',
+      'proportionally. A successful economy and strong care capacity are not the same thing. ',
+      'Raleigh&rsquo;s SNAP coverage rate also reflects relatively low poverty rates, which compress the score.',
+    ].join(''),
+  },
+};
 
 // ── City page ───────────────────────────────────────────────────────────────
 
@@ -294,15 +442,13 @@ function renderCity(app, key) {
     return pillarBreak + row;
   }).join('');
 
-  // Geography caveat for CDP cities where county fallback was used
-  var geoCaveat = '';
-  if (key === 'honolulu') {
-    geoCaveat = [
-      '<div class="geo-caveat">',
-        '<strong>Geography note:</strong> Hawaii has no incorporated municipalities. ',
-        'Honolulu is a Census Designated Place, so data reflects Honolulu County ',
-        'boundaries rather than the urban core. Density metrics may be modestly overstated ',
-        'relative to other cities. See <a href="#/methodology">Methodology &sect;9</a>.',
+  // Context note (city-specific interpretation)
+  var contextNote = '';
+  var ctx = CITY_CONTEXT[key];
+  if (ctx) {
+    contextNote = [
+      '<div class="context-note context-note-', ctx.type, '">',
+        ctx.text,
       '</div>',
     ].join('');
   }
@@ -312,10 +458,14 @@ function renderCity(app, key) {
 
       '<a href="#/" class="back-link">&#8592; All cities</a>',
 
-      geoCaveat,
+      contextNote,
 
       '<div class="city-title">', city.name, '</div>',
-      '<div class="city-meta">', city.state, ' &nbsp;&middot;&nbsp; ', city.population, '</div>',
+      '<div class="city-meta">',
+        city.state,
+        ' &nbsp;&middot;&nbsp; ', city.population,
+        ' &nbsp;&middot;&nbsp; <a href="#/compare" class="compare-inline-link">Compare with another city</a>',
+      '</div>',
 
       '<div class="cq-display">',
         '<div class="cq-number">', fmt(city.cq), '</div>',
@@ -345,6 +495,168 @@ function renderCity(app, key) {
   }, 80);
 }
 
+// ── Compare page ────────────────────────────────────────────────────────────
+
+function buildCityOptions(selectedKey) {
+  var cities = getCitiesSorted();
+  return cities.map(function(c) {
+    var sel = c.key === selectedKey ? ' selected' : '';
+    return '<option value="' + c.key + '"' + sel + '>' + c.name + ', ' + c.state + '</option>';
+  }).join('');
+}
+
+function renderCompareTable(keyA, keyB) {
+  var cityA = keyA ? CITIES[keyA] : null;
+  var cityB = keyB ? CITIES[keyB] : null;
+
+  if (!cityA && !cityB) {
+    return '<p class="compare-prompt">Select two cities above to compare their care capacity metrics.</p>';
+  }
+
+  var nameA = cityA ? cityA.name : '&mdash;';
+  var nameB = cityB ? cityB.name : '&mdash;';
+
+  function scoreCell(city, field, color) {
+    if (!city) return '<td class="cmp-cell">&mdash;</td>';
+    var val   = field === 'cq' ? city.cq : (city[field] || 0);
+    var score = fmt(val);
+    var bar   = color
+      ? '<div class="cmp-bar-track"><div class="cmp-bar-fill" style="background:' + color + '" data-target="' + score + '"></div></div>'
+      : '';
+    return '<td class="cmp-cell">' + score + bar + '</td>';
+  }
+
+  function metricCell(city, mk) {
+    if (!city) return '<td class="cmp-cell">&mdash;</td>';
+    var m = city.metrics[mk];
+    if (!m) return '<td class="cmp-cell">&mdash;</td>';
+    var meta  = METRIC_META[mk];
+    var color = PILLAR_META[meta.pillar].color;
+    var score = fmt(m.score);
+    return [
+      '<td class="cmp-cell">',
+        score,
+        '<div class="cmp-bar-track">',
+          '<div class="cmp-bar-fill" style="background:', color, '"',
+               ' data-target="', score, '"></div>',
+        '</div>',
+      '</td>',
+    ].join('');
+  }
+
+  var pillarRows = [
+    ['pillar1', 'Social Fabric',        'var(--p1)'],
+    ['pillar2', 'Institutions of Care', 'var(--p2)'],
+    ['pillar3', 'Reach',                'var(--p3)'],
+  ].map(function(p) {
+    return [
+      '<tr class="cmp-row-pillar">',
+        '<td class="cmp-label">', p[1], '</td>',
+        scoreCell(cityA, p[0], p[2]),
+        scoreCell(cityB, p[0], p[2]),
+      '</tr>',
+    ].join('');
+  }).join('');
+
+  var metricRows = METRIC_ORDER.map(function(mk) {
+    var meta = METRIC_META[mk];
+    return [
+      '<tr>',
+        '<td class="cmp-label cmp-label-metric">', meta.label, '</td>',
+        metricCell(cityA, mk),
+        metricCell(cityB, mk),
+      '</tr>',
+    ].join('');
+  }).join('');
+
+  return [
+    '<table class="compare-table">',
+      '<thead>',
+        '<tr>',
+          '<th class="cmp-label"></th>',
+          '<th class="cmp-city-head">', nameA, '</th>',
+          '<th class="cmp-city-head">', nameB, '</th>',
+        '</tr>',
+      '</thead>',
+      '<tbody>',
+        '<tr class="cmp-row-cq">',
+          '<td class="cmp-label">Care Quotient</td>',
+          scoreCell(cityA, 'cq', null),
+          scoreCell(cityB, 'cq', null),
+        '</tr>',
+        '<tr class="cmp-divider-row"><td colspan="3"></td></tr>',
+        pillarRows,
+        '<tr class="cmp-divider-row"><td colspan="3"></td></tr>',
+        metricRows,
+      '</tbody>',
+    '</table>',
+  ].join('');
+}
+
+function renderCompare(app) {
+  var defaultA = 'nyc';
+  var defaultB = 'chicago';
+
+  app.innerHTML = [
+    '<div class="compare-page">',
+
+      '<a href="#/" class="back-link">&#8592; All cities</a>',
+
+      '<div class="compare-header">',
+        '<div class="compare-eyebrow">Compare</div>',
+        '<h1 class="compare-title">City-by-City Comparison</h1>',
+        '<p class="compare-intro">',
+          'Select two cities to compare their Care Quotient scores and underlying metrics. ',
+          'Scores are on the same absolute scale &mdash; a direct point difference reflects ',
+          'a real difference in measured care capacity.',
+        '</p>',
+      '</div>',
+
+      '<div class="compare-controls">',
+        '<div class="compare-picker">',
+          '<label class="compare-picker-label">City A</label>',
+          '<select id="compare-a" class="compare-select">',
+            buildCityOptions(defaultA),
+          '</select>',
+        '</div>',
+        '<div class="compare-vs">vs</div>',
+        '<div class="compare-picker">',
+          '<label class="compare-picker-label">City B</label>',
+          '<select id="compare-b" class="compare-select">',
+            buildCityOptions(defaultB),
+          '</select>',
+        '</div>',
+      '</div>',
+
+      '<div id="compare-results">',
+        renderCompareTable(defaultA, defaultB),
+      '</div>',
+
+    '</div>',
+    renderFooter(),
+  ].join('');
+
+  // Animate initial bars
+  setTimeout(function() {
+    var results = document.getElementById('compare-results');
+    animateBars(results, '.cmp-bar-fill', 80);
+  }, 120);
+
+  // Re-render on change
+  function onChange() {
+    var keyA = document.getElementById('compare-a').value;
+    var keyB = document.getElementById('compare-b').value;
+    var results = document.getElementById('compare-results');
+    results.innerHTML = renderCompareTable(keyA, keyB);
+    setTimeout(function() {
+      animateBars(results, '.cmp-bar-fill', 60);
+    }, 40);
+  }
+
+  document.getElementById('compare-a').addEventListener('change', onChange);
+  document.getElementById('compare-b').addEventListener('change', onChange);
+}
+
 // ── Methodology ─────────────────────────────────────────────────────────────
 
 function renderMethodology(app) {
@@ -353,7 +665,7 @@ function renderMethodology(app) {
 
       '<a href="#/" class="back-link">&#8592; All cities</a>',
 
-      '<div class="method-eyebrow">Methodology &mdash; V3</div>',
+      '<div class="method-eyebrow">Methodology &mdash; V3.2</div>',
       '<h1>How the Care Quotient is built</h1>',
 
       '<p>',
@@ -404,9 +716,10 @@ function renderMethodology(app) {
       '<h2>Benchmarks</h2>',
 
       '<p>',
-        'Each metric is scored against an absolute benchmark representing a theoretical ideal. ',
+        'Each metric is scored against an absolute benchmark representing a meaningful threshold. ',
         '<code>score = min(value / benchmark &times; 100, 100)</code>. ',
-        'Scores are absolute &mdash; adding or removing cities does not change existing scores.',
+        'Scores are absolute &mdash; adding or removing cities does not change existing scores. ',
+        'A score of 70 means the city reaches 70% of the benchmark, not that it ranks 70th.',
       '</p>',
 
       '<table class="method-table">',
@@ -427,10 +740,29 @@ function renderMethodology(app) {
 
       '<p>',
         'All data sources use the Census 2020 ZCTA-to-Place relationship file to define city ',
-        'boundaries consistently. A ZIP Code Tabulation Area is assigned to a city if &#8805;50% ',
+        'boundaries consistently. A ZIP Code Tabulation Area is assigned to a city if &#8805;40% ',
         'of its land area falls within the city&rsquo;s Census incorporated place boundary. ',
-        'This eliminates county-sharing inflation, where a city appears to have more resources ',
-        'than it does because it shares a county with surrounding suburbs.',
+        'This threshold captures near-boundary ZCTAs that genuinely serve city residents, ',
+        'while excluding ZCTAs that are primarily suburban. It eliminates county-sharing ',
+        'inflation, where a city would appear to have more resources than it does because it ',
+        'shares a county with surrounding suburbs.',
+      '</p>',
+
+      '<p>',
+        '<strong>Honolulu exception:</strong> Hawaii has no incorporated municipalities &mdash; ',
+        'Honolulu is a Census Designated Place absent from the ZCTA-to-Place crosswalk. The ',
+        'pipeline falls back to Honolulu County boundaries, which are broader than the urban core. ',
+        'Density metrics for Honolulu may be modestly overstated as a result.',
+      '</p>',
+
+      '<h2>How to read the scores</h2>',
+
+      '<p>',
+        'The CQ is designed to be read as a measure against a benchmark, not as a competition. ',
+        'Cities within 3&ndash;4 points should be treated as rough peers &mdash; differences of that ',
+        'size may fall within the margin of geographic approximation or a single year&rsquo;s data variance. ',
+        'The index is most useful for identifying cities at the extremes, understanding which ',
+        '<em>specific</em> metrics drive a city&rsquo;s score, and tracking change over time.',
       '</p>',
 
       '<h2>What this index does not measure</h2>',
@@ -448,12 +780,20 @@ function renderMethodology(app) {
         'policy barrier to care access, and the index reflects it as such.',
       '</p>',
 
+      '<p>',
+        'Nonprofit density is measured per resident, not in absolute terms. A city with many ',
+        'nonprofits and a very large population (New York City) can score lower than a smaller ',
+        'city with proportionally denser care infrastructure. This is a feature, not a bug: ',
+        'what matters for a resident is whether there is care capacity relative to local need.',
+      '</p>',
+
       '<h3>Version &amp; Data</h3>',
       '<p>',
-        'V3 (April 2026). 68 cities. ',
+        'V3.2 (April 2026). 68 cities. ',
         'Data sources: IRS EO BMF, Census ACS 2022 5-year estimates, ',
         'HRSA Health Center Service Delivery, IMLS Public Libraries Survey FY2023. ',
-        'All data collection and scoring code is available in the project repository.',
+        'All data collection and scoring code is available in the ',
+        '<a href="https://github.com/petedur/Care-Quotient---Claude-Code" target="_blank" rel="noopener">project repository</a>.',
       '</p>',
 
     '</div>',
@@ -467,11 +807,12 @@ function renderFooter() {
   return [
     '<footer class="site-footer">',
       '<div class="footer-copy">',
-        'Care Quotient V3 &nbsp;&middot;&nbsp; 68 American Cities &nbsp;&middot;&nbsp; April 2026<br>',
+        'Care Quotient V3.2 &nbsp;&middot;&nbsp; 68 American Cities &nbsp;&middot;&nbsp; April 2026<br>',
         'Data: IRS EO BMF &middot; Census ACS 2022 &middot; HRSA &middot; IMLS',
       '</div>',
       '<div class="footer-links">',
         '<a href="#/methodology">Methodology</a>',
+        '<a href="#/compare">Compare</a>',
         '<a href="#/">Index</a>',
       '</div>',
     '</footer>',
