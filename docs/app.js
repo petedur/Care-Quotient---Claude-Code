@@ -163,7 +163,7 @@ function renderHome(app) {
             '<li>Whether stable social networks exist for people to lean on</li>',
             '<li>Whether nonprofits and health centers are present relative to population need</li>',
             '<li>Whether safety-net programs are reaching the people they&rsquo;re designed for</li>',
-            '<li>Whether the infrastructure to <em>show up</em> exists &mdash; not just the intention</li>',
+            '<li>Whether the organizations, health centers, and systems to support people in difficulty actually exist at the scale the population needs</li>',
           '</ul>',
         '</div>',
 
@@ -176,8 +176,7 @@ function renderHome(app) {
             '<li>General quality of life</li>',
           '</ul>',
           '<p class="what-is-note">',
-            'A city can score well on all of those and still have thin care infrastructure. ',
-            'The inverse is equally true &mdash; and the rankings reflect it.',
+            'A prosperous city is not necessarily a caring one. This index measures one of them.',
           '</p>',
         '</div>',
 
