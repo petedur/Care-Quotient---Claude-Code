@@ -27,7 +27,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install pandas duckdb
+        run: pip install pandas duckdb python-dotenv
 
       - name: Run score.py
         run: python code/score.py

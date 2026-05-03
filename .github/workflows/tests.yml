@@ -18,7 +18,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install pandas duckdb pytest
+        run: pip install pandas duckdb pytest python-dotenv
 
       - name: Run tests
         run: pytest code/tests/ -v
