@@ -59,12 +59,13 @@ window.addEventListener('DOMContentLoaded', route);
 // ── Map utilities ───────────────────────────────────────────────────────────
 
 var _homeMap = null;
+var _akMap   = null;
+var _hiMap   = null;
 
 function destroyHomeMap() {
-  if (_homeMap) {
-    _homeMap.remove();
-    _homeMap = null;
-  }
+  if (_homeMap) { _homeMap.remove(); _homeMap = null; }
+  if (_akMap)   { _akMap.remove();   _akMap   = null; }
+  if (_hiMap)   { _hiMap.remove();   _hiMap   = null; }
 }
 
 function cqColor(score) {
@@ -75,48 +76,64 @@ function cqColor(score) {
   return '#c0392b';
 }
 
+var TILE_URL  = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+var TILE_OPTS = { subdomains: 'abcd', maxZoom: 19 };
+
+function addMarker(map, city) {
+  var m = L.circleMarker([city.lat, city.lng], {
+    radius: 7, fillColor: cqColor(city.cq),
+    color: '#fff', weight: 1.5, opacity: 1, fillOpacity: 0.88,
+  }).addTo(map);
+  m.bindTooltip('<strong>' + city.name + '</strong><br>CQ&nbsp;' + fmt(city.cq),
+    { direction: 'top', offset: [0, -6] });
+  m.on('click', function() { location.hash = '#/city/' + city.key; });
+}
+
+function makeInsetMap(id, center, zoom) {
+  return L.map(id, {
+    zoomControl: false, attributionControl: false,
+    dragging: false, scrollWheelZoom: false,
+    doubleClickZoom: false, boxZoom: false, keyboard: false,
+  }).setView(center, zoom);
+}
+
 function initHomeMap(cities) {
   if (typeof L === 'undefined') return;
   destroyHomeMap();
-  var container = document.getElementById('city-map');
-  if (!container) return;
+  if (!document.getElementById('city-map')) return;
 
+  var continental = cities.filter(function(c) { return c.state !== 'AK' && c.state !== 'HI'; });
+  var alaska      = cities.filter(function(c) { return c.state === 'AK'; });
+  var hawaii      = cities.filter(function(c) { return c.state === 'HI'; });
+
+  // Main map — continental US, fit to bounds so it centers regardless of container width
   _homeMap = L.map('city-map', {
-    zoomControl: true,
-    scrollWheelZoom: false,
-    attributionControl: true,
-  }).setView([38.5, -96], 4);
-
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    subdomains: 'abcd',
-    maxZoom: 19,
-  }).addTo(_homeMap);
-
-  cities.forEach(function(city) {
-    if (!city.lat || !city.lng) return;
-    var marker = L.circleMarker([city.lat, city.lng], {
-      radius: 7,
-      fillColor: cqColor(city.cq),
-      color: '#fff',
-      weight: 1.5,
-      opacity: 1,
-      fillOpacity: 0.88,
-    }).addTo(_homeMap);
-
-    marker.bindTooltip(
-      '<strong>' + city.name + '</strong><br>CQ&nbsp;' + fmt(city.cq),
-      { direction: 'top', offset: [0, -6] }
-    );
-
-    marker.on('click', function() {
-      location.hash = '#/city/' + city.key;
-    });
+    zoomControl: true, scrollWheelZoom: false, attributionControl: true,
   });
+  L.tileLayer(TILE_URL, Object.assign({}, TILE_OPTS, {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  })).addTo(_homeMap);
+  _homeMap.fitBounds([[23, -125], [50, -65]], { padding: [24, 24] });
+  continental.forEach(function(c) { addMarker(_homeMap, c); });
 
-  // Ensure Leaflet recalculates container dimensions after layout settles
+  // Alaska inset
+  if (document.getElementById('map-inset-ak')) {
+    _akMap = makeInsetMap('map-inset-ak', [63, -153], 3);
+    L.tileLayer(TILE_URL, TILE_OPTS).addTo(_akMap);
+    alaska.forEach(function(c) { addMarker(_akMap, c); });
+  }
+
+  // Hawaii inset
+  if (document.getElementById('map-inset-hi')) {
+    _hiMap = makeInsetMap('map-inset-hi', [20.5, -157.5], 6);
+    L.tileLayer(TILE_URL, TILE_OPTS).addTo(_hiMap);
+    hawaii.forEach(function(c) { addMarker(_hiMap, c); });
+  }
+
   setTimeout(function() {
     if (_homeMap) _homeMap.invalidateSize();
+    if (_akMap)   _akMap.invalidateSize();
+    if (_hiMap)   _hiMap.invalidateSize();
   }, 200);
 }
 
@@ -158,7 +175,10 @@ function renderHome(app) {
     // ── Map ───────────────────────────────────────────────────────────────
     '<section class="section-wrap map-section">',
       '<span class="section-label">68 Cities Mapped</span>',
-      '<div id="city-map" class="city-map"></div>',
+      '<div id="city-map" class="city-map">',
+        '<div id="map-inset-ak" class="map-inset" data-label="Alaska"></div>',
+        '<div id="map-inset-hi" class="map-inset" data-label="Hawaii"></div>',
+      '</div>',
       '<div class="map-legend">',
         '<span class="map-legend-label">Care Quotient</span>',
         '<span class="legend-swatch" style="background:#c0392b"></span><span class="legend-tier">Under 28</span>',
