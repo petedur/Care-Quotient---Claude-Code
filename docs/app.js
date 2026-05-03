@@ -106,34 +106,38 @@ function initHomeMap(cities) {
   var alaska      = cities.filter(function(c) { return c.state === 'AK'; });
   var hawaii      = cities.filter(function(c) { return c.state === 'HI'; });
 
-  // Main map — continental US, fit to bounds so it centers regardless of container width
+  // Main map — set a temporary view so Leaflet has something to render while layout settles
   _homeMap = L.map('city-map', {
     zoomControl: true, scrollWheelZoom: false, attributionControl: true,
   });
   L.tileLayer(TILE_URL, Object.assign({}, TILE_OPTS, {
     attribution: 'Tiles &copy; <a href="https://www.esri.com/">Esri</a>',
   })).addTo(_homeMap);
-  // Fit to actual city bounding box so the view adapts to any container width
-  var cityBounds = L.latLngBounds(continental.map(function(c) { return [c.lat, c.lng]; }));
-  _homeMap.fitBounds(cityBounds, { padding: [40, 70] });
+  _homeMap.setView([39, -98], 4);
   continental.forEach(function(c) { addMarker(_homeMap, c); });
 
-  // Alaska inset — zoom 4 shows coastlines and state shape clearly
+  // Alaska inset — centered on Cook Inlet / Anchorage bowl, zoom 4 shows full state outline
   if (document.getElementById('map-inset-ak')) {
-    _akMap = makeInsetMap('map-inset-ak', [63, -152], 4);
+    _akMap = makeInsetMap('map-inset-ak', [62, -150], 4);
     L.tileLayer(TILE_URL, TILE_OPTS).addTo(_akMap);
     alaska.forEach(function(c) { addMarker(_akMap, c); });
   }
 
-  // Hawaii inset — zoom 7 shows Oahu and surrounding islands clearly
+  // Hawaii inset — zoom 8 centered on Oahu shows the island shape clearly
   if (document.getElementById('map-inset-hi')) {
-    _hiMap = makeInsetMap('map-inset-hi', [21.1, -157.6], 7);
+    _hiMap = makeInsetMap('map-inset-hi', [21.3, -157.85], 8);
     L.tileLayer(TILE_URL, TILE_OPTS).addTo(_hiMap);
     hawaii.forEach(function(c) { addMarker(_hiMap, c); });
   }
 
+  // Run fitBounds after layout is settled so container dimensions are correct
   setTimeout(function() {
-    if (_homeMap) _homeMap.invalidateSize();
+    if (_homeMap) {
+      _homeMap.invalidateSize();
+      var cityBounds = L.latLngBounds(continental.map(function(c) { return [c.lat, c.lng]; }));
+      // Extra left padding shifts the US rightward, matching the desired framing
+      _homeMap.fitBounds(cityBounds, { paddingTopLeft: [140, 40], paddingBottomRight: [40, 40] });
+    }
     if (_akMap)   _akMap.invalidateSize();
     if (_hiMap)   _hiMap.invalidateSize();
   }, 200);
