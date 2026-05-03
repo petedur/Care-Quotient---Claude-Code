@@ -76,9 +76,8 @@ function cqColor(score) {
   return '#c0392b';
 }
 
-// CartoDB Voyager: blue water, terrain hints, muted country colors — much richer than Positron
-var TILE_URL  = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
-var TILE_OPTS = { subdomains: 'abcd', maxZoom: 19 };
+var TILE_URL  = 'https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png';
+var TILE_OPTS = { maxZoom: 20 };
 
 function addMarker(map, city) {
   var m = L.circleMarker([city.lat, city.lng], {
@@ -112,7 +111,7 @@ function initHomeMap(cities) {
     zoomControl: true, scrollWheelZoom: false, attributionControl: true,
   });
   L.tileLayer(TILE_URL, Object.assign({}, TILE_OPTS, {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   })).addTo(_homeMap);
   // Fit to actual city bounding box so the view adapts to any container width
   var cityBounds = L.latLngBounds(continental.map(function(c) { return [c.lat, c.lng]; }));
