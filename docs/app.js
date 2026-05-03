@@ -33,10 +33,13 @@ function route() {
   if (hash === '/' || hash === '') {
     renderHome(app);
   } else if (hash.indexOf('/city/') === 0) {
+    destroyHomeMap();
     renderCity(app, hash.slice(6));
   } else if (hash === '/methodology') {
+    destroyHomeMap();
     renderMethodology(app);
   } else if (hash === '/compare') {
+    destroyHomeMap();
     renderCompare(app);
   } else {
     app.innerHTML = [
@@ -52,6 +55,66 @@ function route() {
 
 window.addEventListener('hashchange', route);
 window.addEventListener('DOMContentLoaded', route);
+
+// ── Map utilities ───────────────────────────────────────────────────────────
+
+var _homeMap = null;
+
+function destroyHomeMap() {
+  if (_homeMap) {
+    _homeMap.remove();
+    _homeMap = null;
+  }
+}
+
+function cqColor(score) {
+  if (score >= 68) return '#2d6a4f';
+  if (score >= 55) return '#52b788';
+  if (score >= 42) return '#d4a017';
+  if (score >= 28) return '#e07b39';
+  return '#c0392b';
+}
+
+function initHomeMap(cities) {
+  if (typeof L === 'undefined') return;
+  destroyHomeMap();
+  var container = document.getElementById('city-map');
+  if (!container) return;
+
+  _homeMap = L.map('city-map', {
+    zoomControl: true,
+    scrollWheelZoom: false,
+    attributionControl: true,
+  }).setView([38.5, -96], 4);
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    subdomains: 'abcd',
+    maxZoom: 19,
+  }).addTo(_homeMap);
+
+  cities.forEach(function(city) {
+    if (!city.lat || !city.lng) return;
+    var marker = L.circleMarker([city.lat, city.lng], {
+      radius: 7,
+      fillColor: cqColor(city.cq),
+      color: '#fff',
+      weight: 1.5,
+      opacity: 1,
+      fillOpacity: 0.88,
+    }).addTo(_homeMap);
+
+    marker.bindTooltip(
+      '<strong>' + city.name + '</strong><br>CQ&nbsp;' + fmt(city.cq),
+      { direction: 'top', offset: [0, -6] }
+    );
+
+    marker.on('click', function() {
+      location.hash = '#/city/' + city.key;
+    });
+    marker.getElement() && (marker.getElement().style.cursor = 'pointer');
+  });
+}
 
 // ── Home ────────────────────────────────────────────────────────────────────
 
@@ -78,7 +141,7 @@ function renderHome(app) {
   app.innerHTML = [
     // ── Hero ──────────────────────────────────────────────────────────────
     '<section class="hero">',
-      '<div class="hero-eyebrow">Care Quotient &mdash; V5</div>',
+      '<div class="hero-eyebrow">Care Quotient &mdash; V6</div>',
       '<h1 class="hero-headline">When someone needs help,<br>can their city show up?</h1>',
       '<div class="hero-rule"></div>',
       '<p class="hero-subhead">',
@@ -86,6 +149,20 @@ function renderHome(app) {
         'not prosperity, not health outcomes, but the social networks, institutions, ',
         'and systems that determine whether people can get help when they need it.',
       '</p>',
+    '</section>',
+
+    // ── Map ───────────────────────────────────────────────────────────────
+    '<section class="section-wrap map-section">',
+      '<span class="section-label">68 Cities Mapped</span>',
+      '<div id="city-map" class="city-map"></div>',
+      '<div class="map-legend">',
+        '<span class="map-legend-label">Care Quotient</span>',
+        '<span class="legend-swatch" style="background:#c0392b"></span><span class="legend-tier">Under 28</span>',
+        '<span class="legend-swatch" style="background:#e07b39"></span><span class="legend-tier">28&ndash;42</span>',
+        '<span class="legend-swatch" style="background:#d4a017"></span><span class="legend-tier">42&ndash;55</span>',
+        '<span class="legend-swatch" style="background:#52b788"></span><span class="legend-tier">55&ndash;68</span>',
+        '<span class="legend-swatch" style="background:#2d6a4f"></span><span class="legend-tier">68+</span>',
+      '</div>',
     '</section>',
 
     // ── Ranking ───────────────────────────────────────────────────────────
@@ -187,6 +264,9 @@ function renderHome(app) {
 
     renderFooter(),
   ].join('');
+
+  // Initialize map
+  setTimeout(function() { initHomeMap(cities); }, 0);
 
   // Animate ranking bars (staggered)
   var rankingTable = document.getElementById('ranking-table');

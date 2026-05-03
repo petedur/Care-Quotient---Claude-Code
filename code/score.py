@@ -460,6 +460,8 @@ def write_dashboard_data(score_output: dict, raw_df: pd.DataFrame):
             "name":       cfg.get("name", city_key),
             "state":      display["state"],
             "population": display["population"],
+            "lat":        cfg.get("lat"),
+            "lng":        cfg.get("lng"),
             "cq":         city_scores.get("care_quotient", 0),
             "pillar1":    city_scores.get("pillar1_social_relational_care", 0),
             "pillar2":    city_scores.get("pillar2_institutional_care", 0),

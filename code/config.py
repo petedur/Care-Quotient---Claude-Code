@@ -100,6 +100,8 @@ def _load_cities() -> dict:
             "population":  int(row["population"]),
             "county_fips": fips_set,
             "place_fips":  str(place_fips).strip().zfill(5) if place_fips else "",
+            "lat":         float(row["lat"]) if "lat" in row and not pd.isna(row.get("lat")) else None,
+            "lng":         float(row["lng"]) if "lng" in row and not pd.isna(row.get("lng")) else None,
         }
     return cities
 
