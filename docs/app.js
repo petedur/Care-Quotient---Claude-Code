@@ -76,7 +76,8 @@ function cqColor(score) {
   return '#c0392b';
 }
 
-var TILE_URL  = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+// CartoDB Voyager: blue water, terrain hints, muted country colors — much richer than Positron
+var TILE_URL  = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
 var TILE_OPTS = { subdomains: 'abcd', maxZoom: 19 };
 
 function addMarker(map, city) {
@@ -113,19 +114,20 @@ function initHomeMap(cities) {
   L.tileLayer(TILE_URL, Object.assign({}, TILE_OPTS, {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
   })).addTo(_homeMap);
-  _homeMap.fitBounds([[23, -125], [50, -65]], { padding: [24, 24] });
+  // zoom 5 centered on the continental US — matches user's preferred view
+  _homeMap.setView([40, -96], 5);
   continental.forEach(function(c) { addMarker(_homeMap, c); });
 
-  // Alaska inset
+  // Alaska inset — zoom 4 shows coastlines and state shape clearly
   if (document.getElementById('map-inset-ak')) {
-    _akMap = makeInsetMap('map-inset-ak', [63, -153], 3);
+    _akMap = makeInsetMap('map-inset-ak', [63, -152], 4);
     L.tileLayer(TILE_URL, TILE_OPTS).addTo(_akMap);
     alaska.forEach(function(c) { addMarker(_akMap, c); });
   }
 
-  // Hawaii inset
+  // Hawaii inset — zoom 7 shows Oahu and surrounding islands clearly
   if (document.getElementById('map-inset-hi')) {
-    _hiMap = makeInsetMap('map-inset-hi', [20.5, -157.5], 6);
+    _hiMap = makeInsetMap('map-inset-hi', [21.1, -157.6], 7);
     L.tileLayer(TILE_URL, TILE_OPTS).addTo(_hiMap);
     hawaii.forEach(function(c) { addMarker(_hiMap, c); });
   }

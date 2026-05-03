@@ -773,12 +773,12 @@ body {
   width: 110px;
   height: 105px;
 }
-/* State label overlaid on each inset */
+/* State label — bottom-left so it never overlaps city markers */
 #map-inset-ak::after,
 #map-inset-hi::after {
   content: attr(data-label);
   position: absolute;
-  top: 4px;
+  bottom: 4px;
   left: 6px;
   z-index: 1001;
   font-family: var(--sans);
@@ -788,8 +788,8 @@ body {
   text-transform: uppercase;
   color: var(--ink-mid);
   pointer-events: none;
-  background: rgba(245,243,238,0.75);
-  padding: 1px 3px;
+  background: rgba(255,255,255,0.82);
+  padding: 1px 4px;
   border-radius: 2px;
 }
 
