@@ -112,8 +112,12 @@ function initHomeMap(cities) {
     marker.on('click', function() {
       location.hash = '#/city/' + city.key;
     });
-    marker.getElement() && (marker.getElement().style.cursor = 'pointer');
   });
+
+  // Ensure Leaflet recalculates container dimensions after layout settles
+  setTimeout(function() {
+    if (_homeMap) _homeMap.invalidateSize();
+  }, 200);
 }
 
 // ── Home ────────────────────────────────────────────────────────────────────
