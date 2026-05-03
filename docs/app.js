@@ -523,6 +523,51 @@ function renderCity(app, key) {
     ].join('');
   }
 
+  // Community Wellbeing diagnostics (CDC PLACES — not scored)
+  var wellbeingHtml = '';
+  var md = city.diagnostic && city.diagnostic.mental_distress;
+  var ph = city.diagnostic && city.diagnostic.poor_health;
+  var dep = city.diagnostic && city.diagnostic.depression;
+  if ((md && md.value !== 'n/a') || (ph && ph.value !== 'n/a') || (dep && dep.value !== 'n/a')) {
+    var wellbeingRows = [];
+    if (md && md.value !== 'n/a') {
+      wellbeingRows.push(
+        '<div class="diagnostic-row">',
+          '<span class="diagnostic-name">Frequent mental distress</span>',
+          '<span class="diagnostic-val">', md.value, '%</span>',
+        '</div>'
+      );
+    }
+    if (ph && ph.value !== 'n/a') {
+      wellbeingRows.push(
+        '<div class="diagnostic-row">',
+          '<span class="diagnostic-name">Fair or poor self-rated health</span>',
+          '<span class="diagnostic-val">', ph.value, '%</span>',
+        '</div>'
+      );
+    }
+    if (dep && dep.value !== 'n/a') {
+      wellbeingRows.push(
+        '<div class="diagnostic-row">',
+          '<span class="diagnostic-name">Diagnosed depression</span>',
+          '<span class="diagnostic-val">', dep.value, '%</span>',
+        '</div>'
+      );
+    }
+    wellbeingHtml = [
+      '<div class="diagnostic-section">',
+        '<div class="diagnostic-label">Community Wellbeing Context</div>',
+        wellbeingRows.join(''),
+        '<p class="diagnostic-note">',
+          'These are outcome measures from CDC PLACES (BRFSS-modeled estimates, 2022/2023), ',
+          'reported as community need context &mdash; not scored. High values indicate greater ',
+          'need for care infrastructure, not lesser capacity. ',
+          'See <a href="#/methodology">Methodology &sect;4</a>.',
+        '</p>',
+      '</div>',
+    ].join('');
+  }
+
   // Need-adjusted diagnostic
   var distressedHtml = '';
   var cd = city.diagnostic && city.diagnostic.care_distressed;
@@ -583,6 +628,8 @@ function renderCity(app, key) {
       mismatchHtml,
 
       distressedHtml,
+
+      wellbeingHtml,
 
     '</div>',
     renderFooter(),

@@ -80,6 +80,18 @@ const CITIES = {
       "care_distressed": {
         "value": "24.32",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "15.80",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "20.60",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "25.10",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -161,6 +173,18 @@ const CITIES = {
       "care_distressed": {
         "value": "39.27",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "16.40",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "17.60",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "21.70",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -242,6 +266,18 @@ const CITIES = {
       "care_distressed": {
         "value": "83.08",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "16.90",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "18.20",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "18.00",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -323,6 +359,18 @@ const CITIES = {
       "care_distressed": {
         "value": "42.10",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "17.40",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "18.90",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "21.70",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -404,6 +452,18 @@ const CITIES = {
       "care_distressed": {
         "value": "45.19",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "16.70",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "16.00",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "22.80",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -485,6 +545,18 @@ const CITIES = {
       "care_distressed": {
         "value": "16.75",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "20.70",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "29.00",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "23.70",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -566,6 +638,18 @@ const CITIES = {
       "care_distressed": {
         "value": "51.90",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.20",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "22.70",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "23.40",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -647,6 +731,18 @@ const CITIES = {
       "care_distressed": {
         "value": "28.58",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "20.80",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "24.80",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "26.90",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -728,6 +824,18 @@ const CITIES = {
       "care_distressed": {
         "value": "35.31",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.70",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "27.80",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "22.20",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -809,6 +917,18 @@ const CITIES = {
       "care_distressed": {
         "value": "49.63",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.00",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "17.40",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "23.80",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -890,6 +1010,18 @@ const CITIES = {
       "care_distressed": {
         "value": "24.27",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "19.10",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "24.00",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "20.80",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -971,6 +1103,18 @@ const CITIES = {
       "care_distressed": {
         "value": "55.72",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "16.30",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "16.90",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "22.80",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -1052,6 +1196,18 @@ const CITIES = {
       "care_distressed": {
         "value": "32.84",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "16.10",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "21.50",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "19.10",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -1133,6 +1289,18 @@ const CITIES = {
       "care_distressed": {
         "value": "40.09",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "19.60",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "22.20",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "26.30",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -1214,6 +1382,18 @@ const CITIES = {
       "care_distressed": {
         "value": "32.16",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "19.40",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "28.60",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "24.80",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -1295,6 +1475,18 @@ const CITIES = {
       "care_distressed": {
         "value": "38.37",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.40",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "17.10",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "25.90",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -1376,6 +1568,18 @@ const CITIES = {
       "care_distressed": {
         "value": "34.11",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "20.40",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "22.60",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "26.90",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -1457,6 +1661,18 @@ const CITIES = {
       "care_distressed": {
         "value": "14.35",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "16.70",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "26.00",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "20.50",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -1538,6 +1754,18 @@ const CITIES = {
       "care_distressed": {
         "value": "32.27",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "17.90",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "24.50",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "20.00",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -1619,6 +1847,18 @@ const CITIES = {
       "care_distressed": {
         "value": "56.72",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "15.60",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "15.00",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "22.90",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -1700,6 +1940,18 @@ const CITIES = {
       "care_distressed": {
         "value": "35.38",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.90",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "21.90",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "22.10",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -1781,6 +2033,18 @@ const CITIES = {
       "care_distressed": {
         "value": "28.83",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "22.70",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "33.50",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "23.10",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -1862,6 +2126,18 @@ const CITIES = {
       "care_distressed": {
         "value": "50.53",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "15.90",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "16.90",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "23.40",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -1943,6 +2219,18 @@ const CITIES = {
       "care_distressed": {
         "value": "10.73",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "17.20",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "28.60",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "20.00",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -2024,6 +2312,18 @@ const CITIES = {
       "care_distressed": {
         "value": "28.31",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.60",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "24.10",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "23.10",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -2105,6 +2405,18 @@ const CITIES = {
       "care_distressed": {
         "value": "21.22",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.80",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "27.70",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "21.60",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -2186,6 +2498,18 @@ const CITIES = {
       "care_distressed": {
         "value": "41.71",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "14.60",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "18.20",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "15.40",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -2267,6 +2591,18 @@ const CITIES = {
       "care_distressed": {
         "value": "26.15",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "17.10",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "24.50",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "19.80",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -2348,6 +2684,18 @@ const CITIES = {
       "care_distressed": {
         "value": "43.62",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.20",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "21.70",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "25.70",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -2429,6 +2777,18 @@ const CITIES = {
       "care_distressed": {
         "value": "36.38",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.80",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "21.60",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "19.90",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -2510,6 +2870,18 @@ const CITIES = {
       "care_distressed": {
         "value": "39.71",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.70",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "21.70",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "24.40",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -2591,6 +2963,18 @@ const CITIES = {
       "care_distressed": {
         "value": "33.44",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "19.60",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "24.60",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "21.00",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -2672,6 +3056,18 @@ const CITIES = {
       "care_distressed": {
         "value": "36.25",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "n/a",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "n/a",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "n/a",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -2753,6 +3149,18 @@ const CITIES = {
       "care_distressed": {
         "value": "31.78",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "17.50",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "25.40",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "20.40",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -2834,6 +3242,18 @@ const CITIES = {
       "care_distressed": {
         "value": "31.03",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "n/a",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "n/a",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "n/a",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -2915,6 +3335,18 @@ const CITIES = {
       "care_distressed": {
         "value": "40.32",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "16.50",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "14.90",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "25.40",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -2996,6 +3428,18 @@ const CITIES = {
       "care_distressed": {
         "value": "31.37",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "20.70",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "27.50",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "25.20",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -3077,6 +3521,18 @@ const CITIES = {
       "care_distressed": {
         "value": "25.59",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.70",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "26.80",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "23.70",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -3158,6 +3614,18 @@ const CITIES = {
       "care_distressed": {
         "value": "46.71",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "17.00",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "16.70",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "27.50",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -3239,6 +3707,18 @@ const CITIES = {
       "care_distressed": {
         "value": "43.69",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "19.60",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "21.20",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "28.40",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -3320,6 +3800,18 @@ const CITIES = {
       "care_distressed": {
         "value": "34.60",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "19.40",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "23.00",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "27.70",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -3401,6 +3893,18 @@ const CITIES = {
       "care_distressed": {
         "value": "25.93",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "15.50",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "21.00",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "16.40",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -3482,6 +3986,18 @@ const CITIES = {
       "care_distressed": {
         "value": "26.60",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "17.80",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "21.30",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "25.00",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -3563,6 +4079,18 @@ const CITIES = {
       "care_distressed": {
         "value": "42.76",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "15.10",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "17.00",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "19.10",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -3644,6 +4172,18 @@ const CITIES = {
       "care_distressed": {
         "value": "27.92",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "n/a",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "n/a",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "n/a",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -3725,6 +4265,18 @@ const CITIES = {
       "care_distressed": {
         "value": "27.93",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "16.20",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "21.40",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "19.10",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -3806,6 +4358,18 @@ const CITIES = {
       "care_distressed": {
         "value": "64.04",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "n/a",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "n/a",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "n/a",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -3887,6 +4451,18 @@ const CITIES = {
       "care_distressed": {
         "value": "42.89",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.60",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "17.30",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "30.60",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -3968,6 +4544,18 @@ const CITIES = {
       "care_distressed": {
         "value": "37.41",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "19.40",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "22.00",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "22.80",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -4049,6 +4637,18 @@ const CITIES = {
       "care_distressed": {
         "value": "62.55",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "16.40",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "15.90",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "24.00",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -4130,6 +4730,18 @@ const CITIES = {
       "care_distressed": {
         "value": "42.75",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.80",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "19.70",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "23.20",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -4211,6 +4823,18 @@ const CITIES = {
       "care_distressed": {
         "value": "22.46",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.30",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "24.00",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "22.10",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -4292,6 +4916,18 @@ const CITIES = {
       "care_distressed": {
         "value": "48.16",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.30",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "23.90",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "22.40",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -4373,6 +5009,18 @@ const CITIES = {
       "care_distressed": {
         "value": "39.24",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.40",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "16.70",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "28.50",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -4454,6 +5102,18 @@ const CITIES = {
       "care_distressed": {
         "value": "16.56",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "17.20",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "25.70",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "22.40",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -4535,6 +5195,18 @@ const CITIES = {
       "care_distressed": {
         "value": "37.86",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "16.40",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "18.00",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "21.00",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -4616,6 +5288,18 @@ const CITIES = {
       "care_distressed": {
         "value": "50.66",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "14.50",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "16.90",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "20.40",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -4697,6 +5381,18 @@ const CITIES = {
       "care_distressed": {
         "value": "36.35",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "15.10",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "18.80",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "18.70",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -4778,6 +5474,18 @@ const CITIES = {
       "care_distressed": {
         "value": "54.24",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "15.30",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "11.30",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "25.10",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -4859,6 +5567,18 @@ const CITIES = {
       "care_distressed": {
         "value": "36.64",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "19.30",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "19.60",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "28.00",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -4940,6 +5660,18 @@ const CITIES = {
       "care_distressed": {
         "value": "46.19",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.90",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "23.40",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "24.10",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -5021,6 +5753,18 @@ const CITIES = {
       "care_distressed": {
         "value": "42.32",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "17.30",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "20.00",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "26.10",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -5102,6 +5846,18 @@ const CITIES = {
       "care_distressed": {
         "value": "18.06",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.60",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "28.70",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "20.30",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -5183,6 +5939,18 @@ const CITIES = {
       "care_distressed": {
         "value": "40.58",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "17.00",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "19.40",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "17.10",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -5264,6 +6032,18 @@ const CITIES = {
       "care_distressed": {
         "value": "17.81",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "18.30",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "23.90",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "24.00",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -5345,6 +6125,18 @@ const CITIES = {
       "care_distressed": {
         "value": "52.85",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "16.70",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "17.30",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "23.70",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -5426,6 +6218,18 @@ const CITIES = {
       "care_distressed": {
         "value": "100.76",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "14.70",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "14.10",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "22.00",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   },
@@ -5507,6 +6311,18 @@ const CITIES = {
       "care_distressed": {
         "value": "27.11",
         "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "17.80",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "21.90",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "22.90",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     }
   }

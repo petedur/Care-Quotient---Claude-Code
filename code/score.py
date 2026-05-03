@@ -385,6 +385,13 @@ DASHBOARD_DIAGNOSTIC = {
     "faith_based":      ("nonprofit_density", "faith_based",       "faith-based orgs per 10k (X3x)"),
     "care_distressed":  ("nonprofit_density", "combined_care_per_10k_distressed",
                          "care nonprofits per 10k residents 0–150% FPL"),
+    # CDC PLACES community wellbeing diagnostics (not scored — outcome measures)
+    "mental_distress":  ("places_diagnostics", "pct_frequent_mental_distress",
+                         "% adults with frequent mental distress (CDC PLACES)"),
+    "poor_health":      ("places_diagnostics", "pct_fair_or_poor_health",
+                         "% adults with fair or poor self-rated health (CDC PLACES)"),
+    "depression":       ("places_diagnostics", "pct_depression",
+                         "% adults with diagnosed depression (CDC PLACES)"),
 }
 
 def _fmt_population(n: int) -> str:

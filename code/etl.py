@@ -248,6 +248,42 @@ def load_nursing_homes(conn, city_key: str):
           f"{beds_per_1k} beds/1k 65+ ({facility_count} facilities)")
 
 
+def load_places_diagnostics(conn, city_key: str):
+    raw = DATA_RAW / city_key / "places_diagnostics.csv"
+    if not raw.exists():
+        print(f"  SKIP places_diagnostics for {city_key} (no raw file)")
+        return
+
+    import pandas as pd
+    df = pd.read_csv(raw)
+
+    MEASURE_COLS = {
+        "MHLTH":      "pct_frequent_mental_distress",
+        "GHLTH":      "pct_fair_or_poor_health",
+        "DEPRESSION":  "pct_depression",
+    }
+
+    pop_col = "total_population" if "total_population" in df.columns else None
+
+    for measure_id, sub_metric in MEASURE_COLS.items():
+        if measure_id not in df.columns:
+            continue
+        valid = df.dropna(subset=[measure_id])
+        if valid.empty:
+            continue
+        if pop_col:
+            weighted_sum = (valid[measure_id] * valid[pop_col]).sum()
+            total_pop    = valid[pop_col].sum()
+            city_val     = round(weighted_sum / total_pop, 1) if total_pop else None
+        else:
+            city_val = round(valid[measure_id].mean(), 1)
+
+        if city_val is not None:
+            upsert(conn, city_key, "places_diagnostics", sub_metric, value=city_val)
+
+    print(f"  places_diagnostics loaded for {city_key}")
+
+
 LOADERS = [
     load_nonprofit_density,
     load_residential_stability,
@@ -257,6 +293,7 @@ LOADERS = [
     load_snap_participation,
     load_health_insurance,
     load_nursing_homes,
+    load_places_diagnostics,
 ]
 
 # ── Validation ────────────────────────────────────────────────────────────────
