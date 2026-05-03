@@ -261,6 +261,65 @@ body {
   display: none;
 }
 
+/* ── Tier groups ────────────────────────────────────────────────────────── */
+.tier-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 0 0.4rem;
+  border-top: 1px solid var(--border);
+  margin-top: 0.5rem;
+}
+.tier-group:first-child .tier-header {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0.25rem;
+}
+.tier-header.hidden { display: none; }
+
+.tier-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 1.25rem;
+  border-radius: 3px;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.tier-header-label {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.tier-header-desc {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--ink-muted);
+  margin-left: auto;
+}
+
+/* City page tier display */
+.cq-tier {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.tier-label-text {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ink-mid);
+}
+
 /* ── Pillars explainer ──────────────────────────────────────────────────── */
 .pillars-grid {
   display: grid;

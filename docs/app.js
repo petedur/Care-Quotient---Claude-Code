@@ -143,25 +143,64 @@ function initHomeMap(cities) {
   }, 200);
 }
 
+// ── Tier system ─────────────────────────────────────────────────────────────
+// Four tiers based on absolute score bands, not relative rank.
+// Leading ≥70 | Established ≥62 | Growing ≥53 | Emerging <53
+
+var TIERS = [
+  { num: 1, label: 'Leading',     min: 70,  color: '#2d6a4f', desc: 'Score 70 or above' },
+  { num: 2, label: 'Established', min: 62,  color: '#52b788', desc: 'Score 62–69' },
+  { num: 3, label: 'Growing',     min: 53,  color: '#c49a00', desc: 'Score 53–61' },
+  { num: 4, label: 'Emerging',    min: 0,   color: '#c0392b', desc: 'Score below 53' },
+];
+
+function cqTier(score) {
+  for (var i = 0; i < TIERS.length; i++) {
+    if (score >= TIERS[i].min) return TIERS[i];
+  }
+  return TIERS[TIERS.length - 1];
+}
+
 // ── Home ────────────────────────────────────────────────────────────────────
 
 function renderHome(app) {
   var cities = getCitiesSorted();
   var total  = cities.length;
 
-  var rows = cities.map(function(city, i) {
+  // Group cities into tiers, preserving global rank within each row
+  var tierBuckets = { 1: [], 2: [], 3: [], 4: [] };
+  cities.forEach(function(city, i) {
+    tierBuckets[cqTier(city.cq).num].push({ city: city, rank: i + 1 });
+  });
+
+  var rows = TIERS.map(function(tier) {
+    var bucket = tierBuckets[tier.num];
+    if (!bucket.length) return '';
+    var tierRows = bucket.map(function(item) {
+      var city = item.city;
+      return [
+        '<a class="ranking-row" href="#/city/', city.key, '"',
+          ' role="link" tabindex="0"',
+          ' aria-label="', city.name, ', Care Quotient ', fmt(city.cq), '">',
+          '<span class="r-rank">', item.rank, '</span>',
+          '<span class="r-name">', city.name, '</span>',
+          '<span class="r-state">', city.state, '</span>',
+          '<div class="r-bar">',
+            '<div class="r-bar-fill" data-target="', fmt(city.cq, 1), '"></div>',
+          '</div>',
+          '<span class="r-score">', fmt(city.cq), '</span>',
+        '</a>',
+      ].join('');
+    }).join('');
     return [
-      '<a class="ranking-row" href="#/city/', city.key, '"',
-        ' role="link" tabindex="0"',
-        ' aria-label="', city.name, ', Care Quotient ', fmt(city.cq), '">',
-        '<span class="r-rank">', i + 1, '</span>',
-        '<span class="r-name">',  city.name, '</span>',
-        '<span class="r-state">', city.state, '</span>',
-        '<div class="r-bar">',
-          '<div class="r-bar-fill" data-target="', fmt(city.cq, 1), '"></div>',
+      '<div class="tier-group" data-tier="', tier.num, '">',
+        '<div class="tier-header">',
+          '<span class="tier-badge" style="background:', tier.color, '">T', tier.num, '</span>',
+          '<span class="tier-header-label">', tier.label, '</span>',
+          '<span class="tier-header-desc">', tier.desc, ' &nbsp;&middot;&nbsp; ', bucket.length, ' ', bucket.length === 1 ? 'city' : 'cities', '</span>',
         '</div>',
-        '<span class="r-score">', fmt(city.cq), '</span>',
-      '</a>'
+        tierRows,
+      '</div>',
     ].join('');
   }).join('');
 
@@ -207,7 +246,7 @@ function renderHome(app) {
       '</div>',
 
       '<div class="col-headers">',
-        '<span class="col-h right">#</span>',
+        '<span class="col-h right">Rank</span>',
         '<span class="col-h">City</span>',
         '<span class="col-h">State</span>',
         '<span class="col-h">Care Quotient</span>',
@@ -317,6 +356,11 @@ function renderHome(app) {
       var show  = !q || name.indexOf(q) !== -1 || state.indexOf(q) !== -1;
       row.classList.toggle('hidden', !show);
       if (show) visible++;
+    });
+    // Hide tier group headers when all their rows are hidden
+    rankingTable.querySelectorAll('.tier-group').forEach(function(group) {
+      var anyVisible = group.querySelectorAll('.ranking-row:not(.hidden)').length > 0;
+      group.querySelector('.tier-header').classList.toggle('hidden', !anyVisible);
     });
     noResults.style.display = visible === 0 ? 'block' : 'none';
   });
@@ -724,6 +768,10 @@ function renderCity(app, key) {
         '<div class="cq-aside">',
           '<div class="cq-label">Care Quotient</div>',
           '<div class="cq-rank">Ranked ', rank, ' of ', total, ' cities</div>',
+          '<div class="cq-tier">',
+            '<span class="tier-badge" style="background:', cqTier(city.cq).color, '">T', cqTier(city.cq).num, '</span>',
+            '<span class="tier-label-text">', cqTier(city.cq).label, '</span>',
+          '</div>',
         '</div>',
       '</div>',
 
