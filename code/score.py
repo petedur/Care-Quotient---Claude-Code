@@ -9,18 +9,23 @@ Each metric is scored against a theoretical ideal (score = value / benchmark * 1
 capped at 100). Benchmarks represent the level at which a city would be considered
 to fully meet that dimension of care need. See methodology.md for full rationale.
 
-Benchmarks:
-  Pillar 1 — Social Fabric (40% of CQ)
-    residential_stability    95%     — near-zero involuntary displacement
-    housing_cost_burden      90%     — 90% not burdened (10% burdened ceiling)
+Pillar structure grounded in Tronto (1993) phases of care and Putnam/Sampson
+social capital and collective efficacy research. See methodology.md §3 and the
+"What is Care?" theory page for full theoretical grounding.
 
-  Pillar 2 — Institutions of Care (35% of CQ)
+Benchmarks:
+  Pillar 1 — Social & Relational Care (40% of CQ)
+    residential_stability    95%     — near-zero involuntary displacement
     combined_care (PEFK)     25/10k  — combined P+E+F+K nonprofit density
+    library_density          5/100k  — P90 across 68 cities; aspirational standard
+
+  Pillar 2 — Institutional Care (35% of CQ)
     fqhc_density             15/100k — eliminates HRSA shortage designation
     nursing_home_capacity    50/1k65 — 5% of 65+ pop in skilled nursing (literature-based)
 
-  Pillar 3 — Reach (25% of CQ)
-    health_insurance         95%     — near-universal coverage
+  Pillar 3 — Economic Access to Care (25% of CQ)
+    health_insurance         95%     — near-universal Medicaid/CHIP coverage (B27007 swap pending)
+    housing_cost_burden      90%     — 90% not burdened (10% burdened ceiling)
     snap_coverage_rate       85%     — USDA FNS national participation target
 
 Usage:
@@ -47,57 +52,68 @@ OUTPUTS_DIR.mkdir(exist_ok=True)
 # See methodology.md for full benchmark rationale and literature citations.
 
 SCORED_METRICS = [
-    # Pillar 1 — Social Fabric (40% of CQ)
-    #   Residential stability:  65% — foundational precondition for network formation.
-    #     Factor analysis confirms this as the dominant signal in its dimension (loading 0.70).
-    #     Putnam (2000); Sampson et al. (1997).
-    #   Housing cost burden:    35% — counter-weight; flags forced vs. chosen stability.
-    #     Agha et al. (2024); Desmond & Bell. Raised from 12% after factor analysis showed
-    #     it loads cleanly with stability as a distinct housing/stability dimension.
-    ("residential_stability",     "pct_same_house",   "pillar1", 95.0, 0.65),
-    ("housing_cost_burden",       "pct_not_burdened", "pillar1", 90.0, 0.35),
+    # Pillar 1 — Social & Relational Care (40% of CQ)
+    #   Tronto (1993): attentiveness + responsibility phases; social fabric is the precondition
+    #   for all other care — you cannot have institutional care without social acknowledgment
+    #   of need. Putnam (2000) bridging capital; Sampson et al. (1997) collective efficacy.
+    #
+    #   Residential stability:  50% — foundational precondition for relational network
+    #     formation. Factor analysis loading 0.70. Putnam (2000); Sampson et al. (1997).
+    #   Nonprofit density:      35% — organized community care response (Tronto: competence).
+    #     NTEE P+E+F+K. Factor analysis showed r=0.85 across 71 cities; single dimension.
+    #   Library density:        15% — public community infrastructure and de facto distress
+    #     absorption site. Explicitly mentioned by mentor as an institution of care.
+    ("residential_stability",     "pct_same_house",      "pillar1", 95.0, 0.50),
+    ("nonprofit_density",         "combined_care",       "pillar1", 25.0, 0.35),
+    ("library_density",           "density_per_100k",    "pillar1",  5.0, 0.15),
 
-    # Pillar 2 — Institutions of Care (35% of CQ)
-    #   Combined NP density (NTEE P+E+F+K): 35% — care nonprofit organizational density.
-    #     Factor analysis showed NTEE P and NTEE E/F/K correlate at r=0.85 across 71 cities
-    #     and load on the same factor — they measure one underlying dimension. Collapsed into
-    #     a single metric. Benchmark: 25/10k combined. Weight reduced from 50% (V3) to 35%
-    #     to accommodate nursing home capacity as a third Pillar 2 metric.
-    #   FQHC density: 35% — strongest evidence base; federal mandate; most directly serves
-    #     vulnerable populations. Rosenbaum et al. (2011); Shi et al. Weight reduced from
-    #     50% (V3) to 35% to accommodate nursing home capacity.
-    #   Nursing home capacity: 30% — beds per 1,000 residents 65+. Benchmark: 50/1k =
-    #     5% of elderly in skilled nursing care at any given time (literature-based threshold
-    #     for adequate institutionalized elder care capacity). Weight is provisional pending
-    #     factor analysis rerun with full 68-city dataset.
-    ("nonprofit_density",         "combined_care",      "pillar2", 25.0, 0.35),
-    ("health_center_density",     "density_per_100k",   "pillar2", 15.0, 0.35),
-    ("nursing_home_capacity",     "beds_per_1k_65plus", "pillar2", 50.0, 0.30),
+    # Pillar 2 — Institutional Care (35% of CQ)
+    #   Tronto (1993): competence phase — does the city have infrastructure to absorb
+    #   distress at scale when informal networks are insufficient? Nussbaum capabilities:
+    #   bodily health and affiliation require formal institutional backup.
+    #
+    #   FQHC density:           55% — strongest evidence base; federal safety-net mandate;
+    #     most directly serves vulnerable populations regardless of ability to pay.
+    #     Rosenbaum et al. (2011); Shi et al.
+    #   Nursing home capacity:  45% — certified beds per 1k residents 65+. Benchmark: 50/1k
+    #     = 5% of elderly in skilled nursing care (literature-based adequacy threshold).
+    ("health_center_density",     "density_per_100k",    "pillar2", 15.0, 0.55),
+    ("nursing_home_capacity",     "beds_per_1k_65plus",  "pillar2", 50.0, 0.45),
 
-    # Pillar 3 — Reach (25% of CQ)
-    #   Health insurance:        65% — dominant signal in Reach dimension (factor loading 0.84).
-    #     Whether people can access health systems when they need care.
-    #   SNAP coverage rate:      35% — food assistance reach among likely-eligible households.
-    #     Independent signal from health insurance (r=0.33); captures a different failure mode.
-    ("health_insurance_coverage", "pct_insured",      "pillar3", 95.0, 0.65),
-    ("snap_participation",        "coverage_rate",    "pillar3", 85.0, 0.35),
+    # Pillar 3 — Economic Access to Care (25% of CQ)
+    #   Enabling conditions — whether care infrastructure can actually reach those who need it.
+    #   Folbre (2001) political economy of care; Sen (1999) capability approach: resources
+    #   are necessary but not sufficient; access barriers determine whether care lands.
+    #
+    #   Healthcare coverage:    40% — Medicaid/CHIP reach (B27001 now; B27007 swap pending).
+    #     Whether vulnerable residents can access formal care systems.
+    #   Housing cost burden:    35% — economic conditions that enable or prevent care.
+    #     Desmond & Bell; Agha et al. (2024). Moved from Pillar 1 (V4) — belongs in access.
+    #   SNAP coverage:          25% — food security reach; narrower scope than other metrics.
+    #     Independent signal (r=0.33 with healthcare coverage).
+    ("health_insurance_coverage", "pct_insured",         "pillar3", 95.0, 0.40),
+    ("housing_cost_burden",       "pct_not_burdened",    "pillar3", 90.0, 0.35),
+    ("snap_participation",        "coverage_rate",       "pillar3", 85.0, 0.25),
 ]
 
 # Inter-pillar weights for the Care Quotient
-# 40/35/25: Pillar 1 primary (care ethics, relational primacy — social fabric is the
-# precondition for all other care); Pillar 2 institutional necessity (Nussbaum capabilities);
-# Pillar 3 reach. Retained from V2; V4 will revisit after Medicaid/CHIP metric replacement.
+# 40/35/25: Pillar 1 primary — relational infrastructure is theoretically prior to
+# institutional and access dimensions (Tronto: attentiveness and responsibility precede
+# competence; Putnam/Sampson: social fabric is the precondition for all other care).
+# Pillar 2 institutional necessity (Nussbaum capabilities). Pillar 3 enabling conditions.
 PILLAR_WEIGHTS = {"pillar1": 0.40, "pillar2": 0.35, "pillar3": 0.25}
 
 # Diagnostic metrics — collected and reported, not scored
 DIAGNOSTIC_METRICS = [
-    ("library_density",   "density_per_100k",  "Libraries per 100k residents"),
+    # library_density.density_per_100k is now a scored metric (Pillar 1)
     ("library_density",   "visits_per_capita", "Library visits per capita"),
     # NP sub-components retained as diagnostics after collapsing into combined_care
     ("nonprofit_density", "social_support",    "Human services nonprofits per 10k (NTEE P)"),
     ("nonprofit_density", "care_institutions", "Health/MH/food nonprofits per 10k (NTEE E/F/K)"),
     ("nonprofit_density", "all_care",          "All care-related nonprofits per 10k (P+E+F+K+X3x)"),
-    # Faith-based: X30 captures congregations, not specifically care orgs.
+    # Faith-based: X30 codes capture only formally-registered faith social service orgs.
+    # Understates true faith-based care (many congregations file under X20/X21/X22).
+    # Retained as diagnostic; not scored due to data quality. See methodology §3.3.
     ("nonprofit_density", "faith_based",       "Faith-based orgs per 10k (X3x, diagnostic only)"),
     # Need-adjusted shadow metric: combined care NPs per 10k residents at 0-150% FPL.
     # Allows comparison between total-pop and need-adjusted framings (see methodology §3.3).
@@ -106,19 +122,20 @@ DIAGNOSTIC_METRICS = [
 ]
 
 PILLAR_LABELS = {
-    "pillar1": "Social Fabric",
-    "pillar2": "Institutions of Care",
-    "pillar3": "Reach",
+    "pillar1": "Social & Relational Care",
+    "pillar2": "Institutional Care",
+    "pillar3": "Economic Access to Care",
 }
 
 # Human-readable metric labels for output
 METRIC_LABELS = {
     "residential_stability.pct_same_house":        "Residential Stability",
-    "housing_cost_burden.pct_not_burdened":        "Housing Affordability (% not cost-burdened)",
     "nonprofit_density.combined_care":             "Care Nonprofits (P+E+F+K per 10k)",
+    "library_density.density_per_100k":            "Library Density (per 100k residents)",
     "health_center_density.density_per_100k":      "FQHCs (per 100k)",
-    "nursing_home_capacity.beds_per_1k_65plus":     "Nursing Home Capacity (beds/1k 65+)",
-    "health_insurance_coverage.pct_insured":       "Health Insurance Coverage Rate",
+    "nursing_home_capacity.beds_per_1k_65plus":    "Nursing Home Capacity (beds/1k 65+)",
+    "health_insurance_coverage.pct_insured":       "Healthcare Coverage Rate",
+    "housing_cost_burden.pct_not_burdened":        "Housing Affordability (% not cost-burdened)",
     "snap_participation.coverage_rate":            "SNAP Coverage Rate",
     # Diagnostic only (not scored)
     "nonprofit_density.social_support":            "Human Services Nonprofits (NTEE P, per 10k)",
@@ -262,8 +279,8 @@ def write_results(conn, results: pd.DataFrame, raw_df: pd.DataFrame):
     csv_out = results[[c for c in cq_col if c in results.columns]].copy()
     csv_out.index.name = "city"
     csv_out = csv_out.sort_values("care_quotient", ascending=False)
-    rename = {"care_quotient": "Care Quotient", "pillar1": "Social Fabric",
-               "pillar2": "Institutions of Care", "pillar3": "Reach"}
+    rename = {"care_quotient": "Care Quotient", "pillar1": "Social & Relational Care",
+               "pillar2": "Institutional Care", "pillar3": "Economic Access to Care"}
     rename.update({c: METRIC_LABELS.get(c.replace("score_", ""), c) for c in score_cols})
     csv_out.columns = [rename.get(c, c) for c in csv_out.columns]
     csv_path = OUTPUTS_DIR / "care_capacity_scores.csv"
@@ -274,9 +291,9 @@ def write_results(conn, results: pd.DataFrame, raw_df: pd.DataFrame):
     output = {}
     for city in results.index:
         output[city] = {
-            "pillar1_social_fabric":        results.loc[city, "pillar1"] if "pillar1" in results.columns else None,
-            "pillar2_institutions_of_care": results.loc[city, "pillar2"] if "pillar2" in results.columns else None,
-            "pillar3_reach":                results.loc[city, "pillar3"] if "pillar3" in results.columns else None,
+            "pillar1_social_relational_care":  results.loc[city, "pillar1"] if "pillar1" in results.columns else None,
+            "pillar2_institutional_care":      results.loc[city, "pillar2"] if "pillar2" in results.columns else None,
+            "pillar3_economic_access":         results.loc[city, "pillar3"] if "pillar3" in results.columns else None,
             "metrics": {},
         }
         for metric, sub_metric, pillar, benchmark, w in SCORED_METRICS:
@@ -309,26 +326,26 @@ def write_results(conn, results: pd.DataFrame, raw_df: pd.DataFrame):
 # ── Dashboard metric display config ──────────────────────────────────────────
 # Maps internal metric keys to the display format expected by the dashboard JS.
 DASHBOARD_METRICS = {
-    # Pillar 1 — Social Fabric
+    # Pillar 1 — Social & Relational Care
     "residential_stability": {
         "key": "residential_stability",
         "raw_key": ("residential_stability", "pct_same_house"),
         "benchmark": "95%", "unit": "% same house 1+ yr",
         "fmt": lambda v: f"{v:.1f}%",
     },
-    "housing_cost_burden": {
-        "key": "housing_cost_burden",
-        "raw_key": ("housing_cost_burden", "pct_not_burdened"),
-        "benchmark": "90%", "unit": "% households not cost-burdened",
-        "fmt": lambda v: f"{v:.1f}%",
-    },
-    # Pillar 2 — Institutions of Care
     "combined_care": {
         "key": "combined_care",
         "raw_key": ("nonprofit_density", "combined_care"),
         "benchmark": "25 / 10k", "unit": "care nonprofits (P+E+F+K) per 10k",
         "fmt": lambda v: f"{v:.2f}",
     },
+    "library_density": {
+        "key": "library_density",
+        "raw_key": ("library_density", "density_per_100k"),
+        "benchmark": "5 / 100k", "unit": "public libraries per 100,000 residents",
+        "fmt": lambda v: f"{v:.2f}",
+    },
+    # Pillar 2 — Institutional Care
     "fqhc": {
         "key": "fqhc",
         "raw_key": ("health_center_density", "density_per_100k"),
@@ -341,11 +358,17 @@ DASHBOARD_METRICS = {
         "benchmark": "50 / 1k 65+", "unit": "certified beds per 1,000 residents 65+",
         "fmt": lambda v: f"{v:.1f}",
     },
-    # Pillar 3 — Reach
+    # Pillar 3 — Economic Access to Care
     "health_insurance": {
         "key": "health_insurance",
         "raw_key": ("health_insurance_coverage", "pct_insured"),
-        "benchmark": "95%", "unit": "% population with health insurance",
+        "benchmark": "95%", "unit": "% population with healthcare coverage",
+        "fmt": lambda v: f"{v:.1f}%",
+    },
+    "housing_cost_burden": {
+        "key": "housing_cost_burden",
+        "raw_key": ("housing_cost_burden", "pct_not_burdened"),
+        "benchmark": "90%", "unit": "% households not cost-burdened",
         "fmt": lambda v: f"{v:.1f}%",
     },
     "snap_coverage": {
@@ -357,7 +380,7 @@ DASHBOARD_METRICS = {
 }
 
 DASHBOARD_DIAGNOSTIC = {
-    "libraries":        ("library_density",   "density_per_100k",  "libraries per 100k"),
+    # library_density.density_per_100k promoted to scored metric (Pillar 1)
     "lib_visits":       ("library_density",   "visits_per_capita", "library visits per capita"),
     "faith_based":      ("nonprofit_density", "faith_based",       "faith-based orgs per 10k (X3x)"),
     "care_distressed":  ("nonprofit_density", "combined_care_per_10k_distressed",
@@ -385,10 +408,12 @@ CITY_DISPLAY = {
 # Score key mapping: dashboard metric key -> score.py results column name
 SCORE_COL = {
     "residential_stability": "score_residential_stability.pct_same_house",
-    "housing_cost_burden":   "score_housing_cost_burden.pct_not_burdened",
     "combined_care":         "score_nonprofit_density.combined_care",
+    "library_density":       "score_library_density.density_per_100k",
     "fqhc":                  "score_health_center_density.density_per_100k",
+    "nursing_home":          "score_nursing_home_capacity.beds_per_1k_65plus",
     "health_insurance":      "score_health_insurance_coverage.pct_insured",
+    "housing_cost_burden":   "score_housing_cost_burden.pct_not_burdened",
     "snap_coverage":         "score_snap_participation.coverage_rate",
 }
 
@@ -429,9 +454,9 @@ def write_dashboard_data(score_output: dict, raw_df: pd.DataFrame):
             "state":      display["state"],
             "population": display["population"],
             "cq":         city_scores.get("care_quotient", 0),
-            "pillar1":    city_scores.get("pillar1_social_fabric", 0),
-            "pillar2":    city_scores.get("pillar2_institutions_of_care", 0),
-            "pillar3":    city_scores.get("pillar3_reach", 0),
+            "pillar1":    city_scores.get("pillar1_social_relational_care", 0),
+            "pillar2":    city_scores.get("pillar2_institutional_care", 0),
+            "pillar3":    city_scores.get("pillar3_economic_access", 0),
             "metrics":    metrics,
             "diagnostic": {},  # filled below
         }

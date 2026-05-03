@@ -6,10 +6,10 @@ const CITIES = {
     "name": "Albuquerque",
     "state": "NM",
     "population": "565k residents",
-    "cq": 66.2,
-    "pillar1": 83.3,
-    "pillar2": 30.5,
-    "pillar3": 88.8,
+    "cq": 56.8,
+    "pillar1": 58.3,
+    "pillar2": 36.5,
+    "pillar3": 82.9,
     "metrics": {
       "residential_stability": {
         "score": 88.5,
@@ -18,19 +18,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 73.7,
-        "raw": 66.32,
-        "rawFmt": "66.3%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 18.9,
         "raw": 4.73,
         "rawFmt": "4.73",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 49.6,
+        "raw": 2.48,
+        "rawFmt": "2.48",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 24.8,
@@ -51,7 +51,14 @@ const CITIES = {
         "raw": 92.64,
         "rawFmt": "92.6%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 73.7,
+        "raw": 66.32,
+        "rawFmt": "66.3%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 72.6,
@@ -62,10 +69,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.48",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -84,10 +87,10 @@ const CITIES = {
     "name": "Anchorage",
     "state": "AK",
     "population": "291k residents",
-    "cq": 59.6,
-    "pillar1": 82.7,
-    "pillar2": 15.6,
-    "pillar3": 84.4,
+    "cq": 46.4,
+    "pillar1": 55.5,
+    "pillar2": 11.7,
+    "pillar3": 80.5,
     "metrics": {
       "residential_stability": {
         "score": 86.8,
@@ -96,19 +99,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 75.2,
-        "raw": 67.67,
-        "rawFmt": "67.7%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 22.8,
         "raw": 5.7,
         "rawFmt": "5.70",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 27.4,
+        "raw": 1.37,
+        "rawFmt": "1.37",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 9.1,
@@ -129,7 +132,14 @@ const CITIES = {
         "raw": 89.68,
         "rawFmt": "89.7%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 75.2,
+        "raw": 67.67,
+        "rawFmt": "67.7%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 65.8,
@@ -140,10 +150,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "1.37",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -162,10 +168,10 @@ const CITIES = {
     "name": "Atlanta",
     "state": "GA",
     "population": "499k residents",
-    "cq": 74.4,
-    "pillar1": 79.5,
-    "pillar2": 61.8,
-    "pillar3": 83.9,
+    "cq": 70.7,
+    "pillar1": 85.4,
+    "pillar2": 48.3,
+    "pillar3": 78.6,
     "metrics": {
       "residential_stability": {
         "score": 84.2,
@@ -174,19 +180,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 70.7,
-        "raw": 63.64,
-        "rawFmt": "63.6%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 86.0,
         "raw": 21.5,
         "rawFmt": "21.50",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 88.2,
+        "raw": 4.41,
+        "rawFmt": "4.41",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 32.1,
@@ -207,7 +213,14 @@ const CITIES = {
         "raw": 89.38,
         "rawFmt": "89.4%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 70.7,
+        "raw": 63.64,
+        "rawFmt": "63.6%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 64.9,
@@ -218,10 +231,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "4.41",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -240,10 +249,10 @@ const CITIES = {
     "name": "Aurora",
     "state": "CO",
     "population": "367k residents",
-    "cq": 63.4,
-    "pillar1": 79.5,
-    "pillar2": 31.8,
-    "pillar3": 81.9,
+    "cq": 54.0,
+    "pillar1": 59.9,
+    "pillar2": 31.2,
+    "pillar3": 76.3,
     "metrics": {
       "residential_stability": {
         "score": 85.8,
@@ -252,19 +261,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 67.7,
-        "raw": 60.91,
-        "rawFmt": "60.9%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 32.1,
         "raw": 8.02,
         "rawFmt": "8.02",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 38.2,
+        "raw": 1.91,
+        "rawFmt": "1.91",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 12.7,
@@ -285,7 +294,14 @@ const CITIES = {
         "raw": 87.67,
         "rawFmt": "87.7%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 67.7,
+        "raw": 60.91,
+        "rawFmt": "60.9%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 62.6,
@@ -296,10 +312,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "1.91",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -318,10 +330,10 @@ const CITIES = {
     "name": "Austin",
     "state": "TX",
     "population": "962k residents",
-    "cq": 63.1,
-    "pillar1": 78.1,
-    "pillar2": 38.5,
-    "pillar3": 73.7,
+    "cq": 56.3,
+    "pillar1": 60.4,
+    "pillar2": 40.7,
+    "pillar3": 71.6,
     "metrics": {
       "residential_stability": {
         "score": 82.0,
@@ -330,19 +342,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 70.9,
-        "raw": 63.8,
-        "rawFmt": "63.8%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 33.9,
         "raw": 8.48,
         "rawFmt": "8.48",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 50.0,
+        "raw": 2.5,
+        "rawFmt": "2.50",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 30.5,
@@ -363,7 +375,14 @@ const CITIES = {
         "raw": 87.29,
         "rawFmt": "87.3%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 70.9,
+        "raw": 63.8,
+        "rawFmt": "63.8%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 39.9,
@@ -374,10 +393,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.50",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -396,10 +411,10 @@ const CITIES = {
     "name": "Bakersfield",
     "state": "CA",
     "population": "407k residents",
-    "cq": 66.5,
-    "pillar1": 82.0,
-    "pillar2": 33.0,
-    "pillar3": 88.6,
+    "cq": 56.7,
+    "pillar1": 53.4,
+    "pillar2": 43.8,
+    "pillar3": 80.0,
     "metrics": {
       "residential_stability": {
         "score": 90.9,
@@ -408,19 +423,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 65.6,
-        "raw": 59.07,
-        "rawFmt": "59.1%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 12.3,
         "raw": 3.07,
         "rawFmt": "3.07",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 24.6,
+        "raw": 1.23,
+        "rawFmt": "1.23",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 31.1,
@@ -441,7 +456,14 @@ const CITIES = {
         "raw": 92.33,
         "rawFmt": "92.3%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 65.6,
+        "raw": 59.07,
+        "rawFmt": "59.1%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 72.6,
@@ -452,10 +474,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "1.23",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -474,10 +492,10 @@ const CITIES = {
     "name": "Baltimore",
     "state": "MD",
     "population": "586k residents",
-    "cq": 76.3,
-    "pillar1": 81.8,
-    "pillar2": 54.8,
-    "pillar3": 97.7,
+    "cq": 70.9,
+    "pillar1": 76.2,
+    "pillar2": 53.2,
+    "pillar3": 87.2,
     "metrics": {
       "residential_stability": {
         "score": 89.2,
@@ -486,19 +504,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 68.1,
-        "raw": 61.26,
-        "rawFmt": "61.3%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 56.6,
         "raw": 14.15,
         "rawFmt": "14.15",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 78.6,
+        "raw": 3.93,
+        "rawFmt": "3.93",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 30.7,
@@ -519,7 +537,14 @@ const CITIES = {
         "raw": 94.69,
         "rawFmt": "94.7%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 68.1,
+        "raw": 61.26,
+        "rawFmt": "61.3%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 94.1,
@@ -530,10 +555,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "3.93",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -552,10 +573,10 @@ const CITIES = {
     "name": "Baton Rouge",
     "state": "LA",
     "population": "228k residents",
-    "cq": 76.7,
-    "pillar1": 78.2,
-    "pillar2": 70.7,
-    "pillar3": 82.6,
+    "cq": 77.4,
+    "pillar1": 68.0,
+    "pillar2": 88.5,
+    "pillar3": 77.0,
     "metrics": {
       "residential_stability": {
         "score": 83.5,
@@ -564,19 +585,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 68.5,
-        "raw": 61.63,
-        "rawFmt": "61.6%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 37.3,
         "raw": 9.32,
         "rawFmt": "9.32",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 87.8,
+        "raw": 4.39,
+        "rawFmt": "4.39",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 82.1,
@@ -597,7 +618,14 @@ const CITIES = {
         "raw": 89.04,
         "rawFmt": "89.0%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 68.5,
+        "raw": 61.63,
+        "rawFmt": "61.6%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 62.0,
@@ -608,10 +636,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "4.39",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -630,10 +654,10 @@ const CITIES = {
     "name": "Birmingham",
     "state": "AL",
     "population": "212k residents",
-    "cq": 70.5,
-    "pillar1": 78.1,
-    "pillar2": 52.0,
-    "pillar3": 84.1,
+    "cq": 68.3,
+    "pillar1": 71.0,
+    "pillar2": 59.2,
+    "pillar3": 76.9,
     "metrics": {
       "residential_stability": {
         "score": 85.1,
@@ -642,19 +666,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 65.1,
-        "raw": 58.61,
-        "rawFmt": "58.6%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 38.4,
         "raw": 9.61,
         "rawFmt": "9.61",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 100.0,
+        "raw": 7.54,
+        "rawFmt": "7.54",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 56.5,
@@ -675,7 +699,14 @@ const CITIES = {
         "raw": 87.79,
         "rawFmt": "87.8%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 65.1,
+        "raw": 58.61,
+        "rawFmt": "58.6%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 68.8,
@@ -686,10 +717,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "7.54",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -708,10 +735,10 @@ const CITIES = {
     "name": "Boston",
     "state": "MA",
     "population": "676k residents",
-    "cq": 73.9,
-    "pillar1": 77.0,
-    "pillar2": 55.6,
-    "pillar3": 94.6,
+    "cq": 69.8,
+    "pillar1": 68.6,
+    "pillar2": 61.1,
+    "pillar3": 83.8,
     "metrics": {
       "residential_stability": {
         "score": 83.8,
@@ -720,19 +747,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 64.5,
-        "raw": 58.03,
-        "rawFmt": "58.0%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 46.0,
         "raw": 11.5,
         "rawFmt": "11.50",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 71.0,
+        "raw": 3.55,
+        "rawFmt": "3.55",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 70.1,
@@ -753,7 +780,14 @@ const CITIES = {
         "raw": 96.74,
         "rawFmt": "96.7%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 64.5,
+        "raw": 58.03,
+        "rawFmt": "58.0%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 84.7,
@@ -764,10 +798,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "3.55",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -786,10 +816,10 @@ const CITIES = {
     "name": "Buffalo",
     "state": "NY",
     "population": "278k residents",
-    "cq": 73.6,
-    "pillar1": 82.8,
-    "pillar2": 47.1,
-    "pillar3": 96.0,
+    "cq": 67.6,
+    "pillar1": 69.9,
+    "pillar2": 51.1,
+    "pillar3": 87.2,
     "metrics": {
       "residential_stability": {
         "score": 88.9,
@@ -798,19 +828,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 71.4,
-        "raw": 64.28,
-        "rawFmt": "64.3%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 38.8,
         "raw": 9.7,
         "rawFmt": "9.70",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 79.0,
+        "raw": 3.95,
+        "rawFmt": "3.95",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 31.1,
@@ -831,7 +861,14 @@ const CITIES = {
         "raw": 96.05,
         "rawFmt": "96.0%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 71.4,
+        "raw": 64.28,
+        "rawFmt": "64.3%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 88.7,
@@ -842,10 +879,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "3.95",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -864,10 +897,10 @@ const CITIES = {
     "name": "Charlotte",
     "state": "NC",
     "population": "875k residents",
-    "cq": 64.3,
-    "pillar1": 82.1,
-    "pillar2": 33.2,
-    "pillar3": 79.3,
+    "cq": 54.4,
+    "pillar1": 64.1,
+    "pillar2": 27.6,
+    "pillar3": 76.5,
     "metrics": {
       "residential_stability": {
         "score": 86.6,
@@ -876,19 +909,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 73.7,
-        "raw": 66.32,
-        "rawFmt": "66.3%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 42.9,
         "raw": 10.73,
         "rawFmt": "10.73",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 38.8,
+        "raw": 1.94,
+        "rawFmt": "1.94",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 15.3,
@@ -909,7 +942,14 @@ const CITIES = {
         "raw": 87.49,
         "rawFmt": "87.5%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 73.7,
+        "raw": 66.32,
+        "rawFmt": "66.3%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 55.4,
@@ -920,10 +960,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "1.94",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -942,10 +978,10 @@ const CITIES = {
     "name": "Chicago",
     "state": "IL",
     "population": "2.7M residents",
-    "cq": 73.9,
-    "pillar1": 81.4,
-    "pillar2": 53.5,
-    "pillar3": 90.6,
+    "cq": 69.0,
+    "pillar1": 65.3,
+    "pillar2": 63.7,
+    "pillar3": 82.2,
     "metrics": {
       "residential_stability": {
         "score": 88.9,
@@ -954,19 +990,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 67.5,
-        "raw": 60.78,
-        "rawFmt": "60.8%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 33.8,
         "raw": 8.46,
         "rawFmt": "8.46",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 60.0,
+        "raw": 3.0,
+        "rawFmt": "3.00",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 47.9,
@@ -987,7 +1023,14 @@ const CITIES = {
         "raw": 90.11,
         "rawFmt": "90.1%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 67.5,
+        "raw": 60.78,
+        "rawFmt": "60.8%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 82.6,
@@ -998,10 +1041,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "3.00",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -1020,10 +1059,10 @@ const CITIES = {
     "name": "Cincinnati",
     "state": "OH",
     "population": "309k residents",
-    "cq": 79.5,
-    "pillar1": 78.5,
-    "pillar2": 76.8,
-    "pillar3": 84.8,
+    "cq": 81.0,
+    "pillar1": 74.5,
+    "pillar2": 90.0,
+    "pillar3": 78.9,
     "metrics": {
       "residential_stability": {
         "score": 82.8,
@@ -1032,19 +1071,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 70.4,
-        "raw": 63.4,
-        "rawFmt": "63.4%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 51.8,
         "raw": 12.96,
         "rawFmt": "12.96",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 100.0,
+        "raw": 5.82,
+        "rawFmt": "5.82",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 81.9,
@@ -1065,7 +1104,14 @@ const CITIES = {
         "raw": 92.85,
         "rawFmt": "92.8%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 70.4,
+        "raw": 63.4,
+        "rawFmt": "63.4%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 60.7,
@@ -1076,10 +1122,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "5.82",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -1098,10 +1140,10 @@ const CITIES = {
     "name": "Cleveland",
     "state": "OH",
     "population": "373k residents",
-    "cq": 78.0,
-    "pillar1": 79.3,
-    "pillar2": 66.0,
-    "pillar3": 92.6,
+    "cq": 77.0,
+    "pillar1": 76.4,
+    "pillar2": 73.0,
+    "pillar3": 83.4,
     "metrics": {
       "residential_stability": {
         "score": 85.7,
@@ -1110,19 +1152,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 67.4,
-        "raw": 60.65,
-        "rawFmt": "60.6%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 53.0,
         "raw": 13.26,
         "rawFmt": "13.26",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 100.0,
+        "raw": 7.78,
+        "rawFmt": "7.78",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 75.1,
@@ -1143,7 +1185,14 @@ const CITIES = {
         "raw": 92.74,
         "rawFmt": "92.7%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 67.4,
+        "raw": 60.65,
+        "rawFmt": "60.6%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 83.2,
@@ -1154,10 +1203,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "7.78",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -1176,10 +1221,10 @@ const CITIES = {
     "name": "Colorado Springs",
     "state": "CO",
     "population": "479k residents",
-    "cq": 64.3,
-    "pillar1": 79.1,
-    "pillar2": 32.5,
-    "pillar3": 85.1,
+    "cq": 54.6,
+    "pillar1": 55.9,
+    "pillar2": 35.3,
+    "pillar3": 79.6,
     "metrics": {
       "residential_stability": {
         "score": 83.1,
@@ -1188,19 +1233,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 71.6,
-        "raw": 64.45,
-        "rawFmt": "64.5%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 26.6,
         "raw": 6.64,
         "rawFmt": "6.64",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 33.4,
+        "raw": 1.67,
+        "rawFmt": "1.67",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 22.3,
@@ -1221,7 +1266,14 @@ const CITIES = {
         "raw": 91.59,
         "rawFmt": "91.6%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 71.6,
+        "raw": 64.45,
+        "rawFmt": "64.5%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 64.1,
@@ -1232,10 +1284,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "1.67",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -1254,10 +1302,10 @@ const CITIES = {
     "name": "Columbus",
     "state": "OH",
     "population": "906k residents",
-    "cq": 65.4,
-    "pillar1": 79.5,
-    "pillar2": 37.8,
-    "pillar3": 81.6,
+    "cq": 57.7,
+    "pillar1": 60.5,
+    "pillar2": 40.2,
+    "pillar3": 77.7,
     "metrics": {
       "residential_stability": {
         "score": 83.1,
@@ -1266,19 +1314,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 72.9,
-        "raw": 65.61,
-        "rawFmt": "65.6%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 32.4,
         "raw": 8.11,
         "rawFmt": "8.11",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 50.8,
+        "raw": 2.54,
+        "rawFmt": "2.54",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 22.1,
@@ -1299,7 +1347,14 @@ const CITIES = {
         "raw": 89.58,
         "rawFmt": "89.6%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 72.9,
+        "raw": 65.61,
+        "rawFmt": "65.6%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 58.0,
@@ -1310,10 +1365,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.54",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -1332,10 +1383,10 @@ const CITIES = {
     "name": "Corpus Christi",
     "state": "TX",
     "population": "318k residents",
-    "cq": 63.5,
-    "pillar1": 82.6,
-    "pillar2": 28.2,
-    "pillar3": 82.5,
+    "cq": 54.6,
+    "pillar1": 55.4,
+    "pillar2": 36.1,
+    "pillar3": 79.3,
     "metrics": {
       "residential_stability": {
         "score": 87.2,
@@ -1344,19 +1395,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 74.2,
-        "raw": 66.74,
-        "rawFmt": "66.7%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 12.1,
         "raw": 3.02,
         "rawFmt": "3.02",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 50.4,
+        "raw": 2.52,
+        "rawFmt": "2.52",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 6.3,
@@ -1377,7 +1428,14 @@ const CITIES = {
         "raw": 82.43,
         "rawFmt": "82.4%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 74.2,
+        "raw": 66.74,
+        "rawFmt": "66.7%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 74.6,
@@ -1388,10 +1446,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.52",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -1410,10 +1464,10 @@ const CITIES = {
     "name": "Dallas",
     "state": "TX",
     "population": "1.3M residents",
-    "cq": 61.5,
-    "pillar1": 80.5,
-    "pillar2": 34.2,
-    "pillar3": 69.4,
+    "cq": 53.8,
+    "pillar1": 63.7,
+    "pillar2": 32.4,
+    "pillar3": 68.0,
     "metrics": {
       "residential_stability": {
         "score": 87.5,
@@ -1422,19 +1476,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 67.6,
-        "raw": 60.8,
-        "rawFmt": "60.8%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 36.5,
         "raw": 9.12,
         "rawFmt": "9.12",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 47.6,
+        "raw": 2.38,
+        "rawFmt": "2.38",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 11.7,
@@ -1455,7 +1509,14 @@ const CITIES = {
         "raw": 76.64,
         "rawFmt": "76.6%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 67.6,
+        "raw": 60.8,
+        "rawFmt": "60.8%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 48.3,
@@ -1466,10 +1527,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.38",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -1488,10 +1545,10 @@ const CITIES = {
     "name": "Denver",
     "state": "CO",
     "population": "716k residents",
-    "cq": 69.5,
-    "pillar1": 78.8,
-    "pillar2": 51.1,
-    "pillar3": 80.4,
+    "cq": 66.7,
+    "pillar1": 69.5,
+    "pillar2": 56.8,
+    "pillar3": 76.2,
     "metrics": {
       "residential_stability": {
         "score": 82.9,
@@ -1500,19 +1557,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 71.1,
-        "raw": 64.01,
-        "rawFmt": "64.0%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 40.5,
         "raw": 10.12,
         "rawFmt": "10.12",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 92.2,
+        "raw": 4.61,
+        "rawFmt": "4.61",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 56.9,
@@ -1533,7 +1590,14 @@ const CITIES = {
         "raw": 90.9,
         "rawFmt": "90.9%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 71.1,
+        "raw": 64.01,
+        "rawFmt": "64.0%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 52.0,
@@ -1544,10 +1608,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "4.61",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -1566,10 +1626,10 @@ const CITIES = {
     "name": "Des Moines",
     "state": "IA",
     "population": "214k residents",
-    "cq": 72.3,
-    "pillar1": 83.0,
-    "pillar2": 46.3,
-    "pillar3": 91.5,
+    "cq": 65.3,
+    "pillar1": 63.2,
+    "pillar2": 53.1,
+    "pillar3": 85.8,
     "metrics": {
       "residential_stability": {
         "score": 86.6,
@@ -1578,19 +1638,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 76.4,
-        "raw": 68.8,
-        "rawFmt": "68.8%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 32.9,
         "raw": 8.22,
         "rawFmt": "8.22",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 56.0,
+        "raw": 2.8,
+        "rawFmt": "2.80",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 37.3,
@@ -1611,7 +1671,14 @@ const CITIES = {
         "raw": 93.92,
         "rawFmt": "93.9%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 76.4,
+        "raw": 68.8,
+        "rawFmt": "68.8%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 77.8,
@@ -1622,10 +1689,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.80",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -1644,10 +1707,10 @@ const CITIES = {
     "name": "Detroit",
     "state": "MI",
     "population": "632k residents",
-    "cq": 78.0,
-    "pillar1": 82.0,
-    "pillar2": 59.6,
-    "pillar3": 97.4,
+    "cq": 73.6,
+    "pillar1": 75.8,
+    "pillar2": 62.3,
+    "pillar3": 85.7,
     "metrics": {
       "residential_stability": {
         "score": 91.8,
@@ -1656,19 +1719,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 63.8,
-        "raw": 57.43,
-        "rawFmt": "57.4%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 54.3,
         "raw": 13.58,
         "rawFmt": "13.58",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 72.8,
+        "raw": 3.64,
+        "rawFmt": "3.64",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 56.9,
@@ -1689,7 +1752,14 @@ const CITIES = {
         "raw": 92.23,
         "rawFmt": "92.2%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 63.8,
+        "raw": 57.43,
+        "rawFmt": "57.4%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 98.0,
@@ -1700,10 +1770,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "3.64",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -1722,10 +1788,10 @@ const CITIES = {
     "name": "Durham",
     "state": "NC",
     "population": "284k residents",
-    "cq": 64.8,
-    "pillar1": 82.6,
-    "pillar2": 34.2,
-    "pillar3": 79.2,
+    "cq": 56.1,
+    "pillar1": 62.3,
+    "pillar2": 33.6,
+    "pillar3": 77.6,
     "metrics": {
       "residential_stability": {
         "score": 85.5,
@@ -1734,19 +1800,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 77.1,
-        "raw": 69.37,
-        "rawFmt": "69.4%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 34.6,
         "raw": 8.64,
         "rawFmt": "8.64",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 49.4,
+        "raw": 2.47,
+        "rawFmt": "2.47",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 18.8,
@@ -1767,7 +1833,14 @@ const CITIES = {
         "raw": 88.02,
         "rawFmt": "88.0%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 77.1,
+        "raw": 69.37,
+        "rawFmt": "69.4%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 54.1,
@@ -1778,10 +1851,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.47",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -1800,10 +1869,10 @@ const CITIES = {
     "name": "El Paso",
     "state": "TX",
     "population": "679k residents",
-    "cq": 63.2,
-    "pillar1": 83.9,
-    "pillar2": 28.8,
-    "pillar3": 78.4,
+    "cq": 54.7,
+    "pillar1": 56.3,
+    "pillar2": 37.6,
+    "pillar3": 76.1,
     "metrics": {
       "residential_stability": {
         "score": 90.0,
@@ -1812,19 +1881,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 72.6,
-        "raw": 65.38,
-        "rawFmt": "65.4%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 12.1,
         "raw": 3.02,
         "rawFmt": "3.02",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 47.2,
+        "raw": 2.36,
+        "rawFmt": "2.36",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 28.5,
@@ -1845,7 +1914,14 @@ const CITIES = {
         "raw": 78.31,
         "rawFmt": "78.3%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 72.6,
+        "raw": 65.38,
+        "rawFmt": "65.4%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 71.1,
@@ -1856,10 +1932,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.36",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -1878,10 +1950,10 @@ const CITIES = {
     "name": "Fort Worth",
     "state": "TX",
     "population": "919k residents",
-    "cq": 64.4,
-    "pillar1": 82.6,
-    "pillar2": 34.8,
-    "pillar3": 76.9,
+    "cq": 56.2,
+    "pillar1": 60.7,
+    "pillar2": 38.2,
+    "pillar3": 74.2,
     "metrics": {
       "residential_stability": {
         "score": 89.0,
@@ -1890,19 +1962,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 70.7,
-        "raw": 63.66,
-        "rawFmt": "63.7%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 26.6,
         "raw": 6.64,
         "rawFmt": "6.64",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 45.8,
+        "raw": 2.29,
+        "rawFmt": "2.29",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 1.5,
@@ -1923,7 +1995,14 @@ const CITIES = {
         "raw": 79.86,
         "rawFmt": "79.9%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 70.7,
+        "raw": 63.66,
+        "rawFmt": "63.7%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 63.4,
@@ -1934,10 +2013,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.29",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -1956,10 +2031,10 @@ const CITIES = {
     "name": "Fresno",
     "state": "CA",
     "population": "542k residents",
-    "cq": 70.2,
-    "pillar1": 81.8,
-    "pillar2": 42.3,
-    "pillar3": 90.7,
+    "cq": 62.7,
+    "pillar1": 61.0,
+    "pillar2": 51.4,
+    "pillar3": 81.3,
     "metrics": {
       "residential_stability": {
         "score": 90.6,
@@ -1968,19 +2043,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 65.4,
-        "raw": 58.89,
-        "rawFmt": "58.9%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 25.8,
         "raw": 6.46,
         "rawFmt": "6.46",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 44.2,
+        "raw": 2.21,
+        "rawFmt": "2.21",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 59.0,
@@ -2001,7 +2076,14 @@ const CITIES = {
         "raw": 93.49,
         "rawFmt": "93.5%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 65.4,
+        "raw": 58.89,
+        "rawFmt": "58.9%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 76.3,
@@ -2012,10 +2094,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.21",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -2034,10 +2112,10 @@ const CITIES = {
     "name": "Honolulu",
     "state": "HI",
     "population": "351k residents",
-    "cq": 79.0,
-    "pillar1": 81.2,
-    "pillar2": 66.6,
-    "pillar3": 92.9,
+    "cq": 77.6,
+    "pillar1": 83.0,
+    "pillar2": 67.9,
+    "pillar3": 82.7,
     "metrics": {
       "residential_stability": {
         "score": 89.8,
@@ -2046,19 +2124,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 65.1,
-        "raw": 58.59,
-        "rawFmt": "58.6%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 65.9,
         "raw": 16.47,
         "rawFmt": "16.47",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 100.0,
+        "raw": 7.12,
+        "rawFmt": "7.12",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 100.0,
@@ -2079,7 +2157,14 @@ const CITIES = {
         "raw": 96.5,
         "rawFmt": "96.5%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 65.1,
+        "raw": 58.59,
+        "rawFmt": "58.6%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 79.7,
@@ -2090,10 +2175,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "7.12",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -2112,10 +2193,10 @@ const CITIES = {
     "name": "Houston",
     "state": "TX",
     "population": "2.3M residents",
-    "cq": 61.3,
-    "pillar1": 80.8,
-    "pillar2": 31.4,
-    "pillar3": 72.0,
+    "cq": 53.1,
+    "pillar1": 61.8,
+    "pillar2": 30.8,
+    "pillar3": 70.4,
     "metrics": {
       "residential_stability": {
         "score": 87.2,
@@ -2124,19 +2205,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 68.8,
-        "raw": 61.94,
-        "rawFmt": "61.9%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 32.2,
         "raw": 8.04,
         "rawFmt": "8.04",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 46.0,
+        "raw": 2.3,
+        "rawFmt": "2.30",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 25.7,
@@ -2157,7 +2238,14 @@ const CITIES = {
         "raw": 76.29,
         "rawFmt": "76.3%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 68.8,
+        "raw": 61.94,
+        "rawFmt": "61.9%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 56.6,
@@ -2168,10 +2256,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.30",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -2190,10 +2274,10 @@ const CITIES = {
     "name": "Indianapolis",
     "state": "IN",
     "population": "887k residents",
-    "cq": 75.1,
-    "pillar1": 83.7,
-    "pillar2": 60.7,
-    "pillar3": 81.4,
+    "cq": 70.9,
+    "pillar1": 69.3,
+    "pillar2": 67.7,
+    "pillar3": 78.1,
     "metrics": {
       "residential_stability": {
         "score": 88.7,
@@ -2202,19 +2286,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 74.5,
-        "raw": 67.04,
-        "rawFmt": "67.0%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 47.2,
         "raw": 11.79,
         "rawFmt": "11.79",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 56.4,
+        "raw": 2.82,
+        "rawFmt": "2.82",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 59.3,
@@ -2235,7 +2319,14 @@ const CITIES = {
         "raw": 90.41,
         "rawFmt": "90.4%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 74.5,
+        "raw": 67.04,
+        "rawFmt": "67.0%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 55.7,
@@ -2246,10 +2337,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.82",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -2268,10 +2355,10 @@ const CITIES = {
     "name": "Jacksonville",
     "state": "FL",
     "population": "950k residents",
-    "cq": 65.7,
-    "pillar1": 81.4,
-    "pillar2": 32.7,
-    "pillar3": 86.9,
+    "cq": 55.9,
+    "pillar1": 61.6,
+    "pillar2": 31.2,
+    "pillar3": 81.2,
     "metrics": {
       "residential_stability": {
         "score": 86.5,
@@ -2280,19 +2367,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 71.8,
-        "raw": 64.6,
-        "rawFmt": "64.6%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 34.2,
         "raw": 8.56,
         "rawFmt": "8.56",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 42.2,
+        "raw": 2.11,
+        "rawFmt": "2.11",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 7.0,
@@ -2313,7 +2400,14 @@ const CITIES = {
         "raw": 88.23,
         "rawFmt": "88.2%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 71.8,
+        "raw": 64.6,
+        "rawFmt": "64.6%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 75.8,
@@ -2324,10 +2418,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.11",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -2346,10 +2436,10 @@ const CITIES = {
     "name": "Kansas City",
     "state": "MO",
     "population": "508k residents",
-    "cq": 69.0,
-    "pillar1": 82.8,
-    "pillar2": 46.6,
-    "pillar3": 78.4,
+    "cq": 63.7,
+    "pillar1": 68.6,
+    "pillar2": 48.9,
+    "pillar3": 76.4,
     "metrics": {
       "residential_stability": {
         "score": 86.9,
@@ -2358,19 +2448,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 75.3,
-        "raw": 67.79,
-        "rawFmt": "67.8%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 41.5,
         "raw": 10.37,
         "rawFmt": "10.37",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 70.8,
+        "raw": 3.54,
+        "rawFmt": "3.54",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 35.4,
@@ -2391,7 +2481,14 @@ const CITIES = {
         "raw": 88.27,
         "rawFmt": "88.3%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 75.3,
+        "raw": 67.79,
+        "rawFmt": "67.8%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 51.5,
@@ -2402,10 +2499,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "3.54",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -2424,10 +2517,10 @@ const CITIES = {
     "name": "Las Vegas",
     "state": "NV",
     "population": "642k residents",
-    "cq": 63.9,
-    "pillar1": 81.1,
-    "pillar2": 30.7,
-    "pillar3": 82.7,
+    "cq": 53.2,
+    "pillar1": 61.5,
+    "pillar2": 26.8,
+    "pillar3": 77.0,
     "metrics": {
       "residential_stability": {
         "score": 88.3,
@@ -2436,19 +2529,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 67.8,
-        "raw": 61.02,
-        "rawFmt": "61.0%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 37.6,
         "raw": 9.39,
         "rawFmt": "9.39",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 28.0,
+        "raw": 1.4,
+        "rawFmt": "1.40",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 20.8,
@@ -2469,7 +2562,14 @@ const CITIES = {
         "raw": 86.41,
         "rawFmt": "86.4%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 67.8,
+        "raw": 61.02,
+        "rawFmt": "61.0%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 67.4,
@@ -2480,10 +2580,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "1.40",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -2502,10 +2598,10 @@ const CITIES = {
     "name": "Lexington",
     "state": "KY",
     "population": "323k residents",
-    "cq": 68.3,
-    "pillar1": 80.0,
-    "pillar2": 47.3,
-    "pillar3": 78.9,
+    "cq": 61.7,
+    "pillar1": 57.6,
+    "pillar2": 55.5,
+    "pillar3": 76.8,
     "metrics": {
       "residential_stability": {
         "score": 81.8,
@@ -2514,19 +2610,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 76.6,
-        "raw": 68.97,
-        "rawFmt": "69.0%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 31.9,
         "raw": 7.97,
         "rawFmt": "7.97",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 37.2,
+        "raw": 1.86,
+        "rawFmt": "1.86",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 51.7,
@@ -2547,7 +2643,14 @@ const CITIES = {
         "raw": 93.11,
         "rawFmt": "93.1%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 76.6,
+        "raw": 68.97,
+        "rawFmt": "69.0%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 43.3,
@@ -2558,10 +2661,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "1.86",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -2580,10 +2679,10 @@ const CITIES = {
     "name": "Los Angeles",
     "state": "CA",
     "population": "3.9M residents",
-    "cq": 67.8,
-    "pillar1": 79.0,
-    "pillar2": 45.5,
-    "pillar3": 80.9,
+    "cq": 61.5,
+    "pillar1": 63.6,
+    "pillar2": 52.6,
+    "pillar3": 70.6,
     "metrics": {
       "residential_stability": {
         "score": 92.5,
@@ -2592,19 +2691,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 53.9,
-        "raw": 48.5,
-        "rawFmt": "48.5%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 32.4,
         "raw": 8.09,
         "rawFmt": "8.09",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 40.0,
+        "raw": 2.0,
+        "rawFmt": "2.00",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 51.8,
@@ -2625,7 +2724,14 @@ const CITIES = {
         "raw": 89.42,
         "rawFmt": "89.4%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 53.9,
+        "raw": 48.5,
+        "rawFmt": "48.5%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 56.4,
@@ -2636,10 +2742,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.00",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -2658,10 +2760,10 @@ const CITIES = {
     "name": "Louisville",
     "state": "KY",
     "population": "633k residents",
-    "cq": 62.8,
-    "pillar1": 87.3,
-    "pillar2": 21.8,
-    "pillar3": 80.8,
+    "cq": 50.3,
+    "pillar1": 56.5,
+    "pillar2": 22.2,
+    "pillar3": 79.9,
     "metrics": {
       "residential_stability": {
         "score": 90.4,
@@ -2670,19 +2772,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 81.6,
-        "raw": 73.4,
-        "rawFmt": "73.4%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 20.2,
         "raw": 5.05,
         "rawFmt": "5.05",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 28.4,
+        "raw": 1.42,
+        "rawFmt": "1.42",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 5.3,
@@ -2703,7 +2805,14 @@ const CITIES = {
         "raw": 94.47,
         "rawFmt": "94.5%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 81.6,
+        "raw": 73.4,
+        "rawFmt": "73.4%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 46.3,
@@ -2714,10 +2823,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "1.42",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -2736,10 +2841,10 @@ const CITIES = {
     "name": "Madison",
     "state": "WI",
     "population": "269k residents",
-    "cq": 59.0,
-    "pillar1": 74.8,
-    "pillar2": 25.4,
-    "pillar3": 80.7,
+    "cq": 49.4,
+    "pillar1": 58.5,
+    "pillar2": 20.2,
+    "pillar3": 75.8,
     "metrics": {
       "residential_stability": {
         "score": 77.2,
@@ -2748,19 +2853,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 70.4,
-        "raw": 63.39,
-        "rawFmt": "63.4%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 34.5,
         "raw": 8.62,
         "rawFmt": "8.62",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 52.0,
+        "raw": 2.6,
+        "rawFmt": "2.60",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 9.9,
@@ -2781,7 +2886,14 @@ const CITIES = {
         "raw": 95.42,
         "rawFmt": "95.4%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 70.4,
+        "raw": 63.39,
+        "rawFmt": "63.4%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 44.8,
@@ -2792,10 +2904,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.60",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -2814,10 +2922,10 @@ const CITIES = {
     "name": "Memphis",
     "state": "TN",
     "population": "633k residents",
-    "cq": 67.2,
-    "pillar1": 81.6,
-    "pillar2": 39.7,
-    "pillar3": 82.8,
+    "cq": 59.6,
+    "pillar1": 68.8,
+    "pillar2": 36.8,
+    "pillar3": 76.8,
     "metrics": {
       "residential_stability": {
         "score": 89.4,
@@ -2826,19 +2934,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 67.0,
-        "raw": 60.31,
-        "rawFmt": "60.3%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 44.4,
         "raw": 11.1,
         "rawFmt": "11.10",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 56.8,
+        "raw": 2.84,
+        "rawFmt": "2.84",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 21.1,
@@ -2859,7 +2967,14 @@ const CITIES = {
         "raw": 85.85,
         "rawFmt": "85.8%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 67.0,
+        "raw": 60.31,
+        "rawFmt": "60.3%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 68.7,
@@ -2870,10 +2985,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.84",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -2892,10 +3003,10 @@ const CITIES = {
     "name": "Milwaukee",
     "state": "WI",
     "population": "577k residents",
-    "cq": 70.6,
-    "pillar1": 81.1,
-    "pillar2": 42.6,
-    "pillar3": 92.8,
+    "cq": 63.1,
+    "pillar1": 65.6,
+    "pillar2": 45.8,
+    "pillar3": 83.5,
     "metrics": {
       "residential_stability": {
         "score": 88.8,
@@ -2904,19 +3015,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 66.8,
-        "raw": 60.08,
-        "rawFmt": "60.1%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 36.8,
         "raw": 9.2,
         "rawFmt": "9.20",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 55.4,
+        "raw": 2.77,
+        "rawFmt": "2.77",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 46.2,
@@ -2937,7 +3048,14 @@ const CITIES = {
         "raw": 91.05,
         "rawFmt": "91.0%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 66.8,
+        "raw": 60.08,
+        "rawFmt": "60.1%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 87.2,
@@ -2948,10 +3066,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.77",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -2970,10 +3084,10 @@ const CITIES = {
     "name": "Minneapolis",
     "state": "MN",
     "population": "430k residents",
-    "cq": 72.9,
-    "pillar1": 78.0,
-    "pillar2": 58.6,
-    "pillar3": 84.8,
+    "cq": 69.8,
+    "pillar1": 66.8,
+    "pillar2": 66.1,
+    "pillar3": 79.8,
     "metrics": {
       "residential_stability": {
         "score": 80.6,
@@ -2982,19 +3096,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 73.3,
-        "raw": 65.98,
-        "rawFmt": "66.0%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 43.8,
         "raw": 10.94,
         "rawFmt": "10.94",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 74.4,
+        "raw": 3.72,
+        "rawFmt": "3.72",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 48.1,
@@ -3015,7 +3129,14 @@ const CITIES = {
         "raw": 94.07,
         "rawFmt": "94.1%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 73.3,
+        "raw": 65.98,
+        "rawFmt": "66.0%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 58.3,
@@ -3026,10 +3147,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "3.72",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -3048,10 +3165,10 @@ const CITIES = {
     "name": "Nashville",
     "state": "TN",
     "population": "689k residents",
-    "cq": 63.3,
-    "pillar1": 79.7,
-    "pillar2": 35.0,
-    "pillar3": 76.6,
+    "cq": 55.8,
+    "pillar1": 65.4,
+    "pillar2": 31.9,
+    "pillar3": 74.0,
     "metrics": {
       "residential_stability": {
         "score": 83.8,
@@ -3060,19 +3177,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 72.1,
-        "raw": 64.89,
-        "rawFmt": "64.9%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 39.9,
         "raw": 9.98,
         "rawFmt": "9.98",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 63.8,
+        "raw": 3.19,
+        "rawFmt": "3.19",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 15.5,
@@ -3093,7 +3210,14 @@ const CITIES = {
         "raw": 87.8,
         "rawFmt": "87.8%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 72.1,
+        "raw": 64.89,
+        "rawFmt": "64.9%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 47.4,
@@ -3104,10 +3228,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "3.19",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -3126,10 +3246,10 @@ const CITIES = {
     "name": "New Orleans",
     "state": "LA",
     "population": "384k residents",
-    "cq": 76.2,
-    "pillar1": 80.5,
-    "pillar2": 65.4,
-    "pillar3": 84.6,
+    "cq": 75.0,
+    "pillar1": 72.6,
+    "pillar2": 77.1,
+    "pillar3": 76.0,
     "metrics": {
       "residential_stability": {
         "score": 90.4,
@@ -3138,19 +3258,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 62.1,
-        "raw": 55.89,
-        "rawFmt": "55.9%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 44.8,
         "raw": 11.2,
         "rawFmt": "11.20",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 78.2,
+        "raw": 3.91,
+        "rawFmt": "3.91",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 100.0,
@@ -3171,7 +3291,14 @@ const CITIES = {
         "raw": 91.48,
         "rawFmt": "91.5%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 62.1,
+        "raw": 55.89,
+        "rawFmt": "55.9%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 63.0,
@@ -3182,10 +3309,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "3.91",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -3204,10 +3327,10 @@ const CITIES = {
     "name": "New York City",
     "state": "NY",
     "population": "8.3M residents",
-    "cq": 70.9,
-    "pillar1": 81.7,
-    "pillar2": 41.3,
-    "pillar3": 95.0,
+    "cq": 63.4,
+    "pillar1": 64.4,
+    "pillar2": 48.5,
+    "pillar3": 82.5,
     "metrics": {
       "residential_stability": {
         "score": 93.5,
@@ -3216,19 +3339,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 59.8,
-        "raw": 53.82,
-        "rawFmt": "53.8%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 27.4,
         "raw": 6.84,
         "rawFmt": "6.84",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 53.8,
+        "raw": 2.69,
+        "rawFmt": "2.69",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 35.2,
@@ -3249,7 +3372,14 @@ const CITIES = {
         "raw": 93.28,
         "rawFmt": "93.3%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 59.8,
+        "raw": 53.82,
+        "rawFmt": "53.8%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 89.0,
@@ -3260,10 +3390,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.69",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -3282,10 +3408,10 @@ const CITIES = {
     "name": "Oklahoma City",
     "state": "OK",
     "population": "681k residents",
-    "cq": 67.4,
-    "pillar1": 83.5,
-    "pillar2": 39.9,
-    "pillar3": 80.2,
+    "cq": 59.3,
+    "pillar1": 59.0,
+    "pillar2": 45.7,
+    "pillar3": 79.0,
     "metrics": {
       "residential_stability": {
         "score": 86.1,
@@ -3294,19 +3420,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 78.7,
-        "raw": 70.84,
-        "rawFmt": "70.8%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 28.0,
         "raw": 6.99,
         "rawFmt": "6.99",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 41.2,
+        "raw": 2.06,
+        "rawFmt": "2.06",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 24.5,
@@ -3327,7 +3453,14 @@ const CITIES = {
         "raw": 85.98,
         "rawFmt": "86.0%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 78.7,
+        "raw": 70.84,
+        "rawFmt": "70.8%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 61.2,
@@ -3338,10 +3471,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.06",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -3360,10 +3489,10 @@ const CITIES = {
     "name": "Omaha",
     "state": "NE",
     "population": "486k residents",
-    "cq": 71.9,
-    "pillar1": 84.4,
-    "pillar2": 50.6,
-    "pillar3": 81.6,
+    "cq": 66.2,
+    "pillar1": 64.2,
+    "pillar2": 59.2,
+    "pillar3": 79.2,
     "metrics": {
       "residential_stability": {
         "score": 88.3,
@@ -3372,19 +3501,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 77.3,
-        "raw": 69.58,
-        "rawFmt": "69.6%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 34.3,
         "raw": 8.58,
         "rawFmt": "8.58",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 53.4,
+        "raw": 2.67,
+        "rawFmt": "2.67",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 52.1,
@@ -3405,7 +3534,14 @@ const CITIES = {
         "raw": 90.15,
         "rawFmt": "90.2%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 77.3,
+        "raw": 69.58,
+        "rawFmt": "69.6%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 56.9,
@@ -3416,10 +3552,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.67",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -3438,10 +3570,10 @@ const CITIES = {
     "name": "Philadelphia",
     "state": "PA",
     "population": "1.6M residents",
-    "cq": 71.9,
-    "pillar1": 82.1,
-    "pillar2": 43.2,
-    "pillar3": 95.9,
+    "cq": 64.7,
+    "pillar1": 67.0,
+    "pillar2": 46.9,
+    "pillar3": 86.0,
     "metrics": {
       "residential_stability": {
         "score": 89.6,
@@ -3450,19 +3582,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 68.1,
-        "raw": 61.31,
-        "rawFmt": "61.3%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 35.7,
         "raw": 8.92,
         "rawFmt": "8.92",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 64.8,
+        "raw": 3.24,
+        "rawFmt": "3.24",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 31.2,
@@ -3483,7 +3615,14 @@ const CITIES = {
         "raw": 92.65,
         "rawFmt": "92.7%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 68.1,
+        "raw": 61.31,
+        "rawFmt": "61.3%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 92.8,
@@ -3494,10 +3633,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "3.24",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -3516,10 +3651,10 @@ const CITIES = {
     "name": "Phoenix",
     "state": "AZ",
     "population": "1.6M residents",
-    "cq": 62.9,
-    "pillar1": 83.4,
-    "pillar2": 28.9,
-    "pillar3": 77.7,
+    "cq": 52.2,
+    "pillar1": 56.6,
+    "pillar2": 30.4,
+    "pillar3": 75.6,
     "metrics": {
       "residential_stability": {
         "score": 88.6,
@@ -3528,19 +3663,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 73.8,
-        "raw": 66.38,
-        "rawFmt": "66.4%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 26.0,
         "raw": 6.49,
         "rawFmt": "6.49",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 21.2,
+        "raw": 1.06,
+        "rawFmt": "1.06",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 29.9,
@@ -3561,7 +3696,14 @@ const CITIES = {
         "raw": 85.03,
         "rawFmt": "85.0%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 73.8,
+        "raw": 66.38,
+        "rawFmt": "66.4%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 55.9,
@@ -3572,10 +3714,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "1.06",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -3594,10 +3732,10 @@ const CITIES = {
     "name": "Pittsburgh",
     "state": "PA",
     "population": "303k residents",
-    "cq": 75.7,
-    "pillar1": 80.0,
-    "pillar2": 61.4,
-    "pillar3": 89.0,
+    "cq": 73.1,
+    "pillar1": 79.2,
+    "pillar2": 58.9,
+    "pillar3": 83.4,
     "metrics": {
       "residential_stability": {
         "score": 82.6,
@@ -3606,19 +3744,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 75.2,
-        "raw": 67.68,
-        "rawFmt": "67.7%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 65.4,
         "raw": 16.34,
         "rawFmt": "16.34",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 100.0,
+        "raw": 7.92,
+        "rawFmt": "7.92",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 46.2,
@@ -3639,7 +3777,14 @@ const CITIES = {
         "raw": 95.05,
         "rawFmt": "95.0%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 75.2,
+        "raw": 67.68,
+        "rawFmt": "67.7%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 68.5,
@@ -3650,10 +3795,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "7.92",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -3672,10 +3813,10 @@ const CITIES = {
     "name": "Portland",
     "state": "OR",
     "population": "653k residents",
-    "cq": 71.8,
-    "pillar1": 80.5,
-    "pillar2": 46.2,
-    "pillar3": 93.6,
+    "cq": 64.6,
+    "pillar1": 62.7,
+    "pillar2": 52.5,
+    "pillar3": 84.7,
     "metrics": {
       "residential_stability": {
         "score": 86.5,
@@ -3684,19 +3825,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 69.3,
-        "raw": 62.35,
-        "rawFmt": "62.4%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 34.6,
         "raw": 8.64,
         "rawFmt": "8.64",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 49.0,
+        "raw": 2.45,
+        "rawFmt": "2.45",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 55.2,
@@ -3717,7 +3858,14 @@ const CITIES = {
         "raw": 93.92,
         "rawFmt": "93.9%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 69.3,
+        "raw": 62.35,
+        "rawFmt": "62.4%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 83.7,
@@ -3728,10 +3876,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.45",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -3750,10 +3894,10 @@ const CITIES = {
     "name": "Providence",
     "state": "RI",
     "population": "191k residents",
-    "cq": 76.3,
-    "pillar1": 81.0,
-    "pillar2": 54.8,
-    "pillar3": 98.8,
+    "cq": 72.9,
+    "pillar1": 73.2,
+    "pillar2": 61.8,
+    "pillar3": 87.9,
     "metrics": {
       "residential_stability": {
         "score": 88.1,
@@ -3762,19 +3906,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 67.7,
-        "raw": 60.94,
-        "rawFmt": "60.9%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 40.4,
         "raw": 10.11,
         "rawFmt": "10.11",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 100.0,
+        "raw": 5.76,
+        "rawFmt": "5.76",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 34.9,
@@ -3795,7 +3939,14 @@ const CITIES = {
         "raw": 93.18,
         "rawFmt": "93.2%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 67.7,
+        "raw": 60.94,
+        "rawFmt": "60.9%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 100.0,
@@ -3806,10 +3957,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "5.76",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -3828,10 +3975,10 @@ const CITIES = {
     "name": "Raleigh",
     "state": "NC",
     "population": "468k residents",
-    "cq": 62.8,
-    "pillar1": 81.9,
-    "pillar2": 28.3,
-    "pillar3": 80.5,
+    "cq": 51.9,
+    "pillar1": 60.0,
+    "pillar2": 24.1,
+    "pillar3": 78.0,
     "metrics": {
       "residential_stability": {
         "score": 85.1,
@@ -3840,19 +3987,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 75.9,
-        "raw": 68.31,
-        "rawFmt": "68.3%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 35.2,
         "raw": 8.79,
         "rawFmt": "8.79",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 34.2,
+        "raw": 1.71,
+        "rawFmt": "1.71",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 5.7,
@@ -3873,7 +4020,14 @@ const CITIES = {
         "raw": 89.17,
         "rawFmt": "89.2%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 75.9,
+        "raw": 68.31,
+        "rawFmt": "68.3%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 55.6,
@@ -3884,10 +4038,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "1.71",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -3906,10 +4056,10 @@ const CITIES = {
     "name": "Richmond",
     "state": "VA",
     "population": "227k residents",
-    "cq": 70.3,
-    "pillar1": 76.9,
-    "pillar2": 54.9,
-    "pillar3": 81.4,
+    "cq": 66.6,
+    "pillar1": 63.0,
+    "pillar2": 64.4,
+    "pillar3": 75.3,
     "metrics": {
       "residential_stability": {
         "score": 82.4,
@@ -3918,19 +4068,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 66.6,
-        "raw": 59.96,
-        "rawFmt": "60.0%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 35.8,
         "raw": 8.96,
         "rawFmt": "8.96",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 61.8,
+        "raw": 3.09,
+        "rawFmt": "3.09",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 35.3,
@@ -3951,7 +4101,14 @@ const CITIES = {
         "raw": 90.27,
         "rawFmt": "90.3%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 66.6,
+        "raw": 59.96,
+        "rawFmt": "60.0%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 56.0,
@@ -3962,10 +4119,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "3.09",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -3984,10 +4137,10 @@ const CITIES = {
     "name": "Rochester",
     "state": "NY",
     "population": "211k residents",
-    "cq": 78.3,
-    "pillar1": 78.4,
-    "pillar2": 66.6,
-    "pillar3": 94.6,
+    "cq": 77.2,
+    "pillar1": 67.8,
+    "pillar2": 83.2,
+    "pillar3": 83.9,
     "metrics": {
       "residential_stability": {
         "score": 85.5,
@@ -3996,19 +4149,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 65.1,
-        "raw": 58.55,
-        "rawFmt": "58.5%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 35.2,
         "raw": 8.8,
         "rawFmt": "8.80",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 85.2,
+        "raw": 4.26,
+        "rawFmt": "4.26",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 69.4,
@@ -4029,7 +4182,14 @@ const CITIES = {
         "raw": 95.45,
         "rawFmt": "95.5%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 65.1,
+        "raw": 58.55,
+        "rawFmt": "58.5%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 84.6,
@@ -4040,10 +4200,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "4.26",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -4062,10 +4218,10 @@ const CITIES = {
     "name": "Sacramento",
     "state": "CA",
     "population": "525k residents",
-    "cq": 71.7,
-    "pillar1": 81.0,
-    "pillar2": 48.9,
-    "pillar3": 88.7,
+    "cq": 65.4,
+    "pillar1": 71.6,
+    "pillar2": 47.7,
+    "pillar3": 80.2,
     "metrics": {
       "residential_stability": {
         "score": 88.9,
@@ -4074,19 +4230,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 66.3,
-        "raw": 59.71,
-        "rawFmt": "59.7%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 51.4,
         "raw": 12.86,
         "rawFmt": "12.86",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 61.0,
+        "raw": 3.05,
+        "rawFmt": "3.05",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 53.3,
@@ -4107,7 +4263,14 @@ const CITIES = {
         "raw": 94.26,
         "rawFmt": "94.3%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 66.3,
+        "raw": 59.71,
+        "rawFmt": "59.7%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 69.3,
@@ -4118,10 +4281,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "3.05",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -4140,10 +4299,10 @@ const CITIES = {
     "name": "Salt Lake City",
     "state": "UT",
     "population": "201k residents",
-    "cq": 61.2,
-    "pillar1": 79.4,
+    "cq": 54.9,
+    "pillar1": 64.4,
     "pillar2": 32.4,
-    "pillar3": 72.3,
+    "pillar3": 71.2,
     "metrics": {
       "residential_stability": {
         "score": 82.9,
@@ -4152,19 +4311,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 73.0,
-        "raw": 65.71,
-        "rawFmt": "65.7%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 31.5,
         "raw": 7.88,
         "rawFmt": "7.88",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 79.8,
+        "raw": 3.99,
+        "rawFmt": "3.99",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 13.3,
@@ -4185,7 +4344,14 @@ const CITIES = {
         "raw": 87.8,
         "rawFmt": "87.8%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 73.0,
+        "raw": 65.71,
+        "rawFmt": "65.7%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 34.9,
@@ -4196,10 +4362,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "3.99",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -4218,10 +4380,10 @@ const CITIES = {
     "name": "San Antonio",
     "state": "TX",
     "population": "1.4M residents",
-    "cq": 64.4,
-    "pillar1": 80.5,
-    "pillar2": 35.3,
-    "pillar3": 79.3,
+    "cq": 56.9,
+    "pillar1": 57.1,
+    "pillar2": 43.4,
+    "pillar3": 75.6,
     "metrics": {
       "residential_stability": {
         "score": 86.1,
@@ -4230,19 +4392,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 70.2,
-        "raw": 63.17,
-        "rawFmt": "63.2%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 19.2,
         "raw": 4.79,
         "rawFmt": "4.79",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 48.8,
+        "raw": 2.44,
+        "rawFmt": "2.44",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 19.1,
@@ -4263,7 +4425,14 @@ const CITIES = {
         "raw": 82.25,
         "rawFmt": "82.2%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 70.2,
+        "raw": 63.17,
+        "rawFmt": "63.2%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 65.7,
@@ -4274,10 +4443,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.44",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -4296,10 +4461,10 @@ const CITIES = {
     "name": "San Diego",
     "state": "CA",
     "population": "1.4M residents",
-    "cq": 64.1,
-    "pillar1": 79.3,
-    "pillar2": 33.9,
-    "pillar3": 82.0,
+    "cq": 56.6,
+    "pillar1": 61.3,
+    "pillar2": 38.4,
+    "pillar3": 74.6,
     "metrics": {
       "residential_stability": {
         "score": 87.6,
@@ -4308,19 +4473,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 63.8,
-        "raw": 57.43,
-        "rawFmt": "57.4%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 26.0,
         "raw": 6.51,
         "rawFmt": "6.51",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 56.2,
+        "raw": 2.81,
+        "rawFmt": "2.81",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 48.1,
@@ -4341,7 +4506,14 @@ const CITIES = {
         "raw": 93.2,
         "rawFmt": "93.2%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 63.8,
+        "raw": 57.43,
+        "rawFmt": "57.4%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 52.0,
@@ -4352,10 +4524,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.81",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -4374,10 +4542,10 @@ const CITIES = {
     "name": "San Francisco",
     "state": "CA",
     "population": "874k residents",
-    "cq": 69.5,
-    "pillar1": 83.2,
-    "pillar2": 42.2,
-    "pillar3": 85.9,
+    "cq": 63.7,
+    "pillar1": 66.5,
+    "pillar2": 48.3,
+    "pillar3": 80.8,
     "metrics": {
       "residential_stability": {
         "score": 88.3,
@@ -4386,19 +4554,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 73.8,
-        "raw": 66.38,
-        "rawFmt": "66.4%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 31.4,
         "raw": 7.86,
         "rawFmt": "7.86",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 75.6,
+        "raw": 3.78,
+        "rawFmt": "3.78",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 61.0,
@@ -4419,7 +4587,14 @@ const CITIES = {
         "raw": 96.41,
         "rawFmt": "96.4%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 73.8,
+        "raw": 66.38,
+        "rawFmt": "66.4%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 59.8,
@@ -4430,10 +4605,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "3.78",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -4452,10 +4623,10 @@ const CITIES = {
     "name": "San Jose",
     "state": "CA",
     "population": "1.0M residents",
-    "cq": 66.3,
-    "pillar1": 83.4,
-    "pillar2": 32.3,
-    "pillar3": 86.4,
+    "cq": 57.2,
+    "pillar1": 57.5,
+    "pillar2": 40.8,
+    "pillar3": 79.6,
     "metrics": {
       "residential_stability": {
         "score": 90.9,
@@ -4464,19 +4635,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 69.4,
-        "raw": 62.5,
-        "rawFmt": "62.5%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 16.6,
         "raw": 4.15,
         "rawFmt": "4.15",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 41.4,
+        "raw": 2.07,
+        "rawFmt": "2.07",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 43.4,
@@ -4497,7 +4668,14 @@ const CITIES = {
         "raw": 94.78,
         "rawFmt": "94.8%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 69.4,
+        "raw": 62.5,
+        "rawFmt": "62.5%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 61.4,
@@ -4508,10 +4686,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.07",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -4530,10 +4704,10 @@ const CITIES = {
     "name": "Seattle",
     "state": "WA",
     "population": "737k residents",
-    "cq": 69.1,
-    "pillar1": 77.2,
-    "pillar2": 47.3,
-    "pillar3": 86.5,
+    "cq": 65.0,
+    "pillar1": 62.6,
+    "pillar2": 56.5,
+    "pillar3": 80.6,
     "metrics": {
       "residential_stability": {
         "score": 79.9,
@@ -4542,19 +4716,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 72.1,
-        "raw": 64.88,
-        "rawFmt": "64.9%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 30.9,
         "raw": 7.72,
         "rawFmt": "7.72",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 78.6,
+        "raw": 3.93,
+        "rawFmt": "3.93",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 70.5,
@@ -4575,7 +4749,14 @@ const CITIES = {
         "raw": 95.59,
         "rawFmt": "95.6%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 72.1,
+        "raw": 64.88,
+        "rawFmt": "64.9%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 61.5,
@@ -4586,10 +4767,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "3.93",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -4608,10 +4785,10 @@ const CITIES = {
     "name": "Spokane",
     "state": "WA",
     "population": "229k residents",
-    "cq": 71.7,
-    "pillar1": 79.4,
-    "pillar2": 43.1,
-    "pillar3": 99.5,
+    "cq": 64.3,
+    "pillar1": 57.3,
+    "pillar2": 53.9,
+    "pillar3": 90.0,
     "metrics": {
       "residential_stability": {
         "score": 83.2,
@@ -4620,19 +4797,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 72.4,
-        "raw": 65.14,
-        "rawFmt": "65.1%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 22.5,
         "raw": 5.63,
         "rawFmt": "5.63",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 52.4,
+        "raw": 2.62,
+        "rawFmt": "2.62",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 43.7,
@@ -4653,7 +4830,14 @@ const CITIES = {
         "raw": 94.21,
         "rawFmt": "94.2%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 72.4,
+        "raw": 65.14,
+        "rawFmt": "65.1%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 100.0,
@@ -4664,10 +4848,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.62",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -4686,10 +4866,10 @@ const CITIES = {
     "name": "St. Louis",
     "state": "MO",
     "population": "302k residents",
-    "cq": 75.8,
-    "pillar1": 82.2,
-    "pillar2": 61.0,
-    "pillar3": 86.4,
+    "cq": 73.9,
+    "pillar1": 76.8,
+    "pillar2": 65.6,
+    "pillar3": 81.0,
     "metrics": {
       "residential_stability": {
         "score": 87.4,
@@ -4698,19 +4878,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 72.5,
-        "raw": 65.29,
-        "rawFmt": "65.3%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 51.9,
         "raw": 12.97,
         "rawFmt": "12.97",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 99.4,
+        "raw": 4.97,
+        "rawFmt": "4.97",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 53.1,
@@ -4731,7 +4911,14 @@ const CITIES = {
         "raw": 89.88,
         "rawFmt": "89.9%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 72.5,
+        "raw": 65.29,
+        "rawFmt": "65.3%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 71.2,
@@ -4742,10 +4929,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "4.97",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -4764,10 +4947,10 @@ const CITIES = {
     "name": "St. Paul",
     "state": "MN",
     "population": "312k residents",
-    "cq": 73.6,
-    "pillar1": 82.1,
-    "pillar2": 53.7,
-    "pillar3": 87.8,
+    "cq": 69.8,
+    "pillar1": 72.8,
+    "pillar2": 57.4,
+    "pillar3": 82.3,
     "metrics": {
       "residential_stability": {
         "score": 86.4,
@@ -4776,19 +4959,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 74.0,
-        "raw": 66.64,
-        "rawFmt": "66.6%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 46.2,
         "raw": 11.56,
         "rawFmt": "11.56",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 89.8,
+        "raw": 4.49,
+        "rawFmt": "4.49",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 47.1,
@@ -4809,7 +4992,14 @@ const CITIES = {
         "raw": 93.65,
         "rawFmt": "93.7%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 74.0,
+        "raw": 66.64,
+        "rawFmt": "66.6%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 67.8,
@@ -4820,10 +5010,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "4.49",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -4842,10 +5028,10 @@ const CITIES = {
     "name": "Stockton",
     "state": "CA",
     "population": "321k residents",
-    "cq": 75.0,
-    "pillar1": 82.3,
-    "pillar2": 50.7,
-    "pillar3": 97.5,
+    "cq": 69.2,
+    "pillar1": 58.9,
+    "pillar2": 69.2,
+    "pillar3": 85.6,
     "metrics": {
       "residential_stability": {
         "score": 92.3,
@@ -4854,19 +5040,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 63.6,
-        "raw": 57.26,
-        "rawFmt": "57.3%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 15.1,
         "raw": 3.77,
         "rawFmt": "3.77",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 50.0,
+        "raw": 2.5,
+        "rawFmt": "2.50",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 45.7,
@@ -4887,7 +5073,14 @@ const CITIES = {
         "raw": 93.12,
         "rawFmt": "93.1%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 63.6,
+        "raw": 57.26,
+        "rawFmt": "57.3%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 96.5,
@@ -4898,10 +5091,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.50",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -4920,10 +5109,10 @@ const CITIES = {
     "name": "Tampa",
     "state": "FL",
     "population": "403k residents",
-    "cq": 63.5,
-    "pillar1": 77.4,
-    "pillar2": 31.5,
-    "pillar3": 86.1,
+    "cq": 55.1,
+    "pillar1": 61.7,
+    "pillar2": 30.0,
+    "pillar3": 79.6,
     "metrics": {
       "residential_stability": {
         "score": 81.9,
@@ -4932,19 +5121,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 68.9,
-        "raw": 61.98,
-        "rawFmt": "62.0%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 33.8,
         "raw": 8.45,
         "rawFmt": "8.45",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 59.4,
+        "raw": 2.97,
+        "rawFmt": "2.97",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 18.2,
@@ -4965,7 +5154,14 @@ const CITIES = {
         "raw": 89.13,
         "rawFmt": "89.1%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 68.9,
+        "raw": 61.98,
+        "rawFmt": "62.0%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 71.9,
@@ -4976,10 +5172,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.97",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -4998,10 +5190,10 @@ const CITIES = {
     "name": "Tucson",
     "state": "AZ",
     "population": "543k residents",
-    "cq": 61.6,
-    "pillar1": 77.8,
-    "pillar2": 29.3,
-    "pillar3": 81.1,
+    "cq": 53.5,
+    "pillar1": 56.8,
+    "pillar2": 33.7,
+    "pillar3": 76.1,
     "metrics": {
       "residential_stability": {
         "score": 82.6,
@@ -5010,19 +5202,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 68.8,
-        "raw": 61.91,
-        "rawFmt": "61.9%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 20.5,
         "raw": 5.12,
         "rawFmt": "5.12",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 55.2,
+        "raw": 2.76,
+        "rawFmt": "2.76",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 19.7,
@@ -5043,7 +5235,14 @@ const CITIES = {
         "raw": 87.78,
         "rawFmt": "87.8%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 68.8,
+        "raw": 61.91,
+        "rawFmt": "61.9%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 60.1,
@@ -5054,10 +5253,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.76",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -5076,10 +5271,10 @@ const CITIES = {
     "name": "Virginia Beach",
     "state": "VA",
     "population": "459k residents",
-    "cq": 61.6,
-    "pillar1": 82.3,
-    "pillar2": 23.6,
-    "pillar3": 81.8,
+    "cq": 50.7,
+    "pillar1": 59.8,
+    "pillar2": 20.8,
+    "pillar3": 77.8,
     "metrics": {
       "residential_stability": {
         "score": 87.1,
@@ -5088,19 +5283,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 73.5,
-        "raw": 66.13,
-        "rawFmt": "66.1%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 27.8,
         "raw": 6.96,
         "rawFmt": "6.96",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 43.6,
+        "raw": 2.18,
+        "rawFmt": "2.18",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 2.9,
@@ -5121,7 +5316,14 @@ const CITIES = {
         "raw": 93.13,
         "rawFmt": "93.1%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 73.5,
+        "raw": 66.13,
+        "rawFmt": "66.1%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 51.7,
@@ -5132,10 +5334,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.18",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -5154,10 +5352,10 @@ const CITIES = {
     "name": "Washington DC",
     "state": "DC",
     "population": "690k residents",
-    "cq": 79.1,
-    "pillar1": 79.4,
-    "pillar2": 70.7,
-    "pillar3": 90.4,
+    "cq": 76.4,
+    "pillar1": 80.6,
+    "pillar2": 66.9,
+    "pillar3": 83.0,
     "metrics": {
       "residential_stability": {
         "score": 84.0,
@@ -5166,19 +5364,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 71.0,
-        "raw": 63.88,
-        "rawFmt": "63.9%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 78.1,
         "raw": 19.52,
         "rawFmt": "19.52",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 75.4,
+        "raw": 3.77,
+        "rawFmt": "3.77",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 73.5,
@@ -5199,7 +5397,14 @@ const CITIES = {
         "raw": 96.59,
         "rawFmt": "96.6%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 71.0,
+        "raw": 63.88,
+        "rawFmt": "63.9%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 72.5,
@@ -5210,10 +5415,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "3.77",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"
@@ -5232,10 +5433,10 @@ const CITIES = {
     "name": "Wichita",
     "state": "KS",
     "population": "398k residents",
-    "cq": 64.6,
-    "pillar1": 83.7,
-    "pillar2": 32.9,
-    "pillar3": 78.5,
+    "cq": 55.8,
+    "pillar1": 58.5,
+    "pillar2": 36.6,
+    "pillar3": 78.2,
     "metrics": {
       "residential_stability": {
         "score": 85.7,
@@ -5244,19 +5445,19 @@ const CITIES = {
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
-      "housing_cost_burden": {
-        "score": 80.0,
-        "raw": 72.03,
-        "rawFmt": "72.0%",
-        "benchmark": "90%",
-        "unit": "% households not cost-burdened"
-      },
       "combined_care": {
         "score": 25.4,
         "raw": 6.36,
         "rawFmt": "6.36",
         "benchmark": "25 / 10k",
         "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 45.2,
+        "raw": 2.26,
+        "rawFmt": "2.26",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
       },
       "fqhc": {
         "score": 25.1,
@@ -5277,7 +5478,14 @@ const CITIES = {
         "raw": 87.31,
         "rawFmt": "87.3%",
         "benchmark": "95%",
-        "unit": "% population with health insurance"
+        "unit": "% population with healthcare coverage"
+      },
+      "housing_cost_burden": {
+        "score": 80.0,
+        "raw": 72.03,
+        "rawFmt": "72.0%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
       },
       "snap_coverage": {
         "score": 53.7,
@@ -5288,10 +5496,6 @@ const CITIES = {
       }
     },
     "diagnostic": {
-      "libraries": {
-        "value": "2.26",
-        "unit": "libraries per 100k"
-      },
       "lib_visits": {
         "value": "n/a",
         "unit": "library visits per capita"

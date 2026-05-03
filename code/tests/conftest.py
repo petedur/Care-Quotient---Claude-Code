@@ -19,41 +19,50 @@ from pathlib import Path
 
 SYNTHETIC_METRICS = [
     # (city, metric, sub_metric, value)
-    # perfect city — at-benchmark values
-    ("perfect", "residential_stability",     "pct_same_house",   95.0),
-    ("perfect", "housing_cost_burden",       "pct_not_burdened", 90.0),
-    ("perfect", "nonprofit_density",         "combined_care",    25.0),
-    ("perfect", "health_center_density",     "density_per_100k", 15.0),
+    # Pillar structure (V5):
+    #   Pillar 1 — Social & Relational Care (40%): residential_stability, combined_care, library_density
+    #   Pillar 2 — Institutional Care (35%): health_center_density, nursing_home_capacity
+    #   Pillar 3 — Economic Access (25%): health_insurance_coverage, housing_cost_burden, snap_participation
+
+    # perfect city — at-benchmark values (all scores = 100)
+    ("perfect", "residential_stability",     "pct_same_house",     95.0),
+    ("perfect", "nonprofit_density",         "combined_care",      25.0),
+    ("perfect", "library_density",           "density_per_100k",    5.0),
+    ("perfect", "health_center_density",     "density_per_100k",   15.0),
     ("perfect", "nursing_home_capacity",     "beds_per_1k_65plus", 50.0),
-    ("perfect", "health_insurance_coverage", "pct_insured",      95.0),
-    ("perfect", "snap_participation",        "coverage_rate",    85.0),
+    ("perfect", "health_insurance_coverage", "pct_insured",        95.0),
+    ("perfect", "housing_cost_burden",       "pct_not_burdened",   90.0),
+    ("perfect", "snap_participation",        "coverage_rate",      85.0),
 
-    # half city — 50% of every benchmark
-    ("half", "residential_stability",     "pct_same_house",   47.5),
-    ("half", "housing_cost_burden",       "pct_not_burdened", 45.0),
-    ("half", "nonprofit_density",         "combined_care",    12.5),
-    ("half", "health_center_density",     "density_per_100k",  7.5),
+    # half city — 50% of every benchmark (all scores = 50)
+    ("half", "residential_stability",     "pct_same_house",     47.5),
+    ("half", "nonprofit_density",         "combined_care",      12.5),
+    ("half", "library_density",           "density_per_100k",    2.5),
+    ("half", "health_center_density",     "density_per_100k",    7.5),
     ("half", "nursing_home_capacity",     "beds_per_1k_65plus", 25.0),
-    ("half", "health_insurance_coverage", "pct_insured",      47.5),
-    ("half", "snap_participation",        "coverage_rate",    42.5),
+    ("half", "health_insurance_coverage", "pct_insured",        47.5),
+    ("half", "housing_cost_burden",       "pct_not_burdened",   45.0),
+    ("half", "snap_participation",        "coverage_rate",      42.5),
 
-    # zero city — all zeros
-    ("zero", "residential_stability",     "pct_same_house",   0.0),
-    ("zero", "housing_cost_burden",       "pct_not_burdened", 0.0),
-    ("zero", "nonprofit_density",         "combined_care",    0.0),
-    ("zero", "health_center_density",     "density_per_100k", 0.0),
+    # zero city — all zeros (all scores = 0)
+    ("zero", "residential_stability",     "pct_same_house",     0.0),
+    ("zero", "nonprofit_density",         "combined_care",      0.0),
+    ("zero", "library_density",           "density_per_100k",   0.0),
+    ("zero", "health_center_density",     "density_per_100k",   0.0),
     ("zero", "nursing_home_capacity",     "beds_per_1k_65plus", 0.0),
-    ("zero", "health_insurance_coverage", "pct_insured",      0.0),
-    ("zero", "snap_participation",        "coverage_rate",    0.0),
+    ("zero", "health_insurance_coverage", "pct_insured",        0.0),
+    ("zero", "housing_cost_burden",       "pct_not_burdened",   0.0),
+    ("zero", "snap_participation",        "coverage_rate",      0.0),
 
-    # over city — values that exceed every benchmark (should cap at 100)
-    ("over", "residential_stability",     "pct_same_house",   99.0),
-    ("over", "housing_cost_burden",       "pct_not_burdened", 99.0),
-    ("over", "nonprofit_density",         "combined_care",    50.0),
-    ("over", "health_center_density",     "density_per_100k", 30.0),
+    # over city — values exceeding every benchmark (all scores cap at 100)
+    ("over", "residential_stability",     "pct_same_house",     99.0),
+    ("over", "nonprofit_density",         "combined_care",      50.0),
+    ("over", "library_density",           "density_per_100k",   10.0),
+    ("over", "health_center_density",     "density_per_100k",   30.0),
     ("over", "nursing_home_capacity",     "beds_per_1k_65plus", 100.0),
-    ("over", "health_insurance_coverage", "pct_insured",      99.0),
-    ("over", "snap_participation",        "coverage_rate",    99.0),
+    ("over", "health_insurance_coverage", "pct_insured",        99.0),
+    ("over", "housing_cost_burden",       "pct_not_burdened",   99.0),
+    ("over", "snap_participation",        "coverage_rate",      99.0),
 ]
 
 

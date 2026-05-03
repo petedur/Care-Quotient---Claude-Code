@@ -125,13 +125,14 @@ def test_load_nursing_homes_missing_file(conn, tmp_path, monkeypatch, capsys):
 def test_validation_passes_clean_data(conn, monkeypatch):
     """Clean in-range data should pass all validation checks."""
     for city, metric, sub_metric, value in [
-        ("testcity", "residential_stability",     "pct_same_house",   87.5),
-        ("testcity", "housing_cost_burden",       "pct_not_burdened", 75.0),
-        ("testcity", "nonprofit_density",         "combined_care",    10.0),
-        ("testcity", "health_center_density",     "density_per_100k",  5.0),
+        ("testcity", "residential_stability",     "pct_same_house",     87.5),
+        ("testcity", "nonprofit_density",         "combined_care",      10.0),
+        ("testcity", "library_density",           "density_per_100k",    3.0),
+        ("testcity", "health_center_density",     "density_per_100k",    5.0),
         ("testcity", "nursing_home_capacity",     "beds_per_1k_65plus", 40.0),
-        ("testcity", "health_insurance_coverage", "pct_insured",      92.0),
-        ("testcity", "snap_participation",        "coverage_rate",    70.0),
+        ("testcity", "health_insurance_coverage", "pct_insured",        92.0),
+        ("testcity", "housing_cost_burden",       "pct_not_burdened",   75.0),
+        ("testcity", "snap_participation",        "coverage_rate",      70.0),
     ]:
         etl.upsert(conn, city, metric, sub_metric, value=value)
 

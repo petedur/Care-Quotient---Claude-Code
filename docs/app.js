@@ -78,7 +78,7 @@ function renderHome(app) {
   app.innerHTML = [
     // ── Hero ──────────────────────────────────────────────────────────────
     '<section class="hero">',
-      '<div class="hero-eyebrow">Care Quotient &mdash; V4</div>',
+      '<div class="hero-eyebrow">Care Quotient &mdash; V5</div>',
       '<h1 class="hero-headline">When someone needs help,<br>can their city show up?</h1>',
       '<div class="hero-rule"></div>',
       '<p class="hero-subhead">',
@@ -124,28 +124,30 @@ function renderHome(app) {
 
         '<div class="pillar-card">',
           '<div class="pillar-card-weight">40% of CQ</div>',
-          '<div class="pillar-card-name">Social Fabric</div>',
+          '<div class="pillar-card-name">Social &amp; Relational Care</div>',
           '<div class="pillar-card-desc">',
-            'Whether the conditions for community care exist &mdash; stable residential ',
-            'networks and housing markets that allow people to stay embedded in their communities.',
+            'Whether the relational infrastructure for care exists &mdash; stable communities, ',
+            'the organized nonprofits that show up when people need help, and the public spaces ',
+            'that hold communities together.',
           '</div>',
         '</div>',
 
         '<div class="pillar-card p2">',
           '<div class="pillar-card-weight">35% of CQ</div>',
-          '<div class="pillar-card-name">Institutions of Care</div>',
+          '<div class="pillar-card-name">Institutional Care</div>',
           '<div class="pillar-card-desc">',
-            'Whether institutions specifically designed to absorb distress are present &mdash; ',
-            'care-oriented nonprofits, federally qualified health centers, and nursing home capacity for elder care.',
+            'Whether formal institutions exist to absorb distress at scale &mdash; ',
+            'federally qualified health centers serving patients regardless of ability to pay, ',
+            'and nursing home capacity for the elderly.',
           '</div>',
         '</div>',
 
         '<div class="pillar-card p3">',
           '<div class="pillar-card-weight">25% of CQ</div>',
-          '<div class="pillar-card-name">Reach</div>',
+          '<div class="pillar-card-name">Economic Access to Care</div>',
           '<div class="pillar-card-desc">',
-            'Whether care systems connect with the people who need them &mdash; ',
-            'measuring health insurance coverage and SNAP participation among likely-eligible households.',
+            'Whether economic conditions allow care to reach those who need it &mdash; ',
+            'healthcare coverage, housing affordability, and food security program reach.',
           '</div>',
         '</div>',
 
@@ -239,7 +241,7 @@ var CITY_CONTEXT = {
       '<strong>Rust Belt pattern:</strong> Cleveland scores higher than many larger, wealthier cities. ',
       'Decades of economic decline attracted sustained federal investment in FQHCs and social services &mdash; ',
       'infrastructure that persists even as the broader economy contracted. Ohio expanded Medicaid, ',
-      'further strengthening the Reach pillar. High care capacity and low prosperity are not contradictions.',
+      'further strengthening the Economic Access pillar. High care capacity and low prosperity are not contradictions.',
     ].join(''),
   },
   detroit: {
@@ -318,9 +320,9 @@ var CITY_CONTEXT = {
 // ── City page ───────────────────────────────────────────────────────────────
 
 var PILLAR_META = {
-  pillar1: { label: 'Social Fabric',        color: 'var(--p1)' },
-  pillar2: { label: 'Institutions of Care', color: 'var(--p2)' },
-  pillar3: { label: 'Reach',                color: 'var(--p3)' },
+  pillar1: { label: 'Social & Relational Care',    color: 'var(--p1)' },
+  pillar2: { label: 'Institutional Care',          color: 'var(--p2)' },
+  pillar3: { label: 'Economic Access to Care',     color: 'var(--p3)' },
 };
 
 // ── FQHC / insurance mismatch interpretation ────────────────────────────────
@@ -375,15 +377,15 @@ var METRIC_META = {
     pillar: 'pillar1',
     desc:   '% of population in same home 1+ years',
   },
-  housing_cost_burden: {
-    label:  'Housing Affordability',
-    pillar: 'pillar1',
-    desc:   '% of households not spending >30% of income on housing',
-  },
   combined_care: {
     label:  'Care Nonprofits',
-    pillar: 'pillar2',
+    pillar: 'pillar1',
     desc:   'Human services & health orgs per 10,000 residents (NTEE P+E+F+K)',
+  },
+  library_density: {
+    label:  'Library Density',
+    pillar: 'pillar1',
+    desc:   'Public libraries per 100,000 residents',
   },
   fqhc: {
     label:  'Health Centers (FQHCs)',
@@ -396,9 +398,14 @@ var METRIC_META = {
     desc:   'Medicare/Medicaid certified beds per 1,000 residents aged 65+',
   },
   health_insurance: {
-    label:  'Health Insurance Coverage',
+    label:  'Healthcare Coverage',
     pillar: 'pillar3',
-    desc:   '% of population with any health insurance',
+    desc:   '% of population with healthcare coverage',
+  },
+  housing_cost_burden: {
+    label:  'Housing Affordability',
+    pillar: 'pillar3',
+    desc:   '% of households not spending >30% of income on housing',
   },
   snap_coverage: {
     label:  'SNAP Coverage',
@@ -409,11 +416,12 @@ var METRIC_META = {
 
 var METRIC_ORDER = [
   'residential_stability',
-  'housing_cost_burden',
   'combined_care',
+  'library_density',
   'fqhc',
   'nursing_home',
   'health_insurance',
+  'housing_cost_burden',
   'snap_coverage',
 ];
 
@@ -638,9 +646,9 @@ function renderCompareTable(keyA, keyB) {
   }
 
   var pillarRows = [
-    ['pillar1', 'Social Fabric',        'var(--p1)'],
-    ['pillar2', 'Institutions of Care', 'var(--p2)'],
-    ['pillar3', 'Reach',                'var(--p3)'],
+    ['pillar1', 'Social & Relational Care',  'var(--p1)'],
+    ['pillar2', 'Institutional Care',        'var(--p2)'],
+    ['pillar3', 'Economic Access to Care',   'var(--p3)'],
   ].map(function(p) {
     return [
       '<tr class="cmp-row-pillar">',
@@ -789,18 +797,18 @@ function renderMethodology(app) {
         '</tr></thead>',
         '<tbody>',
           '<tr>',
-            '<td><span class="ptag ptag-p1">Social Fabric</span></td>',
-            '<td>Residential stability &amp; housing affordability &mdash; conditions that allow people to stay embedded in their communities.</td>',
+            '<td><span class="ptag ptag-p1">Social &amp; Relational Care</span></td>',
+            '<td>Residential stability, care nonprofit density, &amp; library density &mdash; the relational infrastructure that enables communities to notice and respond to need.</td>',
             '<td>40%</td>',
           '</tr>',
           '<tr>',
-            '<td><span class="ptag ptag-p2">Institutions of Care</span></td>',
-            '<td>Care nonprofit density, FQHC density, &amp; nursing home capacity &mdash; organizations specifically designed to absorb distress, including elder care infrastructure.</td>',
+            '<td><span class="ptag ptag-p2">Institutional Care</span></td>',
+            '<td>FQHC density &amp; nursing home capacity &mdash; formal institutions designed to absorb distress at scale, serving patients regardless of ability to pay.</td>',
             '<td>35%</td>',
           '</tr>',
           '<tr>',
-            '<td><span class="ptag ptag-p3">Reach</span></td>',
-            '<td>Health insurance coverage &amp; SNAP participation &mdash; whether systems connect with people who need them.</td>',
+            '<td><span class="ptag ptag-p3">Economic Access to Care</span></td>',
+            '<td>Healthcare coverage, housing affordability, &amp; SNAP participation &mdash; whether economic conditions allow care to reach those who need it.</td>',
             '<td>25%</td>',
           '</tr>',
         '</tbody>',

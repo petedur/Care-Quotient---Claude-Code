@@ -288,17 +288,19 @@ VALIDATION_RULES = [
 ]
 
 # Scored metrics that must be present for every city; missing = pipeline gap.
-# V3: combined_care replaces the separate social_support + care_institutions
-# scored metrics. Sub-components are retained as diagnostics, not scored.
-# V4: nursing_home_capacity added as third Pillar 2 metric.
+# V3: combined_care replaces separate social_support + care_institutions.
+# V4: nursing_home_capacity added as Pillar 2 metric.
+# V5: library_density promoted from diagnostic to Pillar 1 scored metric;
+#     housing_cost_burden moved from Pillar 1 to Pillar 3 (Economic Access).
 REQUIRED_SCORED = [
     ("residential_stability",     "pct_same_house"),
     ("nonprofit_density",         "combined_care"),
+    ("library_density",           "density_per_100k"),
     ("health_center_density",     "density_per_100k"),
     ("nursing_home_capacity",     "beds_per_1k_65plus"),
+    ("health_insurance_coverage", "pct_insured"),
     ("housing_cost_burden",       "pct_not_burdened"),
     ("snap_participation",        "coverage_rate"),
-    ("health_insurance_coverage", "pct_insured"),
 ]
 
 
