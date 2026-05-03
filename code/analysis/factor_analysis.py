@@ -300,7 +300,8 @@ def run():
     for pillar in PILLAR_WEIGHTS:
         curr = PILLAR_WEIGHTS[pillar]
         emp  = empirical_inter.get(pillar, "n/a")
-        print(f"  {PILLAR_LABELS[pillar]:<35} {curr:>12.2f} {emp:>12.3f}")
+        emp_str = f"{emp:>12.3f}" if isinstance(emp, float) else f"{emp:>12}"
+        print(f"  {PILLAR_LABELS[pillar]:<35} {curr:>12.2f} {emp_str}")
 
     print(f"\n  Within-pillar weights:")
     for pillar in PILLAR_WEIGHTS:

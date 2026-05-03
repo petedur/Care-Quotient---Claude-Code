@@ -1,0 +1,41 @@
+name: Regenerate site data
+
+# Runs whenever the DuckDB or scoring code changes on master.
+# Re-runs score.py and commits docs/data.js if it changed.
+# This keeps the live site in sync without re-running the full data pipeline.
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'data/care_capacity.duckdb'
+      - 'code/score.py'
+      - 'code/etl.py'
+  workflow_dispatch:
+
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pandas duckdb
+
+      - name: Run score.py
+        run: python code/score.py
+
+      - name: Commit updated data.js and outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data.js outputs/
+          git diff --staged --quiet && echo "No changes to commit" || \
+            git commit -m "Auto: regenerate data.js [skip ci]" && git push

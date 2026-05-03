@@ -6,6 +6,39 @@ import time
 import requests
 
 
+def http_get_with_retry(
+    url: str,
+    timeout: int = 60,
+    max_retries: int = 3,
+    label: str = "",
+) -> requests.Response:
+    """
+    GET a URL with retries and exponential backoff.
+    Used for CMS and other non-Census HTTP downloads.
+
+    Retries on Timeout, ConnectionError, and HTTP 5xx.
+    Raises the last exception after all retries are exhausted.
+    """
+    last_exc = None
+    for attempt in range(max_retries):
+        try:
+            r = requests.get(url, timeout=timeout)
+            if r.status_code >= 500:
+                raise requests.HTTPError(
+                    f"Server error {r.status_code}{' for ' + label if label else ''}",
+                    response=r,
+                )
+            r.raise_for_status()
+            return r
+        except (requests.Timeout, requests.ConnectionError, requests.HTTPError) as exc:
+            last_exc = exc
+            if attempt < max_retries - 1:
+                wait = 2 ** attempt
+                print(f"    Retry {attempt + 1}/{max_retries - 1} after {wait}s ({exc})")
+                time.sleep(wait)
+    raise last_exc
+
+
 def census_get(url: str, params: dict, max_retries: int = 3) -> list:
     """
     GET a Census API endpoint with retries and exponential backoff.

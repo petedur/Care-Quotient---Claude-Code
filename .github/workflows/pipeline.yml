@@ -1,0 +1,55 @@
+name: Run data pipeline (manual)
+
+# Full pipeline — triggered manually via the GitHub Actions UI.
+# Runs only the collectors that fetch data automatically (Census API + CMS).
+# Collectors that require manual file downloads (IRS EO BMF, HRSA, IMLS) are
+# NOT included here; run those locally and commit the updated DuckDB.
+#
+# Requires: CENSUS_API_KEY set as a repository secret.
+# (Settings → Secrets and variables → Actions → New repository secret)
+
+on:
+  workflow_dispatch:
+    inputs:
+      cities:
+        description: 'City keys to run (space-separated). Leave blank for all 68 cities.'
+        required: false
+        default: ''
+      force_refresh:
+        description: 'Force re-download from APIs even if cache exists'
+        type: boolean
+        default: false
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run auto-download collectors + score
+        env:
+          CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+        run: |
+          REFRESH_FLAG=""
+          if [ "${{ github.event.inputs.force_refresh }}" = "true" ]; then
+            REFRESH_FLAG="--refresh"
+          fi
+          python code/pipeline.py --auto-only $REFRESH_FLAG ${{ github.event.inputs.cities }}
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/care_capacity.duckdb docs/data.js outputs/
+          git diff --staged --quiet && echo "No changes to commit" || \
+            git commit -m "Auto: pipeline refresh $(date +%Y-%m-%d) [skip ci]" && git push

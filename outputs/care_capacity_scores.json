@@ -1,7 +1,7 @@
 {
   "albuquerque": {
     "pillar1_social_fabric": 83.3,
-    "pillar2_institutions_of_care": 21.8,
+    "pillar2_institutions_of_care": 30.5,
     "pillar3_reach": 88.8,
     "metrics": {
       "Residential Stability": {
@@ -28,6 +28,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 50.7,
+        "raw_value": 25.34,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 97.5,
         "raw_value": 92.64,
@@ -41,11 +47,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 63.2
+    "care_quotient": 66.2
   },
   "anchorage": {
     "pillar1_social_fabric": 82.7,
-    "pillar2_institutions_of_care": 16.0,
+    "pillar2_institutions_of_care": 15.6,
     "pillar3_reach": 84.4,
     "metrics": {
       "Residential Stability": {
@@ -72,6 +78,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 14.9,
+        "raw_value": 7.46,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 94.4,
         "raw_value": 89.68,
@@ -85,11 +97,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 59.8
+    "care_quotient": 59.6
   },
   "atlanta": {
     "pillar1_social_fabric": 79.5,
-    "pillar2_institutions_of_care": 59.0,
+    "pillar2_institutions_of_care": 61.8,
     "pillar3_reach": 83.9,
     "metrics": {
       "Residential Stability": {
@@ -116,6 +128,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 68.2,
+        "raw_value": 34.08,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 94.1,
         "raw_value": 89.38,
@@ -129,11 +147,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 73.4
+    "care_quotient": 74.4
   },
   "aurora": {
     "pillar1_social_fabric": 79.5,
-    "pillar2_institutions_of_care": 22.4,
+    "pillar2_institutions_of_care": 31.8,
     "pillar3_reach": 81.9,
     "metrics": {
       "Residential Stability": {
@@ -160,6 +178,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 53.7,
+        "raw_value": 26.87,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 92.3,
         "raw_value": 87.67,
@@ -173,11 +197,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 60.1
+    "care_quotient": 63.4
   },
   "austin": {
     "pillar1_social_fabric": 78.1,
-    "pillar2_institutions_of_care": 32.2,
+    "pillar2_institutions_of_care": 38.5,
     "pillar3_reach": 73.7,
     "metrics": {
       "Residential Stability": {
@@ -204,6 +228,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 53.1,
+        "raw_value": 26.57,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 91.9,
         "raw_value": 87.29,
@@ -217,11 +247,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 60.9
+    "care_quotient": 63.1
   },
   "bakersfield": {
     "pillar1_social_fabric": 82.0,
-    "pillar2_institutions_of_care": 21.7,
+    "pillar2_institutions_of_care": 33.0,
     "pillar3_reach": 88.6,
     "metrics": {
       "Residential Stability": {
@@ -248,6 +278,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 59.3,
+        "raw_value": 29.63,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 97.2,
         "raw_value": 92.33,
@@ -261,11 +297,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 62.5
+    "care_quotient": 66.5
   },
   "baltimore": {
     "pillar1_social_fabric": 81.8,
-    "pillar2_institutions_of_care": 43.6,
+    "pillar2_institutions_of_care": 54.8,
     "pillar3_reach": 97.7,
     "metrics": {
       "Residential Stability": {
@@ -292,6 +328,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 80.7,
+        "raw_value": 40.37,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 99.7,
         "raw_value": 94.69,
@@ -305,11 +347,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 72.4
+    "care_quotient": 76.3
   },
   "baton_rouge": {
     "pillar1_social_fabric": 78.2,
-    "pillar2_institutions_of_care": 59.7,
+    "pillar2_institutions_of_care": 70.7,
     "pillar3_reach": 82.6,
     "metrics": {
       "Residential Stability": {
@@ -336,6 +378,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 96.4,
+        "raw_value": 48.19,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 93.7,
         "raw_value": 89.04,
@@ -349,11 +397,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 72.8
+    "care_quotient": 76.7
   },
   "birmingham": {
     "pillar1_social_fabric": 78.1,
-    "pillar2_institutions_of_care": 47.4,
+    "pillar2_institutions_of_care": 52.0,
     "pillar3_reach": 84.1,
     "metrics": {
       "Residential Stability": {
@@ -380,6 +428,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 62.5,
+        "raw_value": 31.25,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 92.4,
         "raw_value": 87.79,
@@ -393,11 +447,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 68.9
+    "care_quotient": 70.5
   },
   "boston": {
     "pillar1_social_fabric": 77.0,
-    "pillar2_institutions_of_care": 58.0,
+    "pillar2_institutions_of_care": 55.6,
     "pillar3_reach": 94.6,
     "metrics": {
       "Residential Stability": {
@@ -424,6 +478,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 50.0,
+        "raw_value": 25.01,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 100.0,
         "raw_value": 96.74,
@@ -437,11 +497,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 74.8
+    "care_quotient": 73.9
   },
   "buffalo": {
     "pillar1_social_fabric": 82.8,
-    "pillar2_institutions_of_care": 35.0,
+    "pillar2_institutions_of_care": 47.1,
     "pillar3_reach": 96.0,
     "metrics": {
       "Residential Stability": {
@@ -468,6 +528,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 75.6,
+        "raw_value": 37.78,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 100.0,
         "raw_value": 96.05,
@@ -481,11 +547,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 69.4
+    "care_quotient": 73.6
   },
   "charlotte": {
     "pillar1_social_fabric": 82.1,
-    "pillar2_institutions_of_care": 29.1,
+    "pillar2_institutions_of_care": 33.2,
     "pillar3_reach": 79.3,
     "metrics": {
       "Residential Stability": {
@@ -512,6 +578,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 42.6,
+        "raw_value": 21.32,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 92.1,
         "raw_value": 87.49,
@@ -525,11 +597,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 62.8
+    "care_quotient": 64.3
   },
   "chicago": {
     "pillar1_social_fabric": 81.4,
-    "pillar2_institutions_of_care": 40.8,
+    "pillar2_institutions_of_care": 53.5,
     "pillar3_reach": 90.6,
     "metrics": {
       "Residential Stability": {
@@ -556,6 +628,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 83.1,
+        "raw_value": 41.55,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 94.9,
         "raw_value": 90.11,
@@ -569,11 +647,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 69.5
+    "care_quotient": 73.9
   },
   "cincinnati": {
     "pillar1_social_fabric": 78.5,
-    "pillar2_institutions_of_care": 66.8,
+    "pillar2_institutions_of_care": 76.8,
     "pillar3_reach": 84.8,
     "metrics": {
       "Residential Stability": {
@@ -600,6 +678,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 100.0,
+        "raw_value": 61.01,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 97.7,
         "raw_value": 92.85,
@@ -613,11 +697,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 76.0
+    "care_quotient": 79.5
   },
   "cleveland": {
     "pillar1_social_fabric": 79.3,
-    "pillar2_institutions_of_care": 64.0,
+    "pillar2_institutions_of_care": 66.0,
     "pillar3_reach": 92.6,
     "metrics": {
       "Residential Stability": {
@@ -644,6 +728,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 70.5,
+        "raw_value": 35.23,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 97.6,
         "raw_value": 92.74,
@@ -657,11 +747,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 77.3
+    "care_quotient": 78.0
   },
   "colorado_springs": {
     "pillar1_social_fabric": 79.1,
-    "pillar2_institutions_of_care": 24.5,
+    "pillar2_institutions_of_care": 32.5,
     "pillar3_reach": 85.1,
     "metrics": {
       "Residential Stability": {
@@ -688,6 +778,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 51.2,
+        "raw_value": 25.62,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 96.4,
         "raw_value": 91.59,
@@ -701,11 +797,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 61.5
+    "care_quotient": 64.3
   },
   "columbus": {
     "pillar1_social_fabric": 79.5,
-    "pillar2_institutions_of_care": 27.2,
+    "pillar2_institutions_of_care": 37.8,
     "pillar3_reach": 81.6,
     "metrics": {
       "Residential Stability": {
@@ -732,6 +828,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 62.3,
+        "raw_value": 31.17,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 94.3,
         "raw_value": 89.58,
@@ -745,11 +847,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 61.7
+    "care_quotient": 65.4
   },
   "corpus_christi": {
     "pillar1_social_fabric": 82.6,
-    "pillar2_institutions_of_care": 9.2,
+    "pillar2_institutions_of_care": 28.2,
     "pillar3_reach": 82.5,
     "metrics": {
       "Residential Stability": {
@@ -776,6 +878,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 72.5,
+        "raw_value": 36.25,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 86.8,
         "raw_value": 82.43,
@@ -789,11 +897,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 56.9
+    "care_quotient": 63.5
   },
   "dallas": {
     "pillar1_social_fabric": 80.5,
-    "pillar2_institutions_of_care": 24.1,
+    "pillar2_institutions_of_care": 34.2,
     "pillar3_reach": 69.4,
     "metrics": {
       "Residential Stability": {
@@ -820,6 +928,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 57.7,
+        "raw_value": 28.83,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 80.7,
         "raw_value": 76.64,
@@ -833,11 +947,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 58.0
+    "care_quotient": 61.5
   },
   "denver": {
     "pillar1_social_fabric": 78.8,
-    "pillar2_institutions_of_care": 48.7,
+    "pillar2_institutions_of_care": 51.1,
     "pillar3_reach": 80.4,
     "metrics": {
       "Residential Stability": {
@@ -864,6 +978,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 56.6,
+        "raw_value": 28.29,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 95.7,
         "raw_value": 90.9,
@@ -877,11 +997,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 68.7
+    "care_quotient": 69.5
   },
   "des_moines": {
     "pillar1_social_fabric": 83.0,
-    "pillar2_institutions_of_care": 35.1,
+    "pillar2_institutions_of_care": 46.3,
     "pillar3_reach": 91.5,
     "metrics": {
       "Residential Stability": {
@@ -908,6 +1028,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 72.4,
+        "raw_value": 36.21,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 98.9,
         "raw_value": 93.92,
@@ -921,11 +1047,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 68.4
+    "care_quotient": 72.3
   },
   "detroit": {
     "pillar1_social_fabric": 82.0,
-    "pillar2_institutions_of_care": 55.6,
+    "pillar2_institutions_of_care": 59.6,
     "pillar3_reach": 97.4,
     "metrics": {
       "Residential Stability": {
@@ -952,6 +1078,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 68.8,
+        "raw_value": 34.42,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 97.1,
         "raw_value": 92.23,
@@ -965,11 +1097,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 76.6
+    "care_quotient": 78.0
   },
   "durham": {
     "pillar1_social_fabric": 82.6,
-    "pillar2_institutions_of_care": 26.7,
+    "pillar2_institutions_of_care": 34.2,
     "pillar3_reach": 79.2,
     "metrics": {
       "Residential Stability": {
@@ -996,6 +1128,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 51.8,
+        "raw_value": 25.88,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 92.7,
         "raw_value": 88.02,
@@ -1009,11 +1147,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 62.2
+    "care_quotient": 64.8
   },
   "el_paso": {
     "pillar1_social_fabric": 83.9,
-    "pillar2_institutions_of_care": 20.3,
+    "pillar2_institutions_of_care": 28.8,
     "pillar3_reach": 78.4,
     "metrics": {
       "Residential Stability": {
@@ -1040,6 +1178,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 48.7,
+        "raw_value": 24.37,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 82.4,
         "raw_value": 78.31,
@@ -1053,11 +1197,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 60.3
+    "care_quotient": 63.2
   },
   "fort_worth": {
     "pillar1_social_fabric": 82.6,
-    "pillar2_institutions_of_care": 14.0,
+    "pillar2_institutions_of_care": 34.8,
     "pillar3_reach": 76.9,
     "metrics": {
       "Residential Stability": {
@@ -1084,6 +1228,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 83.1,
+        "raw_value": 41.53,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 84.1,
         "raw_value": 79.86,
@@ -1097,11 +1247,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 57.2
+    "care_quotient": 64.4
   },
   "fresno": {
     "pillar1_social_fabric": 81.8,
-    "pillar2_institutions_of_care": 42.4,
+    "pillar2_institutions_of_care": 42.3,
     "pillar3_reach": 90.7,
     "metrics": {
       "Residential Stability": {
@@ -1128,6 +1278,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 42.1,
+        "raw_value": 21.03,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 98.4,
         "raw_value": 93.49,
@@ -1145,7 +1301,7 @@
   },
   "honolulu": {
     "pillar1_social_fabric": 81.2,
-    "pillar2_institutions_of_care": 83.0,
+    "pillar2_institutions_of_care": 66.6,
     "pillar3_reach": 92.9,
     "metrics": {
       "Residential Stability": {
@@ -1172,6 +1328,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 28.6,
+        "raw_value": 14.3,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 100.0,
         "raw_value": 96.5,
@@ -1185,11 +1347,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 84.8
+    "care_quotient": 79.0
   },
   "houston": {
     "pillar1_social_fabric": 80.8,
-    "pillar2_institutions_of_care": 29.0,
+    "pillar2_institutions_of_care": 31.4,
     "pillar3_reach": 72.0,
     "metrics": {
       "Residential Stability": {
@@ -1216,6 +1378,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 37.1,
+        "raw_value": 18.54,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 80.3,
         "raw_value": 76.29,
@@ -1229,11 +1397,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 60.5
+    "care_quotient": 61.3
   },
   "indianapolis": {
     "pillar1_social_fabric": 83.7,
-    "pillar2_institutions_of_care": 53.2,
+    "pillar2_institutions_of_care": 60.7,
     "pillar3_reach": 81.4,
     "metrics": {
       "Residential Stability": {
@@ -1260,6 +1428,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 78.0,
+        "raw_value": 38.98,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 95.2,
         "raw_value": 90.41,
@@ -1273,11 +1447,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 72.5
+    "care_quotient": 75.1
   },
   "jacksonville": {
     "pillar1_social_fabric": 81.4,
-    "pillar2_institutions_of_care": 20.6,
+    "pillar2_institutions_of_care": 32.7,
     "pillar3_reach": 86.9,
     "metrics": {
       "Residential Stability": {
@@ -1304,6 +1478,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 60.8,
+        "raw_value": 30.39,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 92.9,
         "raw_value": 88.23,
@@ -1317,11 +1497,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 61.5
+    "care_quotient": 65.7
   },
   "kansas_city": {
     "pillar1_social_fabric": 82.8,
-    "pillar2_institutions_of_care": 38.4,
+    "pillar2_institutions_of_care": 46.6,
     "pillar3_reach": 78.4,
     "metrics": {
       "Residential Stability": {
@@ -1348,6 +1528,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 65.5,
+        "raw_value": 32.75,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 92.9,
         "raw_value": 88.27,
@@ -1361,11 +1547,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 66.2
+    "care_quotient": 69.0
   },
   "las_vegas": {
     "pillar1_social_fabric": 81.1,
-    "pillar2_institutions_of_care": 29.2,
+    "pillar2_institutions_of_care": 30.7,
     "pillar3_reach": 82.7,
     "metrics": {
       "Residential Stability": {
@@ -1392,6 +1578,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 34.1,
+        "raw_value": 17.03,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 91.0,
         "raw_value": 86.41,
@@ -1405,11 +1597,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 63.3
+    "care_quotient": 63.9
   },
   "lexington": {
     "pillar1_social_fabric": 80.0,
-    "pillar2_institutions_of_care": 41.8,
+    "pillar2_institutions_of_care": 47.3,
     "pillar3_reach": 78.9,
     "metrics": {
       "Residential Stability": {
@@ -1436,6 +1628,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 60.2,
+        "raw_value": 30.11,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 98.0,
         "raw_value": 93.11,
@@ -1449,11 +1647,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 66.4
+    "care_quotient": 68.3
   },
   "los_angeles": {
     "pillar1_social_fabric": 79.0,
-    "pillar2_institutions_of_care": 42.1,
+    "pillar2_institutions_of_care": 45.5,
     "pillar3_reach": 80.9,
     "metrics": {
       "Residential Stability": {
@@ -1480,6 +1678,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 53.5,
+        "raw_value": 26.75,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 94.1,
         "raw_value": 89.42,
@@ -1493,11 +1697,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 66.6
+    "care_quotient": 67.8
   },
   "louisville": {
     "pillar1_social_fabric": 87.3,
-    "pillar2_institutions_of_care": 12.8,
+    "pillar2_institutions_of_care": 21.8,
     "pillar3_reach": 80.8,
     "metrics": {
       "Residential Stability": {
@@ -1524,6 +1728,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 42.8,
+        "raw_value": 21.39,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 99.4,
         "raw_value": 94.47,
@@ -1537,11 +1747,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 59.6
+    "care_quotient": 62.8
   },
   "madison": {
     "pillar1_social_fabric": 74.8,
-    "pillar2_institutions_of_care": 22.2,
+    "pillar2_institutions_of_care": 25.4,
     "pillar3_reach": 80.7,
     "metrics": {
       "Residential Stability": {
@@ -1568,6 +1778,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 32.9,
+        "raw_value": 16.45,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 100.0,
         "raw_value": 95.42,
@@ -1581,11 +1797,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 57.9
+    "care_quotient": 59.0
   },
   "memphis": {
     "pillar1_social_fabric": 81.6,
-    "pillar2_institutions_of_care": 32.8,
+    "pillar2_institutions_of_care": 39.7,
     "pillar3_reach": 82.8,
     "metrics": {
       "Residential Stability": {
@@ -1612,6 +1828,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 56.0,
+        "raw_value": 27.99,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 90.4,
         "raw_value": 85.85,
@@ -1625,11 +1847,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 64.8
+    "care_quotient": 67.2
   },
   "milwaukee": {
     "pillar1_social_fabric": 81.1,
-    "pillar2_institutions_of_care": 41.5,
+    "pillar2_institutions_of_care": 42.6,
     "pillar3_reach": 92.8,
     "metrics": {
       "Residential Stability": {
@@ -1656,6 +1878,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 45.3,
+        "raw_value": 22.66,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 95.8,
         "raw_value": 91.05,
@@ -1669,11 +1897,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 70.2
+    "care_quotient": 70.6
   },
   "minneapolis": {
     "pillar1_social_fabric": 78.0,
-    "pillar2_institutions_of_care": 46.0,
+    "pillar2_institutions_of_care": 58.6,
     "pillar3_reach": 84.8,
     "metrics": {
       "Residential Stability": {
@@ -1700,6 +1928,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 88.1,
+        "raw_value": 44.03,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 99.0,
         "raw_value": 94.07,
@@ -1713,11 +1947,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 68.5
+    "care_quotient": 72.9
   },
   "nashville": {
     "pillar1_social_fabric": 79.7,
-    "pillar2_institutions_of_care": 27.7,
+    "pillar2_institutions_of_care": 35.0,
     "pillar3_reach": 76.6,
     "metrics": {
       "Residential Stability": {
@@ -1744,6 +1978,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 52.0,
+        "raw_value": 26.02,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 92.4,
         "raw_value": 87.8,
@@ -1757,11 +1997,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 60.7
+    "care_quotient": 63.3
   },
   "new_orleans": {
     "pillar1_social_fabric": 80.5,
-    "pillar2_institutions_of_care": 72.4,
+    "pillar2_institutions_of_care": 65.4,
     "pillar3_reach": 84.6,
     "metrics": {
       "Residential Stability": {
@@ -1788,6 +2028,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 49.2,
+        "raw_value": 24.58,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 96.3,
         "raw_value": 91.48,
@@ -1801,11 +2047,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 78.7
+    "care_quotient": 76.2
   },
   "nyc": {
     "pillar1_social_fabric": 81.7,
-    "pillar2_institutions_of_care": 31.3,
+    "pillar2_institutions_of_care": 41.3,
     "pillar3_reach": 95.0,
     "metrics": {
       "Residential Stability": {
@@ -1832,6 +2078,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 64.7,
+        "raw_value": 32.37,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 98.2,
         "raw_value": 93.28,
@@ -1845,11 +2097,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 67.4
+    "care_quotient": 70.9
   },
   "oklahoma_city": {
     "pillar1_social_fabric": 83.5,
-    "pillar2_institutions_of_care": 26.2,
+    "pillar2_institutions_of_care": 39.9,
     "pillar3_reach": 80.2,
     "metrics": {
       "Residential Stability": {
@@ -1876,6 +2128,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 71.6,
+        "raw_value": 35.82,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 90.5,
         "raw_value": 85.98,
@@ -1889,11 +2147,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 62.6
+    "care_quotient": 67.4
   },
   "omaha": {
     "pillar1_social_fabric": 84.4,
-    "pillar2_institutions_of_care": 43.2,
+    "pillar2_institutions_of_care": 50.6,
     "pillar3_reach": 81.6,
     "metrics": {
       "Residential Stability": {
@@ -1920,6 +2178,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 67.9,
+        "raw_value": 33.94,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 94.9,
         "raw_value": 90.15,
@@ -1933,11 +2197,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 69.3
+    "care_quotient": 71.9
   },
   "philadelphia": {
     "pillar1_social_fabric": 82.1,
-    "pillar2_institutions_of_care": 33.4,
+    "pillar2_institutions_of_care": 43.2,
     "pillar3_reach": 95.9,
     "metrics": {
       "Residential Stability": {
@@ -1964,6 +2228,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 66.1,
+        "raw_value": 33.04,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 97.5,
         "raw_value": 92.65,
@@ -1977,11 +2247,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 68.5
+    "care_quotient": 71.9
   },
   "phoenix": {
     "pillar1_social_fabric": 83.4,
-    "pillar2_institutions_of_care": 28.0,
+    "pillar2_institutions_of_care": 28.9,
     "pillar3_reach": 77.7,
     "metrics": {
       "Residential Stability": {
@@ -2008,6 +2278,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 31.1,
+        "raw_value": 15.55,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 89.5,
         "raw_value": 85.03,
@@ -2021,11 +2297,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 62.6
+    "care_quotient": 62.9
   },
   "pittsburgh": {
     "pillar1_social_fabric": 80.0,
-    "pillar2_institutions_of_care": 55.8,
+    "pillar2_institutions_of_care": 61.4,
     "pillar3_reach": 89.0,
     "metrics": {
       "Residential Stability": {
@@ -2052,6 +2328,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 74.5,
+        "raw_value": 37.27,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 100.0,
         "raw_value": 95.05,
@@ -2065,11 +2347,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 73.8
+    "care_quotient": 75.7
   },
   "portland": {
     "pillar1_social_fabric": 80.5,
-    "pillar2_institutions_of_care": 44.9,
+    "pillar2_institutions_of_care": 46.2,
     "pillar3_reach": 93.6,
     "metrics": {
       "Residential Stability": {
@@ -2096,6 +2378,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 49.3,
+        "raw_value": 24.65,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 98.9,
         "raw_value": 93.92,
@@ -2109,11 +2397,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 71.3
+    "care_quotient": 71.8
   },
   "providence": {
     "pillar1_social_fabric": 81.0,
-    "pillar2_institutions_of_care": 37.6,
+    "pillar2_institutions_of_care": 54.8,
     "pillar3_reach": 98.8,
     "metrics": {
       "Residential Stability": {
@@ -2140,6 +2428,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 94.7,
+        "raw_value": 47.35,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 98.1,
         "raw_value": 93.18,
@@ -2153,11 +2447,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 70.3
+    "care_quotient": 76.3
   },
   "raleigh": {
     "pillar1_social_fabric": 81.9,
-    "pillar2_institutions_of_care": 20.5,
+    "pillar2_institutions_of_care": 28.3,
     "pillar3_reach": 80.5,
     "metrics": {
       "Residential Stability": {
@@ -2184,6 +2478,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 46.5,
+        "raw_value": 23.26,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 93.9,
         "raw_value": 89.17,
@@ -2197,11 +2497,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 60.1
+    "care_quotient": 62.8
   },
   "richmond": {
     "pillar1_social_fabric": 76.9,
-    "pillar2_institutions_of_care": 35.6,
+    "pillar2_institutions_of_care": 54.9,
     "pillar3_reach": 81.4,
     "metrics": {
       "Residential Stability": {
@@ -2228,6 +2528,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 100.0,
+        "raw_value": 51.11,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 95.0,
         "raw_value": 90.27,
@@ -2241,11 +2547,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 63.6
+    "care_quotient": 70.3
   },
   "rochester": {
     "pillar1_social_fabric": 78.4,
-    "pillar2_institutions_of_care": 52.3,
+    "pillar2_institutions_of_care": 66.6,
     "pillar3_reach": 94.6,
     "metrics": {
       "Residential Stability": {
@@ -2272,6 +2578,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 100.0,
+        "raw_value": 76.71,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 100.0,
         "raw_value": 95.45,
@@ -2285,11 +2597,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 73.3
+    "care_quotient": 78.3
   },
   "sacramento": {
     "pillar1_social_fabric": 81.0,
-    "pillar2_institutions_of_care": 52.4,
+    "pillar2_institutions_of_care": 48.9,
     "pillar3_reach": 88.7,
     "metrics": {
       "Residential Stability": {
@@ -2316,6 +2628,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 40.8,
+        "raw_value": 20.41,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 99.2,
         "raw_value": 94.26,
@@ -2329,11 +2647,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 72.9
+    "care_quotient": 71.7
   },
   "salt_lake_city": {
     "pillar1_social_fabric": 79.4,
-    "pillar2_institutions_of_care": 22.4,
+    "pillar2_institutions_of_care": 32.4,
     "pillar3_reach": 72.3,
     "metrics": {
       "Residential Stability": {
@@ -2360,6 +2678,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 55.8,
+        "raw_value": 27.91,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 92.4,
         "raw_value": 87.8,
@@ -2373,11 +2697,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 57.7
+    "care_quotient": 61.2
   },
   "san_antonio": {
     "pillar1_social_fabric": 80.5,
-    "pillar2_institutions_of_care": 19.2,
+    "pillar2_institutions_of_care": 35.3,
     "pillar3_reach": 79.3,
     "metrics": {
       "Residential Stability": {
@@ -2404,6 +2728,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 73.0,
+        "raw_value": 36.49,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 86.6,
         "raw_value": 82.25,
@@ -2417,11 +2747,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 58.7
+    "care_quotient": 64.4
   },
   "san_diego": {
     "pillar1_social_fabric": 79.3,
-    "pillar2_institutions_of_care": 37.0,
+    "pillar2_institutions_of_care": 33.9,
     "pillar3_reach": 82.0,
     "metrics": {
       "Residential Stability": {
@@ -2448,6 +2778,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 26.5,
+        "raw_value": 13.24,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 98.1,
         "raw_value": 93.2,
@@ -2461,11 +2797,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 65.2
+    "care_quotient": 64.1
   },
   "san_francisco": {
     "pillar1_social_fabric": 83.2,
-    "pillar2_institutions_of_care": 46.2,
+    "pillar2_institutions_of_care": 42.2,
     "pillar3_reach": 85.9,
     "metrics": {
       "Residential Stability": {
@@ -2492,6 +2828,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 32.7,
+        "raw_value": 16.34,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 100.0,
         "raw_value": 96.41,
@@ -2505,11 +2847,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 70.9
+    "care_quotient": 69.5
   },
   "san_jose": {
     "pillar1_social_fabric": 83.4,
-    "pillar2_institutions_of_care": 30.0,
+    "pillar2_institutions_of_care": 32.3,
     "pillar3_reach": 86.4,
     "metrics": {
       "Residential Stability": {
@@ -2536,6 +2878,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 37.6,
+        "raw_value": 18.82,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 99.8,
         "raw_value": 94.78,
@@ -2549,11 +2897,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 65.5
+    "care_quotient": 66.3
   },
   "seattle": {
     "pillar1_social_fabric": 77.2,
-    "pillar2_institutions_of_care": 50.7,
+    "pillar2_institutions_of_care": 47.3,
     "pillar3_reach": 86.5,
     "metrics": {
       "Residential Stability": {
@@ -2580,6 +2928,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 39.4,
+        "raw_value": 19.72,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 100.0,
         "raw_value": 95.59,
@@ -2593,11 +2947,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 70.2
+    "care_quotient": 69.1
   },
   "spokane": {
     "pillar1_social_fabric": 79.4,
-    "pillar2_institutions_of_care": 33.1,
+    "pillar2_institutions_of_care": 43.1,
     "pillar3_reach": 99.5,
     "metrics": {
       "Residential Stability": {
@@ -2624,6 +2978,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 66.4,
+        "raw_value": 33.19,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 99.2,
         "raw_value": 94.21,
@@ -2637,11 +2997,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 68.2
+    "care_quotient": 71.7
   },
   "st_louis": {
     "pillar1_social_fabric": 82.2,
-    "pillar2_institutions_of_care": 52.5,
+    "pillar2_institutions_of_care": 61.0,
     "pillar3_reach": 86.4,
     "metrics": {
       "Residential Stability": {
@@ -2668,6 +3028,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 80.9,
+        "raw_value": 40.45,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 94.6,
         "raw_value": 89.88,
@@ -2681,11 +3047,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 72.9
+    "care_quotient": 75.8
   },
   "st_paul": {
     "pillar1_social_fabric": 82.1,
-    "pillar2_institutions_of_care": 46.7,
+    "pillar2_institutions_of_care": 53.7,
     "pillar3_reach": 87.8,
     "metrics": {
       "Residential Stability": {
@@ -2712,6 +3078,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 70.1,
+        "raw_value": 35.07,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 98.6,
         "raw_value": 93.65,
@@ -2725,11 +3097,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 71.1
+    "care_quotient": 73.6
   },
   "stockton": {
     "pillar1_social_fabric": 82.3,
-    "pillar2_institutions_of_care": 30.4,
+    "pillar2_institutions_of_care": 50.7,
     "pillar3_reach": 97.5,
     "metrics": {
       "Residential Stability": {
@@ -2756,6 +3128,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 98.0,
+        "raw_value": 49.01,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 98.0,
         "raw_value": 93.12,
@@ -2769,11 +3147,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 67.9
+    "care_quotient": 75.0
   },
   "tampa": {
     "pillar1_social_fabric": 77.4,
-    "pillar2_institutions_of_care": 26.0,
+    "pillar2_institutions_of_care": 31.5,
     "pillar3_reach": 86.1,
     "metrics": {
       "Residential Stability": {
@@ -2800,6 +3178,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 44.4,
+        "raw_value": 22.18,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 93.8,
         "raw_value": 89.13,
@@ -2813,11 +3197,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 61.6
+    "care_quotient": 63.5
   },
   "tucson": {
     "pillar1_social_fabric": 77.8,
-    "pillar2_institutions_of_care": 20.1,
+    "pillar2_institutions_of_care": 29.3,
     "pillar3_reach": 81.1,
     "metrics": {
       "Residential Stability": {
@@ -2844,6 +3228,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 50.9,
+        "raw_value": 25.46,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 92.4,
         "raw_value": 87.78,
@@ -2857,11 +3247,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 58.4
+    "care_quotient": 61.6
   },
   "virginia_beach": {
     "pillar1_social_fabric": 82.3,
-    "pillar2_institutions_of_care": 15.4,
+    "pillar2_institutions_of_care": 23.6,
     "pillar3_reach": 81.8,
     "metrics": {
       "Residential Stability": {
@@ -2888,6 +3278,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 42.7,
+        "raw_value": 21.35,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 98.0,
         "raw_value": 93.13,
@@ -2901,11 +3297,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 58.8
+    "care_quotient": 61.6
   },
   "washington_dc": {
     "pillar1_social_fabric": 79.4,
-    "pillar2_institutions_of_care": 75.8,
+    "pillar2_institutions_of_care": 70.7,
     "pillar3_reach": 90.4,
     "metrics": {
       "Residential Stability": {
@@ -2932,6 +3328,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 58.9,
+        "raw_value": 29.43,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 100.0,
         "raw_value": 96.59,
@@ -2945,11 +3347,11 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 80.9
+    "care_quotient": 79.1
   },
   "wichita": {
     "pillar1_social_fabric": 83.7,
-    "pillar2_institutions_of_care": 25.2,
+    "pillar2_institutions_of_care": 32.9,
     "pillar3_reach": 78.5,
     "metrics": {
       "Residential Stability": {
@@ -2976,6 +3378,12 @@
         "benchmark": 15.0,
         "pillar": "Institutions of Care"
       },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 50.6,
+        "raw_value": 25.32,
+        "benchmark": 50.0,
+        "pillar": "Institutions of Care"
+      },
       "Health Insurance Coverage Rate": {
         "score": 91.9,
         "raw_value": 87.31,
@@ -2989,6 +3397,6 @@
         "pillar": "Reach"
       }
     },
-    "care_quotient": 61.9
+    "care_quotient": 64.6
   }
 }

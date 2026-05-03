@@ -15,7 +15,11 @@ env/
 
 # Data (raw downloads are large; keep processed outputs)
 data/raw/
-data/*.duckdb
+data/cache/
+# DuckDB is committed (small, ~1MB) so GitHub Actions can run score.py without
+# re-running the full data collection pipeline.
+# Exclude the scratch metrics.duckdb created during development.
+data/metrics.duckdb
 
 # OS
 .DS_Store

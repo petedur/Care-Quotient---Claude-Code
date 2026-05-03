@@ -17,6 +17,7 @@ Benchmarks:
   Pillar 2 — Institutions of Care (35% of CQ)
     combined_care (PEFK)     25/10k  — combined P+E+F+K nonprofit density
     fqhc_density             15/100k — eliminates HRSA shortage designation
+    nursing_home_capacity    50/1k65 — 5% of 65+ pop in skilled nursing (literature-based)
 
   Pillar 3 — Reach (25% of CQ)
     health_insurance         95%     — near-universal coverage
@@ -57,16 +58,21 @@ SCORED_METRICS = [
     ("housing_cost_burden",       "pct_not_burdened", "pillar1", 90.0, 0.35),
 
     # Pillar 2 — Institutions of Care (35% of CQ)
-    #   Combined NP density (NTEE P+E+F+K): 50% — care nonprofit organizational density.
+    #   Combined NP density (NTEE P+E+F+K): 35% — care nonprofit organizational density.
     #     Factor analysis showed NTEE P and NTEE E/F/K correlate at r=0.85 across 71 cities
     #     and load on the same factor — they measure one underlying dimension. Collapsed into
-    #     a single metric. Benchmark: 25/10k combined — raised from 15/10k after 50%+ of
-    #     cities hit the ceiling using county-based data. ZCTA-based filtering will reduce
-    #     raw counts; 25/10k maintains meaningful discrimination for top performers.
-    #   FQHC density: 50% — strongest evidence base; federal mandate; most directly serves
-    #     vulnerable populations. Rosenbaum et al. (2011); Shi et al.
-    ("nonprofit_density",         "combined_care",    "pillar2", 25.0, 0.50),
-    ("health_center_density",     "density_per_100k", "pillar2", 15.0, 0.50),
+    #     a single metric. Benchmark: 25/10k combined. Weight reduced from 50% (V3) to 35%
+    #     to accommodate nursing home capacity as a third Pillar 2 metric.
+    #   FQHC density: 35% — strongest evidence base; federal mandate; most directly serves
+    #     vulnerable populations. Rosenbaum et al. (2011); Shi et al. Weight reduced from
+    #     50% (V3) to 35% to accommodate nursing home capacity.
+    #   Nursing home capacity: 30% — beds per 1,000 residents 65+. Benchmark: 50/1k =
+    #     5% of elderly in skilled nursing care at any given time (literature-based threshold
+    #     for adequate institutionalized elder care capacity). Weight is provisional pending
+    #     factor analysis rerun with full 68-city dataset.
+    ("nonprofit_density",         "combined_care",      "pillar2", 25.0, 0.35),
+    ("health_center_density",     "density_per_100k",   "pillar2", 15.0, 0.35),
+    ("nursing_home_capacity",     "beds_per_1k_65plus", "pillar2", 50.0, 0.30),
 
     # Pillar 3 — Reach (25% of CQ)
     #   Health insurance:        65% — dominant signal in Reach dimension (factor loading 0.84).
@@ -107,6 +113,7 @@ METRIC_LABELS = {
     "housing_cost_burden.pct_not_burdened":        "Housing Affordability (% not cost-burdened)",
     "nonprofit_density.combined_care":             "Care Nonprofits (P+E+F+K per 10k)",
     "health_center_density.density_per_100k":      "FQHCs (per 100k)",
+    "nursing_home_capacity.beds_per_1k_65plus":     "Nursing Home Capacity (beds/1k 65+)",
     "health_insurance_coverage.pct_insured":       "Health Insurance Coverage Rate",
     "snap_participation.coverage_rate":            "SNAP Coverage Rate",
     # Diagnostic only (not scored)
@@ -131,6 +138,7 @@ def score(df: pd.DataFrame) -> pd.DataFrame:
     Returns a DataFrame with one column per scored metric (normalized 0-100),
     plus pillar average columns for grouping context.
     """
+    df = df.copy()
     df["key"] = df["metric"] + "." + df["sub_metric"]
     wide = df.pivot(index="city", columns="key", values="value")
 
@@ -322,6 +330,12 @@ DASHBOARD_METRICS = {
         "raw_key": ("health_center_density", "density_per_100k"),
         "benchmark": "15 / 100k", "unit": "FQHCs per 100,000 residents",
         "fmt": lambda v: f"{v:.2f}",
+    },
+    "nursing_home": {
+        "key": "nursing_home",
+        "raw_key": ("nursing_home_capacity", "beds_per_1k_65plus"),
+        "benchmark": "50 / 1k 65+", "unit": "certified beds per 1,000 residents 65+",
+        "fmt": lambda v: f"{v:.1f}",
     },
     # Pillar 3 — Reach
     "health_insurance": {

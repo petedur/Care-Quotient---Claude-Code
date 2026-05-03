@@ -206,6 +206,30 @@ def load_health_insurance(conn, city_key: str):
     print(f"  health_insurance_coverage loaded for {city_key}: {pct_insured}% insured")
 
 
+def load_nursing_homes(conn, city_key: str):
+    meta = DATA_RAW / city_key / "nursing_homes_meta.json"
+    if not meta.exists():
+        print(f"  SKIP nursing_home_capacity for {city_key} (no meta file — run collector first)")
+        return
+
+    import json
+    d = json.loads(meta.read_text())
+    beds_per_1k   = d.get("beds_per_1k_65plus", 0.0)
+    daily_res     = d.get("avg_daily_residents", 0.0)
+    facility_count = d.get("facility_count", 0)
+    pop_65plus    = d.get("population_65plus", 0)
+
+    upsert(conn, city_key, "nursing_home_capacity", "beds_per_1k_65plus",
+           value=beds_per_1k, count=facility_count)
+    # Diagnostics
+    upsert(conn, city_key, "nursing_home_capacity", "avg_daily_residents",
+           value=daily_res, count=facility_count)
+    upsert(conn, city_key, "nursing_home_capacity", "population_65plus",
+           value=float(pop_65plus))
+    print(f"  nursing_home_capacity loaded for {city_key}: "
+          f"{beds_per_1k} beds/1k 65+ ({facility_count} facilities)")
+
+
 LOADERS = [
     load_nonprofit_density,
     load_residential_stability,
@@ -214,6 +238,7 @@ LOADERS = [
     load_housing_cost_burden,
     load_snap_participation,
     load_health_insurance,
+    load_nursing_homes,
 ]
 
 # ── Validation ────────────────────────────────────────────────────────────────
@@ -241,15 +266,19 @@ VALIDATION_RULES = [
     ("snap_participation",        "coverage_rate",    0.0, 100.0),
     # Health insurance: % insured — must be 0–100
     ("health_insurance_coverage", "pct_insured",      0.0, 100.0),
+    # Nursing home capacity: beds per 1k residents 65+ — 0 possible; 150 would be anomalous
+    ("nursing_home_capacity",     "beds_per_1k_65plus", 0.0, 150.0),
 ]
 
 # Scored metrics that must be present for every city; missing = pipeline gap.
 # V3: combined_care replaces the separate social_support + care_institutions
 # scored metrics. Sub-components are retained as diagnostics, not scored.
+# V4: nursing_home_capacity added as third Pillar 2 metric.
 REQUIRED_SCORED = [
     ("residential_stability",     "pct_same_house"),
     ("nonprofit_density",         "combined_care"),
     ("health_center_density",     "density_per_100k"),
+    ("nursing_home_capacity",     "beds_per_1k_65plus"),
     ("housing_cost_burden",       "pct_not_burdened"),
     ("snap_participation",        "coverage_rate"),
     ("health_insurance_coverage", "pct_insured"),

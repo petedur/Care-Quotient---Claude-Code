@@ -78,7 +78,7 @@ function renderHome(app) {
   app.innerHTML = [
     // ── Hero ──────────────────────────────────────────────────────────────
     '<section class="hero">',
-      '<div class="hero-eyebrow">Care Quotient &mdash; V3</div>',
+      '<div class="hero-eyebrow">Care Quotient &mdash; V4</div>',
       '<h1 class="hero-headline">When someone needs help,<br>can their city show up?</h1>',
       '<div class="hero-rule"></div>',
       '<p class="hero-subhead">',
@@ -136,7 +136,7 @@ function renderHome(app) {
           '<div class="pillar-card-name">Institutions of Care</div>',
           '<div class="pillar-card-desc">',
             'Whether institutions specifically designed to absorb distress are present &mdash; ',
-            'care-oriented nonprofits and federally qualified health centers.',
+            'care-oriented nonprofits, federally qualified health centers, and nursing home capacity for elder care.',
           '</div>',
         '</div>',
 
@@ -344,6 +344,11 @@ var METRIC_META = {
     pillar: 'pillar2',
     desc:   'Federally Qualified Health Centers per 100,000 residents',
   },
+  nursing_home: {
+    label:  'Nursing Home Capacity',
+    pillar: 'pillar2',
+    desc:   'Medicare/Medicaid certified beds per 1,000 residents aged 65+',
+  },
   health_insurance: {
     label:  'Health Insurance Coverage',
     pillar: 'pillar3',
@@ -361,6 +366,7 @@ var METRIC_ORDER = [
   'housing_cost_burden',
   'combined_care',
   'fqhc',
+  'nursing_home',
   'health_insurance',
   'snap_coverage',
 ];
@@ -664,7 +670,7 @@ function renderMethodology(app) {
 
       '<a href="#/" class="back-link">&#8592; All cities</a>',
 
-      '<div class="method-eyebrow">Methodology &mdash; V3.2</div>',
+      '<div class="method-eyebrow">Methodology &mdash; V4</div>',
       '<h1>How the Care Quotient is built</h1>',
 
       '<p>',
@@ -683,7 +689,7 @@ function renderMethodology(app) {
       '<h2>Three Pillars</h2>',
 
       '<p>',
-        'The CQ is a weighted composite of six scored metrics organized into three pillars. ',
+        'The CQ is a weighted composite of seven scored metrics organized into three pillars. ',
         'Inter-pillar weights reflect the primacy of the relational layer (care ethics tradition) ',
         'balanced against the institutional layer (capabilities approach). Within-pillar weights ',
         'are informed by factor analysis across 68 cities.',
@@ -701,7 +707,7 @@ function renderMethodology(app) {
           '</tr>',
           '<tr>',
             '<td><span class="ptag ptag-p2">Institutions of Care</span></td>',
-            '<td>Care nonprofit density &amp; FQHC density &mdash; organizations specifically designed to absorb distress.</td>',
+            '<td>Care nonprofit density, FQHC density, &amp; nursing home capacity &mdash; organizations specifically designed to absorb distress, including elder care infrastructure.</td>',
             '<td>35%</td>',
           '</tr>',
           '<tr>',
@@ -730,6 +736,7 @@ function renderMethodology(app) {
           '<tr><td>Housing Affordability</td>  <td>90% not cost-burdened</td>       <td>Census ACS B25070, B25091</td></tr>',
           '<tr><td>Care Nonprofits (P+E+F+K)</td><td>25 per 10,000 residents</td>   <td>IRS EO BMF</td></tr>',
           '<tr><td>FQHC Density</td>           <td>15 per 100,000 residents</td>    <td>HRSA Health Center Data</td></tr>',
+          '<tr><td>Nursing Home Capacity</td>  <td>50 beds per 1,000 residents 65+</td><td>CMS Care Compare</td></tr>',
           '<tr><td>Health Insurance</td>       <td>95% insured</td>                 <td>Census ACS B27001</td></tr>',
           '<tr><td>SNAP Coverage Rate</td>     <td>85% of likely-eligible</td>      <td>Census ACS B22001, C17002</td></tr>',
         '</tbody>',
@@ -788,9 +795,10 @@ function renderMethodology(app) {
 
       '<h3>Version &amp; Data</h3>',
       '<p>',
-        'V3.2 (April 2026). 68 cities. ',
+        'V4 (April 2026). 68 cities. ',
         'Data sources: IRS EO BMF, Census ACS 2022 5-year estimates, ',
-        'HRSA Health Center Service Delivery, IMLS Public Libraries Survey FY2023. ',
+        'HRSA Health Center Service Delivery, IMLS Public Libraries Survey FY2023, ',
+        'CMS Care Compare Nursing Home Provider Information. ',
         'All data collection and scoring code is available in the ',
         '<a href="https://github.com/petedur/Care-Quotient---Claude-Code" target="_blank" rel="noopener">project repository</a>.',
       '</p>',
@@ -806,8 +814,8 @@ function renderFooter() {
   return [
     '<footer class="site-footer">',
       '<div class="footer-copy">',
-        'Care Quotient V3.2 &nbsp;&middot;&nbsp; 68 American Cities &nbsp;&middot;&nbsp; April 2026<br>',
-        'Data: IRS EO BMF &middot; Census ACS 2022 &middot; HRSA &middot; IMLS',
+        'Care Quotient V4 &nbsp;&middot;&nbsp; 68 American Cities &nbsp;&middot;&nbsp; April 2026<br>',
+        'Data: IRS EO BMF &middot; Census ACS 2022 &middot; HRSA &middot; IMLS &middot; CMS Care Compare',
       '</div>',
       '<div class="footer-links">',
         '<a href="#/methodology">Methodology</a>',
