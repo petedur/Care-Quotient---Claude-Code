@@ -24,7 +24,7 @@ Benchmarks:
     nursing_home_capacity    50/1k65 — 5% of 65+ pop in skilled nursing (literature-based)
 
   Pillar 3 — Economic Access to Care (25% of CQ)
-    health_insurance         85%     — Medicaid/CHIP coverage rate (C27007; 85% of eligible enrolled)
+    health_insurance         100%    — Medicaid/CHIP coverage rate (C27007; score = raw rate directly)
     housing_cost_burden      90%     — 90% not burdened (10% burdened ceiling)
     snap_coverage_rate       85%     — USDA FNS national participation target
 
@@ -91,7 +91,7 @@ SCORED_METRICS = [
     #     Desmond & Bell; Agha et al. (2024). Moved from Pillar 1 (V4) — belongs in access.
     #   SNAP coverage:          25% — food security reach; narrower scope than other metrics.
     #     Independent signal (r=0.33 with healthcare coverage).
-    ("health_insurance_coverage", "coverage_rate",        "pillar3", 85.0, 0.40),
+    ("health_insurance_coverage", "coverage_rate",        "pillar3", 100.0, 0.40),
     ("housing_cost_burden",       "pct_not_burdened",    "pillar3", 90.0, 0.35),
     ("snap_participation",        "coverage_rate",       "pillar3", 85.0, 0.25),
 ]

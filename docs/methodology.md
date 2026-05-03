@@ -151,7 +151,7 @@ V4 factor analysis shows nursing home capacity loads 0.91 on its own isolated fa
 **Source**: U.S. Census Bureau, ACS 5-year estimates (2022). C27007 (Medicaid/means-tested public coverage by sex by age) for enrollment; C17002 (ratio of income to poverty level) for the 0–149% FPL eligibility denominator.  
 **Unit**: % coverage rate (higher = better).  
 **Weight within Pillar 3**: **40%**  
-**Benchmark**: 85% — high-performing Medicaid expansion states consistently achieve 85–100% coverage of the eligible population.
+**Benchmark**: 100% — the score equals the raw coverage rate directly. A city where enrolled = eligible scores 100; cities below that score their literal percentage.
 
 **Rationale**: Healthcare coverage measures whether people can enter the care system when they need it. The metric isolates the public safety net signal: it counts Medicaid and CHIP enrollees (the deliberate care system for vulnerable people) rather than all insurance (which includes employer-sponsored coverage that reflects labor market conditions, not care infrastructure). A tech-industry city where 95% of residents have employer insurance scores no differently on this metric than a city where 95% of residents couldn't afford care at all — both would score 0 on Medicaid reach if none of their low-income residents were enrolled. Conversely, cities in generous Medicaid expansion states score high because the system is actually reaching the people it was designed to serve.
 
@@ -207,7 +207,7 @@ A city at or above the benchmark receives 100. A city at half the benchmark rece
 | Library density | 5 per 100,000 | P90 across 68 cities; aspirational but achievable. Cities at median (~2.8/100k) score ~56; lowest-density cities score ~22 |
 | FQHC density | 15 per 100,000 | Eliminates HRSA shortage designation plus geographic redundancy |
 | Nursing home capacity | 50 per 1,000 residents 65+ | ~5% of elderly in skilled nursing at any one time; modestly above CMS national average (~42/1k) |
-| Healthcare coverage (Medicaid/CHIP) | 85% | High-performing Medicaid expansion states reach 85–100% of eligible population |
+| Healthcare coverage (Medicaid/CHIP) | 100% | Score equals raw coverage rate directly (no benchmark normalization) |
 | Housing affordability | 90% not burdened | 10% cost-burden ceiling; only the least-burdened US cities achieve this |
 | SNAP coverage rate | 85% | USDA FNS national SNAP participation target among eligible households |
 
