@@ -6,10 +6,10 @@ const CITIES = {
     "name": "Albuquerque",
     "state": "NM",
     "population": "565k residents",
-    "cq": 56.8,
+    "cq": 57.1,
     "pillar1": 58.3,
     "pillar2": 36.5,
-    "pillar3": 82.9,
+    "pillar3": 83.9,
     "metrics": {
       "residential_stability": {
         "score": 88.5,
@@ -47,9 +47,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 97.5,
-        "raw": 92.64,
-        "rawFmt": "92.6%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -87,10 +87,10 @@ const CITIES = {
     "name": "Anchorage",
     "state": "AK",
     "population": "291k residents",
-    "cq": 46.4,
+    "cq": 47.0,
     "pillar1": 55.5,
     "pillar2": 11.7,
-    "pillar3": 80.5,
+    "pillar3": 82.8,
     "metrics": {
       "residential_stability": {
         "score": 86.8,
@@ -128,9 +128,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 94.4,
-        "raw": 89.68,
-        "rawFmt": "89.7%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -168,10 +168,10 @@ const CITIES = {
     "name": "Atlanta",
     "state": "GA",
     "population": "499k residents",
-    "cq": 70.7,
+    "cq": 69.2,
     "pillar1": 85.4,
     "pillar2": 48.3,
-    "pillar3": 78.6,
+    "pillar3": 72.4,
     "metrics": {
       "residential_stability": {
         "score": 84.2,
@@ -209,9 +209,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 94.1,
-        "raw": 89.38,
-        "rawFmt": "89.4%",
+        "score": 78.6,
+        "raw": 66.84,
+        "rawFmt": "66.8%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -249,10 +249,10 @@ const CITIES = {
     "name": "Aurora",
     "state": "CO",
     "population": "367k residents",
-    "cq": 54.0,
+    "cq": 54.7,
     "pillar1": 59.9,
     "pillar2": 31.2,
-    "pillar3": 76.3,
+    "pillar3": 79.3,
     "metrics": {
       "residential_stability": {
         "score": 85.8,
@@ -290,9 +290,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 92.3,
-        "raw": 87.67,
-        "rawFmt": "87.7%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -330,10 +330,10 @@ const CITIES = {
     "name": "Austin",
     "state": "TX",
     "population": "962k residents",
-    "cq": 56.3,
+    "cq": 54.2,
     "pillar1": 60.4,
     "pillar2": 40.7,
-    "pillar3": 71.6,
+    "pillar3": 63.1,
     "metrics": {
       "residential_stability": {
         "score": 82.0,
@@ -371,9 +371,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 91.9,
-        "raw": 87.29,
-        "rawFmt": "87.3%",
+        "score": 70.8,
+        "raw": 60.21,
+        "rawFmt": "60.2%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -411,10 +411,10 @@ const CITIES = {
     "name": "Bakersfield",
     "state": "CA",
     "population": "407k residents",
-    "cq": 56.7,
+    "cq": 57.0,
     "pillar1": 53.4,
     "pillar2": 43.8,
-    "pillar3": 80.0,
+    "pillar3": 81.1,
     "metrics": {
       "residential_stability": {
         "score": 90.9,
@@ -452,9 +452,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 97.2,
-        "raw": 92.33,
-        "rawFmt": "92.3%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -492,10 +492,10 @@ const CITIES = {
     "name": "Baltimore",
     "state": "MD",
     "population": "586k residents",
-    "cq": 70.9,
+    "cq": 71.0,
     "pillar1": 76.2,
     "pillar2": 53.2,
-    "pillar3": 87.2,
+    "pillar3": 87.4,
     "metrics": {
       "residential_stability": {
         "score": 89.2,
@@ -533,9 +533,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 99.7,
-        "raw": 94.69,
-        "rawFmt": "94.7%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -573,10 +573,10 @@ const CITIES = {
     "name": "Baton Rouge",
     "state": "LA",
     "population": "228k residents",
-    "cq": 77.4,
+    "cq": 78.0,
     "pillar1": 68.0,
     "pillar2": 88.5,
-    "pillar3": 77.0,
+    "pillar3": 79.5,
     "metrics": {
       "residential_stability": {
         "score": 83.5,
@@ -614,9 +614,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 93.7,
-        "raw": 89.04,
-        "rawFmt": "89.0%",
+        "score": 100.0,
+        "raw": 89.39,
+        "rawFmt": "89.4%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -657,7 +657,7 @@ const CITIES = {
     "cq": 68.3,
     "pillar1": 71.0,
     "pillar2": 59.2,
-    "pillar3": 76.9,
+    "pillar3": 76.6,
     "metrics": {
       "residential_stability": {
         "score": 85.1,
@@ -695,9 +695,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 92.4,
-        "raw": 87.79,
-        "rawFmt": "87.8%",
+        "score": 91.5,
+        "raw": 77.79,
+        "rawFmt": "77.8%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -777,8 +777,8 @@ const CITIES = {
       },
       "health_insurance": {
         "score": 100.0,
-        "raw": 96.74,
-        "rawFmt": "96.7%",
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -858,8 +858,8 @@ const CITIES = {
       },
       "health_insurance": {
         "score": 100.0,
-        "raw": 96.05,
-        "rawFmt": "96.0%",
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -897,10 +897,10 @@ const CITIES = {
     "name": "Charlotte",
     "state": "NC",
     "population": "875k residents",
-    "cq": 54.4,
+    "cq": 54.7,
     "pillar1": 64.1,
     "pillar2": 27.6,
-    "pillar3": 76.5,
+    "pillar3": 77.5,
     "metrics": {
       "residential_stability": {
         "score": 86.6,
@@ -938,9 +938,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 92.1,
-        "raw": 87.49,
-        "rawFmt": "87.5%",
+        "score": 94.7,
+        "raw": 80.48,
+        "rawFmt": "80.5%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -978,10 +978,10 @@ const CITIES = {
     "name": "Chicago",
     "state": "IL",
     "population": "2.7M residents",
-    "cq": 69.0,
+    "cq": 69.5,
     "pillar1": 65.3,
     "pillar2": 63.7,
-    "pillar3": 82.2,
+    "pillar3": 84.3,
     "metrics": {
       "residential_stability": {
         "score": 88.9,
@@ -1019,9 +1019,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 94.9,
-        "raw": 90.11,
-        "rawFmt": "90.1%",
+        "score": 100.0,
+        "raw": 95.55,
+        "rawFmt": "95.5%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -1101,8 +1101,8 @@ const CITIES = {
       },
       "health_insurance": {
         "score": 97.7,
-        "raw": 92.85,
-        "rawFmt": "92.8%",
+        "raw": 83.02,
+        "rawFmt": "83.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -1140,10 +1140,10 @@ const CITIES = {
     "name": "Cleveland",
     "state": "OH",
     "population": "373k residents",
-    "cq": 77.0,
+    "cq": 77.2,
     "pillar1": 76.4,
     "pillar2": 73.0,
-    "pillar3": 83.4,
+    "pillar3": 84.4,
     "metrics": {
       "residential_stability": {
         "score": 85.7,
@@ -1181,9 +1181,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 97.6,
-        "raw": 92.74,
-        "rawFmt": "92.7%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -1221,10 +1221,10 @@ const CITIES = {
     "name": "Colorado Springs",
     "state": "CO",
     "population": "479k residents",
-    "cq": 54.6,
+    "cq": 55.0,
     "pillar1": 55.9,
     "pillar2": 35.3,
-    "pillar3": 79.6,
+    "pillar3": 81.1,
     "metrics": {
       "residential_stability": {
         "score": 83.1,
@@ -1262,9 +1262,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 96.4,
-        "raw": 91.59,
-        "rawFmt": "91.6%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -1302,10 +1302,10 @@ const CITIES = {
     "name": "Columbus",
     "state": "OH",
     "population": "906k residents",
-    "cq": 57.7,
+    "cq": 58.3,
     "pillar1": 60.5,
     "pillar2": 40.2,
-    "pillar3": 77.7,
+    "pillar3": 80.0,
     "metrics": {
       "residential_stability": {
         "score": 83.1,
@@ -1343,9 +1343,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 94.3,
-        "raw": 89.58,
-        "rawFmt": "89.6%",
+        "score": 100.0,
+        "raw": 91.36,
+        "rawFmt": "91.4%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -1383,10 +1383,10 @@ const CITIES = {
     "name": "Corpus Christi",
     "state": "TX",
     "population": "318k residents",
-    "cq": 54.6,
+    "cq": 54.9,
     "pillar1": 55.4,
     "pillar2": 36.1,
-    "pillar3": 79.3,
+    "pillar3": 80.5,
     "metrics": {
       "residential_stability": {
         "score": 87.2,
@@ -1424,9 +1424,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 86.8,
-        "raw": 82.43,
-        "rawFmt": "82.4%",
+        "score": 89.7,
+        "raw": 76.26,
+        "rawFmt": "76.3%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -1464,10 +1464,10 @@ const CITIES = {
     "name": "Dallas",
     "state": "TX",
     "population": "1.3M residents",
-    "cq": 53.8,
+    "cq": 53.6,
     "pillar1": 63.7,
     "pillar2": 32.4,
-    "pillar3": 68.0,
+    "pillar3": 67.1,
     "metrics": {
       "residential_stability": {
         "score": 87.5,
@@ -1505,9 +1505,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 80.7,
-        "raw": 76.64,
-        "rawFmt": "76.6%",
+        "score": 78.5,
+        "raw": 66.75,
+        "rawFmt": "66.8%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -1545,10 +1545,10 @@ const CITIES = {
     "name": "Denver",
     "state": "CO",
     "population": "716k residents",
-    "cq": 66.7,
+    "cq": 67.2,
     "pillar1": 69.5,
     "pillar2": 56.8,
-    "pillar3": 76.2,
+    "pillar3": 77.9,
     "metrics": {
       "residential_stability": {
         "score": 82.9,
@@ -1586,9 +1586,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 95.7,
-        "raw": 90.9,
-        "rawFmt": "90.9%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -1626,10 +1626,10 @@ const CITIES = {
     "name": "Des Moines",
     "state": "IA",
     "population": "214k residents",
-    "cq": 65.3,
+    "cq": 65.4,
     "pillar1": 63.2,
     "pillar2": 53.1,
-    "pillar3": 85.8,
+    "pillar3": 86.2,
     "metrics": {
       "residential_stability": {
         "score": 86.6,
@@ -1667,9 +1667,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 98.9,
-        "raw": 93.92,
-        "rawFmt": "93.9%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -1707,10 +1707,10 @@ const CITIES = {
     "name": "Detroit",
     "state": "MI",
     "population": "632k residents",
-    "cq": 73.6,
+    "cq": 73.8,
     "pillar1": 75.8,
     "pillar2": 62.3,
-    "pillar3": 85.7,
+    "pillar3": 86.8,
     "metrics": {
       "residential_stability": {
         "score": 91.8,
@@ -1748,9 +1748,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 97.1,
-        "raw": 92.23,
-        "rawFmt": "92.2%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -1788,10 +1788,10 @@ const CITIES = {
     "name": "Durham",
     "state": "NC",
     "population": "284k residents",
-    "cq": 56.1,
+    "cq": 55.4,
     "pillar1": 62.3,
     "pillar2": 33.6,
-    "pillar3": 77.6,
+    "pillar3": 74.9,
     "metrics": {
       "residential_stability": {
         "score": 85.5,
@@ -1829,9 +1829,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 92.7,
-        "raw": 88.02,
-        "rawFmt": "88.0%",
+        "score": 85.9,
+        "raw": 72.98,
+        "rawFmt": "73.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -1869,10 +1869,10 @@ const CITIES = {
     "name": "El Paso",
     "state": "TX",
     "population": "679k residents",
-    "cq": 54.7,
+    "cq": 54.5,
     "pillar1": 56.3,
     "pillar2": 37.6,
-    "pillar3": 76.1,
+    "pillar3": 75.2,
     "metrics": {
       "residential_stability": {
         "score": 90.0,
@@ -1910,9 +1910,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 82.4,
-        "raw": 78.31,
-        "rawFmt": "78.3%",
+        "score": 80.1,
+        "raw": 68.1,
+        "rawFmt": "68.1%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -1950,10 +1950,10 @@ const CITIES = {
     "name": "Fort Worth",
     "state": "TX",
     "population": "919k residents",
-    "cq": 56.2,
+    "cq": 56.1,
     "pillar1": 60.7,
     "pillar2": 38.2,
-    "pillar3": 74.2,
+    "pillar3": 73.8,
     "metrics": {
       "residential_stability": {
         "score": 89.0,
@@ -1991,9 +1991,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 84.1,
-        "raw": 79.86,
-        "rawFmt": "79.9%",
+        "score": 83.0,
+        "raw": 70.55,
+        "rawFmt": "70.5%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -2031,10 +2031,10 @@ const CITIES = {
     "name": "Fresno",
     "state": "CA",
     "population": "542k residents",
-    "cq": 62.7,
+    "cq": 62.9,
     "pillar1": 61.0,
     "pillar2": 51.4,
-    "pillar3": 81.3,
+    "pillar3": 82.0,
     "metrics": {
       "residential_stability": {
         "score": 90.6,
@@ -2072,9 +2072,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 98.4,
-        "raw": 93.49,
-        "rawFmt": "93.5%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -2154,8 +2154,8 @@ const CITIES = {
       },
       "health_insurance": {
         "score": 100.0,
-        "raw": 96.5,
-        "rawFmt": "96.5%",
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -2193,10 +2193,10 @@ const CITIES = {
     "name": "Houston",
     "state": "TX",
     "population": "2.3M residents",
-    "cq": 53.1,
+    "cq": 52.9,
     "pillar1": 61.8,
     "pillar2": 30.8,
-    "pillar3": 70.4,
+    "pillar3": 69.6,
     "metrics": {
       "residential_stability": {
         "score": 87.2,
@@ -2234,9 +2234,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 80.3,
-        "raw": 76.29,
-        "rawFmt": "76.3%",
+        "score": 78.4,
+        "raw": 66.66,
+        "rawFmt": "66.7%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -2274,10 +2274,10 @@ const CITIES = {
     "name": "Indianapolis",
     "state": "IN",
     "population": "887k residents",
-    "cq": 70.9,
+    "cq": 71.4,
     "pillar1": 69.3,
     "pillar2": 67.7,
-    "pillar3": 78.1,
+    "pillar3": 80.0,
     "metrics": {
       "residential_stability": {
         "score": 88.7,
@@ -2315,9 +2315,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 95.2,
-        "raw": 90.41,
-        "rawFmt": "90.4%",
+        "score": 100.0,
+        "raw": 97.63,
+        "rawFmt": "97.6%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -2355,10 +2355,10 @@ const CITIES = {
     "name": "Jacksonville",
     "state": "FL",
     "population": "950k residents",
-    "cq": 55.9,
+    "cq": 56.1,
     "pillar1": 61.6,
     "pillar2": 31.2,
-    "pillar3": 81.2,
+    "pillar3": 82.2,
     "metrics": {
       "residential_stability": {
         "score": 86.5,
@@ -2396,9 +2396,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 92.9,
-        "raw": 88.23,
-        "rawFmt": "88.2%",
+        "score": 95.2,
+        "raw": 80.95,
+        "rawFmt": "81.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -2436,10 +2436,10 @@ const CITIES = {
     "name": "Kansas City",
     "state": "MO",
     "population": "508k residents",
-    "cq": 63.7,
+    "cq": 61.8,
     "pillar1": 68.6,
     "pillar2": 48.9,
-    "pillar3": 76.4,
+    "pillar3": 68.8,
     "metrics": {
       "residential_stability": {
         "score": 86.9,
@@ -2477,9 +2477,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 92.9,
-        "raw": 88.27,
-        "rawFmt": "88.3%",
+        "score": 74.0,
+        "raw": 62.93,
+        "rawFmt": "62.9%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -2517,10 +2517,10 @@ const CITIES = {
     "name": "Las Vegas",
     "state": "NV",
     "population": "642k residents",
-    "cq": 53.2,
+    "cq": 54.1,
     "pillar1": 61.5,
     "pillar2": 26.8,
-    "pillar3": 77.0,
+    "pillar3": 80.6,
     "metrics": {
       "residential_stability": {
         "score": 88.3,
@@ -2558,9 +2558,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 91.0,
-        "raw": 86.41,
-        "rawFmt": "86.4%",
+        "score": 100.0,
+        "raw": 88.96,
+        "rawFmt": "89.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -2598,10 +2598,10 @@ const CITIES = {
     "name": "Lexington",
     "state": "KY",
     "population": "323k residents",
-    "cq": 61.7,
+    "cq": 61.9,
     "pillar1": 57.6,
     "pillar2": 55.5,
-    "pillar3": 76.8,
+    "pillar3": 77.6,
     "metrics": {
       "residential_stability": {
         "score": 81.8,
@@ -2639,9 +2639,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 98.0,
-        "raw": 93.11,
-        "rawFmt": "93.1%",
+        "score": 100.0,
+        "raw": 87.03,
+        "rawFmt": "87.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -2679,10 +2679,10 @@ const CITIES = {
     "name": "Los Angeles",
     "state": "CA",
     "population": "3.9M residents",
-    "cq": 61.5,
+    "cq": 62.1,
     "pillar1": 63.6,
     "pillar2": 52.6,
-    "pillar3": 70.6,
+    "pillar3": 73.0,
     "metrics": {
       "residential_stability": {
         "score": 92.5,
@@ -2720,9 +2720,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 94.1,
-        "raw": 89.42,
-        "rawFmt": "89.4%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -2760,10 +2760,10 @@ const CITIES = {
     "name": "Louisville",
     "state": "KY",
     "population": "633k residents",
-    "cq": 50.3,
+    "cq": 50.4,
     "pillar1": 56.5,
     "pillar2": 22.2,
-    "pillar3": 79.9,
+    "pillar3": 80.1,
     "metrics": {
       "residential_stability": {
         "score": 90.4,
@@ -2801,9 +2801,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 99.4,
-        "raw": 94.47,
-        "rawFmt": "94.5%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -2841,10 +2841,10 @@ const CITIES = {
     "name": "Madison",
     "state": "WI",
     "population": "269k residents",
-    "cq": 49.4,
+    "cq": 46.1,
     "pillar1": 58.5,
     "pillar2": 20.2,
-    "pillar3": 75.8,
+    "pillar3": 62.7,
     "metrics": {
       "residential_stability": {
         "score": 77.2,
@@ -2882,9 +2882,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 100.0,
-        "raw": 95.42,
-        "rawFmt": "95.4%",
+        "score": 67.2,
+        "raw": 57.12,
+        "rawFmt": "57.1%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -2922,10 +2922,10 @@ const CITIES = {
     "name": "Memphis",
     "state": "TN",
     "population": "633k residents",
-    "cq": 59.6,
+    "cq": 60.0,
     "pillar1": 68.8,
     "pillar2": 36.8,
-    "pillar3": 76.8,
+    "pillar3": 78.5,
     "metrics": {
       "residential_stability": {
         "score": 89.4,
@@ -2963,9 +2963,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 90.4,
-        "raw": 85.85,
-        "rawFmt": "85.8%",
+        "score": 94.8,
+        "raw": 80.6,
+        "rawFmt": "80.6%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -3003,10 +3003,10 @@ const CITIES = {
     "name": "Milwaukee",
     "state": "WI",
     "population": "577k residents",
-    "cq": 63.1,
+    "cq": 63.6,
     "pillar1": 65.6,
     "pillar2": 45.8,
-    "pillar3": 83.5,
+    "pillar3": 85.2,
     "metrics": {
       "residential_stability": {
         "score": 88.8,
@@ -3044,9 +3044,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 95.8,
-        "raw": 91.05,
-        "rawFmt": "91.0%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -3084,10 +3084,10 @@ const CITIES = {
     "name": "Minneapolis",
     "state": "MN",
     "population": "430k residents",
-    "cq": 69.8,
+    "cq": 69.9,
     "pillar1": 66.8,
     "pillar2": 66.1,
-    "pillar3": 79.8,
+    "pillar3": 80.2,
     "metrics": {
       "residential_stability": {
         "score": 80.6,
@@ -3125,9 +3125,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 99.0,
-        "raw": 94.07,
-        "rawFmt": "94.1%",
+        "score": 100.0,
+        "raw": 97.34,
+        "rawFmt": "97.3%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -3168,7 +3168,7 @@ const CITIES = {
     "cq": 55.8,
     "pillar1": 65.4,
     "pillar2": 31.9,
-    "pillar3": 74.0,
+    "pillar3": 73.8,
     "metrics": {
       "residential_stability": {
         "score": 83.8,
@@ -3206,9 +3206,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 92.4,
-        "raw": 87.8,
-        "rawFmt": "87.8%",
+        "score": 91.9,
+        "raw": 78.08,
+        "rawFmt": "78.1%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -3246,10 +3246,10 @@ const CITIES = {
     "name": "New Orleans",
     "state": "LA",
     "population": "384k residents",
-    "cq": 75.0,
+    "cq": 75.4,
     "pillar1": 72.6,
     "pillar2": 77.1,
-    "pillar3": 76.0,
+    "pillar3": 77.5,
     "metrics": {
       "residential_stability": {
         "score": 90.4,
@@ -3287,9 +3287,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 96.3,
-        "raw": 91.48,
-        "rawFmt": "91.5%",
+        "score": 100.0,
+        "raw": 98.16,
+        "rawFmt": "98.2%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -3327,10 +3327,10 @@ const CITIES = {
     "name": "New York City",
     "state": "NY",
     "population": "8.3M residents",
-    "cq": 63.4,
+    "cq": 63.5,
     "pillar1": 64.4,
     "pillar2": 48.5,
-    "pillar3": 82.5,
+    "pillar3": 83.2,
     "metrics": {
       "residential_stability": {
         "score": 93.5,
@@ -3368,9 +3368,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 98.2,
-        "raw": 93.28,
-        "rawFmt": "93.3%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -3408,10 +3408,10 @@ const CITIES = {
     "name": "Oklahoma City",
     "state": "OK",
     "population": "681k residents",
-    "cq": 59.3,
+    "cq": 59.6,
     "pillar1": 59.0,
     "pillar2": 45.7,
-    "pillar3": 79.0,
+    "pillar3": 80.0,
     "metrics": {
       "residential_stability": {
         "score": 86.1,
@@ -3449,9 +3449,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 90.5,
-        "raw": 85.98,
-        "rawFmt": "86.0%",
+        "score": 92.8,
+        "raw": 78.85,
+        "rawFmt": "78.8%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -3489,10 +3489,10 @@ const CITIES = {
     "name": "Omaha",
     "state": "NE",
     "population": "486k residents",
-    "cq": 66.2,
+    "cq": 65.9,
     "pillar1": 64.2,
     "pillar2": 59.2,
-    "pillar3": 79.2,
+    "pillar3": 78.0,
     "metrics": {
       "residential_stability": {
         "score": 88.3,
@@ -3530,9 +3530,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 94.9,
-        "raw": 90.15,
-        "rawFmt": "90.2%",
+        "score": 91.8,
+        "raw": 78.0,
+        "rawFmt": "78.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -3570,10 +3570,10 @@ const CITIES = {
     "name": "Philadelphia",
     "state": "PA",
     "population": "1.6M residents",
-    "cq": 64.7,
+    "cq": 65.0,
     "pillar1": 67.0,
     "pillar2": 46.9,
-    "pillar3": 86.0,
+    "pillar3": 87.0,
     "metrics": {
       "residential_stability": {
         "score": 89.6,
@@ -3611,9 +3611,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 97.5,
-        "raw": 92.65,
-        "rawFmt": "92.7%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -3651,10 +3651,10 @@ const CITIES = {
     "name": "Phoenix",
     "state": "AZ",
     "population": "1.6M residents",
-    "cq": 52.2,
+    "cq": 53.2,
     "pillar1": 56.6,
     "pillar2": 30.4,
-    "pillar3": 75.6,
+    "pillar3": 79.8,
     "metrics": {
       "residential_stability": {
         "score": 88.6,
@@ -3692,9 +3692,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 89.5,
-        "raw": 85.03,
-        "rawFmt": "85.0%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -3732,10 +3732,10 @@ const CITIES = {
     "name": "Pittsburgh",
     "state": "PA",
     "population": "303k residents",
-    "cq": 73.1,
+    "cq": 72.4,
     "pillar1": 79.2,
     "pillar2": 58.9,
-    "pillar3": 83.4,
+    "pillar3": 80.4,
     "metrics": {
       "residential_stability": {
         "score": 82.6,
@@ -3773,9 +3773,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 100.0,
-        "raw": 95.05,
-        "rawFmt": "95.0%",
+        "score": 92.5,
+        "raw": 78.66,
+        "rawFmt": "78.7%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -3813,10 +3813,10 @@ const CITIES = {
     "name": "Portland",
     "state": "OR",
     "population": "653k residents",
-    "cq": 64.6,
+    "cq": 64.8,
     "pillar1": 62.7,
     "pillar2": 52.5,
-    "pillar3": 84.7,
+    "pillar3": 85.2,
     "metrics": {
       "residential_stability": {
         "score": 86.5,
@@ -3854,9 +3854,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 98.9,
-        "raw": 93.92,
-        "rawFmt": "93.9%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -3894,10 +3894,10 @@ const CITIES = {
     "name": "Providence",
     "state": "RI",
     "population": "191k residents",
-    "cq": 72.9,
+    "cq": 73.1,
     "pillar1": 73.2,
     "pillar2": 61.8,
-    "pillar3": 87.9,
+    "pillar3": 88.7,
     "metrics": {
       "residential_stability": {
         "score": 88.1,
@@ -3935,9 +3935,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 98.1,
-        "raw": 93.18,
-        "rawFmt": "93.2%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -3975,10 +3975,10 @@ const CITIES = {
     "name": "Raleigh",
     "state": "NC",
     "population": "468k residents",
-    "cq": 51.9,
+    "cq": 52.6,
     "pillar1": 60.0,
     "pillar2": 24.1,
-    "pillar3": 78.0,
+    "pillar3": 80.5,
     "metrics": {
       "residential_stability": {
         "score": 85.1,
@@ -4016,9 +4016,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 93.9,
-        "raw": 89.17,
-        "rawFmt": "89.2%",
+        "score": 100.0,
+        "raw": 85.04,
+        "rawFmt": "85.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -4056,10 +4056,10 @@ const CITIES = {
     "name": "Richmond",
     "state": "VA",
     "population": "227k residents",
-    "cq": 66.6,
+    "cq": 66.9,
     "pillar1": 63.0,
     "pillar2": 64.4,
-    "pillar3": 75.3,
+    "pillar3": 76.8,
     "metrics": {
       "residential_stability": {
         "score": 82.4,
@@ -4097,9 +4097,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 95.0,
-        "raw": 90.27,
-        "rawFmt": "90.3%",
+        "score": 98.6,
+        "raw": 83.79,
+        "rawFmt": "83.8%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -4179,8 +4179,8 @@ const CITIES = {
       },
       "health_insurance": {
         "score": 100.0,
-        "raw": 95.45,
-        "rawFmt": "95.5%",
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -4218,10 +4218,10 @@ const CITIES = {
     "name": "Sacramento",
     "state": "CA",
     "population": "525k residents",
-    "cq": 65.4,
+    "cq": 65.5,
     "pillar1": 71.6,
     "pillar2": 47.7,
-    "pillar3": 80.2,
+    "pillar3": 80.5,
     "metrics": {
       "residential_stability": {
         "score": 88.9,
@@ -4259,9 +4259,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 99.2,
-        "raw": 94.26,
-        "rawFmt": "94.3%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -4299,10 +4299,10 @@ const CITIES = {
     "name": "Salt Lake City",
     "state": "UT",
     "population": "201k residents",
-    "cq": 54.9,
+    "cq": 52.0,
     "pillar1": 64.4,
     "pillar2": 32.4,
-    "pillar3": 71.2,
+    "pillar3": 59.6,
     "metrics": {
       "residential_stability": {
         "score": 82.9,
@@ -4340,9 +4340,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 92.4,
-        "raw": 87.8,
-        "rawFmt": "87.8%",
+        "score": 63.3,
+        "raw": 53.81,
+        "rawFmt": "53.8%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -4380,10 +4380,10 @@ const CITIES = {
     "name": "San Antonio",
     "state": "TX",
     "population": "1.4M residents",
-    "cq": 56.9,
+    "cq": 56.7,
     "pillar1": 57.1,
     "pillar2": 43.4,
-    "pillar3": 75.6,
+    "pillar3": 74.8,
     "metrics": {
       "residential_stability": {
         "score": 86.1,
@@ -4421,9 +4421,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 86.6,
-        "raw": 82.25,
-        "rawFmt": "82.2%",
+        "score": 84.4,
+        "raw": 71.77,
+        "rawFmt": "71.8%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -4461,10 +4461,10 @@ const CITIES = {
     "name": "San Diego",
     "state": "CA",
     "population": "1.4M residents",
-    "cq": 56.6,
+    "cq": 56.8,
     "pillar1": 61.3,
     "pillar2": 38.4,
-    "pillar3": 74.6,
+    "pillar3": 75.3,
     "metrics": {
       "residential_stability": {
         "score": 87.6,
@@ -4502,9 +4502,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 98.1,
-        "raw": 93.2,
-        "rawFmt": "93.2%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -4584,8 +4584,8 @@ const CITIES = {
       },
       "health_insurance": {
         "score": 100.0,
-        "raw": 96.41,
-        "rawFmt": "96.4%",
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -4664,9 +4664,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 99.8,
-        "raw": 94.78,
-        "rawFmt": "94.8%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -4746,8 +4746,8 @@ const CITIES = {
       },
       "health_insurance": {
         "score": 100.0,
-        "raw": 95.59,
-        "rawFmt": "95.6%",
+        "raw": 91.06,
+        "rawFmt": "91.1%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -4785,10 +4785,10 @@ const CITIES = {
     "name": "Spokane",
     "state": "WA",
     "population": "229k residents",
-    "cq": 64.3,
+    "cq": 64.4,
     "pillar1": 57.3,
     "pillar2": 53.9,
-    "pillar3": 90.0,
+    "pillar3": 90.3,
     "metrics": {
       "residential_stability": {
         "score": 83.2,
@@ -4826,9 +4826,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 99.2,
-        "raw": 94.21,
-        "rawFmt": "94.2%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -4866,10 +4866,10 @@ const CITIES = {
     "name": "St. Louis",
     "state": "MO",
     "population": "302k residents",
-    "cq": 73.9,
+    "cq": 73.1,
     "pillar1": 76.8,
     "pillar2": 65.6,
-    "pillar3": 81.0,
+    "pillar3": 77.7,
     "metrics": {
       "residential_stability": {
         "score": 87.4,
@@ -4907,9 +4907,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 94.6,
-        "raw": 89.88,
-        "rawFmt": "89.9%",
+        "score": 86.2,
+        "raw": 73.3,
+        "rawFmt": "73.3%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -4947,10 +4947,10 @@ const CITIES = {
     "name": "St. Paul",
     "state": "MN",
     "population": "312k residents",
-    "cq": 69.8,
+    "cq": 69.9,
     "pillar1": 72.8,
     "pillar2": 57.4,
-    "pillar3": 82.3,
+    "pillar3": 82.9,
     "metrics": {
       "residential_stability": {
         "score": 86.4,
@@ -4988,9 +4988,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 98.6,
-        "raw": 93.65,
-        "rawFmt": "93.7%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -5028,10 +5028,10 @@ const CITIES = {
     "name": "Stockton",
     "state": "CA",
     "population": "321k residents",
-    "cq": 69.2,
+    "cq": 69.4,
     "pillar1": 58.9,
     "pillar2": 69.2,
-    "pillar3": 85.6,
+    "pillar3": 86.4,
     "metrics": {
       "residential_stability": {
         "score": 92.3,
@@ -5069,9 +5069,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 98.0,
-        "raw": 93.12,
-        "rawFmt": "93.1%",
+        "score": 100.0,
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -5112,7 +5112,7 @@ const CITIES = {
     "cq": 55.1,
     "pillar1": 61.7,
     "pillar2": 30.0,
-    "pillar3": 79.6,
+    "pillar3": 79.7,
     "metrics": {
       "residential_stability": {
         "score": 81.9,
@@ -5150,9 +5150,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 93.8,
-        "raw": 89.13,
-        "rawFmt": "89.1%",
+        "score": 94.0,
+        "raw": 79.94,
+        "rawFmt": "79.9%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -5190,10 +5190,10 @@ const CITIES = {
     "name": "Tucson",
     "state": "AZ",
     "population": "543k residents",
-    "cq": 53.5,
+    "cq": 54.3,
     "pillar1": 56.8,
     "pillar2": 33.7,
-    "pillar3": 76.1,
+    "pillar3": 79.1,
     "metrics": {
       "residential_stability": {
         "score": 82.6,
@@ -5231,9 +5231,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 92.4,
-        "raw": 87.78,
-        "rawFmt": "87.8%",
+        "score": 100.0,
+        "raw": 91.31,
+        "rawFmt": "91.3%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -5271,10 +5271,10 @@ const CITIES = {
     "name": "Virginia Beach",
     "state": "VA",
     "population": "459k residents",
-    "cq": 50.7,
+    "cq": 50.4,
     "pillar1": 59.8,
     "pillar2": 20.8,
-    "pillar3": 77.8,
+    "pillar3": 77.0,
     "metrics": {
       "residential_stability": {
         "score": 87.1,
@@ -5312,9 +5312,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 98.0,
-        "raw": 93.13,
-        "rawFmt": "93.1%",
+        "score": 95.8,
+        "raw": 81.47,
+        "rawFmt": "81.5%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -5394,8 +5394,8 @@ const CITIES = {
       },
       "health_insurance": {
         "score": 100.0,
-        "raw": 96.59,
-        "rawFmt": "96.6%",
+        "raw": 100.0,
+        "rawFmt": "100.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },
@@ -5433,10 +5433,10 @@ const CITIES = {
     "name": "Wichita",
     "state": "KS",
     "population": "398k residents",
-    "cq": 55.8,
+    "cq": 55.7,
     "pillar1": 58.5,
     "pillar2": 36.6,
-    "pillar3": 78.2,
+    "pillar3": 78.1,
     "metrics": {
       "residential_stability": {
         "score": 85.7,
@@ -5474,9 +5474,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "health_insurance": {
-        "score": 91.9,
-        "raw": 87.31,
-        "rawFmt": "87.3%",
+        "score": 91.8,
+        "raw": 78.01,
+        "rawFmt": "78.0%",
         "benchmark": "95%",
         "unit": "% population with healthcare coverage"
       },

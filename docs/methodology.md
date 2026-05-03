@@ -145,16 +145,19 @@ V4 factor analysis shows nursing home capacity loads 0.91 on its own isolated fa
 
 ### Pillar 3: Economic Access to Care
 
-#### 3.6 Healthcare Coverage Rate
-**Definition**: Percentage of the civilian noninstitutional population with health insurance coverage.  
-**Source**: U.S. Census Bureau, ACS 5-year estimates (2022). B27001 (health insurance coverage status by sex by age). Computed as (total population − total uninsured) / total population × 100.  
-**Unit**: % covered (higher = better).  
+#### 3.6 Healthcare Coverage Rate (Medicaid/CHIP)
+**Definition**: Fraction of the likely-eligible population actually enrolled in Medicaid or means-tested public health coverage, expressed as a rate 0–100.  
+**Formula**: min( medicaid_enrolled / eligible_pop_0–149%_FPL × 100, 100 )  
+**Source**: U.S. Census Bureau, ACS 5-year estimates (2022). C27007 (Medicaid/means-tested public coverage by sex by age) for enrollment; C17002 (ratio of income to poverty level) for the 0–149% FPL eligibility denominator.  
+**Unit**: % coverage rate (higher = better).  
 **Weight within Pillar 3**: **40%**  
-**Benchmark**: 95% — near-universal coverage. States with full Medicaid expansion achieve 94–97%.
+**Benchmark**: 85% — high-performing Medicaid expansion states consistently achieve 85–100% coverage of the eligible population.
 
-**Rationale**: Healthcare coverage is a direct measure of whether people can enter care systems when they need them. Low coverage reflects structural barriers that persist regardless of FQHC density or nonprofit presence. A city in a Medicaid non-expansion state scores lower here because that state policy decision is a real barrier to care access, and the index reflects it — care access is not insulated from state policy.
+**Rationale**: Healthcare coverage measures whether people can enter the care system when they need it. The metric isolates the public safety net signal: it counts Medicaid and CHIP enrollees (the deliberate care system for vulnerable people) rather than all insurance (which includes employer-sponsored coverage that reflects labor market conditions, not care infrastructure). A tech-industry city where 95% of residents have employer insurance scores no differently on this metric than a city where 95% of residents couldn't afford care at all — both would score 0 on Medicaid reach if none of their low-income residents were enrolled. Conversely, cities in generous Medicaid expansion states score high because the system is actually reaching the people it was designed to serve.
 
-**V5 note**: Renamed from "Health Insurance Coverage" to "Healthcare Coverage" to better reflect the metric's intent and to anticipate the planned swap to ACS B27007 (Medicaid/CHIP specifically), which isolates the care-system signal from employer-based insurance. B27001 counts all health insurance; employer-sponsored coverage in a wealthy tech city has a different meaning for care capacity than Medicaid enrollment. The Medicaid/CHIP swap is planned for V6.
+The eligibility-rate denominator (0–149% FPL, using ACS C17002) mirrors the SNAP coverage formula. This means non-expansion states score lower for the right reason: people who would be eligible for Medicaid in an expansion state are in the denominator but can't enroll, directly penalizing the policy failure. It also means wealthy cities with few low-income residents score neither inflated nor penalized — what matters is whether the people who could use Medicaid are actually enrolled.
+
+**V6 note**: Previous versions used B27001 (any health insurance), which bundled employer-sponsored coverage with Medicaid/CHIP and inflated scores for prosperous cities. V6 switches to C27007, which isolates the public program signal. Benchmark lowered from 95% (B27001 basis) to 85% (C27007 coverage-rate basis).
 
 **Relationship to FQHC density**: See Section 3.4 for the FQHC/coverage mismatch interpretation table. The two metrics are kept separate because FQHCs are specifically designed to serve Medicaid and uninsured populations — combining them would invert FQHC's intent.
 
@@ -204,7 +207,7 @@ A city at or above the benchmark receives 100. A city at half the benchmark rece
 | Library density | 5 per 100,000 | P90 across 68 cities; aspirational but achievable. Cities at median (~2.8/100k) score ~56; lowest-density cities score ~22 |
 | FQHC density | 15 per 100,000 | Eliminates HRSA shortage designation plus geographic redundancy |
 | Nursing home capacity | 50 per 1,000 residents 65+ | ~5% of elderly in skilled nursing at any one time; modestly above CMS national average (~42/1k) |
-| Healthcare coverage | 95% | Near-universal coverage; achievable in Medicaid-expansion states |
+| Healthcare coverage (Medicaid/CHIP) | 85% | High-performing Medicaid expansion states reach 85–100% of eligible population |
 | Housing affordability | 90% not burdened | 10% cost-burden ceiling; only the least-burdened US cities achieve this |
 | SNAP coverage rate | 85% | USDA FNS national SNAP participation target among eligible households |
 
@@ -336,13 +339,12 @@ The following improvements were implemented in V3:
 - **Pillar 1 weights revised**: Residential stability 65% → 50%; combined care nonprofits 35% (unchanged but now in a 3-metric pillar); library density 15% (new).
 - **Pillar 2 simplified to two institutional metrics**: FQHC density (55%) and nursing home capacity (45%). Weights revised from V4's 35/35/30.
 - **Pillar 3 expanded to three metrics**: Healthcare coverage (40%), housing affordability (35%), SNAP coverage (25%).
-- **Healthcare coverage renamed**: "Health Insurance Coverage" → "Healthcare Coverage" to better reflect the metric's intent and anticipate the Medicaid/CHIP swap.
+- **Healthcare coverage renamed and regrounded**: "Health Insurance Coverage" (B27001, any coverage) → "Healthcare Coverage Rate" (C27007, Medicaid/CHIP specifically). New metric measures fraction of the 0–149% FPL population enrolled in Medicaid/means-tested public coverage, analogous to the SNAP coverage formula. Benchmark: 85%. This removes the employer-insurance inflation in wealthy cities and penalizes Medicaid non-expansion states for the right reason.
 - **Need-adjusted shadow diagnostic added**: Combined care nonprofit density per 10,000 residents at 0–150% FPL reported as a diagnostic metric on city pages. Not scored pending validation.
 - **8-metric model**: CQ is now a composite of 8 scored metrics (previously 7 in V4, 6 in V3).
 
 ## 13. Planned V6 Improvements
 
-- **Medicaid/CHIP metric**: Replace healthcare coverage (ACS B27001, any insurance) with Medicaid/CHIP enrollment specifically (ACS B27007). B27001 bundles employer-based coverage with Medicaid/CHIP; B27007 isolates the public program reach signal. State Medicaid non-expansion remains in the score.
 - **Mental health capacity**: HRSA behavioral health shortage area data or SAMHSA treatment facility survey. Candidate metric for a future Pillar 2 expansion.
 - **Child care capacity**: HIFLD national childcare facilities dataset. Potential new Pillar 2 metric or standalone pillar.
 - **Home health capacity**: CMS Care Compare home health dataset (6jpm-sxkc) — deferred because CMS attributes episodes to agency headquarters ZIP, not patient location. Revisit when a clean geographic attribution method is identified.

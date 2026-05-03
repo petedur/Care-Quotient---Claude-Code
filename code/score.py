@@ -24,7 +24,7 @@ Benchmarks:
     nursing_home_capacity    50/1k65 — 5% of 65+ pop in skilled nursing (literature-based)
 
   Pillar 3 — Economic Access to Care (25% of CQ)
-    health_insurance         95%     — near-universal Medicaid/CHIP coverage (B27007 swap pending)
+    health_insurance         85%     — Medicaid/CHIP coverage rate (C27007; 85% of eligible enrolled)
     housing_cost_burden      90%     — 90% not burdened (10% burdened ceiling)
     snap_coverage_rate       85%     — USDA FNS national participation target
 
@@ -85,13 +85,13 @@ SCORED_METRICS = [
     #   Folbre (2001) political economy of care; Sen (1999) capability approach: resources
     #   are necessary but not sufficient; access barriers determine whether care lands.
     #
-    #   Healthcare coverage:    40% — Medicaid/CHIP reach (B27001 now; B27007 swap pending).
+    #   Healthcare coverage:    40% — Medicaid/CHIP reach (C27007; coverage rate vs eligible pop).
     #     Whether vulnerable residents can access formal care systems.
     #   Housing cost burden:    35% — economic conditions that enable or prevent care.
     #     Desmond & Bell; Agha et al. (2024). Moved from Pillar 1 (V4) — belongs in access.
     #   SNAP coverage:          25% — food security reach; narrower scope than other metrics.
     #     Independent signal (r=0.33 with healthcare coverage).
-    ("health_insurance_coverage", "pct_insured",         "pillar3", 95.0, 0.40),
+    ("health_insurance_coverage", "coverage_rate",        "pillar3", 85.0, 0.40),
     ("housing_cost_burden",       "pct_not_burdened",    "pillar3", 90.0, 0.35),
     ("snap_participation",        "coverage_rate",       "pillar3", 85.0, 0.25),
 ]
@@ -134,7 +134,7 @@ METRIC_LABELS = {
     "library_density.density_per_100k":            "Library Density (per 100k residents)",
     "health_center_density.density_per_100k":      "FQHCs (per 100k)",
     "nursing_home_capacity.beds_per_1k_65plus":    "Nursing Home Capacity (beds/1k 65+)",
-    "health_insurance_coverage.pct_insured":       "Healthcare Coverage Rate",
+    "health_insurance_coverage.coverage_rate":       "Healthcare Coverage Rate",
     "housing_cost_burden.pct_not_burdened":        "Housing Affordability (% not cost-burdened)",
     "snap_participation.coverage_rate":            "SNAP Coverage Rate",
     # Diagnostic only (not scored)
@@ -361,7 +361,7 @@ DASHBOARD_METRICS = {
     # Pillar 3 — Economic Access to Care
     "health_insurance": {
         "key": "health_insurance",
-        "raw_key": ("health_insurance_coverage", "pct_insured"),
+        "raw_key": ("health_insurance_coverage", "coverage_rate"),
         "benchmark": "95%", "unit": "% population with healthcare coverage",
         "fmt": lambda v: f"{v:.1f}%",
     },
@@ -412,7 +412,7 @@ SCORE_COL = {
     "library_density":       "score_library_density.density_per_100k",
     "fqhc":                  "score_health_center_density.density_per_100k",
     "nursing_home":          "score_nursing_home_capacity.beds_per_1k_65plus",
-    "health_insurance":      "score_health_insurance_coverage.pct_insured",
+    "health_insurance":      "score_health_insurance_coverage.coverage_rate",
     "housing_cost_burden":   "score_housing_cost_burden.pct_not_burdened",
     "snap_coverage":         "score_snap_participation.coverage_rate",
 }

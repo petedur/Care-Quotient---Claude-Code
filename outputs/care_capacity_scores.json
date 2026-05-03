@@ -2,7 +2,7 @@
   "albuquerque": {
     "pillar1_social_relational_care": 58.3,
     "pillar2_institutional_care": 36.5,
-    "pillar3_economic_access": 82.9,
+    "pillar3_economic_access": 83.9,
     "metrics": {
       "Residential Stability": {
         "score": 88.5,
@@ -35,9 +35,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 97.5,
-        "raw_value": 92.64,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -53,12 +53,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 56.8
+    "care_quotient": 57.1
   },
   "anchorage": {
     "pillar1_social_relational_care": 55.5,
     "pillar2_institutional_care": 11.7,
-    "pillar3_economic_access": 80.5,
+    "pillar3_economic_access": 82.8,
     "metrics": {
       "Residential Stability": {
         "score": 86.8,
@@ -91,9 +91,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 94.4,
-        "raw_value": 89.68,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -109,12 +109,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 46.4
+    "care_quotient": 47.0
   },
   "atlanta": {
     "pillar1_social_relational_care": 85.4,
     "pillar2_institutional_care": 48.3,
-    "pillar3_economic_access": 78.6,
+    "pillar3_economic_access": 72.4,
     "metrics": {
       "Residential Stability": {
         "score": 84.2,
@@ -147,9 +147,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 94.1,
-        "raw_value": 89.38,
-        "benchmark": 95.0,
+        "score": 78.6,
+        "raw_value": 66.84,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -165,12 +165,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 70.7
+    "care_quotient": 69.2
   },
   "aurora": {
     "pillar1_social_relational_care": 59.9,
     "pillar2_institutional_care": 31.2,
-    "pillar3_economic_access": 76.3,
+    "pillar3_economic_access": 79.3,
     "metrics": {
       "Residential Stability": {
         "score": 85.8,
@@ -203,9 +203,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 92.3,
-        "raw_value": 87.67,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -221,12 +221,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.0
+    "care_quotient": 54.7
   },
   "austin": {
     "pillar1_social_relational_care": 60.4,
     "pillar2_institutional_care": 40.7,
-    "pillar3_economic_access": 71.6,
+    "pillar3_economic_access": 63.1,
     "metrics": {
       "Residential Stability": {
         "score": 82.0,
@@ -259,9 +259,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 91.9,
-        "raw_value": 87.29,
-        "benchmark": 95.0,
+        "score": 70.8,
+        "raw_value": 60.21,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -277,12 +277,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 56.3
+    "care_quotient": 54.2
   },
   "bakersfield": {
     "pillar1_social_relational_care": 53.4,
     "pillar2_institutional_care": 43.8,
-    "pillar3_economic_access": 80.0,
+    "pillar3_economic_access": 81.1,
     "metrics": {
       "Residential Stability": {
         "score": 90.9,
@@ -315,9 +315,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 97.2,
-        "raw_value": 92.33,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -333,12 +333,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 56.7
+    "care_quotient": 57.0
   },
   "baltimore": {
     "pillar1_social_relational_care": 76.2,
     "pillar2_institutional_care": 53.2,
-    "pillar3_economic_access": 87.2,
+    "pillar3_economic_access": 87.4,
     "metrics": {
       "Residential Stability": {
         "score": 89.2,
@@ -371,9 +371,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 99.7,
-        "raw_value": 94.69,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -389,12 +389,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 70.9
+    "care_quotient": 71.0
   },
   "baton_rouge": {
     "pillar1_social_relational_care": 68.0,
     "pillar2_institutional_care": 88.5,
-    "pillar3_economic_access": 77.0,
+    "pillar3_economic_access": 79.5,
     "metrics": {
       "Residential Stability": {
         "score": 83.5,
@@ -427,9 +427,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 93.7,
-        "raw_value": 89.04,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 89.39,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -445,12 +445,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 77.4
+    "care_quotient": 78.0
   },
   "birmingham": {
     "pillar1_social_relational_care": 71.0,
     "pillar2_institutional_care": 59.2,
-    "pillar3_economic_access": 76.9,
+    "pillar3_economic_access": 76.6,
     "metrics": {
       "Residential Stability": {
         "score": 85.1,
@@ -483,9 +483,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 92.4,
-        "raw_value": 87.79,
-        "benchmark": 95.0,
+        "score": 91.5,
+        "raw_value": 77.79,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -540,8 +540,8 @@
       },
       "Healthcare Coverage Rate": {
         "score": 100.0,
-        "raw_value": 96.74,
-        "benchmark": 95.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -596,8 +596,8 @@
       },
       "Healthcare Coverage Rate": {
         "score": 100.0,
-        "raw_value": 96.05,
-        "benchmark": 95.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -618,7 +618,7 @@
   "charlotte": {
     "pillar1_social_relational_care": 64.1,
     "pillar2_institutional_care": 27.6,
-    "pillar3_economic_access": 76.5,
+    "pillar3_economic_access": 77.5,
     "metrics": {
       "Residential Stability": {
         "score": 86.6,
@@ -651,9 +651,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 92.1,
-        "raw_value": 87.49,
-        "benchmark": 95.0,
+        "score": 94.7,
+        "raw_value": 80.48,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -669,12 +669,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.4
+    "care_quotient": 54.7
   },
   "chicago": {
     "pillar1_social_relational_care": 65.3,
     "pillar2_institutional_care": 63.7,
-    "pillar3_economic_access": 82.2,
+    "pillar3_economic_access": 84.3,
     "metrics": {
       "Residential Stability": {
         "score": 88.9,
@@ -707,9 +707,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 94.9,
-        "raw_value": 90.11,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 95.55,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -725,7 +725,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 69.0
+    "care_quotient": 69.5
   },
   "cincinnati": {
     "pillar1_social_relational_care": 74.5,
@@ -764,8 +764,8 @@
       },
       "Healthcare Coverage Rate": {
         "score": 97.7,
-        "raw_value": 92.85,
-        "benchmark": 95.0,
+        "raw_value": 83.02,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -786,7 +786,7 @@
   "cleveland": {
     "pillar1_social_relational_care": 76.4,
     "pillar2_institutional_care": 73.0,
-    "pillar3_economic_access": 83.4,
+    "pillar3_economic_access": 84.4,
     "metrics": {
       "Residential Stability": {
         "score": 85.7,
@@ -819,9 +819,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 97.6,
-        "raw_value": 92.74,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -837,12 +837,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 77.0
+    "care_quotient": 77.2
   },
   "colorado_springs": {
     "pillar1_social_relational_care": 55.9,
     "pillar2_institutional_care": 35.3,
-    "pillar3_economic_access": 79.6,
+    "pillar3_economic_access": 81.1,
     "metrics": {
       "Residential Stability": {
         "score": 83.1,
@@ -875,9 +875,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 96.4,
-        "raw_value": 91.59,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -893,12 +893,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.6
+    "care_quotient": 55.0
   },
   "columbus": {
     "pillar1_social_relational_care": 60.5,
     "pillar2_institutional_care": 40.2,
-    "pillar3_economic_access": 77.7,
+    "pillar3_economic_access": 80.0,
     "metrics": {
       "Residential Stability": {
         "score": 83.1,
@@ -931,9 +931,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 94.3,
-        "raw_value": 89.58,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 91.36,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -949,12 +949,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 57.7
+    "care_quotient": 58.3
   },
   "corpus_christi": {
     "pillar1_social_relational_care": 55.4,
     "pillar2_institutional_care": 36.1,
-    "pillar3_economic_access": 79.3,
+    "pillar3_economic_access": 80.5,
     "metrics": {
       "Residential Stability": {
         "score": 87.2,
@@ -987,9 +987,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 86.8,
-        "raw_value": 82.43,
-        "benchmark": 95.0,
+        "score": 89.7,
+        "raw_value": 76.26,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1005,12 +1005,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.6
+    "care_quotient": 54.9
   },
   "dallas": {
     "pillar1_social_relational_care": 63.7,
     "pillar2_institutional_care": 32.4,
-    "pillar3_economic_access": 68.0,
+    "pillar3_economic_access": 67.1,
     "metrics": {
       "Residential Stability": {
         "score": 87.5,
@@ -1043,9 +1043,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 80.7,
-        "raw_value": 76.64,
-        "benchmark": 95.0,
+        "score": 78.5,
+        "raw_value": 66.75,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1061,12 +1061,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.8
+    "care_quotient": 53.6
   },
   "denver": {
     "pillar1_social_relational_care": 69.5,
     "pillar2_institutional_care": 56.8,
-    "pillar3_economic_access": 76.2,
+    "pillar3_economic_access": 77.9,
     "metrics": {
       "Residential Stability": {
         "score": 82.9,
@@ -1099,9 +1099,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 95.7,
-        "raw_value": 90.9,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1117,12 +1117,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 66.7
+    "care_quotient": 67.2
   },
   "des_moines": {
     "pillar1_social_relational_care": 63.2,
     "pillar2_institutional_care": 53.1,
-    "pillar3_economic_access": 85.8,
+    "pillar3_economic_access": 86.2,
     "metrics": {
       "Residential Stability": {
         "score": 86.6,
@@ -1155,9 +1155,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 98.9,
-        "raw_value": 93.92,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1173,12 +1173,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 65.3
+    "care_quotient": 65.4
   },
   "detroit": {
     "pillar1_social_relational_care": 75.8,
     "pillar2_institutional_care": 62.3,
-    "pillar3_economic_access": 85.7,
+    "pillar3_economic_access": 86.8,
     "metrics": {
       "Residential Stability": {
         "score": 91.8,
@@ -1211,9 +1211,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 97.1,
-        "raw_value": 92.23,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1229,12 +1229,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 73.6
+    "care_quotient": 73.8
   },
   "durham": {
     "pillar1_social_relational_care": 62.3,
     "pillar2_institutional_care": 33.6,
-    "pillar3_economic_access": 77.6,
+    "pillar3_economic_access": 74.9,
     "metrics": {
       "Residential Stability": {
         "score": 85.5,
@@ -1267,9 +1267,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 92.7,
-        "raw_value": 88.02,
-        "benchmark": 95.0,
+        "score": 85.9,
+        "raw_value": 72.98,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1285,12 +1285,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 56.1
+    "care_quotient": 55.4
   },
   "el_paso": {
     "pillar1_social_relational_care": 56.3,
     "pillar2_institutional_care": 37.6,
-    "pillar3_economic_access": 76.1,
+    "pillar3_economic_access": 75.2,
     "metrics": {
       "Residential Stability": {
         "score": 90.0,
@@ -1323,9 +1323,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 82.4,
-        "raw_value": 78.31,
-        "benchmark": 95.0,
+        "score": 80.1,
+        "raw_value": 68.1,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1341,12 +1341,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.7
+    "care_quotient": 54.5
   },
   "fort_worth": {
     "pillar1_social_relational_care": 60.7,
     "pillar2_institutional_care": 38.2,
-    "pillar3_economic_access": 74.2,
+    "pillar3_economic_access": 73.8,
     "metrics": {
       "Residential Stability": {
         "score": 89.0,
@@ -1379,9 +1379,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 84.1,
-        "raw_value": 79.86,
-        "benchmark": 95.0,
+        "score": 83.0,
+        "raw_value": 70.55,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1397,12 +1397,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 56.2
+    "care_quotient": 56.1
   },
   "fresno": {
     "pillar1_social_relational_care": 61.0,
     "pillar2_institutional_care": 51.4,
-    "pillar3_economic_access": 81.3,
+    "pillar3_economic_access": 82.0,
     "metrics": {
       "Residential Stability": {
         "score": 90.6,
@@ -1435,9 +1435,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 98.4,
-        "raw_value": 93.49,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1453,7 +1453,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 62.7
+    "care_quotient": 62.9
   },
   "honolulu": {
     "pillar1_social_relational_care": 83.0,
@@ -1492,8 +1492,8 @@
       },
       "Healthcare Coverage Rate": {
         "score": 100.0,
-        "raw_value": 96.5,
-        "benchmark": 95.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1514,7 +1514,7 @@
   "houston": {
     "pillar1_social_relational_care": 61.8,
     "pillar2_institutional_care": 30.8,
-    "pillar3_economic_access": 70.4,
+    "pillar3_economic_access": 69.6,
     "metrics": {
       "Residential Stability": {
         "score": 87.2,
@@ -1547,9 +1547,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 80.3,
-        "raw_value": 76.29,
-        "benchmark": 95.0,
+        "score": 78.4,
+        "raw_value": 66.66,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1565,12 +1565,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.1
+    "care_quotient": 52.9
   },
   "indianapolis": {
     "pillar1_social_relational_care": 69.3,
     "pillar2_institutional_care": 67.7,
-    "pillar3_economic_access": 78.1,
+    "pillar3_economic_access": 80.0,
     "metrics": {
       "Residential Stability": {
         "score": 88.7,
@@ -1603,9 +1603,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 95.2,
-        "raw_value": 90.41,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 97.63,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1621,12 +1621,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 70.9
+    "care_quotient": 71.4
   },
   "jacksonville": {
     "pillar1_social_relational_care": 61.6,
     "pillar2_institutional_care": 31.2,
-    "pillar3_economic_access": 81.2,
+    "pillar3_economic_access": 82.2,
     "metrics": {
       "Residential Stability": {
         "score": 86.5,
@@ -1659,9 +1659,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 92.9,
-        "raw_value": 88.23,
-        "benchmark": 95.0,
+        "score": 95.2,
+        "raw_value": 80.95,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1677,12 +1677,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 55.9
+    "care_quotient": 56.1
   },
   "kansas_city": {
     "pillar1_social_relational_care": 68.6,
     "pillar2_institutional_care": 48.9,
-    "pillar3_economic_access": 76.4,
+    "pillar3_economic_access": 68.8,
     "metrics": {
       "Residential Stability": {
         "score": 86.9,
@@ -1715,9 +1715,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 92.9,
-        "raw_value": 88.27,
-        "benchmark": 95.0,
+        "score": 74.0,
+        "raw_value": 62.93,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1733,12 +1733,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 63.7
+    "care_quotient": 61.8
   },
   "las_vegas": {
     "pillar1_social_relational_care": 61.5,
     "pillar2_institutional_care": 26.8,
-    "pillar3_economic_access": 77.0,
+    "pillar3_economic_access": 80.6,
     "metrics": {
       "Residential Stability": {
         "score": 88.3,
@@ -1771,9 +1771,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 91.0,
-        "raw_value": 86.41,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 88.96,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1789,12 +1789,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.2
+    "care_quotient": 54.1
   },
   "lexington": {
     "pillar1_social_relational_care": 57.6,
     "pillar2_institutional_care": 55.5,
-    "pillar3_economic_access": 76.8,
+    "pillar3_economic_access": 77.6,
     "metrics": {
       "Residential Stability": {
         "score": 81.8,
@@ -1827,9 +1827,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 98.0,
-        "raw_value": 93.11,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 87.03,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1845,12 +1845,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 61.7
+    "care_quotient": 61.9
   },
   "los_angeles": {
     "pillar1_social_relational_care": 63.6,
     "pillar2_institutional_care": 52.6,
-    "pillar3_economic_access": 70.6,
+    "pillar3_economic_access": 73.0,
     "metrics": {
       "Residential Stability": {
         "score": 92.5,
@@ -1883,9 +1883,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 94.1,
-        "raw_value": 89.42,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1901,12 +1901,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 61.5
+    "care_quotient": 62.1
   },
   "louisville": {
     "pillar1_social_relational_care": 56.5,
     "pillar2_institutional_care": 22.2,
-    "pillar3_economic_access": 79.9,
+    "pillar3_economic_access": 80.1,
     "metrics": {
       "Residential Stability": {
         "score": 90.4,
@@ -1939,9 +1939,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 99.4,
-        "raw_value": 94.47,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -1957,12 +1957,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 50.3
+    "care_quotient": 50.4
   },
   "madison": {
     "pillar1_social_relational_care": 58.5,
     "pillar2_institutional_care": 20.2,
-    "pillar3_economic_access": 75.8,
+    "pillar3_economic_access": 62.7,
     "metrics": {
       "Residential Stability": {
         "score": 77.2,
@@ -1995,9 +1995,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 100.0,
-        "raw_value": 95.42,
-        "benchmark": 95.0,
+        "score": 67.2,
+        "raw_value": 57.12,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2013,12 +2013,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 49.4
+    "care_quotient": 46.1
   },
   "memphis": {
     "pillar1_social_relational_care": 68.8,
     "pillar2_institutional_care": 36.8,
-    "pillar3_economic_access": 76.8,
+    "pillar3_economic_access": 78.5,
     "metrics": {
       "Residential Stability": {
         "score": 89.4,
@@ -2051,9 +2051,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 90.4,
-        "raw_value": 85.85,
-        "benchmark": 95.0,
+        "score": 94.8,
+        "raw_value": 80.6,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2069,12 +2069,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 59.6
+    "care_quotient": 60.0
   },
   "milwaukee": {
     "pillar1_social_relational_care": 65.6,
     "pillar2_institutional_care": 45.8,
-    "pillar3_economic_access": 83.5,
+    "pillar3_economic_access": 85.2,
     "metrics": {
       "Residential Stability": {
         "score": 88.8,
@@ -2107,9 +2107,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 95.8,
-        "raw_value": 91.05,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2125,12 +2125,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 63.1
+    "care_quotient": 63.6
   },
   "minneapolis": {
     "pillar1_social_relational_care": 66.8,
     "pillar2_institutional_care": 66.1,
-    "pillar3_economic_access": 79.8,
+    "pillar3_economic_access": 80.2,
     "metrics": {
       "Residential Stability": {
         "score": 80.6,
@@ -2163,9 +2163,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 99.0,
-        "raw_value": 94.07,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 97.34,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2181,12 +2181,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 69.8
+    "care_quotient": 69.9
   },
   "nashville": {
     "pillar1_social_relational_care": 65.4,
     "pillar2_institutional_care": 31.9,
-    "pillar3_economic_access": 74.0,
+    "pillar3_economic_access": 73.8,
     "metrics": {
       "Residential Stability": {
         "score": 83.8,
@@ -2219,9 +2219,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 92.4,
-        "raw_value": 87.8,
-        "benchmark": 95.0,
+        "score": 91.9,
+        "raw_value": 78.08,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2242,7 +2242,7 @@
   "new_orleans": {
     "pillar1_social_relational_care": 72.6,
     "pillar2_institutional_care": 77.1,
-    "pillar3_economic_access": 76.0,
+    "pillar3_economic_access": 77.5,
     "metrics": {
       "Residential Stability": {
         "score": 90.4,
@@ -2275,9 +2275,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 96.3,
-        "raw_value": 91.48,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 98.16,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2293,12 +2293,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 75.0
+    "care_quotient": 75.4
   },
   "nyc": {
     "pillar1_social_relational_care": 64.4,
     "pillar2_institutional_care": 48.5,
-    "pillar3_economic_access": 82.5,
+    "pillar3_economic_access": 83.2,
     "metrics": {
       "Residential Stability": {
         "score": 93.5,
@@ -2331,9 +2331,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 98.2,
-        "raw_value": 93.28,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2349,12 +2349,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 63.4
+    "care_quotient": 63.5
   },
   "oklahoma_city": {
     "pillar1_social_relational_care": 59.0,
     "pillar2_institutional_care": 45.7,
-    "pillar3_economic_access": 79.0,
+    "pillar3_economic_access": 80.0,
     "metrics": {
       "Residential Stability": {
         "score": 86.1,
@@ -2387,9 +2387,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 90.5,
-        "raw_value": 85.98,
-        "benchmark": 95.0,
+        "score": 92.8,
+        "raw_value": 78.85,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2405,12 +2405,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 59.3
+    "care_quotient": 59.6
   },
   "omaha": {
     "pillar1_social_relational_care": 64.2,
     "pillar2_institutional_care": 59.2,
-    "pillar3_economic_access": 79.2,
+    "pillar3_economic_access": 78.0,
     "metrics": {
       "Residential Stability": {
         "score": 88.3,
@@ -2443,9 +2443,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 94.9,
-        "raw_value": 90.15,
-        "benchmark": 95.0,
+        "score": 91.8,
+        "raw_value": 78.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2461,12 +2461,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 66.2
+    "care_quotient": 65.9
   },
   "philadelphia": {
     "pillar1_social_relational_care": 67.0,
     "pillar2_institutional_care": 46.9,
-    "pillar3_economic_access": 86.0,
+    "pillar3_economic_access": 87.0,
     "metrics": {
       "Residential Stability": {
         "score": 89.6,
@@ -2499,9 +2499,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 97.5,
-        "raw_value": 92.65,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2517,12 +2517,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 64.7
+    "care_quotient": 65.0
   },
   "phoenix": {
     "pillar1_social_relational_care": 56.6,
     "pillar2_institutional_care": 30.4,
-    "pillar3_economic_access": 75.6,
+    "pillar3_economic_access": 79.8,
     "metrics": {
       "Residential Stability": {
         "score": 88.6,
@@ -2555,9 +2555,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 89.5,
-        "raw_value": 85.03,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2573,12 +2573,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 52.2
+    "care_quotient": 53.2
   },
   "pittsburgh": {
     "pillar1_social_relational_care": 79.2,
     "pillar2_institutional_care": 58.9,
-    "pillar3_economic_access": 83.4,
+    "pillar3_economic_access": 80.4,
     "metrics": {
       "Residential Stability": {
         "score": 82.6,
@@ -2611,9 +2611,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 100.0,
-        "raw_value": 95.05,
-        "benchmark": 95.0,
+        "score": 92.5,
+        "raw_value": 78.66,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2629,12 +2629,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 73.1
+    "care_quotient": 72.4
   },
   "portland": {
     "pillar1_social_relational_care": 62.7,
     "pillar2_institutional_care": 52.5,
-    "pillar3_economic_access": 84.7,
+    "pillar3_economic_access": 85.2,
     "metrics": {
       "Residential Stability": {
         "score": 86.5,
@@ -2667,9 +2667,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 98.9,
-        "raw_value": 93.92,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2685,12 +2685,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 64.6
+    "care_quotient": 64.8
   },
   "providence": {
     "pillar1_social_relational_care": 73.2,
     "pillar2_institutional_care": 61.8,
-    "pillar3_economic_access": 87.9,
+    "pillar3_economic_access": 88.7,
     "metrics": {
       "Residential Stability": {
         "score": 88.1,
@@ -2723,9 +2723,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 98.1,
-        "raw_value": 93.18,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2741,12 +2741,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 72.9
+    "care_quotient": 73.1
   },
   "raleigh": {
     "pillar1_social_relational_care": 60.0,
     "pillar2_institutional_care": 24.1,
-    "pillar3_economic_access": 78.0,
+    "pillar3_economic_access": 80.5,
     "metrics": {
       "Residential Stability": {
         "score": 85.1,
@@ -2779,9 +2779,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 93.9,
-        "raw_value": 89.17,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 85.04,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2797,12 +2797,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 51.9
+    "care_quotient": 52.6
   },
   "richmond": {
     "pillar1_social_relational_care": 63.0,
     "pillar2_institutional_care": 64.4,
-    "pillar3_economic_access": 75.3,
+    "pillar3_economic_access": 76.8,
     "metrics": {
       "Residential Stability": {
         "score": 82.4,
@@ -2835,9 +2835,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 95.0,
-        "raw_value": 90.27,
-        "benchmark": 95.0,
+        "score": 98.6,
+        "raw_value": 83.79,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2853,7 +2853,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 66.6
+    "care_quotient": 66.9
   },
   "rochester": {
     "pillar1_social_relational_care": 67.8,
@@ -2892,8 +2892,8 @@
       },
       "Healthcare Coverage Rate": {
         "score": 100.0,
-        "raw_value": 95.45,
-        "benchmark": 95.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2914,7 +2914,7 @@
   "sacramento": {
     "pillar1_social_relational_care": 71.6,
     "pillar2_institutional_care": 47.7,
-    "pillar3_economic_access": 80.2,
+    "pillar3_economic_access": 80.5,
     "metrics": {
       "Residential Stability": {
         "score": 88.9,
@@ -2947,9 +2947,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 99.2,
-        "raw_value": 94.26,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -2965,12 +2965,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 65.4
+    "care_quotient": 65.5
   },
   "salt_lake_city": {
     "pillar1_social_relational_care": 64.4,
     "pillar2_institutional_care": 32.4,
-    "pillar3_economic_access": 71.2,
+    "pillar3_economic_access": 59.6,
     "metrics": {
       "Residential Stability": {
         "score": 82.9,
@@ -3003,9 +3003,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 92.4,
-        "raw_value": 87.8,
-        "benchmark": 95.0,
+        "score": 63.3,
+        "raw_value": 53.81,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -3021,12 +3021,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.9
+    "care_quotient": 52.0
   },
   "san_antonio": {
     "pillar1_social_relational_care": 57.1,
     "pillar2_institutional_care": 43.4,
-    "pillar3_economic_access": 75.6,
+    "pillar3_economic_access": 74.8,
     "metrics": {
       "Residential Stability": {
         "score": 86.1,
@@ -3059,9 +3059,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 86.6,
-        "raw_value": 82.25,
-        "benchmark": 95.0,
+        "score": 84.4,
+        "raw_value": 71.77,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -3077,12 +3077,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 56.9
+    "care_quotient": 56.7
   },
   "san_diego": {
     "pillar1_social_relational_care": 61.3,
     "pillar2_institutional_care": 38.4,
-    "pillar3_economic_access": 74.6,
+    "pillar3_economic_access": 75.3,
     "metrics": {
       "Residential Stability": {
         "score": 87.6,
@@ -3115,9 +3115,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 98.1,
-        "raw_value": 93.2,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -3133,7 +3133,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 56.6
+    "care_quotient": 56.8
   },
   "san_francisco": {
     "pillar1_social_relational_care": 66.5,
@@ -3172,8 +3172,8 @@
       },
       "Healthcare Coverage Rate": {
         "score": 100.0,
-        "raw_value": 96.41,
-        "benchmark": 95.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -3227,9 +3227,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 99.8,
-        "raw_value": 94.78,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -3284,8 +3284,8 @@
       },
       "Healthcare Coverage Rate": {
         "score": 100.0,
-        "raw_value": 95.59,
-        "benchmark": 95.0,
+        "raw_value": 91.06,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -3306,7 +3306,7 @@
   "spokane": {
     "pillar1_social_relational_care": 57.3,
     "pillar2_institutional_care": 53.9,
-    "pillar3_economic_access": 90.0,
+    "pillar3_economic_access": 90.3,
     "metrics": {
       "Residential Stability": {
         "score": 83.2,
@@ -3339,9 +3339,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 99.2,
-        "raw_value": 94.21,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -3357,12 +3357,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 64.3
+    "care_quotient": 64.4
   },
   "st_louis": {
     "pillar1_social_relational_care": 76.8,
     "pillar2_institutional_care": 65.6,
-    "pillar3_economic_access": 81.0,
+    "pillar3_economic_access": 77.7,
     "metrics": {
       "Residential Stability": {
         "score": 87.4,
@@ -3395,9 +3395,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 94.6,
-        "raw_value": 89.88,
-        "benchmark": 95.0,
+        "score": 86.2,
+        "raw_value": 73.3,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -3413,12 +3413,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 73.9
+    "care_quotient": 73.1
   },
   "st_paul": {
     "pillar1_social_relational_care": 72.8,
     "pillar2_institutional_care": 57.4,
-    "pillar3_economic_access": 82.3,
+    "pillar3_economic_access": 82.9,
     "metrics": {
       "Residential Stability": {
         "score": 86.4,
@@ -3451,9 +3451,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 98.6,
-        "raw_value": 93.65,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -3469,12 +3469,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 69.8
+    "care_quotient": 69.9
   },
   "stockton": {
     "pillar1_social_relational_care": 58.9,
     "pillar2_institutional_care": 69.2,
-    "pillar3_economic_access": 85.6,
+    "pillar3_economic_access": 86.4,
     "metrics": {
       "Residential Stability": {
         "score": 92.3,
@@ -3507,9 +3507,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 98.0,
-        "raw_value": 93.12,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -3525,12 +3525,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 69.2
+    "care_quotient": 69.4
   },
   "tampa": {
     "pillar1_social_relational_care": 61.7,
     "pillar2_institutional_care": 30.0,
-    "pillar3_economic_access": 79.6,
+    "pillar3_economic_access": 79.7,
     "metrics": {
       "Residential Stability": {
         "score": 81.9,
@@ -3563,9 +3563,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 93.8,
-        "raw_value": 89.13,
-        "benchmark": 95.0,
+        "score": 94.0,
+        "raw_value": 79.94,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -3586,7 +3586,7 @@
   "tucson": {
     "pillar1_social_relational_care": 56.8,
     "pillar2_institutional_care": 33.7,
-    "pillar3_economic_access": 76.1,
+    "pillar3_economic_access": 79.1,
     "metrics": {
       "Residential Stability": {
         "score": 82.6,
@@ -3619,9 +3619,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 92.4,
-        "raw_value": 87.78,
-        "benchmark": 95.0,
+        "score": 100.0,
+        "raw_value": 91.31,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -3637,12 +3637,12 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.5
+    "care_quotient": 54.3
   },
   "virginia_beach": {
     "pillar1_social_relational_care": 59.8,
     "pillar2_institutional_care": 20.8,
-    "pillar3_economic_access": 77.8,
+    "pillar3_economic_access": 77.0,
     "metrics": {
       "Residential Stability": {
         "score": 87.1,
@@ -3675,9 +3675,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 98.0,
-        "raw_value": 93.13,
-        "benchmark": 95.0,
+        "score": 95.8,
+        "raw_value": 81.47,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -3693,7 +3693,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 50.7
+    "care_quotient": 50.4
   },
   "washington_dc": {
     "pillar1_social_relational_care": 80.6,
@@ -3732,8 +3732,8 @@
       },
       "Healthcare Coverage Rate": {
         "score": 100.0,
-        "raw_value": 96.59,
-        "benchmark": 95.0,
+        "raw_value": 100.0,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -3754,7 +3754,7 @@
   "wichita": {
     "pillar1_social_relational_care": 58.5,
     "pillar2_institutional_care": 36.6,
-    "pillar3_economic_access": 78.2,
+    "pillar3_economic_access": 78.1,
     "metrics": {
       "Residential Stability": {
         "score": 85.7,
@@ -3787,9 +3787,9 @@
         "pillar": "Institutional Care"
       },
       "Healthcare Coverage Rate": {
-        "score": 91.9,
-        "raw_value": 87.31,
-        "benchmark": 95.0,
+        "score": 91.8,
+        "raw_value": 78.01,
+        "benchmark": 85.0,
         "pillar": "Economic Access to Care"
       },
       "Housing Affordability (% not cost-burdened)": {
@@ -3805,6 +3805,6 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 55.8
+    "care_quotient": 55.7
   }
 }

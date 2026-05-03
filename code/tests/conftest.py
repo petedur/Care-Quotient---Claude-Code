@@ -30,7 +30,7 @@ SYNTHETIC_METRICS = [
     ("perfect", "library_density",           "density_per_100k",    5.0),
     ("perfect", "health_center_density",     "density_per_100k",   15.0),
     ("perfect", "nursing_home_capacity",     "beds_per_1k_65plus", 50.0),
-    ("perfect", "health_insurance_coverage", "pct_insured",        95.0),
+    ("perfect", "health_insurance_coverage", "coverage_rate",      85.0),
     ("perfect", "housing_cost_burden",       "pct_not_burdened",   90.0),
     ("perfect", "snap_participation",        "coverage_rate",      85.0),
 
@@ -40,7 +40,7 @@ SYNTHETIC_METRICS = [
     ("half", "library_density",           "density_per_100k",    2.5),
     ("half", "health_center_density",     "density_per_100k",    7.5),
     ("half", "nursing_home_capacity",     "beds_per_1k_65plus", 25.0),
-    ("half", "health_insurance_coverage", "pct_insured",        47.5),
+    ("half", "health_insurance_coverage", "coverage_rate",      42.5),
     ("half", "housing_cost_burden",       "pct_not_burdened",   45.0),
     ("half", "snap_participation",        "coverage_rate",      42.5),
 
@@ -50,7 +50,7 @@ SYNTHETIC_METRICS = [
     ("zero", "library_density",           "density_per_100k",   0.0),
     ("zero", "health_center_density",     "density_per_100k",   0.0),
     ("zero", "nursing_home_capacity",     "beds_per_1k_65plus", 0.0),
-    ("zero", "health_insurance_coverage", "pct_insured",        0.0),
+    ("zero", "health_insurance_coverage", "coverage_rate",      0.0),
     ("zero", "housing_cost_burden",       "pct_not_burdened",   0.0),
     ("zero", "snap_participation",        "coverage_rate",      0.0),
 
@@ -60,7 +60,7 @@ SYNTHETIC_METRICS = [
     ("over", "library_density",           "density_per_100k",   10.0),
     ("over", "health_center_density",     "density_per_100k",   30.0),
     ("over", "nursing_home_capacity",     "beds_per_1k_65plus", 100.0),
-    ("over", "health_insurance_coverage", "pct_insured",        99.0),
+    ("over", "health_insurance_coverage", "coverage_rate",      99.0),
     ("over", "housing_cost_burden",       "pct_not_burdened",   99.0),
     ("over", "snap_participation",        "coverage_rate",      99.0),
 ]
@@ -134,9 +134,12 @@ def snap_participation_csv(tmp_path):
 
 @pytest.fixture
 def health_insurance_csv(tmp_path):
+    # medicaid_enrolled=750, eligible_pop=1000 → coverage_rate = 75.0
     df = pd.DataFrame({
-        "total_pop": [1000, 1000],
-        "insured":   [940,  950],
+        "total_pop":                 [1000, 1000],
+        "medicaid_enrolled":         [400,   350],
+        "eligible_pop_0_149pct_fpl": [500,   500],
+        "pct_medicaid":              [40.0,  35.0],
     })
     p = tmp_path / "health_insurance.csv"
     df.to_csv(p, index=False)

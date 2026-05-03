@@ -87,11 +87,13 @@ def test_load_health_insurance(conn, health_insurance_csv, monkeypatch):
     )
     etl.load_health_insurance(conn, "testcity")
     row = conn.execute(
-        "SELECT value FROM metrics WHERE city='testcity' AND metric='health_insurance_coverage'"
+        "SELECT value FROM metrics "
+        "WHERE city='testcity' AND metric='health_insurance_coverage' "
+        "AND sub_metric='coverage_rate'"
     ).fetchone()
     assert row is not None
-    # total_pop=2000, insured=1890 → 94.5%
-    assert row[0] == pytest.approx(94.5, abs=0.01)
+    # medicaid_enrolled=750, eligible_pop=1000 → 750/1000 * 100 = 75.0
+    assert row[0] == pytest.approx(75.0, abs=0.01)
 
 
 # ── nursing_homes ─────────────────────────────────────────────────────────────
@@ -130,7 +132,7 @@ def test_validation_passes_clean_data(conn, monkeypatch):
         ("testcity", "library_density",           "density_per_100k",    3.0),
         ("testcity", "health_center_density",     "density_per_100k",    5.0),
         ("testcity", "nursing_home_capacity",     "beds_per_1k_65plus", 40.0),
-        ("testcity", "health_insurance_coverage", "pct_insured",        92.0),
+        ("testcity", "health_insurance_coverage", "coverage_rate",       75.0),
         ("testcity", "housing_cost_burden",       "pct_not_burdened",   75.0),
         ("testcity", "snap_participation",        "coverage_rate",      70.0),
     ]:

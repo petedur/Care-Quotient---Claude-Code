@@ -215,12 +215,13 @@ def load_health_insurance(conn, city_key: str):
 
     import pandas as pd
     df = pd.read_csv(raw)
-    total_pop     = df["total_pop"].sum()
-    total_insured = df["insured"].sum()
-    pct_insured   = round(total_insured / total_pop * 100, 2) if total_pop else 0
+    total_medicaid = df["medicaid_enrolled"].sum()
+    total_eligible = df["eligible_pop_0_149pct_fpl"].sum()
+    coverage_rate  = round(min((total_medicaid / total_eligible) * 100, 100.0), 2) \
+        if total_eligible > 0 else 0.0
 
-    upsert(conn, city_key, "health_insurance_coverage", "pct_insured", value=pct_insured)
-    print(f"  health_insurance_coverage loaded for {city_key}: {pct_insured}% insured")
+    upsert(conn, city_key, "health_insurance_coverage", "coverage_rate", value=coverage_rate)
+    print(f"  health_insurance_coverage loaded for {city_key}: {coverage_rate}% Medicaid/CHIP coverage rate")
 
 
 def load_nursing_homes(conn, city_key: str):
@@ -281,8 +282,8 @@ VALIDATION_RULES = [
     ("housing_cost_burden",       "pct_not_burdened", 0.0, 100.0),
     # SNAP coverage rate: 0–100 (capped in collector)
     ("snap_participation",        "coverage_rate",    0.0, 100.0),
-    # Health insurance: % insured — must be 0–100
-    ("health_insurance_coverage", "pct_insured",      0.0, 100.0),
+    # Medicaid/CHIP coverage rate: 0–100 (capped in collector)
+    ("health_insurance_coverage", "coverage_rate",    0.0, 100.0),
     # Nursing home capacity: beds per 1k residents 65+ — 0 possible; 150 would be anomalous
     ("nursing_home_capacity",     "beds_per_1k_65plus", 0.0, 150.0),
 ]
@@ -298,7 +299,7 @@ REQUIRED_SCORED = [
     ("library_density",           "density_per_100k"),
     ("health_center_density",     "density_per_100k"),
     ("nursing_home_capacity",     "beds_per_1k_65plus"),
-    ("health_insurance_coverage", "pct_insured"),
+    ("health_insurance_coverage", "coverage_rate"),
     ("housing_cost_burden",       "pct_not_burdened"),
     ("snap_participation",        "coverage_rate"),
 ]
