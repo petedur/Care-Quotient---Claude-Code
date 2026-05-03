@@ -114,8 +114,9 @@ function initHomeMap(cities) {
   L.tileLayer(TILE_URL, Object.assign({}, TILE_OPTS, {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
   })).addTo(_homeMap);
-  // zoom 5 centered on the continental US — matches user's preferred view
-  _homeMap.setView([40, -96], 5);
+  // Fit to actual city bounding box so the view adapts to any container width
+  var cityBounds = L.latLngBounds(continental.map(function(c) { return [c.lat, c.lng]; }));
+  _homeMap.fitBounds(cityBounds, { padding: [40, 70] });
   continental.forEach(function(c) { addMarker(_homeMap, c); });
 
   // Alaska inset — zoom 4 shows coastlines and state shape clearly
