@@ -77,6 +77,7 @@ def load_nonprofit_density(conn, city_key: str):
     # to match. STATUS 01=unconditional exemption, 02=conditional exemption.
     df = df[df["SUBSECTION"].isin(["03"]) & df["STATUS"].isin(["01", "02"])].copy()
 
+    combined_care_count = 0
     for label, codes in [
         ("social_support",    NTEE_SOCIAL_SUPPORT),
         ("care_institutions", NTEE_CARE_INSTITUTIONS),
@@ -88,6 +89,22 @@ def load_nonprofit_density(conn, city_key: str):
         count   = len(subset)
         density = round(count / pop * 10_000, 2)
         upsert(conn, city_key, "nonprofit_density", label, value=density, count=count)
+        if label == "combined_care":
+            combined_care_count = count
+
+    # Shadow diagnostic: combined care nonprofits per 10k residents at 0–150% FPL.
+    # Uses the distressed population already collected by snap_participation.
+    # This allows direct comparison between total-pop and need-adjusted framings
+    # without changing the scored metric. See methodology Section 3.3 and 9.13.
+    snap_raw = DATA_RAW / city_key / "snap_participation.csv"
+    if snap_raw.exists():
+        snap_df = pd.read_csv(snap_raw)
+        distressed_pop = int(snap_df["eligible_pop_0_149pct_fpl"].sum())
+        if distressed_pop > 0:
+            distressed_density = round(combined_care_count / distressed_pop * 10_000, 2)
+            upsert(conn, city_key, "nonprofit_density", "combined_care_per_10k_distressed",
+                   value=distressed_density, count=combined_care_count,
+                   notes=f"distressed_pop={distressed_pop}")
 
     print(f"  nonprofit_density loaded for {city_key}")
 

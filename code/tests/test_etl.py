@@ -153,3 +153,86 @@ def test_validation_flags_missing_required_metric(conn, capsys):
     etl.validate(conn)
     captured = capsys.readouterr()
     assert "MISSING" in captured.out
+
+
+# ── distressed-population diagnostic ─────────────────────────────────────────
+
+@pytest.fixture
+def nonprofits_and_snap_csvs(tmp_path):
+    """Minimal nonprofits_care.csv + snap_participation.csv for one city."""
+    city_dir = tmp_path / "testcity"
+    city_dir.mkdir()
+
+    # 10 combined-care nonprofits (all NTEE P, active 501(c)(3))
+    np_df = pd.DataFrame({
+        "NTEE_CD":    ["P20"] * 10,
+        "SUBSECTION": ["03"] * 10,
+        "STATUS":     ["01"] * 10,
+        "EIN":        [str(i) for i in range(10)],
+        "NAME":       ["Org " + str(i) for i in range(10)],
+        "STATE":      ["NY"] * 10,
+        "ZIP":        ["10001"] * 10,
+    })
+    np_df.to_csv(city_dir / "nonprofits_care.csv", index=False, encoding="latin-1")
+
+    # distressed_pop = 500 + 500 = 1000
+    snap_df = pd.DataFrame({
+        "snap_households":           [200, 200],
+        "total_households":          [1000, 1000],
+        "eligible_pop_0_149pct_fpl": [500, 500],
+        "total_pop":                 [2000, 2000],
+    })
+    snap_df.to_csv(city_dir / "snap_participation.csv", index=False)
+
+    return tmp_path
+
+
+def test_load_nonprofit_density_distressed_diagnostic(conn, nonprofits_and_snap_csvs, monkeypatch):
+    """
+    When snap_participation.csv is present, load_nonprofit_density should
+    compute combined_care_per_10k_distressed = count / distressed_pop * 10_000.
+
+    10 nonprofits / 1000 distressed * 10_000 = 100.0
+    """
+    monkeypatch.setattr(etl, "DATA_RAW", nonprofits_and_snap_csvs)
+    # Monkeypatch CITIES so the function can look up population
+    import config
+    monkeypatch.setitem(config.CITIES, "testcity", {
+        "name": "Test City", "state": "NY", "state_fips": "36",
+        "population": 50000, "county_fips": set(), "place_fips": "",
+    })
+    etl.load_nonprofit_density(conn, "testcity")
+
+    row = conn.execute(
+        "SELECT value, notes FROM metrics "
+        "WHERE city='testcity' AND sub_metric='combined_care_per_10k_distressed'"
+    ).fetchone()
+    assert row is not None, "distressed diagnostic should be upserted"
+    assert row[0] == pytest.approx(100.0, abs=0.01), \
+        f"expected 100.0, got {row[0]}"
+    assert "distressed_pop=1000" in row[1]
+
+
+def test_load_nonprofit_density_no_snap_skips_distressed(conn, tmp_path, monkeypatch):
+    """When snap_participation.csv is absent, no distressed diagnostic row is written."""
+    city_dir = tmp_path / "testcity"
+    city_dir.mkdir()
+    np_df = pd.DataFrame({
+        "NTEE_CD": ["P20"], "SUBSECTION": ["03"], "STATUS": ["01"],
+        "EIN": ["1"], "NAME": ["Org"], "STATE": ["NY"], "ZIP": ["10001"],
+    })
+    np_df.to_csv(city_dir / "nonprofits_care.csv", index=False, encoding="latin-1")
+
+    monkeypatch.setattr(etl, "DATA_RAW", tmp_path)
+    import config
+    monkeypatch.setitem(config.CITIES, "testcity", {
+        "name": "Test City", "state": "NY", "state_fips": "36",
+        "population": 50000, "county_fips": set(), "place_fips": "",
+    })
+    etl.load_nonprofit_density(conn, "testcity")
+
+    row = conn.execute(
+        "SELECT value FROM metrics "
+        "WHERE city='testcity' AND sub_metric='combined_care_per_10k_distressed'"
+    ).fetchone()
+    assert row is None, "distressed diagnostic should not be written without snap data"

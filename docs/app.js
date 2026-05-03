@@ -323,6 +323,52 @@ var PILLAR_META = {
   pillar3: { label: 'Reach',                color: 'var(--p3)' },
 };
 
+// ── FQHC / insurance mismatch interpretation ────────────────────────────────
+// Returns a note object when FQHC density and health insurance scores diverge
+// in a way that's interpretively meaningful, or null when both are aligned.
+// Thresholds: FQHC < 40 = thin infrastructure; insurance < 88 = coverage gap.
+
+function getFQHCMismatch(city) {
+  var fqhc = city.metrics.fqhc ? city.metrics.fqhc.score : null;
+  var ins  = city.metrics.health_insurance ? city.metrics.health_insurance.score : null;
+  if (fqhc === null || ins === null) return null;
+
+  var thinFQHC    = fqhc < 40;
+  var coverageGap = ins  < 88;
+
+  if (thinFQHC && coverageGap) {
+    return {
+      type: 'warn',
+      text: [
+        '<strong>Access gap:</strong> Both FQHC infrastructure and health insurance coverage ',
+        'are below benchmark — a compounded problem where neither safety-net facilities ',
+        'nor coverage reach is adequate.',
+      ].join(''),
+    };
+  } else if (thinFQHC && !coverageGap) {
+    return {
+      type: 'info',
+      text: [
+        '<strong>Coverage strong, infrastructure thin:</strong> Health insurance coverage ',
+        'is broad, but federally-supported safety-net health centers are sparse. ',
+        'Access to care depends primarily on private providers, which may be geographically ',
+        'uneven for lower-income residents.',
+      ].join(''),
+    };
+  } else if (!thinFQHC && coverageGap) {
+    return {
+      type: 'info',
+      text: [
+        '<strong>Infrastructure present, coverage gap:</strong> Safety-net health center ',
+        'density is above threshold and FQHCs are doing their intended work — serving ',
+        'uninsured and Medicaid patients. The coverage gap typically reflects state ',
+        'Medicaid non-expansion rather than a local infrastructure failure.',
+      ].join(''),
+    };
+  }
+  return null;
+}
+
 var METRIC_META = {
   residential_stability: {
     label:  'Residential Stability',
@@ -458,6 +504,44 @@ function renderCity(app, key) {
     ].join('');
   }
 
+  // FQHC / insurance mismatch note
+  var mismatch = getFQHCMismatch(city);
+  var mismatchHtml = '';
+  if (mismatch) {
+    mismatchHtml = [
+      '<div class="context-note context-note-', mismatch.type, '">',
+        mismatch.text,
+      '</div>',
+    ].join('');
+  }
+
+  // Need-adjusted diagnostic
+  var distressedHtml = '';
+  var cd = city.diagnostic && city.diagnostic.care_distressed;
+  if (cd && cd.value !== 'n/a') {
+    var totalDensity = city.metrics.combined_care ? city.metrics.combined_care.raw : null;
+    var totalFmt = totalDensity !== null ? Number(totalDensity).toFixed(2) + ' per 10k residents' : '';
+    distressedHtml = [
+      '<div class="diagnostic-section">',
+        '<div class="diagnostic-label">Need-adjusted care infrastructure</div>',
+        '<div class="diagnostic-row">',
+          '<span class="diagnostic-name">Care nonprofits (total pop denominator)</span>',
+          '<span class="diagnostic-val">', totalFmt, '</span>',
+        '</div>',
+        '<div class="diagnostic-row">',
+          '<span class="diagnostic-name">Care nonprofits per 10k residents at 0&ndash;150% FPL</span>',
+          '<span class="diagnostic-val">', cd.value, ' per 10k</span>',
+        '</div>',
+        '<p class="diagnostic-note">',
+          'The 0&ndash;150% FPL denominator normalizes infrastructure against the population ',
+          'most likely to need care-related services. A large gap between the two figures ',
+          'suggests care nonprofits are concentrated in lower-income areas relative to the ',
+          'city&rsquo;s total population. See <a href="#/methodology">Methodology &sect;3.3</a>.',
+        '</p>',
+      '</div>',
+    ].join('');
+  }
+
   app.innerHTML = [
     '<div class="city-page">',
 
@@ -487,6 +571,10 @@ function renderCity(app, key) {
       '<div class="divider"></div>',
 
       metricHtml,
+
+      mismatchHtml,
+
+      distressedHtml,
 
     '</div>',
     renderFooter(),

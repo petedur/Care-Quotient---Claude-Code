@@ -73,6 +73,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.05",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "24.32",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -147,6 +151,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.07",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "39.27",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -221,6 +229,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.34",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "83.08",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -295,6 +307,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.11",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "42.10",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -369,6 +385,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.19",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "45.19",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -443,6 +463,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.07",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "16.75",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -517,6 +541,10 @@ const CITIES = {
       "faith_based": {
         "value": "1.55",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "51.90",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -591,6 +619,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.00",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "28.58",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -665,6 +697,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.09",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "35.31",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -739,6 +775,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.37",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "49.63",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -813,6 +853,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.14",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "24.27",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -887,6 +931,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.05",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "55.72",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -961,6 +1009,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.38",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "32.84",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -1035,6 +1087,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.65",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "40.09",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -1109,6 +1165,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.19",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "32.16",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -1183,6 +1243,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.17",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "38.37",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -1257,6 +1321,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.21",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "34.11",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -1331,6 +1399,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.03",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "14.35",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -1405,6 +1477,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.17",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "32.27",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -1479,6 +1555,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.42",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "56.72",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -1553,6 +1633,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.09",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "35.38",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -1627,6 +1711,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.06",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "28.83",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -1701,6 +1789,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.25",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "50.53",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -1775,6 +1867,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.04",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "10.73",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -1849,6 +1945,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.04",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "28.31",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -1923,6 +2023,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.04",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "21.22",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -1997,6 +2101,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.17",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "41.71",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -2071,6 +2179,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.19",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "26.15",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -2145,6 +2257,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.11",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "43.62",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -2219,6 +2335,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.08",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "36.38",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -2293,6 +2413,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.10",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "39.71",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -2367,6 +2491,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.39",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "33.44",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -2441,6 +2569,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.00",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "36.25",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -2515,6 +2647,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.98",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "31.78",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -2589,6 +2725,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.03",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "31.03",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -2663,6 +2803,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.07",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "40.32",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -2737,6 +2881,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.06",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "31.37",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -2811,6 +2959,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.38",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "25.59",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -2885,6 +3037,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.16",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "46.71",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -2959,6 +3115,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.07",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "43.69",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -3033,6 +3193,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.05",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "34.60",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -3107,6 +3271,10 @@ const CITIES = {
       "faith_based": {
         "value": "4.04",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "25.93",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -3181,6 +3349,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.03",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "26.60",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -3255,6 +3427,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.08",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "42.76",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -3329,6 +3505,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.32",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "27.92",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -3403,6 +3583,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.25",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "27.93",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -3477,6 +3661,10 @@ const CITIES = {
       "faith_based": {
         "value": "1.35",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "64.04",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -3551,6 +3739,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.26",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "42.89",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -3625,6 +3817,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.31",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "37.41",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -3699,6 +3895,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.13",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "62.55",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -3773,6 +3973,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.22",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "42.75",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -3847,6 +4051,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.24",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "22.46",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -3921,6 +4129,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.10",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "48.16",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -3995,6 +4207,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.05",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "39.24",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -4069,6 +4285,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.06",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "16.56",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -4143,6 +4363,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.21",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "37.86",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -4217,6 +4441,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.30",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "50.66",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -4291,6 +4519,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.07",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "36.35",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -4365,6 +4597,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.27",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "54.24",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -4439,6 +4675,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.04",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "36.64",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -4513,6 +4753,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.07",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "46.19",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -4587,6 +4831,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.03",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "42.32",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -4661,6 +4909,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.09",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "18.06",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -4735,6 +4987,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.10",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "40.58",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -4809,6 +5065,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.28",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "17.81",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -4883,6 +5143,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.07",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "52.85",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -4957,6 +5221,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.30",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "100.76",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   },
@@ -5031,6 +5299,10 @@ const CITIES = {
       "faith_based": {
         "value": "0.10",
         "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "27.11",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
       }
     }
   }

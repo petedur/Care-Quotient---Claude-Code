@@ -49,6 +49,8 @@ The access layer: whether care systems actually connect with the people who need
 
 This metric receives the highest weight in Pillar 1 because it is the structural precondition for all other forms of social caring. V3 factor analysis confirmed this as the dominant signal in the Social Fabric dimension (loading 0.70), supporting the increase from the V2 weight of 48%.
 
+**Measurement boundary**: ACS B07003_004E measures residential stability among *current* residents only — it records whether people living in a city now lived in the same home one year ago. People who left the metropolitan area entirely in the prior year are not in the sampling frame. This means the metric captures "stability among those who stayed" rather than citywide retention. If a city loses many residents to out-migration, this variable does not reflect that churn; it measures only the stable subset of current residents. This is a structural limitation of the variable that cannot be resolved with currently available national data, and it means the metric may modestly overstate community embeddedness in cities with high out-migration.
+
 #### 3.2 Housing Affordability (% Not Cost-Burdened)
 **Definition**: Percentage of households NOT spending more than 30% of income on housing costs, combining renter-occupied (Census B25070) and owner-occupied (Census B25091) units.  
 **Source**: U.S. Census Bureau, American Community Survey 5-year estimates (2022).  
@@ -56,6 +58,8 @@ This metric receives the highest weight in Pillar 1 because it is the structural
 **Weight within Pillar 1**: **35%**
 
 **Rationale**: This metric functions as a counter-weight to residential stability rather than an independent dimension. Agha et al. (2024) demonstrate that housing cost burden's effect on social capital is mediated through residential stability — financial stress suppresses community participation and network formation. Desmond's research establishes that high cost burden triggers eviction risk, forced moves, and erosion of care networks. A city with high residential stability but high cost burden is rewarding forced immobility rather than genuine community embeddedness.
+
+**Forced-immobility counter-weight**: The most significant conceptual risk in Section 3.1 is that high residential stability can reflect economic entrapment — people remaining not because of embedded social networks but because unaffordable housing markets prevent them from moving. This metric is specifically designed to detect that pattern. A city that scores high on residential stability (Section 3.1) but low here is a candidate for forced-immobility bias: its apparent social fabric may reflect constrained mobility rather than chosen rootedness. Readers should interpret the two Pillar 1 metrics jointly: stability that co-occurs with broad affordability is more likely to represent genuine embeddedness; stability that co-occurs with high cost burden is ambiguous.
 
 V3 factor analysis showed housing cost burden loads cleanly alongside residential stability as a distinct housing/stability dimension, supporting a weight increase from 12% (V2) to 35% (V3).
 
@@ -79,6 +83,8 @@ Salamon & Anheier (1998) establish nonprofit density as a structural indicator o
 
 **Exclusions**: Arts/culture (NTEE A), education (NTEE B), and broad religious organizations (NTEE X, except X3x) are excluded. These categories correlate with affluence rather than care capacity. The individual NTEE P and E/F/K sub-components are retained as diagnostic metrics.
 
+**Denominator choice and shadow diagnostic**: The total-population denominator measures citywide supply per resident. This creates a scale effect for large cities: a city where care nonprofits are concentrated in lower-income areas may appear under-resourced on a per-capita basis simply because its total population is large. NYC and Chicago, for example, have roughly similar absolute counts of low-income residents (~1.3M and ~1M respectively), but NYC's low-income population is only ~16% of its total population while Chicago's is ~40% — so a total-population denominator structurally disadvantages NYC relative to need. V5 adds care nonprofit density per 10,000 residents at 0–150% of the Federal Poverty Level as a shadow diagnostic metric, allowing direct comparison between the total-population and need-adjusted framings. This diagnostic is reported on city pages but not scored, pending validation that the ranking changes are interpretively meaningful rather than artifacts of poverty-rate geography.
+
 **Benchmark**: 25 per 10,000 residents. Raised from 15/10k (V2) after 50%+ of cities hit the ceiling under county-based geographic filtering. ZCTA-based filtering reduces raw counts; 25/10k maintains meaningful discrimination for top performers.
 
 #### 3.4 Community Health Center Density (FQHCs)
@@ -88,6 +94,19 @@ Salamon & Anheier (1998) establish nonprofit density as a structural indicator o
 **Weight within Pillar 2**: **35%**
 
 **Rationale**: FQHCs carry the strongest evidence base of any metric in this index. Rosenbaum et al. (2011) demonstrate that FQHC access significantly reduces emergency room utilization among low-income and uninsured patients. Shi and colleagues (multiple studies, 2001–2017) link FQHC access to reduced mortality from chronic disease, improved preventive care uptake, and reduced health disparities across racial and income lines. Congressional Budget Office analyses consistently find that FQHCs save approximately $2,371 per user in avoided emergency care costs. Unlike density measures for nonprofits, FQHCs have federal funding and reporting requirements that make their service delivery more verifiable.
+
+**Relationship to health insurance coverage (Section 3.8)**: FQHC density and health insurance coverage are kept as separate metrics in separate pillars because their interaction is interpretively informative rather than redundant. FQHCs are specifically designed to serve Medicaid and uninsured populations — their federal mandate and funding model is built around exactly the populations that lack private insurance. A proposal to adjust FQHC density by the insurance rate would therefore penalize cities for serving uninsured residents, inverting the metric's intent.
+
+The two metrics are best read together as a diagnostic pair. Four patterns are possible:
+
+| FQHC density | Health insurance | Interpretation |
+|---|---|---|
+| High | High | Strong safety-net infrastructure with broad coverage reach — the most complete care access picture |
+| High | Low | Safety-net infrastructure is present and doing its intended work; the gap is upstream coverage, typically reflecting state Medicaid non-expansion |
+| Low | High | Coverage is strong but federally-supported physical infrastructure is thin; access depends on private providers and may be geographically uneven |
+| Low | Low | Compounded access problem — neither coverage nor safety-net infrastructure is adequate |
+
+City pages flag notable mismatch patterns where the FQHC and insurance scores diverge significantly.
 
 #### 3.5 Nursing Home Capacity
 **Definition**: Certified nursing home beds per 1,000 residents aged 65 and older.  
@@ -165,6 +184,8 @@ A city at or above the benchmark receives 100. A city at half the benchmark rece
 | Health insurance coverage | 95% | Near-universal coverage; achievable in Medicaid-expansion states |
 
 **Advantage over min-max scaling**: Scores are absolute — adding or removing cities does not change existing scores. A city's score reflects its performance against a standard, not against whoever else is in the comparison set.
+
+**Benchmark sensitivity**: A shift of ±10% in any single benchmark changes that metric's score proportionally for all cities below the ceiling. For the combined care nonprofit benchmark (25/10k): raising it 10% to 27.5/10k reduces most city scores on that metric by roughly 4–8 points; lowering it 10% to 22.5/10k raises them by a similar amount. Because Pillar 2 is 35% of CQ and combined care nonprofits are 35% of Pillar 2, a 10% shift on this benchmark changes the final CQ by at most 1–2 points for most cities. The health insurance and residential stability benchmarks have the largest CQ leverage because they sit in higher-weight positions; a ±10% shift there can move CQ by 2–4 points. Benchmark choices are documented and revisable; the absolute benchmark architecture makes these sensitivities explicit rather than hiding them in a relative scaling procedure.
 
 ---
 
@@ -250,13 +271,17 @@ All four sources are national, free, and scriptable. No city-specific open data 
 
 7. **Density vs. access**: Per-capita density measures presence, not accessibility. A health center in one part of a large city does not serve all residents equally.
 
-8. **Residential stability: chosen vs. forced immobility**: High residential stability can reflect embedded social networks (Putnam 2000; Sampson et al. 1997), but it can equally reflect economic immobility — poverty traps and exclusionary housing markets that prevent people from leaving even when conditions are poor. The housing affordability counter-weight (Section 3.2) partially addresses this, but Census ACS data cannot fully distinguish chosen from forced stability.
+8. **Residential stability: chosen vs. forced immobility and survivorship bias**: High residential stability can reflect embedded social networks (Putnam 2000; Sampson et al. 1997), but it can equally reflect economic immobility — poverty traps and exclusionary housing markets that prevent people from leaving even when conditions are poor. The housing affordability counter-weight (Section 3.2) partially addresses forced immobility, but ACS data cannot fully distinguish chosen from forced stability. Additionally, the ACS stability variable is a survivorship measure: it captures only current residents, so people who left the metropolitan area entirely are absent from the frame. The metric measures stability among those who stayed, not citywide retention. Both limitations are known and documented; neither is sufficient reason to drop the metric, but both counsel against over-reading small differences in residential stability scores between cities.
 
 9. **Housing cost burden undercount**: The Census B25070/B25091 methodology excludes households with zero or negative income ("not computed"), which can understate true cost burden rates compared to HUD CHAS figures. Relative city rankings are valid; absolute percentages should not be compared to external sources without this caveat.
 
 10. **Health insurance and state policy**: Health insurance coverage reflects state-level Medicaid expansion decisions as much as local care infrastructure. Texas (Houston) did not expand Medicaid under the ACA, which contributes significantly to its lower score on this metric. This is treated as a real care access failure attributable to the state — see Section 3.7 rationale.
 
 11. **SNAP eligibility approximation**: The SNAP formula divides a household receipt rate (SNAP households / total households) by a population poverty rate (0–149% FPL population / total population). These are different universe denominators — household vs. person — introducing a structural approximation. This is the best available approach with Census ACS data; the coverage rate should be interpreted as an index rather than a precise participation percentage. The V2 formula additionally used B17001 (100% FPL) as the denominator; V3 corrects this to C17002 (0–149% FPL), which more accurately approximates the 130% FPL SNAP eligibility threshold.
+
+12. **ACS 5-year estimate smoothing**: The 2022 ACS 5-year estimates pool survey responses from 2018–2022, smoothing rapid demographic shifts. Cities undergoing rapid population change (fast-growing Sun Belt metros, post-pandemic migration destinations) may have metrics that lag current conditions by 1–3 years. Close rankings — cities within 3–4 points of each other — should not be over-read; differences of that size can fall within ACS estimation variance, particularly for smaller cities where the survey sample is thinner.
+
+13. **Total-population vs. need-adjusted denominator**: All per-capita density metrics use total city population as the denominator. An alternative framing normalizes by the population most likely to need care-related services — residents below 150% of the Federal Poverty Level. These two denominators tell different stories: the total-population denominator measures citywide supply per resident, while a need-adjusted denominator measures supply relative to likely demand. Large cities with concentrated poverty (where the total population is high but the low-income population represents a smaller share) tend to score lower under total-population normalization than under need-adjusted normalization. V5 reports care nonprofit density per 10,000 residents at 0–150% FPL as a shadow diagnostic to test whether rankings diverge materially between the two framings.
 
 ---
 
@@ -279,6 +304,8 @@ The following improvements were implemented in V3:
 
 ## 12. Planned V5 Improvements
 
+- **Need-adjusted diagnostic metrics**: Care nonprofit density per 10,000 residents at 0–150% FPL is already tracked as a shadow diagnostic (V4). V5 will evaluate whether this need-adjusted framing should replace or supplement the total-population denominator in the scored metric, based on whether city rankings diverge in interpretively meaningful ways.
+- **Benchmark sensitivity documentation**: Publish a sensitivity table showing the effect of ±10% shifts on each benchmark on final CQ scores for all 68 cities, making the methodology's tolerance for benchmark judgment explicit.
 - **Home health capacity**: CMS Care Compare includes a home health dataset (6jpm-sxkc) with episode volume data, but CMS attributes episodes to the agency headquarters ZIP rather than the patient's location. City-level attribution is unreliable. V5 will revisit when a clean geographic attribution method is identified. If resolved, nursing homes + home health would justify restructuring Pillar 2 into a dedicated Elder Care Infrastructure pillar.
 - **Medicaid/CHIP metric**: Evaluate replacing health insurance coverage (B27001) with Medicaid/CHIP enrollment (B27007) to isolate public program reach from employer-based coverage.
 - **Empirical inter-pillar weight adoption**: Review factor analysis outputs against the V4 68-city dataset and decide whether to adopt empirically-derived inter-pillar weights (currently judgment-based at 40/35/25).

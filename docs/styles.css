@@ -683,6 +683,54 @@ body {
 .context-note a { color: var(--accent); }
 .context-note-geo  { background: var(--accent-bg); border-left: 3px solid var(--accent); }
 .context-note-info { background: var(--p2-bg);     border-left: 3px solid var(--p2); }
+.context-note-warn { background: #fff8f0;           border-left: 3px solid #c9742a; }
+
+/* ── Need-adjusted diagnostic section ──────────────────────────────────────── */
+.diagnostic-section {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+}
+.diagnostic-label {
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+  margin-bottom: 0.85rem;
+}
+.diagnostic-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--rule);
+  gap: 1rem;
+}
+.diagnostic-row:last-of-type { border-bottom: none; }
+.diagnostic-name {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--ink-mid);
+}
+.diagnostic-val {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.diagnostic-note {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  color: var(--ink-mid);
+  line-height: 1.6;
+  margin-top: 0.85rem;
+  margin-bottom: 0;
+}
+.diagnostic-note a { color: var(--accent); }
 
 /* ── Compare inline link on city pages ──────────────────────────────────── */
 .compare-inline-link {

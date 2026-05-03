@@ -99,6 +99,10 @@ DIAGNOSTIC_METRICS = [
     ("nonprofit_density", "all_care",          "All care-related nonprofits per 10k (P+E+F+K+X3x)"),
     # Faith-based: X30 captures congregations, not specifically care orgs.
     ("nonprofit_density", "faith_based",       "Faith-based orgs per 10k (X3x, diagnostic only)"),
+    # Need-adjusted shadow metric: combined care NPs per 10k residents at 0-150% FPL.
+    # Allows comparison between total-pop and need-adjusted framings (see methodology §3.3).
+    ("nonprofit_density", "combined_care_per_10k_distressed",
+     "Care nonprofits per 10k residents at 0–150% FPL (need-adjusted)"),
 ]
 
 PILLAR_LABELS = {
@@ -353,9 +357,11 @@ DASHBOARD_METRICS = {
 }
 
 DASHBOARD_DIAGNOSTIC = {
-    "libraries":   ("library_density",   "density_per_100k",  "libraries per 100k"),
-    "lib_visits":  ("library_density",   "visits_per_capita", "library visits per capita"),
-    "faith_based": ("nonprofit_density", "faith_based",       "faith-based orgs per 10k (X3x)"),
+    "libraries":        ("library_density",   "density_per_100k",  "libraries per 100k"),
+    "lib_visits":       ("library_density",   "visits_per_capita", "library visits per capita"),
+    "faith_based":      ("nonprofit_density", "faith_based",       "faith-based orgs per 10k (X3x)"),
+    "care_distressed":  ("nonprofit_density", "combined_care_per_10k_distressed",
+                         "care nonprofits per 10k residents 0–150% FPL"),
 }
 
 def _fmt_population(n: int) -> str:
