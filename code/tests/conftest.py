@@ -19,50 +19,54 @@ from pathlib import Path
 
 SYNTHETIC_METRICS = [
     # (city, metric, sub_metric, value)
-    # Pillar structure (V5):
+    # Pillar structure (V6):
     #   Pillar 1 — Social & Relational Care (40%): residential_stability, combined_care, library_density
-    #   Pillar 2 — Institutional Care (35%): health_center_density, nursing_home_capacity
+    #   Pillar 2 — Institutional Care (35%): health_center_density, nursing_home_capacity, child_care_capacity
     #   Pillar 3 — Economic Access (25%): health_insurance_coverage, housing_cost_burden, snap_participation
 
     # perfect city — at-benchmark values (all scores = 100)
-    ("perfect", "residential_stability",     "pct_same_house",     95.0),
-    ("perfect", "nonprofit_density",         "combined_care",      25.0),
-    ("perfect", "library_density",           "density_per_100k",    5.0),
-    ("perfect", "health_center_density",     "density_per_100k",   15.0),
-    ("perfect", "nursing_home_capacity",     "beds_per_1k_65plus", 50.0),
-    ("perfect", "health_insurance_coverage", "coverage_rate",     100.0),
-    ("perfect", "housing_cost_burden",       "pct_not_burdened",   90.0),
-    ("perfect", "snap_participation",        "coverage_rate",      85.0),
+    ("perfect", "residential_stability",     "pct_same_house",              95.0),
+    ("perfect", "nonprofit_density",         "combined_care",               25.0),
+    ("perfect", "library_density",           "density_per_100k",             5.0),
+    ("perfect", "health_center_density",     "density_per_100k",            15.0),
+    ("perfect", "nursing_home_capacity",     "beds_per_1k_65plus",          50.0),
+    ("perfect", "child_care_capacity",       "establishments_per_1k_under5", 15.0),
+    ("perfect", "health_insurance_coverage", "coverage_rate",              100.0),
+    ("perfect", "housing_cost_burden",       "pct_not_burdened",            90.0),
+    ("perfect", "snap_participation",        "coverage_rate",               85.0),
 
     # half city — 50% of every benchmark (all scores = 50)
-    ("half", "residential_stability",     "pct_same_house",     47.5),
-    ("half", "nonprofit_density",         "combined_care",      12.5),
-    ("half", "library_density",           "density_per_100k",    2.5),
-    ("half", "health_center_density",     "density_per_100k",    7.5),
-    ("half", "nursing_home_capacity",     "beds_per_1k_65plus", 25.0),
-    ("half", "health_insurance_coverage", "coverage_rate",       50.0),
-    ("half", "housing_cost_burden",       "pct_not_burdened",   45.0),
-    ("half", "snap_participation",        "coverage_rate",      42.5),
+    ("half", "residential_stability",     "pct_same_house",              47.5),
+    ("half", "nonprofit_density",         "combined_care",               12.5),
+    ("half", "library_density",           "density_per_100k",             2.5),
+    ("half", "health_center_density",     "density_per_100k",             7.5),
+    ("half", "nursing_home_capacity",     "beds_per_1k_65plus",          25.0),
+    ("half", "child_care_capacity",       "establishments_per_1k_under5",  7.5),
+    ("half", "health_insurance_coverage", "coverage_rate",               50.0),
+    ("half", "housing_cost_burden",       "pct_not_burdened",            45.0),
+    ("half", "snap_participation",        "coverage_rate",               42.5),
 
     # zero city — all zeros (all scores = 0)
-    ("zero", "residential_stability",     "pct_same_house",     0.0),
-    ("zero", "nonprofit_density",         "combined_care",      0.0),
-    ("zero", "library_density",           "density_per_100k",   0.0),
-    ("zero", "health_center_density",     "density_per_100k",   0.0),
-    ("zero", "nursing_home_capacity",     "beds_per_1k_65plus", 0.0),
-    ("zero", "health_insurance_coverage", "coverage_rate",      0.0),
-    ("zero", "housing_cost_burden",       "pct_not_burdened",   0.0),
-    ("zero", "snap_participation",        "coverage_rate",      0.0),
+    ("zero", "residential_stability",     "pct_same_house",              0.0),
+    ("zero", "nonprofit_density",         "combined_care",               0.0),
+    ("zero", "library_density",           "density_per_100k",            0.0),
+    ("zero", "health_center_density",     "density_per_100k",            0.0),
+    ("zero", "nursing_home_capacity",     "beds_per_1k_65plus",          0.0),
+    ("zero", "child_care_capacity",       "establishments_per_1k_under5", 0.0),
+    ("zero", "health_insurance_coverage", "coverage_rate",               0.0),
+    ("zero", "housing_cost_burden",       "pct_not_burdened",            0.0),
+    ("zero", "snap_participation",        "coverage_rate",               0.0),
 
     # over city — values exceeding every benchmark (all scores cap at 100)
-    ("over", "residential_stability",     "pct_same_house",     99.0),
-    ("over", "nonprofit_density",         "combined_care",      50.0),
-    ("over", "library_density",           "density_per_100k",   10.0),
-    ("over", "health_center_density",     "density_per_100k",   30.0),
-    ("over", "nursing_home_capacity",     "beds_per_1k_65plus", 100.0),
-    ("over", "health_insurance_coverage", "coverage_rate",      100.0),
-    ("over", "housing_cost_burden",       "pct_not_burdened",   99.0),
-    ("over", "snap_participation",        "coverage_rate",      99.0),
+    ("over", "residential_stability",     "pct_same_house",              99.0),
+    ("over", "nonprofit_density",         "combined_care",               50.0),
+    ("over", "library_density",           "density_per_100k",            10.0),
+    ("over", "health_center_density",     "density_per_100k",            30.0),
+    ("over", "nursing_home_capacity",     "beds_per_1k_65plus",         100.0),
+    ("over", "child_care_capacity",       "establishments_per_1k_under5", 30.0),
+    ("over", "health_insurance_coverage", "coverage_rate",              100.0),
+    ("over", "housing_cost_burden",       "pct_not_burdened",            99.0),
+    ("over", "snap_participation",        "coverage_rate",               99.0),
 ]
 
 
@@ -143,6 +147,20 @@ def health_insurance_csv(tmp_path):
     })
     p = tmp_path / "health_insurance.csv"
     df.to_csv(p, index=False)
+    return p
+
+
+@pytest.fixture
+def child_care_capacity_json(tmp_path):
+    # 10.5 establishments per 1k under-5 children
+    meta = {
+        "city":                        "testcity",
+        "childcare_establishments":    210,
+        "population_under_5":          20000,
+        "childcare_per_1k_under5":     10.5,
+    }
+    p = tmp_path / "child_care_capacity.json"
+    p.write_text(json.dumps(meta))
     return p
 
 

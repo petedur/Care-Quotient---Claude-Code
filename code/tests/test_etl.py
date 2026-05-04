@@ -114,6 +114,22 @@ def test_load_nursing_homes(conn, nursing_homes_meta, monkeypatch):
     assert row[0] == pytest.approx(60.0, abs=0.01)
 
 
+def test_load_child_care_capacity(conn, child_care_capacity_json, monkeypatch):
+    monkeypatch.setattr(etl, "DATA_RAW", child_care_capacity_json.parent)
+    (child_care_capacity_json.parent / "testcity").mkdir(exist_ok=True)
+    child_care_capacity_json.rename(
+        child_care_capacity_json.parent / "testcity" / "child_care_capacity.json"
+    )
+    etl.load_child_care_capacity(conn, "testcity")
+    row = conn.execute(
+        "SELECT value FROM metrics "
+        "WHERE city='testcity' AND metric='child_care_capacity' "
+        "AND sub_metric='establishments_per_1k_under5'"
+    ).fetchone()
+    assert row is not None
+    assert row[0] == pytest.approx(10.5, abs=0.01)
+
+
 def test_load_nursing_homes_missing_file(conn, tmp_path, monkeypatch, capsys):
     """Missing meta file should skip gracefully, not raise."""
     monkeypatch.setattr(etl, "DATA_RAW", tmp_path)
@@ -127,14 +143,15 @@ def test_load_nursing_homes_missing_file(conn, tmp_path, monkeypatch, capsys):
 def test_validation_passes_clean_data(conn, monkeypatch):
     """Clean in-range data should pass all validation checks."""
     for city, metric, sub_metric, value in [
-        ("testcity", "residential_stability",     "pct_same_house",     87.5),
-        ("testcity", "nonprofit_density",         "combined_care",      10.0),
-        ("testcity", "library_density",           "density_per_100k",    3.0),
-        ("testcity", "health_center_density",     "density_per_100k",    5.0),
-        ("testcity", "nursing_home_capacity",     "beds_per_1k_65plus", 40.0),
-        ("testcity", "health_insurance_coverage", "coverage_rate",       75.0),
-        ("testcity", "housing_cost_burden",       "pct_not_burdened",   75.0),
-        ("testcity", "snap_participation",        "coverage_rate",      70.0),
+        ("testcity", "residential_stability",     "pct_same_house",              87.5),
+        ("testcity", "nonprofit_density",         "combined_care",               10.0),
+        ("testcity", "library_density",           "density_per_100k",             3.0),
+        ("testcity", "health_center_density",     "density_per_100k",             5.0),
+        ("testcity", "nursing_home_capacity",     "beds_per_1k_65plus",          40.0),
+        ("testcity", "child_care_capacity",       "establishments_per_1k_under5", 8.0),
+        ("testcity", "health_insurance_coverage", "coverage_rate",               75.0),
+        ("testcity", "housing_cost_burden",       "pct_not_burdened",            75.0),
+        ("testcity", "snap_participation",        "coverage_rate",               70.0),
     ]:
         etl.upsert(conn, city, metric, sub_metric, value=value)
 
