@@ -1183,11 +1183,9 @@ function renderTheory(app) {
         'appears to improve it directly. Lara Aknin and her coauthors, using survey data from 136 ',
         'countries, found that spending money on others was consistently associated with greater ',
         'happiness, and experiments in both Canada and Uganda suggested that the effect was causal. ',
-        'A 2023 systematic review and meta-analysis in <em>JAMA Network Open</em> found that prosocial ',
-        'interventions were associated with improved health outcomes among vulnerable groups, with ',
-        'benefits that extended to both givers and recipients. That fits something I think many people ',
-        'already know from experience: responsibility for other people can be heavy, but it can also ',
-        'create meaning, connection, and a healthier sense of self.',
+        'That fits something I think many people already know from experience: responsibility for ',
+        'other people can be heavy, but it can also create meaning, connection, and a healthier ',
+        'sense of self.',
       '</p>',
 
       '<h2>Care starts in relationship</h2>',
@@ -1379,7 +1377,6 @@ function renderTheory(app) {
         '<li>Sampson, R.J., Raudenbush, S.W., & Earls, F. (1997). Neighborhoods and violent crime: A multilevel study of collective efficacy. <em>Science</em>, 277(5328), 918&ndash;924.</li>',
         '<li>Sen, A. (1999). <em>Development as Freedom</em>. Anchor Books.</li>',
         '<li>Tronto, J.C. (1993). <em>Moral Boundaries: A Political Argument for an Ethic of Care</em>. Routledge.</li>',
-        '<li>[Author(s) TBC] (2023). [Prosocial interventions and health outcomes: systematic review and meta-analysis]. <em>JAMA Network Open</em>.</li>',
       '</ul>',
 
     '</div>',
