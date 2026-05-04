@@ -59,8 +59,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 73.7,
@@ -161,8 +161,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 75.2,
@@ -263,8 +263,8 @@ const CITIES = {
         "score": 66.8,
         "raw": 66.84,
         "rawFmt": "66.8%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 70.7,
@@ -365,8 +365,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 67.7,
@@ -467,8 +467,8 @@ const CITIES = {
         "score": 60.2,
         "raw": 60.21,
         "rawFmt": "60.2%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 70.9,
@@ -569,8 +569,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 65.6,
@@ -671,8 +671,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 68.1,
@@ -773,8 +773,8 @@ const CITIES = {
         "score": 89.4,
         "raw": 89.39,
         "rawFmt": "89.4%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 68.5,
@@ -875,8 +875,8 @@ const CITIES = {
         "score": 77.8,
         "raw": 77.79,
         "rawFmt": "77.8%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 65.1,
@@ -977,8 +977,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 64.5,
@@ -1079,8 +1079,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 71.4,
@@ -1181,8 +1181,8 @@ const CITIES = {
         "score": 80.5,
         "raw": 80.48,
         "rawFmt": "80.5%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 73.7,
@@ -1283,8 +1283,8 @@ const CITIES = {
         "score": 95.5,
         "raw": 95.55,
         "rawFmt": "95.5%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 67.5,
@@ -1385,8 +1385,8 @@ const CITIES = {
         "score": 83.0,
         "raw": 83.02,
         "rawFmt": "83.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 70.4,
@@ -1487,8 +1487,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 67.4,
@@ -1589,8 +1589,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 71.6,
@@ -1691,8 +1691,8 @@ const CITIES = {
         "score": 91.4,
         "raw": 91.36,
         "rawFmt": "91.4%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 72.9,
@@ -1793,8 +1793,8 @@ const CITIES = {
         "score": 76.3,
         "raw": 76.26,
         "rawFmt": "76.3%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 74.2,
@@ -1895,8 +1895,8 @@ const CITIES = {
         "score": 66.8,
         "raw": 66.75,
         "rawFmt": "66.8%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 67.6,
@@ -1997,8 +1997,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 71.1,
@@ -2099,8 +2099,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 76.4,
@@ -2201,8 +2201,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 63.8,
@@ -2303,8 +2303,8 @@ const CITIES = {
         "score": 73.0,
         "raw": 72.98,
         "rawFmt": "73.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 77.1,
@@ -2405,8 +2405,8 @@ const CITIES = {
         "score": 68.1,
         "raw": 68.1,
         "rawFmt": "68.1%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 72.6,
@@ -2507,8 +2507,8 @@ const CITIES = {
         "score": 70.5,
         "raw": 70.55,
         "rawFmt": "70.5%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 70.7,
@@ -2609,8 +2609,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 65.4,
@@ -2711,8 +2711,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 65.1,
@@ -2813,8 +2813,8 @@ const CITIES = {
         "score": 66.7,
         "raw": 66.66,
         "rawFmt": "66.7%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 68.8,
@@ -2915,8 +2915,8 @@ const CITIES = {
         "score": 97.6,
         "raw": 97.63,
         "rawFmt": "97.6%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 74.5,
@@ -3017,8 +3017,8 @@ const CITIES = {
         "score": 81.0,
         "raw": 80.95,
         "rawFmt": "81.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 71.8,
@@ -3119,8 +3119,8 @@ const CITIES = {
         "score": 62.9,
         "raw": 62.93,
         "rawFmt": "62.9%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 75.3,
@@ -3221,8 +3221,8 @@ const CITIES = {
         "score": 89.0,
         "raw": 88.96,
         "rawFmt": "89.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 67.8,
@@ -3323,8 +3323,8 @@ const CITIES = {
         "score": 87.0,
         "raw": 87.03,
         "rawFmt": "87.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 76.6,
@@ -3425,8 +3425,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 53.9,
@@ -3527,8 +3527,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 81.6,
@@ -3629,8 +3629,8 @@ const CITIES = {
         "score": 57.1,
         "raw": 57.12,
         "rawFmt": "57.1%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 70.4,
@@ -3731,8 +3731,8 @@ const CITIES = {
         "score": 80.6,
         "raw": 80.6,
         "rawFmt": "80.6%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 67.0,
@@ -3833,8 +3833,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 66.8,
@@ -3935,8 +3935,8 @@ const CITIES = {
         "score": 97.3,
         "raw": 97.34,
         "rawFmt": "97.3%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 73.3,
@@ -4037,8 +4037,8 @@ const CITIES = {
         "score": 78.1,
         "raw": 78.08,
         "rawFmt": "78.1%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 72.1,
@@ -4139,8 +4139,8 @@ const CITIES = {
         "score": 98.2,
         "raw": 98.16,
         "rawFmt": "98.2%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 62.1,
@@ -4241,8 +4241,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 59.8,
@@ -4343,8 +4343,8 @@ const CITIES = {
         "score": 78.8,
         "raw": 78.85,
         "rawFmt": "78.8%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 78.7,
@@ -4445,8 +4445,8 @@ const CITIES = {
         "score": 78.0,
         "raw": 78.0,
         "rawFmt": "78.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 77.3,
@@ -4547,8 +4547,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 68.1,
@@ -4649,8 +4649,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 73.8,
@@ -4751,8 +4751,8 @@ const CITIES = {
         "score": 78.7,
         "raw": 78.66,
         "rawFmt": "78.7%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 75.2,
@@ -4853,8 +4853,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 69.3,
@@ -4955,8 +4955,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 67.7,
@@ -5057,8 +5057,8 @@ const CITIES = {
         "score": 85.0,
         "raw": 85.04,
         "rawFmt": "85.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 75.9,
@@ -5159,8 +5159,8 @@ const CITIES = {
         "score": 83.8,
         "raw": 83.79,
         "rawFmt": "83.8%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 66.6,
@@ -5261,8 +5261,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 65.1,
@@ -5363,8 +5363,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 66.3,
@@ -5465,8 +5465,8 @@ const CITIES = {
         "score": 53.8,
         "raw": 53.81,
         "rawFmt": "53.8%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 73.0,
@@ -5567,8 +5567,8 @@ const CITIES = {
         "score": 71.8,
         "raw": 71.77,
         "rawFmt": "71.8%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 70.2,
@@ -5669,8 +5669,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 63.8,
@@ -5771,8 +5771,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 73.8,
@@ -5873,8 +5873,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 69.4,
@@ -5975,8 +5975,8 @@ const CITIES = {
         "score": 91.1,
         "raw": 91.06,
         "rawFmt": "91.1%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 72.1,
@@ -6077,8 +6077,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 72.4,
@@ -6179,8 +6179,8 @@ const CITIES = {
         "score": 73.3,
         "raw": 73.3,
         "rawFmt": "73.3%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 72.5,
@@ -6281,8 +6281,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 74.0,
@@ -6383,8 +6383,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 63.6,
@@ -6485,8 +6485,8 @@ const CITIES = {
         "score": 79.9,
         "raw": 79.94,
         "rawFmt": "79.9%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 68.9,
@@ -6587,8 +6587,8 @@ const CITIES = {
         "score": 91.3,
         "raw": 91.31,
         "rawFmt": "91.3%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 68.8,
@@ -6689,8 +6689,8 @@ const CITIES = {
         "score": 81.5,
         "raw": 81.47,
         "rawFmt": "81.5%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 73.5,
@@ -6791,8 +6791,8 @@ const CITIES = {
         "score": 100.0,
         "raw": 100.0,
         "rawFmt": "100.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 71.0,
@@ -6893,8 +6893,8 @@ const CITIES = {
         "score": 78.0,
         "raw": 78.01,
         "rawFmt": "78.0%",
-        "benchmark": "95%",
-        "unit": "% population with healthcare coverage"
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
       },
       "housing_cost_burden": {
         "score": 80.0,

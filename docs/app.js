@@ -585,7 +585,7 @@ var METRIC_META = {
   health_insurance: {
     label:  'Healthcare Coverage',
     pillar: 'pillar3',
-    desc:   '% of population with healthcare coverage',
+    desc:   'Medicaid/CHIP enrollment rate among income-eligible residents (0–138% FPL)',
   },
   housing_cost_burden: {
     label:  'Housing Affordability',
@@ -1070,7 +1070,7 @@ function renderMethodology(app) {
           '<tr><td>Care Nonprofits (P+E+F+K)</td><td>25 per 10,000 residents</td>   <td>IRS EO BMF</td></tr>',
           '<tr><td>FQHC Density</td>           <td>15 per 100,000 residents</td>    <td>HRSA Health Center Data</td></tr>',
           '<tr><td>Nursing Home Capacity</td>  <td>50 beds per 1,000 residents 65+</td><td>CMS Care Compare</td></tr>',
-          '<tr><td>Health Insurance</td>       <td>95% insured</td>                 <td>Census ACS B27001</td></tr>',
+          '<tr><td>Healthcare Coverage (Medicaid/CHIP)</td><td>100% enrollment among income-eligible residents</td><td>Census ACS C27007</td></tr>',
           '<tr><td>SNAP Coverage Rate</td>     <td>85% of likely-eligible</td>      <td>Census ACS B22001, C17002</td></tr>',
         '</tbody>',
       '</table>',

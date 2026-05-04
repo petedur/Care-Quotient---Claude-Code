@@ -374,7 +374,7 @@ DASHBOARD_METRICS = {
     "health_insurance": {
         "key": "health_insurance",
         "raw_key": ("health_insurance_coverage", "coverage_rate"),
-        "benchmark": "95%", "unit": "% population with healthcare coverage",
+        "benchmark": "100%", "unit": "Medicaid/CHIP enrollment rate among income-eligible residents",
         "fmt": lambda v: f"{v:.1f}%",
     },
     "housing_cost_burden": {
