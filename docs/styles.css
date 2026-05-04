@@ -653,6 +653,43 @@ body {
   font-weight: 500;
 }
 
+/* ── Theory page extras ─────────────────────────────────────────────────── */
+.method-page ul.theory-list {
+  margin: 0.5rem 0 1.25rem 0;
+  padding-left: 1.4rem;
+  list-style: disc;
+}
+.method-page ul.theory-list li {
+  font-size: 0.91rem;
+  line-height: 1.72;
+  color: var(--ink-mid);
+  margin-bottom: 0.65rem;
+  font-weight: 300;
+}
+.method-page ul.theory-list li strong { color: var(--ink); font-weight: 600; }
+.method-page ul.theory-list li em { font-style: italic; }
+
+.theory-table td:last-child {
+  color: var(--ink-mid);
+  font-size: 0.81rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.method-page ul.theory-refs {
+  margin: 0.5rem 0 1.5rem 0;
+  padding-left: 1.4rem;
+  list-style: disc;
+}
+.method-page ul.theory-refs li {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: var(--ink-muted);
+  margin-bottom: 0.4rem;
+  font-weight: 300;
+}
+.method-page ul.theory-refs li em { font-style: italic; color: var(--ink-mid); }
+
 .ptag {
   display: inline-block;
   font-family: var(--mono);
