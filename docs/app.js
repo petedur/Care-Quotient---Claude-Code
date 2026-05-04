@@ -211,12 +211,12 @@ function renderHome(app) {
   app.innerHTML = [
     // ── Hero ──────────────────────────────────────────────────────────────
     '<section class="hero">',
-      '<div class="hero-eyebrow">Care Quotient &mdash; V6</div>',
+      '<div class="hero-eyebrow">Care Quotient &middot; V6</div>',
       '<h1 class="hero-headline">When someone needs help,<br>can their city show up?</h1>',
       '<div class="hero-rule"></div>',
       '<p class="hero-subhead">',
-        'A data-driven index measuring care capacity for American cities &mdash; ',
-        'not prosperity, not health outcomes, but the social networks, institutions, ',
+        'A data-driven index measuring care capacity for American cities. ',
+        'Not prosperity, not health outcomes, but the social networks, institutions, ',
         'and systems that determine whether people can get help when they need it.',
       '</p>',
     '</section>',
@@ -240,7 +240,7 @@ function renderHome(app) {
     // ── Ranking ───────────────────────────────────────────────────────────
     '<section class="section-wrap">',
       '<div class="ranking-header">',
-        '<span class="section-label">The Index &mdash; ', total, ' Cities</span>',
+        '<span class="section-label">The Index: ', total, ' Cities</span>',
         '<div class="ranking-header-actions">',
           '<a class="compare-link" href="#/compare">Compare cities &rarr;</a>',
           '<input class="city-search" id="city-search" type="search"',
@@ -264,7 +264,7 @@ function renderHome(app) {
 
       '<p class="bands-note">',
         'Scores are measured against absolute benchmarks, not relative to other cities. ',
-        'Cities within 3&ndash;4 points should be read as rough peers &mdash; small differences ',
+        'Cities within 3 to 4 points should be read as rough peers. Small differences ',
         'may fall within data collection variance. Click any city for a full breakdown.',
       '</p>',
     '</section>',
@@ -278,7 +278,7 @@ function renderHome(app) {
           '<div class="pillar-card-weight">40% of CQ</div>',
           '<div class="pillar-card-name">Social &amp; Relational Care</div>',
           '<div class="pillar-card-desc">',
-            'Whether the relational infrastructure for care exists &mdash; stable communities, ',
+            'Whether the relational infrastructure for care exists: stable communities, ',
             'the organized nonprofits that show up when people need help, and the public spaces ',
             'that hold communities together.',
           '</div>',
@@ -288,9 +288,9 @@ function renderHome(app) {
           '<div class="pillar-card-weight">35% of CQ</div>',
           '<div class="pillar-card-name">Institutional Care</div>',
           '<div class="pillar-card-desc">',
-            'Whether formal institutions exist to absorb distress at scale &mdash; ',
+            'Whether formal institutions exist to absorb distress at scale: ',
             'federally qualified health centers serving patients regardless of ability to pay, ',
-            'and nursing home capacity for the elderly.',
+            'nursing home capacity for the elderly, and licensed child care infrastructure.',
           '</div>',
         '</div>',
 
@@ -298,7 +298,7 @@ function renderHome(app) {
           '<div class="pillar-card-weight">25% of CQ</div>',
           '<div class="pillar-card-name">Economic Access to Care</div>',
           '<div class="pillar-card-desc">',
-            'Whether economic conditions allow care to reach those who need it &mdash; ',
+            'Whether economic conditions allow care to reach those who need it: ',
             'healthcare coverage, housing affordability, and food security program reach.',
           '</div>',
         '</div>',
@@ -419,8 +419,8 @@ var CITY_CONTEXT = {
     type: 'info',
     text: [
       '<strong>Rust Belt pattern:</strong> Cleveland scores higher than many larger, wealthier cities. ',
-      'Decades of economic decline attracted sustained federal investment in FQHCs and social services &mdash; ',
-      'infrastructure that persists even as the broader economy contracted. Ohio expanded Medicaid, ',
+      'Decades of economic decline attracted sustained federal investment in FQHCs and social services. ',
+      'That infrastructure persists even as the broader economy contracted. Ohio expanded Medicaid, ',
       'further strengthening the Economic Access pillar. High care capacity and low prosperity are not contradictions.',
     ].join(''),
   },
@@ -454,7 +454,7 @@ var CITY_CONTEXT = {
     type: 'info',
     text: [
       '<strong>Texas and Medicaid:</strong> Texas has not expanded Medicaid under the Affordable Care Act. ',
-      'The health insurance coverage metric reflects this directly &mdash; it is a real barrier to care ',
+      'The health insurance coverage metric reflects this directly: it is a real barrier to care ',
       'access, and the CQ treats it as one. All Texas cities carry a structural disadvantage on the Reach ',
       'pillar as a result of this state policy decision. Rapid population growth also means care ',
       'infrastructure has not scaled proportionally with the population.',
@@ -490,7 +490,7 @@ var CITY_CONTEXT = {
     type: 'info',
     text: [
       '<strong>Growing city, thin infrastructure:</strong> Raleigh is one of the fastest-growing cities in the US, ',
-      'but care infrastructure &mdash; nonprofits, FQHCs, safety-net program reach &mdash; has not scaled ',
+      'but care infrastructure (nonprofits, FQHCs, safety-net program reach) has not scaled ',
       'proportionally. A successful economy and strong care capacity are not the same thing. ',
       'Raleigh&rsquo;s SNAP coverage rate also reflects relatively low poverty rates, which compress the score.',
     ].join(''),
@@ -523,7 +523,7 @@ function getFQHCMismatch(city) {
       type: 'warn',
       text: [
         '<strong>Access gap:</strong> Both FQHC infrastructure and health insurance coverage ',
-        'are below benchmark — a compounded problem where neither safety-net facilities ',
+        'are below benchmark, a compounded problem where neither safety-net facilities ',
         'nor coverage reach is adequate.',
       ].join(''),
     };
@@ -542,7 +542,7 @@ function getFQHCMismatch(city) {
       type: 'info',
       text: [
         '<strong>Infrastructure present, coverage gap:</strong> Safety-net health center ',
-        'density is above threshold and FQHCs are doing their intended work — serving ',
+        'density is above threshold and FQHCs are doing their intended work, serving ',
         'uninsured and Medicaid patients. The coverage gap typically reflects state ',
         'Medicaid non-expansion rather than a local infrastructure failure.',
       ].join(''),
@@ -746,7 +746,7 @@ function renderCity(app, key) {
         wellbeingRows.join(''),
         '<p class="diagnostic-note">',
           'These are outcome measures from CDC PLACES (BRFSS-modeled estimates, 2022/2023), ',
-          'reported as community need context &mdash; not scored. High values indicate greater ',
+          'reported as community need context, not scored. High values indicate greater ',
           'need for care infrastructure, not lesser capacity. ',
           'See <a href="#/methodology">Methodology &sect;4</a>.',
         '</p>',
@@ -851,11 +851,11 @@ function renderCompareTable(keyA, keyB) {
     return '<p class="compare-prompt">Select two cities above to compare their care capacity metrics.</p>';
   }
 
-  var nameA = cityA ? cityA.name : '&mdash;';
-  var nameB = cityB ? cityB.name : '&mdash;';
+  var nameA = cityA ? cityA.name : 'n/a';
+  var nameB = cityB ? cityB.name : 'n/a';
 
   function scoreCell(city, field, color) {
-    if (!city) return '<td class="cmp-cell">&mdash;</td>';
+    if (!city) return '<td class="cmp-cell">n/a</td>';
     var val   = field === 'cq' ? city.cq : (city[field] || 0);
     var score = fmt(val);
     var bar   = color
@@ -865,9 +865,9 @@ function renderCompareTable(keyA, keyB) {
   }
 
   function metricCell(city, mk) {
-    if (!city) return '<td class="cmp-cell">&mdash;</td>';
+    if (!city) return '<td class="cmp-cell">n/a</td>';
     var m = city.metrics[mk];
-    if (!m) return '<td class="cmp-cell">&mdash;</td>';
+    if (!m) return '<td class="cmp-cell">n/a</td>';
     var meta  = METRIC_META[mk];
     var color = PILLAR_META[meta.pillar].color;
     var score = fmt(m.score);
@@ -945,7 +945,7 @@ function renderCompare(app) {
         '<h1 class="compare-title">City-by-City Comparison</h1>',
         '<p class="compare-intro">',
           'Select two cities to compare their Care Quotient scores and underlying metrics. ',
-          'Scores are on the same absolute scale &mdash; a direct point difference reflects ',
+          'Scores are on the same absolute scale, so a direct point difference reflects ',
           'a real difference in measured care capacity.',
         '</p>',
       '</div>',
@@ -1003,11 +1003,11 @@ function renderMethodology(app) {
 
       '<a href="#/" class="back-link">&#8592; All cities</a>',
 
-      '<div class="method-eyebrow">Methodology &mdash; V6</div>',
+      '<div class="method-eyebrow">Methodology &middot; V6</div>',
       '<h1>How the Care Quotient is built</h1>',
 
       '<p>',
-        'The Care Quotient measures <strong>care capacity</strong> &mdash; the extent to which a ',
+        'The Care Quotient measures <strong>care capacity</strong>: the extent to which a ',
         'community has the social ties, institutions, and systems needed to support people in ',
         'moments of vulnerability. This is explicitly <em>not</em> a quality-of-life index. A city ',
         'can score well on income, safety, and health outcomes while having thin care infrastructure ',
@@ -1015,8 +1015,8 @@ function renderMethodology(app) {
       '</p>',
 
       '<p>',
-        'The motivating question is whether communities have what it takes to <em>show up</em> &mdash; ',
-        'through networks, institutions, and reach &mdash; when people need help.',
+        'The motivating question is whether communities have what it takes to <em>show up</em> for people, ',
+        'through networks, institutions, and reach, when people need help.',
       '</p>',
 
       '<h2>Three Pillars</h2>',
@@ -1035,17 +1035,17 @@ function renderMethodology(app) {
         '<tbody>',
           '<tr>',
             '<td><span class="ptag ptag-p1">Social &amp; Relational Care</span></td>',
-            '<td>Residential stability, care nonprofit density, &amp; library density &mdash; the relational infrastructure that enables communities to notice and respond to need.</td>',
+            '<td>Residential stability, care nonprofit density, and library density: the relational infrastructure that enables communities to notice and respond to need.</td>',
             '<td>40%</td>',
           '</tr>',
           '<tr>',
             '<td><span class="ptag ptag-p2">Institutional Care</span></td>',
-            '<td>FQHC density &amp; nursing home capacity &mdash; formal institutions designed to absorb distress at scale, serving patients regardless of ability to pay.</td>',
+            '<td>FQHC density, nursing home capacity, and child care capacity: formal institutions designed to absorb distress at scale, serving residents regardless of ability to pay.</td>',
             '<td>35%</td>',
           '</tr>',
           '<tr>',
             '<td><span class="ptag ptag-p3">Economic Access to Care</span></td>',
-            '<td>Healthcare coverage, housing affordability, &amp; SNAP participation &mdash; whether economic conditions allow care to reach those who need it.</td>',
+            '<td>Healthcare coverage, housing affordability, and SNAP participation: whether economic conditions allow care to reach those who need it.</td>',
             '<td>25%</td>',
           '</tr>',
         '</tbody>',
@@ -1056,7 +1056,7 @@ function renderMethodology(app) {
       '<p>',
         'Each metric is scored against an absolute benchmark representing a meaningful threshold. ',
         '<code>score = min(value / benchmark &times; 100, 100)</code>. ',
-        'Scores are absolute &mdash; adding or removing cities does not change existing scores. ',
+        'Scores are absolute. Adding or removing cities does not change existing scores. ',
         'A score of 70 means the city reaches 70% of the benchmark, not that it ranks 70th.',
       '</p>',
 
@@ -1088,7 +1088,7 @@ function renderMethodology(app) {
       '</p>',
 
       '<p>',
-        '<strong>Honolulu exception:</strong> Hawaii has no incorporated municipalities &mdash; ',
+        '<strong>Honolulu exception:</strong> Hawaii has no incorporated municipalities. ',
         'Honolulu is a Census Designated Place absent from the ZCTA-to-Place crosswalk. The ',
         'pipeline falls back to Honolulu County boundaries, which are broader than the urban core. ',
         'Density metrics for Honolulu may be modestly overstated as a result.',
@@ -1098,7 +1098,7 @@ function renderMethodology(app) {
 
       '<p>',
         'The CQ is designed to be read as a measure against a benchmark, not as a competition. ',
-        'Cities within 3&ndash;4 points should be treated as rough peers &mdash; differences of that ',
+        'Cities within 3 to 4 points should be treated as rough peers. Differences of that ',
         'size may fall within the margin of geographic approximation or a single year&rsquo;s data variance. ',
         'The index is most useful for identifying cities at the extremes, understanding which ',
         '<em>specific</em> metrics drive a city&rsquo;s score, and tracking change over time.',
@@ -1108,14 +1108,14 @@ function renderMethodology(app) {
 
       '<p>',
         'The CQ intentionally excludes health outcomes, income, safety, and general quality of life. ',
-        'These are <em>conditions</em> &mdash; the result of many factors including care capacity, ',
+        'These are <em>conditions</em>, the result of many factors including care capacity, ',
         'but also wealth, history, and policy. Including them would conflate what a city ',
         '<em>has</em> with whether it can <em>show up</em> for its residents.',
       '</p>',
 
       '<p>',
         'A city in a non-Medicaid-expansion state will score lower on health insurance coverage. ',
-        'This is intentional &mdash; a state&rsquo;s decision not to expand Medicaid is a real ',
+        'This is intentional. A state&rsquo;s decision not to expand Medicaid is a real ',
         'policy barrier to care access, and the index reflects it as such.',
       '</p>',
 
