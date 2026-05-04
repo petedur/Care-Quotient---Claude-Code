@@ -4,15 +4,15 @@ A city-level index measuring whether urban residents live in places that can pro
 
 ## What It Measures
 
-The Care Quotient scores 68 US cities across six metrics, organized into three pillars:
+The Care Quotient scores 68 US cities across nine metrics, organized into three pillars:
 
 | Pillar | Weight | Metrics |
 |--------|--------|---------|
-| Social Fabric | 40% | Residential stability, Housing affordability |
-| Institutions of Care | 35% | Care nonprofit density (NTEE P+E+F+K), FQHC density |
-| Reach | 25% | Health insurance coverage, SNAP participation rate |
+| Social & Relational Care | 40% | Residential stability (50%), Care nonprofit density (35%), Library density (15%) |
+| Institutional Care | 35% | FQHC density (45%), Nursing home capacity (35%), Child care capacity (20%) |
+| Economic Access to Care | 25% | Healthcare coverage — Medicaid/CHIP (40%), Housing affordability (35%), SNAP coverage (25%) |
 
-Scores are absolute, not relative. Each metric is benchmarked against a policy-grounded threshold (e.g., 10 FQHCs per 100k residents), scored 0–100, and capped at 100. A city's CQ reflects how close it comes to that benchmark — not how it ranks against other cities.
+Scores are absolute, not relative. Each metric is benchmarked against a policy-grounded threshold, scored 0–100, and capped at 100. A city's CQ reflects how close it comes to that benchmark — not how it ranks against other cities.
 
 See [docs/methodology.md](docs/methodology.md) for full methodology, benchmark rationale, and known limitations.
 
@@ -31,7 +31,10 @@ care-capacity-index/
 │   │   ├── residential_stability.py  (Census ACS B07003)
 │   │   ├── housing_cost_burden.py    (Census ACS B25070/B25091)
 │   │   ├── snap_participation.py     (Census ACS B22001/C17002)
-│   │   └── health_insurance_coverage.py (Census ACS B27001)
+│   │   ├── health_insurance.py       (Census ACS C27007 — Medicaid/CHIP)
+│   │   ├── library_density.py        (IMLS Public Libraries Survey)
+│   │   ├── nursing_homes.py          (CMS Care Compare)
+│   │   └── child_care_capacity.py    (Census CBP NAICS 624410)
 │   ├── geo/
 │   │   ├── city_zips.py     # ZCTA-to-place crosswalk (Census 2020)
 │   │   └── zip_fips.py      # ZIP normalization utilities
@@ -101,7 +104,7 @@ metric_score = min(raw_value / benchmark × 100, 100)
 
 pillar_score = weighted average of metric scores within pillar
 
-CQ = 0.40 × Social_Fabric + 0.35 × Institutions + 0.25 × Reach
+CQ = 0.40 × Social_Relational + 0.35 × Institutional + 0.25 × Economic_Access
 ```
 
 All benchmark values and weights are defined in `code/score.py` (`SCORED_METRICS`, `PILLAR_WEIGHTS`). The `factor_analysis.py` script imports these directly — it cannot drift from the scoring model.
@@ -112,8 +115,10 @@ Cities with any missing required metric are excluded from all output rather than
 
 | Version | Key Changes |
 |---------|-------------|
-| V3.2 | ZCTA overlap threshold 50% → 40%; IRS/HRSA in-memory caching; factor analysis rerun with V3 data; scikit-learn/scipy pinned in requirements |
-| V3.1 | FQHC ZIP column bug fix (org HQ → site ZIP); IRS 501(c)(3) filter; NYC FIPS correction; fail-closed pipeline; Honolulu UI caveat |
-| V3.0 | 68-city expansion; ZCTA-to-place crosswalk; combined NP metric; revised weights |
+| V6 | Child care capacity added to Pillar 2 (20%); FQHC 55%→45%, nursing homes 45%→35%; healthcare coverage → Medicaid/CHIP (C27007, benchmark 100%); interactive map; tier system; CDC PLACES diagnostics; "What is Care?" theory page |
+| V5 | Pillar restructure: library density promoted to scored metric; nonprofits moved to Pillar 1; housing cost burden moved to Pillar 3; 8-metric model |
+| V4 | Nursing home capacity added to Pillar 2; 7-metric model |
+| V3.2 | ZCTA overlap threshold 50% → 40%; IRS/HRSA in-memory caching; factor analysis rerun |
+| V3.0 | 68-city expansion; ZCTA-to-place crosswalk; combined NP metric |
 | V2   | 5-city pilot |
 | V1   | 4-metric, 2-pillar prototype |

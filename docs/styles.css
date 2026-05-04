@@ -23,6 +23,10 @@
   --sans:   'DM Sans', system-ui, sans-serif;
   --mono:   'IBM Plex Mono', 'Courier New', monospace;
 
+  --border:  #D8D3CB;   /* subtle borders */
+  --rule:    #D8D3CB;   /* section dividers */
+  --surface: #F0EDE7;   /* card / panel background */
+
   --max:    1080px;
   --pad:    clamp(1.25rem, 5vw, 3.5rem);
 }
