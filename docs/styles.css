@@ -287,7 +287,7 @@ body {
   font-family: var(--mono);
   font-size: 0.65rem;
   font-weight: 500;
-  color: #fff;
+  /* color set inline per tier via textColor */
   flex-shrink: 0;
 }
 
@@ -318,6 +318,45 @@ body {
   font-size: 0.78rem;
   font-weight: 500;
   color: var(--ink-mid);
+}
+
+/* ── Collapsed ranking list ─────────────────────────────────────────────── */
+.ranking-row-overflow  { display: none; }
+.tier-group-overflow   { display: none; }
+#ranking-table.ranking-expanded .ranking-row-overflow { display: grid; }
+#ranking-table.ranking-expanded .tier-group-overflow  { display: block; }
+
+.show-all-btn {
+  display: block;
+  width: 100%;
+  margin: 0.75rem 0 0;
+  padding: 0.65rem 1rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-mid);
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.15s, border-color 0.15s;
+}
+.show-all-btn:hover { background: var(--accent-bg); border-color: var(--accent); color: var(--accent); }
+
+/* ── Map legend tier badge ──────────────────────────────────────────────── */
+.legend-tier-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.05rem;
+  border-radius: 2px;
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  font-weight: 500;
+  margin-right: 0.15rem;
+  vertical-align: middle;
 }
 
 /* ── Pillars explainer ──────────────────────────────────────────────────── */

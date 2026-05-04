@@ -1,7 +1,7 @@
 {
   "albuquerque": {
     "pillar1_social_relational_care": 58.3,
-    "pillar2_institutional_care": 36.5,
+    "pillar2_institutional_care": 36.1,
     "pillar3_economic_access": 83.9,
     "metrics": {
       "Residential Stability": {
@@ -34,6 +34,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 36.0,
+        "raw_value": 5.4,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -53,11 +59,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 57.1
+    "care_quotient": 56.9
   },
   "anchorage": {
     "pillar1_social_relational_care": 55.5,
-    "pillar2_institutional_care": 11.7,
+    "pillar2_institutional_care": 14.1,
     "pillar3_economic_access": 82.8,
     "metrics": {
       "Residential Stability": {
@@ -90,6 +96,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 24.0,
+        "raw_value": 3.6,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -109,11 +121,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 47.0
+    "care_quotient": 47.8
   },
   "atlanta": {
     "pillar1_social_relational_care": 85.4,
-    "pillar2_institutional_care": 48.3,
+    "pillar2_institutional_care": 58.3,
     "pillar3_economic_access": 67.7,
     "metrics": {
       "Residential Stability": {
@@ -146,6 +158,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 100.0,
+        "raw_value": 20.87,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 66.8,
         "raw_value": 66.84,
@@ -165,11 +183,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 68.0
+    "care_quotient": 71.5
   },
   "aurora": {
     "pillar1_social_relational_care": 59.9,
-    "pillar2_institutional_care": 31.2,
+    "pillar2_institutional_care": 34.4,
     "pillar3_economic_access": 79.3,
     "metrics": {
       "Residential Stability": {
@@ -202,6 +220,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 49.5,
+        "raw_value": 7.42,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -221,11 +245,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.7
+    "care_quotient": 55.8
   },
   "austin": {
     "pillar1_social_relational_care": 60.4,
-    "pillar2_institutional_care": 40.7,
+    "pillar2_institutional_care": 38.9,
     "pillar3_economic_access": 58.9,
     "metrics": {
       "Residential Stability": {
@@ -258,6 +282,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 33.1,
+        "raw_value": 4.96,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 60.2,
         "raw_value": 60.21,
@@ -277,11 +307,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.1
+    "care_quotient": 52.5
   },
   "bakersfield": {
     "pillar1_social_relational_care": 53.4,
-    "pillar2_institutional_care": 43.8,
+    "pillar2_institutional_care": 38.5,
     "pillar3_economic_access": 81.1,
     "metrics": {
       "Residential Stability": {
@@ -314,6 +344,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 18.7,
+        "raw_value": 2.8,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -333,11 +369,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 57.0
+    "care_quotient": 55.1
   },
   "baltimore": {
     "pillar1_social_relational_care": 76.2,
-    "pillar2_institutional_care": 53.2,
+    "pillar2_institutional_care": 46.8,
     "pillar3_economic_access": 87.4,
     "metrics": {
       "Residential Stability": {
@@ -370,6 +406,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 23.9,
+        "raw_value": 3.59,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -389,11 +431,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 71.0
+    "care_quotient": 68.7
   },
   "baton_rouge": {
     "pillar1_social_relational_care": 68.0,
-    "pillar2_institutional_care": 88.5,
+    "pillar2_institutional_care": 80.1,
     "pillar3_economic_access": 75.2,
     "metrics": {
       "Residential Stability": {
@@ -426,6 +468,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 47.3,
+        "raw_value": 7.09,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 89.4,
         "raw_value": 89.39,
@@ -445,11 +493,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 77.0
+    "care_quotient": 74.0
   },
   "birmingham": {
     "pillar1_social_relational_care": 71.0,
-    "pillar2_institutional_care": 59.2,
+    "pillar2_institutional_care": 67.3,
     "pillar3_economic_access": 71.1,
     "metrics": {
       "Residential Stability": {
@@ -482,6 +530,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 100.0,
+        "raw_value": 15.09,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 77.8,
         "raw_value": 77.79,
@@ -501,11 +555,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 66.9
+    "care_quotient": 69.7
   },
   "boston": {
     "pillar1_social_relational_care": 68.6,
-    "pillar2_institutional_care": 61.1,
+    "pillar2_institutional_care": 58.2,
     "pillar3_economic_access": 83.8,
     "metrics": {
       "Residential Stability": {
@@ -538,6 +592,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 46.0,
+        "raw_value": 6.9,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -557,11 +617,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 69.8
+    "care_quotient": 68.8
   },
   "buffalo": {
     "pillar1_social_relational_care": 69.9,
-    "pillar2_institutional_care": 51.1,
+    "pillar2_institutional_care": 59.2,
     "pillar3_economic_access": 87.2,
     "metrics": {
       "Residential Stability": {
@@ -594,6 +654,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 93.9,
+        "raw_value": 14.08,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -613,11 +679,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 67.6
+    "care_quotient": 70.5
   },
   "charlotte": {
     "pillar1_social_relational_care": 64.1,
-    "pillar2_institutional_care": 27.6,
+    "pillar2_institutional_care": 28.7,
     "pillar3_economic_access": 71.8,
     "metrics": {
       "Residential Stability": {
@@ -650,6 +716,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 34.3,
+        "raw_value": 5.15,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 80.5,
         "raw_value": 80.48,
@@ -669,7 +741,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.2
+    "care_quotient": 53.6
   },
   "chicago": {
     "pillar1_social_relational_care": 65.3,
@@ -706,6 +778,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 65.5,
+        "raw_value": 9.83,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 95.5,
         "raw_value": 95.55,
@@ -729,7 +807,7 @@
   },
   "cincinnati": {
     "pillar1_social_relational_care": 74.5,
-    "pillar2_institutional_care": 90.0,
+    "pillar2_institutional_care": 91.9,
     "pillar3_economic_access": 73.0,
     "metrics": {
       "Residential Stability": {
@@ -762,6 +840,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 100.0,
+        "raw_value": 15.3,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 83.0,
         "raw_value": 83.02,
@@ -781,11 +865,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 79.6
+    "care_quotient": 80.2
   },
   "cleveland": {
     "pillar1_social_relational_care": 76.4,
-    "pillar2_institutional_care": 73.0,
+    "pillar2_institutional_care": 78.5,
     "pillar3_economic_access": 84.4,
     "metrics": {
       "Residential Stability": {
@@ -818,6 +902,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 100.0,
+        "raw_value": 18.28,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -837,11 +927,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 77.2
+    "care_quotient": 79.1
   },
   "colorado_springs": {
     "pillar1_social_relational_care": 55.9,
-    "pillar2_institutional_care": 35.3,
+    "pillar2_institutional_care": 35.1,
     "pillar3_economic_access": 81.1,
     "metrics": {
       "Residential Stability": {
@@ -874,6 +964,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 35.7,
+        "raw_value": 5.35,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -893,11 +989,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 55.0
+    "care_quotient": 54.9
   },
   "columbus": {
     "pillar1_social_relational_care": 60.5,
-    "pillar2_institutional_care": 40.2,
+    "pillar2_institutional_care": 42.8,
     "pillar3_economic_access": 76.6,
     "metrics": {
       "Residential Stability": {
@@ -930,6 +1026,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 55.1,
+        "raw_value": 8.27,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 91.4,
         "raw_value": 91.36,
@@ -949,11 +1051,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 57.4
+    "care_quotient": 58.3
   },
   "corpus_christi": {
     "pillar1_social_relational_care": 55.4,
-    "pillar2_institutional_care": 36.1,
+    "pillar2_institutional_care": 31.6,
     "pillar3_economic_access": 75.1,
     "metrics": {
       "Residential Stability": {
@@ -986,6 +1088,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 16.7,
+        "raw_value": 2.5,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 76.3,
         "raw_value": 76.26,
@@ -1005,11 +1113,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.6
+    "care_quotient": 52.0
   },
   "dallas": {
     "pillar1_social_relational_care": 63.7,
-    "pillar2_institutional_care": 32.4,
+    "pillar2_institutional_care": 32.2,
     "pillar3_economic_access": 62.5,
     "metrics": {
       "Residential Stability": {
@@ -1042,6 +1150,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 33.5,
+        "raw_value": 5.03,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 66.8,
         "raw_value": 66.75,
@@ -1065,7 +1179,7 @@
   },
   "denver": {
     "pillar1_social_relational_care": 69.5,
-    "pillar2_institutional_care": 56.8,
+    "pillar2_institutional_care": 50.2,
     "pillar3_economic_access": 77.9,
     "metrics": {
       "Residential Stability": {
@@ -1098,6 +1212,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 23.9,
+        "raw_value": 3.59,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -1117,11 +1237,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 67.2
+    "care_quotient": 64.8
   },
   "des_moines": {
     "pillar1_social_relational_care": 63.2,
-    "pillar2_institutional_care": 53.1,
+    "pillar2_institutional_care": 53.3,
     "pillar3_economic_access": 86.2,
     "metrics": {
       "Residential Stability": {
@@ -1154,6 +1274,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 56.0,
+        "raw_value": 8.4,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -1173,11 +1299,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 65.4
+    "care_quotient": 65.5
   },
   "detroit": {
     "pillar1_social_relational_care": 75.8,
-    "pillar2_institutional_care": 62.3,
+    "pillar2_institutional_care": 60.8,
     "pillar3_economic_access": 86.8,
     "metrics": {
       "Residential Stability": {
@@ -1210,6 +1336,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 55.7,
+        "raw_value": 8.35,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -1229,11 +1361,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 73.8
+    "care_quotient": 73.3
   },
   "durham": {
     "pillar1_social_relational_care": 62.3,
-    "pillar2_institutional_care": 33.6,
+    "pillar2_institutional_care": 35.2,
     "pillar3_economic_access": 69.7,
     "metrics": {
       "Residential Stability": {
@@ -1266,6 +1398,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 43.1,
+        "raw_value": 6.46,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 73.0,
         "raw_value": 72.98,
@@ -1285,11 +1423,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.1
+    "care_quotient": 54.7
   },
   "el_paso": {
     "pillar1_social_relational_care": 56.3,
-    "pillar2_institutional_care": 37.6,
+    "pillar2_institutional_care": 33.9,
     "pillar3_economic_access": 70.4,
     "metrics": {
       "Residential Stability": {
@@ -1322,6 +1460,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 20.1,
+        "raw_value": 3.01,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 68.1,
         "raw_value": 68.1,
@@ -1341,11 +1485,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.3
+    "care_quotient": 52.0
   },
   "fort_worth": {
     "pillar1_social_relational_care": 60.7,
-    "pillar2_institutional_care": 38.2,
+    "pillar2_institutional_care": 37.3,
     "pillar3_economic_access": 68.8,
     "metrics": {
       "Residential Stability": {
@@ -1378,6 +1522,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 37.9,
+        "raw_value": 5.69,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 70.5,
         "raw_value": 70.55,
@@ -1397,11 +1547,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.9
+    "care_quotient": 54.5
   },
   "fresno": {
     "pillar1_social_relational_care": 61.0,
-    "pillar2_institutional_care": 51.4,
+    "pillar2_institutional_care": 45.5,
     "pillar3_economic_access": 82.0,
     "metrics": {
       "Residential Stability": {
@@ -1434,6 +1584,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 21.3,
+        "raw_value": 3.2,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -1453,11 +1609,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 62.9
+    "care_quotient": 60.8
   },
   "honolulu": {
     "pillar1_social_relational_care": 83.0,
-    "pillar2_institutional_care": 67.9,
+    "pillar2_institutional_care": 65.4,
     "pillar3_economic_access": 82.7,
     "metrics": {
       "Residential Stability": {
@@ -1490,6 +1646,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 52.1,
+        "raw_value": 7.81,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -1509,11 +1671,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 77.6
+    "care_quotient": 76.8
   },
   "houston": {
     "pillar1_social_relational_care": 61.8,
-    "pillar2_institutional_care": 30.8,
+    "pillar2_institutional_care": 32.6,
     "pillar3_economic_access": 64.9,
     "metrics": {
       "Residential Stability": {
@@ -1546,6 +1708,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 40.1,
+        "raw_value": 6.02,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 66.7,
         "raw_value": 66.66,
@@ -1565,11 +1733,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 51.7
+    "care_quotient": 52.4
   },
   "indianapolis": {
     "pillar1_social_relational_care": 69.3,
-    "pillar2_institutional_care": 67.7,
+    "pillar2_institutional_care": 59.8,
     "pillar3_economic_access": 79.0,
     "metrics": {
       "Residential Stability": {
@@ -1602,6 +1770,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 29.3,
+        "raw_value": 4.4,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 97.6,
         "raw_value": 97.63,
@@ -1621,11 +1795,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 71.2
+    "care_quotient": 68.4
   },
   "jacksonville": {
     "pillar1_social_relational_care": 61.6,
-    "pillar2_institutional_care": 31.2,
+    "pillar2_institutional_care": 30.0,
     "pillar3_economic_access": 76.5,
     "metrics": {
       "Residential Stability": {
@@ -1658,6 +1832,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 27.7,
+        "raw_value": 4.15,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 81.0,
         "raw_value": 80.95,
@@ -1677,11 +1857,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.7
+    "care_quotient": 54.3
   },
   "kansas_city": {
     "pillar1_social_relational_care": 68.6,
-    "pillar2_institutional_care": 48.9,
+    "pillar2_institutional_care": 50.4,
     "pillar3_economic_access": 64.4,
     "metrics": {
       "Residential Stability": {
@@ -1714,6 +1894,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 57.6,
+        "raw_value": 8.64,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 62.9,
         "raw_value": 62.93,
@@ -1733,11 +1919,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 60.7
+    "care_quotient": 61.2
   },
   "las_vegas": {
     "pillar1_social_relational_care": 61.5,
-    "pillar2_institutional_care": 26.8,
+    "pillar2_institutional_care": 29.5,
     "pillar3_economic_access": 76.2,
     "metrics": {
       "Residential Stability": {
@@ -1770,6 +1956,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 40.8,
+        "raw_value": 6.12,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 89.0,
         "raw_value": 88.96,
@@ -1789,11 +1981,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.0
+    "care_quotient": 54.0
   },
   "lexington": {
     "pillar1_social_relational_care": 57.6,
-    "pillar2_institutional_care": 55.5,
+    "pillar2_institutional_care": 49.8,
     "pillar3_economic_access": 72.4,
     "metrics": {
       "Residential Stability": {
@@ -1826,6 +2018,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 27.3,
+        "raw_value": 4.1,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 87.0,
         "raw_value": 87.03,
@@ -1845,11 +2043,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 60.6
+    "care_quotient": 58.6
   },
   "los_angeles": {
     "pillar1_social_relational_care": 63.6,
-    "pillar2_institutional_care": 52.6,
+    "pillar2_institutional_care": 54.3,
     "pillar3_economic_access": 73.0,
     "metrics": {
       "Residential Stability": {
@@ -1882,6 +2080,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 61.5,
+        "raw_value": 9.22,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -1901,11 +2105,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 62.1
+    "care_quotient": 62.7
   },
   "louisville": {
     "pillar1_social_relational_care": 56.5,
-    "pillar2_institutional_care": 22.2,
+    "pillar2_institutional_care": 24.3,
     "pillar3_economic_access": 80.1,
     "metrics": {
       "Residential Stability": {
@@ -1938,6 +2142,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 34.9,
+        "raw_value": 5.24,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -1957,11 +2167,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 50.4
+    "care_quotient": 51.1
   },
   "madison": {
     "pillar1_social_relational_care": 58.5,
-    "pillar2_institutional_care": 20.2,
+    "pillar2_institutional_care": 36.0,
     "pillar3_economic_access": 58.7,
     "metrics": {
       "Residential Stability": {
@@ -1994,6 +2204,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 100.0,
+        "raw_value": 15.59,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 57.1,
         "raw_value": 57.12,
@@ -2013,11 +2229,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 45.1
+    "care_quotient": 50.7
   },
   "memphis": {
     "pillar1_social_relational_care": 68.8,
-    "pillar2_institutional_care": 36.8,
+    "pillar2_institutional_care": 36.1,
     "pillar3_economic_access": 72.9,
     "metrics": {
       "Residential Stability": {
@@ -2050,6 +2266,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 35.2,
+        "raw_value": 5.28,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 80.6,
         "raw_value": 80.6,
@@ -2069,11 +2291,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 58.6
+    "care_quotient": 58.4
   },
   "milwaukee": {
     "pillar1_social_relational_care": 65.6,
-    "pillar2_institutional_care": 45.8,
+    "pillar2_institutional_care": 53.0,
     "pillar3_economic_access": 85.2,
     "metrics": {
       "Residential Stability": {
@@ -2106,6 +2328,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 81.8,
+        "raw_value": 12.27,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -2125,11 +2353,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 63.6
+    "care_quotient": 66.1
   },
   "minneapolis": {
     "pillar1_social_relational_care": 66.8,
-    "pillar2_institutional_care": 66.1,
+    "pillar2_institutional_care": 72.5,
     "pillar3_economic_access": 79.2,
     "metrics": {
       "Residential Stability": {
@@ -2162,6 +2390,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 100.0,
+        "raw_value": 16.44,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 97.3,
         "raw_value": 97.34,
@@ -2181,11 +2415,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 69.7
+    "care_quotient": 71.9
   },
   "nashville": {
     "pillar1_social_relational_care": 65.4,
-    "pillar2_institutional_care": 31.9,
+    "pillar2_institutional_care": 28.7,
     "pillar3_economic_access": 68.3,
     "metrics": {
       "Residential Stability": {
@@ -2218,6 +2452,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 17.7,
+        "raw_value": 2.66,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 78.1,
         "raw_value": 78.08,
@@ -2237,11 +2477,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.4
+    "care_quotient": 53.3
   },
   "new_orleans": {
     "pillar1_social_relational_care": 72.6,
-    "pillar2_institutional_care": 77.1,
+    "pillar2_institutional_care": 68.2,
     "pillar3_economic_access": 76.8,
     "metrics": {
       "Residential Stability": {
@@ -2274,6 +2514,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 29.9,
+        "raw_value": 4.49,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 98.2,
         "raw_value": 98.16,
@@ -2293,11 +2539,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 75.2
+    "care_quotient": 72.1
   },
   "nyc": {
     "pillar1_social_relational_care": 64.4,
-    "pillar2_institutional_care": 48.5,
+    "pillar2_institutional_care": 45.7,
     "pillar3_economic_access": 83.2,
     "metrics": {
       "Residential Stability": {
@@ -2330,6 +2576,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 36.1,
+        "raw_value": 5.42,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -2349,11 +2601,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 63.5
+    "care_quotient": 62.6
   },
   "oklahoma_city": {
     "pillar1_social_relational_care": 59.0,
-    "pillar2_institutional_care": 45.7,
+    "pillar2_institutional_care": 42.2,
     "pillar3_economic_access": 74.4,
     "metrics": {
       "Residential Stability": {
@@ -2386,6 +2638,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 30.7,
+        "raw_value": 4.61,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 78.8,
         "raw_value": 78.85,
@@ -2405,11 +2663,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 58.2
+    "care_quotient": 57.0
   },
   "omaha": {
     "pillar1_social_relational_care": 64.2,
-    "pillar2_institutional_care": 59.2,
+    "pillar2_institutional_care": 57.4,
     "pillar3_economic_access": 72.5,
     "metrics": {
       "Residential Stability": {
@@ -2442,6 +2700,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 51.1,
+        "raw_value": 7.66,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 78.0,
         "raw_value": 78.0,
@@ -2461,11 +2725,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 64.5
+    "care_quotient": 63.9
   },
   "philadelphia": {
     "pillar1_social_relational_care": 67.0,
-    "pillar2_institutional_care": 46.9,
+    "pillar2_institutional_care": 47.2,
     "pillar3_economic_access": 87.0,
     "metrics": {
       "Residential Stability": {
@@ -2498,6 +2762,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 50.1,
+        "raw_value": 7.52,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -2517,11 +2787,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 65.0
+    "care_quotient": 65.1
   },
   "phoenix": {
     "pillar1_social_relational_care": 56.6,
-    "pillar2_institutional_care": 30.4,
+    "pillar2_institutional_care": 31.7,
     "pillar3_economic_access": 79.8,
     "metrics": {
       "Residential Stability": {
@@ -2554,6 +2824,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 36.8,
+        "raw_value": 5.52,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -2573,11 +2849,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.2
+    "care_quotient": 53.7
   },
   "pittsburgh": {
     "pillar1_social_relational_care": 79.2,
-    "pillar2_institutional_care": 58.9,
+    "pillar2_institutional_care": 66.9,
     "pillar3_economic_access": 74.9,
     "metrics": {
       "Residential Stability": {
@@ -2610,6 +2886,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 100.0,
+        "raw_value": 26.75,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 78.7,
         "raw_value": 78.66,
@@ -2629,11 +2911,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 71.0
+    "care_quotient": 73.8
   },
   "portland": {
     "pillar1_social_relational_care": 62.7,
-    "pillar2_institutional_care": 52.5,
+    "pillar2_institutional_care": 60.0,
     "pillar3_economic_access": 85.2,
     "metrics": {
       "Residential Stability": {
@@ -2666,6 +2948,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 89.7,
+        "raw_value": 13.46,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -2685,11 +2973,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 64.8
+    "care_quotient": 67.4
   },
   "providence": {
     "pillar1_social_relational_care": 73.2,
-    "pillar2_institutional_care": 61.8,
+    "pillar2_institutional_care": 66.7,
     "pillar3_economic_access": 88.7,
     "metrics": {
       "Residential Stability": {
@@ -2722,6 +3010,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 89.3,
+        "raw_value": 13.4,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -2741,11 +3035,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 73.1
+    "care_quotient": 74.8
   },
   "raleigh": {
     "pillar1_social_relational_care": 60.0,
-    "pillar2_institutional_care": 24.1,
+    "pillar2_institutional_care": 35.5,
     "pillar3_economic_access": 74.5,
     "metrics": {
       "Residential Stability": {
@@ -2778,6 +3072,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 83.1,
+        "raw_value": 12.47,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 85.0,
         "raw_value": 85.04,
@@ -2797,11 +3097,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 51.1
+    "care_quotient": 55.0
   },
   "richmond": {
     "pillar1_social_relational_care": 63.0,
-    "pillar2_institutional_care": 64.4,
+    "pillar2_institutional_care": 54.0,
     "pillar3_economic_access": 70.8,
     "metrics": {
       "Residential Stability": {
@@ -2834,6 +3134,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 15.5,
+        "raw_value": 2.32,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 83.8,
         "raw_value": 83.79,
@@ -2853,11 +3159,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 65.4
+    "care_quotient": 61.8
   },
   "rochester": {
     "pillar1_social_relational_care": 67.8,
-    "pillar2_institutional_care": 83.2,
+    "pillar2_institutional_care": 86.2,
     "pillar3_economic_access": 83.9,
     "metrics": {
       "Residential Stability": {
@@ -2890,6 +3196,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 100.0,
+        "raw_value": 15.36,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -2909,11 +3221,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 77.2
+    "care_quotient": 78.3
   },
   "sacramento": {
     "pillar1_social_relational_care": 71.6,
-    "pillar2_institutional_care": 47.7,
+    "pillar2_institutional_care": 52.4,
     "pillar3_economic_access": 80.5,
     "metrics": {
       "Residential Stability": {
@@ -2946,6 +3258,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 70.8,
+        "raw_value": 10.62,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -2965,11 +3283,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 65.5
+    "care_quotient": 67.1
   },
   "salt_lake_city": {
     "pillar1_social_relational_care": 64.4,
-    "pillar2_institutional_care": 32.4,
+    "pillar2_institutional_care": 45.5,
     "pillar3_economic_access": 55.8,
     "metrics": {
       "Residential Stability": {
@@ -3002,6 +3320,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 100.0,
+        "raw_value": 22.08,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 53.8,
         "raw_value": 53.81,
@@ -3021,11 +3345,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 51.0
+    "care_quotient": 55.6
   },
   "san_antonio": {
     "pillar1_social_relational_care": 57.1,
-    "pillar2_institutional_care": 43.4,
+    "pillar2_institutional_care": 39.1,
     "pillar3_economic_access": 69.7,
     "metrics": {
       "Residential Stability": {
@@ -3058,6 +3382,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 24.6,
+        "raw_value": 3.69,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 71.8,
         "raw_value": 71.77,
@@ -3077,11 +3407,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 55.5
+    "care_quotient": 54.0
   },
   "san_diego": {
     "pillar1_social_relational_care": 61.3,
-    "pillar2_institutional_care": 38.4,
+    "pillar2_institutional_care": 45.0,
     "pillar3_economic_access": 75.3,
     "metrics": {
       "Residential Stability": {
@@ -3114,6 +3444,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 70.3,
+        "raw_value": 10.55,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -3133,11 +3469,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 56.8
+    "care_quotient": 59.1
   },
   "san_francisco": {
     "pillar1_social_relational_care": 66.5,
-    "pillar2_institutional_care": 48.3,
+    "pillar2_institutional_care": 53.4,
     "pillar3_economic_access": 80.8,
     "metrics": {
       "Residential Stability": {
@@ -3170,6 +3506,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 72.5,
+        "raw_value": 10.88,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -3189,11 +3531,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 63.7
+    "care_quotient": 65.5
   },
   "san_jose": {
     "pillar1_social_relational_care": 57.5,
-    "pillar2_institutional_care": 40.8,
+    "pillar2_institutional_care": 50.5,
     "pillar3_economic_access": 79.6,
     "metrics": {
       "Residential Stability": {
@@ -3226,6 +3568,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 89.2,
+        "raw_value": 13.38,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -3245,11 +3593,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 57.2
+    "care_quotient": 60.6
   },
   "seattle": {
     "pillar1_social_relational_care": 62.6,
-    "pillar2_institutional_care": 56.5,
+    "pillar2_institutional_care": 65.5,
     "pillar3_economic_access": 77.0,
     "metrics": {
       "Residential Stability": {
@@ -3282,6 +3630,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 100.0,
+        "raw_value": 27.93,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 91.1,
         "raw_value": 91.06,
@@ -3301,11 +3655,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 64.1
+    "care_quotient": 67.2
   },
   "spokane": {
     "pillar1_social_relational_care": 57.3,
-    "pillar2_institutional_care": 53.9,
+    "pillar2_institutional_care": 56.7,
     "pillar3_economic_access": 90.3,
     "metrics": {
       "Residential Stability": {
@@ -3338,6 +3692,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 69.1,
+        "raw_value": 10.36,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -3357,11 +3717,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 64.4
+    "care_quotient": 65.3
   },
   "st_louis": {
     "pillar1_social_relational_care": 76.8,
-    "pillar2_institutional_care": 65.6,
+    "pillar2_institutional_care": 60.2,
     "pillar3_economic_access": 72.5,
     "metrics": {
       "Residential Stability": {
@@ -3394,6 +3754,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 40.1,
+        "raw_value": 6.02,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 73.3,
         "raw_value": 73.3,
@@ -3413,11 +3779,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 71.8
+    "care_quotient": 69.9
   },
   "st_paul": {
     "pillar1_social_relational_care": 72.8,
-    "pillar2_institutional_care": 57.4,
+    "pillar2_institutional_care": 53.6,
     "pillar3_economic_access": 82.9,
     "metrics": {
       "Residential Stability": {
@@ -3450,6 +3816,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 39.5,
+        "raw_value": 5.92,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -3469,11 +3841,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 69.9
+    "care_quotient": 68.6
   },
   "stockton": {
     "pillar1_social_relational_care": 58.9,
-    "pillar2_institutional_care": 69.2,
+    "pillar2_institutional_care": 61.9,
     "pillar3_economic_access": 86.4,
     "metrics": {
       "Residential Stability": {
@@ -3506,6 +3878,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 35.1,
+        "raw_value": 5.26,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -3525,11 +3903,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 69.4
+    "care_quotient": 66.8
   },
   "tampa": {
     "pillar1_social_relational_care": 61.7,
-    "pillar2_institutional_care": 30.0,
+    "pillar2_institutional_care": 43.6,
     "pillar3_economic_access": 74.1,
     "metrics": {
       "Residential Stability": {
@@ -3562,6 +3940,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 99.4,
+        "raw_value": 14.91,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 79.9,
         "raw_value": 79.94,
@@ -3581,11 +3965,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.7
+    "care_quotient": 58.5
   },
   "tucson": {
     "pillar1_social_relational_care": 56.8,
-    "pillar2_institutional_care": 33.7,
+    "pillar2_institutional_care": 33.8,
     "pillar3_economic_access": 75.6,
     "metrics": {
       "Residential Stability": {
@@ -3618,6 +4002,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 35.7,
+        "raw_value": 5.36,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 91.3,
         "raw_value": 91.31,
@@ -3641,7 +4031,7 @@
   },
   "virginia_beach": {
     "pillar1_social_relational_care": 59.8,
-    "pillar2_institutional_care": 20.8,
+    "pillar2_institutional_care": 21.6,
     "pillar3_economic_access": 71.2,
     "metrics": {
       "Residential Stability": {
@@ -3674,6 +4064,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 26.8,
+        "raw_value": 4.02,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 81.5,
         "raw_value": 81.47,
@@ -3693,11 +4089,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 49.0
+    "care_quotient": 49.3
   },
   "washington_dc": {
     "pillar1_social_relational_care": 80.6,
-    "pillar2_institutional_care": 66.9,
+    "pillar2_institutional_care": 62.6,
     "pillar3_economic_access": 83.0,
     "metrics": {
       "Residential Stability": {
@@ -3730,6 +4126,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 44.8,
+        "raw_value": 6.72,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 100.0,
         "raw_value": 100.0,
@@ -3749,11 +4151,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 76.4
+    "care_quotient": 74.9
   },
   "wichita": {
     "pillar1_social_relational_care": 58.5,
-    "pillar2_institutional_care": 36.6,
+    "pillar2_institutional_care": 33.3,
     "pillar3_economic_access": 72.6,
     "metrics": {
       "Residential Stability": {
@@ -3786,6 +4188,12 @@
         "benchmark": 50.0,
         "pillar": "Institutional Care"
       },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 21.7,
+        "raw_value": 3.25,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
       "Healthcare Coverage Rate": {
         "score": 78.0,
         "raw_value": 78.01,
@@ -3805,6 +4213,6 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.4
+    "care_quotient": 53.2
   }
 }

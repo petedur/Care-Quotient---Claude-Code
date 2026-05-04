@@ -72,11 +72,10 @@ function destroyHomeMap() {
 }
 
 function cqColor(score) {
-  if (score >= 68) return '#2d6a4f';
-  if (score >= 55) return '#52b788';
-  if (score >= 42) return '#d4a017';
-  if (score >= 28) return '#e07b39';
-  return '#c0392b';
+  if (score >= 70) return '#2d6a4f';
+  if (score >= 62) return '#74c490';
+  if (score >= 53) return '#5aaccf';
+  return '#1e5799';
 }
 
 var TILE_URL  = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}';
@@ -151,10 +150,10 @@ function initHomeMap(cities) {
 // Leading ≥70 | Established ≥62 | Growing ≥53 | Emerging <53
 
 var TIERS = [
-  { num: 1, label: 'Leading',     min: 70,  color: '#2d6a4f', desc: 'Score 70 or above' },
-  { num: 2, label: 'Established', min: 62,  color: '#52b788', desc: 'Score 62–69' },
-  { num: 3, label: 'Growing',     min: 53,  color: '#c49a00', desc: 'Score 53–61' },
-  { num: 4, label: 'Emerging',    min: 0,   color: '#c0392b', desc: 'Score below 53' },
+  { num: 1, label: 'Leading',     min: 70,  color: '#2d6a4f', textColor: '#fff',    desc: 'Score 70 or above' },
+  { num: 2, label: 'Established', min: 62,  color: '#74c490', textColor: '#1a3d28', desc: 'Score 62–69' },
+  { num: 3, label: 'Growing',     min: 53,  color: '#5aaccf', textColor: '#0c2d40', desc: 'Score 53–61' },
+  { num: 4, label: 'Emerging',    min: 0,   color: '#1e5799', textColor: '#fff',    desc: 'Score below 53' },
 ];
 
 function cqTier(score) {
@@ -181,8 +180,9 @@ function renderHome(app) {
     if (!bucket.length) return '';
     var tierRows = bucket.map(function(item) {
       var city = item.city;
+      var overflowCls = item.rank > 5 ? ' ranking-row-overflow' : '';
       return [
-        '<a class="ranking-row" href="#/city/', city.key, '"',
+        '<a class="ranking-row', overflowCls, '" href="#/city/', city.key, '"',
           ' role="link" tabindex="0"',
           ' aria-label="', city.name, ', Care Quotient ', fmt(city.cq), '">',
           '<span class="r-rank">', item.rank, '</span>',
@@ -195,10 +195,11 @@ function renderHome(app) {
         '</a>',
       ].join('');
     }).join('');
+    var allOverflow = bucket.every(function(item) { return item.rank > 5; });
     return [
-      '<div class="tier-group" data-tier="', tier.num, '">',
+      '<div class="tier-group', allOverflow ? ' tier-group-overflow' : '', '" data-tier="', tier.num, '">',
         '<div class="tier-header">',
-          '<span class="tier-badge" style="background:', tier.color, '">T', tier.num, '</span>',
+          '<span class="tier-badge" style="background:', tier.color, ';color:', tier.textColor, '">T', tier.num, '</span>',
           '<span class="tier-header-label">', tier.label, '</span>',
           '<span class="tier-header-desc">', tier.desc, ' &nbsp;&middot;&nbsp; ', bucket.length, ' ', bucket.length === 1 ? 'city' : 'cities', '</span>',
         '</div>',
@@ -228,12 +229,11 @@ function renderHome(app) {
         '<div id="map-inset-hi" class="map-inset" data-label="Hawaii"></div>',
       '</div>',
       '<div class="map-legend">',
-        '<span class="map-legend-label">Care Quotient</span>',
-        '<span class="legend-swatch" style="background:#c0392b"></span><span class="legend-tier">Under 28</span>',
-        '<span class="legend-swatch" style="background:#e07b39"></span><span class="legend-tier">28&ndash;42</span>',
-        '<span class="legend-swatch" style="background:#d4a017"></span><span class="legend-tier">42&ndash;55</span>',
-        '<span class="legend-swatch" style="background:#52b788"></span><span class="legend-tier">55&ndash;68</span>',
-        '<span class="legend-swatch" style="background:#2d6a4f"></span><span class="legend-tier">68+</span>',
+        '<span class="map-legend-label">Tier</span>',
+        TIERS.map(function(t) {
+          return '<span class="legend-swatch" style="background:' + t.color + '"></span>' +
+                 '<span class="legend-tier"><span class="legend-tier-badge" style="background:' + t.color + ';color:' + t.textColor + '">T' + t.num + '</span> ' + t.label + '</span>';
+        }).join(''),
       '</div>',
     '</section>',
 
@@ -258,6 +258,9 @@ function renderHome(app) {
 
       '<div id="ranking-table">', rows, '</div>',
       '<div class="no-results" id="no-results">No cities match your search.</div>',
+      '<button class="show-all-btn" id="show-all-btn" aria-expanded="false">',
+        'See all ', total, ' cities &#8595;',
+      '</button>',
 
       '<p class="bands-note">',
         'Scores are measured against absolute benchmarks, not relative to other cities. ',
@@ -350,8 +353,28 @@ function renderHome(app) {
   var searchInput = document.getElementById('city-search');
   var noResults   = document.getElementById('no-results');
 
+  // Expand / collapse
+  var showAllBtn = document.getElementById('show-all-btn');
+  if (showAllBtn) {
+    showAllBtn.addEventListener('click', function() {
+      var expanded = rankingTable.classList.toggle('ranking-expanded');
+      showAllBtn.setAttribute('aria-expanded', String(expanded));
+      showAllBtn.innerHTML = expanded
+        ? 'Show fewer &#8593;'
+        : 'See all ' + total + ' cities &#8595;';
+    });
+  }
+
   searchInput.addEventListener('input', function() {
     var q = searchInput.value.toLowerCase().trim();
+    // Auto-expand when searching so results aren't hidden
+    if (q) {
+      rankingTable.classList.add('ranking-expanded');
+      if (showAllBtn) showAllBtn.style.display = 'none';
+    } else {
+      rankingTable.classList.remove('ranking-expanded');
+      if (showAllBtn) { showAllBtn.style.display = ''; showAllBtn.innerHTML = 'See all ' + total + ' cities &#8595;'; }
+    }
     var visible = 0;
     rankingTable.querySelectorAll('.ranking-row').forEach(function(row) {
       var name  = row.querySelector('.r-name').textContent.toLowerCase();
@@ -554,6 +577,11 @@ var METRIC_META = {
     pillar: 'pillar2',
     desc:   'Medicare/Medicaid certified beds per 1,000 residents aged 65+',
   },
+  child_care: {
+    label:  'Child Care Capacity',
+    pillar: 'pillar2',
+    desc:   'Licensed child care establishments per 1,000 children under 5',
+  },
   health_insurance: {
     label:  'Healthcare Coverage',
     pillar: 'pillar3',
@@ -577,6 +605,7 @@ var METRIC_ORDER = [
   'library_density',
   'fqhc',
   'nursing_home',
+  'child_care',
   'health_insurance',
   'housing_cost_burden',
   'snap_coverage',
@@ -772,7 +801,7 @@ function renderCity(app, key) {
           '<div class="cq-label">Care Quotient</div>',
           '<div class="cq-rank">Ranked ', rank, ' of ', total, ' cities</div>',
           '<div class="cq-tier">',
-            '<span class="tier-badge" style="background:', cqTier(city.cq).color, '">T', cqTier(city.cq).num, '</span>',
+            '<span class="tier-badge" style="background:', cqTier(city.cq).color, ';color:', cqTier(city.cq).textColor, '">T', cqTier(city.cq).num, '</span>',
             '<span class="tier-label-text">', cqTier(city.cq).label, '</span>',
           '</div>',
         '</div>',
@@ -974,7 +1003,7 @@ function renderMethodology(app) {
 
       '<a href="#/" class="back-link">&#8592; All cities</a>',
 
-      '<div class="method-eyebrow">Methodology &mdash; V5</div>',
+      '<div class="method-eyebrow">Methodology &mdash; V6</div>',
       '<h1>How the Care Quotient is built</h1>',
 
       '<p>',
@@ -1099,7 +1128,7 @@ function renderMethodology(app) {
 
       '<h3>Version &amp; Data</h3>',
       '<p>',
-        'V5 (May 2026). 68 cities. ',
+        'V6 (May 2026). 68 cities. ',
         'Data sources: IRS EO BMF, Census ACS 2022 5-year estimates, ',
         'HRSA Health Center Service Delivery, IMLS Public Libraries Survey FY2023, ',
         'CMS Care Compare Nursing Home Provider Information, CDC PLACES (2022/2023). ',
@@ -1459,7 +1488,7 @@ function renderFooter() {
   return [
     '<footer class="site-footer">',
       '<div class="footer-copy">',
-        'Care Quotient V5 &nbsp;&middot;&nbsp; 68 American Cities &nbsp;&middot;&nbsp; May 2026<br>',
+        'Care Quotient V6 &nbsp;&middot;&nbsp; 68 American Cities &nbsp;&middot;&nbsp; May 2026<br>',
         'Data: IRS EO BMF &middot; Census ACS 2022 &middot; HRSA &middot; IMLS &middot; CMS Care Compare',
       '</div>',
       '<div class="footer-links">',

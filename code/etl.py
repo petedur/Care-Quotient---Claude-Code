@@ -248,6 +248,28 @@ def load_nursing_homes(conn, city_key: str):
           f"{beds_per_1k} beds/1k 65+ ({facility_count} facilities)")
 
 
+def load_child_care_capacity(conn, city_key: str):
+    raw = DATA_RAW / city_key / "child_care_capacity.json"
+    if not raw.exists():
+        print(f"  SKIP child_care_capacity for {city_key} (no raw file)")
+        return
+
+    import json
+    d = json.loads(raw.read_text())
+    density = d.get("childcare_per_1k_under5")
+    estab   = d.get("childcare_establishments", 0)
+    under5  = d.get("population_under_5", 0)
+
+    if density is None:
+        print(f"  SKIP child_care_capacity for {city_key} (missing density value)")
+        return
+
+    upsert(conn, city_key, "child_care_capacity", "establishments_per_1k_under5",
+           value=density, count=estab,
+           notes=f"under5_pop={under5}")
+    print(f"  child_care_capacity loaded for {city_key}: {density}/1k under-5 ({estab} establishments)")
+
+
 def load_places_diagnostics(conn, city_key: str):
     raw = DATA_RAW / city_key / "places_diagnostics.csv"
     if not raw.exists():
@@ -293,6 +315,7 @@ LOADERS = [
     load_snap_participation,
     load_health_insurance,
     load_nursing_homes,
+    load_child_care_capacity,
     load_places_diagnostics,
 ]
 
@@ -323,6 +346,8 @@ VALIDATION_RULES = [
     ("health_insurance_coverage", "coverage_rate",    0.0, 100.0),
     # Nursing home capacity: beds per 1k residents 65+ — 0 possible; 150 would be anomalous
     ("nursing_home_capacity",     "beds_per_1k_65plus", 0.0, 150.0),
+    # Child care capacity: establishments per 1k children under 5 — 0 possible; 50 would be anomalous
+    ("child_care_capacity",       "establishments_per_1k_under5", 0.0, 50.0),
 ]
 
 # Scored metrics that must be present for every city; missing = pipeline gap.
@@ -336,6 +361,7 @@ REQUIRED_SCORED = [
     ("library_density",           "density_per_100k"),
     ("health_center_density",     "density_per_100k"),
     ("nursing_home_capacity",     "beds_per_1k_65plus"),
+    ("child_care_capacity",       "establishments_per_1k_under5"),
     ("health_insurance_coverage", "coverage_rate"),
     ("housing_cost_burden",       "pct_not_burdened"),
     ("snap_participation",        "coverage_rate"),

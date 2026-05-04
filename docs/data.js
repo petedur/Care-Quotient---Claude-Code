@@ -8,9 +8,9 @@ const CITIES = {
     "population": "565k residents",
     "lat": 35.0844,
     "lng": -106.6504,
-    "cq": 57.1,
+    "cq": 56.9,
     "pillar1": 58.3,
-    "pillar2": 36.5,
+    "pillar2": 36.1,
     "pillar3": 83.9,
     "metrics": {
       "residential_stability": {
@@ -47,6 +47,13 @@ const CITIES = {
         "rawFmt": "25.3",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 36.0,
+        "raw": 5.4,
+        "rawFmt": "5.40",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -103,9 +110,9 @@ const CITIES = {
     "population": "291k residents",
     "lat": 61.2181,
     "lng": -149.9003,
-    "cq": 47.0,
+    "cq": 47.8,
     "pillar1": 55.5,
-    "pillar2": 11.7,
+    "pillar2": 14.1,
     "pillar3": 82.8,
     "metrics": {
       "residential_stability": {
@@ -142,6 +149,13 @@ const CITIES = {
         "rawFmt": "7.5",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 24.0,
+        "raw": 3.6,
+        "rawFmt": "3.60",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -198,9 +212,9 @@ const CITIES = {
     "population": "499k residents",
     "lat": 33.749,
     "lng": -84.388,
-    "cq": 68.0,
+    "cq": 71.5,
     "pillar1": 85.4,
-    "pillar2": 48.3,
+    "pillar2": 58.3,
     "pillar3": 67.7,
     "metrics": {
       "residential_stability": {
@@ -237,6 +251,13 @@ const CITIES = {
         "rawFmt": "34.1",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 100.0,
+        "raw": 20.87,
+        "rawFmt": "20.87",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 66.8,
@@ -293,9 +314,9 @@ const CITIES = {
     "population": "367k residents",
     "lat": 39.7294,
     "lng": -104.8319,
-    "cq": 54.7,
+    "cq": 55.8,
     "pillar1": 59.9,
-    "pillar2": 31.2,
+    "pillar2": 34.4,
     "pillar3": 79.3,
     "metrics": {
       "residential_stability": {
@@ -332,6 +353,13 @@ const CITIES = {
         "rawFmt": "26.9",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 49.5,
+        "raw": 7.42,
+        "rawFmt": "7.42",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -388,9 +416,9 @@ const CITIES = {
     "population": "962k residents",
     "lat": 30.2672,
     "lng": -97.7431,
-    "cq": 53.1,
+    "cq": 52.5,
     "pillar1": 60.4,
-    "pillar2": 40.7,
+    "pillar2": 38.9,
     "pillar3": 58.9,
     "metrics": {
       "residential_stability": {
@@ -427,6 +455,13 @@ const CITIES = {
         "rawFmt": "26.6",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 33.1,
+        "raw": 4.96,
+        "rawFmt": "4.96",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 60.2,
@@ -483,9 +518,9 @@ const CITIES = {
     "population": "407k residents",
     "lat": 35.3733,
     "lng": -119.0187,
-    "cq": 57.0,
+    "cq": 55.1,
     "pillar1": 53.4,
-    "pillar2": 43.8,
+    "pillar2": 38.5,
     "pillar3": 81.1,
     "metrics": {
       "residential_stability": {
@@ -522,6 +557,13 @@ const CITIES = {
         "rawFmt": "29.6",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 18.7,
+        "raw": 2.8,
+        "rawFmt": "2.80",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -578,9 +620,9 @@ const CITIES = {
     "population": "586k residents",
     "lat": 39.2904,
     "lng": -76.6122,
-    "cq": 71.0,
+    "cq": 68.7,
     "pillar1": 76.2,
-    "pillar2": 53.2,
+    "pillar2": 46.8,
     "pillar3": 87.4,
     "metrics": {
       "residential_stability": {
@@ -617,6 +659,13 @@ const CITIES = {
         "rawFmt": "40.4",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 23.9,
+        "raw": 3.59,
+        "rawFmt": "3.59",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -673,9 +722,9 @@ const CITIES = {
     "population": "228k residents",
     "lat": 30.4515,
     "lng": -91.1871,
-    "cq": 77.0,
+    "cq": 74.0,
     "pillar1": 68.0,
-    "pillar2": 88.5,
+    "pillar2": 80.1,
     "pillar3": 75.2,
     "metrics": {
       "residential_stability": {
@@ -712,6 +761,13 @@ const CITIES = {
         "rawFmt": "48.2",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 47.3,
+        "raw": 7.09,
+        "rawFmt": "7.09",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 89.4,
@@ -768,9 +824,9 @@ const CITIES = {
     "population": "212k residents",
     "lat": 33.5186,
     "lng": -86.8104,
-    "cq": 66.9,
+    "cq": 69.7,
     "pillar1": 71.0,
-    "pillar2": 59.2,
+    "pillar2": 67.3,
     "pillar3": 71.1,
     "metrics": {
       "residential_stability": {
@@ -807,6 +863,13 @@ const CITIES = {
         "rawFmt": "31.2",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 100.0,
+        "raw": 15.09,
+        "rawFmt": "15.09",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 77.8,
@@ -863,9 +926,9 @@ const CITIES = {
     "population": "676k residents",
     "lat": 42.3601,
     "lng": -71.0589,
-    "cq": 69.8,
+    "cq": 68.8,
     "pillar1": 68.6,
-    "pillar2": 61.1,
+    "pillar2": 58.2,
     "pillar3": 83.8,
     "metrics": {
       "residential_stability": {
@@ -902,6 +965,13 @@ const CITIES = {
         "rawFmt": "25.0",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 46.0,
+        "raw": 6.9,
+        "rawFmt": "6.90",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -958,9 +1028,9 @@ const CITIES = {
     "population": "278k residents",
     "lat": 42.8864,
     "lng": -78.8784,
-    "cq": 67.6,
+    "cq": 70.5,
     "pillar1": 69.9,
-    "pillar2": 51.1,
+    "pillar2": 59.2,
     "pillar3": 87.2,
     "metrics": {
       "residential_stability": {
@@ -997,6 +1067,13 @@ const CITIES = {
         "rawFmt": "37.8",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 93.9,
+        "raw": 14.08,
+        "rawFmt": "14.08",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -1053,9 +1130,9 @@ const CITIES = {
     "population": "875k residents",
     "lat": 35.2271,
     "lng": -80.8431,
-    "cq": 53.2,
+    "cq": 53.6,
     "pillar1": 64.1,
-    "pillar2": 27.6,
+    "pillar2": 28.7,
     "pillar3": 71.8,
     "metrics": {
       "residential_stability": {
@@ -1092,6 +1169,13 @@ const CITIES = {
         "rawFmt": "21.3",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 34.3,
+        "raw": 5.15,
+        "rawFmt": "5.15",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 80.5,
@@ -1188,6 +1272,13 @@ const CITIES = {
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
       },
+      "child_care": {
+        "score": 65.5,
+        "raw": 9.83,
+        "rawFmt": "9.83",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
+      },
       "health_insurance": {
         "score": 95.5,
         "raw": 95.55,
@@ -1243,9 +1334,9 @@ const CITIES = {
     "population": "309k residents",
     "lat": 39.1031,
     "lng": -84.512,
-    "cq": 79.6,
+    "cq": 80.2,
     "pillar1": 74.5,
-    "pillar2": 90.0,
+    "pillar2": 91.9,
     "pillar3": 73.0,
     "metrics": {
       "residential_stability": {
@@ -1282,6 +1373,13 @@ const CITIES = {
         "rawFmt": "61.0",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 100.0,
+        "raw": 15.3,
+        "rawFmt": "15.30",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 83.0,
@@ -1338,9 +1436,9 @@ const CITIES = {
     "population": "373k residents",
     "lat": 41.4993,
     "lng": -81.6944,
-    "cq": 77.2,
+    "cq": 79.1,
     "pillar1": 76.4,
-    "pillar2": 73.0,
+    "pillar2": 78.5,
     "pillar3": 84.4,
     "metrics": {
       "residential_stability": {
@@ -1377,6 +1475,13 @@ const CITIES = {
         "rawFmt": "35.2",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 100.0,
+        "raw": 18.28,
+        "rawFmt": "18.28",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -1433,9 +1538,9 @@ const CITIES = {
     "population": "479k residents",
     "lat": 38.8339,
     "lng": -104.8214,
-    "cq": 55.0,
+    "cq": 54.9,
     "pillar1": 55.9,
-    "pillar2": 35.3,
+    "pillar2": 35.1,
     "pillar3": 81.1,
     "metrics": {
       "residential_stability": {
@@ -1472,6 +1577,13 @@ const CITIES = {
         "rawFmt": "25.6",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 35.7,
+        "raw": 5.35,
+        "rawFmt": "5.35",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -1528,9 +1640,9 @@ const CITIES = {
     "population": "906k residents",
     "lat": 39.9612,
     "lng": -82.9988,
-    "cq": 57.4,
+    "cq": 58.3,
     "pillar1": 60.5,
-    "pillar2": 40.2,
+    "pillar2": 42.8,
     "pillar3": 76.6,
     "metrics": {
       "residential_stability": {
@@ -1567,6 +1679,13 @@ const CITIES = {
         "rawFmt": "31.2",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 55.1,
+        "raw": 8.27,
+        "rawFmt": "8.27",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 91.4,
@@ -1623,9 +1742,9 @@ const CITIES = {
     "population": "318k residents",
     "lat": 27.8006,
     "lng": -97.3964,
-    "cq": 53.6,
+    "cq": 52.0,
     "pillar1": 55.4,
-    "pillar2": 36.1,
+    "pillar2": 31.6,
     "pillar3": 75.1,
     "metrics": {
       "residential_stability": {
@@ -1662,6 +1781,13 @@ const CITIES = {
         "rawFmt": "36.2",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 16.7,
+        "raw": 2.5,
+        "rawFmt": "2.50",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 76.3,
@@ -1720,7 +1846,7 @@ const CITIES = {
     "lng": -96.797,
     "cq": 52.4,
     "pillar1": 63.7,
-    "pillar2": 32.4,
+    "pillar2": 32.2,
     "pillar3": 62.5,
     "metrics": {
       "residential_stability": {
@@ -1757,6 +1883,13 @@ const CITIES = {
         "rawFmt": "28.8",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 33.5,
+        "raw": 5.03,
+        "rawFmt": "5.03",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 66.8,
@@ -1813,9 +1946,9 @@ const CITIES = {
     "population": "716k residents",
     "lat": 39.7392,
     "lng": -104.9903,
-    "cq": 67.2,
+    "cq": 64.8,
     "pillar1": 69.5,
-    "pillar2": 56.8,
+    "pillar2": 50.2,
     "pillar3": 77.9,
     "metrics": {
       "residential_stability": {
@@ -1852,6 +1985,13 @@ const CITIES = {
         "rawFmt": "28.3",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 23.9,
+        "raw": 3.59,
+        "rawFmt": "3.59",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -1908,9 +2048,9 @@ const CITIES = {
     "population": "214k residents",
     "lat": 41.5868,
     "lng": -93.625,
-    "cq": 65.4,
+    "cq": 65.5,
     "pillar1": 63.2,
-    "pillar2": 53.1,
+    "pillar2": 53.3,
     "pillar3": 86.2,
     "metrics": {
       "residential_stability": {
@@ -1947,6 +2087,13 @@ const CITIES = {
         "rawFmt": "36.2",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 56.0,
+        "raw": 8.4,
+        "rawFmt": "8.40",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -2003,9 +2150,9 @@ const CITIES = {
     "population": "632k residents",
     "lat": 42.3314,
     "lng": -83.0458,
-    "cq": 73.8,
+    "cq": 73.3,
     "pillar1": 75.8,
-    "pillar2": 62.3,
+    "pillar2": 60.8,
     "pillar3": 86.8,
     "metrics": {
       "residential_stability": {
@@ -2042,6 +2189,13 @@ const CITIES = {
         "rawFmt": "34.4",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 55.7,
+        "raw": 8.35,
+        "rawFmt": "8.35",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -2098,9 +2252,9 @@ const CITIES = {
     "population": "284k residents",
     "lat": 35.994,
     "lng": -78.8986,
-    "cq": 54.1,
+    "cq": 54.7,
     "pillar1": 62.3,
-    "pillar2": 33.6,
+    "pillar2": 35.2,
     "pillar3": 69.7,
     "metrics": {
       "residential_stability": {
@@ -2137,6 +2291,13 @@ const CITIES = {
         "rawFmt": "25.9",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 43.1,
+        "raw": 6.46,
+        "rawFmt": "6.46",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 73.0,
@@ -2193,9 +2354,9 @@ const CITIES = {
     "population": "679k residents",
     "lat": 31.7619,
     "lng": -106.485,
-    "cq": 53.3,
+    "cq": 52.0,
     "pillar1": 56.3,
-    "pillar2": 37.6,
+    "pillar2": 33.9,
     "pillar3": 70.4,
     "metrics": {
       "residential_stability": {
@@ -2232,6 +2393,13 @@ const CITIES = {
         "rawFmt": "24.4",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 20.1,
+        "raw": 3.01,
+        "rawFmt": "3.01",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 68.1,
@@ -2288,9 +2456,9 @@ const CITIES = {
     "population": "919k residents",
     "lat": 32.7555,
     "lng": -97.3308,
-    "cq": 54.9,
+    "cq": 54.5,
     "pillar1": 60.7,
-    "pillar2": 38.2,
+    "pillar2": 37.3,
     "pillar3": 68.8,
     "metrics": {
       "residential_stability": {
@@ -2327,6 +2495,13 @@ const CITIES = {
         "rawFmt": "41.5",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 37.9,
+        "raw": 5.69,
+        "rawFmt": "5.69",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 70.5,
@@ -2383,9 +2558,9 @@ const CITIES = {
     "population": "542k residents",
     "lat": 36.7378,
     "lng": -119.7871,
-    "cq": 62.9,
+    "cq": 60.8,
     "pillar1": 61.0,
-    "pillar2": 51.4,
+    "pillar2": 45.5,
     "pillar3": 82.0,
     "metrics": {
       "residential_stability": {
@@ -2422,6 +2597,13 @@ const CITIES = {
         "rawFmt": "21.0",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 21.3,
+        "raw": 3.2,
+        "rawFmt": "3.20",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -2478,9 +2660,9 @@ const CITIES = {
     "population": "351k residents",
     "lat": 21.3069,
     "lng": -157.8583,
-    "cq": 77.6,
+    "cq": 76.8,
     "pillar1": 83.0,
-    "pillar2": 67.9,
+    "pillar2": 65.4,
     "pillar3": 82.7,
     "metrics": {
       "residential_stability": {
@@ -2517,6 +2699,13 @@ const CITIES = {
         "rawFmt": "14.3",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 52.1,
+        "raw": 7.81,
+        "rawFmt": "7.81",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -2573,9 +2762,9 @@ const CITIES = {
     "population": "2.3M residents",
     "lat": 29.7604,
     "lng": -95.3698,
-    "cq": 51.7,
+    "cq": 52.4,
     "pillar1": 61.8,
-    "pillar2": 30.8,
+    "pillar2": 32.6,
     "pillar3": 64.9,
     "metrics": {
       "residential_stability": {
@@ -2612,6 +2801,13 @@ const CITIES = {
         "rawFmt": "18.5",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 40.1,
+        "raw": 6.02,
+        "rawFmt": "6.02",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 66.7,
@@ -2668,9 +2864,9 @@ const CITIES = {
     "population": "887k residents",
     "lat": 39.7684,
     "lng": -86.1581,
-    "cq": 71.2,
+    "cq": 68.4,
     "pillar1": 69.3,
-    "pillar2": 67.7,
+    "pillar2": 59.8,
     "pillar3": 79.0,
     "metrics": {
       "residential_stability": {
@@ -2707,6 +2903,13 @@ const CITIES = {
         "rawFmt": "39.0",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 29.3,
+        "raw": 4.4,
+        "rawFmt": "4.40",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 97.6,
@@ -2763,9 +2966,9 @@ const CITIES = {
     "population": "950k residents",
     "lat": 30.3322,
     "lng": -81.6557,
-    "cq": 54.7,
+    "cq": 54.3,
     "pillar1": 61.6,
-    "pillar2": 31.2,
+    "pillar2": 30.0,
     "pillar3": 76.5,
     "metrics": {
       "residential_stability": {
@@ -2802,6 +3005,13 @@ const CITIES = {
         "rawFmt": "30.4",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 27.7,
+        "raw": 4.15,
+        "rawFmt": "4.15",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 81.0,
@@ -2858,9 +3068,9 @@ const CITIES = {
     "population": "508k residents",
     "lat": 39.0997,
     "lng": -94.5786,
-    "cq": 60.7,
+    "cq": 61.2,
     "pillar1": 68.6,
-    "pillar2": 48.9,
+    "pillar2": 50.4,
     "pillar3": 64.4,
     "metrics": {
       "residential_stability": {
@@ -2897,6 +3107,13 @@ const CITIES = {
         "rawFmt": "32.8",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 57.6,
+        "raw": 8.64,
+        "rawFmt": "8.64",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 62.9,
@@ -2953,9 +3170,9 @@ const CITIES = {
     "population": "642k residents",
     "lat": 36.1699,
     "lng": -115.1398,
-    "cq": 53.0,
+    "cq": 54.0,
     "pillar1": 61.5,
-    "pillar2": 26.8,
+    "pillar2": 29.5,
     "pillar3": 76.2,
     "metrics": {
       "residential_stability": {
@@ -2992,6 +3209,13 @@ const CITIES = {
         "rawFmt": "17.0",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 40.8,
+        "raw": 6.12,
+        "rawFmt": "6.12",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 89.0,
@@ -3048,9 +3272,9 @@ const CITIES = {
     "population": "323k residents",
     "lat": 38.0406,
     "lng": -84.5037,
-    "cq": 60.6,
+    "cq": 58.6,
     "pillar1": 57.6,
-    "pillar2": 55.5,
+    "pillar2": 49.8,
     "pillar3": 72.4,
     "metrics": {
       "residential_stability": {
@@ -3087,6 +3311,13 @@ const CITIES = {
         "rawFmt": "30.1",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 27.3,
+        "raw": 4.1,
+        "rawFmt": "4.10",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 87.0,
@@ -3143,9 +3374,9 @@ const CITIES = {
     "population": "3.9M residents",
     "lat": 34.0522,
     "lng": -118.2437,
-    "cq": 62.1,
+    "cq": 62.7,
     "pillar1": 63.6,
-    "pillar2": 52.6,
+    "pillar2": 54.3,
     "pillar3": 73.0,
     "metrics": {
       "residential_stability": {
@@ -3182,6 +3413,13 @@ const CITIES = {
         "rawFmt": "26.8",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 61.5,
+        "raw": 9.22,
+        "rawFmt": "9.22",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -3238,9 +3476,9 @@ const CITIES = {
     "population": "633k residents",
     "lat": 38.2527,
     "lng": -85.7585,
-    "cq": 50.4,
+    "cq": 51.1,
     "pillar1": 56.5,
-    "pillar2": 22.2,
+    "pillar2": 24.3,
     "pillar3": 80.1,
     "metrics": {
       "residential_stability": {
@@ -3277,6 +3515,13 @@ const CITIES = {
         "rawFmt": "21.4",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 34.9,
+        "raw": 5.24,
+        "rawFmt": "5.24",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -3333,9 +3578,9 @@ const CITIES = {
     "population": "269k residents",
     "lat": 43.0731,
     "lng": -89.4012,
-    "cq": 45.1,
+    "cq": 50.7,
     "pillar1": 58.5,
-    "pillar2": 20.2,
+    "pillar2": 36.0,
     "pillar3": 58.7,
     "metrics": {
       "residential_stability": {
@@ -3372,6 +3617,13 @@ const CITIES = {
         "rawFmt": "16.4",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 100.0,
+        "raw": 15.59,
+        "rawFmt": "15.59",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 57.1,
@@ -3428,9 +3680,9 @@ const CITIES = {
     "population": "633k residents",
     "lat": 35.1495,
     "lng": -90.049,
-    "cq": 58.6,
+    "cq": 58.4,
     "pillar1": 68.8,
-    "pillar2": 36.8,
+    "pillar2": 36.1,
     "pillar3": 72.9,
     "metrics": {
       "residential_stability": {
@@ -3467,6 +3719,13 @@ const CITIES = {
         "rawFmt": "28.0",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 35.2,
+        "raw": 5.28,
+        "rawFmt": "5.28",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 80.6,
@@ -3523,9 +3782,9 @@ const CITIES = {
     "population": "577k residents",
     "lat": 43.0389,
     "lng": -87.9065,
-    "cq": 63.6,
+    "cq": 66.1,
     "pillar1": 65.6,
-    "pillar2": 45.8,
+    "pillar2": 53.0,
     "pillar3": 85.2,
     "metrics": {
       "residential_stability": {
@@ -3562,6 +3821,13 @@ const CITIES = {
         "rawFmt": "22.7",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 81.8,
+        "raw": 12.27,
+        "rawFmt": "12.27",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -3618,9 +3884,9 @@ const CITIES = {
     "population": "430k residents",
     "lat": 44.9778,
     "lng": -93.265,
-    "cq": 69.7,
+    "cq": 71.9,
     "pillar1": 66.8,
-    "pillar2": 66.1,
+    "pillar2": 72.5,
     "pillar3": 79.2,
     "metrics": {
       "residential_stability": {
@@ -3657,6 +3923,13 @@ const CITIES = {
         "rawFmt": "44.0",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 100.0,
+        "raw": 16.44,
+        "rawFmt": "16.44",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 97.3,
@@ -3713,9 +3986,9 @@ const CITIES = {
     "population": "689k residents",
     "lat": 36.1627,
     "lng": -86.7816,
-    "cq": 54.4,
+    "cq": 53.3,
     "pillar1": 65.4,
-    "pillar2": 31.9,
+    "pillar2": 28.7,
     "pillar3": 68.3,
     "metrics": {
       "residential_stability": {
@@ -3752,6 +4025,13 @@ const CITIES = {
         "rawFmt": "26.0",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 17.7,
+        "raw": 2.66,
+        "rawFmt": "2.66",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 78.1,
@@ -3808,9 +4088,9 @@ const CITIES = {
     "population": "384k residents",
     "lat": 29.9511,
     "lng": -90.0715,
-    "cq": 75.2,
+    "cq": 72.1,
     "pillar1": 72.6,
-    "pillar2": 77.1,
+    "pillar2": 68.2,
     "pillar3": 76.8,
     "metrics": {
       "residential_stability": {
@@ -3847,6 +4127,13 @@ const CITIES = {
         "rawFmt": "24.6",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 29.9,
+        "raw": 4.49,
+        "rawFmt": "4.49",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 98.2,
@@ -3903,9 +4190,9 @@ const CITIES = {
     "population": "8.3M residents",
     "lat": 40.7128,
     "lng": -74.006,
-    "cq": 63.5,
+    "cq": 62.6,
     "pillar1": 64.4,
-    "pillar2": 48.5,
+    "pillar2": 45.7,
     "pillar3": 83.2,
     "metrics": {
       "residential_stability": {
@@ -3942,6 +4229,13 @@ const CITIES = {
         "rawFmt": "32.4",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 36.1,
+        "raw": 5.42,
+        "rawFmt": "5.42",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -3998,9 +4292,9 @@ const CITIES = {
     "population": "681k residents",
     "lat": 35.4676,
     "lng": -97.5164,
-    "cq": 58.2,
+    "cq": 57.0,
     "pillar1": 59.0,
-    "pillar2": 45.7,
+    "pillar2": 42.2,
     "pillar3": 74.4,
     "metrics": {
       "residential_stability": {
@@ -4037,6 +4331,13 @@ const CITIES = {
         "rawFmt": "35.8",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 30.7,
+        "raw": 4.61,
+        "rawFmt": "4.61",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 78.8,
@@ -4093,9 +4394,9 @@ const CITIES = {
     "population": "486k residents",
     "lat": 41.2565,
     "lng": -95.9345,
-    "cq": 64.5,
+    "cq": 63.9,
     "pillar1": 64.2,
-    "pillar2": 59.2,
+    "pillar2": 57.4,
     "pillar3": 72.5,
     "metrics": {
       "residential_stability": {
@@ -4132,6 +4433,13 @@ const CITIES = {
         "rawFmt": "33.9",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 51.1,
+        "raw": 7.66,
+        "rawFmt": "7.66",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 78.0,
@@ -4188,9 +4496,9 @@ const CITIES = {
     "population": "1.6M residents",
     "lat": 39.9526,
     "lng": -75.1652,
-    "cq": 65.0,
+    "cq": 65.1,
     "pillar1": 67.0,
-    "pillar2": 46.9,
+    "pillar2": 47.2,
     "pillar3": 87.0,
     "metrics": {
       "residential_stability": {
@@ -4227,6 +4535,13 @@ const CITIES = {
         "rawFmt": "33.0",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 50.1,
+        "raw": 7.52,
+        "rawFmt": "7.52",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -4283,9 +4598,9 @@ const CITIES = {
     "population": "1.6M residents",
     "lat": 33.4484,
     "lng": -112.074,
-    "cq": 53.2,
+    "cq": 53.7,
     "pillar1": 56.6,
-    "pillar2": 30.4,
+    "pillar2": 31.7,
     "pillar3": 79.8,
     "metrics": {
       "residential_stability": {
@@ -4322,6 +4637,13 @@ const CITIES = {
         "rawFmt": "15.6",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 36.8,
+        "raw": 5.52,
+        "rawFmt": "5.52",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -4378,9 +4700,9 @@ const CITIES = {
     "population": "303k residents",
     "lat": 40.4406,
     "lng": -79.9959,
-    "cq": 71.0,
+    "cq": 73.8,
     "pillar1": 79.2,
-    "pillar2": 58.9,
+    "pillar2": 66.9,
     "pillar3": 74.9,
     "metrics": {
       "residential_stability": {
@@ -4417,6 +4739,13 @@ const CITIES = {
         "rawFmt": "37.3",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 100.0,
+        "raw": 26.75,
+        "rawFmt": "26.75",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 78.7,
@@ -4473,9 +4802,9 @@ const CITIES = {
     "population": "653k residents",
     "lat": 45.5231,
     "lng": -122.6765,
-    "cq": 64.8,
+    "cq": 67.4,
     "pillar1": 62.7,
-    "pillar2": 52.5,
+    "pillar2": 60.0,
     "pillar3": 85.2,
     "metrics": {
       "residential_stability": {
@@ -4512,6 +4841,13 @@ const CITIES = {
         "rawFmt": "24.6",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 89.7,
+        "raw": 13.46,
+        "rawFmt": "13.46",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -4568,9 +4904,9 @@ const CITIES = {
     "population": "191k residents",
     "lat": 41.824,
     "lng": -71.4128,
-    "cq": 73.1,
+    "cq": 74.8,
     "pillar1": 73.2,
-    "pillar2": 61.8,
+    "pillar2": 66.7,
     "pillar3": 88.7,
     "metrics": {
       "residential_stability": {
@@ -4607,6 +4943,13 @@ const CITIES = {
         "rawFmt": "47.4",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 89.3,
+        "raw": 13.4,
+        "rawFmt": "13.40",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -4663,9 +5006,9 @@ const CITIES = {
     "population": "468k residents",
     "lat": 35.7796,
     "lng": -78.6382,
-    "cq": 51.1,
+    "cq": 55.0,
     "pillar1": 60.0,
-    "pillar2": 24.1,
+    "pillar2": 35.5,
     "pillar3": 74.5,
     "metrics": {
       "residential_stability": {
@@ -4702,6 +5045,13 @@ const CITIES = {
         "rawFmt": "23.3",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 83.1,
+        "raw": 12.47,
+        "rawFmt": "12.47",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 85.0,
@@ -4758,9 +5108,9 @@ const CITIES = {
     "population": "227k residents",
     "lat": 37.5407,
     "lng": -77.436,
-    "cq": 65.4,
+    "cq": 61.8,
     "pillar1": 63.0,
-    "pillar2": 64.4,
+    "pillar2": 54.0,
     "pillar3": 70.8,
     "metrics": {
       "residential_stability": {
@@ -4797,6 +5147,13 @@ const CITIES = {
         "rawFmt": "51.1",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 15.5,
+        "raw": 2.32,
+        "rawFmt": "2.32",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 83.8,
@@ -4853,9 +5210,9 @@ const CITIES = {
     "population": "211k residents",
     "lat": 43.1566,
     "lng": -77.6088,
-    "cq": 77.2,
+    "cq": 78.3,
     "pillar1": 67.8,
-    "pillar2": 83.2,
+    "pillar2": 86.2,
     "pillar3": 83.9,
     "metrics": {
       "residential_stability": {
@@ -4892,6 +5249,13 @@ const CITIES = {
         "rawFmt": "76.7",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 100.0,
+        "raw": 15.36,
+        "rawFmt": "15.36",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -4948,9 +5312,9 @@ const CITIES = {
     "population": "525k residents",
     "lat": 38.5816,
     "lng": -121.4944,
-    "cq": 65.5,
+    "cq": 67.1,
     "pillar1": 71.6,
-    "pillar2": 47.7,
+    "pillar2": 52.4,
     "pillar3": 80.5,
     "metrics": {
       "residential_stability": {
@@ -4987,6 +5351,13 @@ const CITIES = {
         "rawFmt": "20.4",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 70.8,
+        "raw": 10.62,
+        "rawFmt": "10.62",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -5043,9 +5414,9 @@ const CITIES = {
     "population": "201k residents",
     "lat": 40.7608,
     "lng": -111.891,
-    "cq": 51.0,
+    "cq": 55.6,
     "pillar1": 64.4,
-    "pillar2": 32.4,
+    "pillar2": 45.5,
     "pillar3": 55.8,
     "metrics": {
       "residential_stability": {
@@ -5082,6 +5453,13 @@ const CITIES = {
         "rawFmt": "27.9",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 100.0,
+        "raw": 22.08,
+        "rawFmt": "22.08",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 53.8,
@@ -5138,9 +5516,9 @@ const CITIES = {
     "population": "1.4M residents",
     "lat": 29.4241,
     "lng": -98.4936,
-    "cq": 55.5,
+    "cq": 54.0,
     "pillar1": 57.1,
-    "pillar2": 43.4,
+    "pillar2": 39.1,
     "pillar3": 69.7,
     "metrics": {
       "residential_stability": {
@@ -5177,6 +5555,13 @@ const CITIES = {
         "rawFmt": "36.5",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 24.6,
+        "raw": 3.69,
+        "rawFmt": "3.69",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 71.8,
@@ -5233,9 +5618,9 @@ const CITIES = {
     "population": "1.4M residents",
     "lat": 32.7157,
     "lng": -117.1611,
-    "cq": 56.8,
+    "cq": 59.1,
     "pillar1": 61.3,
-    "pillar2": 38.4,
+    "pillar2": 45.0,
     "pillar3": 75.3,
     "metrics": {
       "residential_stability": {
@@ -5272,6 +5657,13 @@ const CITIES = {
         "rawFmt": "13.2",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 70.3,
+        "raw": 10.55,
+        "rawFmt": "10.55",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -5328,9 +5720,9 @@ const CITIES = {
     "population": "874k residents",
     "lat": 37.7749,
     "lng": -122.4194,
-    "cq": 63.7,
+    "cq": 65.5,
     "pillar1": 66.5,
-    "pillar2": 48.3,
+    "pillar2": 53.4,
     "pillar3": 80.8,
     "metrics": {
       "residential_stability": {
@@ -5367,6 +5759,13 @@ const CITIES = {
         "rawFmt": "16.3",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 72.5,
+        "raw": 10.88,
+        "rawFmt": "10.88",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -5423,9 +5822,9 @@ const CITIES = {
     "population": "1.0M residents",
     "lat": 37.3382,
     "lng": -121.8863,
-    "cq": 57.2,
+    "cq": 60.6,
     "pillar1": 57.5,
-    "pillar2": 40.8,
+    "pillar2": 50.5,
     "pillar3": 79.6,
     "metrics": {
       "residential_stability": {
@@ -5462,6 +5861,13 @@ const CITIES = {
         "rawFmt": "18.8",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 89.2,
+        "raw": 13.38,
+        "rawFmt": "13.38",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -5518,9 +5924,9 @@ const CITIES = {
     "population": "737k residents",
     "lat": 47.6062,
     "lng": -122.3321,
-    "cq": 64.1,
+    "cq": 67.2,
     "pillar1": 62.6,
-    "pillar2": 56.5,
+    "pillar2": 65.5,
     "pillar3": 77.0,
     "metrics": {
       "residential_stability": {
@@ -5557,6 +5963,13 @@ const CITIES = {
         "rawFmt": "19.7",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 100.0,
+        "raw": 27.93,
+        "rawFmt": "27.93",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 91.1,
@@ -5613,9 +6026,9 @@ const CITIES = {
     "population": "229k residents",
     "lat": 47.6587,
     "lng": -117.426,
-    "cq": 64.4,
+    "cq": 65.3,
     "pillar1": 57.3,
-    "pillar2": 53.9,
+    "pillar2": 56.7,
     "pillar3": 90.3,
     "metrics": {
       "residential_stability": {
@@ -5652,6 +6065,13 @@ const CITIES = {
         "rawFmt": "33.2",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 69.1,
+        "raw": 10.36,
+        "rawFmt": "10.36",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -5708,9 +6128,9 @@ const CITIES = {
     "population": "302k residents",
     "lat": 38.627,
     "lng": -90.1994,
-    "cq": 71.8,
+    "cq": 69.9,
     "pillar1": 76.8,
-    "pillar2": 65.6,
+    "pillar2": 60.2,
     "pillar3": 72.5,
     "metrics": {
       "residential_stability": {
@@ -5747,6 +6167,13 @@ const CITIES = {
         "rawFmt": "40.5",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 40.1,
+        "raw": 6.02,
+        "rawFmt": "6.02",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 73.3,
@@ -5803,9 +6230,9 @@ const CITIES = {
     "population": "312k residents",
     "lat": 44.9537,
     "lng": -93.09,
-    "cq": 69.9,
+    "cq": 68.6,
     "pillar1": 72.8,
-    "pillar2": 57.4,
+    "pillar2": 53.6,
     "pillar3": 82.9,
     "metrics": {
       "residential_stability": {
@@ -5842,6 +6269,13 @@ const CITIES = {
         "rawFmt": "35.1",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 39.5,
+        "raw": 5.92,
+        "rawFmt": "5.92",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -5898,9 +6332,9 @@ const CITIES = {
     "population": "321k residents",
     "lat": 37.9577,
     "lng": -121.2908,
-    "cq": 69.4,
+    "cq": 66.8,
     "pillar1": 58.9,
-    "pillar2": 69.2,
+    "pillar2": 61.9,
     "pillar3": 86.4,
     "metrics": {
       "residential_stability": {
@@ -5937,6 +6371,13 @@ const CITIES = {
         "rawFmt": "49.0",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 35.1,
+        "raw": 5.26,
+        "rawFmt": "5.26",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -5993,9 +6434,9 @@ const CITIES = {
     "population": "403k residents",
     "lat": 27.9506,
     "lng": -82.4572,
-    "cq": 53.7,
+    "cq": 58.5,
     "pillar1": 61.7,
-    "pillar2": 30.0,
+    "pillar2": 43.6,
     "pillar3": 74.1,
     "metrics": {
       "residential_stability": {
@@ -6032,6 +6473,13 @@ const CITIES = {
         "rawFmt": "22.2",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 99.4,
+        "raw": 14.91,
+        "rawFmt": "14.91",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 79.9,
@@ -6090,7 +6538,7 @@ const CITIES = {
     "lng": -110.9747,
     "cq": 53.4,
     "pillar1": 56.8,
-    "pillar2": 33.7,
+    "pillar2": 33.8,
     "pillar3": 75.6,
     "metrics": {
       "residential_stability": {
@@ -6127,6 +6575,13 @@ const CITIES = {
         "rawFmt": "25.5",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 35.7,
+        "raw": 5.36,
+        "rawFmt": "5.36",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 91.3,
@@ -6183,9 +6638,9 @@ const CITIES = {
     "population": "459k residents",
     "lat": 36.8529,
     "lng": -75.978,
-    "cq": 49.0,
+    "cq": 49.3,
     "pillar1": 59.8,
-    "pillar2": 20.8,
+    "pillar2": 21.6,
     "pillar3": 71.2,
     "metrics": {
       "residential_stability": {
@@ -6222,6 +6677,13 @@ const CITIES = {
         "rawFmt": "21.4",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 26.8,
+        "raw": 4.02,
+        "rawFmt": "4.02",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 81.5,
@@ -6278,9 +6740,9 @@ const CITIES = {
     "population": "690k residents",
     "lat": 38.9072,
     "lng": -77.0369,
-    "cq": 76.4,
+    "cq": 74.9,
     "pillar1": 80.6,
-    "pillar2": 66.9,
+    "pillar2": 62.6,
     "pillar3": 83.0,
     "metrics": {
       "residential_stability": {
@@ -6317,6 +6779,13 @@ const CITIES = {
         "rawFmt": "29.4",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 44.8,
+        "raw": 6.72,
+        "rawFmt": "6.72",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 100.0,
@@ -6373,9 +6842,9 @@ const CITIES = {
     "population": "398k residents",
     "lat": 37.6872,
     "lng": -97.3301,
-    "cq": 54.4,
+    "cq": 53.2,
     "pillar1": 58.5,
-    "pillar2": 36.6,
+    "pillar2": 33.3,
     "pillar3": 72.6,
     "metrics": {
       "residential_stability": {
@@ -6412,6 +6881,13 @@ const CITIES = {
         "rawFmt": "25.3",
         "benchmark": "50 / 1k 65+",
         "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 21.7,
+        "raw": 3.25,
+        "rawFmt": "3.25",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
       },
       "health_insurance": {
         "score": 78.0,

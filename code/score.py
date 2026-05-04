@@ -22,6 +22,7 @@ Benchmarks:
   Pillar 2 — Institutional Care (35% of CQ)
     fqhc_density             15/100k — eliminates HRSA shortage designation
     nursing_home_capacity    50/1k65 — 5% of 65+ pop in skilled nursing (literature-based)
+    child_care_capacity      15/1k_under5 — CCDBG access standard (licensed care for 50% of eligible)
 
   Pillar 3 — Economic Access to Care (25% of CQ)
     health_insurance         100%    — Medicaid/CHIP coverage rate (C27007; score = raw rate directly)
@@ -72,13 +73,17 @@ SCORED_METRICS = [
     #   distress at scale when informal networks are insufficient? Nussbaum capabilities:
     #   bodily health and affiliation require formal institutional backup.
     #
-    #   FQHC density:           55% — strongest evidence base; federal safety-net mandate;
+    #   FQHC density:           45% — strongest evidence base; federal safety-net mandate;
     #     most directly serves vulnerable populations regardless of ability to pay.
     #     Rosenbaum et al. (2011); Shi et al.
-    #   Nursing home capacity:  45% — certified beds per 1k residents 65+. Benchmark: 50/1k
+    #   Nursing home capacity:  35% — certified beds per 1k residents 65+. Benchmark: 50/1k
     #     = 5% of elderly in skilled nursing care (literature-based adequacy threshold).
-    ("health_center_density",     "density_per_100k",    "pillar2", 15.0, 0.55),
-    ("nursing_home_capacity",     "beds_per_1k_65plus",  "pillar2", 50.0, 0.45),
+    #   Child care capacity:    20% — licensed establishments per 1k children under 5.
+    #     Benchmark: 15/1k = CCDBG access standard (~50% of income-eligible children covered
+    #     in licensed settings). Census CBP NAICS 624410; ACS B01001 under-5 pop denominator.
+    ("health_center_density",     "density_per_100k",           "pillar2", 15.0, 0.45),
+    ("nursing_home_capacity",     "beds_per_1k_65plus",         "pillar2", 50.0, 0.35),
+    ("child_care_capacity",       "establishments_per_1k_under5", "pillar2", 15.0, 0.20),
 
     # Pillar 3 — Economic Access to Care (25% of CQ)
     #   Enabling conditions — whether care infrastructure can actually reach those who need it.
@@ -134,6 +139,7 @@ METRIC_LABELS = {
     "library_density.density_per_100k":            "Library Density (per 100k residents)",
     "health_center_density.density_per_100k":      "FQHCs (per 100k)",
     "nursing_home_capacity.beds_per_1k_65plus":    "Nursing Home Capacity (beds/1k 65+)",
+    "child_care_capacity.establishments_per_1k_under5": "Child Care Capacity (establishments/1k under-5)",
     "health_insurance_coverage.coverage_rate":       "Healthcare Coverage Rate",
     "housing_cost_burden.pct_not_burdened":        "Housing Affordability (% not cost-burdened)",
     "snap_participation.coverage_rate":            "SNAP Coverage Rate",
@@ -358,6 +364,12 @@ DASHBOARD_METRICS = {
         "benchmark": "50 / 1k 65+", "unit": "certified beds per 1,000 residents 65+",
         "fmt": lambda v: f"{v:.1f}",
     },
+    "child_care": {
+        "key": "child_care",
+        "raw_key": ("child_care_capacity", "establishments_per_1k_under5"),
+        "benchmark": "15 / 1k under-5", "unit": "licensed child care establishments per 1,000 children under 5",
+        "fmt": lambda v: f"{v:.2f}",
+    },
     # Pillar 3 — Economic Access to Care
     "health_insurance": {
         "key": "health_insurance",
@@ -419,6 +431,7 @@ SCORE_COL = {
     "library_density":       "score_library_density.density_per_100k",
     "fqhc":                  "score_health_center_density.density_per_100k",
     "nursing_home":          "score_nursing_home_capacity.beds_per_1k_65plus",
+    "child_care":            "score_child_care_capacity.establishments_per_1k_under5",
     "health_insurance":      "score_health_insurance_coverage.coverage_rate",
     "housing_cost_burden":   "score_housing_cost_burden.pct_not_burdened",
     "snap_coverage":         "score_snap_participation.coverage_rate",
