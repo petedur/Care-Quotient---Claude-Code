@@ -60,13 +60,17 @@ SCORED_METRICS = [
     #
     #   Residential stability:  50% — foundational precondition for relational network
     #     formation. Factor analysis loading 0.70. Putnam (2000); Sampson et al. (1997).
-    #   Nonprofit density:      35% — organized community care response (Tronto: competence).
+    #   Nonprofit density:      40% — organized community care response (Tronto: competence).
     #     NTEE P+E+F+K. Factor analysis showed r=0.85 across 71 cities; single dimension.
-    #   Library density:        15% — public community infrastructure and de facto distress
+    #   Library density:         5% — public community infrastructure and de facto distress
     #     absorption site. Explicitly mentioned by mentor as an institution of care.
-    ("residential_stability",     "pct_same_house",      "pillar1", 95.0, 0.50),
-    ("nonprofit_density",         "combined_care",       "pillar1", 25.0, 0.35),
-    ("library_density",           "density_per_100k",    "pillar1",  5.0, 0.15),
+    #   Religious density:       5% — faith institutions as community anchors (all denominations).
+    #     ARDA 2020 Religion Census; county-level congregation counts. Low weight reflects
+    #     difficulty quantifying care content; presence counted as community anchor (like libraries).
+    ("residential_stability",     "pct_same_house",         "pillar1", 95.0, 0.50),
+    ("nonprofit_density",         "combined_care",          "pillar1", 25.0, 0.40),
+    ("library_density",           "density_per_100k",       "pillar1",  5.0, 0.05),
+    ("religious_density",         "congregations_per_100k", "pillar1",150.0, 0.05),
 
     # Pillar 2 — Institutional Care (35% of CQ)
     #   Tronto (1993): competence phase — does the city have infrastructure to absorb
@@ -137,6 +141,7 @@ METRIC_LABELS = {
     "residential_stability.pct_same_house":        "Residential Stability",
     "nonprofit_density.combined_care":             "Care Nonprofits (P+E+F+K per 10k)",
     "library_density.density_per_100k":            "Library Density (per 100k residents)",
+    "religious_density.congregations_per_100k":    "Religious Institution Density (congregations/100k)",
     "health_center_density.density_per_100k":      "FQHCs (per 100k)",
     "nursing_home_capacity.beds_per_1k_65plus":    "Nursing Home Capacity (beds/1k 65+)",
     "child_care_capacity.establishments_per_1k_under5": "Child Care Capacity (establishments/1k under-5)",
@@ -351,6 +356,12 @@ DASHBOARD_METRICS = {
         "benchmark": "5 / 100k", "unit": "public libraries per 100,000 residents",
         "fmt": lambda v: f"{v:.2f}",
     },
+    "religious_density": {
+        "key": "religious_density",
+        "raw_key": ("religious_density", "congregations_per_100k"),
+        "benchmark": "150 / 100k", "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)",
+        "fmt": lambda v: f"{v:.1f}",
+    },
     # Pillar 2 — Institutional Care
     "fqhc": {
         "key": "fqhc",
@@ -429,6 +440,7 @@ SCORE_COL = {
     "residential_stability": "score_residential_stability.pct_same_house",
     "combined_care":         "score_nonprofit_density.combined_care",
     "library_density":       "score_library_density.density_per_100k",
+    "religious_density":     "score_religious_density.congregations_per_100k",
     "fqhc":                  "score_health_center_density.density_per_100k",
     "nursing_home":          "score_nursing_home_capacity.beds_per_1k_65plus",
     "child_care":            "score_child_care_capacity.establishments_per_1k_under5",

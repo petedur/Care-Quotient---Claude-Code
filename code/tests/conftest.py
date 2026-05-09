@@ -19,8 +19,9 @@ from pathlib import Path
 
 SYNTHETIC_METRICS = [
     # (city, metric, sub_metric, value)
-    # Pillar structure (V6):
-    #   Pillar 1 — Social & Relational Care (40%): residential_stability, combined_care, library_density
+    # Pillar structure (V7):
+    #   Pillar 1 — Social & Relational Care (40%): residential_stability (50%), combined_care (40%),
+    #              library_density (5%), religious_density (5%)
     #   Pillar 2 — Institutional Care (35%): health_center_density, nursing_home_capacity, child_care_capacity
     #   Pillar 3 — Economic Access (25%): health_insurance_coverage, housing_cost_burden, snap_participation
 
@@ -28,6 +29,7 @@ SYNTHETIC_METRICS = [
     ("perfect", "residential_stability",     "pct_same_house",              95.0),
     ("perfect", "nonprofit_density",         "combined_care",               25.0),
     ("perfect", "library_density",           "density_per_100k",             5.0),
+    ("perfect", "religious_density",         "congregations_per_100k",     150.0),
     ("perfect", "health_center_density",     "density_per_100k",            15.0),
     ("perfect", "nursing_home_capacity",     "beds_per_1k_65plus",          50.0),
     ("perfect", "child_care_capacity",       "establishments_per_1k_under5", 15.0),
@@ -39,6 +41,7 @@ SYNTHETIC_METRICS = [
     ("half", "residential_stability",     "pct_same_house",              47.5),
     ("half", "nonprofit_density",         "combined_care",               12.5),
     ("half", "library_density",           "density_per_100k",             2.5),
+    ("half", "religious_density",         "congregations_per_100k",      75.0),
     ("half", "health_center_density",     "density_per_100k",             7.5),
     ("half", "nursing_home_capacity",     "beds_per_1k_65plus",          25.0),
     ("half", "child_care_capacity",       "establishments_per_1k_under5",  7.5),
@@ -50,6 +53,7 @@ SYNTHETIC_METRICS = [
     ("zero", "residential_stability",     "pct_same_house",              0.0),
     ("zero", "nonprofit_density",         "combined_care",               0.0),
     ("zero", "library_density",           "density_per_100k",            0.0),
+    ("zero", "religious_density",         "congregations_per_100k",      0.0),
     ("zero", "health_center_density",     "density_per_100k",            0.0),
     ("zero", "nursing_home_capacity",     "beds_per_1k_65plus",          0.0),
     ("zero", "child_care_capacity",       "establishments_per_1k_under5", 0.0),
@@ -61,6 +65,7 @@ SYNTHETIC_METRICS = [
     ("over", "residential_stability",     "pct_same_house",              99.0),
     ("over", "nonprofit_density",         "combined_care",               50.0),
     ("over", "library_density",           "density_per_100k",            10.0),
+    ("over", "religious_density",         "congregations_per_100k",     300.0),
     ("over", "health_center_density",     "density_per_100k",            30.0),
     ("over", "nursing_home_capacity",     "beds_per_1k_65plus",         100.0),
     ("over", "child_care_capacity",       "establishments_per_1k_under5", 30.0),
@@ -160,6 +165,22 @@ def child_care_capacity_json(tmp_path):
         "childcare_per_1k_under5":     10.5,
     }
     p = tmp_path / "child_care_capacity.json"
+    p.write_text(json.dumps(meta))
+    return p
+
+
+@pytest.fixture
+def religious_institutions_json(tmp_path):
+    # 300 congregations / 200k population = 150.0 per 100k
+    meta = {
+        "city":                   "testcity",
+        "congregations":          300,
+        "population":             200000,
+        "congregations_per_100k": 150.0,
+        "counties_matched":       1,
+        "source":                 "ARDA 2020 U.S. Religion Census",
+    }
+    p = tmp_path / "religious_institutions.json"
     p.write_text(json.dumps(meta))
     return p
 

@@ -270,6 +270,28 @@ def load_child_care_capacity(conn, city_key: str):
     print(f"  child_care_capacity loaded for {city_key}: {density}/1k under-5 ({estab} establishments)")
 
 
+def load_religious_institutions(conn, city_key: str):
+    raw = DATA_RAW / city_key / "religious_institutions.json"
+    if not raw.exists():
+        print(f"  SKIP religious_institutions for {city_key} (no raw file)")
+        return
+
+    import json
+    d = json.loads(raw.read_text())
+    per_100k = d.get("congregations_per_100k")
+    congregations = d.get("congregations", 0)
+    population = d.get("population", 0)
+
+    if per_100k is None:
+        print(f"  SKIP religious_institutions for {city_key} (missing density value)")
+        return
+
+    upsert(conn, city_key, "religious_density", "congregations_per_100k",
+           value=per_100k, count=congregations,
+           notes=f"population={population}, source=ARDA 2020")
+    print(f"  religious_institutions loaded for {city_key}: {per_100k}/100k ({congregations} congregations)")
+
+
 def load_places_diagnostics(conn, city_key: str):
     raw = DATA_RAW / city_key / "places_diagnostics.csv"
     if not raw.exists():
@@ -316,6 +338,7 @@ LOADERS = [
     load_health_insurance,
     load_nursing_homes,
     load_child_care_capacity,
+    load_religious_institutions,
     load_places_diagnostics,
 ]
 
@@ -347,7 +370,9 @@ VALIDATION_RULES = [
     # Nursing home capacity: beds per 1k residents 65+ — 0 possible; 150 would be anomalous
     ("nursing_home_capacity",     "beds_per_1k_65plus", 0.0, 150.0),
     # Child care capacity: establishments per 1k children under 5 — 0 possible; 50 would be anomalous
-    ("child_care_capacity",       "establishments_per_1k_under5", 0.0, 50.0),
+    ("child_care_capacity",       "establishments_per_1k_under5", 0.0,   50.0),
+    # Religious institution density: congregations per 100k — 0 possible; 2000 would be anomalous
+    ("religious_density",         "congregations_per_100k",       0.0, 2000.0),
 ]
 
 # Scored metrics that must be present for every city; missing = pipeline gap.
@@ -362,6 +387,7 @@ REQUIRED_SCORED = [
     ("health_center_density",     "density_per_100k"),
     ("nursing_home_capacity",     "beds_per_1k_65plus"),
     ("child_care_capacity",       "establishments_per_1k_under5"),
+    ("religious_density",         "congregations_per_100k"),
     ("health_insurance_coverage", "coverage_rate"),
     ("housing_cost_burden",       "pct_not_burdened"),
     ("snap_participation",        "coverage_rate"),

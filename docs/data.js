@@ -8,8 +8,8 @@ const CITIES = {
     "population": "565k residents",
     "lat": 35.0844,
     "lng": -106.6504,
-    "cq": 56.9,
-    "pillar1": 58.3,
+    "cq": 56.4,
+    "pillar1": 56.9,
     "pillar2": 36.1,
     "pillar3": 83.9,
     "metrics": {
@@ -33,6 +33,13 @@ const CITIES = {
         "rawFmt": "2.48",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 51.5,
+        "raw": 77.23,
+        "rawFmt": "77.2",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 24.8,
@@ -110,8 +117,8 @@ const CITIES = {
     "population": "291k residents",
     "lat": 61.2181,
     "lng": -149.9003,
-    "cq": 47.8,
-    "pillar1": 55.5,
+    "cq": 48.8,
+    "pillar1": 57.9,
     "pillar2": 14.1,
     "pillar3": 82.8,
     "metrics": {
@@ -135,6 +142,13 @@ const CITIES = {
         "rawFmt": "1.37",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 80.1,
+        "raw": 120.17,
+        "rawFmt": "120.2",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 9.1,
@@ -212,8 +226,8 @@ const CITIES = {
     "population": "499k residents",
     "lat": 33.749,
     "lng": -84.388,
-    "cq": 71.5,
-    "pillar1": 85.4,
+    "cq": 71.7,
+    "pillar1": 85.9,
     "pillar2": 58.3,
     "pillar3": 67.7,
     "metrics": {
@@ -237,6 +251,13 @@ const CITIES = {
         "rawFmt": "4.41",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 281.52,
+        "rawFmt": "281.5",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 32.1,
@@ -314,8 +335,8 @@ const CITIES = {
     "population": "367k residents",
     "lat": 39.7294,
     "lng": -104.8319,
-    "cq": 55.8,
-    "pillar1": 59.9,
+    "cq": 56.9,
+    "pillar1": 62.6,
     "pillar2": 34.4,
     "pillar3": 79.3,
     "metrics": {
@@ -339,6 +360,13 @@ const CITIES = {
         "rawFmt": "1.91",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 163.93,
+        "rawFmt": "163.9",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 12.7,
@@ -416,8 +444,8 @@ const CITIES = {
     "population": "962k residents",
     "lat": 30.2672,
     "lng": -97.7431,
-    "cq": 52.5,
-    "pillar1": 60.4,
+    "cq": 52.2,
+    "pillar1": 59.6,
     "pillar2": 38.9,
     "pillar3": 58.9,
     "metrics": {
@@ -441,6 +469,13 @@ const CITIES = {
         "rawFmt": "2.50",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 51.1,
+        "raw": 76.62,
+        "rawFmt": "76.6",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 30.5,
@@ -518,8 +553,8 @@ const CITIES = {
     "population": "407k residents",
     "lat": 35.3733,
     "lng": -119.0187,
-    "cq": 55.1,
-    "pillar1": 53.4,
+    "cq": 56.4,
+    "pillar1": 56.6,
     "pillar2": 38.5,
     "pillar3": 81.1,
     "metrics": {
@@ -543,6 +578,13 @@ const CITIES = {
         "rawFmt": "1.23",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 151.67,
+        "rawFmt": "151.7",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 31.1,
@@ -620,8 +662,8 @@ const CITIES = {
     "population": "586k residents",
     "lat": 39.2904,
     "lng": -76.6122,
-    "cq": 68.7,
-    "pillar1": 76.2,
+    "cq": 68.4,
+    "pillar1": 75.3,
     "pillar2": 46.8,
     "pillar3": 87.4,
     "metrics": {
@@ -645,6 +687,13 @@ const CITIES = {
         "rawFmt": "3.93",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 82.5,
+        "raw": 123.78,
+        "rawFmt": "123.8",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 30.7,
@@ -722,8 +771,8 @@ const CITIES = {
     "population": "228k residents",
     "lat": 30.4515,
     "lng": -91.1871,
-    "cq": 74.0,
-    "pillar1": 68.0,
+    "cq": 73.3,
+    "pillar1": 66.1,
     "pillar2": 80.1,
     "pillar3": 75.2,
     "metrics": {
@@ -747,6 +796,13 @@ const CITIES = {
         "rawFmt": "4.39",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 233.8,
+        "rawFmt": "233.8",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 82.1,
@@ -824,8 +880,8 @@ const CITIES = {
     "population": "212k residents",
     "lat": 33.5186,
     "lng": -86.8104,
-    "cq": 69.7,
-    "pillar1": 71.0,
+    "cq": 68.5,
+    "pillar1": 67.9,
     "pillar2": 67.3,
     "pillar3": 71.1,
     "metrics": {
@@ -849,6 +905,13 @@ const CITIES = {
         "rawFmt": "7.54",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 566.35,
+        "rawFmt": "566.4",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 56.5,
@@ -926,8 +989,8 @@ const CITIES = {
     "population": "676k residents",
     "lat": 42.3601,
     "lng": -71.0589,
-    "cq": 68.8,
-    "pillar1": 68.6,
+    "cq": 67.8,
+    "pillar1": 66.3,
     "pillar2": 58.2,
     "pillar3": 83.8,
     "metrics": {
@@ -951,6 +1014,13 @@ const CITIES = {
         "rawFmt": "3.55",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 48.9,
+        "raw": 73.41,
+        "rawFmt": "73.4",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 70.1,
@@ -1028,8 +1098,8 @@ const CITIES = {
     "population": "278k residents",
     "lat": 42.8864,
     "lng": -78.8784,
-    "cq": 70.5,
-    "pillar1": 69.9,
+    "cq": 70.1,
+    "pillar1": 68.9,
     "pillar2": 59.2,
     "pillar3": 87.2,
     "metrics": {
@@ -1053,6 +1123,13 @@ const CITIES = {
         "rawFmt": "3.95",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 262.26,
+        "rawFmt": "262.3",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 31.1,
@@ -1130,8 +1207,8 @@ const CITIES = {
     "population": "875k residents",
     "lat": 35.2271,
     "lng": -80.8431,
-    "cq": 53.6,
-    "pillar1": 64.1,
+    "cq": 54.4,
+    "pillar1": 66.1,
     "pillar2": 28.7,
     "pillar3": 71.8,
     "metrics": {
@@ -1155,6 +1232,13 @@ const CITIES = {
         "rawFmt": "1.94",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 73.3,
+        "raw": 109.88,
+        "rawFmt": "109.9",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 15.3,
@@ -1258,6 +1342,13 @@ const CITIES = {
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
       },
+      "religious_density": {
+        "score": 87.4,
+        "raw": 131.06,
+        "rawFmt": "131.1",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
+      },
       "fqhc": {
         "score": 47.9,
         "raw": 7.19,
@@ -1334,8 +1425,8 @@ const CITIES = {
     "population": "309k residents",
     "lat": 39.1031,
     "lng": -84.512,
-    "cq": 80.2,
-    "pillar1": 74.5,
+    "cq": 79.3,
+    "pillar1": 72.1,
     "pillar2": 91.9,
     "pillar3": 73.0,
     "metrics": {
@@ -1359,6 +1450,13 @@ const CITIES = {
         "rawFmt": "5.82",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 231.15,
+        "rawFmt": "231.2",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 81.9,
@@ -1436,8 +1534,8 @@ const CITIES = {
     "population": "373k residents",
     "lat": 41.4993,
     "lng": -81.6944,
-    "cq": 79.1,
-    "pillar1": 76.4,
+    "cq": 78.2,
+    "pillar1": 74.1,
     "pillar2": 78.5,
     "pillar3": 84.4,
     "metrics": {
@@ -1461,6 +1559,13 @@ const CITIES = {
         "rawFmt": "7.78",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 271.59,
+        "rawFmt": "271.6",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 75.1,
@@ -1538,8 +1643,8 @@ const CITIES = {
     "population": "479k residents",
     "lat": 38.8339,
     "lng": -104.8214,
-    "cq": 54.9,
-    "pillar1": 55.9,
+    "cq": 55.4,
+    "pillar1": 57.0,
     "pillar2": 35.1,
     "pillar3": 81.1,
     "metrics": {
@@ -1563,6 +1668,13 @@ const CITIES = {
         "rawFmt": "1.67",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 63.6,
+        "raw": 95.41,
+        "rawFmt": "95.4",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 22.3,
@@ -1640,8 +1752,8 @@ const CITIES = {
     "population": "906k residents",
     "lat": 39.9612,
     "lng": -82.9988,
-    "cq": 58.3,
-    "pillar1": 60.5,
+    "cq": 58.4,
+    "pillar1": 60.7,
     "pillar2": 42.8,
     "pillar3": 76.6,
     "metrics": {
@@ -1665,6 +1777,13 @@ const CITIES = {
         "rawFmt": "2.54",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 73.1,
+        "raw": 109.63,
+        "rawFmt": "109.6",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 22.1,
@@ -1742,8 +1861,8 @@ const CITIES = {
     "population": "318k residents",
     "lat": 27.8006,
     "lng": -97.3964,
-    "cq": 52.0,
-    "pillar1": 55.4,
+    "cq": 51.6,
+    "pillar1": 54.5,
     "pillar2": 31.6,
     "pillar3": 75.1,
     "metrics": {
@@ -1767,6 +1886,13 @@ const CITIES = {
         "rawFmt": "2.52",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 70.3,
+        "raw": 105.39,
+        "rawFmt": "105.4",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 6.3,
@@ -1844,8 +1970,8 @@ const CITIES = {
     "population": "1.3M residents",
     "lat": 32.7767,
     "lng": -96.797,
-    "cq": 52.4,
-    "pillar1": 63.7,
+    "cq": 53.2,
+    "pillar1": 65.7,
     "pillar2": 32.2,
     "pillar3": 62.5,
     "metrics": {
@@ -1869,6 +1995,13 @@ const CITIES = {
         "rawFmt": "2.38",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 187.22,
+        "rawFmt": "187.2",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 11.7,
@@ -1946,8 +2079,8 @@ const CITIES = {
     "population": "716k residents",
     "lat": 39.7392,
     "lng": -104.9903,
-    "cq": 64.8,
-    "pillar1": 69.5,
+    "cq": 62.9,
+    "pillar1": 64.6,
     "pillar2": 50.2,
     "pillar3": 77.9,
     "metrics": {
@@ -1971,6 +2104,13 @@ const CITIES = {
         "rawFmt": "4.61",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 46.2,
+        "raw": 69.32,
+        "rawFmt": "69.3",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 56.9,
@@ -2048,8 +2188,8 @@ const CITIES = {
     "population": "214k residents",
     "lat": 41.5868,
     "lng": -93.625,
-    "cq": 65.5,
-    "pillar1": 63.2,
+    "cq": 65.9,
+    "pillar1": 64.3,
     "pillar2": 53.3,
     "pillar3": 86.2,
     "metrics": {
@@ -2073,6 +2213,13 @@ const CITIES = {
         "rawFmt": "2.80",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 202.11,
+        "rawFmt": "202.1",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 37.3,
@@ -2150,8 +2297,8 @@ const CITIES = {
     "population": "632k residents",
     "lat": 42.3314,
     "lng": -83.0458,
-    "cq": 73.3,
-    "pillar1": 75.8,
+    "cq": 73.5,
+    "pillar1": 76.3,
     "pillar2": 60.8,
     "pillar3": 86.8,
     "metrics": {
@@ -2175,6 +2322,13 @@ const CITIES = {
         "rawFmt": "3.64",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 244.44,
+        "rawFmt": "244.4",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 56.9,
@@ -2252,8 +2406,8 @@ const CITIES = {
     "population": "284k residents",
     "lat": 35.994,
     "lng": -78.8986,
-    "cq": 54.7,
-    "pillar1": 62.3,
+    "cq": 55.1,
+    "pillar1": 63.3,
     "pillar2": 35.2,
     "pillar3": 69.7,
     "metrics": {
@@ -2277,6 +2431,13 @@ const CITIES = {
         "rawFmt": "2.47",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 84.9,
+        "raw": 127.33,
+        "rawFmt": "127.3",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 18.8,
@@ -2354,8 +2515,8 @@ const CITIES = {
     "population": "679k residents",
     "lat": 31.7619,
     "lng": -106.485,
-    "cq": 52.0,
-    "pillar1": 56.3,
+    "cq": 51.3,
+    "pillar1": 54.7,
     "pillar2": 33.9,
     "pillar3": 70.4,
     "metrics": {
@@ -2379,6 +2540,13 @@ const CITIES = {
         "rawFmt": "2.36",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 49.7,
+        "raw": 74.54,
+        "rawFmt": "74.5",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 28.5,
@@ -2456,8 +2624,8 @@ const CITIES = {
     "population": "919k residents",
     "lat": 32.7555,
     "lng": -97.3308,
-    "cq": 54.5,
-    "pillar1": 60.7,
+    "cq": 55.2,
+    "pillar1": 62.4,
     "pillar2": 37.3,
     "pillar3": 68.8,
     "metrics": {
@@ -2481,6 +2649,13 @@ const CITIES = {
         "rawFmt": "2.29",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 196.97,
+        "rawFmt": "197.0",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 1.5,
@@ -2558,8 +2733,8 @@ const CITIES = {
     "population": "542k residents",
     "lat": 36.7378,
     "lng": -119.7871,
-    "cq": 60.8,
-    "pillar1": 61.0,
+    "cq": 61.3,
+    "pillar1": 62.3,
     "pillar2": 45.5,
     "pillar3": 82.0,
     "metrics": {
@@ -2583,6 +2758,13 @@ const CITIES = {
         "rawFmt": "2.21",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 89.2,
+        "raw": 133.74,
+        "rawFmt": "133.7",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 59.0,
@@ -2660,8 +2842,8 @@ const CITIES = {
     "population": "351k residents",
     "lat": 21.3069,
     "lng": -157.8583,
-    "cq": 76.8,
-    "pillar1": 83.0,
+    "cq": 76.1,
+    "pillar1": 81.3,
     "pillar2": 65.4,
     "pillar3": 82.7,
     "metrics": {
@@ -2685,6 +2867,13 @@ const CITIES = {
         "rawFmt": "7.12",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 225.09,
+        "rawFmt": "225.1",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 100.0,
@@ -2762,8 +2951,8 @@ const CITIES = {
     "population": "2.3M residents",
     "lat": 29.7604,
     "lng": -95.3698,
-    "cq": 52.4,
-    "pillar1": 61.8,
+    "cq": 53.1,
+    "pillar1": 63.7,
     "pillar2": 32.6,
     "pillar3": 64.9,
     "metrics": {
@@ -2787,6 +2976,13 @@ const CITIES = {
         "rawFmt": "2.30",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 98.8,
+        "raw": 148.14,
+        "rawFmt": "148.1",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 25.7,
@@ -2864,8 +3060,8 @@ const CITIES = {
     "population": "887k residents",
     "lat": 39.7684,
     "lng": -86.1581,
-    "cq": 68.4,
-    "pillar1": 69.3,
+    "cq": 68.6,
+    "pillar1": 69.7,
     "pillar2": 59.8,
     "pillar3": 79.0,
     "metrics": {
@@ -2889,6 +3085,13 @@ const CITIES = {
         "rawFmt": "2.82",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 72.2,
+        "raw": 108.31,
+        "rawFmt": "108.3",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 59.3,
@@ -2966,8 +3169,8 @@ const CITIES = {
     "population": "950k residents",
     "lat": 30.3322,
     "lng": -81.6557,
-    "cq": 54.3,
-    "pillar1": 61.6,
+    "cq": 54.6,
+    "pillar1": 62.5,
     "pillar2": 30.0,
     "pillar3": 76.5,
     "metrics": {
@@ -2991,6 +3194,13 @@ const CITIES = {
         "rawFmt": "2.11",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 69.3,
+        "raw": 103.94,
+        "rawFmt": "103.9",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 7.0,
@@ -3094,6 +3304,13 @@ const CITIES = {
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
       },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 223.98,
+        "rawFmt": "224.0",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
+      },
       "fqhc": {
         "score": 35.4,
         "raw": 5.31,
@@ -3170,8 +3387,8 @@ const CITIES = {
     "population": "642k residents",
     "lat": 36.1699,
     "lng": -115.1398,
-    "cq": 54.0,
-    "pillar1": 61.5,
+    "cq": 55.6,
+    "pillar1": 65.5,
     "pillar2": 29.5,
     "pillar3": 76.2,
     "metrics": {
@@ -3195,6 +3412,13 @@ const CITIES = {
         "rawFmt": "1.40",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 98.8,
+        "raw": 148.15,
+        "rawFmt": "148.2",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 20.8,
@@ -3272,8 +3496,8 @@ const CITIES = {
     "population": "323k residents",
     "lat": 38.0406,
     "lng": -84.5037,
-    "cq": 58.6,
-    "pillar1": 57.6,
+    "cq": 59.0,
+    "pillar1": 58.8,
     "pillar2": 49.8,
     "pillar3": 72.4,
     "metrics": {
@@ -3297,6 +3521,13 @@ const CITIES = {
         "rawFmt": "1.86",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 64.7,
+        "raw": 97.03,
+        "rawFmt": "97.0",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 51.7,
@@ -3374,8 +3605,8 @@ const CITIES = {
     "population": "3.9M residents",
     "lat": 34.0522,
     "lng": -118.2437,
-    "cq": 62.7,
-    "pillar1": 63.6,
+    "cq": 63.7,
+    "pillar1": 66.0,
     "pillar2": 54.3,
     "pillar3": 73.0,
     "metrics": {
@@ -3399,6 +3630,13 @@ const CITIES = {
         "rawFmt": "2.00",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 96.5,
+        "raw": 144.79,
+        "rawFmt": "144.8",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 51.8,
@@ -3476,8 +3714,8 @@ const CITIES = {
     "population": "633k residents",
     "lat": 38.2527,
     "lng": -85.7585,
-    "cq": 51.1,
-    "pillar1": 56.5,
+    "cq": 52.1,
+    "pillar1": 58.9,
     "pillar2": 24.3,
     "pillar3": 80.1,
     "metrics": {
@@ -3501,6 +3739,13 @@ const CITIES = {
         "rawFmt": "1.42",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 84.2,
+        "raw": 126.37,
+        "rawFmt": "126.4",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 5.3,
@@ -3578,8 +3823,8 @@ const CITIES = {
     "population": "269k residents",
     "lat": 43.0731,
     "lng": -89.4012,
-    "cq": 50.7,
-    "pillar1": 58.5,
+    "cq": 51.2,
+    "pillar1": 59.8,
     "pillar2": 36.0,
     "pillar3": 58.7,
     "metrics": {
@@ -3603,6 +3848,13 @@ const CITIES = {
         "rawFmt": "2.60",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 96.3,
+        "raw": 144.5,
+        "rawFmt": "144.5",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 9.9,
@@ -3680,8 +3932,8 @@ const CITIES = {
     "population": "633k residents",
     "lat": 35.1495,
     "lng": -90.049,
-    "cq": 58.4,
-    "pillar1": 68.8,
+    "cq": 59.0,
+    "pillar1": 70.3,
     "pillar2": 36.1,
     "pillar3": 72.9,
     "metrics": {
@@ -3705,6 +3957,13 @@ const CITIES = {
         "rawFmt": "2.84",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 228.87,
+        "rawFmt": "228.9",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 21.1,
@@ -3782,8 +4041,8 @@ const CITIES = {
     "population": "577k residents",
     "lat": 43.0389,
     "lng": -87.9065,
-    "cq": 66.1,
-    "pillar1": 65.6,
+    "cq": 66.4,
+    "pillar1": 66.4,
     "pillar2": 53.0,
     "pillar3": 85.2,
     "metrics": {
@@ -3807,6 +4066,13 @@ const CITIES = {
         "rawFmt": "2.77",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 91.0,
+        "raw": 136.52,
+        "rawFmt": "136.5",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 46.2,
@@ -3884,8 +4150,8 @@ const CITIES = {
     "population": "430k residents",
     "lat": 44.9778,
     "lng": -93.265,
-    "cq": 71.9,
-    "pillar1": 66.8,
+    "cq": 71.8,
+    "pillar1": 66.5,
     "pillar2": 72.5,
     "pillar3": 79.2,
     "metrics": {
@@ -3909,6 +4175,13 @@ const CITIES = {
         "rawFmt": "3.72",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 210.89,
+        "rawFmt": "210.9",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 48.1,
@@ -3986,8 +4259,8 @@ const CITIES = {
     "population": "689k residents",
     "lat": 36.1627,
     "lng": -86.7816,
-    "cq": 53.3,
-    "pillar1": 65.4,
+    "cq": 53.4,
+    "pillar1": 65.7,
     "pillar2": 28.7,
     "pillar3": 68.3,
     "metrics": {
@@ -4011,6 +4284,13 @@ const CITIES = {
         "rawFmt": "3.19",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 92.2,
+        "raw": 138.37,
+        "rawFmt": "138.4",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 15.5,
@@ -4088,8 +4368,8 @@ const CITIES = {
     "population": "384k residents",
     "lat": 29.9511,
     "lng": -90.0715,
-    "cq": 72.1,
-    "pillar1": 72.6,
+    "cq": 71.4,
+    "pillar1": 70.8,
     "pillar2": 68.2,
     "pillar3": 76.8,
     "metrics": {
@@ -4113,6 +4393,13 @@ const CITIES = {
         "rawFmt": "3.91",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 74.8,
+        "raw": 112.24,
+        "rawFmt": "112.2",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 100.0,
@@ -4190,8 +4477,8 @@ const CITIES = {
     "population": "8.3M residents",
     "lat": 40.7128,
     "lng": -74.006,
-    "cq": 62.6,
-    "pillar1": 64.4,
+    "cq": 61.6,
+    "pillar1": 62.1,
     "pillar2": 45.7,
     "pillar3": 83.2,
     "metrics": {
@@ -4215,6 +4502,13 @@ const CITIES = {
         "rawFmt": "2.69",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 34.7,
+        "raw": 52.11,
+        "rawFmt": "52.1",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 35.2,
@@ -4292,8 +4586,8 @@ const CITIES = {
     "population": "681k residents",
     "lat": 35.4676,
     "lng": -97.5164,
-    "cq": 57.0,
-    "pillar1": 59.0,
+    "cq": 57.8,
+    "pillar1": 61.0,
     "pillar2": 42.2,
     "pillar3": 74.4,
     "metrics": {
@@ -4317,6 +4611,13 @@ const CITIES = {
         "rawFmt": "2.06",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 94.7,
+        "raw": 141.99,
+        "rawFmt": "142.0",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 24.5,
@@ -4394,8 +4695,8 @@ const CITIES = {
     "population": "486k residents",
     "lat": 41.2565,
     "lng": -95.9345,
-    "cq": 63.9,
-    "pillar1": 64.2,
+    "cq": 63.7,
+    "pillar1": 63.6,
     "pillar2": 57.4,
     "pillar3": 72.5,
     "metrics": {
@@ -4419,6 +4720,13 @@ const CITIES = {
         "rawFmt": "2.67",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 62.1,
+        "raw": 93.2,
+        "rawFmt": "93.2",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 52.1,
@@ -4496,8 +4804,8 @@ const CITIES = {
     "population": "1.6M residents",
     "lat": 39.9526,
     "lng": -75.1652,
-    "cq": 65.1,
-    "pillar1": 67.0,
+    "cq": 64.3,
+    "pillar1": 65.0,
     "pillar2": 47.2,
     "pillar3": 87.0,
     "metrics": {
@@ -4521,6 +4829,13 @@ const CITIES = {
         "rawFmt": "3.24",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 54.4,
+        "raw": 81.62,
+        "rawFmt": "81.6",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 31.2,
@@ -4598,8 +4913,8 @@ const CITIES = {
     "population": "1.6M residents",
     "lat": 33.4484,
     "lng": -112.074,
-    "cq": 53.7,
-    "pillar1": 56.6,
+    "cq": 55.4,
+    "pillar1": 60.8,
     "pillar2": 31.7,
     "pillar3": 79.8,
     "metrics": {
@@ -4623,6 +4938,13 @@ const CITIES = {
         "rawFmt": "1.06",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 165.1,
+        "rawFmt": "165.1",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 29.9,
@@ -4700,8 +5022,8 @@ const CITIES = {
     "population": "303k residents",
     "lat": 40.4406,
     "lng": -79.9959,
-    "cq": 73.8,
-    "pillar1": 79.2,
+    "cq": 73.1,
+    "pillar1": 77.5,
     "pillar2": 66.9,
     "pillar3": 74.9,
     "metrics": {
@@ -4725,6 +5047,13 @@ const CITIES = {
         "rawFmt": "7.92",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 373.3,
+        "rawFmt": "373.3",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 46.2,
@@ -4803,7 +5132,7 @@ const CITIES = {
     "lat": 45.5231,
     "lng": -122.6765,
     "cq": 67.4,
-    "pillar1": 62.7,
+    "pillar1": 62.8,
     "pillar2": 60.0,
     "pillar3": 85.2,
     "metrics": {
@@ -4827,6 +5156,13 @@ const CITIES = {
         "rawFmt": "2.45",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 66.1,
+        "raw": 99.16,
+        "rawFmt": "99.2",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 55.2,
@@ -4904,8 +5240,8 @@ const CITIES = {
     "population": "191k residents",
     "lat": 41.824,
     "lng": -71.4128,
-    "cq": 74.8,
-    "pillar1": 73.2,
+    "cq": 73.6,
+    "pillar1": 70.2,
     "pillar2": 66.7,
     "pillar3": 88.7,
     "metrics": {
@@ -4929,6 +5265,13 @@ const CITIES = {
         "rawFmt": "5.76",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 223.64,
+        "rawFmt": "223.6",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 34.9,
@@ -5006,8 +5349,8 @@ const CITIES = {
     "population": "468k residents",
     "lat": 35.7796,
     "lng": -78.6382,
-    "cq": 55.0,
-    "pillar1": 60.0,
+    "cq": 56.4,
+    "pillar1": 63.3,
     "pillar2": 35.5,
     "pillar3": 74.5,
     "metrics": {
@@ -5031,6 +5374,13 @@ const CITIES = {
         "rawFmt": "1.71",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 183.25,
+        "rawFmt": "183.2",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 5.7,
@@ -5134,6 +5484,13 @@ const CITIES = {
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
       },
+      "religious_density": {
+        "score": 88.3,
+        "raw": 132.39,
+        "rawFmt": "132.4",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
+      },
       "fqhc": {
         "score": 35.3,
         "raw": 5.3,
@@ -5210,8 +5567,8 @@ const CITIES = {
     "population": "211k residents",
     "lat": 43.1566,
     "lng": -77.6088,
-    "cq": 78.3,
-    "pillar1": 67.8,
+    "cq": 77.6,
+    "pillar1": 66.1,
     "pillar2": 86.2,
     "pillar3": 83.9,
     "metrics": {
@@ -5235,6 +5592,13 @@ const CITIES = {
         "rawFmt": "4.26",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 269.25,
+        "rawFmt": "269.2",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 69.4,
@@ -5312,8 +5676,8 @@ const CITIES = {
     "population": "525k residents",
     "lat": 38.5816,
     "lng": -121.4944,
-    "cq": 67.1,
-    "pillar1": 71.6,
+    "cq": 67.7,
+    "pillar1": 73.1,
     "pillar2": 52.4,
     "pillar3": 80.5,
     "metrics": {
@@ -5337,6 +5701,13 @@ const CITIES = {
         "rawFmt": "3.05",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 175.45,
+        "rawFmt": "175.4",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 53.3,
@@ -5414,8 +5785,8 @@ const CITIES = {
     "population": "201k residents",
     "lat": 40.7608,
     "lng": -111.891,
-    "cq": 55.6,
-    "pillar1": 64.4,
+    "cq": 55.1,
+    "pillar1": 63.0,
     "pillar2": 45.5,
     "pillar3": 55.8,
     "metrics": {
@@ -5439,6 +5810,13 @@ const CITIES = {
         "rawFmt": "3.99",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 832.64,
+        "rawFmt": "832.6",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 13.3,
@@ -5516,8 +5894,8 @@ const CITIES = {
     "population": "1.4M residents",
     "lat": 29.4241,
     "lng": -98.4936,
-    "cq": 54.0,
-    "pillar1": 57.1,
+    "cq": 53.6,
+    "pillar1": 56.2,
     "pillar2": 39.1,
     "pillar3": 69.7,
     "metrics": {
@@ -5541,6 +5919,13 @@ const CITIES = {
         "rawFmt": "2.44",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 60.6,
+        "raw": 90.96,
+        "rawFmt": "91.0",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 19.1,
@@ -5619,7 +6004,7 @@ const CITIES = {
     "lat": 32.7157,
     "lng": -117.1611,
     "cq": 59.1,
-    "pillar1": 61.3,
+    "pillar1": 61.2,
     "pillar2": 45.0,
     "pillar3": 75.3,
     "metrics": {
@@ -5643,6 +6028,13 @@ const CITIES = {
         "rawFmt": "2.81",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 84.0,
+        "raw": 126.03,
+        "rawFmt": "126.0",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 48.1,
@@ -5720,8 +6112,8 @@ const CITIES = {
     "population": "874k residents",
     "lat": 37.7749,
     "lng": -122.4194,
-    "cq": 65.5,
-    "pillar1": 66.5,
+    "cq": 63.9,
+    "pillar1": 62.5,
     "pillar2": 53.4,
     "pillar3": 80.8,
     "metrics": {
@@ -5745,6 +6137,13 @@ const CITIES = {
         "rawFmt": "3.78",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 40.9,
+        "raw": 61.33,
+        "rawFmt": "61.3",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 61.0,
@@ -5822,8 +6221,8 @@ const CITIES = {
     "population": "1.0M residents",
     "lat": 37.3382,
     "lng": -121.8863,
-    "cq": 60.6,
-    "pillar1": 57.5,
+    "cq": 60.5,
+    "pillar1": 57.3,
     "pillar2": 50.5,
     "pillar3": 79.6,
     "metrics": {
@@ -5847,6 +6246,13 @@ const CITIES = {
         "rawFmt": "2.07",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 62.0,
+        "raw": 93.07,
+        "rawFmt": "93.1",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 43.4,
@@ -5924,8 +6330,8 @@ const CITIES = {
     "population": "737k residents",
     "lat": 47.6062,
     "lng": -122.3321,
-    "cq": 67.2,
-    "pillar1": 62.6,
+    "cq": 66.7,
+    "pillar1": 61.2,
     "pillar2": 65.5,
     "pillar3": 77.0,
     "metrics": {
@@ -5949,6 +6355,13 @@ const CITIES = {
         "rawFmt": "3.93",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 198.98,
+        "rawFmt": "199.0",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 70.5,
@@ -6026,8 +6439,8 @@ const CITIES = {
     "population": "229k residents",
     "lat": 47.6587,
     "lng": -117.426,
-    "cq": 65.3,
-    "pillar1": 57.3,
+    "cq": 65.7,
+    "pillar1": 58.2,
     "pillar2": 56.7,
     "pillar3": 90.3,
     "metrics": {
@@ -6051,6 +6464,13 @@ const CITIES = {
         "rawFmt": "2.62",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 194.77,
+        "rawFmt": "194.8",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 43.7,
@@ -6128,8 +6548,8 @@ const CITIES = {
     "population": "302k residents",
     "lat": 38.627,
     "lng": -90.1994,
-    "cq": 69.9,
-    "pillar1": 76.8,
+    "cq": 69.0,
+    "pillar1": 74.4,
     "pillar2": 60.2,
     "pillar3": 72.5,
     "metrics": {
@@ -6153,6 +6573,13 @@ const CITIES = {
         "rawFmt": "4.97",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 169.44,
+        "rawFmt": "169.4",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 53.1,
@@ -6230,8 +6657,8 @@ const CITIES = {
     "population": "312k residents",
     "lat": 44.9537,
     "lng": -93.09,
-    "cq": 68.6,
-    "pillar1": 72.8,
+    "cq": 67.8,
+    "pillar1": 70.7,
     "pillar2": 53.6,
     "pillar3": 82.9,
     "metrics": {
@@ -6255,6 +6682,13 @@ const CITIES = {
         "rawFmt": "4.49",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 89.7,
+        "raw": 134.5,
+        "rawFmt": "134.5",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 47.1,
@@ -6332,8 +6766,8 @@ const CITIES = {
     "population": "321k residents",
     "lat": 37.9577,
     "lng": -121.2908,
-    "cq": 66.8,
-    "pillar1": 58.9,
+    "cq": 67.1,
+    "pillar1": 59.7,
     "pillar2": 61.9,
     "pillar3": 86.4,
     "metrics": {
@@ -6357,6 +6791,13 @@ const CITIES = {
         "rawFmt": "2.50",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 154.11,
+        "rawFmt": "154.1",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 45.7,
@@ -6434,8 +6875,8 @@ const CITIES = {
     "population": "403k residents",
     "lat": 27.9506,
     "lng": -82.4572,
-    "cq": 58.5,
-    "pillar1": 61.7,
+    "cq": 58.7,
+    "pillar1": 62.4,
     "pillar2": 43.6,
     "pillar3": 74.1,
     "metrics": {
@@ -6459,6 +6900,13 @@ const CITIES = {
         "rawFmt": "2.97",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 285.1,
+        "rawFmt": "285.1",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 18.2,
@@ -6537,7 +6985,7 @@ const CITIES = {
     "lat": 32.2226,
     "lng": -110.9747,
     "cq": 53.4,
-    "pillar1": 56.8,
+    "pillar1": 56.6,
     "pillar2": 33.8,
     "pillar3": 75.6,
     "metrics": {
@@ -6561,6 +7009,13 @@ const CITIES = {
         "rawFmt": "2.76",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 86.9,
+        "raw": 130.29,
+        "rawFmt": "130.3",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 19.7,
@@ -6638,8 +7093,8 @@ const CITIES = {
     "population": "459k residents",
     "lat": 36.8529,
     "lng": -75.978,
-    "cq": 49.3,
-    "pillar1": 59.8,
+    "cq": 48.9,
+    "pillar1": 58.8,
     "pillar2": 21.6,
     "pillar3": 71.2,
     "metrics": {
@@ -6663,6 +7118,13 @@ const CITIES = {
         "rawFmt": "2.18",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 38.5,
+        "raw": 57.68,
+        "rawFmt": "57.7",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 2.9,
@@ -6766,6 +7228,13 @@ const CITIES = {
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
       },
+      "religious_density": {
+        "score": 72.6,
+        "raw": 108.91,
+        "rawFmt": "108.9",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
+      },
       "fqhc": {
         "score": 73.5,
         "raw": 11.02,
@@ -6842,8 +7311,8 @@ const CITIES = {
     "population": "398k residents",
     "lat": 37.6872,
     "lng": -97.3301,
-    "cq": 53.2,
-    "pillar1": 58.5,
+    "cq": 53.7,
+    "pillar1": 59.8,
     "pillar2": 33.3,
     "pillar3": 72.6,
     "metrics": {
@@ -6867,6 +7336,13 @@ const CITIES = {
         "rawFmt": "2.26",
         "benchmark": "5 / 100k",
         "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 91.2,
+        "raw": 136.84,
+        "rawFmt": "136.8",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
       "fqhc": {
         "score": 25.1,

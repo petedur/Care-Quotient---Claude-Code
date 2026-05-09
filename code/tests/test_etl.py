@@ -130,6 +130,23 @@ def test_load_child_care_capacity(conn, child_care_capacity_json, monkeypatch):
     assert row[0] == pytest.approx(10.5, abs=0.01)
 
 
+def test_load_religious_institutions(conn, religious_institutions_json, monkeypatch):
+    monkeypatch.setattr(etl, "DATA_RAW", religious_institutions_json.parent)
+    (religious_institutions_json.parent / "testcity").mkdir(exist_ok=True)
+    religious_institutions_json.rename(
+        religious_institutions_json.parent / "testcity" / "religious_institutions.json"
+    )
+    etl.load_religious_institutions(conn, "testcity")
+    row = conn.execute(
+        "SELECT value FROM metrics "
+        "WHERE city='testcity' AND metric='religious_density' "
+        "AND sub_metric='congregations_per_100k'"
+    ).fetchone()
+    assert row is not None
+    # 300 congregations / 200000 population * 100000 = 150.0
+    assert row[0] == pytest.approx(150.0, abs=0.01)
+
+
 def test_load_nursing_homes_missing_file(conn, tmp_path, monkeypatch, capsys):
     """Missing meta file should skip gracefully, not raise."""
     monkeypatch.setattr(etl, "DATA_RAW", tmp_path)
@@ -146,6 +163,7 @@ def test_validation_passes_clean_data(conn, monkeypatch):
         ("testcity", "residential_stability",     "pct_same_house",              87.5),
         ("testcity", "nonprofit_density",         "combined_care",               10.0),
         ("testcity", "library_density",           "density_per_100k",             3.0),
+        ("testcity", "religious_density",         "congregations_per_100k",     120.0),
         ("testcity", "health_center_density",     "density_per_100k",             5.0),
         ("testcity", "nursing_home_capacity",     "beds_per_1k_65plus",          40.0),
         ("testcity", "child_care_capacity",       "establishments_per_1k_under5", 8.0),

@@ -563,6 +563,11 @@ var METRIC_META = {
     pillar: 'pillar1',
     desc:   'Public libraries per 100,000 residents',
   },
+  religious_density: {
+    label:  'Religious Institutions',
+    pillar: 'pillar1',
+    desc:   'Congregations per 100,000 residents (all denominations, ARDA 2020 Religion Census)',
+  },
   fqhc: {
     label:  'Health Centers (FQHCs)',
     pillar: 'pillar2',
@@ -599,6 +604,7 @@ var METRIC_ORDER = [
   'residential_stability',
   'combined_care',
   'library_density',
+  'religious_density',
   'fqhc',
   'nursing_home',
   'child_care',
