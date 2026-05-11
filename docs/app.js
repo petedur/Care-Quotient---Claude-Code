@@ -613,6 +613,45 @@ var METRIC_ORDER = [
   'snap_coverage',
 ];
 
+var TREND_METRIC_LABELS = {
+  residential_stability:    'Residential Stability',
+  housing_cost_burden:      'Housing Cost Burden',
+  snap_participation:       'SNAP Coverage',
+  health_insurance_coverage: 'Medicaid/CHIP Coverage',
+};
+
+function renderCityTrend(city) {
+  var t = city.trend;
+  if (!t || Object.keys(t).length === 0) return '';
+
+  var rows = Object.keys(TREND_METRIC_LABELS).map(function(key) {
+    var m = t[key];
+    if (!m) return '';
+    var delta     = m.delta;
+    var deltaStr  = (delta > 0 ? '+' : '') + delta + 'pp';
+    var cls       = delta > 0 ? 'trend-delta-up' : (delta < 0 ? 'trend-delta-down' : 'trend-delta-flat');
+    return [
+      '<div class="trend-row">',
+        '<span class="trend-metric-name">', TREND_METRIC_LABELS[key], '</span>',
+        '<span class="trend-values">', m.prior, '% → ', m.current, '%</span>',
+        '<span class="trend-delta ', cls, '">', deltaStr, '</span>',
+      '</div>',
+    ].join('');
+  }).join('');
+
+  return [
+    '<div class="city-trend-section">',
+      '<div class="section-label">ACS Trend: 2020 → 2022</div>',
+      '<div class="trend-grid">', rows, '</div>',
+      '<div class="trend-footnote">',
+        'Trend reflects ACS-based metrics only (residential stability, housing cost burden, SNAP, Medicaid/CHIP). ',
+        'Nonprofit density, library density, faith institutions, FQHCs, nursing homes, and child care ',
+        'are cross-sectional data sources with no prior vintage available.',
+      '</div>',
+    '</div>',
+  ].join('');
+}
+
 function renderCity(app, key) {
   var city = CITIES[key];
   if (!city) {
@@ -816,6 +855,8 @@ function renderCity(app, key) {
       '<div class="divider"></div>',
 
       metricHtml,
+
+      renderCityTrend(city),
 
       mismatchHtml,
 

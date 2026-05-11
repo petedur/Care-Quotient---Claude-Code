@@ -1,6 +1,6 @@
 {
   "albuquerque": {
-    "pillar1_social_relational_care": 58.3,
+    "pillar1_social_relational_care": 56.9,
     "pillar2_institutional_care": 36.1,
     "pillar3_economic_access": 83.9,
     "metrics": {
@@ -20,6 +20,12 @@
         "score": 49.6,
         "raw_value": 2.48,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 51.5,
+        "raw_value": 77.23,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -59,10 +65,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 56.9
+    "care_quotient": 56.4
   },
   "anchorage": {
-    "pillar1_social_relational_care": 55.5,
+    "pillar1_social_relational_care": 57.9,
     "pillar2_institutional_care": 14.1,
     "pillar3_economic_access": 82.8,
     "metrics": {
@@ -82,6 +88,12 @@
         "score": 27.4,
         "raw_value": 1.37,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 80.1,
+        "raw_value": 120.17,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -121,10 +133,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 47.8
+    "care_quotient": 48.8
   },
   "atlanta": {
-    "pillar1_social_relational_care": 85.4,
+    "pillar1_social_relational_care": 85.9,
     "pillar2_institutional_care": 58.3,
     "pillar3_economic_access": 67.7,
     "metrics": {
@@ -144,6 +156,12 @@
         "score": 88.2,
         "raw_value": 4.41,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 281.52,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -183,10 +201,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 71.5
+    "care_quotient": 71.7
   },
   "aurora": {
-    "pillar1_social_relational_care": 59.9,
+    "pillar1_social_relational_care": 62.6,
     "pillar2_institutional_care": 34.4,
     "pillar3_economic_access": 79.3,
     "metrics": {
@@ -206,6 +224,12 @@
         "score": 38.2,
         "raw_value": 1.91,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 163.93,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -245,10 +269,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 55.8
+    "care_quotient": 56.9
   },
   "austin": {
-    "pillar1_social_relational_care": 60.4,
+    "pillar1_social_relational_care": 59.6,
     "pillar2_institutional_care": 38.9,
     "pillar3_economic_access": 58.9,
     "metrics": {
@@ -268,6 +292,12 @@
         "score": 50.0,
         "raw_value": 2.5,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 51.1,
+        "raw_value": 76.62,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -307,10 +337,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 52.5
+    "care_quotient": 52.2
   },
   "bakersfield": {
-    "pillar1_social_relational_care": 53.4,
+    "pillar1_social_relational_care": 56.6,
     "pillar2_institutional_care": 38.5,
     "pillar3_economic_access": 81.1,
     "metrics": {
@@ -330,6 +360,12 @@
         "score": 24.6,
         "raw_value": 1.23,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 151.67,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -369,10 +405,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 55.1
+    "care_quotient": 56.4
   },
   "baltimore": {
-    "pillar1_social_relational_care": 76.2,
+    "pillar1_social_relational_care": 75.3,
     "pillar2_institutional_care": 46.8,
     "pillar3_economic_access": 87.4,
     "metrics": {
@@ -392,6 +428,12 @@
         "score": 78.6,
         "raw_value": 3.93,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 82.5,
+        "raw_value": 123.78,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -431,10 +473,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 68.7
+    "care_quotient": 68.4
   },
   "baton_rouge": {
-    "pillar1_social_relational_care": 68.0,
+    "pillar1_social_relational_care": 66.1,
     "pillar2_institutional_care": 80.1,
     "pillar3_economic_access": 75.2,
     "metrics": {
@@ -454,6 +496,12 @@
         "score": 87.8,
         "raw_value": 4.39,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 233.8,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -493,10 +541,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 74.0
+    "care_quotient": 73.3
   },
   "birmingham": {
-    "pillar1_social_relational_care": 71.0,
+    "pillar1_social_relational_care": 67.9,
     "pillar2_institutional_care": 67.3,
     "pillar3_economic_access": 71.1,
     "metrics": {
@@ -516,6 +564,12 @@
         "score": 100.0,
         "raw_value": 7.54,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 566.35,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -555,10 +609,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 69.7
+    "care_quotient": 68.5
   },
   "boston": {
-    "pillar1_social_relational_care": 68.6,
+    "pillar1_social_relational_care": 66.3,
     "pillar2_institutional_care": 58.2,
     "pillar3_economic_access": 83.8,
     "metrics": {
@@ -578,6 +632,12 @@
         "score": 71.0,
         "raw_value": 3.55,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 48.9,
+        "raw_value": 73.41,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -617,10 +677,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 68.8
+    "care_quotient": 67.8
   },
   "buffalo": {
-    "pillar1_social_relational_care": 69.9,
+    "pillar1_social_relational_care": 68.9,
     "pillar2_institutional_care": 59.2,
     "pillar3_economic_access": 87.2,
     "metrics": {
@@ -640,6 +700,12 @@
         "score": 79.0,
         "raw_value": 3.95,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 262.26,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -679,10 +745,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 70.5
+    "care_quotient": 70.1
   },
   "charlotte": {
-    "pillar1_social_relational_care": 64.1,
+    "pillar1_social_relational_care": 66.1,
     "pillar2_institutional_care": 28.7,
     "pillar3_economic_access": 71.8,
     "metrics": {
@@ -702,6 +768,12 @@
         "score": 38.8,
         "raw_value": 1.94,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 73.3,
+        "raw_value": 109.88,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -741,7 +813,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.6
+    "care_quotient": 54.4
   },
   "chicago": {
     "pillar1_social_relational_care": 65.3,
@@ -764,6 +836,12 @@
         "score": 60.0,
         "raw_value": 3.0,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 87.4,
+        "raw_value": 131.06,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -806,7 +884,7 @@
     "care_quotient": 69.0
   },
   "cincinnati": {
-    "pillar1_social_relational_care": 74.5,
+    "pillar1_social_relational_care": 72.1,
     "pillar2_institutional_care": 91.9,
     "pillar3_economic_access": 73.0,
     "metrics": {
@@ -826,6 +904,12 @@
         "score": 100.0,
         "raw_value": 5.82,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 231.15,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -865,10 +949,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 80.2
+    "care_quotient": 79.3
   },
   "cleveland": {
-    "pillar1_social_relational_care": 76.4,
+    "pillar1_social_relational_care": 74.1,
     "pillar2_institutional_care": 78.5,
     "pillar3_economic_access": 84.4,
     "metrics": {
@@ -888,6 +972,12 @@
         "score": 100.0,
         "raw_value": 7.78,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 271.59,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -927,10 +1017,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 79.1
+    "care_quotient": 78.2
   },
   "colorado_springs": {
-    "pillar1_social_relational_care": 55.9,
+    "pillar1_social_relational_care": 57.0,
     "pillar2_institutional_care": 35.1,
     "pillar3_economic_access": 81.1,
     "metrics": {
@@ -950,6 +1040,12 @@
         "score": 33.4,
         "raw_value": 1.67,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 63.6,
+        "raw_value": 95.41,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -989,10 +1085,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.9
+    "care_quotient": 55.4
   },
   "columbus": {
-    "pillar1_social_relational_care": 60.5,
+    "pillar1_social_relational_care": 60.7,
     "pillar2_institutional_care": 42.8,
     "pillar3_economic_access": 76.6,
     "metrics": {
@@ -1012,6 +1108,12 @@
         "score": 50.8,
         "raw_value": 2.54,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 73.1,
+        "raw_value": 109.63,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -1051,10 +1153,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 58.3
+    "care_quotient": 58.4
   },
   "corpus_christi": {
-    "pillar1_social_relational_care": 55.4,
+    "pillar1_social_relational_care": 54.5,
     "pillar2_institutional_care": 31.6,
     "pillar3_economic_access": 75.1,
     "metrics": {
@@ -1074,6 +1176,12 @@
         "score": 50.4,
         "raw_value": 2.52,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 70.3,
+        "raw_value": 105.39,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -1113,10 +1221,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 52.0
+    "care_quotient": 51.6
   },
   "dallas": {
-    "pillar1_social_relational_care": 63.7,
+    "pillar1_social_relational_care": 65.7,
     "pillar2_institutional_care": 32.2,
     "pillar3_economic_access": 62.5,
     "metrics": {
@@ -1136,6 +1244,12 @@
         "score": 47.6,
         "raw_value": 2.38,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 187.22,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -1175,10 +1289,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 52.4
+    "care_quotient": 53.2
   },
   "denver": {
-    "pillar1_social_relational_care": 69.5,
+    "pillar1_social_relational_care": 64.6,
     "pillar2_institutional_care": 50.2,
     "pillar3_economic_access": 77.9,
     "metrics": {
@@ -1198,6 +1312,12 @@
         "score": 92.2,
         "raw_value": 4.61,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 46.2,
+        "raw_value": 69.32,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -1237,10 +1357,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 64.8
+    "care_quotient": 62.9
   },
   "des_moines": {
-    "pillar1_social_relational_care": 63.2,
+    "pillar1_social_relational_care": 64.3,
     "pillar2_institutional_care": 53.3,
     "pillar3_economic_access": 86.2,
     "metrics": {
@@ -1260,6 +1380,12 @@
         "score": 56.0,
         "raw_value": 2.8,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 202.11,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -1299,10 +1425,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 65.5
+    "care_quotient": 65.9
   },
   "detroit": {
-    "pillar1_social_relational_care": 75.8,
+    "pillar1_social_relational_care": 76.3,
     "pillar2_institutional_care": 60.8,
     "pillar3_economic_access": 86.8,
     "metrics": {
@@ -1322,6 +1448,12 @@
         "score": 72.8,
         "raw_value": 3.64,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 244.44,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -1361,10 +1493,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 73.3
+    "care_quotient": 73.5
   },
   "durham": {
-    "pillar1_social_relational_care": 62.3,
+    "pillar1_social_relational_care": 63.3,
     "pillar2_institutional_care": 35.2,
     "pillar3_economic_access": 69.7,
     "metrics": {
@@ -1384,6 +1516,12 @@
         "score": 49.4,
         "raw_value": 2.47,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 84.9,
+        "raw_value": 127.33,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -1423,10 +1561,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.7
+    "care_quotient": 55.1
   },
   "el_paso": {
-    "pillar1_social_relational_care": 56.3,
+    "pillar1_social_relational_care": 54.7,
     "pillar2_institutional_care": 33.9,
     "pillar3_economic_access": 70.4,
     "metrics": {
@@ -1446,6 +1584,12 @@
         "score": 47.2,
         "raw_value": 2.36,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 49.7,
+        "raw_value": 74.54,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -1485,10 +1629,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 52.0
+    "care_quotient": 51.3
   },
   "fort_worth": {
-    "pillar1_social_relational_care": 60.7,
+    "pillar1_social_relational_care": 62.4,
     "pillar2_institutional_care": 37.3,
     "pillar3_economic_access": 68.8,
     "metrics": {
@@ -1508,6 +1652,12 @@
         "score": 45.8,
         "raw_value": 2.29,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 196.97,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -1547,10 +1697,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.5
+    "care_quotient": 55.2
   },
   "fresno": {
-    "pillar1_social_relational_care": 61.0,
+    "pillar1_social_relational_care": 62.3,
     "pillar2_institutional_care": 45.5,
     "pillar3_economic_access": 82.0,
     "metrics": {
@@ -1570,6 +1720,12 @@
         "score": 44.2,
         "raw_value": 2.21,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 89.2,
+        "raw_value": 133.74,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -1609,10 +1765,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 60.8
+    "care_quotient": 61.3
   },
   "honolulu": {
-    "pillar1_social_relational_care": 83.0,
+    "pillar1_social_relational_care": 81.3,
     "pillar2_institutional_care": 65.4,
     "pillar3_economic_access": 82.7,
     "metrics": {
@@ -1632,6 +1788,12 @@
         "score": 100.0,
         "raw_value": 7.12,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 225.09,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -1671,10 +1833,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 76.8
+    "care_quotient": 76.1
   },
   "houston": {
-    "pillar1_social_relational_care": 61.8,
+    "pillar1_social_relational_care": 63.7,
     "pillar2_institutional_care": 32.6,
     "pillar3_economic_access": 64.9,
     "metrics": {
@@ -1694,6 +1856,12 @@
         "score": 46.0,
         "raw_value": 2.3,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 98.8,
+        "raw_value": 148.14,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -1733,10 +1901,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 52.4
+    "care_quotient": 53.1
   },
   "indianapolis": {
-    "pillar1_social_relational_care": 69.3,
+    "pillar1_social_relational_care": 69.7,
     "pillar2_institutional_care": 59.8,
     "pillar3_economic_access": 79.0,
     "metrics": {
@@ -1756,6 +1924,12 @@
         "score": 56.4,
         "raw_value": 2.82,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 72.2,
+        "raw_value": 108.31,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -1795,10 +1969,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 68.4
+    "care_quotient": 68.6
   },
   "jacksonville": {
-    "pillar1_social_relational_care": 61.6,
+    "pillar1_social_relational_care": 62.5,
     "pillar2_institutional_care": 30.0,
     "pillar3_economic_access": 76.5,
     "metrics": {
@@ -1818,6 +1992,12 @@
         "score": 42.2,
         "raw_value": 2.11,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 69.3,
+        "raw_value": 103.94,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -1857,7 +2037,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.3
+    "care_quotient": 54.6
   },
   "kansas_city": {
     "pillar1_social_relational_care": 68.6,
@@ -1880,6 +2060,12 @@
         "score": 70.8,
         "raw_value": 3.54,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 223.98,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -1922,7 +2108,7 @@
     "care_quotient": 61.2
   },
   "las_vegas": {
-    "pillar1_social_relational_care": 61.5,
+    "pillar1_social_relational_care": 65.5,
     "pillar2_institutional_care": 29.5,
     "pillar3_economic_access": 76.2,
     "metrics": {
@@ -1942,6 +2128,12 @@
         "score": 28.0,
         "raw_value": 1.4,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 98.8,
+        "raw_value": 148.15,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -1981,10 +2173,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.0
+    "care_quotient": 55.6
   },
   "lexington": {
-    "pillar1_social_relational_care": 57.6,
+    "pillar1_social_relational_care": 58.8,
     "pillar2_institutional_care": 49.8,
     "pillar3_economic_access": 72.4,
     "metrics": {
@@ -2004,6 +2196,12 @@
         "score": 37.2,
         "raw_value": 1.86,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 64.7,
+        "raw_value": 97.03,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -2043,10 +2241,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 58.6
+    "care_quotient": 59.0
   },
   "los_angeles": {
-    "pillar1_social_relational_care": 63.6,
+    "pillar1_social_relational_care": 66.0,
     "pillar2_institutional_care": 54.3,
     "pillar3_economic_access": 73.0,
     "metrics": {
@@ -2066,6 +2264,12 @@
         "score": 40.0,
         "raw_value": 2.0,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 96.5,
+        "raw_value": 144.79,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -2105,10 +2309,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 62.7
+    "care_quotient": 63.7
   },
   "louisville": {
-    "pillar1_social_relational_care": 56.5,
+    "pillar1_social_relational_care": 58.9,
     "pillar2_institutional_care": 24.3,
     "pillar3_economic_access": 80.1,
     "metrics": {
@@ -2128,6 +2332,12 @@
         "score": 28.4,
         "raw_value": 1.42,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 84.2,
+        "raw_value": 126.37,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -2167,10 +2377,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 51.1
+    "care_quotient": 52.1
   },
   "madison": {
-    "pillar1_social_relational_care": 58.5,
+    "pillar1_social_relational_care": 59.8,
     "pillar2_institutional_care": 36.0,
     "pillar3_economic_access": 58.7,
     "metrics": {
@@ -2190,6 +2400,12 @@
         "score": 52.0,
         "raw_value": 2.6,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 96.3,
+        "raw_value": 144.5,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -2229,10 +2445,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 50.7
+    "care_quotient": 51.2
   },
   "memphis": {
-    "pillar1_social_relational_care": 68.8,
+    "pillar1_social_relational_care": 70.3,
     "pillar2_institutional_care": 36.1,
     "pillar3_economic_access": 72.9,
     "metrics": {
@@ -2252,6 +2468,12 @@
         "score": 56.8,
         "raw_value": 2.84,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 228.87,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -2291,10 +2513,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 58.4
+    "care_quotient": 59.0
   },
   "milwaukee": {
-    "pillar1_social_relational_care": 65.6,
+    "pillar1_social_relational_care": 66.4,
     "pillar2_institutional_care": 53.0,
     "pillar3_economic_access": 85.2,
     "metrics": {
@@ -2314,6 +2536,12 @@
         "score": 55.4,
         "raw_value": 2.77,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 91.0,
+        "raw_value": 136.52,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -2353,10 +2581,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 66.1
+    "care_quotient": 66.4
   },
   "minneapolis": {
-    "pillar1_social_relational_care": 66.8,
+    "pillar1_social_relational_care": 66.5,
     "pillar2_institutional_care": 72.5,
     "pillar3_economic_access": 79.2,
     "metrics": {
@@ -2376,6 +2604,12 @@
         "score": 74.4,
         "raw_value": 3.72,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 210.89,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -2415,10 +2649,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 71.9
+    "care_quotient": 71.8
   },
   "nashville": {
-    "pillar1_social_relational_care": 65.4,
+    "pillar1_social_relational_care": 65.7,
     "pillar2_institutional_care": 28.7,
     "pillar3_economic_access": 68.3,
     "metrics": {
@@ -2438,6 +2672,12 @@
         "score": 63.8,
         "raw_value": 3.19,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 92.2,
+        "raw_value": 138.37,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -2477,10 +2717,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.3
+    "care_quotient": 53.4
   },
   "new_orleans": {
-    "pillar1_social_relational_care": 72.6,
+    "pillar1_social_relational_care": 70.8,
     "pillar2_institutional_care": 68.2,
     "pillar3_economic_access": 76.8,
     "metrics": {
@@ -2500,6 +2740,12 @@
         "score": 78.2,
         "raw_value": 3.91,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 74.8,
+        "raw_value": 112.24,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -2539,10 +2785,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 72.1
+    "care_quotient": 71.4
   },
   "nyc": {
-    "pillar1_social_relational_care": 64.4,
+    "pillar1_social_relational_care": 62.1,
     "pillar2_institutional_care": 45.7,
     "pillar3_economic_access": 83.2,
     "metrics": {
@@ -2562,6 +2808,12 @@
         "score": 53.8,
         "raw_value": 2.69,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 34.7,
+        "raw_value": 52.11,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -2601,10 +2853,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 62.6
+    "care_quotient": 61.6
   },
   "oklahoma_city": {
-    "pillar1_social_relational_care": 59.0,
+    "pillar1_social_relational_care": 61.0,
     "pillar2_institutional_care": 42.2,
     "pillar3_economic_access": 74.4,
     "metrics": {
@@ -2624,6 +2876,12 @@
         "score": 41.2,
         "raw_value": 2.06,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 94.7,
+        "raw_value": 141.99,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -2663,10 +2921,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 57.0
+    "care_quotient": 57.8
   },
   "omaha": {
-    "pillar1_social_relational_care": 64.2,
+    "pillar1_social_relational_care": 63.6,
     "pillar2_institutional_care": 57.4,
     "pillar3_economic_access": 72.5,
     "metrics": {
@@ -2686,6 +2944,12 @@
         "score": 53.4,
         "raw_value": 2.67,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 62.1,
+        "raw_value": 93.2,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -2725,10 +2989,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 63.9
+    "care_quotient": 63.7
   },
   "philadelphia": {
-    "pillar1_social_relational_care": 67.0,
+    "pillar1_social_relational_care": 65.0,
     "pillar2_institutional_care": 47.2,
     "pillar3_economic_access": 87.0,
     "metrics": {
@@ -2748,6 +3012,12 @@
         "score": 64.8,
         "raw_value": 3.24,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 54.4,
+        "raw_value": 81.62,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -2787,10 +3057,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 65.1
+    "care_quotient": 64.3
   },
   "phoenix": {
-    "pillar1_social_relational_care": 56.6,
+    "pillar1_social_relational_care": 60.8,
     "pillar2_institutional_care": 31.7,
     "pillar3_economic_access": 79.8,
     "metrics": {
@@ -2810,6 +3080,12 @@
         "score": 21.2,
         "raw_value": 1.06,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 165.1,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -2849,10 +3125,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.7
+    "care_quotient": 55.4
   },
   "pittsburgh": {
-    "pillar1_social_relational_care": 79.2,
+    "pillar1_social_relational_care": 77.5,
     "pillar2_institutional_care": 66.9,
     "pillar3_economic_access": 74.9,
     "metrics": {
@@ -2872,6 +3148,12 @@
         "score": 100.0,
         "raw_value": 7.92,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 373.3,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -2911,10 +3193,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 73.8
+    "care_quotient": 73.1
   },
   "portland": {
-    "pillar1_social_relational_care": 62.7,
+    "pillar1_social_relational_care": 62.8,
     "pillar2_institutional_care": 60.0,
     "pillar3_economic_access": 85.2,
     "metrics": {
@@ -2934,6 +3216,12 @@
         "score": 49.0,
         "raw_value": 2.45,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 66.1,
+        "raw_value": 99.16,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -2976,7 +3264,7 @@
     "care_quotient": 67.4
   },
   "providence": {
-    "pillar1_social_relational_care": 73.2,
+    "pillar1_social_relational_care": 70.2,
     "pillar2_institutional_care": 66.7,
     "pillar3_economic_access": 88.7,
     "metrics": {
@@ -2996,6 +3284,12 @@
         "score": 100.0,
         "raw_value": 5.76,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 223.64,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -3035,10 +3329,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 74.8
+    "care_quotient": 73.6
   },
   "raleigh": {
-    "pillar1_social_relational_care": 60.0,
+    "pillar1_social_relational_care": 63.3,
     "pillar2_institutional_care": 35.5,
     "pillar3_economic_access": 74.5,
     "metrics": {
@@ -3058,6 +3352,12 @@
         "score": 34.2,
         "raw_value": 1.71,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 183.25,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -3097,7 +3397,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 55.0
+    "care_quotient": 56.4
   },
   "richmond": {
     "pillar1_social_relational_care": 63.0,
@@ -3120,6 +3420,12 @@
         "score": 61.8,
         "raw_value": 3.09,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 88.3,
+        "raw_value": 132.39,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -3162,7 +3468,7 @@
     "care_quotient": 61.8
   },
   "rochester": {
-    "pillar1_social_relational_care": 67.8,
+    "pillar1_social_relational_care": 66.1,
     "pillar2_institutional_care": 86.2,
     "pillar3_economic_access": 83.9,
     "metrics": {
@@ -3182,6 +3488,12 @@
         "score": 85.2,
         "raw_value": 4.26,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 269.25,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -3221,10 +3533,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 78.3
+    "care_quotient": 77.6
   },
   "sacramento": {
-    "pillar1_social_relational_care": 71.6,
+    "pillar1_social_relational_care": 73.1,
     "pillar2_institutional_care": 52.4,
     "pillar3_economic_access": 80.5,
     "metrics": {
@@ -3244,6 +3556,12 @@
         "score": 61.0,
         "raw_value": 3.05,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 175.45,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -3283,10 +3601,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 67.1
+    "care_quotient": 67.7
   },
   "salt_lake_city": {
-    "pillar1_social_relational_care": 64.4,
+    "pillar1_social_relational_care": 63.0,
     "pillar2_institutional_care": 45.5,
     "pillar3_economic_access": 55.8,
     "metrics": {
@@ -3306,6 +3624,12 @@
         "score": 79.8,
         "raw_value": 3.99,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 832.64,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -3345,10 +3669,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 55.6
+    "care_quotient": 55.1
   },
   "san_antonio": {
-    "pillar1_social_relational_care": 57.1,
+    "pillar1_social_relational_care": 56.2,
     "pillar2_institutional_care": 39.1,
     "pillar3_economic_access": 69.7,
     "metrics": {
@@ -3368,6 +3692,12 @@
         "score": 48.8,
         "raw_value": 2.44,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 60.6,
+        "raw_value": 90.96,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -3407,10 +3737,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.0
+    "care_quotient": 53.6
   },
   "san_diego": {
-    "pillar1_social_relational_care": 61.3,
+    "pillar1_social_relational_care": 61.2,
     "pillar2_institutional_care": 45.0,
     "pillar3_economic_access": 75.3,
     "metrics": {
@@ -3430,6 +3760,12 @@
         "score": 56.2,
         "raw_value": 2.81,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 84.0,
+        "raw_value": 126.03,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -3472,7 +3808,7 @@
     "care_quotient": 59.1
   },
   "san_francisco": {
-    "pillar1_social_relational_care": 66.5,
+    "pillar1_social_relational_care": 62.5,
     "pillar2_institutional_care": 53.4,
     "pillar3_economic_access": 80.8,
     "metrics": {
@@ -3492,6 +3828,12 @@
         "score": 75.6,
         "raw_value": 3.78,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 40.9,
+        "raw_value": 61.33,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -3531,10 +3873,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 65.5
+    "care_quotient": 63.9
   },
   "san_jose": {
-    "pillar1_social_relational_care": 57.5,
+    "pillar1_social_relational_care": 57.3,
     "pillar2_institutional_care": 50.5,
     "pillar3_economic_access": 79.6,
     "metrics": {
@@ -3554,6 +3896,12 @@
         "score": 41.4,
         "raw_value": 2.07,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 62.0,
+        "raw_value": 93.07,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -3593,10 +3941,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 60.6
+    "care_quotient": 60.5
   },
   "seattle": {
-    "pillar1_social_relational_care": 62.6,
+    "pillar1_social_relational_care": 61.2,
     "pillar2_institutional_care": 65.5,
     "pillar3_economic_access": 77.0,
     "metrics": {
@@ -3616,6 +3964,12 @@
         "score": 78.6,
         "raw_value": 3.93,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 198.98,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -3655,10 +4009,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 67.2
+    "care_quotient": 66.7
   },
   "spokane": {
-    "pillar1_social_relational_care": 57.3,
+    "pillar1_social_relational_care": 58.2,
     "pillar2_institutional_care": 56.7,
     "pillar3_economic_access": 90.3,
     "metrics": {
@@ -3678,6 +4032,12 @@
         "score": 52.4,
         "raw_value": 2.62,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 194.77,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -3717,10 +4077,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 65.3
+    "care_quotient": 65.7
   },
   "st_louis": {
-    "pillar1_social_relational_care": 76.8,
+    "pillar1_social_relational_care": 74.4,
     "pillar2_institutional_care": 60.2,
     "pillar3_economic_access": 72.5,
     "metrics": {
@@ -3740,6 +4100,12 @@
         "score": 99.4,
         "raw_value": 4.97,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 169.44,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -3779,10 +4145,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 69.9
+    "care_quotient": 69.0
   },
   "st_paul": {
-    "pillar1_social_relational_care": 72.8,
+    "pillar1_social_relational_care": 70.7,
     "pillar2_institutional_care": 53.6,
     "pillar3_economic_access": 82.9,
     "metrics": {
@@ -3802,6 +4168,12 @@
         "score": 89.8,
         "raw_value": 4.49,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 89.7,
+        "raw_value": 134.5,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -3841,10 +4213,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 68.6
+    "care_quotient": 67.8
   },
   "stockton": {
-    "pillar1_social_relational_care": 58.9,
+    "pillar1_social_relational_care": 59.7,
     "pillar2_institutional_care": 61.9,
     "pillar3_economic_access": 86.4,
     "metrics": {
@@ -3864,6 +4236,12 @@
         "score": 50.0,
         "raw_value": 2.5,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 154.11,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -3903,10 +4281,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 66.8
+    "care_quotient": 67.1
   },
   "tampa": {
-    "pillar1_social_relational_care": 61.7,
+    "pillar1_social_relational_care": 62.4,
     "pillar2_institutional_care": 43.6,
     "pillar3_economic_access": 74.1,
     "metrics": {
@@ -3926,6 +4304,12 @@
         "score": 59.4,
         "raw_value": 2.97,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 285.1,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -3965,10 +4349,10 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 58.5
+    "care_quotient": 58.7
   },
   "tucson": {
-    "pillar1_social_relational_care": 56.8,
+    "pillar1_social_relational_care": 56.6,
     "pillar2_institutional_care": 33.8,
     "pillar3_economic_access": 75.6,
     "metrics": {
@@ -3988,6 +4372,12 @@
         "score": 55.2,
         "raw_value": 2.76,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 86.9,
+        "raw_value": 130.29,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -4030,7 +4420,7 @@
     "care_quotient": 53.4
   },
   "virginia_beach": {
-    "pillar1_social_relational_care": 59.8,
+    "pillar1_social_relational_care": 58.8,
     "pillar2_institutional_care": 21.6,
     "pillar3_economic_access": 71.2,
     "metrics": {
@@ -4050,6 +4440,12 @@
         "score": 43.6,
         "raw_value": 2.18,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 38.5,
+        "raw_value": 57.68,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -4089,7 +4485,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 49.3
+    "care_quotient": 48.9
   },
   "washington_dc": {
     "pillar1_social_relational_care": 80.6,
@@ -4112,6 +4508,12 @@
         "score": 75.4,
         "raw_value": 3.77,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 72.6,
+        "raw_value": 108.91,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -4154,7 +4556,7 @@
     "care_quotient": 74.9
   },
   "wichita": {
-    "pillar1_social_relational_care": 58.5,
+    "pillar1_social_relational_care": 59.8,
     "pillar2_institutional_care": 33.3,
     "pillar3_economic_access": 72.6,
     "metrics": {
@@ -4174,6 +4576,12 @@
         "score": 45.2,
         "raw_value": 2.26,
         "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 91.2,
+        "raw_value": 136.84,
+        "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
       "FQHCs (per 100k)": {
@@ -4213,6 +4621,6 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.2
+    "care_quotient": 53.7
   }
 }

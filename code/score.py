@@ -241,6 +241,54 @@ def _drop_incomplete_cities(results: pd.DataFrame) -> pd.DataFrame:
     return results
 
 
+# (metric, sub_metric, trend_json_key)
+_TREND_METRICS = [
+    ("residential_stability",     "pct_same_house",  "residential_stability"),
+    ("housing_cost_burden",       "pct_not_burdened", "housing_cost_burden"),
+    ("snap_participation",        "coverage_rate",    "snap_participation"),
+    ("health_insurance_coverage", "coverage_rate",    "health_insurance_coverage"),
+]
+
+
+def compute_trends(results: pd.DataFrame, raw_df: pd.DataFrame) -> dict:
+    """
+    For each city that has trend_2020/trend_metrics.json, compute per-metric
+    deltas between ACS 2020 and ACS 2022 for the four trendable metrics.
+
+    Returns {city_key: {metric_key: {"prior": float, "current": float, "delta": float}}}
+    """
+    trend_data = {}
+    for city_key in results.index:
+        trend_file = PROJECT_ROOT / "data" / "raw" / city_key / "trend_2020" / "trend_metrics.json"
+        if not trend_file.exists():
+            continue
+        try:
+            prior_acs = json.loads(trend_file.read_text())
+        except Exception:
+            continue
+
+        city_trend = {}
+        for metric, sub_metric, trend_key in _TREND_METRICS:
+            prior = prior_acs.get(trend_key)
+            current_rows = raw_df[
+                (raw_df["city"] == city_key) &
+                (raw_df["metric"] == metric) &
+                (raw_df["sub_metric"] == sub_metric)
+            ]["value"].values
+            current = float(current_rows[0]) if len(current_rows) else None
+            if prior is not None and current is not None:
+                city_trend[trend_key] = {
+                    "prior":   round(prior, 1),
+                    "current": round(current, 1),
+                    "delta":   round(current - prior, 1),
+                }
+
+        if city_trend:
+            trend_data[city_key] = city_trend
+
+    return trend_data
+
+
 def write_results(conn, results: pd.DataFrame, raw_df: pd.DataFrame):
     """Save scored results to DuckDB, CSV, and JSON."""
 
@@ -328,10 +376,22 @@ def write_results(conn, results: pd.DataFrame, raw_df: pd.DataFrame):
         json.dump(output, f, indent=2)
     print(f"  JSON saved to {json_path}")
 
+    # ── Trend deltas ──────────────────────────────────────────────────────────
+    print("\nComputing CQ trends (ACS 2020 vs 2022)...")
+    trend_data = compute_trends(results, raw_df)
+    if trend_data:
+        print(f"  Trend data available for {len(trend_data)} cities")
+        trend_path = OUTPUTS_DIR / "trend.json"
+        with open(trend_path, "w") as f:
+            json.dump(trend_data, f, indent=2)
+        print(f"  Trend data written to {trend_path}")
+    else:
+        print("  No trend data found — run code/collectors/acs_trend.py first")
+
     # ── Dashboard data.js ─────────────────────────────────────────────────────
     # Generates docs/data.js so the site always reflects the latest run.
     # The dashboard loads this file instead of hardcoding city data.
-    write_dashboard_data(output, raw_df)
+    write_dashboard_data(output, raw_df, trend_data)
 
 
 # ── Dashboard metric display config ──────────────────────────────────────────
@@ -450,13 +510,15 @@ SCORE_COL = {
 }
 
 
-def write_dashboard_data(score_output: dict, raw_df: pd.DataFrame):
+def write_dashboard_data(score_output: dict, raw_df: pd.DataFrame,
+                         trend_data: dict | None = None):
     """
     Write docs/data.js from the current scored output.
     The dashboard loads this file so city data is never hardcoded in index.html.
 
     raw_df: the full metrics DataFrame already loaded from DuckDB (avoids
     opening a second connection while the main connection is still open).
+    trend_data: optional {city_key: {cq_prior, delta, direction}} from compute_trends().
     """
     dashboard_dir = PROJECT_ROOT / "docs"
     dashboard_dir.mkdir(exist_ok=True)
@@ -493,6 +555,7 @@ def write_dashboard_data(score_output: dict, raw_df: pd.DataFrame):
             "pillar3":    city_scores.get("pillar3_economic_access", 0),
             "metrics":    metrics,
             "diagnostic": {},  # filled below
+            "trend":      (trend_data or {}).get(city_key, {}),
         }
 
     for city_key in cities_js:

@@ -489,6 +489,59 @@ body {
   font-weight: 300;
 }
 
+/* ── ACS Trend section ──────────────────────────────────────────────────── */
+.city-trend-section {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.trend-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+}
+
+.trend-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 1rem;
+  align-items: baseline;
+  font-size: 0.87rem;
+}
+
+.trend-metric-name {
+  color: var(--ink);
+}
+
+.trend-values {
+  color: var(--ink-mid);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.trend-delta {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  min-width: 4.5rem;
+  text-align: right;
+}
+.trend-delta-up   { color: #2d6a4f; }
+.trend-delta-down { color: #b5432a; }
+.trend-delta-flat { color: var(--ink-mid); font-weight: 400; }
+
+.trend-footnote {
+  margin-top: 0.9rem;
+  font-size: 0.75rem;
+  color: var(--ink-mid);
+  line-height: 1.5;
+  font-style: italic;
+}
+
 .divider {
   height: 1px;
   background: var(--ink-faint);

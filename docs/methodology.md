@@ -371,7 +371,29 @@ The following improvements were implemented in V3:
 - **CDC PLACES diagnostics**: Mental distress, self-rated health, and depression prevalence as non-scored overlays on city pages.
 - **"What is Care?" theory page**: Full theoretical foundation at /theory, citing Tronto (1993), Putnam (2000), Sampson et al. (1997), Kittay (1999), Folbre (2001), Nussbaum (2006), Sen (1999), and others. Includes metric-to-theory mapping table.
 
-## 14. Planned V7 Improvements
+## 14. Trend Analysis
+
+City pages display a direction indicator (↑ / ↓ / →) showing whether a city's Care Quotient has changed since the ACS 2020 5-year estimates. A change of ±1.5 CQ points or more is considered directional; smaller changes are labeled stable.
+
+**What the trend measures**: The trend compares ACS 2022 values (the current index vintage) against ACS 2020 values for the same city and the same geographic boundary. ACS 5-year estimates are pooled across five survey years (2022 = 2018–2022; 2020 = 2016–2020), so the comparison reflects gradual population-level change rather than single-year volatility.
+
+**Trendable metrics** (four metrics with two ACS vintages available):
+- Residential stability (B07003)
+- Housing cost burden (B25070 / B25091)
+- SNAP coverage rate (B22001 / C17002)
+- Medicaid/CHIP coverage rate (C27007 / C17002)
+
+**Non-trendable metrics** (held at current values for the 2020 baseline CQ):
+- Nonprofit density — IRS EO BMF is a cross-sectional snapshot; archival BMF by year is not publicly available.
+- Library density — IMLS Public Libraries Survey; prior vintages require separate data collection.
+- Religious institution density — ARDA Religion Census is decennial; only 2020 data is currently available.
+- FQHC density — HRSA UDS is cross-sectional; historical UDS files require separate data collection.
+- Nursing home capacity — CMS Care Compare is live/rolling; historical snapshots are not publicly available.
+- Child care capacity — Census County Business Patterns; prior-year files require separate data collection.
+
+Because six of ten scored metrics are held constant, the trend arrow captures change in *economic access* and *residential stability* conditions only. It is an indication of directional momentum, not a full re-score on all dimensions. Cities without ACS 2020 trend data collected do not display a trend indicator.
+
+## 15. Planned V7 Improvements
 
 - **Mental health capacity**: NPPES behavioral health provider data. Collector built (`code/collectors/mental_health_capacity.py`) but not integrated — geographic spillover inflates ZCTA-based counts ~3–4x; needs methodology validation.
 - **Home health capacity**: CMS Care Compare home health dataset (6jpm-sxkc) — deferred because CMS attributes episodes to agency headquarters ZIP, not patient location.
@@ -382,7 +404,7 @@ The following improvements were implemented in V3:
 
 ---
 
-## 14. References
+## 16. References
 
 - Agha, G. et al. (2024). Housing stability and social capital: Mediation pathways. *American Journal of Community Psychology*.
 - Boris, E.T. & Steuerle, C.E. (2006). *Nonprofits and Government: Collaboration and Conflict*. Urban Institute Press.
