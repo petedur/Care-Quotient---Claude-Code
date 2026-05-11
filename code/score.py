@@ -255,8 +255,25 @@ def compute_trends(results: pd.DataFrame, raw_df: pd.DataFrame) -> dict:
     For each city that has trend_2020/trend_metrics.json, compute per-metric
     deltas between ACS 2020 and ACS 2022 for the four trendable metrics.
 
+    Falls back to outputs/trend.json if raw per-city files are absent (e.g.
+    in CI, where data/raw/ is not committed).
+
     Returns {city_key: {metric_key: {"prior": float, "current": float, "delta": float}}}
     """
+    # Fast path: pre-computed trend.json present and raw files absent
+    cached_path = OUTPUTS_DIR / "trend.json"
+    raw_trend_present = any(
+        (PROJECT_ROOT / "data" / "raw" / city_key / "trend_2020" / "trend_metrics.json").exists()
+        for city_key in results.index
+    )
+    if not raw_trend_present and cached_path.exists():
+        try:
+            cached = json.loads(cached_path.read_text())
+            print("  Using cached outputs/trend.json (raw trend files not present)")
+            return cached
+        except Exception:
+            pass
+
     trend_data = {}
     for city_key in results.index:
         trend_file = PROJECT_ROOT / "data" / "raw" / city_key / "trend_2020" / "trend_metrics.json"
