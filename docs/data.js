@@ -110,7 +110,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 83.3,
+        "current": 84.0,
+        "delta": 0.8
+      },
+      "housing_cost_burden": {
+        "prior": 66.8,
+        "current": 66.3,
+        "delta": -0.5
+      },
+      "snap_participation": {
+        "prior": 58.4,
+        "current": 61.7,
+        "delta": 3.3
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "anchorage": {
     "name": "Anchorage",
@@ -220,7 +241,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 80.4,
+        "current": 82.5,
+        "delta": 2.1
+      },
+      "housing_cost_burden": {
+        "prior": 67.8,
+        "current": 67.7,
+        "delta": -0.1
+      },
+      "snap_participation": {
+        "prior": 55.9,
+        "current": 55.9,
+        "delta": 0.0
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "atlanta": {
     "name": "Atlanta",
@@ -330,7 +372,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 78.8,
+        "current": 80.0,
+        "delta": 1.2
+      },
+      "housing_cost_burden": {
+        "prior": 63.3,
+        "current": 63.6,
+        "delta": 0.3
+      },
+      "snap_participation": {
+        "prior": 52.0,
+        "current": 55.2,
+        "delta": 3.2
+      },
+      "health_insurance_coverage": {
+        "prior": 65.6,
+        "current": 66.8,
+        "delta": 1.2
+      }
+    }
   },
   "aurora": {
     "name": "Aurora",
@@ -440,7 +503,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 81.3,
+        "current": 81.5,
+        "delta": 0.3
+      },
+      "housing_cost_burden": {
+        "prior": 62.2,
+        "current": 60.9,
+        "delta": -1.3
+      },
+      "snap_participation": {
+        "prior": 46.6,
+        "current": 53.2,
+        "delta": 6.6
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "austin": {
     "name": "Austin",
@@ -550,7 +634,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 78.3,
+        "current": 77.9,
+        "delta": -0.5
+      },
+      "housing_cost_burden": {
+        "prior": 64.6,
+        "current": 63.8,
+        "delta": -0.8
+      },
+      "snap_participation": {
+        "prior": 34.6,
+        "current": 34.0,
+        "delta": -0.7
+      },
+      "health_insurance_coverage": {
+        "prior": 60.6,
+        "current": 60.2,
+        "delta": -0.4
+      }
+    }
   },
   "bakersfield": {
     "name": "Bakersfield",
@@ -660,7 +765,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 82.3,
+        "current": 86.3,
+        "delta": 4.0
+      },
+      "housing_cost_burden": {
+        "prior": 58.7,
+        "current": 59.1,
+        "delta": 0.4
+      },
+      "snap_participation": {
+        "prior": 58.8,
+        "current": 61.7,
+        "delta": 2.9
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "baltimore": {
     "name": "Baltimore",
@@ -770,7 +896,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 83.7,
+        "current": 84.7,
+        "delta": 1.0
+      },
+      "housing_cost_burden": {
+        "prior": 62.2,
+        "current": 61.3,
+        "delta": -0.9
+      },
+      "snap_participation": {
+        "prior": 76.9,
+        "current": 80.0,
+        "delta": 3.1
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "baton_rouge": {
     "name": "Baton Rouge",
@@ -880,7 +1027,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 80.4,
+        "current": 79.3,
+        "delta": -1.1
+      },
+      "housing_cost_burden": {
+        "prior": 62.4,
+        "current": 61.6,
+        "delta": -0.8
+      },
+      "snap_participation": {
+        "prior": 52.0,
+        "current": 52.7,
+        "delta": 0.7
+      },
+      "health_insurance_coverage": {
+        "prior": 83.0,
+        "current": 89.4,
+        "delta": 6.4
+      }
+    }
   },
   "birmingham": {
     "name": "Birmingham",
@@ -990,7 +1158,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 79.2,
+        "current": 80.8,
+        "delta": 1.6
+      },
+      "housing_cost_burden": {
+        "prior": 59.6,
+        "current": 58.6,
+        "delta": -1.0
+      },
+      "snap_participation": {
+        "prior": 58.8,
+        "current": 58.5,
+        "delta": -0.4
+      },
+      "health_insurance_coverage": {
+        "prior": 76.8,
+        "current": 77.8,
+        "delta": 1.0
+      }
+    }
   },
   "boston": {
     "name": "Boston",
@@ -1100,7 +1289,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 79.2,
+        "current": 79.6,
+        "delta": 0.4
+      },
+      "housing_cost_burden": {
+        "prior": 58.5,
+        "current": 58.0,
+        "delta": -0.5
+      },
+      "snap_participation": {
+        "prior": 66.9,
+        "current": 72.0,
+        "delta": 5.1
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "buffalo": {
     "name": "Buffalo",
@@ -1210,7 +1420,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 82.2,
+        "current": 84.5,
+        "delta": 2.2
+      },
+      "housing_cost_burden": {
+        "prior": 63.9,
+        "current": 64.3,
+        "delta": 0.4
+      },
+      "snap_participation": {
+        "prior": 77.0,
+        "current": 75.4,
+        "delta": -1.6
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "charlotte": {
     "name": "Charlotte",
@@ -1320,7 +1551,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 81.3,
+        "current": 82.2,
+        "delta": 0.9
+      },
+      "housing_cost_burden": {
+        "prior": 67.5,
+        "current": 66.3,
+        "delta": -1.2
+      },
+      "snap_participation": {
+        "prior": 44.6,
+        "current": 47.0,
+        "delta": 2.4
+      },
+      "health_insurance_coverage": {
+        "prior": 77.7,
+        "current": 80.5,
+        "delta": 2.7
+      }
+    }
   },
   "chicago": {
     "name": "Chicago",
@@ -1430,7 +1682,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 84.1,
+        "current": 84.5,
+        "delta": 0.4
+      },
+      "housing_cost_burden": {
+        "prior": 60.8,
+        "current": 60.8,
+        "delta": 0.0
+      },
+      "snap_participation": {
+        "prior": 65.6,
+        "current": 70.2,
+        "delta": 4.6
+      },
+      "health_insurance_coverage": {
+        "prior": 94.7,
+        "current": 95.5,
+        "delta": 0.8
+      }
+    }
   },
   "cincinnati": {
     "name": "Cincinnati",
@@ -1540,7 +1813,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 76.2,
+        "current": 78.6,
+        "delta": 2.4
+      },
+      "housing_cost_burden": {
+        "prior": 64.6,
+        "current": 63.4,
+        "delta": -1.2
+      },
+      "snap_participation": {
+        "prior": 53.4,
+        "current": 51.6,
+        "delta": -1.8
+      },
+      "health_insurance_coverage": {
+        "prior": 83.3,
+        "current": 83.0,
+        "delta": -0.3
+      }
+    }
   },
   "cleveland": {
     "name": "Cleveland",
@@ -1650,7 +1944,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 81.0,
+        "current": 81.4,
+        "delta": 0.4
+      },
+      "housing_cost_burden": {
+        "prior": 60.6,
+        "current": 60.6,
+        "delta": 0.1
+      },
+      "snap_participation": {
+        "prior": 69.9,
+        "current": 70.7,
+        "delta": 0.8
+      },
+      "health_insurance_coverage": {
+        "prior": 98.5,
+        "current": 100.0,
+        "delta": 1.5
+      }
+    }
   },
   "colorado_springs": {
     "name": "Colorado Springs",
@@ -1760,7 +2075,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 77.1,
+        "current": 78.9,
+        "delta": 1.8
+      },
+      "housing_cost_burden": {
+        "prior": 65.1,
+        "current": 64.5,
+        "delta": -0.7
+      },
+      "snap_participation": {
+        "prior": 52.3,
+        "current": 54.5,
+        "delta": 2.2
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "columbus": {
     "name": "Columbus",
@@ -1870,7 +2206,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 78.0,
+        "current": 78.9,
+        "delta": 0.9
+      },
+      "housing_cost_burden": {
+        "prior": 65.5,
+        "current": 65.6,
+        "delta": 0.1
+      },
+      "snap_participation": {
+        "prior": 48.5,
+        "current": 49.3,
+        "delta": 0.8
+      },
+      "health_insurance_coverage": {
+        "prior": 87.9,
+        "current": 91.4,
+        "delta": 3.5
+      }
+    }
   },
   "corpus_christi": {
     "name": "Corpus Christi",
@@ -1980,7 +2337,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 81.6,
+        "current": 82.8,
+        "delta": 1.2
+      },
+      "housing_cost_burden": {
+        "prior": 68.1,
+        "current": 66.7,
+        "delta": -1.4
+      },
+      "snap_participation": {
+        "prior": 59.5,
+        "current": 63.4,
+        "delta": 4.0
+      },
+      "health_insurance_coverage": {
+        "prior": 73.2,
+        "current": 76.3,
+        "delta": 3.0
+      }
+    }
   },
   "dallas": {
     "name": "Dallas",
@@ -2090,7 +2468,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 82.4,
+        "current": 83.1,
+        "delta": 0.7
+      },
+      "housing_cost_burden": {
+        "prior": 62.4,
+        "current": 60.8,
+        "delta": -1.6
+      },
+      "snap_participation": {
+        "prior": 39.4,
+        "current": 41.0,
+        "delta": 1.6
+      },
+      "health_insurance_coverage": {
+        "prior": 65.6,
+        "current": 66.8,
+        "delta": 1.2
+      }
+    }
   },
   "denver": {
     "name": "Denver",
@@ -2200,7 +2599,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 79.1,
+        "current": 78.7,
+        "delta": -0.4
+      },
+      "housing_cost_burden": {
+        "prior": 64.8,
+        "current": 64.0,
+        "delta": -0.8
+      },
+      "snap_participation": {
+        "prior": 40.3,
+        "current": 44.2,
+        "delta": 3.9
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "des_moines": {
     "name": "Des Moines",
@@ -2310,7 +2730,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 81.2,
+        "current": 82.2,
+        "delta": 1.0
+      },
+      "housing_cost_burden": {
+        "prior": 69.0,
+        "current": 68.8,
+        "delta": -0.2
+      },
+      "snap_participation": {
+        "prior": 67.2,
+        "current": 66.1,
+        "delta": -1.1
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "detroit": {
     "name": "Detroit",
@@ -2420,7 +2861,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 84.8,
+        "current": 87.2,
+        "delta": 2.4
+      },
+      "housing_cost_burden": {
+        "prior": 57.0,
+        "current": 57.4,
+        "delta": 0.5
+      },
+      "snap_participation": {
+        "prior": 77.4,
+        "current": 83.3,
+        "delta": 5.9
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "durham": {
     "name": "Durham",
@@ -2530,7 +2992,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 78.9,
+        "current": 81.2,
+        "delta": 2.3
+      },
+      "housing_cost_burden": {
+        "prior": 67.5,
+        "current": 69.4,
+        "delta": 1.8
+      },
+      "snap_participation": {
+        "prior": 44.7,
+        "current": 46.0,
+        "delta": 1.3
+      },
+      "health_insurance_coverage": {
+        "prior": 73.9,
+        "current": 73.0,
+        "delta": -0.9
+      }
+    }
   },
   "el_paso": {
     "name": "El Paso",
@@ -2640,7 +3123,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 83.8,
+        "current": 85.5,
+        "delta": 1.7
+      },
+      "housing_cost_burden": {
+        "prior": 66.7,
+        "current": 65.4,
+        "delta": -1.3
+      },
+      "snap_participation": {
+        "prior": 58.4,
+        "current": 60.4,
+        "delta": 2.0
+      },
+      "health_insurance_coverage": {
+        "prior": 67.4,
+        "current": 68.1,
+        "delta": 0.7
+      }
+    }
   },
   "fort_worth": {
     "name": "Fort Worth",
@@ -2750,7 +3254,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 82.8,
+        "current": 84.5,
+        "delta": 1.7
+      },
+      "housing_cost_burden": {
+        "prior": 66.6,
+        "current": 63.7,
+        "delta": -3.0
+      },
+      "snap_participation": {
+        "prior": 54.1,
+        "current": 53.9,
+        "delta": -0.2
+      },
+      "health_insurance_coverage": {
+        "prior": 73.3,
+        "current": 70.5,
+        "delta": -2.7
+      }
+    }
   },
   "fresno": {
     "name": "Fresno",
@@ -2860,7 +3385,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 84.1,
+        "current": 86.1,
+        "delta": 2.0
+      },
+      "housing_cost_burden": {
+        "prior": 58.7,
+        "current": 58.9,
+        "delta": 0.2
+      },
+      "snap_participation": {
+        "prior": 60.1,
+        "current": 64.8,
+        "delta": 4.7
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "honolulu": {
     "name": "Honolulu",
@@ -2970,7 +3516,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 85.1,
+        "current": 85.3,
+        "delta": 0.2
+      },
+      "housing_cost_burden": {
+        "prior": 59.5,
+        "current": 58.6,
+        "delta": -0.9
+      },
+      "snap_participation": {
+        "prior": 68.0,
+        "current": 67.7,
+        "delta": -0.2
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "houston": {
     "name": "Houston",
@@ -3080,7 +3647,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 81.9,
+        "current": 82.8,
+        "delta": 0.9
+      },
+      "housing_cost_burden": {
+        "prior": 63.2,
+        "current": 61.9,
+        "delta": -1.3
+      },
+      "snap_participation": {
+        "prior": 46.1,
+        "current": 48.1,
+        "delta": 2.0
+      },
+      "health_insurance_coverage": {
+        "prior": 67.8,
+        "current": 66.7,
+        "delta": -1.2
+      }
+    }
   },
   "indianapolis": {
     "name": "Indianapolis",
@@ -3190,7 +3778,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 84.1,
+        "current": 84.3,
+        "delta": 0.2
+      },
+      "housing_cost_burden": {
+        "prior": 66.5,
+        "current": 67.0,
+        "delta": 0.5
+      },
+      "snap_participation": {
+        "prior": 45.3,
+        "current": 47.4,
+        "delta": 2.0
+      },
+      "health_insurance_coverage": {
+        "prior": 89.2,
+        "current": 97.6,
+        "delta": 8.4
+      }
+    }
   },
   "jacksonville": {
     "name": "Jacksonville",
@@ -3300,7 +3909,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 80.7,
+        "current": 82.1,
+        "delta": 1.4
+      },
+      "housing_cost_burden": {
+        "prior": 65.6,
+        "current": 64.6,
+        "delta": -1.0
+      },
+      "snap_participation": {
+        "prior": 62.6,
+        "current": 64.4,
+        "delta": 1.8
+      },
+      "health_insurance_coverage": {
+        "prior": 80.0,
+        "current": 81.0,
+        "delta": 0.9
+      }
+    }
   },
   "kansas_city": {
     "name": "Kansas City",
@@ -3410,7 +4040,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 81.6,
+        "current": 82.5,
+        "delta": 0.9
+      },
+      "housing_cost_burden": {
+        "prior": 68.3,
+        "current": 67.8,
+        "delta": -0.5
+      },
+      "snap_participation": {
+        "prior": 46.0,
+        "current": 43.8,
+        "delta": -2.2
+      },
+      "health_insurance_coverage": {
+        "prior": 61.9,
+        "current": 62.9,
+        "delta": 1.0
+      }
+    }
   },
   "las_vegas": {
     "name": "Las Vegas",
@@ -3520,7 +4171,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 82.0,
+        "current": 83.9,
+        "delta": 1.9
+      },
+      "housing_cost_burden": {
+        "prior": 60.8,
+        "current": 61.0,
+        "delta": 0.2
+      },
+      "snap_participation": {
+        "prior": 56.9,
+        "current": 57.3,
+        "delta": 0.4
+      },
+      "health_insurance_coverage": {
+        "prior": 87.0,
+        "current": 89.0,
+        "delta": 2.0
+      }
+    }
   },
   "lexington": {
     "name": "Lexington",
@@ -3630,7 +4302,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 76.6,
+        "current": 77.7,
+        "delta": 1.1
+      },
+      "housing_cost_burden": {
+        "prior": 70.2,
+        "current": 69.0,
+        "delta": -1.3
+      },
+      "snap_participation": {
+        "prior": 37.4,
+        "current": 36.8,
+        "delta": -0.6
+      },
+      "health_insurance_coverage": {
+        "prior": 82.2,
+        "current": 87.0,
+        "delta": 4.8
+      }
+    }
   },
   "los_angeles": {
     "name": "Los Angeles",
@@ -3740,7 +4433,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 87.8,
+        "current": 87.8,
+        "delta": 0.0
+      },
+      "housing_cost_burden": {
+        "prior": 48.7,
+        "current": 48.5,
+        "delta": -0.2
+      },
+      "snap_participation": {
+        "prior": 37.7,
+        "current": 48.0,
+        "delta": 10.3
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "louisville": {
     "name": "Louisville",
@@ -3850,7 +4564,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 85.4,
+        "current": 85.9,
+        "delta": 0.5
+      },
+      "housing_cost_burden": {
+        "prior": 75.4,
+        "current": 73.4,
+        "delta": -2.0
+      },
+      "snap_participation": {
+        "prior": 44.1,
+        "current": 39.4,
+        "delta": -4.8
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "madison": {
     "name": "Madison",
@@ -3960,7 +4695,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 73.6,
+        "current": 73.3,
+        "delta": -0.3
+      },
+      "housing_cost_burden": {
+        "prior": 64.7,
+        "current": 63.4,
+        "delta": -1.3
+      },
+      "snap_participation": {
+        "prior": 35.0,
+        "current": 38.1,
+        "delta": 3.1
+      },
+      "health_insurance_coverage": {
+        "prior": 54.6,
+        "current": 57.1,
+        "delta": 2.5
+      }
+    }
   },
   "memphis": {
     "name": "Memphis",
@@ -4070,7 +4826,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 83.0,
+        "current": 84.9,
+        "delta": 1.9
+      },
+      "housing_cost_burden": {
+        "prior": 60.7,
+        "current": 60.3,
+        "delta": -0.4
+      },
+      "snap_participation": {
+        "prior": 57.4,
+        "current": 58.4,
+        "delta": 1.0
+      },
+      "health_insurance_coverage": {
+        "prior": 80.1,
+        "current": 80.6,
+        "delta": 0.5
+      }
+    }
   },
   "milwaukee": {
     "name": "Milwaukee",
@@ -4180,7 +4957,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 82.7,
+        "current": 84.3,
+        "delta": 1.6
+      },
+      "housing_cost_burden": {
+        "prior": 60.1,
+        "current": 60.1,
+        "delta": 0.0
+      },
+      "snap_participation": {
+        "prior": 68.3,
+        "current": 74.1,
+        "delta": 5.8
+      },
+      "health_insurance_coverage": {
+        "prior": 96.1,
+        "current": 100.0,
+        "delta": 3.9
+      }
+    }
   },
   "minneapolis": {
     "name": "Minneapolis",
@@ -4290,7 +5088,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 75.7,
+        "current": 76.5,
+        "delta": 0.8
+      },
+      "housing_cost_burden": {
+        "prior": 66.7,
+        "current": 66.0,
+        "delta": -0.7
+      },
+      "snap_participation": {
+        "prior": 51.3,
+        "current": 49.5,
+        "delta": -1.7
+      },
+      "health_insurance_coverage": {
+        "prior": 95.6,
+        "current": 97.3,
+        "delta": 1.8
+      }
+    }
   },
   "nashville": {
     "name": "Nashville",
@@ -4400,7 +5219,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 80.5,
+        "current": 79.6,
+        "delta": -0.9
+      },
+      "housing_cost_burden": {
+        "prior": 66.2,
+        "current": 64.9,
+        "delta": -1.4
+      },
+      "snap_participation": {
+        "prior": 41.9,
+        "current": 40.3,
+        "delta": -1.6
+      },
+      "health_insurance_coverage": {
+        "prior": 78.7,
+        "current": 78.1,
+        "delta": -0.6
+      }
+    }
   },
   "new_orleans": {
     "name": "New Orleans",
@@ -4510,7 +5350,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 85.3,
+        "current": 85.9,
+        "delta": 0.6
+      },
+      "housing_cost_burden": {
+        "prior": 55.1,
+        "current": 55.9,
+        "delta": 0.8
+      },
+      "snap_participation": {
+        "prior": 52.2,
+        "current": 53.5,
+        "delta": 1.3
+      },
+      "health_insurance_coverage": {
+        "prior": 95.4,
+        "current": 98.2,
+        "delta": 2.7
+      }
+    }
   },
   "nyc": {
     "name": "New York City",
@@ -4620,7 +5481,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 89.0,
+        "current": 88.9,
+        "delta": -0.1
+      },
+      "housing_cost_burden": {
+        "prior": 54.1,
+        "current": 53.8,
+        "delta": -0.3
+      },
+      "snap_participation": {
+        "prior": 72.4,
+        "current": 75.7,
+        "delta": 3.3
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "oklahoma_city": {
     "name": "Oklahoma City",
@@ -4730,7 +5612,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 81.2,
+        "current": 81.8,
+        "delta": 0.6
+      },
+      "housing_cost_burden": {
+        "prior": 72.1,
+        "current": 70.8,
+        "delta": -1.3
+      },
+      "snap_participation": {
+        "prior": 48.0,
+        "current": 52.0,
+        "delta": 4.0
+      },
+      "health_insurance_coverage": {
+        "prior": 72.7,
+        "current": 78.8,
+        "delta": 6.2
+      }
+    }
   },
   "omaha": {
     "name": "Omaha",
@@ -4840,7 +5743,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 82.8,
+        "current": 83.9,
+        "delta": 1.1
+      },
+      "housing_cost_burden": {
+        "prior": 70.2,
+        "current": 69.6,
+        "delta": -0.7
+      },
+      "snap_participation": {
+        "prior": 48.6,
+        "current": 48.4,
+        "delta": -0.3
+      },
+      "health_insurance_coverage": {
+        "prior": 71.7,
+        "current": 78.0,
+        "delta": 6.3
+      }
+    }
   },
   "philadelphia": {
     "name": "Philadelphia",
@@ -4950,7 +5874,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 84.6,
+        "current": 85.1,
+        "delta": 0.5
+      },
+      "housing_cost_burden": {
+        "prior": 61.5,
+        "current": 61.3,
+        "delta": -0.2
+      },
+      "snap_participation": {
+        "prior": 75.2,
+        "current": 78.9,
+        "delta": 3.6
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "phoenix": {
     "name": "Phoenix",
@@ -5060,7 +6005,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 82.8,
+        "current": 84.1,
+        "delta": 1.3
+      },
+      "housing_cost_burden": {
+        "prior": 66.5,
+        "current": 66.4,
+        "delta": -0.2
+      },
+      "snap_participation": {
+        "prior": 46.8,
+        "current": 47.5,
+        "delta": 0.7
+      },
+      "health_insurance_coverage": {
+        "prior": 97.6,
+        "current": 100.0,
+        "delta": 2.4
+      }
+    }
   },
   "pittsburgh": {
     "name": "Pittsburgh",
@@ -5170,7 +6136,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 77.9,
+        "current": 78.5,
+        "delta": 0.6
+      },
+      "housing_cost_burden": {
+        "prior": 67.0,
+        "current": 67.7,
+        "delta": 0.7
+      },
+      "snap_participation": {
+        "prior": 56.6,
+        "current": 58.2,
+        "delta": 1.6
+      },
+      "health_insurance_coverage": {
+        "prior": 75.8,
+        "current": 78.7,
+        "delta": 2.9
+      }
+    }
   },
   "portland": {
     "name": "Portland",
@@ -5280,7 +6267,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 81.2,
+        "current": 82.2,
+        "delta": 0.9
+      },
+      "housing_cost_burden": {
+        "prior": 62.2,
+        "current": 62.4,
+        "delta": 0.2
+      },
+      "snap_participation": {
+        "prior": 68.4,
+        "current": 71.1,
+        "delta": 2.7
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "providence": {
     "name": "Providence",
@@ -5390,7 +6398,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 82.3,
+        "current": 83.7,
+        "delta": 1.4
+      },
+      "housing_cost_burden": {
+        "prior": 57.9,
+        "current": 60.9,
+        "delta": 3.0
+      },
+      "snap_participation": {
+        "prior": 89.4,
+        "current": 88.2,
+        "delta": -1.2
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "raleigh": {
     "name": "Raleigh",
@@ -5500,7 +6529,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 80.5,
+        "current": 80.8,
+        "delta": 0.3
+      },
+      "housing_cost_burden": {
+        "prior": 70.8,
+        "current": 68.3,
+        "delta": -2.5
+      },
+      "snap_participation": {
+        "prior": 43.9,
+        "current": 47.2,
+        "delta": 3.3
+      },
+      "health_insurance_coverage": {
+        "prior": 86.0,
+        "current": 85.0,
+        "delta": -1.0
+      }
+    }
   },
   "richmond": {
     "name": "Richmond",
@@ -5610,7 +6660,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 77.0,
+        "current": 78.2,
+        "delta": 1.2
+      },
+      "housing_cost_burden": {
+        "prior": 59.9,
+        "current": 60.0,
+        "delta": 0.1
+      },
+      "snap_participation": {
+        "prior": 44.4,
+        "current": 47.6,
+        "delta": 3.1
+      },
+      "health_insurance_coverage": {
+        "prior": 70.4,
+        "current": 83.8,
+        "delta": 13.4
+      }
+    }
   },
   "rochester": {
     "name": "Rochester",
@@ -5720,7 +6791,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 78.7,
+        "current": 81.2,
+        "delta": 2.6
+      },
+      "housing_cost_burden": {
+        "prior": 59.0,
+        "current": 58.5,
+        "delta": -0.5
+      },
+      "snap_participation": {
+        "prior": 72.7,
+        "current": 71.9,
+        "delta": -0.8
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "sacramento": {
     "name": "Sacramento",
@@ -5830,7 +6922,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 82.9,
+        "current": 84.5,
+        "delta": 1.6
+      },
+      "housing_cost_burden": {
+        "prior": 60.0,
+        "current": 59.7,
+        "delta": -0.2
+      },
+      "snap_participation": {
+        "prior": 49.0,
+        "current": 58.9,
+        "delta": 9.9
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "salt_lake_city": {
     "name": "Salt Lake City",
@@ -5940,7 +7053,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 78.7,
+        "current": 78.8,
+        "delta": 0.1
+      },
+      "housing_cost_burden": {
+        "prior": 66.5,
+        "current": 65.7,
+        "delta": -0.8
+      },
+      "snap_participation": {
+        "prior": 29.2,
+        "current": 29.7,
+        "delta": 0.5
+      },
+      "health_insurance_coverage": {
+        "prior": 48.3,
+        "current": 53.8,
+        "delta": 5.5
+      }
+    }
   },
   "san_antonio": {
     "name": "San Antonio",
@@ -6050,7 +7184,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 82.8,
+        "current": 81.8,
+        "delta": -1.0
+      },
+      "housing_cost_burden": {
+        "prior": 65.1,
+        "current": 63.2,
+        "delta": -2.0
+      },
+      "snap_participation": {
+        "prior": 51.5,
+        "current": 55.8,
+        "delta": 4.4
+      },
+      "health_insurance_coverage": {
+        "prior": 70.9,
+        "current": 71.8,
+        "delta": 0.8
+      }
+    }
   },
   "san_diego": {
     "name": "San Diego",
@@ -6160,7 +7315,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 82.2,
+        "current": 83.2,
+        "delta": 1.0
+      },
+      "housing_cost_burden": {
+        "prior": 57.9,
+        "current": 57.4,
+        "delta": -0.5
+      },
+      "snap_participation": {
+        "prior": 33.9,
+        "current": 44.2,
+        "delta": 10.3
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "san_francisco": {
     "name": "San Francisco",
@@ -6270,7 +7446,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 84.6,
+        "current": 83.9,
+        "delta": -0.7
+      },
+      "housing_cost_burden": {
+        "prior": 66.2,
+        "current": 66.4,
+        "delta": 0.2
+      },
+      "snap_participation": {
+        "prior": 35.7,
+        "current": 50.8,
+        "delta": 15.1
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "san_jose": {
     "name": "San Jose",
@@ -6380,7 +7577,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 85.8,
+        "current": 86.4,
+        "delta": 0.5
+      },
+      "housing_cost_burden": {
+        "prior": 61.7,
+        "current": 62.5,
+        "delta": 0.8
+      },
+      "snap_participation": {
+        "prior": 42.9,
+        "current": 52.2,
+        "delta": 9.3
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "seattle": {
     "name": "Seattle",
@@ -6490,7 +7708,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 76.3,
+        "current": 75.9,
+        "delta": -0.4
+      },
+      "housing_cost_burden": {
+        "prior": 64.7,
+        "current": 64.9,
+        "delta": 0.1
+      },
+      "snap_participation": {
+        "prior": 51.4,
+        "current": 52.3,
+        "delta": 0.9
+      },
+      "health_insurance_coverage": {
+        "prior": 87.3,
+        "current": 91.1,
+        "delta": 3.8
+      }
+    }
   },
   "spokane": {
     "name": "Spokane",
@@ -6600,7 +7839,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 77.2,
+        "current": 79.0,
+        "delta": 1.8
+      },
+      "housing_cost_burden": {
+        "prior": 63.9,
+        "current": 65.1,
+        "delta": 1.2
+      },
+      "snap_participation": {
+        "prior": 80.5,
+        "current": 85.0,
+        "delta": 4.5
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "st_louis": {
     "name": "St. Louis",
@@ -6710,7 +7970,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 81.5,
+        "current": 83.1,
+        "delta": 1.5
+      },
+      "housing_cost_burden": {
+        "prior": 64.2,
+        "current": 65.3,
+        "delta": 1.1
+      },
+      "snap_participation": {
+        "prior": 60.0,
+        "current": 60.5,
+        "delta": 0.5
+      },
+      "health_insurance_coverage": {
+        "prior": 69.7,
+        "current": 73.3,
+        "delta": 3.6
+      }
+    }
   },
   "st_paul": {
     "name": "St. Paul",
@@ -6820,7 +8101,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 80.6,
+        "current": 82.1,
+        "delta": 1.5
+      },
+      "housing_cost_burden": {
+        "prior": 66.9,
+        "current": 66.6,
+        "delta": -0.2
+      },
+      "snap_participation": {
+        "prior": 54.9,
+        "current": 57.7,
+        "delta": 2.8
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "stockton": {
     "name": "Stockton",
@@ -6930,7 +8232,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 85.9,
+        "current": 87.7,
+        "delta": 1.8
+      },
+      "housing_cost_burden": {
+        "prior": 56.0,
+        "current": 57.3,
+        "delta": 1.3
+      },
+      "snap_participation": {
+        "prior": 70.2,
+        "current": 82.0,
+        "delta": 11.8
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "tampa": {
     "name": "Tampa",
@@ -7040,7 +8363,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 77.4,
+        "current": 77.8,
+        "delta": 0.4
+      },
+      "housing_cost_burden": {
+        "prior": 62.0,
+        "current": 62.0,
+        "delta": -0.0
+      },
+      "snap_participation": {
+        "prior": 60.6,
+        "current": 61.1,
+        "delta": 0.5
+      },
+      "health_insurance_coverage": {
+        "prior": 77.7,
+        "current": 79.9,
+        "delta": 2.3
+      }
+    }
   },
   "tucson": {
     "name": "Tucson",
@@ -7150,7 +8494,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 76.3,
+        "current": 78.5,
+        "delta": 2.1
+      },
+      "housing_cost_burden": {
+        "prior": 62.3,
+        "current": 61.9,
+        "delta": -0.4
+      },
+      "snap_participation": {
+        "prior": 49.4,
+        "current": 51.1,
+        "delta": 1.7
+      },
+      "health_insurance_coverage": {
+        "prior": 85.8,
+        "current": 91.3,
+        "delta": 5.5
+      }
+    }
   },
   "virginia_beach": {
     "name": "Virginia Beach",
@@ -7260,7 +8625,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 82.0,
+        "current": 82.8,
+        "delta": 0.7
+      },
+      "housing_cost_burden": {
+        "prior": 66.3,
+        "current": 66.1,
+        "delta": -0.2
+      },
+      "snap_participation": {
+        "prior": 42.1,
+        "current": 43.9,
+        "delta": 1.8
+      },
+      "health_insurance_coverage": {
+        "prior": 72.4,
+        "current": 81.5,
+        "delta": 9.1
+      }
+    }
   },
   "washington_dc": {
     "name": "Washington DC",
@@ -7370,7 +8756,28 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 79.7,
+        "current": 79.8,
+        "delta": 0.1
+      },
+      "housing_cost_burden": {
+        "prior": 64.6,
+        "current": 63.9,
+        "delta": -0.7
+      },
+      "snap_participation": {
+        "prior": 57.1,
+        "current": 61.6,
+        "delta": 4.5
+      },
+      "health_insurance_coverage": {
+        "prior": 100.0,
+        "current": 100.0,
+        "delta": 0.0
+      }
+    }
   },
   "wichita": {
     "name": "Wichita",
@@ -7480,6 +8887,27 @@ const CITIES = {
         "unit": "% adults with diagnosed depression (CDC PLACES)"
       }
     },
-    "trend": {}
+    "trend": {
+      "residential_stability": {
+        "prior": 80.7,
+        "current": 81.4,
+        "delta": 0.7
+      },
+      "housing_cost_burden": {
+        "prior": 72.2,
+        "current": 72.0,
+        "delta": -0.2
+      },
+      "snap_participation": {
+        "prior": 45.5,
+        "current": 45.6,
+        "delta": 0.2
+      },
+      "health_insurance_coverage": {
+        "prior": 74.7,
+        "current": 78.0,
+        "delta": 3.3
+      }
+    }
   }
 };
