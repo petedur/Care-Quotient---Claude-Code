@@ -44,6 +44,9 @@ function route() {
   } else if (hash === '/compare') {
     destroyHomeMap();
     renderCompare(app);
+  } else if (hash === '/chat') {
+    destroyHomeMap();
+    renderChat(app);
   } else {
     app.innerHTML = [
       '<div class="not-found">',
@@ -1421,6 +1424,231 @@ function renderTheory(app) {
     '</div>',
     renderFooter(),
   ].join('');
+}
+
+// ── Chat ─────────────────────────────────────────────────────────────────────
+
+var _chatState = {
+  messages: [],
+  loading: false,
+  cityContext: null,
+};
+
+function buildCityContext() {
+  if (_chatState.cityContext) return _chatState.cityContext;
+  var cities = getCitiesSorted();
+  var lines = cities.map(function(c) {
+    var mets = METRIC_ORDER.map(function(mk) {
+      var m = c.metrics && c.metrics[mk];
+      return m ? mk + ':' + fmt(m.score, 0) : '';
+    }).filter(Boolean).join(' ');
+    return (
+      c.name + ', ' + c.state + ' (' + c.key + '): CQ=' + fmt(c.cq, 1) +
+      ' [' + cqTier(c.cq).label + '] P1=' + fmt(c.pillar1, 1) +
+      ' P2=' + fmt(c.pillar2, 1) + ' P3=' + fmt(c.pillar3, 1) +
+      ' | ' + mets
+    );
+  });
+  _chatState.cityContext = lines.join('\n');
+  return _chatState.cityContext;
+}
+
+function escapeHtml(str) {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function formatChatContent(text) {
+  return escapeHtml(text).replace(/\n/g, '<br>');
+}
+
+function updateChatMessages() {
+  var container = document.getElementById('chat-messages');
+  if (!container) return;
+
+  var html = _chatState.messages.map(function(m) {
+    return [
+      '<div class="chat-msg chat-msg-', m.role, '">',
+        '<div class="chat-bubble chat-bubble-', m.role, '">',
+          formatChatContent(m.content),
+        '</div>',
+      '</div>',
+    ].join('');
+  }).join('');
+
+  if (_chatState.loading) {
+    html += [
+      '<div class="chat-msg chat-msg-assistant">',
+        '<div class="chat-bubble chat-bubble-assistant chat-bubble-loading">',
+          '<span class="chat-dots"><span></span><span></span><span></span></span>',
+        '</div>',
+      '</div>',
+    ].join('');
+  }
+
+  container.innerHTML = html;
+  container.scrollTop = container.scrollHeight;
+}
+
+function sendChatMessage(text) {
+  var sugg = document.querySelector('.chat-suggestions');
+  if (sugg) sugg.remove();
+
+  _chatState.messages.push({ role: 'user', content: text });
+  _chatState.loading = true;
+  updateChatMessages();
+
+  var msgPayload = _chatState.messages.map(function(m) {
+    return { role: m.role, content: m.content };
+  });
+
+  fetch('/api/chat', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      messages: msgPayload,
+      cityContext: buildCityContext(),
+    }),
+  }).then(function(res) {
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+
+    _chatState.loading = false;
+    _chatState.messages.push({ role: 'assistant', content: '' });
+    var msgIdx = _chatState.messages.length - 1;
+    updateChatMessages();
+
+    var reader = res.body.getReader();
+    var decoder = new TextDecoder();
+    var buffer = '';
+
+    function pump() {
+      return reader.read().then(function(result) {
+        if (result.done) {
+          updateChatMessages();
+          return;
+        }
+        buffer += decoder.decode(result.value, { stream: true });
+        var parts = buffer.split('\n\n');
+        buffer = parts.pop();
+        parts.forEach(function(part) {
+          var line = part.trim();
+          if (!line.startsWith('data: ')) return;
+          var data = line.slice(6);
+          if (data === '[DONE]') return;
+          try {
+            var parsed = JSON.parse(data);
+            if (parsed.text) {
+              _chatState.messages[msgIdx].content += parsed.text;
+              updateChatMessages();
+            }
+            if (parsed.error) {
+              _chatState.messages[msgIdx].content = parsed.error;
+              updateChatMessages();
+            }
+          } catch (e) { /* skip malformed */ }
+        });
+        return pump();
+      });
+    }
+    return pump();
+  }).catch(function() {
+    _chatState.loading = false;
+    _chatState.messages.push({ role: 'assistant', content: 'Sorry, something went wrong. Please try again.' });
+    updateChatMessages();
+  });
+}
+
+function renderChat(app) {
+  var cities = getCitiesSorted();
+  var topCity = cities[0];
+  var bottomCity = cities[cities.length - 1];
+
+  var suggestions = [
+    'Why does ' + topCity.name + ' rank #1?',
+    'Which city has the weakest care infrastructure overall?',
+    'What\'s the difference between care capacity and quality of life?',
+    'What could ' + bottomCity.name + ' do to improve its score?',
+  ];
+
+  var suggestionsHtml = _chatState.messages.length === 0 ? [
+    '<div class="chat-suggestions">',
+      '<p class="chat-suggestions-label">Try asking:</p>',
+      '<div class="chat-suggestion-grid">',
+        suggestions.map(function(s) {
+          return '<button class="chat-suggestion" data-prompt="' + escapeHtml(s) + '">' + escapeHtml(s) + '</button>';
+        }).join(''),
+      '</div>',
+    '</div>',
+  ].join('') : '';
+
+  app.innerHTML = [
+    '<div class="chat-page">',
+      '<a href="#/" class="back-link">&#8592; All cities</a>',
+
+      '<div class="chat-header">',
+        '<div class="chat-eyebrow">Ask the Data</div>',
+        '<h1 class="chat-title">Care Quotient Assistant</h1>',
+        '<p class="chat-intro">',
+          'Ask about any city\'s score, compare cities, explore the methodology, ',
+          'or discuss what it means for a community to show up for its residents.',
+        '</p>',
+      '</div>',
+
+      '<div class="chat-window">',
+        '<div id="chat-messages" class="chat-messages">',
+          suggestionsHtml,
+        '</div>',
+
+        '<div class="chat-input-area">',
+          '<textarea id="chat-input" class="chat-input" placeholder="Ask about any city or topic…" rows="1" maxlength="2000"></textarea>',
+          '<button id="chat-send" class="chat-send-btn" aria-label="Send">',
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">',
+              '<line x1="12" y1="19" x2="12" y2="5"/>',
+              '<polyline points="5 12 12 5 19 12"/>',
+            '</svg>',
+          '</button>',
+        '</div>',
+      '</div>',
+
+      '<p class="chat-disclaimer">Responses are generated by Claude (Anthropic). Data accuracy depends on CQ V6 scores.</p>',
+    '</div>',
+  ].join('');
+
+  if (_chatState.messages.length > 0) {
+    updateChatMessages();
+  }
+
+  var input  = document.getElementById('chat-input');
+  var sendBtn = document.getElementById('chat-send');
+
+  function doSend() {
+    var text = input.value.trim();
+    if (!text || _chatState.loading) return;
+    input.value = '';
+    input.style.height = 'auto';
+    sendChatMessage(text);
+  }
+
+  sendBtn.addEventListener('click', doSend);
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      doSend();
+    }
+  });
+  input.addEventListener('input', function() {
+    this.style.height = 'auto';
+    this.style.height = Math.min(this.scrollHeight, 140) + 'px';
+  });
+
+  document.querySelectorAll('.chat-suggestion').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      sendChatMessage(btn.dataset.prompt);
+    });
+  });
 }
 
 // ── Footer ──────────────────────────────────────────────────────────────────
