@@ -1462,7 +1462,11 @@ function escapeHtml(str) {
 }
 
 function formatChatContent(text) {
-  return escapeHtml(text).replace(/\n/g, '<br>');
+  return escapeHtml(text)
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>')
+    .replace(/^---$/gm, '<hr>')
+    .replace(/\n/g, '<br>');
 }
 
 function updateChatMessages() {
