@@ -4,11 +4,11 @@ A city-level index measuring whether urban residents live in places that can pro
 
 ## What It Measures
 
-The Care Quotient scores 68 US cities across nine metrics, organized into three pillars:
+The Care Quotient scores 68 US cities across ten metrics, organized into three pillars:
 
 | Pillar | Weight | Metrics |
 |--------|--------|---------|
-| Social & Relational Care | 40% | Residential stability (50%), Care nonprofit density (35%), Library density (15%) |
+| Social & Relational Care | 40% | Residential stability (50%), Care nonprofit density (40%), Library density (5%), Religious org density (5%) |
 | Institutional Care | 35% | FQHC density (45%), Nursing home capacity (35%), Child care capacity (20%) |
 | Economic Access to Care | 25% | Healthcare coverage — Medicaid/CHIP (40%), Housing affordability (35%), SNAP coverage (25%) |
 
@@ -33,6 +33,7 @@ care-capacity-index/
 │   │   ├── snap_participation.py     (Census ACS B22001/C17002)
 │   │   ├── health_insurance.py       (Census ACS C27007 — Medicaid/CHIP)
 │   │   ├── library_density.py        (IMLS Public Libraries Survey)
+│   │   ├── religious_institutions.py (ARDA 2020 Religion Census)
 │   │   ├── nursing_homes.py          (CMS Care Compare)
 │   │   └── child_care_capacity.py    (Census CBP NAICS 624410)
 │   ├── geo/

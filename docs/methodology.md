@@ -8,13 +8,13 @@
 
 ## 1. What This Index Measures
 
-The Care Quotient (CQ) measures **care capacity** — the extent to which a community has the social ties, institutions, and systems needed to support people in moments of vulnerability.
+The Care Quotient (CQ) measures **care capacity** — whether a city has the social ties, institutions, and safety-net reach to help people when they need it.
 
 This is explicitly **not** a quality-of-life index. A city can score well on income, safety, and health outcomes while having thin care infrastructure for its most vulnerable residents. The inverse is also true. The CQ separates these two dimensions and measures only the latter.
 
-The motivating question is whether communities have what it takes to *show up* — through networks, institutions, and reach — when people need help.
+The question is whether a city can show up. Not on paper — in practice.
 
-**V6 scope**: This document describes V6, covering 68 US cities across 9 scored metrics organized into 3 theoretically-grounded pillars. V6 adds child care capacity as the third Pillar 2 metric (20% weight), revises FQHC density from 55% to 45% and nursing home capacity from 45% to 35% within Pillar 2, and replaces the health insurance coverage metric (B27001, any coverage) with a Medicaid/CHIP enrollment rate (C27007) that isolates the public safety-net signal. V5 restructured the pillar architecture based on care ethics theory: library density promoted to scored metric; combined care nonprofit density moved to Pillar 1; housing cost burden moved to Pillar 3. V4 added nursing home capacity. V3 scaled from 5 to 68 cities via ZCTA-to-place crosswalk filtering, corrected the SNAP eligibility denominator, and collapsed NTEE P and E/F/K into a single combined care metric (r=0.85 correlation). V3.2 lowered the ZCTA overlap threshold from 50% to 40% after a geographic audit confirmed FQHCs in Raleigh and Fort Worth were excluded by the stricter cutoff. Scores should be read as "this city has stronger or weaker care capacity than the benchmark" rather than as definitive rankings.
+**V6 scope**: This document describes V6, covering 68 US cities across 10 scored metrics organized into 3 theoretically-grounded pillars. V6 adds child care capacity as the third Pillar 2 metric (20% weight), revises FQHC density from 55% to 45% and nursing home capacity from 45% to 35% within Pillar 2, and replaces the health insurance coverage metric (B27001, any coverage) with a Medicaid/CHIP enrollment rate (C27007) that isolates the public safety-net signal. V5 restructured the pillar architecture based on care ethics theory: library density promoted to scored metric; combined care nonprofit density moved to Pillar 1; housing cost burden moved to Pillar 3. V4 added nursing home capacity. V3 scaled from 5 to 68 cities via ZCTA-to-place crosswalk filtering, corrected the SNAP eligibility denominator, and collapsed NTEE P and E/F/K into a single combined care metric (r=0.85 correlation). V3.2 lowered the ZCTA overlap threshold from 50% to 40% after a geographic audit confirmed FQHCs in Raleigh and Fort Worth were excluded by the stricter cutoff. Scores should be read as "this city has stronger or weaker care capacity than the benchmark" rather than as definitive rankings.
 
 ---
 
@@ -25,7 +25,7 @@ The pillar structure is grounded in Joan Tronto's (1993) four phases of care —
 ### Pillar 1: Social & Relational Care (40% of CQ)
 The relational layer: whether the social infrastructure for care exists — stable communities that allow relationships to form and persist, organized community responses to need, and accessible public spaces that hold communities together.
 
-*Metrics: Residential stability (50%), Care nonprofit density (35%), Library density (15%)*
+*Metrics: Residential stability (50%), Care nonprofit density (40%), Library density (5%), Religious organization density (5%)*
 
 ### Pillar 2: Institutional Care (35% of CQ)
 The organizational layer: whether formal institutions exist to absorb distress at scale — safety-net primary care centers that serve patients regardless of ability to pay, elder care infrastructure, and licensed child care establishments.
@@ -65,7 +65,7 @@ This metric receives the highest weight in Pillar 1 because it is the structural
 **Definition**: Registered 501(c)(3) organizations with NTEE major groups P (Human Services), E (Health), F (Mental Health and Crisis Intervention), or K (Food, Agriculture, and Nutrition) per 10,000 residents.  
 **Source**: IRS Exempt Organizations Business Master File (EO BMF), filtered by NTEE first characters P, E, F, or K.  
 **Unit**: orgs per 10,000 residents (higher = better).  
-**Weight within Pillar 1**: **35%**
+**Weight within Pillar 1**: **40%**
 
 **Rationale**: In V2, NTEE P (Human Services) and NTEE E/F/K (Health, Mental Health, Food) were scored as separate metrics in separate pillars. V3 factor analysis across 68 cities showed these two metrics correlate at r=0.85 and load on the same empirical factor — cities with high NTEE P density also have high NTEE E/F/K density. The pillar distinction was unsupported by the data. V3 collapses them into a single combined metric.
 
@@ -83,20 +83,35 @@ Salamon & Anheier (1998) establish nonprofit density as a structural indicator o
 **Definition**: Public library service outlets (main libraries and branches) per 100,000 residents.  
 **Source**: Institute of Museum and Library Services (IMLS), Public Libraries Survey, most recent available year.  
 **Unit**: libraries per 100,000 residents (higher = better).  
-**Weight within Pillar 1**: **15%**  
+**Weight within Pillar 1**: **5%**  
 **Benchmark**: 5 libraries per 100,000 residents (P90 across 68 cities; aspirational but achievable).
 
-**Rationale**: Public libraries are among the most underappreciated institutions of community care. They provide free access to information, technology, and programming regardless of income or housing status. In practice, they function as de facto distress absorption sites — providing warming/cooling centers, social service referrals, spaces for unhoused residents, and programming for isolated elderly and youth populations. Mentor feedback for this project explicitly named libraries alongside nonprofits and health centers as institutions of care. The 15% within-pillar weight reflects their secondary role relative to nonprofit networks (35%) and residential stability (50%) while acknowledging their direct presence in the community care ecosystem.
+**Rationale**: Public libraries are among the most underappreciated institutions of community care. They provide free access to information, technology, and programming regardless of income or housing status. In practice, they function as de facto distress absorption sites — providing warming/cooling centers, social service referrals, spaces for unhoused residents, and programming for isolated elderly and youth populations. Mentor feedback for this project explicitly named libraries alongside nonprofits and health centers as institutions of care. The 5% within-pillar weight reflects their role as a supportive rather than primary care institution — present and meaningful, but secondary to nonprofit networks (40%) and residential stability (50%).
 
 The library density benchmark (5/100k) represents a standard achieved by roughly 10% of cities in our dataset. Cities at the median (2.8/100k) score approximately 56; the lowest-density cities (Phoenix: 1.1/100k) score 22. This spread gives the metric meaningful discriminating power.
 
 **Measurement note**: IMLS reports service outlets rather than full library systems — a city with one central library and eight branches counts as nine outlets. This more accurately reflects community access than counting systems. Rural-service libraries that operate in a city's ZCTAs are included where applicable.
 
+#### 3.4 Religious Organization Density
+**Definition**: Congregations per 100,000 residents, across all faiths and denominations.  
+**Source**: Association of Religion Data Archives (ARDA), 2020 U.S. Religion Census. Congregational counts matched to cities using the same ZCTA-to-place crosswalk as all other collectors.  
+**Unit**: congregations per 100,000 residents (higher = better).  
+**Weight within Pillar 1**: **5%**  
+**Benchmark**: 150 per 100,000 residents.
+
+**Rationale**: Religious congregations function as social infrastructure regardless of whether their primary identity is devotional. Chaves & Tsitsos (2001) document that a majority of US congregations provide at least one social service — food pantries, clothing distribution, counseling, visitation of homebound individuals — through informal networks that extend well beyond formal charity programs. Johnson, Tompkins & Webb (2002) and Cnaan et al. (2006) find that congregations represent a significant and systematically undercounted component of community care delivery in urban areas. Putnam (2000) treats religious participation as one of the most consistent predictors of social capital — congregations generate bridging and bonding ties that underpin informal mutual aid.
+
+The 5% weight reflects genuine uncertainty about measurement completeness and heterogeneity. Congregations vary enormously in their care activities — some function as major social service providers; others are purely devotional. The ARDA census counts presence, not activity. This metric is best read as a proxy for organized social infrastructure rather than a direct measure of care output.
+
+**Note on NTEE X3x (diagnostic)**: The IRS EO BMF NTEE X30 code, which captures faith-affiliated 501(c)(3) organizations, remains diagnostic-only (see Section 3.8). ARDA congregation counts and IRS X3x filings measure different things: ARDA covers the full congregational landscape including bodies that do not file as tax-exempt nonprofits; IRS X3x filings are weighted toward larger, more formally organized faith institutions. Both are reported; only ARDA-based density is scored.
+
+**V6 note**: Added in V6 alongside child care capacity. The ARDA Religion Census is decennial; the 2020 data is the current and only available vintage. No trend comparison is possible until 2030 ARDA data is published.
+
 ---
 
 ### Pillar 2: Institutional Care
 
-#### 3.4 Community Health Center Density (FQHCs)
+#### 3.5 Community Health Center Density (FQHCs)
 **Definition**: Active Federally Qualified Health Center service delivery sites per 100,000 residents.  
 **Source**: HRSA Health Center Service Delivery and Look-Alike Sites dataset, filtered to active FQHCs (excluding Look-Alike sites) with service delivery functions.  
 **Unit**: FQHCs per 100,000 residents (higher = better).  
@@ -104,7 +119,7 @@ The library density benchmark (5/100k) represents a standard achieved by roughly
 
 **Rationale**: FQHCs carry the strongest evidence base of any metric in this index. Rosenbaum et al. (2011) demonstrate that FQHC access significantly reduces emergency room utilization among low-income and uninsured patients. Shi and colleagues (multiple studies, 2001–2017) link FQHC access to reduced mortality from chronic disease, improved preventive care uptake, and reduced health disparities across racial and income lines. Congressional Budget Office analyses consistently find that FQHCs save approximately $2,371 per user in avoided emergency care costs. Unlike density measures for nonprofits, FQHCs have federal funding and reporting requirements that make their service delivery more verifiable.
 
-**Relationship to health insurance coverage (Section 3.8)**: FQHC density and health insurance coverage are kept as separate metrics in separate pillars because their interaction is interpretively informative rather than redundant. FQHCs are specifically designed to serve Medicaid and uninsured populations — their federal mandate and funding model is built around exactly the populations that lack private insurance. A proposal to adjust FQHC density by the insurance rate would therefore penalize cities for serving uninsured residents, inverting the metric's intent.
+**Relationship to health insurance coverage (Section 3.9)**: FQHC density and health insurance coverage are kept as separate metrics in separate pillars because their interaction is interpretively informative rather than redundant. FQHCs are specifically designed to serve Medicaid and uninsured populations — their federal mandate and funding model is built around exactly the populations that lack private insurance. A proposal to adjust FQHC density by the insurance rate would therefore penalize cities for serving uninsured residents, inverting the metric's intent.
 
 The two metrics are best read together as a diagnostic pair. Four patterns are possible:
 
@@ -117,7 +132,7 @@ The two metrics are best read together as a diagnostic pair. Four patterns are p
 
 City pages flag notable mismatch patterns where the FQHC and insurance scores diverge significantly.
 
-#### 3.5 Nursing Home Capacity
+#### 3.6 Nursing Home Capacity
 **Definition**: Certified nursing home beds per 1,000 residents aged 65 and older.  
 **Source**: CMS Care Compare — Nursing Home Provider Information (dataset ID: 4pq5-n9py), April 2026 data. Filtered to Medicare- and/or Medicaid-certified facilities within each city's ZCTA boundary (≥40% land-area overlap). Denominator is ACS 5-year (2022) population 65+ (B01001 age-by-sex variables).  
 **Unit**: certified beds per 1,000 residents 65+ (higher = more elder care capacity).  
@@ -134,7 +149,7 @@ V4 factor analysis shows nursing home capacity loads 0.91 on its own isolated fa
 
 **Home health (V5 note)**: Home health agencies represent the other major formal elder care modality. CMS Care Compare includes a home health dataset (dataset ID: 6jpm-sxkc) with episode volume data, but CMS attributes episodes to the agency headquarters ZIP, not the patient's location. Agencies operating statewide report all episodes at a single HQ, making city-level attribution unreliable. Home health is deferred pending a clean geographic attribution method.
 
-#### 3.6 Child Care Capacity
+#### 3.7 Child Care Capacity
 **Definition**: Licensed child care establishments (NAICS code 624410) per 1,000 children under 5.  
 **Source**: U.S. Census Bureau, County Business Patterns (CBP), most recent year. Population under 5 from ACS 5-year estimates (2022), B01001 age-by-sex table. Same ZCTA-to-place geographic boundary as all other metrics.  
 **Unit**: establishments per 1,000 children under 5 (higher = better).  
@@ -151,7 +166,7 @@ V4 factor analysis shows nursing home capacity loads 0.91 on its own isolated fa
 
 ---
 
-#### 3.7 Faith-Based Human Services — Diagnostic Only (Not Scored)
+#### 3.8 Faith-Based Human Services — Diagnostic Only (Not Scored)
 **Definition**: Registered 501(c)(3) organizations with NTEE prefix X3 per 10,000 residents.  
 **Source**: IRS EO BMF, filtered by NTEE prefix "X3".  
 **Unit**: orgs per 10,000 residents (reported, not scored).
@@ -162,7 +177,7 @@ V4 factor analysis shows nursing home capacity loads 0.91 on its own isolated fa
 
 ### Pillar 3: Economic Access to Care
 
-#### 3.8 Healthcare Coverage Rate (Medicaid/CHIP)
+#### 3.9 Healthcare Coverage Rate (Medicaid/CHIP)
 **Definition**: Fraction of the likely-eligible population actually enrolled in Medicaid or means-tested public health coverage, expressed as a rate 0–100.  
 **Formula**: min( medicaid_enrolled / eligible_pop_0–149%_FPL × 100, 100 )  
 **Source**: U.S. Census Bureau, ACS 5-year estimates (2022). C27007 (Medicaid/means-tested public coverage by sex by age) for enrollment; C17002 (ratio of income to poverty level) for the 0–149% FPL eligibility denominator.  
@@ -176,9 +191,9 @@ The eligibility-rate denominator (0–149% FPL, using ACS C17002) mirrors the SN
 
 **V6 note**: Previous versions used B27001 (any health insurance) with a benchmark of 95%, which bundled employer-sponsored coverage with Medicaid/CHIP and inflated scores for prosperous cities. V6 switches to C27007 (Medicaid/means-tested public coverage), which isolates the public safety-net signal. Benchmark is 100%: a city where enrolled = eligible scores 100; cities below that score their literal coverage percentage. This makes the metric directly analogous to the SNAP coverage formula.
 
-**Relationship to FQHC density**: See Section 3.4 for the FQHC/coverage mismatch interpretation table. The two metrics are kept separate because FQHCs are specifically designed to serve Medicaid and uninsured populations — combining them would invert FQHC's intent.
+**Relationship to FQHC density**: See Section 3.5 for the FQHC/coverage mismatch interpretation table. The two metrics are kept separate because FQHCs are specifically designed to serve Medicaid and uninsured populations — combining them would invert FQHC's intent.
 
-#### 3.9 Housing Affordability (% Not Cost-Burdened)
+#### 3.10 Housing Affordability (% Not Cost-Burdened)
 **Definition**: Percentage of households NOT spending more than 30% of income on housing costs, combining renter-occupied (Census B25070) and owner-occupied (Census B25091) units.  
 **Source**: U.S. Census Bureau, American Community Survey 5-year estimates (2022).  
 **Unit**: % of households not cost-burdened (higher = better).  
@@ -193,7 +208,7 @@ The eligibility-rate denominator (0–149% FPL, using ACS C17002) mirrors the SN
 
 **Measurement note**: Households with zero or negative income are excluded as "not computed" by Census. Relative city rankings remain valid; absolute percentages should not be compared to external sources without this caveat.
 
-#### 3.10 SNAP Coverage Rate
+#### 3.11 SNAP Coverage Rate
 **Definition**: Ratio of SNAP-receiving households to estimated eligible households, normalized to 0–100.  
 **Formula**: (SNAP households / total households) ÷ (population at 0–149% FPL / total population) × 100, capped at 100.  
 **Source**: U.S. Census Bureau, ACS 5-year estimates (2022). B22001 (SNAP receipt), C17002 (ratio of income to poverty level by band).  
@@ -222,6 +237,7 @@ A city at or above the benchmark receives 100. A city at half the benchmark rece
 | Residential stability | 95% | Near-zero involuntary displacement; ~5% natural annual mobility |
 | Care nonprofits (NTEE P+E+F+K) | 25 per 10,000 | Factor analysis showed NTEE P and E/F/K load on one dimension (r=0.85); collapsed into a single combined metric. 25/10k raised from 15/10k to restore discrimination after ZCTA-based filtering reduced county inflation |
 | Library density | 5 per 100,000 | P90 across 68 cities; aspirational but achievable. Cities at median (~2.8/100k) score ~56; lowest-density cities score ~22 |
+| Religious organization density | 150 per 100,000 | ARDA 2020 Religion Census; congregations per 100k across all faiths and denominations |
 | FQHC density | 15 per 100,000 | Eliminates HRSA shortage designation plus geographic redundancy |
 | Nursing home capacity | 50 per 1,000 residents 65+ | ~5% of elderly in skilled nursing at any one time; modestly above CMS national average (~42/1k) |
 | Child care capacity | 15 per 1,000 children under 5 | Well-supplied urban child care market; national median across 68 cities is approximately 8–10/1k |
@@ -231,18 +247,18 @@ A city at or above the benchmark receives 100. A city at half the benchmark rece
 
 **Advantage over min-max scaling**: Scores are absolute — adding or removing cities does not change existing scores. A city's score reflects its performance against a standard, not against whoever else is in the comparison set.
 
-**Benchmark sensitivity**: A shift of ±10% in any single benchmark changes that metric's score proportionally for all cities below the ceiling. For the combined care nonprofit benchmark (25/10k): raising it 10% to 27.5/10k reduces most city scores on that metric by roughly 4–8 points; lowering it 10% to 22.5/10k raises them by a similar amount. Because Pillar 1 is 40% of CQ and combined care nonprofits are 35% of Pillar 1, a 10% shift on this benchmark changes the final CQ by at most 1–2 points for most cities. The healthcare coverage and residential stability benchmarks have the largest CQ leverage because they sit in higher-weight positions; a ±10% shift there can move CQ by 2–4 points. Benchmark choices are documented and revisable; the absolute benchmark architecture makes these sensitivities explicit rather than hiding them in a relative scaling procedure.
+**Benchmark sensitivity**: A shift of ±10% in any single benchmark changes that metric's score proportionally for all cities below the ceiling. For the combined care nonprofit benchmark (25/10k): raising it 10% to 27.5/10k reduces most city scores on that metric by roughly 4–8 points; lowering it 10% to 22.5/10k raises them by a similar amount. Because Pillar 1 is 40% of CQ and combined care nonprofits are 40% of Pillar 1, a 10% shift on this benchmark changes the final CQ by at most 1–2 points for most cities. The healthcare coverage and residential stability benchmarks have the largest CQ leverage because they sit in higher-weight positions; a ±10% shift there can move CQ by 2–4 points. Benchmark choices are documented and revisable; the absolute benchmark architecture makes these sensitivities explicit rather than hiding them in a relative scaling procedure.
 
 ---
 
 ## 5. Care Quotient Calculation
 
-The Care Quotient (CQ) is a weighted composite of nine scored metrics, computed in two steps.
+The Care Quotient (CQ) is a weighted composite of ten scored metrics, computed in two steps.
 
 **Step 1 — Pillar scores** (weighted averages of constituent metrics):
 
 ```
-Pillar 1 (Social & Relational Care) = (residential_stability × 0.50) + (combined_care × 0.35) + (library_density × 0.15)
+Pillar 1 (Social & Relational Care) = (residential_stability × 0.50) + (combined_care × 0.40) + (library_density × 0.05) + (religious_density × 0.05)
 Pillar 2 (Institutional Care)       = (fqhc_density × 0.45) + (nursing_home_capacity × 0.35) + (child_care_capacity × 0.20)
 Pillar 3 (Economic Access to Care)  = (healthcare_coverage × 0.40)   + (housing_affordability × 0.35) + (snap_coverage × 0.25)
 ```
@@ -255,7 +271,7 @@ CQ = (Pillar 1 × 0.40) + (Pillar 2 × 0.35) + (Pillar 3 × 0.25)
 
 All metric scores are on a 0–100 scale against absolute benchmarks (Section 4), so the CQ is also 0–100.
 
-**Weight rationale (V6)**: Within-pillar weights reflect both empirical signals and theoretical commitments. Within Pillar 1, residential stability (50%) is the structural precondition — V3 factor analysis confirmed it as the dominant signal (loading 0.70). Combined care nonprofit density (35%) represents organized community response. Library density (15%) receives a smaller weight reflecting its role as a supportive rather than primary care institution. Within Pillar 2, V6 revises to a three-metric structure: FQHC density (45%), nursing home capacity (35%), child care capacity (20%). FQHCs retain the highest weight because they serve the full community age distribution under open-access mandate with the strongest evidence base. Nursing homes serve the elderly specifically; their weight reflects this narrower scope. Child care capacity is the newest addition and receives a starting weight of 20% pending empirical validation; it is theoretically grounded but lacks the multi-decade evidence base of the FQHC metric. Within Pillar 3, healthcare coverage (40%) is the primary access gate; housing affordability (35%) is the largest structural enabler of care engagement; SNAP coverage (25%) is more narrowly scoped to food security. NTEE P and E/F/K collapsed into a single combined metric after confirming r=0.85 correlation (V3 change retained).
+**Weight rationale (V6)**: Within-pillar weights reflect both empirical signals and theoretical commitments. Within Pillar 1, residential stability (50%) is the structural precondition — V3 factor analysis confirmed it as the dominant signal (loading 0.70). Combined care nonprofit density (40%) represents organized community response; the weight increase from V5's 35% reflects its primacy among the social infrastructure metrics. Library density (5%) and religious organization density (5%) each receive a small weight, reflecting their role as supportive rather than primary care institutions — present and meaningful, but secondary to networks of nonprofits and stable residents. Within Pillar 2, V6 revises to a three-metric structure: FQHC density (45%), nursing home capacity (35%), child care capacity (20%). FQHCs retain the highest weight because they serve the full community age distribution under open-access mandate with the strongest evidence base. Nursing homes serve the elderly specifically; their weight reflects this narrower scope. Child care capacity is the newest addition and receives a starting weight of 20% pending empirical validation; it is theoretically grounded but lacks the multi-decade evidence base of the FQHC metric. Within Pillar 3, healthcare coverage (40%) is the primary access gate; housing affordability (35%) is the largest structural enabler of care engagement; SNAP coverage (25%) is more narrowly scoped to food security. NTEE P and E/F/K collapsed into a single combined metric after confirming r=0.85 correlation (V3 change retained).
 
 **Inter-pillar weights: theory over data (deliberate)**: Factor analysis across 68 cities yields empirical inter-pillar weights of approximately pillar2: 0.48 / pillar1: 0.35 / pillar3: 0.17 — placing Institutional Care as the dominant empirical signal. V5 retains the theory-based 40/35/25 split instead, for a specific reason: the factor analysis identifies where variance *is* in the data, not necessarily where weight *should* be. Care ethics theory (Tronto 1993, Gilligan 1982) holds that the relational layer — the social fabric that generates attentiveness and responsibility — is the necessary precondition for institutional care to be meaningful. Communities without stable networks cannot absorb what institutions offer. Giving the relational pillar primary weight is a normative commitment, not an empirical claim. V6 will revisit with outcome validation.
 
@@ -272,7 +288,7 @@ The following metrics are collected and reported but excluded from pillar scores
 | Library visits per capita | Supplementary engagement signal; collected alongside library density but not scored. |
 | All care-related nonprofit density | Broad diagnostic count across all NTEE care codes. Useful for context but too aggregated to score; double-counts organizations captured in the scored sub-metrics. |
 | Care nonprofits per 10k distressed (0–150% FPL) | Need-adjusted shadow diagnostic for combined care nonprofit density. Reported on city pages; not scored pending validation that ranking changes are interpretively meaningful. See Section 3.2. |
-| Faith-based orgs (X3x, per 10k) | NTEE X30 captures congregations, not specifically care providers. See Section 3.6. |
+| Faith-based orgs (X3x, per 10k) | NTEE X30 captures congregations, not specifically care providers. See Section 3.8. |
 
 ---
 
@@ -282,7 +298,7 @@ The following metrics are collected and reported but excluded from pillar scores
 |----------|----------------------|
 | Arts & culture (NTEE A) | Correlates with affluence, not care. Would reward wealthy cities. |
 | Education (NTEE B) | Same — private schools, universities inflate this in high-income cities. |
-| All religious orgs (NTEE X broad) | Too noisy; includes purely devotional organizations with no care function. |
+| All religious orgs (NTEE X broad, IRS EO BMF) | Too noisy; includes purely devotional organizations with no care function. ARDA-based congregational density is scored separately as a distinct metric (Section 3.4) — this exclusion applies only to IRS NTEE X coding. |
 | General health outcomes | Outcome metric, not capacity metric. Measuring life expectancy would turn this into a conditions index. |
 | Economic conditions | Out of scope by design; care capacity is distinct from prosperity. |
 
@@ -296,8 +312,9 @@ The following metrics are collected and reported but excluded from pillar scores
 | Census ACS 5-year | All counties | Annual | Free API |
 | IMLS Public Libraries Survey | National | Annual | Public download |
 | HRSA Health Center Service Delivery | National | Periodic | Public download |
+| ARDA U.S. Religion Census | National | Decennial (2020) | Public download |
 
-All four sources are national, free, and scriptable. No city-specific open data portals are required for the V2 scored baseline.
+All five sources are national, free, and scriptable. No city-specific open data portals are required for the V2 scored baseline.
 
 ---
 
@@ -313,7 +330,7 @@ All four sources are national, free, and scriptable. No city-specific open data 
 
 5. **Honolulu geography**: Hawaii has no incorporated municipalities — Honolulu is a Census Designated Place (CDP) absent from the ZCTA-to-Place crosswalk. The pipeline falls back to a county-based boundary (Honolulu County, ~1M residents), which is substantially larger than the urban core (~350k). All per-capita density metrics for Honolulu use city population as the denominator while org/facility counts reflect the broader county geography. Honolulu's scores should be interpreted with this caveat: density metrics may be modestly overstated relative to incorporated cities of similar size. Honolulu is the only city in V3 affected by this fallback.
 
-6. **Faith-based measurement**: X30 codes capture congregations, not specifically human-service providers. Faith-based density is reported as a diagnostic metric rather than scored (see Section 3.6).
+6. **Faith-based measurement**: X30 codes capture congregations, not specifically human-service providers. Faith-based density is reported as a diagnostic metric rather than scored (see Section 3.8).
 
 7. **Density vs. access**: Per-capita density measures presence, not accessibility. A health center in one part of a large city does not serve all residents equally.
 
@@ -321,7 +338,7 @@ All four sources are national, free, and scriptable. No city-specific open data 
 
 9. **Housing cost burden undercount**: The Census B25070/B25091 methodology excludes households with zero or negative income ("not computed"), which can understate true cost burden rates compared to HUD CHAS figures. Relative city rankings are valid; absolute percentages should not be compared to external sources without this caveat.
 
-10. **Health insurance and state policy**: Health insurance coverage reflects state-level Medicaid expansion decisions as much as local care infrastructure. Texas (Houston) did not expand Medicaid under the ACA, which contributes significantly to its lower score on this metric. This is treated as a real care access failure attributable to the state — see Section 3.7 rationale.
+10. **Health insurance and state policy**: Health insurance coverage reflects state-level Medicaid expansion decisions as much as local care infrastructure. Texas (Houston) did not expand Medicaid under the ACA, which contributes significantly to its lower score on this metric. This is treated as a real care access failure attributable to the state — see Section 3.9 rationale.
 
 11. **SNAP eligibility approximation**: The SNAP formula divides a household receipt rate (SNAP households / total households) by a population poverty rate (0–149% FPL population / total population). These are different universe denominators — household vs. person — introducing a structural approximation. This is the best available approach with Census ACS data; the coverage rate should be interpreted as an index rather than a precise participation percentage. The V2 formula additionally used B17001 (100% FPL) as the denominator; V3 corrects this to C17002 (0–149% FPL), which more accurately approximates the 130% FPL SNAP eligibility threshold.
 
@@ -344,7 +361,7 @@ The following improvements were implemented in V3:
 
 ## 11. V4 Changes (Implemented)
 
-- **Nursing home capacity added** (Section 3.5): CMS Care Compare Medicare/Medicaid certified nursing homes; certified beds per 1,000 residents 65+. Benchmark: 50/1k. Wired into all 68 cities.
+- **Nursing home capacity added** (Section 3.6): CMS Care Compare Medicare/Medicaid certified nursing homes; certified beds per 1,000 residents 65+. Benchmark: 50/1k. Wired into all 68 cities.
 - **Pillar 2 weights revised**: Combined care NPs 50% → 35%, FQHC density 50% → 35%, nursing home capacity added at 30%. The previous 50/50 split is replaced by a 35/35/30 split to accommodate the new metric. Factor analysis confirms nursing home capacity is an independent dimension (loading 0.91 on its own factor) that is not captured by the existing Pillar 2 metrics.
 - **7-metric model**: CQ is now a composite of 7 scored metrics (previously 6).
 
@@ -353,7 +370,7 @@ The following improvements were implemented in V3:
 - **Pillar restructuring based on care theory**: Three new pillar names grounded in Tronto (1993), Putnam (2000), and Sampson et al. (1997): Social & Relational Care (40%), Institutional Care (35%), Economic Access to Care (25%). See Section 2.
 - **Library density promoted to scored metric** (Pillar 1, 15%): Public libraries are de facto community care infrastructure — distress absorption sites, information and service access points, and programming hubs for isolated populations. Benchmark: 5 per 100,000 (P90 across 68 cities). See Section 3.3.
 - **Combined care nonprofit density moved from Pillar 2 to Pillar 1**: Nonprofits represent organized community response (Tronto: responsibility phase) — relational before institutional. Within-Pillar 1 weight: 35%.
-- **Housing cost burden moved from Pillar 1 to Pillar 3**: Measures an economic access barrier, not a relational capacity. Within-Pillar 3 weight: 35%. See Section 3.7.
+- **Housing cost burden moved from Pillar 1 to Pillar 3**: Measures an economic access barrier, not a relational capacity. Within-Pillar 3 weight: 35%. See Section 3.10.
 - **Pillar 1 weights revised**: Residential stability 65% → 50%; combined care nonprofits 35% (unchanged but now in a 3-metric pillar); library density 15% (new).
 - **Pillar 2 simplified to two institutional metrics**: FQHC density (55%) and nursing home capacity (45%). Weights revised from V4's 35/35/30.
 - **Pillar 3 expanded to three metrics**: Healthcare coverage (40%), housing affordability (35%), SNAP coverage (25%).
@@ -363,17 +380,20 @@ The following improvements were implemented in V3:
 
 ## 13. V6 Changes (Implemented)
 
-- **Child care capacity metric added** (Section 3.6): Census CBP NAICS 624410 establishments per 1,000 children under 5. Pillar 2 at 20%; benchmark 15/1k under-5. Theoretical grounding: Folbre (2001), Kittay (1999).
+- **Child care capacity metric added** (Section 3.7): Census CBP NAICS 624410 establishments per 1,000 children under 5. Pillar 2 at 20%; benchmark 15/1k under-5. Theoretical grounding: Folbre (2001), Kittay (1999).
+- **Religious organization density metric added** (Section 3.4): ARDA 2020 Religion Census congregations per 100,000 residents. Pillar 1 at 5%; benchmark 150/100k. Measures the religious-institution layer of social infrastructure. Decennial data source; no trend comparison until 2030.
+- **Pillar 1 weights revised**: With four Pillar 1 metrics, combined care nonprofit density raised from 35% to 40%; library density lowered from 15% to 5%; religious organization density added at 5%.
 - **Pillar 2 weights revised**: FQHC density 55%→45%, nursing home capacity 45%→35%, child care added at 20%.
 - **Healthcare coverage metric replaced**: B27001 (any insurance, benchmark 95%) → C27007 (Medicaid/CHIP enrollment rate among 0–149% FPL population, benchmark 100%). Removes employer-insurance inflation; penalizes Medicaid non-expansion states for the right reason.
 - **Interactive map**: Leaflet map as primary home page interface; cities as circle markers colored by tier.
 - **Tier system**: Four absolute score bands — Leading (≥70), Established (≥62), Growing (≥53), Emerging (<53).
 - **CDC PLACES diagnostics**: Mental distress, self-rated health, and depression prevalence as non-scored overlays on city pages.
 - **"What is Care?" theory page**: Full theoretical foundation at /theory, citing Tronto (1993), Putnam (2000), Sampson et al. (1997), Kittay (1999), Folbre (2001), Nussbaum (2006), Sen (1999), and others. Includes metric-to-theory mapping table.
+- **10-metric model**: CQ is now a composite of 10 scored metrics (previously 8 in V5).
 
 ## 14. Trend Analysis
 
-City pages display a direction indicator (↑ / ↓ / →) showing whether a city's Care Quotient has changed since the ACS 2020 5-year estimates. A change of ±1.5 CQ points or more is considered directional; smaller changes are labeled stable.
+City pages display an ACS trend section showing 2020 → 2022 changes at the individual metric level. For each trendable metric, the display shows the prior value, the current value, and the point-change delta (e.g., "72% → 75%, +3pp"). There is no composite CQ trend arrow — because six of the ten metrics are cross-sectional, a single summary figure would reflect only the four ACS-based metrics anyway.
 
 **What the trend measures**: The trend compares ACS 2022 values (the current index vintage) against ACS 2020 values for the same city and the same geographic boundary. ACS 5-year estimates are pooled across five survey years (2022 = 2018–2022; 2020 = 2016–2020), so the comparison reflects gradual population-level change rather than single-year volatility.
 
@@ -391,7 +411,7 @@ City pages display a direction indicator (↑ / ↓ / →) showing whether a cit
 - Nursing home capacity — CMS Care Compare is live/rolling; historical snapshots are not publicly available.
 - Child care capacity — Census County Business Patterns; prior-year files require separate data collection.
 
-Because six of ten scored metrics are held constant, the trend arrow captures change in *economic access* and *residential stability* conditions only. It is an indication of directional momentum, not a full re-score on all dimensions. Cities without ACS 2020 trend data collected do not display a trend indicator.
+Because six of ten scored metrics are held constant, the trend section captures change in *economic access* and *residential stability* conditions only. It is an indication of directional momentum, not a full re-score on all dimensions. Cities without ACS 2020 trend data collected do not display a trend section.
 
 ## 15. Planned V7 Improvements
 

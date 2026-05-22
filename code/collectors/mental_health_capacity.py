@@ -19,15 +19,27 @@ Known limitations:
   2. ZCTAs extend beyond strict city limits; providers in neighboring suburbs with
      overlapping ZCTAs are included. This causes overcounting in cities with many
      nearby suburbs sharing ZIP codes. Observed values (~800-1200/100k) are
-     2-4x higher than expected national norms (~300/100k) due to this geographic
-     spillover. The relative rankings across cities should still be valid if the
-     spillover effect is roughly proportional, but this requires validation.
-     Consider filtering by provider city name rather than ZIP to reduce spillover.
+     3-4x higher than expected urban norms (~200-400/100k) due to this geographic
+     spillover. Unlike FQHCs/nursing homes (which have coordinates for spatial
+     filtering), NPPES has no lat/lng — spillover can only be reduced by filtering
+     on the provider's listed city name field, which introduces its own noise.
 
-METHODOLOGY REVIEW REQUIRED before integrating into CQ scoring:
-  - Validate whether ZCTA-based geography produces reliable relative rankings
-  - Calibrate benchmark against clean reference estimates (e.g. SAMHSA state data)
-  - Decide whether to use raw counts, percentile rank, or shortage-area approach
+STATUS: Diagnostic only — NOT integrated into CQ scoring.
+  The spillover problem makes the raw counts unreliable for scoring. The metric
+  is collected and reported on city pages as context only.
+
+V7 paths if this is revisited:
+  Option A — Fix collector + recalibrate benchmark:
+    Filter results to provider_practice_location_address_city_name == target city.
+    Re-run on 10-15 cities, compare to SAMHSA county workforce data, set a benchmark
+    that creates meaningful spread post-fix. Note: urban MH provider density is
+    genuinely high; the national shortage is rural. The proposed 125/100k benchmark
+    will likely leave all cities near 100 even after fixing spillover — benchmark
+    may need to be 400-500/100k to discriminate.
+  Option B — HRSA shortage-area framing:
+    Score cities by % of population NOT in a Mental Health Professional Shortage
+    Area (MH-HPSA). Avoids spillover entirely; uses a validated federal designation.
+    Downside: HPSA is a shortage flag, not a continuous density measure.
 
 Data source: CMS NPI Registry API (NPPES)
   https://npiregistry.cms.hhs.gov/api/?version=2.1
@@ -40,10 +52,7 @@ Benchmark (proposed): 125 MH providers per 100,000 residents.
   is consistent with the CQ design principle of measuring against an ideal, not
   against peer cities.
 
-NOTE: This collector requires methodology review before scoring integration.
-  Decision needed: Should partial-coverage cities (flagged ZCTAs) be excluded
-  or adjusted? Should the benchmark be revised after reviewing distribution?
-  See CLAUDE.md V6 Roadmap for context.
+NOTE: Decision made — diagnostic only for V6/V7. See STATUS above for V7 paths.
 """
 
 import sys
