@@ -47,7 +47,7 @@ body {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1100;
   background: var(--paper);
   border-bottom: 1px solid var(--ink-faint);
   display: flex;
