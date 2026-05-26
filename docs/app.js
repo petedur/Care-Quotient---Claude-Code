@@ -225,6 +225,7 @@ function renderHome(app) {
 
     // ── Map ───────────────────────────────────────────────────────────────
     '<section class="section-wrap map-section">',
+      '<span class="section-label">Cities Mapped</span>',
       '<div id="city-map" class="city-map">',
         '<div id="map-inset-ak" class="map-inset" data-label="Alaska"></div>',
         '<div id="map-inset-hi" class="map-inset" data-label="Hawaii"></div>',
