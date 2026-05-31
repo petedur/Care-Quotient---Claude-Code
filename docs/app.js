@@ -399,9 +399,12 @@ var CITY_CONTEXT = {
     type: 'geo',
     text: [
       '<strong>Geography note:</strong> Hawaii has no incorporated municipalities. ',
-      'Honolulu is a Census Designated Place, so data reflects Honolulu County ',
-      'boundaries rather than the urban core. Density metrics may be modestly overstated ',
-      'relative to other cities. See <a href="#/methodology">Methodology &sect;9</a>.',
+      'Honolulu is scored using Honolulu County boundaries (~1M residents) rather than ',
+      'the urban core (~350k). Because all density metrics use the county population as the denominator, ',
+      'per-capita scores are calculated against a larger base than comparable cities. ',
+      'Honolulu&rsquo;s high overall ranking should be read with this in mind — it reflects ',
+      'genuine care infrastructure, but the county boundary makes direct comparisons imprecise. ',
+      'See <a href="#/methodology">Methodology &sect;9</a>.',
     ].join(''),
   },
   nyc: {

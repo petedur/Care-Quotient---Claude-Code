@@ -85,7 +85,7 @@ module.exports = async function handler(req, res) {
     const client = new Anthropic({ apiKey });
     const stream = await client.messages.stream({
       model: 'claude-sonnet-4-6',
-      max_tokens: 500,
+      max_tokens: 1500,
       system,
       messages,
     });
