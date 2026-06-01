@@ -1079,7 +1079,7 @@ function renderMethodology(app) {
       '</p>',
 
       '<p>',
-        'The question is whether a city can <em>show up</em>. Not on paper &mdash; in practice.',
+        'The question is whether a city can <em>show up</em>.',
       '</p>',
 
       '<h2>Three Pillars</h2>',
@@ -1087,7 +1087,7 @@ function renderMethodology(app) {
       '<p>',
         'The CQ is a weighted composite of ten scored metrics organized into three pillars. ',
         'Pillar weights prioritize the relational layer (care ethics tradition) over the institutional ',
-        'and access dimensions &mdash; a normative commitment, not an empirical finding. ',
+        'and access dimensions, representing a normative commitment as opposed to an empirical finding. ',
         'Within-pillar weights draw on factor analysis across the 68 cities.',
       '</p>',
 
@@ -1098,7 +1098,7 @@ function renderMethodology(app) {
         '<tbody>',
           '<tr>',
             '<td><span class="ptag ptag-p1">Social &amp; Relational Care</span></td>',
-            '<td>Residential stability, care nonprofit density, library density, and religious organization density &mdash; the conditions under which people actually notice and respond to need.</td>',
+            '<td>Residential stability, care nonprofit density, library density, and religious organization density: the conditions under which people notice and respond to need.</td>',
             '<td>40%</td>',
           '</tr>',
           '<tr>',
