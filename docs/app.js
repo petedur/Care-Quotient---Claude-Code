@@ -44,6 +44,9 @@ function route() {
   } else if (hash === '/compare') {
     destroyHomeMap();
     renderCompare(app);
+  } else if (hash === '/findings') {
+    destroyHomeMap();
+    renderFindings(app);
   } else if (hash === '/chat') {
     destroyHomeMap();
     renderChat(app);
@@ -1555,6 +1558,150 @@ function sendChatMessage(text) {
     _chatState.messages.push({ role: 'assistant', content: 'Sorry, something went wrong. Please try again.' });
     updateChatMessages();
   });
+}
+
+function renderFindings(app) {
+  app.innerHTML = [
+    '<div class="method-page findings-page">',
+
+      '<a href="#/" class="back-link">&#8592; All cities</a>',
+
+      '<div class="method-eyebrow">Findings</div>',
+      '<h1>What the data shows</h1>',
+
+      '<p>',
+        'Six patterns that emerge from the full dataset &mdash; some confirming what we suspected, ',
+        'some genuinely counterintuitive.',
+      '</p>',
+
+      '<hr>',
+
+      '<h2>1. The Rust Belt paradox</h2>',
+
+      '<p>',
+        'The top five cities are Cincinnati (79.3), Cleveland (78.2), Rochester (77.6), Honolulu (76.1), ',
+        'and Washington DC (74.9). Detroit is #7 at 73.5. Pittsburgh is #9 at 73.1. Buffalo rounds out the Leading tier at 70.1.',
+      '</p>',
+
+      '<p>',
+        'These are cities that have absorbed decades of population loss, disinvestment, and a narrative ',
+        'of failure, yet they are leading on care capacity.',
+      '</p>',
+
+      '<p>',
+        'This is attributable to the fact that physical infrastructure built during their prosperous eras remains. ',
+        "Cincinnati's Pillar 2 score is 91.9 &mdash; the highest institutional care score in the dataset. ",
+        'Nursing homes at 100, child care at 100, FQHCs at 81.9. These institutions were built when these cities ',
+        'had more residents and more money. The ratio improved as the denominator (population) shrank. ',
+        'Residential stability is also extremely high &mdash; Detroit at 91.8, Cleveland at 85.7. People stay. ',
+        'The social ties that enable informal care form when people stay put. ',
+        'And Ohio, Michigan, Pennsylvania, New York all expanded Medicaid.',
+      '</p>',
+
+      '<p>',
+        'The inverse is visible too: the cities people are moving to &mdash; Austin (52.2), Raleigh (56.4), ',
+        'Charlotte (54.4), Nashville (53.4) &mdash; are in the bottom third. Growth dilutes per-capita care infrastructure.',
+      '</p>',
+
+      '<hr>',
+
+      '<h2>2. You can see the Medicaid map in the data</h2>',
+
+      '<p>',
+        "Texas didn't expand Medicaid. That decision is visible in every Texas city score:",
+      '</p>',
+
+      '<table class="findings-table">',
+        '<thead><tr><th>City</th><th>CQ</th><th>Healthcare coverage score</th></tr></thead>',
+        '<tbody>',
+          '<tr><td>Houston</td><td>53.1</td><td>66.7</td></tr>',
+          '<tr><td>Dallas</td><td>53.2</td><td>66.8</td></tr>',
+          '<tr><td>Fort Worth</td><td>55.2</td><td>70.5</td></tr>',
+          '<tr><td>San Antonio</td><td>53.6</td><td>71.8</td></tr>',
+          '<tr><td>Austin</td><td>52.2</td><td>60.2</td></tr>',
+          '<tr><td>El Paso</td><td>51.3</td><td>68.1</td></tr>',
+        '</tbody>',
+      '</table>',
+
+      '<p>',
+        'Compare to cities in expansion states with similar demographics: Albuquerque (56.4, coverage 100), ',
+        'Fresno (61.3, coverage 100), Stockton (67.1, coverage 100).',
+      '</p>',
+
+      '<p>',
+        "The starkest number may be Fort Worth's FQHC score: <strong>1.5 out of 100.</strong> ",
+        'The 13th-largest city in the country has almost no federally-qualified health center capacity per capita. ',
+        'The FQHC system is designed to serve exactly the population that lacks Medicaid &mdash; ',
+        'the absence of expansion likely suppresses FQHC funding and development too.',
+      '</p>',
+
+      '<hr>',
+
+      '<h2>3. Wealth and care capacity diverge &mdash; visibly</h2>',
+
+      '<ul class="findings-list">',
+        '<li>San Francisco: <strong>63.9.</strong> Same tier as Omaha (63.7) and Los Angeles (63.7).</li>',
+        '<li>New York City: <strong>61.6.</strong> Same tier as Fresno (61.3).</li>',
+        '<li>Seattle: <strong>66.7.</strong> Below Milwaukee (66.4).</li>',
+        '<li>Boston: <strong>67.8.</strong> Below Baton Rouge (73.3) and Detroit (73.5).</li>',
+      '</ul>',
+
+      '<p>',
+        "SF's housing cost burden score is 73.8 &mdash; roughly a third of households are cost-burdened. ",
+        'Its religious density is 40.9, among the lowest in the dataset. ',
+        'NYC has more FQHCs by absolute count than any city on the list; its per-capita FQHC score is 35.2 ',
+        'because the denominator is 8.3 million people.',
+      '</p>',
+
+      '<hr>',
+
+      '<h2>4. Program participation gaps &mdash; the &ldquo;eligible but not enrolled&rdquo; problem</h2>',
+
+      '<p>',
+        '<strong>Salt Lake City SNAP: 34.9</strong> &mdash; lowest food security program reach in the dataset ',
+        'by a wide margin. The eligible population exists, the federal program exists, enrollment is roughly ',
+        '35% of likely-eligible households. The LDS mutual aid network likely substitutes for formal program ',
+        'participation. People get food through other channels, not SNAP. The index cannot measure that ',
+        'informal care &mdash; which is both a real limitation of the CQ and a real insight into how Salt Lake ',
+        "City's care infrastructure actually works.",
+      '</p>',
+
+      '<p>',
+        'Madison (51.2) is a related case: health insurance 57.1 (low for an expansion state), SNAP 44.8. ',
+        'Even among its smaller population of eligible residents, participation is low, and the index ',
+        'penalizes that gap regardless of the broader city\'s affluence.',
+      '</p>',
+
+      '<hr>',
+
+      '<h2>5. Same score, different problem</h2>',
+
+      '<p>',
+        'Memphis (59.0) and Lexington (59.0) score identically. Memphis: Pillar 1 = 70.3, Pillar 2 = 36.1. ',
+        'Strong community ties, thin institutional care. Lexington: Pillar 1 = 58.8, Pillar 2 = 49.8. ',
+        "Different care deficit, same summary score. The CQ's diagnostic value is in the pillars, not the headline number.",
+      '</p>',
+
+      '<p>',
+        'Atlanta (71.7): highest Pillar 1 in the dataset (85.9). Combined care nonprofit density of 86 &mdash; ',
+        'a legacy of HBCUs, civil rights organizations, and Black church networks. But Pillar 2 is 58.3 and ',
+        'FQHC score is 32.1 for a city of 500k. Extraordinary relational infrastructure, thin formal institutional layer.',
+      '</p>',
+
+      '<hr>',
+
+      '<h2>6. What the index cannot see</h2>',
+
+      '<p>',
+        "Salt Lake City points to the index's structural limit: the CQ measures formal care infrastructure. ",
+        'It cannot measure LDS ward welfare systems, immigrant mutual aid networks in LA and Houston, ',
+        'extended family care systems, or informal support that substitutes for enrollment. ',
+        'Cities where informal care is strong and formal program participation is low will score lower ',
+        "than their actual care capacity. The score is not a verdict &mdash; it's a provocation.",
+      '</p>',
+
+    '</div>',
+  ].join('');
 }
 
 function renderChat(app) {
