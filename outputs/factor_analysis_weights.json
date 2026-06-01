@@ -4,9 +4,9 @@
     "variance_explained_3f": 0.623,
     "kaiser_factors": 4,
     "pillar_structure_supported": true,
-    "note": "Empirical weights for review only. V3 implements theory-based inter-pillar weights. See methodology.md Section 5."
+    "note": "Empirical weights for review only. V6 implements theory-based inter-pillar weights. See methodology.md Section 5."
   },
-  "inter_pillar_note": "V3.1 data (68 cities, 6 metrics, 75.5% variance explained): empirical weights recommend Institutions of Care as dominant pillar (0.496 vs 0.328 Social Fabric). V3 retains Social Fabric primary (0.40) per care ethics theory. Kaiser criterion suggests 2 factors, but 3-factor solution aligns cleanly to pillars with no cross-pillar correlation above 0.60. V4 will revisit inter-pillar weights.",
+  "inter_pillar_note": "V6 data (69 cities, 10 metrics, 62.3% variance explained): empirical weights show Social & Relational Care (P1) as dominant pillar (0.475), Economic Access (P3) second (0.344), Institutional Care (P2) lowest (0.181). V6 retains theory-based 40/35/25 weights per care ethics theory (Tronto 1993). Kaiser criterion suggests 4 factors; 3-factor solution aligns cleanly to pillars. V7 will revisit with outcome validation.",
   "inter_pillar_weights": {
     "empirical": {
       "pillar1": 0.475,

@@ -91,10 +91,11 @@ Outputs go to `outputs/`. Review `factor_analysis_weights.json` before adopting 
 
 ## Geographic Approach
 
-City boundaries are defined using the Census 2020 ZCTA-to-Place relationship file. A ZCTA (ZIP Code Tabulation Area) is assigned to a city if ≥40% of its land area falls within the Census incorporated place boundary. This threshold:
+Most metrics use the Census 2020 ZCTA-to-Place relationship file to define city boundaries. A ZCTA (ZIP Code Tabulation Area) is assigned to a city if ≥40% of its land area falls within the Census incorporated place boundary. This threshold:
 - Eliminates county-sharing inflation (V1/V2 pulled all county data)
 - Captures near-boundary ZCTAs that serve city residents (the 40–49% band)
-- Uses a consistent geographic definition across all data sources
+
+**County-level exception**: Child care capacity (Census CBP) and religious organization density (ARDA) use county-level data for both numerator and denominator, because their source datasets do not report below the county level. Scores for these two metrics reflect county-wide density.
 
 Cities that are Census Designated Places (CDPs) — currently only Honolulu — fall back to county-based boundaries. See methodology.md for details and the Honolulu caveat.
 

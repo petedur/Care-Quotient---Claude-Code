@@ -1,7 +1,7 @@
 {
   "albuquerque": {
-    "pillar1_social_relational_care": 56.9,
-    "pillar2_institutional_care": 36.1,
+    "pillar1_social_relational_care": 56.4,
+    "pillar2_institutional_care": 35.0,
     "pillar3_economic_access": 83.9,
     "metrics": {
       "Residential Stability": {
@@ -23,8 +23,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 51.5,
-        "raw_value": 77.23,
+        "score": 43.0,
+        "raw_value": 64.45,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -41,8 +41,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 36.0,
-        "raw_value": 5.4,
+        "score": 30.4,
+        "raw_value": 4.56,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -65,7 +65,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 56.4
+    "care_quotient": 55.8
   },
   "anchorage": {
     "pillar1_social_relational_care": 57.9,
@@ -136,8 +136,8 @@
     "care_quotient": 48.8
   },
   "atlanta": {
-    "pillar1_social_relational_care": 85.9,
-    "pillar2_institutional_care": 58.3,
+    "pillar1_social_relational_care": 83.5,
+    "pillar2_institutional_care": 45.1,
     "pillar3_economic_access": 67.7,
     "metrics": {
       "Residential Stability": {
@@ -159,8 +159,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 281.52,
+        "score": 51.1,
+        "raw_value": 76.68,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -177,8 +177,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 100.0,
-        "raw_value": 20.87,
+        "score": 33.8,
+        "raw_value": 5.07,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -201,11 +201,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 71.7
+    "care_quotient": 66.1
   },
   "aurora": {
-    "pillar1_social_relational_care": 62.6,
-    "pillar2_institutional_care": 34.4,
+    "pillar1_social_relational_care": 59.4,
+    "pillar2_institutional_care": 28.0,
     "pillar3_economic_access": 79.3,
     "metrics": {
       "Residential Stability": {
@@ -227,8 +227,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 163.93,
+        "score": 34.1,
+        "raw_value": 51.16,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -245,8 +245,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 49.5,
-        "raw_value": 7.42,
+        "score": 17.6,
+        "raw_value": 2.64,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -269,11 +269,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 56.9
+    "care_quotient": 53.4
   },
   "austin": {
-    "pillar1_social_relational_care": 59.6,
-    "pillar2_institutional_care": 38.9,
+    "pillar1_social_relational_care": 59.0,
+    "pillar2_institutional_care": 37.1,
     "pillar3_economic_access": 58.9,
     "metrics": {
       "Residential Stability": {
@@ -295,8 +295,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 51.1,
-        "raw_value": 76.62,
+        "score": 38.1,
+        "raw_value": 57.12,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -313,8 +313,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 33.1,
-        "raw_value": 4.96,
+        "score": 23.7,
+        "raw_value": 3.55,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -337,11 +337,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 52.2
+    "care_quotient": 51.3
   },
   "bakersfield": {
-    "pillar1_social_relational_care": 56.6,
-    "pillar2_institutional_care": 38.5,
+    "pillar1_social_relational_care": 53.9,
+    "pillar2_institutional_care": 36.5,
     "pillar3_economic_access": 81.1,
     "metrics": {
       "Residential Stability": {
@@ -363,8 +363,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 151.67,
+        "score": 45.3,
+        "raw_value": 67.97,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -381,8 +381,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 18.7,
-        "raw_value": 2.8,
+        "score": 8.9,
+        "raw_value": 1.34,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -405,7 +405,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 56.4
+    "care_quotient": 54.6
   },
   "baltimore": {
     "pillar1_social_relational_care": 75.3,
@@ -476,8 +476,8 @@
     "care_quotient": 68.4
   },
   "baton_rouge": {
-    "pillar1_social_relational_care": 66.1,
-    "pillar2_institutional_care": 80.1,
+    "pillar1_social_relational_care": 64.9,
+    "pillar2_institutional_care": 75.5,
     "pillar3_economic_access": 75.2,
     "metrics": {
       "Residential Stability": {
@@ -499,8 +499,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 233.8,
+        "score": 77.6,
+        "raw_value": 116.47,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -517,8 +517,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 47.3,
-        "raw_value": 7.09,
+        "score": 23.9,
+        "raw_value": 3.58,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -541,11 +541,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 73.3
+    "care_quotient": 71.2
   },
   "birmingham": {
     "pillar1_social_relational_care": 67.9,
-    "pillar2_institutional_care": 67.3,
+    "pillar2_institutional_care": 52.5,
     "pillar3_economic_access": 71.1,
     "metrics": {
       "Residential Stability": {
@@ -568,7 +568,7 @@
       },
       "Religious Institution Density (congregations/100k)": {
         "score": 100.0,
-        "raw_value": 566.35,
+        "raw_value": 178.15,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -585,8 +585,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 100.0,
-        "raw_value": 15.09,
+        "score": 25.9,
+        "raw_value": 3.88,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -609,11 +609,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 68.5
+    "care_quotient": 63.3
   },
   "boston": {
-    "pillar1_social_relational_care": 66.3,
-    "pillar2_institutional_care": 58.2,
+    "pillar1_social_relational_care": 65.9,
+    "pillar2_institutional_care": 56.4,
     "pillar3_economic_access": 83.8,
     "metrics": {
       "Residential Stability": {
@@ -635,8 +635,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 48.9,
-        "raw_value": 73.41,
+        "score": 41.4,
+        "raw_value": 62.16,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -653,8 +653,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 46.0,
-        "raw_value": 6.9,
+        "score": 36.9,
+        "raw_value": 5.54,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -677,11 +677,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 67.8
+    "care_quotient": 67.0
   },
   "buffalo": {
-    "pillar1_social_relational_care": 68.9,
-    "pillar2_institutional_care": 59.2,
+    "pillar1_social_relational_care": 66.5,
+    "pillar2_institutional_care": 47.0,
     "pillar3_economic_access": 87.2,
     "metrics": {
       "Residential Stability": {
@@ -703,8 +703,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 262.26,
+        "score": 51.0,
+        "raw_value": 76.5,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -721,8 +721,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 93.9,
-        "raw_value": 14.08,
+        "score": 32.8,
+        "raw_value": 4.92,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -745,11 +745,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 70.1
+    "care_quotient": 64.8
   },
   "charlotte": {
-    "pillar1_social_relational_care": 66.1,
-    "pillar2_institutional_care": 28.7,
+    "pillar1_social_relational_care": 65.3,
+    "pillar2_institutional_care": 27.2,
     "pillar3_economic_access": 71.8,
     "metrics": {
       "Residential Stability": {
@@ -771,8 +771,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 73.3,
-        "raw_value": 109.88,
+        "score": 57.4,
+        "raw_value": 86.15,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -789,8 +789,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 34.3,
-        "raw_value": 5.15,
+        "score": 27.1,
+        "raw_value": 4.07,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -813,11 +813,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.4
+    "care_quotient": 53.6
   },
   "chicago": {
-    "pillar1_social_relational_care": 65.3,
-    "pillar2_institutional_care": 63.7,
+    "pillar1_social_relational_care": 63.2,
+    "pillar2_institutional_care": 57.5,
     "pillar3_economic_access": 82.5,
     "metrics": {
       "Residential Stability": {
@@ -839,8 +839,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 87.4,
-        "raw_value": 131.06,
+        "score": 44.7,
+        "raw_value": 66.99,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -857,8 +857,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 65.5,
-        "raw_value": 9.83,
+        "score": 34.2,
+        "raw_value": 5.13,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -881,11 +881,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 69.0
+    "care_quotient": 66.0
   },
   "cincinnati": {
-    "pillar1_social_relational_care": 72.1,
-    "pillar2_institutional_care": 91.9,
+    "pillar1_social_relational_care": 70.0,
+    "pillar2_institutional_care": 79.8,
     "pillar3_economic_access": 73.0,
     "metrics": {
       "Residential Stability": {
@@ -907,8 +907,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 231.15,
+        "score": 57.4,
+        "raw_value": 86.08,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -925,8 +925,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 100.0,
-        "raw_value": 15.3,
+        "score": 39.7,
+        "raw_value": 5.95,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -949,11 +949,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 79.3
+    "care_quotient": 74.2
   },
   "cleveland": {
-    "pillar1_social_relational_care": 74.1,
-    "pillar2_institutional_care": 78.5,
+    "pillar1_social_relational_care": 71.7,
+    "pillar2_institutional_care": 65.8,
     "pillar3_economic_access": 84.4,
     "metrics": {
       "Residential Stability": {
@@ -975,8 +975,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 271.59,
+        "score": 53.3,
+        "raw_value": 80.01,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -993,8 +993,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 100.0,
-        "raw_value": 18.28,
+        "score": 36.7,
+        "raw_value": 5.51,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -1017,11 +1017,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 78.2
+    "care_quotient": 72.8
   },
   "colorado_springs": {
-    "pillar1_social_relational_care": 57.0,
-    "pillar2_institutional_care": 35.1,
+    "pillar1_social_relational_care": 55.9,
+    "pillar2_institutional_care": 32.4,
     "pillar3_economic_access": 81.1,
     "metrics": {
       "Residential Stability": {
@@ -1043,8 +1043,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 63.6,
-        "raw_value": 95.41,
+        "score": 41.7,
+        "raw_value": 62.57,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -1061,8 +1061,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 35.7,
-        "raw_value": 5.35,
+        "score": 22.2,
+        "raw_value": 3.33,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -1085,11 +1085,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 55.4
+    "care_quotient": 54.0
   },
   "columbus": {
-    "pillar1_social_relational_care": 60.7,
-    "pillar2_institutional_care": 42.8,
+    "pillar1_social_relational_care": 59.6,
+    "pillar2_institutional_care": 39.4,
     "pillar3_economic_access": 76.6,
     "metrics": {
       "Residential Stability": {
@@ -1111,8 +1111,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 73.1,
-        "raw_value": 109.63,
+        "score": 50.0,
+        "raw_value": 75.01,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -1129,8 +1129,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 55.1,
-        "raw_value": 8.27,
+        "score": 38.2,
+        "raw_value": 5.73,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -1153,11 +1153,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 58.4
+    "care_quotient": 56.8
   },
   "corpus_christi": {
-    "pillar1_social_relational_care": 54.5,
-    "pillar2_institutional_care": 31.6,
+    "pillar1_social_relational_care": 54.1,
+    "pillar2_institutional_care": 31.2,
     "pillar3_economic_access": 75.1,
     "metrics": {
       "Residential Stability": {
@@ -1179,8 +1179,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 70.3,
-        "raw_value": 105.39,
+        "score": 63.2,
+        "raw_value": 94.85,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -1197,8 +1197,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 16.7,
-        "raw_value": 2.5,
+        "score": 15.1,
+        "raw_value": 2.26,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -1221,11 +1221,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 51.6
+    "care_quotient": 51.3
   },
   "dallas": {
-    "pillar1_social_relational_care": 65.7,
-    "pillar2_institutional_care": 32.2,
+    "pillar1_social_relational_care": 63.8,
+    "pillar2_institutional_care": 28.8,
     "pillar3_economic_access": 62.5,
     "metrics": {
       "Residential Stability": {
@@ -1247,8 +1247,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 187.22,
+        "score": 62.3,
+        "raw_value": 93.44,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -1265,8 +1265,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 33.5,
-        "raw_value": 5.03,
+        "score": 16.9,
+        "raw_value": 2.53,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -1289,7 +1289,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.2
+    "care_quotient": 51.2
   },
   "denver": {
     "pillar1_social_relational_care": 64.6,
@@ -1360,8 +1360,8 @@
     "care_quotient": 62.9
   },
   "des_moines": {
-    "pillar1_social_relational_care": 64.3,
-    "pillar2_institutional_care": 53.3,
+    "pillar1_social_relational_care": 62.2,
+    "pillar2_institutional_care": 47.0,
     "pillar3_economic_access": 86.2,
     "metrics": {
       "Residential Stability": {
@@ -1383,8 +1383,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 202.11,
+        "score": 58.6,
+        "raw_value": 87.94,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -1401,8 +1401,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 56.0,
-        "raw_value": 8.4,
+        "score": 24.3,
+        "raw_value": 3.65,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -1425,11 +1425,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 65.9
+    "care_quotient": 62.9
   },
   "detroit": {
-    "pillar1_social_relational_care": 76.3,
-    "pillar2_institutional_care": 60.8,
+    "pillar1_social_relational_care": 74.1,
+    "pillar2_institutional_care": 54.0,
     "pillar3_economic_access": 86.8,
     "metrics": {
       "Residential Stability": {
@@ -1451,8 +1451,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 244.44,
+        "score": 57.5,
+        "raw_value": 86.2,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -1469,8 +1469,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 55.7,
-        "raw_value": 8.35,
+        "score": 21.5,
+        "raw_value": 3.22,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -1493,11 +1493,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 73.5
+    "care_quotient": 70.2
   },
   "durham": {
-    "pillar1_social_relational_care": 63.3,
-    "pillar2_institutional_care": 35.2,
+    "pillar1_social_relational_care": 62.8,
+    "pillar2_institutional_care": 34.2,
     "pillar3_economic_access": 69.7,
     "metrics": {
       "Residential Stability": {
@@ -1519,8 +1519,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 84.9,
-        "raw_value": 127.33,
+        "score": 74.1,
+        "raw_value": 111.13,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -1537,8 +1537,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 43.1,
-        "raw_value": 6.46,
+        "score": 38.1,
+        "raw_value": 5.72,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -1561,11 +1561,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 55.1
+    "care_quotient": 54.5
   },
   "el_paso": {
-    "pillar1_social_relational_care": 54.7,
-    "pillar2_institutional_care": 33.9,
+    "pillar1_social_relational_care": 54.2,
+    "pillar2_institutional_care": 32.9,
     "pillar3_economic_access": 70.4,
     "metrics": {
       "Residential Stability": {
@@ -1587,8 +1587,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 49.7,
-        "raw_value": 74.54,
+        "score": 39.0,
+        "raw_value": 58.45,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -1605,8 +1605,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 20.1,
-        "raw_value": 3.01,
+        "score": 15.2,
+        "raw_value": 2.28,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -1629,11 +1629,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 51.3
+    "care_quotient": 50.8
   },
   "fort_worth": {
-    "pillar1_social_relational_care": 62.4,
-    "pillar2_institutional_care": 37.3,
+    "pillar1_social_relational_care": 60.3,
+    "pillar2_institutional_care": 33.5,
     "pillar3_economic_access": 68.8,
     "metrics": {
       "Residential Stability": {
@@ -1655,8 +1655,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 196.97,
+        "score": 57.2,
+        "raw_value": 85.76,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -1673,8 +1673,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 37.9,
-        "raw_value": 5.69,
+        "score": 18.5,
+        "raw_value": 2.77,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -1697,11 +1697,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 55.2
+    "care_quotient": 53.0
   },
   "fresno": {
-    "pillar1_social_relational_care": 62.3,
-    "pillar2_institutional_care": 45.5,
+    "pillar1_social_relational_care": 60.2,
+    "pillar2_institutional_care": 43.7,
     "pillar3_economic_access": 82.0,
     "metrics": {
       "Residential Stability": {
@@ -1723,8 +1723,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 89.2,
-        "raw_value": 133.74,
+        "score": 47.9,
+        "raw_value": 71.88,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -1741,8 +1741,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 21.3,
-        "raw_value": 3.2,
+        "score": 11.9,
+        "raw_value": 1.78,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -1765,11 +1765,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 61.3
+    "care_quotient": 59.9
   },
   "honolulu": {
-    "pillar1_social_relational_care": 81.3,
-    "pillar2_institutional_care": 65.4,
+    "pillar1_social_relational_care": 78.9,
+    "pillar2_institutional_care": 58.8,
     "pillar3_economic_access": 82.7,
     "metrics": {
       "Residential Stability": {
@@ -1791,8 +1791,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 225.09,
+        "score": 51.8,
+        "raw_value": 77.72,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -1809,8 +1809,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 52.1,
-        "raw_value": 7.81,
+        "score": 18.8,
+        "raw_value": 2.82,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -1833,11 +1833,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 76.1
+    "care_quotient": 72.8
   },
   "houston": {
-    "pillar1_social_relational_care": 63.7,
-    "pillar2_institutional_care": 32.6,
+    "pillar1_social_relational_care": 61.2,
+    "pillar2_institutional_care": 28.4,
     "pillar3_economic_access": 64.9,
     "metrics": {
       "Residential Stability": {
@@ -1859,8 +1859,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 98.8,
-        "raw_value": 148.14,
+        "score": 48.1,
+        "raw_value": 72.16,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -1877,8 +1877,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 40.1,
-        "raw_value": 6.02,
+        "score": 19.0,
+        "raw_value": 2.85,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -1901,11 +1901,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.1
+    "care_quotient": 50.6
   },
   "indianapolis": {
-    "pillar1_social_relational_care": 69.7,
-    "pillar2_institutional_care": 59.8,
+    "pillar1_social_relational_care": 69.3,
+    "pillar2_institutional_care": 59.3,
     "pillar3_economic_access": 79.0,
     "metrics": {
       "Residential Stability": {
@@ -1927,8 +1927,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 72.2,
-        "raw_value": 108.31,
+        "score": 65.6,
+        "raw_value": 98.34,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -1945,8 +1945,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 29.3,
-        "raw_value": 4.4,
+        "score": 26.6,
+        "raw_value": 3.99,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -1969,11 +1969,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 68.6
+    "care_quotient": 68.2
   },
   "jacksonville": {
-    "pillar1_social_relational_care": 62.5,
-    "pillar2_institutional_care": 30.0,
+    "pillar1_social_relational_care": 62.3,
+    "pillar2_institutional_care": 29.8,
     "pillar3_economic_access": 76.5,
     "metrics": {
       "Residential Stability": {
@@ -1995,8 +1995,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 69.3,
-        "raw_value": 103.94,
+        "score": 66.1,
+        "raw_value": 99.14,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -2013,8 +2013,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 27.7,
-        "raw_value": 4.15,
+        "score": 26.9,
+        "raw_value": 4.03,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -2037,11 +2037,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.6
+    "care_quotient": 54.5
   },
   "kansas_city": {
-    "pillar1_social_relational_care": 68.6,
-    "pillar2_institutional_care": 50.4,
+    "pillar1_social_relational_care": 67.1,
+    "pillar2_institutional_care": 44.3,
     "pillar3_economic_access": 64.4,
     "metrics": {
       "Residential Stability": {
@@ -2063,8 +2063,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 223.98,
+        "score": 70.4,
+        "raw_value": 105.64,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -2081,8 +2081,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 57.6,
-        "raw_value": 8.64,
+        "score": 27.1,
+        "raw_value": 4.07,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -2105,11 +2105,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 61.2
+    "care_quotient": 58.4
   },
   "las_vegas": {
-    "pillar1_social_relational_care": 65.5,
-    "pillar2_institutional_care": 29.5,
+    "pillar1_social_relational_care": 62.0,
+    "pillar2_institutional_care": 23.6,
     "pillar3_economic_access": 76.2,
     "metrics": {
       "Residential Stability": {
@@ -2131,8 +2131,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 98.8,
-        "raw_value": 148.15,
+        "score": 28.0,
+        "raw_value": 41.98,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -2149,8 +2149,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 40.8,
-        "raw_value": 6.12,
+        "score": 11.5,
+        "raw_value": 1.73,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -2173,7 +2173,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 55.6
+    "care_quotient": 52.1
   },
   "lexington": {
     "pillar1_social_relational_care": 58.8,
@@ -2244,8 +2244,8 @@
     "care_quotient": 59.0
   },
   "los_angeles": {
-    "pillar1_social_relational_care": 66.0,
-    "pillar2_institutional_care": 54.3,
+    "pillar1_social_relational_care": 63.1,
+    "pillar2_institutional_care": 46.7,
     "pillar3_economic_access": 73.0,
     "metrics": {
       "Residential Stability": {
@@ -2267,8 +2267,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 96.5,
-        "raw_value": 144.79,
+        "score": 37.6,
+        "raw_value": 56.37,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -2285,8 +2285,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 61.5,
-        "raw_value": 9.22,
+        "score": 23.5,
+        "raw_value": 3.53,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -2309,11 +2309,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 63.7
+    "care_quotient": 59.8
   },
   "louisville": {
-    "pillar1_social_relational_care": 58.9,
-    "pillar2_institutional_care": 24.3,
+    "pillar1_social_relational_care": 58.1,
+    "pillar2_institutional_care": 23.1,
     "pillar3_economic_access": 80.1,
     "metrics": {
       "Residential Stability": {
@@ -2335,8 +2335,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 84.2,
-        "raw_value": 126.37,
+        "score": 68.1,
+        "raw_value": 102.18,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -2353,8 +2353,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 34.9,
-        "raw_value": 5.24,
+        "score": 28.5,
+        "raw_value": 4.27,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -2377,11 +2377,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 52.1
+    "care_quotient": 51.4
   },
   "madison": {
-    "pillar1_social_relational_care": 59.8,
-    "pillar2_institutional_care": 36.0,
+    "pillar1_social_relational_care": 57.3,
+    "pillar2_institutional_care": 25.4,
     "pillar3_economic_access": 58.7,
     "metrics": {
       "Residential Stability": {
@@ -2403,8 +2403,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 96.3,
-        "raw_value": 144.5,
+        "score": 46.2,
+        "raw_value": 69.28,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -2421,8 +2421,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 100.0,
-        "raw_value": 15.59,
+        "score": 47.1,
+        "raw_value": 7.06,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -2445,11 +2445,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 51.2
+    "care_quotient": 46.5
   },
   "memphis": {
     "pillar1_social_relational_care": 70.3,
-    "pillar2_institutional_care": 36.1,
+    "pillar2_institutional_care": 34.2,
     "pillar3_economic_access": 72.9,
     "metrics": {
       "Residential Stability": {
@@ -2472,7 +2472,7 @@
       },
       "Religious Institution Density (congregations/100k)": {
         "score": 100.0,
-        "raw_value": 228.87,
+        "raw_value": 155.85,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -2489,8 +2489,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 35.2,
-        "raw_value": 5.28,
+        "score": 25.3,
+        "raw_value": 3.8,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -2513,11 +2513,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 59.0
+    "care_quotient": 58.3
   },
   "miami": {
-    "pillar1_social_relational_care": 63.7,
-    "pillar2_institutional_care": 51.9,
+    "pillar1_social_relational_care": 60.8,
+    "pillar2_institutional_care": 39.0,
     "pillar3_economic_access": 70.7,
     "metrics": {
       "Residential Stability": {
@@ -2539,8 +2539,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 379.08,
+        "score": 42.0,
+        "raw_value": 63.07,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -2557,8 +2557,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 100.0,
-        "raw_value": 32.68,
+        "score": 35.9,
+        "raw_value": 5.39,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -2581,11 +2581,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 61.3
+    "care_quotient": 55.6
   },
   "milwaukee": {
-    "pillar1_social_relational_care": 66.4,
-    "pillar2_institutional_care": 53.0,
+    "pillar1_social_relational_care": 64.7,
+    "pillar2_institutional_care": 47.5,
     "pillar3_economic_access": 85.2,
     "metrics": {
       "Residential Stability": {
@@ -2607,8 +2607,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 91.0,
-        "raw_value": 136.52,
+        "score": 55.9,
+        "raw_value": 83.88,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -2625,8 +2625,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 81.8,
-        "raw_value": 12.27,
+        "score": 54.5,
+        "raw_value": 8.18,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -2649,11 +2649,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 66.4
+    "care_quotient": 63.8
   },
   "minneapolis": {
-    "pillar1_social_relational_care": 66.5,
-    "pillar2_institutional_care": 72.5,
+    "pillar1_social_relational_care": 63.9,
+    "pillar2_institutional_care": 59.6,
     "pillar3_economic_access": 79.2,
     "metrics": {
       "Residential Stability": {
@@ -2675,8 +2675,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 210.89,
+        "score": 47.1,
+        "raw_value": 70.69,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -2693,8 +2693,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 100.0,
-        "raw_value": 16.44,
+        "score": 35.4,
+        "raw_value": 5.31,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -2717,11 +2717,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 71.8
+    "care_quotient": 66.2
   },
   "nashville": {
-    "pillar1_social_relational_care": 65.7,
-    "pillar2_institutional_care": 28.7,
+    "pillar1_social_relational_care": 65.5,
+    "pillar2_institutional_care": 28.6,
     "pillar3_economic_access": 68.3,
     "metrics": {
       "Residential Stability": {
@@ -2743,8 +2743,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 92.2,
-        "raw_value": 138.37,
+        "score": 88.8,
+        "raw_value": 133.26,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -2761,8 +2761,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 17.7,
-        "raw_value": 2.66,
+        "score": 17.1,
+        "raw_value": 2.57,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -2785,7 +2785,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.4
+    "care_quotient": 53.3
   },
   "new_orleans": {
     "pillar1_social_relational_care": 70.8,
@@ -2856,7 +2856,7 @@
     "care_quotient": 71.4
   },
   "nyc": {
-    "pillar1_social_relational_care": 62.1,
+    "pillar1_social_relational_care": 62.0,
     "pillar2_institutional_care": 45.7,
     "pillar3_economic_access": 83.2,
     "metrics": {
@@ -2879,8 +2879,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 34.7,
-        "raw_value": 52.11,
+        "score": 32.9,
+        "raw_value": 49.34,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -2924,8 +2924,8 @@
     "care_quotient": 61.6
   },
   "oklahoma_city": {
-    "pillar1_social_relational_care": 61.0,
-    "pillar2_institutional_care": 42.2,
+    "pillar1_social_relational_care": 60.4,
+    "pillar2_institutional_care": 41.2,
     "pillar3_economic_access": 74.4,
     "metrics": {
       "Residential Stability": {
@@ -2947,8 +2947,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 94.7,
-        "raw_value": 141.99,
+        "score": 81.0,
+        "raw_value": 121.44,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -2965,8 +2965,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 30.7,
-        "raw_value": 4.61,
+        "score": 25.5,
+        "raw_value": 3.83,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -2989,11 +2989,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 57.8
+    "care_quotient": 57.2
   },
   "omaha": {
-    "pillar1_social_relational_care": 63.6,
-    "pillar2_institutional_care": 57.4,
+    "pillar1_social_relational_care": 63.1,
+    "pillar2_institutional_care": 55.5,
     "pillar3_economic_access": 72.5,
     "metrics": {
       "Residential Stability": {
@@ -3015,8 +3015,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 62.1,
-        "raw_value": 93.2,
+        "score": 51.7,
+        "raw_value": 77.5,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -3033,8 +3033,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 51.1,
-        "raw_value": 7.66,
+        "score": 41.6,
+        "raw_value": 6.24,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -3057,7 +3057,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 63.7
+    "care_quotient": 62.8
   },
   "philadelphia": {
     "pillar1_social_relational_care": 65.0,
@@ -3128,8 +3128,8 @@
     "care_quotient": 64.3
   },
   "phoenix": {
-    "pillar1_social_relational_care": 60.8,
-    "pillar2_institutional_care": 31.7,
+    "pillar1_social_relational_care": 57.8,
+    "pillar2_institutional_care": 27.3,
     "pillar3_economic_access": 79.8,
     "metrics": {
       "Residential Stability": {
@@ -3151,8 +3151,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 165.1,
+        "score": 40.0,
+        "raw_value": 60.06,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -3169,8 +3169,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 36.8,
-        "raw_value": 5.52,
+        "score": 14.7,
+        "raw_value": 2.2,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -3193,11 +3193,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 55.4
+    "care_quotient": 52.6
   },
   "pittsburgh": {
-    "pillar1_social_relational_care": 77.5,
-    "pillar2_institutional_care": 66.9,
+    "pillar1_social_relational_care": 75.5,
+    "pillar2_institutional_care": 54.6,
     "pillar3_economic_access": 74.9,
     "metrics": {
       "Residential Stability": {
@@ -3219,8 +3219,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 373.3,
+        "score": 60.3,
+        "raw_value": 90.44,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -3237,8 +3237,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 100.0,
-        "raw_value": 26.75,
+        "score": 38.7,
+        "raw_value": 5.8,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -3261,11 +3261,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 73.1
+    "care_quotient": 68.0
   },
   "portland": {
-    "pillar1_social_relational_care": 62.8,
-    "pillar2_institutional_care": 60.0,
+    "pillar1_social_relational_care": 62.2,
+    "pillar2_institutional_care": 55.3,
     "pillar3_economic_access": 85.2,
     "metrics": {
       "Residential Stability": {
@@ -3287,8 +3287,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 66.1,
-        "raw_value": 99.16,
+        "score": 52.9,
+        "raw_value": 79.34,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -3305,8 +3305,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 89.7,
-        "raw_value": 13.46,
+        "score": 66.1,
+        "raw_value": 9.92,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -3329,11 +3329,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 67.4
+    "care_quotient": 65.5
   },
   "providence": {
-    "pillar1_social_relational_care": 70.2,
-    "pillar2_institutional_care": 66.7,
+    "pillar1_social_relational_care": 67.4,
+    "pillar2_institutional_care": 54.2,
     "pillar3_economic_access": 88.7,
     "metrics": {
       "Residential Stability": {
@@ -3355,8 +3355,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 223.64,
+        "score": 43.1,
+        "raw_value": 64.62,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -3373,8 +3373,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 89.3,
-        "raw_value": 13.4,
+        "score": 27.0,
+        "raw_value": 4.05,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -3397,11 +3397,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 73.6
+    "care_quotient": 68.1
   },
   "raleigh": {
-    "pillar1_social_relational_care": 63.3,
-    "pillar2_institutional_care": 35.5,
+    "pillar1_social_relational_care": 60.9,
+    "pillar2_institutional_care": 25.3,
     "pillar3_economic_access": 74.5,
     "metrics": {
       "Residential Stability": {
@@ -3423,8 +3423,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 183.25,
+        "score": 50.6,
+        "raw_value": 75.88,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -3441,8 +3441,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 83.1,
-        "raw_value": 12.47,
+        "score": 32.2,
+        "raw_value": 4.83,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -3465,7 +3465,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 56.4
+    "care_quotient": 51.8
   },
   "richmond": {
     "pillar1_social_relational_care": 63.0,
@@ -3536,8 +3536,8 @@
     "care_quotient": 61.8
   },
   "rochester": {
-    "pillar1_social_relational_care": 66.1,
-    "pillar2_institutional_care": 86.2,
+    "pillar1_social_relational_care": 63.6,
+    "pillar2_institutional_care": 72.9,
     "pillar3_economic_access": 83.9,
     "metrics": {
       "Residential Stability": {
@@ -3559,8 +3559,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 269.25,
+        "score": 49.9,
+        "raw_value": 74.92,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -3577,8 +3577,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 100.0,
-        "raw_value": 15.36,
+        "score": 33.2,
+        "raw_value": 4.98,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -3601,11 +3601,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 77.6
+    "care_quotient": 71.9
   },
   "sacramento": {
-    "pillar1_social_relational_care": 73.1,
-    "pillar2_institutional_care": 52.4,
+    "pillar1_social_relational_care": 70.0,
+    "pillar2_institutional_care": 42.9,
     "pillar3_economic_access": 80.5,
     "metrics": {
       "Residential Stability": {
@@ -3627,8 +3627,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 175.45,
+        "score": 38.7,
+        "raw_value": 58.11,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -3645,8 +3645,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 70.8,
-        "raw_value": 10.62,
+        "score": 23.3,
+        "raw_value": 3.49,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -3669,11 +3669,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 67.7
+    "care_quotient": 63.1
   },
   "salt_lake_city": {
-    "pillar1_social_relational_care": 63.0,
-    "pillar2_institutional_care": 45.5,
+    "pillar1_social_relational_care": 62.7,
+    "pillar2_institutional_care": 29.4,
     "pillar3_economic_access": 55.8,
     "metrics": {
       "Residential Stability": {
@@ -3695,8 +3695,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 832.64,
+        "score": 93.9,
+        "raw_value": 140.9,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -3713,8 +3713,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 100.0,
-        "raw_value": 22.08,
+        "score": 19.2,
+        "raw_value": 2.88,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -3737,11 +3737,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 55.1
+    "care_quotient": 49.3
   },
   "san_antonio": {
-    "pillar1_social_relational_care": 56.2,
-    "pillar2_institutional_care": 39.1,
+    "pillar1_social_relational_care": 55.3,
+    "pillar2_institutional_care": 37.6,
     "pillar3_economic_access": 69.7,
     "metrics": {
       "Residential Stability": {
@@ -3763,8 +3763,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 60.6,
-        "raw_value": 90.96,
+        "score": 43.3,
+        "raw_value": 64.95,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -3781,8 +3781,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 24.6,
-        "raw_value": 3.69,
+        "score": 17.1,
+        "raw_value": 2.57,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -3805,11 +3805,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.6
+    "care_quotient": 52.7
   },
   "san_diego": {
-    "pillar1_social_relational_care": 61.2,
-    "pillar2_institutional_care": 45.0,
+    "pillar1_social_relational_care": 58.8,
+    "pillar2_institutional_care": 36.4,
     "pillar3_economic_access": 75.3,
     "metrics": {
       "Residential Stability": {
@@ -3831,8 +3831,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 84.0,
-        "raw_value": 126.03,
+        "score": 35.3,
+        "raw_value": 52.99,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -3849,8 +3849,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 70.3,
-        "raw_value": 10.55,
+        "score": 27.5,
+        "raw_value": 4.13,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -3873,7 +3873,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 59.1
+    "care_quotient": 55.1
   },
   "san_francisco": {
     "pillar1_social_relational_care": 62.5,
@@ -3944,8 +3944,8 @@
     "care_quotient": 63.9
   },
   "san_jose": {
-    "pillar1_social_relational_care": 57.3,
-    "pillar2_institutional_care": 50.5,
+    "pillar1_social_relational_care": 55.8,
+    "pillar2_institutional_care": 41.8,
     "pillar3_economic_access": 79.6,
     "metrics": {
       "Residential Stability": {
@@ -3967,8 +3967,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 62.0,
-        "raw_value": 93.07,
+        "score": 32.5,
+        "raw_value": 48.7,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -3985,8 +3985,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 89.2,
-        "raw_value": 13.38,
+        "score": 45.7,
+        "raw_value": 6.86,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -4009,11 +4009,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 60.5
+    "care_quotient": 56.8
   },
   "seattle": {
-    "pillar1_social_relational_care": 61.2,
-    "pillar2_institutional_care": 65.5,
+    "pillar1_social_relational_care": 58.4,
+    "pillar2_institutional_care": 55.4,
     "pillar3_economic_access": 77.0,
     "metrics": {
       "Residential Stability": {
@@ -4035,8 +4035,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 198.98,
+        "score": 43.1,
+        "raw_value": 64.63,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -4053,8 +4053,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 100.0,
-        "raw_value": 27.93,
+        "score": 49.2,
+        "raw_value": 7.38,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -4077,11 +4077,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 66.7
+    "care_quotient": 62.0
   },
   "spokane": {
-    "pillar1_social_relational_care": 58.2,
-    "pillar2_institutional_care": 56.7,
+    "pillar1_social_relational_care": 56.0,
+    "pillar2_institutional_care": 48.3,
     "pillar3_economic_access": 90.3,
     "metrics": {
       "Residential Stability": {
@@ -4103,8 +4103,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 194.77,
+        "score": 55.1,
+        "raw_value": 82.69,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -4121,8 +4121,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 69.1,
-        "raw_value": 10.36,
+        "score": 27.2,
+        "raw_value": 4.08,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -4145,7 +4145,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 65.7
+    "care_quotient": 61.9
   },
   "st_louis": {
     "pillar1_social_relational_care": 74.4,
@@ -4216,8 +4216,8 @@
     "care_quotient": 69.0
   },
   "st_paul": {
-    "pillar1_social_relational_care": 70.7,
-    "pillar2_institutional_care": 53.6,
+    "pillar1_social_relational_care": 68.7,
+    "pillar2_institutional_care": 50.3,
     "pillar3_economic_access": 82.9,
     "metrics": {
       "Residential Stability": {
@@ -4239,8 +4239,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 89.7,
-        "raw_value": 134.5,
+        "score": 50.6,
+        "raw_value": 75.86,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -4257,8 +4257,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 39.5,
-        "raw_value": 5.92,
+        "score": 22.8,
+        "raw_value": 3.42,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -4281,11 +4281,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 67.8
+    "care_quotient": 65.8
   },
   "stockton": {
-    "pillar1_social_relational_care": 59.7,
-    "pillar2_institutional_care": 61.9,
+    "pillar1_social_relational_care": 56.8,
+    "pillar2_institutional_care": 57.9,
     "pillar3_economic_access": 86.4,
     "metrics": {
       "Residential Stability": {
@@ -4307,8 +4307,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 154.11,
+        "score": 42.3,
+        "raw_value": 63.4,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -4325,8 +4325,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 35.1,
-        "raw_value": 5.26,
+        "score": 15.1,
+        "raw_value": 2.27,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -4349,11 +4349,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 67.1
+    "care_quotient": 64.6
   },
   "tampa": {
-    "pillar1_social_relational_care": 62.4,
-    "pillar2_institutional_care": 43.6,
+    "pillar1_social_relational_care": 60.1,
+    "pillar2_institutional_care": 29.1,
     "pillar3_economic_access": 74.1,
     "metrics": {
       "Residential Stability": {
@@ -4375,8 +4375,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 100.0,
-        "raw_value": 285.1,
+        "score": 52.5,
+        "raw_value": 78.78,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -4393,8 +4393,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 99.4,
-        "raw_value": 14.91,
+        "score": 26.7,
+        "raw_value": 4.01,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -4417,11 +4417,11 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 58.7
+    "care_quotient": 52.8
   },
   "tucson": {
-    "pillar1_social_relational_care": 56.6,
-    "pillar2_institutional_care": 33.8,
+    "pillar1_social_relational_care": 54.5,
+    "pillar2_institutional_care": 30.6,
     "pillar3_economic_access": 75.6,
     "metrics": {
       "Residential Stability": {
@@ -4443,8 +4443,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 86.9,
-        "raw_value": 130.29,
+        "score": 45.2,
+        "raw_value": 67.76,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -4461,8 +4461,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 35.7,
-        "raw_value": 5.36,
+        "score": 19.7,
+        "raw_value": 2.95,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -4485,7 +4485,7 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.4
+    "care_quotient": 51.4
   },
   "virginia_beach": {
     "pillar1_social_relational_care": 58.8,
@@ -4624,8 +4624,8 @@
     "care_quotient": 74.9
   },
   "wichita": {
-    "pillar1_social_relational_care": 59.8,
-    "pillar2_institutional_care": 33.3,
+    "pillar1_social_relational_care": 58.7,
+    "pillar2_institutional_care": 32.2,
     "pillar3_economic_access": 72.6,
     "metrics": {
       "Residential Stability": {
@@ -4647,8 +4647,8 @@
         "pillar": "Social & Relational Care"
       },
       "Religious Institution Density (congregations/100k)": {
-        "score": 91.2,
-        "raw_value": 136.84,
+        "score": 69.2,
+        "raw_value": 103.85,
         "benchmark": 150.0,
         "pillar": "Social & Relational Care"
       },
@@ -4665,8 +4665,8 @@
         "pillar": "Institutional Care"
       },
       "Child Care Capacity (establishments/1k under-5)": {
-        "score": 21.7,
-        "raw_value": 3.25,
+        "score": 16.1,
+        "raw_value": 2.42,
         "benchmark": 15.0,
         "pillar": "Institutional Care"
       },
@@ -4689,6 +4689,6 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.7
+    "care_quotient": 52.9
   }
 }

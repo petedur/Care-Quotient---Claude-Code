@@ -13,7 +13,10 @@ family daycare homes, and preschools. It does not capture informal arrangements
 Data sources:
   1. Census CBP API — establishments by county, NAICS 624410
      https://api.census.gov/data/{year}/cbp?get=ESTAB&for=county:*&NAICS2017=624410
-  2. Census ACS 5-year — under-5 population by ZCTA (B01001_003E + B01001_027E)
+  2. Census ACS 5-year — under-5 population by county (B01001_003E + B01001_027E)
+     Uses county geography to match the county-level CBP numerator. Querying by
+     Census Place (city boundary) would create a numerator/denominator mismatch for
+     cities that represent a small fraction of their county population.
 
 Normalization: establishments per 1,000 children under 5
   This accounts for the natural variation in need (cities with more young children
@@ -72,33 +75,38 @@ def _get_county_establishments(state_fips: str, county_fips_set: set) -> int:
     return total
 
 
-def _get_under5_pop_acs(city_key: str) -> int:
-    """Get under-5 population from ACS for city's state/place."""
+def _get_under5_pop_county(city_key: str) -> int:
+    """Get under-5 population from ACS for city's counties (matching CBP geography)."""
     key = get_census_api_key()
     cfg = CITIES[city_key]
     state_fips = cfg["state_fips"]
-    place_fips = cfg.get("place_fips", "")
+    county_fips = cfg["county_fips"]
 
-    if not place_fips:
-        # Fall back to population estimate from config (imprecise but workable)
-        return int(cfg["population"] * 0.062)  # national avg ~6.2% under 5
-
-    # ACS B01001: under-5 = B01001_003E (male) + B01001_027E (female)
+    # ACS B01001: under-5 = B01001_003E (male) + B01001_027E (female), by county
     url = (
         f"https://api.census.gov/data/2022/acs/acs5"
         f"?get=B01001_003E,B01001_027E"
-        f"&for=place:{place_fips}&in=state:{state_fips}&key={key}"
+        f"&for=county:*&in=state:{state_fips}&key={key}"
     )
     try:
-        resp = http_get_with_retry(url, timeout=20, label=f"ACS under5 {city_key}")
+        resp = http_get_with_retry(url, timeout=20, label=f"ACS under5 county {city_key}")
         rows = resp.json()
-        if len(rows) < 2:
-            return int(cfg["population"] * 0.062)
-        male_u5 = int(rows[1][0]) if rows[1][0] not in (None, "null") else 0
-        female_u5 = int(rows[1][1]) if rows[1][1] not in (None, "null") else 0
-        return male_u5 + female_u5
+        headers = rows[0]
+        male_idx   = headers.index("B01001_003E")
+        female_idx = headers.index("B01001_027E")
+        county_idx = headers.index("county")
+        state_idx  = headers.index("state")
+
+        total = 0
+        for row in rows[1:]:
+            full_fips = row[state_idx].zfill(2) + row[county_idx].zfill(3)
+            if full_fips in county_fips:
+                male   = int(row[male_idx])   if row[male_idx]   not in (None, "null") else 0
+                female = int(row[female_idx]) if row[female_idx] not in (None, "null") else 0
+                total += male + female
+        return total if total > 0 else int(cfg["population"] * 0.062)
     except Exception as e:
-        print(f"  WARN: ACS under-5 query failed for {city_key}: {e}")
+        print(f"  WARN: ACS under-5 county query failed for {city_key}: {e}")
         return int(cfg["population"] * 0.062)
 
 
@@ -116,8 +124,8 @@ def collect(city_key: str = "chicago") -> dict:
         print(f"  ERROR: CBP query failed: {e}")
         return {"city": city_key, "metric": "child_care_capacity", "data": {}}
 
-    # 2. Get under-5 population
-    under5 = _get_under5_pop_acs(city_key)
+    # 2. Get under-5 population (county-level to match CBP numerator geography)
+    under5 = _get_under5_pop_county(city_key)
     if under5 <= 0:
         print(f"  SKIP: could not get under-5 population")
         return {"city": city_key, "metric": "child_care_capacity", "data": {}}

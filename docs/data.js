@@ -8,9 +8,9 @@ const CITIES = {
     "population": "565k residents",
     "lat": 35.0844,
     "lng": -106.6504,
-    "cq": 56.4,
-    "pillar1": 56.9,
-    "pillar2": 36.1,
+    "cq": 55.8,
+    "pillar1": 56.4,
+    "pillar2": 35.0,
     "pillar3": 83.9,
     "metrics": {
       "residential_stability": {
@@ -35,9 +35,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 51.5,
-        "raw": 77.23,
-        "rawFmt": "77.2",
+        "score": 43.0,
+        "raw": 64.45,
+        "rawFmt": "64.5",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -56,9 +56,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 36.0,
-        "raw": 5.4,
-        "rawFmt": "5.40",
+        "score": 30.4,
+        "raw": 4.56,
+        "rawFmt": "4.56",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -270,9 +270,9 @@ const CITIES = {
     "population": "499k residents",
     "lat": 33.749,
     "lng": -84.388,
-    "cq": 71.7,
-    "pillar1": 85.9,
-    "pillar2": 58.3,
+    "cq": 66.1,
+    "pillar1": 83.5,
+    "pillar2": 45.1,
     "pillar3": 67.7,
     "metrics": {
       "residential_stability": {
@@ -297,9 +297,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 281.52,
-        "rawFmt": "281.5",
+        "score": 51.1,
+        "raw": 76.68,
+        "rawFmt": "76.7",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -318,9 +318,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 100.0,
-        "raw": 20.87,
-        "rawFmt": "20.87",
+        "score": 33.8,
+        "raw": 5.07,
+        "rawFmt": "5.07",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -401,9 +401,9 @@ const CITIES = {
     "population": "367k residents",
     "lat": 39.7294,
     "lng": -104.8319,
-    "cq": 56.9,
-    "pillar1": 62.6,
-    "pillar2": 34.4,
+    "cq": 53.4,
+    "pillar1": 59.4,
+    "pillar2": 28.0,
     "pillar3": 79.3,
     "metrics": {
       "residential_stability": {
@@ -428,9 +428,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 163.93,
-        "rawFmt": "163.9",
+        "score": 34.1,
+        "raw": 51.16,
+        "rawFmt": "51.2",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -449,9 +449,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 49.5,
-        "raw": 7.42,
-        "rawFmt": "7.42",
+        "score": 17.6,
+        "raw": 2.64,
+        "rawFmt": "2.64",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -532,9 +532,9 @@ const CITIES = {
     "population": "962k residents",
     "lat": 30.2672,
     "lng": -97.7431,
-    "cq": 52.2,
-    "pillar1": 59.6,
-    "pillar2": 38.9,
+    "cq": 51.3,
+    "pillar1": 59.0,
+    "pillar2": 37.1,
     "pillar3": 58.9,
     "metrics": {
       "residential_stability": {
@@ -559,9 +559,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 51.1,
-        "raw": 76.62,
-        "rawFmt": "76.6",
+        "score": 38.1,
+        "raw": 57.12,
+        "rawFmt": "57.1",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -580,9 +580,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 33.1,
-        "raw": 4.96,
-        "rawFmt": "4.96",
+        "score": 23.7,
+        "raw": 3.55,
+        "rawFmt": "3.55",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -663,9 +663,9 @@ const CITIES = {
     "population": "407k residents",
     "lat": 35.3733,
     "lng": -119.0187,
-    "cq": 56.4,
-    "pillar1": 56.6,
-    "pillar2": 38.5,
+    "cq": 54.6,
+    "pillar1": 53.9,
+    "pillar2": 36.5,
     "pillar3": 81.1,
     "metrics": {
       "residential_stability": {
@@ -690,9 +690,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 151.67,
-        "rawFmt": "151.7",
+        "score": 45.3,
+        "raw": 67.97,
+        "rawFmt": "68.0",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -711,9 +711,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 18.7,
-        "raw": 2.8,
-        "rawFmt": "2.80",
+        "score": 8.9,
+        "raw": 1.34,
+        "rawFmt": "1.34",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -925,9 +925,9 @@ const CITIES = {
     "population": "228k residents",
     "lat": 30.4515,
     "lng": -91.1871,
-    "cq": 73.3,
-    "pillar1": 66.1,
-    "pillar2": 80.1,
+    "cq": 71.2,
+    "pillar1": 64.9,
+    "pillar2": 75.5,
     "pillar3": 75.2,
     "metrics": {
       "residential_stability": {
@@ -952,9 +952,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 233.8,
-        "rawFmt": "233.8",
+        "score": 77.6,
+        "raw": 116.47,
+        "rawFmt": "116.5",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -973,9 +973,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 47.3,
-        "raw": 7.09,
-        "rawFmt": "7.09",
+        "score": 23.9,
+        "raw": 3.58,
+        "rawFmt": "3.58",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -1056,9 +1056,9 @@ const CITIES = {
     "population": "212k residents",
     "lat": 33.5186,
     "lng": -86.8104,
-    "cq": 68.5,
+    "cq": 63.3,
     "pillar1": 67.9,
-    "pillar2": 67.3,
+    "pillar2": 52.5,
     "pillar3": 71.1,
     "metrics": {
       "residential_stability": {
@@ -1084,8 +1084,8 @@ const CITIES = {
       },
       "religious_density": {
         "score": 100.0,
-        "raw": 566.35,
-        "rawFmt": "566.4",
+        "raw": 178.15,
+        "rawFmt": "178.2",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -1104,9 +1104,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 100.0,
-        "raw": 15.09,
-        "rawFmt": "15.09",
+        "score": 25.9,
+        "raw": 3.88,
+        "rawFmt": "3.88",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -1187,9 +1187,9 @@ const CITIES = {
     "population": "676k residents",
     "lat": 42.3601,
     "lng": -71.0589,
-    "cq": 67.8,
-    "pillar1": 66.3,
-    "pillar2": 58.2,
+    "cq": 67.0,
+    "pillar1": 65.9,
+    "pillar2": 56.4,
     "pillar3": 83.8,
     "metrics": {
       "residential_stability": {
@@ -1214,9 +1214,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 48.9,
-        "raw": 73.41,
-        "rawFmt": "73.4",
+        "score": 41.4,
+        "raw": 62.16,
+        "rawFmt": "62.2",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -1235,9 +1235,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 46.0,
-        "raw": 6.9,
-        "rawFmt": "6.90",
+        "score": 36.9,
+        "raw": 5.54,
+        "rawFmt": "5.54",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -1318,9 +1318,9 @@ const CITIES = {
     "population": "278k residents",
     "lat": 42.8864,
     "lng": -78.8784,
-    "cq": 70.1,
-    "pillar1": 68.9,
-    "pillar2": 59.2,
+    "cq": 64.8,
+    "pillar1": 66.5,
+    "pillar2": 47.0,
     "pillar3": 87.2,
     "metrics": {
       "residential_stability": {
@@ -1345,9 +1345,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 262.26,
-        "rawFmt": "262.3",
+        "score": 51.0,
+        "raw": 76.5,
+        "rawFmt": "76.5",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -1366,9 +1366,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 93.9,
-        "raw": 14.08,
-        "rawFmt": "14.08",
+        "score": 32.8,
+        "raw": 4.92,
+        "rawFmt": "4.92",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -1449,9 +1449,9 @@ const CITIES = {
     "population": "875k residents",
     "lat": 35.2271,
     "lng": -80.8431,
-    "cq": 54.4,
-    "pillar1": 66.1,
-    "pillar2": 28.7,
+    "cq": 53.6,
+    "pillar1": 65.3,
+    "pillar2": 27.2,
     "pillar3": 71.8,
     "metrics": {
       "residential_stability": {
@@ -1476,9 +1476,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 73.3,
-        "raw": 109.88,
-        "rawFmt": "109.9",
+        "score": 57.4,
+        "raw": 86.15,
+        "rawFmt": "86.2",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -1497,9 +1497,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 34.3,
-        "raw": 5.15,
-        "rawFmt": "5.15",
+        "score": 27.1,
+        "raw": 4.07,
+        "rawFmt": "4.07",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -1580,9 +1580,9 @@ const CITIES = {
     "population": "2.7M residents",
     "lat": 41.8781,
     "lng": -87.6298,
-    "cq": 69.0,
-    "pillar1": 65.3,
-    "pillar2": 63.7,
+    "cq": 66.0,
+    "pillar1": 63.2,
+    "pillar2": 57.5,
     "pillar3": 82.5,
     "metrics": {
       "residential_stability": {
@@ -1607,9 +1607,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 87.4,
-        "raw": 131.06,
-        "rawFmt": "131.1",
+        "score": 44.7,
+        "raw": 66.99,
+        "rawFmt": "67.0",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -1628,9 +1628,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 65.5,
-        "raw": 9.83,
-        "rawFmt": "9.83",
+        "score": 34.2,
+        "raw": 5.13,
+        "rawFmt": "5.13",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -1711,9 +1711,9 @@ const CITIES = {
     "population": "309k residents",
     "lat": 39.1031,
     "lng": -84.512,
-    "cq": 79.3,
-    "pillar1": 72.1,
-    "pillar2": 91.9,
+    "cq": 74.2,
+    "pillar1": 70.0,
+    "pillar2": 79.8,
     "pillar3": 73.0,
     "metrics": {
       "residential_stability": {
@@ -1738,9 +1738,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 231.15,
-        "rawFmt": "231.2",
+        "score": 57.4,
+        "raw": 86.08,
+        "rawFmt": "86.1",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -1759,9 +1759,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 100.0,
-        "raw": 15.3,
-        "rawFmt": "15.30",
+        "score": 39.7,
+        "raw": 5.95,
+        "rawFmt": "5.95",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -1842,9 +1842,9 @@ const CITIES = {
     "population": "373k residents",
     "lat": 41.4993,
     "lng": -81.6944,
-    "cq": 78.2,
-    "pillar1": 74.1,
-    "pillar2": 78.5,
+    "cq": 72.8,
+    "pillar1": 71.7,
+    "pillar2": 65.8,
     "pillar3": 84.4,
     "metrics": {
       "residential_stability": {
@@ -1869,9 +1869,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 271.59,
-        "rawFmt": "271.6",
+        "score": 53.3,
+        "raw": 80.01,
+        "rawFmt": "80.0",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -1890,9 +1890,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 100.0,
-        "raw": 18.28,
-        "rawFmt": "18.28",
+        "score": 36.7,
+        "raw": 5.51,
+        "rawFmt": "5.51",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -1973,9 +1973,9 @@ const CITIES = {
     "population": "479k residents",
     "lat": 38.8339,
     "lng": -104.8214,
-    "cq": 55.4,
-    "pillar1": 57.0,
-    "pillar2": 35.1,
+    "cq": 54.0,
+    "pillar1": 55.9,
+    "pillar2": 32.4,
     "pillar3": 81.1,
     "metrics": {
       "residential_stability": {
@@ -2000,9 +2000,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 63.6,
-        "raw": 95.41,
-        "rawFmt": "95.4",
+        "score": 41.7,
+        "raw": 62.57,
+        "rawFmt": "62.6",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -2021,9 +2021,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 35.7,
-        "raw": 5.35,
-        "rawFmt": "5.35",
+        "score": 22.2,
+        "raw": 3.33,
+        "rawFmt": "3.33",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -2104,9 +2104,9 @@ const CITIES = {
     "population": "906k residents",
     "lat": 39.9612,
     "lng": -82.9988,
-    "cq": 58.4,
-    "pillar1": 60.7,
-    "pillar2": 42.8,
+    "cq": 56.8,
+    "pillar1": 59.6,
+    "pillar2": 39.4,
     "pillar3": 76.6,
     "metrics": {
       "residential_stability": {
@@ -2131,9 +2131,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 73.1,
-        "raw": 109.63,
-        "rawFmt": "109.6",
+        "score": 50.0,
+        "raw": 75.01,
+        "rawFmt": "75.0",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -2152,9 +2152,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 55.1,
-        "raw": 8.27,
-        "rawFmt": "8.27",
+        "score": 38.2,
+        "raw": 5.73,
+        "rawFmt": "5.73",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -2235,9 +2235,9 @@ const CITIES = {
     "population": "318k residents",
     "lat": 27.8006,
     "lng": -97.3964,
-    "cq": 51.6,
-    "pillar1": 54.5,
-    "pillar2": 31.6,
+    "cq": 51.3,
+    "pillar1": 54.1,
+    "pillar2": 31.2,
     "pillar3": 75.1,
     "metrics": {
       "residential_stability": {
@@ -2262,9 +2262,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 70.3,
-        "raw": 105.39,
-        "rawFmt": "105.4",
+        "score": 63.2,
+        "raw": 94.85,
+        "rawFmt": "94.8",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -2283,9 +2283,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 16.7,
-        "raw": 2.5,
-        "rawFmt": "2.50",
+        "score": 15.1,
+        "raw": 2.26,
+        "rawFmt": "2.26",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -2366,9 +2366,9 @@ const CITIES = {
     "population": "1.3M residents",
     "lat": 32.7767,
     "lng": -96.797,
-    "cq": 53.2,
-    "pillar1": 65.7,
-    "pillar2": 32.2,
+    "cq": 51.2,
+    "pillar1": 63.8,
+    "pillar2": 28.8,
     "pillar3": 62.5,
     "metrics": {
       "residential_stability": {
@@ -2393,9 +2393,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 187.22,
-        "rawFmt": "187.2",
+        "score": 62.3,
+        "raw": 93.44,
+        "rawFmt": "93.4",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -2414,9 +2414,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 33.5,
-        "raw": 5.03,
-        "rawFmt": "5.03",
+        "score": 16.9,
+        "raw": 2.53,
+        "rawFmt": "2.53",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -2628,9 +2628,9 @@ const CITIES = {
     "population": "214k residents",
     "lat": 41.5868,
     "lng": -93.625,
-    "cq": 65.9,
-    "pillar1": 64.3,
-    "pillar2": 53.3,
+    "cq": 62.9,
+    "pillar1": 62.2,
+    "pillar2": 47.0,
     "pillar3": 86.2,
     "metrics": {
       "residential_stability": {
@@ -2655,9 +2655,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 202.11,
-        "rawFmt": "202.1",
+        "score": 58.6,
+        "raw": 87.94,
+        "rawFmt": "87.9",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -2676,9 +2676,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 56.0,
-        "raw": 8.4,
-        "rawFmt": "8.40",
+        "score": 24.3,
+        "raw": 3.65,
+        "rawFmt": "3.65",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -2759,9 +2759,9 @@ const CITIES = {
     "population": "632k residents",
     "lat": 42.3314,
     "lng": -83.0458,
-    "cq": 73.5,
-    "pillar1": 76.3,
-    "pillar2": 60.8,
+    "cq": 70.2,
+    "pillar1": 74.1,
+    "pillar2": 54.0,
     "pillar3": 86.8,
     "metrics": {
       "residential_stability": {
@@ -2786,9 +2786,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 244.44,
-        "rawFmt": "244.4",
+        "score": 57.5,
+        "raw": 86.2,
+        "rawFmt": "86.2",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -2807,9 +2807,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 55.7,
-        "raw": 8.35,
-        "rawFmt": "8.35",
+        "score": 21.5,
+        "raw": 3.22,
+        "rawFmt": "3.22",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -2890,9 +2890,9 @@ const CITIES = {
     "population": "284k residents",
     "lat": 35.994,
     "lng": -78.8986,
-    "cq": 55.1,
-    "pillar1": 63.3,
-    "pillar2": 35.2,
+    "cq": 54.5,
+    "pillar1": 62.8,
+    "pillar2": 34.2,
     "pillar3": 69.7,
     "metrics": {
       "residential_stability": {
@@ -2917,9 +2917,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 84.9,
-        "raw": 127.33,
-        "rawFmt": "127.3",
+        "score": 74.1,
+        "raw": 111.13,
+        "rawFmt": "111.1",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -2938,9 +2938,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 43.1,
-        "raw": 6.46,
-        "rawFmt": "6.46",
+        "score": 38.1,
+        "raw": 5.72,
+        "rawFmt": "5.72",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -3021,9 +3021,9 @@ const CITIES = {
     "population": "679k residents",
     "lat": 31.7619,
     "lng": -106.485,
-    "cq": 51.3,
-    "pillar1": 54.7,
-    "pillar2": 33.9,
+    "cq": 50.8,
+    "pillar1": 54.2,
+    "pillar2": 32.9,
     "pillar3": 70.4,
     "metrics": {
       "residential_stability": {
@@ -3048,9 +3048,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 49.7,
-        "raw": 74.54,
-        "rawFmt": "74.5",
+        "score": 39.0,
+        "raw": 58.45,
+        "rawFmt": "58.5",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -3069,9 +3069,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 20.1,
-        "raw": 3.01,
-        "rawFmt": "3.01",
+        "score": 15.2,
+        "raw": 2.28,
+        "rawFmt": "2.28",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -3152,9 +3152,9 @@ const CITIES = {
     "population": "919k residents",
     "lat": 32.7555,
     "lng": -97.3308,
-    "cq": 55.2,
-    "pillar1": 62.4,
-    "pillar2": 37.3,
+    "cq": 53.0,
+    "pillar1": 60.3,
+    "pillar2": 33.5,
     "pillar3": 68.8,
     "metrics": {
       "residential_stability": {
@@ -3179,9 +3179,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 196.97,
-        "rawFmt": "197.0",
+        "score": 57.2,
+        "raw": 85.76,
+        "rawFmt": "85.8",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -3200,9 +3200,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 37.9,
-        "raw": 5.69,
-        "rawFmt": "5.69",
+        "score": 18.5,
+        "raw": 2.77,
+        "rawFmt": "2.77",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -3283,9 +3283,9 @@ const CITIES = {
     "population": "542k residents",
     "lat": 36.7378,
     "lng": -119.7871,
-    "cq": 61.3,
-    "pillar1": 62.3,
-    "pillar2": 45.5,
+    "cq": 59.9,
+    "pillar1": 60.2,
+    "pillar2": 43.7,
     "pillar3": 82.0,
     "metrics": {
       "residential_stability": {
@@ -3310,9 +3310,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 89.2,
-        "raw": 133.74,
-        "rawFmt": "133.7",
+        "score": 47.9,
+        "raw": 71.88,
+        "rawFmt": "71.9",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -3331,9 +3331,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 21.3,
-        "raw": 3.2,
-        "rawFmt": "3.20",
+        "score": 11.9,
+        "raw": 1.78,
+        "rawFmt": "1.78",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -3414,9 +3414,9 @@ const CITIES = {
     "population": "351k residents",
     "lat": 21.3069,
     "lng": -157.8583,
-    "cq": 76.1,
-    "pillar1": 81.3,
-    "pillar2": 65.4,
+    "cq": 72.8,
+    "pillar1": 78.9,
+    "pillar2": 58.8,
     "pillar3": 82.7,
     "metrics": {
       "residential_stability": {
@@ -3441,9 +3441,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 225.09,
-        "rawFmt": "225.1",
+        "score": 51.8,
+        "raw": 77.72,
+        "rawFmt": "77.7",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -3462,9 +3462,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 52.1,
-        "raw": 7.81,
-        "rawFmt": "7.81",
+        "score": 18.8,
+        "raw": 2.82,
+        "rawFmt": "2.82",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -3545,9 +3545,9 @@ const CITIES = {
     "population": "2.3M residents",
     "lat": 29.7604,
     "lng": -95.3698,
-    "cq": 53.1,
-    "pillar1": 63.7,
-    "pillar2": 32.6,
+    "cq": 50.6,
+    "pillar1": 61.2,
+    "pillar2": 28.4,
     "pillar3": 64.9,
     "metrics": {
       "residential_stability": {
@@ -3572,9 +3572,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 98.8,
-        "raw": 148.14,
-        "rawFmt": "148.1",
+        "score": 48.1,
+        "raw": 72.16,
+        "rawFmt": "72.2",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -3593,9 +3593,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 40.1,
-        "raw": 6.02,
-        "rawFmt": "6.02",
+        "score": 19.0,
+        "raw": 2.85,
+        "rawFmt": "2.85",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -3676,9 +3676,9 @@ const CITIES = {
     "population": "887k residents",
     "lat": 39.7684,
     "lng": -86.1581,
-    "cq": 68.6,
-    "pillar1": 69.7,
-    "pillar2": 59.8,
+    "cq": 68.2,
+    "pillar1": 69.3,
+    "pillar2": 59.3,
     "pillar3": 79.0,
     "metrics": {
       "residential_stability": {
@@ -3703,9 +3703,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 72.2,
-        "raw": 108.31,
-        "rawFmt": "108.3",
+        "score": 65.6,
+        "raw": 98.34,
+        "rawFmt": "98.3",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -3724,9 +3724,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 29.3,
-        "raw": 4.4,
-        "rawFmt": "4.40",
+        "score": 26.6,
+        "raw": 3.99,
+        "rawFmt": "3.99",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -3807,9 +3807,9 @@ const CITIES = {
     "population": "950k residents",
     "lat": 30.3322,
     "lng": -81.6557,
-    "cq": 54.6,
-    "pillar1": 62.5,
-    "pillar2": 30.0,
+    "cq": 54.5,
+    "pillar1": 62.3,
+    "pillar2": 29.8,
     "pillar3": 76.5,
     "metrics": {
       "residential_stability": {
@@ -3834,9 +3834,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 69.3,
-        "raw": 103.94,
-        "rawFmt": "103.9",
+        "score": 66.1,
+        "raw": 99.14,
+        "rawFmt": "99.1",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -3855,9 +3855,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 27.7,
-        "raw": 4.15,
-        "rawFmt": "4.15",
+        "score": 26.9,
+        "raw": 4.03,
+        "rawFmt": "4.03",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -3938,9 +3938,9 @@ const CITIES = {
     "population": "508k residents",
     "lat": 39.0997,
     "lng": -94.5786,
-    "cq": 61.2,
-    "pillar1": 68.6,
-    "pillar2": 50.4,
+    "cq": 58.4,
+    "pillar1": 67.1,
+    "pillar2": 44.3,
     "pillar3": 64.4,
     "metrics": {
       "residential_stability": {
@@ -3965,9 +3965,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 223.98,
-        "rawFmt": "224.0",
+        "score": 70.4,
+        "raw": 105.64,
+        "rawFmt": "105.6",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -3986,9 +3986,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 57.6,
-        "raw": 8.64,
-        "rawFmt": "8.64",
+        "score": 27.1,
+        "raw": 4.07,
+        "rawFmt": "4.07",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -4069,9 +4069,9 @@ const CITIES = {
     "population": "642k residents",
     "lat": 36.1699,
     "lng": -115.1398,
-    "cq": 55.6,
-    "pillar1": 65.5,
-    "pillar2": 29.5,
+    "cq": 52.1,
+    "pillar1": 62.0,
+    "pillar2": 23.6,
     "pillar3": 76.2,
     "metrics": {
       "residential_stability": {
@@ -4096,9 +4096,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 98.8,
-        "raw": 148.15,
-        "rawFmt": "148.2",
+        "score": 28.0,
+        "raw": 41.98,
+        "rawFmt": "42.0",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -4117,9 +4117,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 40.8,
-        "raw": 6.12,
-        "rawFmt": "6.12",
+        "score": 11.5,
+        "raw": 1.73,
+        "rawFmt": "1.73",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -4331,9 +4331,9 @@ const CITIES = {
     "population": "3.9M residents",
     "lat": 34.0522,
     "lng": -118.2437,
-    "cq": 63.7,
-    "pillar1": 66.0,
-    "pillar2": 54.3,
+    "cq": 59.8,
+    "pillar1": 63.1,
+    "pillar2": 46.7,
     "pillar3": 73.0,
     "metrics": {
       "residential_stability": {
@@ -4358,9 +4358,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 96.5,
-        "raw": 144.79,
-        "rawFmt": "144.8",
+        "score": 37.6,
+        "raw": 56.37,
+        "rawFmt": "56.4",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -4379,9 +4379,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 61.5,
-        "raw": 9.22,
-        "rawFmt": "9.22",
+        "score": 23.5,
+        "raw": 3.53,
+        "rawFmt": "3.53",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -4462,9 +4462,9 @@ const CITIES = {
     "population": "633k residents",
     "lat": 38.2527,
     "lng": -85.7585,
-    "cq": 52.1,
-    "pillar1": 58.9,
-    "pillar2": 24.3,
+    "cq": 51.4,
+    "pillar1": 58.1,
+    "pillar2": 23.1,
     "pillar3": 80.1,
     "metrics": {
       "residential_stability": {
@@ -4489,9 +4489,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 84.2,
-        "raw": 126.37,
-        "rawFmt": "126.4",
+        "score": 68.1,
+        "raw": 102.18,
+        "rawFmt": "102.2",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -4510,9 +4510,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 34.9,
-        "raw": 5.24,
-        "rawFmt": "5.24",
+        "score": 28.5,
+        "raw": 4.27,
+        "rawFmt": "4.27",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -4593,9 +4593,9 @@ const CITIES = {
     "population": "269k residents",
     "lat": 43.0731,
     "lng": -89.4012,
-    "cq": 51.2,
-    "pillar1": 59.8,
-    "pillar2": 36.0,
+    "cq": 46.5,
+    "pillar1": 57.3,
+    "pillar2": 25.4,
     "pillar3": 58.7,
     "metrics": {
       "residential_stability": {
@@ -4620,9 +4620,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 96.3,
-        "raw": 144.5,
-        "rawFmt": "144.5",
+        "score": 46.2,
+        "raw": 69.28,
+        "rawFmt": "69.3",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -4641,9 +4641,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 100.0,
-        "raw": 15.59,
-        "rawFmt": "15.59",
+        "score": 47.1,
+        "raw": 7.06,
+        "rawFmt": "7.06",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -4724,9 +4724,9 @@ const CITIES = {
     "population": "633k residents",
     "lat": 35.1495,
     "lng": -90.049,
-    "cq": 59.0,
+    "cq": 58.3,
     "pillar1": 70.3,
-    "pillar2": 36.1,
+    "pillar2": 34.2,
     "pillar3": 72.9,
     "metrics": {
       "residential_stability": {
@@ -4752,8 +4752,8 @@ const CITIES = {
       },
       "religious_density": {
         "score": 100.0,
-        "raw": 228.87,
-        "rawFmt": "228.9",
+        "raw": 155.85,
+        "rawFmt": "155.8",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -4772,9 +4772,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 35.2,
-        "raw": 5.28,
-        "rawFmt": "5.28",
+        "score": 25.3,
+        "raw": 3.8,
+        "rawFmt": "3.80",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -4855,9 +4855,9 @@ const CITIES = {
     "population": "450k residents",
     "lat": 25.7617,
     "lng": -80.1918,
-    "cq": 61.3,
-    "pillar1": 63.7,
-    "pillar2": 51.9,
+    "cq": 55.6,
+    "pillar1": 60.8,
+    "pillar2": 39.0,
     "pillar3": 70.7,
     "metrics": {
       "residential_stability": {
@@ -4882,9 +4882,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 379.08,
-        "rawFmt": "379.1",
+        "score": 42.0,
+        "raw": 63.07,
+        "rawFmt": "63.1",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -4903,9 +4903,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 100.0,
-        "raw": 32.68,
-        "rawFmt": "32.68",
+        "score": 35.9,
+        "raw": 5.39,
+        "rawFmt": "5.39",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -4965,9 +4965,9 @@ const CITIES = {
     "population": "577k residents",
     "lat": 43.0389,
     "lng": -87.9065,
-    "cq": 66.4,
-    "pillar1": 66.4,
-    "pillar2": 53.0,
+    "cq": 63.8,
+    "pillar1": 64.7,
+    "pillar2": 47.5,
     "pillar3": 85.2,
     "metrics": {
       "residential_stability": {
@@ -4992,9 +4992,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 91.0,
-        "raw": 136.52,
-        "rawFmt": "136.5",
+        "score": 55.9,
+        "raw": 83.88,
+        "rawFmt": "83.9",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -5013,9 +5013,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 81.8,
-        "raw": 12.27,
-        "rawFmt": "12.27",
+        "score": 54.5,
+        "raw": 8.18,
+        "rawFmt": "8.18",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -5096,9 +5096,9 @@ const CITIES = {
     "population": "430k residents",
     "lat": 44.9778,
     "lng": -93.265,
-    "cq": 71.8,
-    "pillar1": 66.5,
-    "pillar2": 72.5,
+    "cq": 66.2,
+    "pillar1": 63.9,
+    "pillar2": 59.6,
     "pillar3": 79.2,
     "metrics": {
       "residential_stability": {
@@ -5123,9 +5123,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 210.89,
-        "rawFmt": "210.9",
+        "score": 47.1,
+        "raw": 70.69,
+        "rawFmt": "70.7",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -5144,9 +5144,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 100.0,
-        "raw": 16.44,
-        "rawFmt": "16.44",
+        "score": 35.4,
+        "raw": 5.31,
+        "rawFmt": "5.31",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -5227,9 +5227,9 @@ const CITIES = {
     "population": "689k residents",
     "lat": 36.1627,
     "lng": -86.7816,
-    "cq": 53.4,
-    "pillar1": 65.7,
-    "pillar2": 28.7,
+    "cq": 53.3,
+    "pillar1": 65.5,
+    "pillar2": 28.6,
     "pillar3": 68.3,
     "metrics": {
       "residential_stability": {
@@ -5254,9 +5254,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 92.2,
-        "raw": 138.37,
-        "rawFmt": "138.4",
+        "score": 88.8,
+        "raw": 133.26,
+        "rawFmt": "133.3",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -5275,9 +5275,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 17.7,
-        "raw": 2.66,
-        "rawFmt": "2.66",
+        "score": 17.1,
+        "raw": 2.57,
+        "rawFmt": "2.57",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -5490,7 +5490,7 @@ const CITIES = {
     "lat": 40.7128,
     "lng": -74.006,
     "cq": 61.6,
-    "pillar1": 62.1,
+    "pillar1": 62.0,
     "pillar2": 45.7,
     "pillar3": 83.2,
     "metrics": {
@@ -5516,9 +5516,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 34.7,
-        "raw": 52.11,
-        "rawFmt": "52.1",
+        "score": 32.9,
+        "raw": 49.34,
+        "rawFmt": "49.3",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -5620,9 +5620,9 @@ const CITIES = {
     "population": "681k residents",
     "lat": 35.4676,
     "lng": -97.5164,
-    "cq": 57.8,
-    "pillar1": 61.0,
-    "pillar2": 42.2,
+    "cq": 57.2,
+    "pillar1": 60.4,
+    "pillar2": 41.2,
     "pillar3": 74.4,
     "metrics": {
       "residential_stability": {
@@ -5647,9 +5647,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 94.7,
-        "raw": 141.99,
-        "rawFmt": "142.0",
+        "score": 81.0,
+        "raw": 121.44,
+        "rawFmt": "121.4",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -5668,9 +5668,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 30.7,
-        "raw": 4.61,
-        "rawFmt": "4.61",
+        "score": 25.5,
+        "raw": 3.83,
+        "rawFmt": "3.83",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -5751,9 +5751,9 @@ const CITIES = {
     "population": "486k residents",
     "lat": 41.2565,
     "lng": -95.9345,
-    "cq": 63.7,
-    "pillar1": 63.6,
-    "pillar2": 57.4,
+    "cq": 62.8,
+    "pillar1": 63.1,
+    "pillar2": 55.5,
     "pillar3": 72.5,
     "metrics": {
       "residential_stability": {
@@ -5778,9 +5778,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 62.1,
-        "raw": 93.2,
-        "rawFmt": "93.2",
+        "score": 51.7,
+        "raw": 77.5,
+        "rawFmt": "77.5",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -5799,9 +5799,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 51.1,
-        "raw": 7.66,
-        "rawFmt": "7.66",
+        "score": 41.6,
+        "raw": 6.24,
+        "rawFmt": "6.24",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -6013,9 +6013,9 @@ const CITIES = {
     "population": "1.6M residents",
     "lat": 33.4484,
     "lng": -112.074,
-    "cq": 55.4,
-    "pillar1": 60.8,
-    "pillar2": 31.7,
+    "cq": 52.6,
+    "pillar1": 57.8,
+    "pillar2": 27.3,
     "pillar3": 79.8,
     "metrics": {
       "residential_stability": {
@@ -6040,9 +6040,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 165.1,
-        "rawFmt": "165.1",
+        "score": 40.0,
+        "raw": 60.06,
+        "rawFmt": "60.1",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -6061,9 +6061,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 36.8,
-        "raw": 5.52,
-        "rawFmt": "5.52",
+        "score": 14.7,
+        "raw": 2.2,
+        "rawFmt": "2.20",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -6144,9 +6144,9 @@ const CITIES = {
     "population": "303k residents",
     "lat": 40.4406,
     "lng": -79.9959,
-    "cq": 73.1,
-    "pillar1": 77.5,
-    "pillar2": 66.9,
+    "cq": 68.0,
+    "pillar1": 75.5,
+    "pillar2": 54.6,
     "pillar3": 74.9,
     "metrics": {
       "residential_stability": {
@@ -6171,9 +6171,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 373.3,
-        "rawFmt": "373.3",
+        "score": 60.3,
+        "raw": 90.44,
+        "rawFmt": "90.4",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -6192,9 +6192,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 100.0,
-        "raw": 26.75,
-        "rawFmt": "26.75",
+        "score": 38.7,
+        "raw": 5.8,
+        "rawFmt": "5.80",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -6275,9 +6275,9 @@ const CITIES = {
     "population": "653k residents",
     "lat": 45.5231,
     "lng": -122.6765,
-    "cq": 67.4,
-    "pillar1": 62.8,
-    "pillar2": 60.0,
+    "cq": 65.5,
+    "pillar1": 62.2,
+    "pillar2": 55.3,
     "pillar3": 85.2,
     "metrics": {
       "residential_stability": {
@@ -6302,9 +6302,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 66.1,
-        "raw": 99.16,
-        "rawFmt": "99.2",
+        "score": 52.9,
+        "raw": 79.34,
+        "rawFmt": "79.3",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -6323,9 +6323,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 89.7,
-        "raw": 13.46,
-        "rawFmt": "13.46",
+        "score": 66.1,
+        "raw": 9.92,
+        "rawFmt": "9.92",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -6406,9 +6406,9 @@ const CITIES = {
     "population": "191k residents",
     "lat": 41.824,
     "lng": -71.4128,
-    "cq": 73.6,
-    "pillar1": 70.2,
-    "pillar2": 66.7,
+    "cq": 68.1,
+    "pillar1": 67.4,
+    "pillar2": 54.2,
     "pillar3": 88.7,
     "metrics": {
       "residential_stability": {
@@ -6433,9 +6433,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 223.64,
-        "rawFmt": "223.6",
+        "score": 43.1,
+        "raw": 64.62,
+        "rawFmt": "64.6",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -6454,9 +6454,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 89.3,
-        "raw": 13.4,
-        "rawFmt": "13.40",
+        "score": 27.0,
+        "raw": 4.05,
+        "rawFmt": "4.05",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -6537,9 +6537,9 @@ const CITIES = {
     "population": "468k residents",
     "lat": 35.7796,
     "lng": -78.6382,
-    "cq": 56.4,
-    "pillar1": 63.3,
-    "pillar2": 35.5,
+    "cq": 51.8,
+    "pillar1": 60.9,
+    "pillar2": 25.3,
     "pillar3": 74.5,
     "metrics": {
       "residential_stability": {
@@ -6564,9 +6564,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 183.25,
-        "rawFmt": "183.2",
+        "score": 50.6,
+        "raw": 75.88,
+        "rawFmt": "75.9",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -6585,9 +6585,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 83.1,
-        "raw": 12.47,
-        "rawFmt": "12.47",
+        "score": 32.2,
+        "raw": 4.83,
+        "rawFmt": "4.83",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -6799,9 +6799,9 @@ const CITIES = {
     "population": "211k residents",
     "lat": 43.1566,
     "lng": -77.6088,
-    "cq": 77.6,
-    "pillar1": 66.1,
-    "pillar2": 86.2,
+    "cq": 71.9,
+    "pillar1": 63.6,
+    "pillar2": 72.9,
     "pillar3": 83.9,
     "metrics": {
       "residential_stability": {
@@ -6826,9 +6826,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 269.25,
-        "rawFmt": "269.2",
+        "score": 49.9,
+        "raw": 74.92,
+        "rawFmt": "74.9",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -6847,9 +6847,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 100.0,
-        "raw": 15.36,
-        "rawFmt": "15.36",
+        "score": 33.2,
+        "raw": 4.98,
+        "rawFmt": "4.98",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -6930,9 +6930,9 @@ const CITIES = {
     "population": "525k residents",
     "lat": 38.5816,
     "lng": -121.4944,
-    "cq": 67.7,
-    "pillar1": 73.1,
-    "pillar2": 52.4,
+    "cq": 63.1,
+    "pillar1": 70.0,
+    "pillar2": 42.9,
     "pillar3": 80.5,
     "metrics": {
       "residential_stability": {
@@ -6957,9 +6957,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 175.45,
-        "rawFmt": "175.4",
+        "score": 38.7,
+        "raw": 58.11,
+        "rawFmt": "58.1",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -6978,9 +6978,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 70.8,
-        "raw": 10.62,
-        "rawFmt": "10.62",
+        "score": 23.3,
+        "raw": 3.49,
+        "rawFmt": "3.49",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -7061,9 +7061,9 @@ const CITIES = {
     "population": "201k residents",
     "lat": 40.7608,
     "lng": -111.891,
-    "cq": 55.1,
-    "pillar1": 63.0,
-    "pillar2": 45.5,
+    "cq": 49.3,
+    "pillar1": 62.7,
+    "pillar2": 29.4,
     "pillar3": 55.8,
     "metrics": {
       "residential_stability": {
@@ -7088,9 +7088,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 832.64,
-        "rawFmt": "832.6",
+        "score": 93.9,
+        "raw": 140.9,
+        "rawFmt": "140.9",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -7109,9 +7109,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 100.0,
-        "raw": 22.08,
-        "rawFmt": "22.08",
+        "score": 19.2,
+        "raw": 2.88,
+        "rawFmt": "2.88",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -7192,9 +7192,9 @@ const CITIES = {
     "population": "1.4M residents",
     "lat": 29.4241,
     "lng": -98.4936,
-    "cq": 53.6,
-    "pillar1": 56.2,
-    "pillar2": 39.1,
+    "cq": 52.7,
+    "pillar1": 55.3,
+    "pillar2": 37.6,
     "pillar3": 69.7,
     "metrics": {
       "residential_stability": {
@@ -7219,9 +7219,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 60.6,
-        "raw": 90.96,
-        "rawFmt": "91.0",
+        "score": 43.3,
+        "raw": 64.95,
+        "rawFmt": "65.0",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -7240,9 +7240,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 24.6,
-        "raw": 3.69,
-        "rawFmt": "3.69",
+        "score": 17.1,
+        "raw": 2.57,
+        "rawFmt": "2.57",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -7323,9 +7323,9 @@ const CITIES = {
     "population": "1.4M residents",
     "lat": 32.7157,
     "lng": -117.1611,
-    "cq": 59.1,
-    "pillar1": 61.2,
-    "pillar2": 45.0,
+    "cq": 55.1,
+    "pillar1": 58.8,
+    "pillar2": 36.4,
     "pillar3": 75.3,
     "metrics": {
       "residential_stability": {
@@ -7350,9 +7350,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 84.0,
-        "raw": 126.03,
-        "rawFmt": "126.0",
+        "score": 35.3,
+        "raw": 52.99,
+        "rawFmt": "53.0",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -7371,9 +7371,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 70.3,
-        "raw": 10.55,
-        "rawFmt": "10.55",
+        "score": 27.5,
+        "raw": 4.13,
+        "rawFmt": "4.13",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -7585,9 +7585,9 @@ const CITIES = {
     "population": "1.0M residents",
     "lat": 37.3382,
     "lng": -121.8863,
-    "cq": 60.5,
-    "pillar1": 57.3,
-    "pillar2": 50.5,
+    "cq": 56.8,
+    "pillar1": 55.8,
+    "pillar2": 41.8,
     "pillar3": 79.6,
     "metrics": {
       "residential_stability": {
@@ -7612,9 +7612,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 62.0,
-        "raw": 93.07,
-        "rawFmt": "93.1",
+        "score": 32.5,
+        "raw": 48.7,
+        "rawFmt": "48.7",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -7633,9 +7633,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 89.2,
-        "raw": 13.38,
-        "rawFmt": "13.38",
+        "score": 45.7,
+        "raw": 6.86,
+        "rawFmt": "6.86",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -7716,9 +7716,9 @@ const CITIES = {
     "population": "737k residents",
     "lat": 47.6062,
     "lng": -122.3321,
-    "cq": 66.7,
-    "pillar1": 61.2,
-    "pillar2": 65.5,
+    "cq": 62.0,
+    "pillar1": 58.4,
+    "pillar2": 55.4,
     "pillar3": 77.0,
     "metrics": {
       "residential_stability": {
@@ -7743,9 +7743,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 198.98,
-        "rawFmt": "199.0",
+        "score": 43.1,
+        "raw": 64.63,
+        "rawFmt": "64.6",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -7764,9 +7764,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 100.0,
-        "raw": 27.93,
-        "rawFmt": "27.93",
+        "score": 49.2,
+        "raw": 7.38,
+        "rawFmt": "7.38",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -7847,9 +7847,9 @@ const CITIES = {
     "population": "229k residents",
     "lat": 47.6587,
     "lng": -117.426,
-    "cq": 65.7,
-    "pillar1": 58.2,
-    "pillar2": 56.7,
+    "cq": 61.9,
+    "pillar1": 56.0,
+    "pillar2": 48.3,
     "pillar3": 90.3,
     "metrics": {
       "residential_stability": {
@@ -7874,9 +7874,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 194.77,
-        "rawFmt": "194.8",
+        "score": 55.1,
+        "raw": 82.69,
+        "rawFmt": "82.7",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -7895,9 +7895,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 69.1,
-        "raw": 10.36,
-        "rawFmt": "10.36",
+        "score": 27.2,
+        "raw": 4.08,
+        "rawFmt": "4.08",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -8109,9 +8109,9 @@ const CITIES = {
     "population": "312k residents",
     "lat": 44.9537,
     "lng": -93.09,
-    "cq": 67.8,
-    "pillar1": 70.7,
-    "pillar2": 53.6,
+    "cq": 65.8,
+    "pillar1": 68.7,
+    "pillar2": 50.3,
     "pillar3": 82.9,
     "metrics": {
       "residential_stability": {
@@ -8136,9 +8136,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 89.7,
-        "raw": 134.5,
-        "rawFmt": "134.5",
+        "score": 50.6,
+        "raw": 75.86,
+        "rawFmt": "75.9",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -8157,9 +8157,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 39.5,
-        "raw": 5.92,
-        "rawFmt": "5.92",
+        "score": 22.8,
+        "raw": 3.42,
+        "rawFmt": "3.42",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -8240,9 +8240,9 @@ const CITIES = {
     "population": "321k residents",
     "lat": 37.9577,
     "lng": -121.2908,
-    "cq": 67.1,
-    "pillar1": 59.7,
-    "pillar2": 61.9,
+    "cq": 64.6,
+    "pillar1": 56.8,
+    "pillar2": 57.9,
     "pillar3": 86.4,
     "metrics": {
       "residential_stability": {
@@ -8267,9 +8267,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 154.11,
-        "rawFmt": "154.1",
+        "score": 42.3,
+        "raw": 63.4,
+        "rawFmt": "63.4",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -8288,9 +8288,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 35.1,
-        "raw": 5.26,
-        "rawFmt": "5.26",
+        "score": 15.1,
+        "raw": 2.27,
+        "rawFmt": "2.27",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -8371,9 +8371,9 @@ const CITIES = {
     "population": "403k residents",
     "lat": 27.9506,
     "lng": -82.4572,
-    "cq": 58.7,
-    "pillar1": 62.4,
-    "pillar2": 43.6,
+    "cq": 52.8,
+    "pillar1": 60.1,
+    "pillar2": 29.1,
     "pillar3": 74.1,
     "metrics": {
       "residential_stability": {
@@ -8398,9 +8398,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 100.0,
-        "raw": 285.1,
-        "rawFmt": "285.1",
+        "score": 52.5,
+        "raw": 78.78,
+        "rawFmt": "78.8",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -8419,9 +8419,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 99.4,
-        "raw": 14.91,
-        "rawFmt": "14.91",
+        "score": 26.7,
+        "raw": 4.01,
+        "rawFmt": "4.01",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -8502,9 +8502,9 @@ const CITIES = {
     "population": "543k residents",
     "lat": 32.2226,
     "lng": -110.9747,
-    "cq": 53.4,
-    "pillar1": 56.6,
-    "pillar2": 33.8,
+    "cq": 51.4,
+    "pillar1": 54.5,
+    "pillar2": 30.6,
     "pillar3": 75.6,
     "metrics": {
       "residential_stability": {
@@ -8529,9 +8529,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 86.9,
-        "raw": 130.29,
-        "rawFmt": "130.3",
+        "score": 45.2,
+        "raw": 67.76,
+        "rawFmt": "67.8",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -8550,9 +8550,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 35.7,
-        "raw": 5.36,
-        "rawFmt": "5.36",
+        "score": 19.7,
+        "raw": 2.95,
+        "rawFmt": "2.95",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },
@@ -8895,9 +8895,9 @@ const CITIES = {
     "population": "398k residents",
     "lat": 37.6872,
     "lng": -97.3301,
-    "cq": 53.7,
-    "pillar1": 59.8,
-    "pillar2": 33.3,
+    "cq": 52.9,
+    "pillar1": 58.7,
+    "pillar2": 32.2,
     "pillar3": 72.6,
     "metrics": {
       "residential_stability": {
@@ -8922,9 +8922,9 @@ const CITIES = {
         "unit": "public libraries per 100,000 residents"
       },
       "religious_density": {
-        "score": 91.2,
-        "raw": 136.84,
-        "rawFmt": "136.8",
+        "score": 69.2,
+        "raw": 103.85,
+        "rawFmt": "103.8",
         "benchmark": "150 / 100k",
         "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
       },
@@ -8943,9 +8943,9 @@ const CITIES = {
         "unit": "certified beds per 1,000 residents 65+"
       },
       "child_care": {
-        "score": 21.7,
-        "raw": 3.25,
-        "rawFmt": "3.25",
+        "score": 16.1,
+        "raw": 2.42,
+        "rawFmt": "2.42",
         "benchmark": "15 / 1k under-5",
         "unit": "licensed child care establishments per 1,000 children under 5"
       },

@@ -6,6 +6,12 @@ Source: 2020 U.S. Religion Census (ASARB), distributed via ARDA.
 Metric: Total congregations across all denominations, per 100,000 residents.
 Geography: Summed across all county FIPS codes assigned to each city in config.py.
 
+Denominator: County-level 2020 population from the ARDA file itself ('2020 Population'
+column), matching the county-level numerator. Using city population would create a
+numerator/denominator mismatch — congregations from the full county divided by only
+the city population — inflating density for cities that are a small fraction of their
+county (e.g., Miami at ~16% of Miami-Dade).
+
 Why ARDA over IRS EO BMF X3x:
   IRS X3x codes only capture congregations that individually filed with the IRS.
   Baptist and Catholic congregations are predominantly covered under group exemptions
@@ -49,13 +55,14 @@ def collect_religious_institutions(city_key: str, arda: pd.DataFrame) -> dict | 
         return None
 
     total_congregations = int(matched["Congregations"].sum())
-    population = city["population"]
-    per_100k = round(total_congregations / population * 100_000, 2)
+    county_pop = int(matched["2020 Population"].sum())
+    per_100k = round(total_congregations / county_pop * 100_000, 2) if county_pop else 0.0
 
     return {
         "city":                   city_key,
         "congregations":          total_congregations,
-        "population":             population,
+        "county_population":      county_pop,
+        "city_population":        city["population"],
         "congregations_per_100k": per_100k,
         "counties_matched":       len(matched),
         "source":                 "ARDA 2020 U.S. Religion Census",

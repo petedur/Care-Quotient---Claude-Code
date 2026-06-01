@@ -280,7 +280,7 @@ def load_religious_institutions(conn, city_key: str):
     d = json.loads(raw.read_text())
     per_100k = d.get("congregations_per_100k")
     congregations = d.get("congregations", 0)
-    population = d.get("population", 0)
+    county_population = d.get("county_population", d.get("population", 0))
 
     if per_100k is None:
         print(f"  SKIP religious_institutions for {city_key} (missing density value)")
@@ -288,7 +288,7 @@ def load_religious_institutions(conn, city_key: str):
 
     upsert(conn, city_key, "religious_density", "congregations_per_100k",
            value=per_100k, count=congregations,
-           notes=f"population={population}, source=ARDA 2020")
+           notes=f"county_population={county_population}, source=ARDA 2020")
     print(f"  religious_institutions loaded for {city_key}: {per_100k}/100k ({congregations} congregations)")
 
 

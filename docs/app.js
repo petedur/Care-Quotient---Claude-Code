@@ -605,7 +605,7 @@ var METRIC_META = {
   health_insurance: {
     label:  'Healthcare Coverage',
     pillar: 'pillar3',
-    desc:   'Medicaid/CHIP enrollment rate among income-eligible residents (0–138% FPL)',
+    desc:   'Survey-reported Medicaid/CHIP coverage rate among income-eligible residents (0–149% FPL)',
   },
   housing_cost_burden: {
     label:  'Housing Affordability',
@@ -1135,7 +1135,7 @@ function renderMethodology(app) {
           '<tr><td>FQHC Density</td>               <td>15 per 100,000 residents</td>                     <td>HRSA Health Center Data</td></tr>',
           '<tr><td>Nursing Home Capacity</td>       <td>50 beds per 1,000 residents 65+</td>              <td>CMS Care Compare</td></tr>',
           '<tr><td>Child Care Capacity</td>         <td>15 establishments per 1,000 children under 5</td><td>Census CBP NAICS 624410</td></tr>',
-          '<tr><td>Healthcare Coverage (Medicaid/CHIP)</td><td>100% of income-eligible residents enrolled</td><td>Census ACS C27007</td></tr>',
+          '<tr><td>Healthcare Coverage (Medicaid/CHIP)</td><td>Survey-reported coverage rate among 0–149% FPL residents (benchmark: 100%)</td><td>Census ACS C27007</td></tr>',
           '<tr><td>Housing Affordability</td>       <td>90% not cost-burdened</td>                        <td>Census ACS B25070, B25091</td></tr>',
           '<tr><td>SNAP Coverage Rate</td>          <td>85% of likely-eligible</td>                       <td>Census ACS B22001, C17002</td></tr>',
         '</tbody>',
@@ -1144,13 +1144,20 @@ function renderMethodology(app) {
       '<h2>Geographic Boundaries</h2>',
 
       '<p>',
-        'All data sources use the Census 2020 ZCTA-to-Place relationship file to define city ',
+        'Most data sources use the Census 2020 ZCTA-to-Place relationship file to define city ',
         'boundaries consistently. A ZIP Code Tabulation Area is assigned to a city if &#8805;40% ',
         'of its land area falls within the city&rsquo;s Census incorporated place boundary. ',
-        'This threshold captures near-boundary ZCTAs that genuinely serve city residents, ',
-        'while excluding ZCTAs that are primarily suburban. It eliminates county-sharing ',
-        'inflation, where a city would appear to have more resources than it does because it ',
-        'shares a county with surrounding suburbs.',
+        'This threshold captures near-boundary ZCTAs that genuinely serve city residents ',
+        'while excluding ZCTAs that are primarily suburban.',
+      '</p>',
+
+      '<p>',
+        '<strong>County-level exception:</strong> Two metrics use county-level data for both ',
+        'numerator and denominator, because their source datasets (Census CBP and ARDA) do not ',
+        'report below the county level. Child care capacity uses county CBP establishments and ',
+        'county ACS under-5 population. Religious organization density uses county ARDA ',
+        'congregation counts and county ARDA 2020 population. For both metrics, the score ',
+        'reflects county-wide density rather than city-specific density.',
       '</p>',
 
       '<p>',
@@ -1616,7 +1623,8 @@ function renderFindings(app) {
 
       '<p>',
         'The inverse is visible too: the cities people are moving to, such as Austin (52.2), Raleigh (56.4), ',
-        'Charlotte (54.4), or Nashville (53.4), are in the bottom third. Growth dilutes per-capita care infrastructure.',
+        'Charlotte (54.4), or Nashville (53.4), are in the bottom third. In this dataset, fast-growing cities ',
+        'tend to show thinner per-capita care infrastructure — though causation here is complex.',
       '</p>',
 
       '<hr>',
