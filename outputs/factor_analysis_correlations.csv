@@ -1,8 +1,11 @@
-,Resid. Stability,Housing Affordability,Combined Care NPs,FQHC Density,Nursing Home Capacity / beds_per_1k_65plus,Health Insurance,SNAP Coverage
-Resid. Stability,1.0,-0.324,-0.146,0.048,-0.1,0.023,0.374
-Housing Affordability,-0.324,1.0,-0.171,-0.357,-0.026,-0.133,-0.444
-Combined Care NPs,-0.146,-0.171,1.0,0.442,0.268,0.223,0.121
-FQHC Density,0.048,-0.357,0.442,1.0,0.189,0.522,0.304
-Nursing Home Capacity / beds_per_1k_65plus,-0.1,-0.026,0.268,0.189,1.0,0.006,0.307
-Health Insurance,0.023,-0.133,0.223,0.522,0.006,1.0,0.343
-SNAP Coverage,0.374,-0.444,0.121,0.304,0.307,0.343,1.0
+,Resid. Stability,Combined Care NPs,Library Density / density_per_100k,Religious Density / congregations_per_100k,FQHC Density,Nursing Home Capacity / beds_per_1k_65plus,Child Care Capacity / establishments_per_1k_under5,Health Insurance Coverage / coverage_rate,Housing Affordability,SNAP Coverage
+Resid. Stability,1.0,-0.147,-0.211,-0.078,0.047,-0.103,-0.227,0.366,-0.316,0.367
+Combined Care NPs,-0.147,1.0,0.664,0.28,0.439,0.27,0.317,-0.013,-0.161,0.115
+Library Density / density_per_100k,-0.211,0.664,1.0,0.265,0.593,0.435,0.438,0.037,-0.199,0.253
+Religious Density / congregations_per_100k,-0.078,0.28,0.265,1.0,0.082,0.239,0.484,-0.101,-0.181,0.151
+FQHC Density,0.047,0.439,0.593,0.082,1.0,0.191,0.324,0.401,-0.347,0.297
+Nursing Home Capacity / beds_per_1k_65plus,-0.103,0.27,0.435,0.239,0.191,1.0,0.031,-0.068,-0.005,0.285
+Child Care Capacity / establishments_per_1k_under5,-0.227,0.317,0.438,0.484,0.324,0.031,1.0,0.05,-0.161,0.182
+Health Insurance Coverage / coverage_rate,0.366,-0.013,0.037,-0.101,0.401,-0.068,0.05,1.0,-0.284,0.478
+Housing Affordability,-0.316,-0.161,-0.199,-0.181,-0.347,-0.005,-0.161,-0.284,1.0,-0.463
+SNAP Coverage,0.367,0.115,0.253,0.151,0.297,0.285,0.182,0.478,-0.463,1.0

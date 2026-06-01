@@ -1,10 +1,10 @@
 # Care Quotient (CQ) — Care Capacity Index
 
-A city-level index measuring whether urban residents live in places that can provide and sustain care. Published at [petedur.github.io/Care-Quotient---Claude-Code/](https://petedur.github.io/Care-Quotient---Claude-Code/).
+A city-level index measuring whether urban residents live in places that can provide and sustain care. Published at [care-quotient.vercel.app](https://care-quotient.vercel.app/).
 
 ## What It Measures
 
-The Care Quotient scores 68 US cities across ten metrics, organized into three pillars:
+The Care Quotient scores 69 US cities across ten metrics, organized into three pillars:
 
 | Pillar | Weight | Metrics |
 |--------|--------|---------|
@@ -42,7 +42,7 @@ care-capacity-index/
 │   └── analysis/
 │       └── factor_analysis.py  # PCA/varimax validation of pillar structure
 ├── data/
-│   ├── cities.csv           # 68 cities with FIPS codes and populations
+│   ├── cities.csv           # 69 cities with FIPS codes and populations
 │   └── care_capacity.duckdb # Pipeline output: metrics + scores tables
 ├── docs/                    # GitHub Pages site (served from /docs on master)
 │   ├── index.html
@@ -67,7 +67,7 @@ You also need:
 - HRSA FQHC site file (`Health_Center_Service_Delivery_and_LookAlike_Sites.xlsx`) in `Downloaded Data/` ([download from HRSA](https://data.hrsa.gov/data/download))
 - IMLS Public Libraries Survey files in `Downloaded Data/Public Libraries Survey (PLS)/`
 
-### Full run (all 68 cities)
+### Full run (all 69 cities)
 
 ```bash
 python code/pipeline.py
@@ -120,6 +120,6 @@ Cities with any missing required metric are excluded from all output rather than
 | V5 | Pillar restructure: library density promoted to scored metric; nonprofits moved to Pillar 1; housing cost burden moved to Pillar 3; 8-metric model |
 | V4 | Nursing home capacity added to Pillar 2; 7-metric model |
 | V3.2 | ZCTA overlap threshold 50% → 40%; IRS/HRSA in-memory caching; factor analysis rerun |
-| V3.0 | 68-city expansion; ZCTA-to-place crosswalk; combined NP metric |
+| V3.0 | 68-city expansion (now 69 with V6 Miami addition); ZCTA-to-place crosswalk; combined NP metric |
 | V2   | 5-city pilot |
 | V1   | 4-metric, 2-pillar prototype |

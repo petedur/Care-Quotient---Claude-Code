@@ -1324,6 +1324,32 @@ body {
   .site-nav .version-badge { display: none; }
 }
 
+@media (max-width: 400px) {
+  .site-nav {
+    gap: 0.9rem;
+  }
+  .site-nav a {
+    font-size: 0.72rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .wordmark {
+    font-size: 0.85rem;
+  }
+  .site-nav {
+    gap: 0.6rem;
+  }
+  .site-nav a {
+    font-size: 0.65rem;
+  }
+}
+
+#compare-results {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 /* ── Chat page ──────────────────────────────────────────────────────────── */
 .chat-page {
   max-width: 760px;

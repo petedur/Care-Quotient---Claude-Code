@@ -1,16 +1,17 @@
 {
   "meta": {
-    "n_cities": 68,
-    "variance_explained_3f": 0.694,
-    "kaiser_factors": 3,
-    "pillar_structure_supported": false,
+    "n_cities": 69,
+    "variance_explained_3f": 0.623,
+    "kaiser_factors": 4,
+    "pillar_structure_supported": true,
     "note": "Empirical weights for review only. V3 implements theory-based inter-pillar weights. See methodology.md Section 5."
   },
   "inter_pillar_note": "V3.1 data (68 cities, 6 metrics, 75.5% variance explained): empirical weights recommend Institutions of Care as dominant pillar (0.496 vs 0.328 Social Fabric). V3 retains Social Fabric primary (0.40) per care ethics theory. Kaiser criterion suggests 2 factors, but 3-factor solution aligns cleanly to pillars with no cross-pillar correlation above 0.60. V4 will revisit inter-pillar weights.",
   "inter_pillar_weights": {
     "empirical": {
-      "pillar2": 0.399,
-      "pillar1": 0.601
+      "pillar1": 0.475,
+      "pillar3": 0.344,
+      "pillar2": 0.181
     },
     "v3_implemented": {
       "pillar1": 0.4,
@@ -21,38 +22,53 @@
   "within_pillar_weights": {
     "residential_stability.pct_same_house": {
       "pillar": "pillar1",
-      "v3_weight": 0.65,
-      "empirical_weight": 0.615
-    },
-    "housing_cost_burden.pct_not_burdened": {
-      "pillar": "pillar1",
-      "v3_weight": 0.35,
-      "empirical_weight": 0.385
+      "v3_weight": 0.5,
+      "empirical_weight": 0.06
     },
     "nonprofit_density.combined_care": {
-      "pillar": "pillar2",
-      "v3_weight": 0.35,
-      "empirical_weight": 0.016
+      "pillar": "pillar1",
+      "v3_weight": 0.4,
+      "empirical_weight": 0.392
+    },
+    "library_density.density_per_100k": {
+      "pillar": "pillar1",
+      "v3_weight": 0.05,
+      "empirical_weight": 0.539
+    },
+    "religious_density.congregations_per_100k": {
+      "pillar": "pillar1",
+      "v3_weight": 0.05,
+      "empirical_weight": 0.009
     },
     "health_center_density.density_per_100k": {
       "pillar": "pillar2",
-      "v3_weight": 0.35,
-      "empirical_weight": 0.002
+      "v3_weight": 0.45,
+      "empirical_weight": 0.122
     },
     "nursing_home_capacity.beds_per_1k_65plus": {
       "pillar": "pillar2",
-      "v3_weight": 0.3,
-      "empirical_weight": 0.983
+      "v3_weight": 0.35,
+      "empirical_weight": 0.071
     },
-    "health_insurance_coverage.pct_insured": {
+    "child_care_capacity.establishments_per_1k_under5": {
+      "pillar": "pillar2",
+      "v3_weight": 0.2,
+      "empirical_weight": 0.807
+    },
+    "health_insurance_coverage.coverage_rate": {
       "pillar": "pillar3",
-      "v3_weight": 0.65,
-      "empirical_weight": 0.65
+      "v3_weight": 0.4,
+      "empirical_weight": 0.294
+    },
+    "housing_cost_burden.pct_not_burdened": {
+      "pillar": "pillar3",
+      "v3_weight": 0.35,
+      "empirical_weight": 0.306
     },
     "snap_participation.coverage_rate": {
       "pillar": "pillar3",
-      "v3_weight": 0.35,
-      "empirical_weight": 0.35
+      "v3_weight": 0.25,
+      "empirical_weight": 0.4
     }
   }
 }

@@ -465,7 +465,7 @@ var CITY_CONTEXT = {
     type: 'info',
     text: [
       '<strong>Texas and Medicaid:</strong> Texas has not expanded Medicaid under the Affordable Care Act. ',
-      'This directly suppresses health insurance coverage and SNAP participation rates for all Texas cities. ',
+      'This contributes to lower healthcare coverage and SNAP participation rates across Texas cities. ',
       'Fort Worth also has very few FQHC sites within its city limits relative to its population, ',
       'reflecting both the state policy environment and rapid suburban growth outpacing service infrastructure.',
     ].join(''),
@@ -482,7 +482,7 @@ var CITY_CONTEXT = {
     type: 'info',
     text: [
       '<strong>Texas and Medicaid:</strong> Texas has not expanded Medicaid under the Affordable Care Act. ',
-      'Houston&rsquo;s health insurance coverage is notably below the national benchmark as a direct result. ',
+      'Houston&rsquo;s healthcare coverage score is notably below the national benchmark, reflecting this state policy gap. ',
       'The city&rsquo;s large and fast-growing population also means nonprofit and FQHC density trails ',
       'slower-growing cities with comparable total counts.',
     ].join(''),
@@ -506,7 +506,7 @@ var CITY_CONTEXT = {
       'Two metrics &mdash; child care and religious organization density &mdash; use county-level source data (CBP and ARDA). ',
       'Because the City of Miami represents roughly 16% of Miami-Dade County&rsquo;s population, ',
       'those two scores are likely elevated relative to the city&rsquo;s actual capacity. ',
-      'Florida has not expanded Medicaid, which directly suppresses the healthcare coverage score. ',
+      'Florida has not expanded Medicaid, which contributes to a lower healthcare coverage score. ',
       'See <a href="#/methodology">Methodology &sect;9</a>.',
     ].join(''),
   },
@@ -1088,7 +1088,7 @@ function renderMethodology(app) {
         'The CQ is a weighted composite of ten scored metrics organized into three pillars. ',
         'Pillar weights prioritize the relational layer (care ethics tradition) over the institutional ',
         'and access dimensions, representing a normative commitment as opposed to an empirical finding. ',
-        'Within-pillar weights draw on factor analysis across the 68 cities.',
+        'Within-pillar weights draw on factor analysis across the 69 cities.',
       '</p>',
 
       '<table class="method-table">',
@@ -1194,7 +1194,7 @@ function renderMethodology(app) {
 
       '<h3>Version &amp; Data</h3>',
       '<p>',
-        'May 2026. 68 cities. ',
+        'May 2026. 69 cities. ',
         'Data sources: IRS EO BMF, Census ACS 2022 5-year estimates, ',
         'HRSA Health Center Service Delivery, IMLS Public Libraries Survey FY2023, ',
         'CMS Care Compare Nursing Home Provider Information, CDC PLACES (2022/2023). ',
