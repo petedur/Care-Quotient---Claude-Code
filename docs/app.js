@@ -496,6 +496,19 @@ var CITY_CONTEXT = {
       'Raleigh&rsquo;s SNAP coverage rate also reflects relatively low poverty rates, which compress the score.',
     ].join(''),
   },
+  miami: {
+    type: 'geo',
+    text: [
+      '<strong>Scope note:</strong> This score covers the City of Miami (~450k residents), ',
+      'the incorporated municipality. Miami Beach, Hialeah, Coral Gables, and other cities ',
+      'within Miami-Dade County are separate jurisdictions and are not included. ',
+      'Two metrics &mdash; child care and religious density &mdash; use county-level source data (CBP and ARDA). ',
+      'Because the City of Miami represents roughly 16% of Miami-Dade County&rsquo;s population, ',
+      'those two scores are likely elevated relative to the city&rsquo;s actual capacity. ',
+      'Florida has not expanded Medicaid, which directly suppresses the healthcare coverage score. ',
+      'See <a href="#/methodology">Methodology &sect;9</a>.',
+    ].join(''),
+  },
 };
 
 // ── City page ───────────────────────────────────────────────────────────────

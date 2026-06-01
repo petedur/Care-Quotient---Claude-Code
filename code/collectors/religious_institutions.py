@@ -62,6 +62,21 @@ def collect_religious_institutions(city_key: str, arda: pd.DataFrame) -> dict | 
     }
 
 
+def collect(city_key: str) -> dict | None:
+    """Standard pipeline entry point — loads ARDA file and collects for one city."""
+    if not ARDA_FILE.exists():
+        raise FileNotFoundError(f"ARDA file not found at {ARDA_FILE}")
+    arda = _load_arda()
+    result = collect_religious_institutions(city_key, arda)
+    if result is None:
+        return None
+    out_dir = DATA_RAW / city_key
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_path = out_dir / "religious_institutions.json"
+    out_path.write_text(json.dumps(result, indent=2))
+    return result
+
+
 def main(city_keys: list[str] | None = None):
     if not ARDA_FILE.exists():
         print(f"ERROR: ARDA file not found at {ARDA_FILE}")

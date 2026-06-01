@@ -2515,6 +2515,74 @@
     },
     "care_quotient": 59.0
   },
+  "miami": {
+    "pillar1_social_relational_care": 63.7,
+    "pillar2_institutional_care": 51.9,
+    "pillar3_economic_access": 70.7,
+    "metrics": {
+      "Residential Stability": {
+        "score": 86.6,
+        "raw_value": 82.31,
+        "benchmark": 95.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Care Nonprofits (P+E+F+K per 10k)": {
+        "score": 33.0,
+        "raw_value": 8.25,
+        "benchmark": 25.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Library Density (per 100k residents)": {
+        "score": 44.4,
+        "raw_value": 2.22,
+        "benchmark": 5.0,
+        "pillar": "Social & Relational Care"
+      },
+      "Religious Institution Density (congregations/100k)": {
+        "score": 100.0,
+        "raw_value": 379.08,
+        "benchmark": 150.0,
+        "pillar": "Social & Relational Care"
+      },
+      "FQHCs (per 100k)": {
+        "score": 34.1,
+        "raw_value": 5.12,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
+      "Nursing Home Capacity (beds/1k 65+)": {
+        "score": 47.2,
+        "raw_value": 23.61,
+        "benchmark": 50.0,
+        "pillar": "Institutional Care"
+      },
+      "Child Care Capacity (establishments/1k under-5)": {
+        "score": 100.0,
+        "raw_value": 32.68,
+        "benchmark": 15.0,
+        "pillar": "Institutional Care"
+      },
+      "Healthcare Coverage Rate": {
+        "score": 73.8,
+        "raw_value": 73.8,
+        "benchmark": 100.0,
+        "pillar": "Economic Access to Care"
+      },
+      "Housing Affordability (% not cost-burdened)": {
+        "score": 51.8,
+        "raw_value": 46.61,
+        "benchmark": 90.0,
+        "pillar": "Economic Access to Care"
+      },
+      "SNAP Coverage Rate": {
+        "score": 92.3,
+        "raw_value": 78.48,
+        "benchmark": 85.0,
+        "pillar": "Economic Access to Care"
+      }
+    },
+    "care_quotient": 61.3
+  },
   "milwaukee": {
     "pillar1_social_relational_care": 66.4,
     "pillar2_institutional_care": 53.0,

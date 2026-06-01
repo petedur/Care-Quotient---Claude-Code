@@ -4849,6 +4849,116 @@ const CITIES = {
       }
     }
   },
+  "miami": {
+    "name": "Miami",
+    "state": "FL",
+    "population": "450k residents",
+    "lat": 25.7617,
+    "lng": -80.1918,
+    "cq": 61.3,
+    "pillar1": 63.7,
+    "pillar2": 51.9,
+    "pillar3": 70.7,
+    "metrics": {
+      "residential_stability": {
+        "score": 86.6,
+        "raw": 82.31,
+        "rawFmt": "82.3%",
+        "benchmark": "95%",
+        "unit": "% same house 1+ yr"
+      },
+      "combined_care": {
+        "score": 33.0,
+        "raw": 8.25,
+        "rawFmt": "8.25",
+        "benchmark": "25 / 10k",
+        "unit": "care nonprofits (P+E+F+K) per 10k"
+      },
+      "library_density": {
+        "score": 44.4,
+        "raw": 2.22,
+        "rawFmt": "2.22",
+        "benchmark": "5 / 100k",
+        "unit": "public libraries per 100,000 residents"
+      },
+      "religious_density": {
+        "score": 100.0,
+        "raw": 379.08,
+        "rawFmt": "379.1",
+        "benchmark": "150 / 100k",
+        "unit": "congregations per 100,000 residents (all denominations, ARDA 2020)"
+      },
+      "fqhc": {
+        "score": 34.1,
+        "raw": 5.12,
+        "rawFmt": "5.12",
+        "benchmark": "15 / 100k",
+        "unit": "FQHCs per 100,000 residents"
+      },
+      "nursing_home": {
+        "score": 47.2,
+        "raw": 23.61,
+        "rawFmt": "23.6",
+        "benchmark": "50 / 1k 65+",
+        "unit": "certified beds per 1,000 residents 65+"
+      },
+      "child_care": {
+        "score": 100.0,
+        "raw": 32.68,
+        "rawFmt": "32.68",
+        "benchmark": "15 / 1k under-5",
+        "unit": "licensed child care establishments per 1,000 children under 5"
+      },
+      "health_insurance": {
+        "score": 73.8,
+        "raw": 73.8,
+        "rawFmt": "73.8%",
+        "benchmark": "100%",
+        "unit": "Medicaid/CHIP enrollment rate among income-eligible residents"
+      },
+      "housing_cost_burden": {
+        "score": 51.8,
+        "raw": 46.61,
+        "rawFmt": "46.6%",
+        "benchmark": "90%",
+        "unit": "% households not cost-burdened"
+      },
+      "snap_coverage": {
+        "score": 92.3,
+        "raw": 78.48,
+        "rawFmt": "78.5%",
+        "benchmark": "85%",
+        "unit": "% SNAP coverage among likely-eligible households"
+      }
+    },
+    "diagnostic": {
+      "lib_visits": {
+        "value": "n/a",
+        "unit": "library visits per capita"
+      },
+      "faith_based": {
+        "value": "0.44",
+        "unit": "faith-based orgs per 10k (X3x)"
+      },
+      "care_distressed": {
+        "value": "36.38",
+        "unit": "care nonprofits per 10k residents 0\u2013150% FPL"
+      },
+      "mental_distress": {
+        "value": "n/a",
+        "unit": "% adults with frequent mental distress (CDC PLACES)"
+      },
+      "poor_health": {
+        "value": "n/a",
+        "unit": "% adults with fair or poor self-rated health (CDC PLACES)"
+      },
+      "depression": {
+        "value": "n/a",
+        "unit": "% adults with diagnosed depression (CDC PLACES)"
+      }
+    },
+    "trend": {}
+  },
   "milwaukee": {
     "name": "Milwaukee",
     "state": "WI",

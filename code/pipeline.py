@@ -25,7 +25,7 @@ from config import CITIES
 from collectors import (
     nonprofit_density, residential_stability, library_density, health_centers,
     housing_cost_burden, snap_participation, health_insurance_coverage,
-    nursing_homes,
+    nursing_homes, child_care_capacity, religious_institutions,
 )
 import etl
 import score as scorer
@@ -38,15 +38,17 @@ AUTO_COLLECTORS = [
     snap_participation.collect,
     health_insurance_coverage.collect,
     nursing_homes.collect,
+    child_care_capacity.collect,
 ]
 
 # Collectors that require manually downloaded files.
-# IRS EO BMF (~200MB), HRSA Excel, and IMLS Excel are too large or not
+# IRS EO BMF (~200MB), HRSA Excel, IMLS Excel, and ARDA xlsx are too large or not
 # scriptable enough to download automatically in CI.
 MANUAL_COLLECTORS = [
     nonprofit_density.collect,
     library_density.collect,
     health_centers.collect,
+    religious_institutions.collect,
 ]
 
 
