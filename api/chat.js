@@ -1,6 +1,6 @@
 const Anthropic = require('@anthropic-ai/sdk');
 
-const SYSTEM_PROMPT = `You are an expert analyst for the Care Quotient (CQ) — a data-driven index measuring care capacity across 68 American cities.
+const SYSTEM_PROMPT = `You are an expert analyst for the Care Quotient (CQ) — a data-driven index measuring care capacity across 69 American cities.
 
 WHAT THE CQ MEASURES:
 The Care Quotient asks: when someone needs help, can their city show up? It measures whether cities have the social ties, institutions, and safety-net reach to actually help people when they need it. This is explicitly NOT a quality-of-life or prosperity index. A city can score well on income, safety, and health outcomes while having thin care infrastructure for its most vulnerable residents. The inverse is also true.
@@ -74,7 +74,7 @@ module.exports = async function handler(req, res) {
   }
 
   const system = cityContext
-    ? SYSTEM_PROMPT + '\n\nCITY DATA (all 68 scored cities, sorted by CQ descending):\n' + cityContext
+    ? SYSTEM_PROMPT + '\n\nCITY DATA (all 69 scored cities, sorted by CQ descending):\n' + cityContext
     : SYSTEM_PROMPT;
 
   res.setHeader('Content-Type', 'text/event-stream; charset=utf-8');

@@ -17,7 +17,7 @@ Benchmarks:
   Pillar 1 — Social & Relational Care (40% of CQ)
     residential_stability    95%     — near-zero involuntary displacement
     combined_care (PEFK)     25/10k  — combined P+E+F+K nonprofit density
-    library_density          5/100k  — P90 across 68 cities; aspirational standard
+    library_density          5/100k  — P90 across 69 cities; aspirational standard
 
   Pillar 2 — Institutional Care (35% of CQ)
     fqhc_density             15/100k — eliminates HRSA shortage designation
