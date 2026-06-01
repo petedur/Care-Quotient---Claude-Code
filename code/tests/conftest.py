@@ -19,7 +19,7 @@ from pathlib import Path
 
 SYNTHETIC_METRICS = [
     # (city, metric, sub_metric, value)
-    # Pillar structure (V7):
+    # Pillar structure (V6):
     #   Pillar 1 — Social & Relational Care (40%): residential_stability (50%), combined_care (40%),
     #              library_density (5%), religious_density (5%)
     #   Pillar 2 — Institutional Care (35%): health_center_density, nursing_home_capacity, child_care_capacity
