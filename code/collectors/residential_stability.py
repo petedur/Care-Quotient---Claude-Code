@@ -4,7 +4,7 @@ Measures % of population living in the same home for 1+ years as a proxy
 for embedded social networks.
 
 Geography: ZCTA-level aggregation within the city's Census place boundary
-(>= 50% of ZCTA land area within the city). Replaces county-level queries
+(>= 40% of ZCTA land area within the city). Replaces county-level queries
 to eliminate county-sharing inflation for cities that are a fraction of
 their county.
 

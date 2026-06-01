@@ -14,7 +14,7 @@ income-to-poverty ratio bands from which we sum the 0–149% FPL population
 approximation of the eligible denominator.
 
 Geography: ZCTA-level aggregation within the city's Census place boundary
-(>= 50% of ZCTA land area within the city). Replaces county-level queries
+(>= 40% of ZCTA land area within the city). Replaces county-level queries
 to eliminate county-sharing inflation.
 
 Data source: Census Bureau ACS 5-year estimates

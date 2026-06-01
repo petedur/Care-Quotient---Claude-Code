@@ -2,7 +2,7 @@
 Collector: Community Health Center Density (HRSA)
 Counts Federally Qualified Health Centers (FQHCs) per 100,000 residents.
 
-Geography: ZIP-based filtering using the city's ZCTA boundary (>= 50% of
+Geography: ZIP-based filtering using the city's ZCTA boundary (>= 40% of
 ZCTA land area within the city). Replaces county FIPS filtering to eliminate
 county-sharing inflation for cities that are a fraction of their county.
 
