@@ -1642,7 +1642,7 @@ function renderFindings(app) {
       '<ul class="findings-list">',
         '<li>San Francisco: <strong>63.9.</strong> Same tier as Omaha (63.7) and Los Angeles (63.7).</li>',
         '<li>New York City: <strong>61.6.</strong> Same tier as Fresno (61.3).</li>',
-        '<li>Seattle: <strong>66.7.</strong> Below Milwaukee (66.4).</li>',
+        '<li>Seattle: <strong>66.7.</strong> Milwaukee: 66.4 &mdash; nearly tied.</li>',
         '<li>Boston: <strong>67.8.</strong> Below Baton Rouge (73.3) and Detroit (73.5).</li>',
       '</ul>',
 
@@ -1697,7 +1697,7 @@ function renderFindings(app) {
         'It cannot measure LDS ward welfare systems, immigrant mutual aid networks in LA and Houston, ',
         'extended family care systems, or informal support that substitutes for enrollment. ',
         'Cities where informal care is strong and formal program participation is low will score lower ',
-        "than their actual care capacity. The score is not a verdict &mdash; it's a provocation.",
+        'than their actual care capacity.',
       '</p>',
 
     '</div>',
