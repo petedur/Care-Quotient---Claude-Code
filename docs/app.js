@@ -1167,6 +1167,33 @@ function renderMethodology(app) {
         'Density metrics for Honolulu may be modestly overstated as a result.',
       '</p>',
 
+      '<h2>Tier System</h2>',
+
+      '<p>',
+        'Cities are grouped into four tiers based on their CQ score. The tier boundaries are derived from ',
+        '<strong>Jenks natural breaks</strong> applied to the 69-city distribution. The Jenks algorithm ',
+        'partitions data into classes by minimizing within-class variance — it finds the breakpoints ',
+        'where the distribution thins most naturally, rather than imposing round-number cutoffs.',
+      '</p>',
+
+      '<table class="method-table">',
+        '<thead><tr><th>Tier</th><th>Threshold</th><th>Cities (V6)</th></tr></thead>',
+        '<tbody>',
+          '<tr><td><span class="tier-badge" style="background:#2d6a4f;color:#fff;padding:2px 8px;border-radius:4px">Leading</span></td>    <td>&#8805; 68.2</td><td>13</td></tr>',
+          '<tr><td><span class="tier-badge" style="background:#74c490;color:#1a3d28;padding:2px 8px;border-radius:4px">Established</span></td><td>61.8 &ndash; 68.1</td><td>20</td></tr>',
+          '<tr><td><span class="tier-badge" style="background:#5aaccf;color:#0c2d40;padding:2px 8px;border-radius:4px">Growing</span></td>    <td>54.7 &ndash; 61.7</td><td>14</td></tr>',
+          '<tr><td><span class="tier-badge" style="background:#1e5799;color:#fff;padding:2px 8px;border-radius:4px">Emerging</span></td>    <td>&lt; 54.7</td><td>22</td></tr>',
+        '</tbody>',
+      '</table>',
+
+      '<p>',
+        'Tiers are a communication device, not a categorical claim. The underlying model produces ',
+        'continuous scores with no natural breaks. <strong>Cities within 2&ndash;3 points of a tier ',
+        'boundary should be treated as peers</strong>, not as categorically different. Tier thresholds ',
+        'will shift when cities are added or removed from the index, since Jenks is a relative ',
+        'algorithm applied to the current distribution.',
+      '</p>',
+
       '<h2>How to read the scores</h2>',
 
       '<p>',
