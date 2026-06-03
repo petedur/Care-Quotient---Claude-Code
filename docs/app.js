@@ -14,13 +14,14 @@ function getRank(cityKey) {
   return getCitiesSorted().findIndex(c => c.key === cityKey) + 1;
 }
 
-function animateBars(containerEl, selector, delay) {
-  delay = delay || 80;
+function animateBars(containerEl, selector, delay, stagger) {
+  delay   = delay   || 80;
+  stagger = stagger !== undefined ? stagger : 2;
   var fills = containerEl.querySelectorAll(selector);
   fills.forEach(function(fill, i) {
     setTimeout(function() {
       fill.style.width = fill.dataset.target + '%';
-    }, delay + i * 7);
+    }, delay + i * stagger);
   });
 }
 
@@ -28,6 +29,8 @@ function animateBars(containerEl, selector, delay) {
 
 function route() {
   var hash = window.location.hash.slice(1) || '/';
+  // Clear any stale prefill if not navigating to chat
+  if (hash !== '/chat') _chatPrefill = null;
   var app  = document.getElementById('app');
 
   if (hash === '/' || hash === '') {
@@ -1826,7 +1829,8 @@ function renderChat(app) {
     'What could ' + bottomCity.name + ' do to improve its score?',
   ];
 
-  var suggestionsHtml = _chatState.messages.length === 0 ? [
+  var willAutoSend = _chatPrefill && _chatPrefill.autoSend;
+  var suggestionsHtml = (_chatState.messages.length === 0 && !willAutoSend) ? [
     '<div class="chat-suggestions">',
       '<p class="chat-suggestions-label">Try asking:</p>',
       '<div class="chat-suggestion-grid">',
