@@ -153,7 +153,7 @@ function initHomeMap(cities) {
 
 // ── Tier system ─────────────────────────────────────────────────────────────
 // Four tiers based on absolute score bands, not relative rank.
-// Leading ≥70 | Established ≥62 | Growing ≥53 | Emerging <53
+// Leading ≥68.2 | Established 61.8–68.1 | Growing 54.7–61.7 | Emerging <54.7 (Jenks natural breaks)
 
 var TIERS = [
   { num: 1, label: 'Leading',     min: 68.2, color: '#2d6a4f', textColor: '#fff',    desc: 'Score 68.2 or above' },
@@ -1692,7 +1692,7 @@ function renderFindings(app) {
 
       '<ul class="findings-list">',
         '<li>San Francisco: <strong>64.0.</strong> Same tier (Established) as Omaha (63.1). Los Angeles (60.0) is one tier lower in Growing.</li>',
-        '<li>New York City: <strong>61.8.</strong> Established — just above the Growing threshold. One tier above Fresno (60.2).</li>',
+        '<li>New York City: <strong>61.8.</strong> Established — the lowest score in the Established tier. One tier above Fresno (60.2).</li>',
         '<li>Seattle: <strong>62.1.</strong> Milwaukee: 64.0 — Milwaukee edges ahead.</li>',
         '<li>Boston: <strong>67.2.</strong> Below Baton Rouge (71.4) and Detroit (70.5).</li>',
       '</ul>',
