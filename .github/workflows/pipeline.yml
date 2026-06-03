@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
     inputs:
       cities:
-        description: 'City keys to run (space-separated). Leave blank for all 68 cities.'
+        description: 'City keys to run (space-separated). Leave blank for all 69 cities.'
         required: false
         default: ''
       force_refresh:

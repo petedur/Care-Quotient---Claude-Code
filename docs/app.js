@@ -1672,7 +1672,7 @@ function renderFindings(app) {
       '</ul>',
 
       '<p>',
-        "San Francisco's housing cost burden score is 73.8, meaning that roughly a third of households are cost-burdened. ",
+        "San Francisco's housing cost burden score is 73.8 — meaning 73.8% of households are NOT cost-burdened, but the inverse (26.2% are burdened) is still among the higher burden rates in the dataset. ",
         'Its religious organization density score is 40.9, among the lowest in the dataset. ',
         'New York City has more FQHCs by absolute count than any city on the list; its per-capita FQHC score is 35.2 ',
         'because the denominator is 8.3 million people.',
