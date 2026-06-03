@@ -1672,12 +1672,14 @@ function renderFindings(app) {
 
       '<p>',
         'Washington, DC (75.1) leads the index, followed by Cincinnati (74.4), Honolulu (73.0), Cleveland (73.0), ',
-        'and Rochester (72.1). New Orleans (71.6), Baton Rouge (71.4), and Detroit (70.5) round out the Leading tier.',
+        'and Rochester (72.1). New Orleans, Baton Rouge, and Detroit follow. The full Leading tier extends to 13 cities, ',
+        'down to Pittsburgh (68.2).',
       '</p>',
 
       '<p>',
-        'The tier is geographically diverse: DC (federal hub), Honolulu (Pacific), New Orleans and Baton Rouge (Gulf South), ',
-        'and four Rust Belt cities. What unites many of them is a legacy of dense public and nonprofit infrastructure ',
+        'The tier is geographically diverse: DC (federal hub), Honolulu (Pacific), two Gulf South cities (New Orleans, Baton Rouge), ',
+        'five Rust Belt cities (Cincinnati, Cleveland, Rochester, Detroit, Pittsburgh), plus Baltimore, Indianapolis, ',
+        'Providence, and St. Louis. What unites many of them is a legacy of dense public and nonprofit infrastructure ',
         'built for larger or different populations. The Sun Belt cities people are moving to are largely absent.',
       '</p>',
 

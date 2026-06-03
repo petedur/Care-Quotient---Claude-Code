@@ -67,6 +67,9 @@ module.exports = async function handler(req, res) {
   if (!messages || !Array.isArray(messages) || messages.length === 0) {
     return res.status(400).json({ error: 'messages array required' });
   }
+  if (cityContext !== undefined && (typeof cityContext !== 'string' || cityContext.length > 50000)) {
+    return res.status(400).json({ error: 'invalid cityContext' });
+  }
 
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
