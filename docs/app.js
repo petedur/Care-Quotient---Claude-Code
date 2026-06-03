@@ -232,18 +232,6 @@ function renderHome(app) {
         'This is a data-driven index measuring the social ties, institutions, and access conditions ',
         'that determine whether people can get help when they need it.',
       '</p>',
-      '<div class="chat-prompts">',
-        '<span class="chat-prompts-label">Ask the Index (AI):</span>',
-        '<a class="chat-prompt-pill" href="#/chat"',
-          ' data-prefill="Why does Cincinnati rank above New York City?"',
-          ' data-autosend="true">Why does Cincinnati rank above NYC?</a>',
-        '<a class="chat-prompt-pill" href="#/chat"',
-          ' data-prefill="What policies could improve a city\'s Economic Access to Care score?"',
-          ' data-autosend="true">What policies improve Economic Access to Care?</a>',
-        '<a class="chat-prompt-pill" href="#/chat"',
-          ' data-prefill="Which cities punch above their weight on Social &amp; Relational Care?"',
-          ' data-autosend="true">Which cities lead on Social &amp; Relational Care?</a>',
-      '</div>',
     '</section>',
 
     // ── Map ───────────────────────────────────────────────────────────────
@@ -292,6 +280,22 @@ function renderHome(app) {
         'Cities within 3 to 4 points should be read as rough peers. Small differences ',
         'may fall within data collection variance. Click any city for a full breakdown.',
       '</p>',
+    '</section>',
+
+    // ── Chat prompts ──────────────────────────────────────────────────────
+    '<section class="section-wrap">',
+      '<div class="chat-prompts">',
+        '<span class="chat-prompts-label">Ask the Index (AI):</span>',
+        '<a class="chat-prompt-pill" href="#/chat"',
+          ' data-prefill="Why does Cincinnati rank above New York City?"',
+          ' data-autosend="true">Why does Cincinnati rank above NYC?</a>',
+        '<a class="chat-prompt-pill" href="#/chat"',
+          ' data-prefill="What policies could improve a city\'s Economic Access to Care score?"',
+          ' data-autosend="true">What policies improve Economic Access to Care?</a>',
+        '<a class="chat-prompt-pill" href="#/chat"',
+          ' data-prefill="Which cities punch above their weight on Social &amp; Relational Care?"',
+          ' data-autosend="true">Which cities lead on Social &amp; Relational Care?</a>',
+      '</div>',
     '</section>',
 
     // ── Pillars ───────────────────────────────────────────────────────────

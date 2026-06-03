@@ -129,16 +129,21 @@ body {
 }
 
 /* City page ask link */
-.ask-city-wrap { margin-top: 0.5rem; }
+.ask-city-wrap { margin-top: 0.75rem; }
 .ask-city-link {
+  display: inline-block;
   font-family: var(--sans);
   font-size: 0.78rem;
-  color: var(--p2);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  background: var(--p2);
+  color: #fff;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.15s;
+  padding: 5px 13px;
+  border-radius: 20px;
+  transition: background 0.15s;
 }
-.ask-city-link:hover { border-bottom-color: var(--p2); }
+.ask-city-link:hover { background: #1e4437; color: #fff; text-decoration: none; }
 
 .version-badge {
   font-family: var(--mono);
