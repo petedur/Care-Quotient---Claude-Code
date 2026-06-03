@@ -187,6 +187,9 @@ function renderHome(app) {
     var tierRows = bucket.map(function(item) {
       var city = item.city;
       var overflowCls = item.rank > 5 ? ' ranking-row-overflow' : '';
+      var p1w = (city.pillar1 * 0.40).toFixed(1);
+      var p2w = (city.pillar2 * 0.35).toFixed(1);
+      var p3w = (city.pillar3 * 0.25).toFixed(1);
       return [
         '<a class="ranking-row', overflowCls, '" href="#/city/', city.key, '"',
           ' role="link" tabindex="0"',
@@ -195,7 +198,12 @@ function renderHome(app) {
           '<span class="r-name">', city.name, '</span>',
           '<span class="r-state">', city.state, '</span>',
           '<div class="r-bar">',
-            '<div class="r-bar-fill" data-target="', fmt(city.cq, 1), '"></div>',
+            '<div class="r-seg r-seg-p1" data-target="', p1w,
+              '" data-tip="Social &amp; Relational Care: ', fmt(city.pillar1), '"></div>',
+            '<div class="r-seg r-seg-p2" data-target="', p2w,
+              '" data-tip="Institutional Care: ', fmt(city.pillar2), '"></div>',
+            '<div class="r-seg r-seg-p3" data-target="', p3w,
+              '" data-tip="Economic Access to Care: ', fmt(city.pillar3), '"></div>',
           '</div>',
           '<span class="r-score">', fmt(city.cq), '</span>',
         '</a>',
@@ -347,7 +355,7 @@ function renderHome(app) {
   // Animate ranking bars (staggered)
   var rankingTable = document.getElementById('ranking-table');
   setTimeout(function() {
-    animateBars(rankingTable, '.r-bar-fill', 80);
+    animateBars(rankingTable, '.r-seg', 80);
   }, 120);
 
   // Live search
@@ -363,6 +371,14 @@ function renderHome(app) {
       showAllBtn.innerHTML = expanded
         ? 'Show fewer &#8593;'
         : 'See all ' + total + ' cities &#8595;';
+      if (expanded) {
+        // Reset then animate overflow bars that just became visible
+        var overflowSegs = rankingTable.querySelectorAll('.ranking-row-overflow .r-seg');
+        overflowSegs.forEach(function(seg) { seg.style.width = '0'; });
+        setTimeout(function() {
+          animateBars(rankingTable, '.ranking-row-overflow .r-seg', 0);
+        }, 30);
+      }
     });
   }
 
