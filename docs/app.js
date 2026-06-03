@@ -81,10 +81,7 @@ function destroyHomeMap() {
 }
 
 function cqColor(score) {
-  if (score >= 70) return '#2d6a4f';
-  if (score >= 62) return '#74c490';
-  if (score >= 53) return '#5aaccf';
-  return '#1e5799';
+  return cqTier(score).color;
 }
 
 var TILE_URL  = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}';
@@ -296,7 +293,7 @@ function renderHome(app) {
           ' data-prefill="What policies could improve a city\'s Economic Access to Care score?"',
           ' data-autosend="true">What policies improve Economic Access to Care?</a>',
         '<a class="chat-prompt-pill" href="#/chat"',
-          ' data-prefill="Which cities punch above their weight on Social &amp; Relational Care?"',
+          ' data-prefill="Which cities lead on Social &amp; Relational Care?"',
           ' data-autosend="true">Which cities lead on Social &amp; Relational Care?</a>',
       '</div>',
     '</section>',

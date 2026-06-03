@@ -14,6 +14,7 @@
 
   --p1:          #8B3A2A;   /* Social Fabric — terracotta */
   --p2:          #2D5F4E;   /* Institutions  — deep green */
+  --p2-dark:     var(--p2-dark);   /* Institutions hover/active  */
   --p3:          #4A6FA5;   /* Reach         — slate blue */
 
   --p2-bg:       #E8F0EC;
@@ -90,7 +91,7 @@ body {
   letter-spacing: 0.01em !important;
   transition: background 0.15s !important;
 }
-.nav-chat-btn:hover { background: #1e4437 !important; color: #fff !important; }
+.nav-chat-btn:hover { background: var(--p2-dark) !important; color: #fff !important; }
 
 /* Home page chat prompts */
 .chat-prompts {
@@ -143,7 +144,7 @@ body {
   border-radius: 20px;
   transition: background 0.15s;
 }
-.ask-city-link:hover { background: #1e4437; color: #fff; text-decoration: none; }
+.ask-city-link:hover { background: var(--p2-dark); color: #fff; text-decoration: none; }
 
 .version-badge {
   font-family: var(--mono);
