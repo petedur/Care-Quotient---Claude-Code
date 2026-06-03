@@ -339,7 +339,7 @@ def run():
             "recommend Institutions of Care as dominant pillar (0.496 vs 0.328 Social Fabric). "
             "V3 retains Social Fabric primary (0.40) per care ethics theory. "
             "Kaiser criterion suggests 2 factors, but 3-factor solution aligns cleanly to "
-            "pillars with no cross-pillar correlation above 0.60. V4 will revisit inter-pillar weights."
+            "pillars with no cross-pillar correlation above 0.60. V6 retains theory-based weights; a future version will revisit with outcome validation."
         ),
         "inter_pillar_weights": {
             "empirical": empirical_inter,
