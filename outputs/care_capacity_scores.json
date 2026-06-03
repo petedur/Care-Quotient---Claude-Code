@@ -1,12 +1,12 @@
 {
   "albuquerque": {
-    "pillar1_social_relational_care": 56.4,
+    "pillar1_social_relational_care": 56.8,
     "pillar2_institutional_care": 35.0,
     "pillar3_economic_access": 83.9,
     "metrics": {
       "Residential Stability": {
-        "score": 88.5,
-        "raw_value": 84.04,
+        "score": 89.2,
+        "raw_value": 84.74,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -65,16 +65,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 55.8
+    "care_quotient": 55.9
   },
   "anchorage": {
-    "pillar1_social_relational_care": 57.9,
+    "pillar1_social_relational_care": 58.5,
     "pillar2_institutional_care": 14.1,
     "pillar3_economic_access": 82.8,
     "metrics": {
       "Residential Stability": {
-        "score": 86.8,
-        "raw_value": 82.46,
+        "score": 88.0,
+        "raw_value": 83.61,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -133,16 +133,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 48.8
+    "care_quotient": 49.0
   },
   "atlanta": {
-    "pillar1_social_relational_care": 83.5,
+    "pillar1_social_relational_care": 83.9,
     "pillar2_institutional_care": 45.1,
     "pillar3_economic_access": 67.7,
     "metrics": {
       "Residential Stability": {
-        "score": 84.2,
-        "raw_value": 80.01,
+        "score": 85.0,
+        "raw_value": 80.79,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -201,16 +201,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 66.1
+    "care_quotient": 66.3
   },
   "aurora": {
-    "pillar1_social_relational_care": 59.4,
+    "pillar1_social_relational_care": 59.9,
     "pillar2_institutional_care": 28.0,
     "pillar3_economic_access": 79.3,
     "metrics": {
       "Residential Stability": {
-        "score": 85.8,
-        "raw_value": 81.54,
+        "score": 86.9,
+        "raw_value": 82.54,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -269,16 +269,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.4
+    "care_quotient": 53.6
   },
   "austin": {
-    "pillar1_social_relational_care": 59.0,
+    "pillar1_social_relational_care": 59.4,
     "pillar2_institutional_care": 37.1,
     "pillar3_economic_access": 58.9,
     "metrics": {
       "Residential Stability": {
-        "score": 82.0,
-        "raw_value": 77.86,
+        "score": 82.8,
+        "raw_value": 78.68,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -337,16 +337,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 51.3
+    "care_quotient": 51.5
   },
   "bakersfield": {
-    "pillar1_social_relational_care": 53.9,
+    "pillar1_social_relational_care": 54.7,
     "pillar2_institutional_care": 36.5,
     "pillar3_economic_access": 81.1,
     "metrics": {
       "Residential Stability": {
-        "score": 90.9,
-        "raw_value": 86.31,
+        "score": 92.5,
+        "raw_value": 87.84,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -405,16 +405,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.6
+    "care_quotient": 54.9
   },
   "baltimore": {
-    "pillar1_social_relational_care": 75.3,
+    "pillar1_social_relational_care": 75.8,
     "pillar2_institutional_care": 46.8,
     "pillar3_economic_access": 87.4,
     "metrics": {
       "Residential Stability": {
-        "score": 89.2,
-        "raw_value": 84.72,
+        "score": 90.2,
+        "raw_value": 85.72,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -473,16 +473,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 68.4
+    "care_quotient": 68.6
   },
   "baton_rouge": {
-    "pillar1_social_relational_care": 64.9,
+    "pillar1_social_relational_care": 65.4,
     "pillar2_institutional_care": 75.5,
     "pillar3_economic_access": 75.2,
     "metrics": {
       "Residential Stability": {
-        "score": 83.5,
-        "raw_value": 79.35,
+        "score": 84.4,
+        "raw_value": 80.14,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -541,16 +541,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 71.2
+    "care_quotient": 71.4
   },
   "birmingham": {
-    "pillar1_social_relational_care": 67.9,
+    "pillar1_social_relational_care": 68.4,
     "pillar2_institutional_care": 52.5,
     "pillar3_economic_access": 71.1,
     "metrics": {
       "Residential Stability": {
-        "score": 85.1,
-        "raw_value": 80.8,
+        "score": 86.0,
+        "raw_value": 81.73,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -609,16 +609,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 63.3
+    "care_quotient": 63.5
   },
   "boston": {
-    "pillar1_social_relational_care": 65.9,
+    "pillar1_social_relational_care": 66.3,
     "pillar2_institutional_care": 56.4,
     "pillar3_economic_access": 83.8,
     "metrics": {
       "Residential Stability": {
-        "score": 83.8,
-        "raw_value": 79.63,
+        "score": 84.6,
+        "raw_value": 80.39,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -677,16 +677,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 67.0
+    "care_quotient": 67.2
   },
   "buffalo": {
-    "pillar1_social_relational_care": 66.5,
+    "pillar1_social_relational_care": 67.1,
     "pillar2_institutional_care": 47.0,
     "pillar3_economic_access": 87.2,
     "metrics": {
       "Residential Stability": {
-        "score": 88.9,
-        "raw_value": 84.5,
+        "score": 90.1,
+        "raw_value": 85.6,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -745,16 +745,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 64.8
+    "care_quotient": 65.1
   },
   "charlotte": {
-    "pillar1_social_relational_care": 65.3,
+    "pillar1_social_relational_care": 65.8,
     "pillar2_institutional_care": 27.2,
     "pillar3_economic_access": 71.8,
     "metrics": {
       "Residential Stability": {
-        "score": 86.6,
-        "raw_value": 82.23,
+        "score": 87.7,
+        "raw_value": 83.27,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -813,16 +813,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.6
+    "care_quotient": 53.8
   },
   "chicago": {
-    "pillar1_social_relational_care": 63.2,
+    "pillar1_social_relational_care": 63.8,
     "pillar2_institutional_care": 57.5,
     "pillar3_economic_access": 82.5,
     "metrics": {
       "Residential Stability": {
-        "score": 88.9,
-        "raw_value": 84.47,
+        "score": 90.0,
+        "raw_value": 85.47,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -881,16 +881,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 66.0
+    "care_quotient": 66.3
   },
   "cincinnati": {
-    "pillar1_social_relational_care": 70.0,
+    "pillar1_social_relational_care": 70.6,
     "pillar2_institutional_care": 79.8,
     "pillar3_economic_access": 73.0,
     "metrics": {
       "Residential Stability": {
-        "score": 82.8,
-        "raw_value": 78.62,
+        "score": 84.0,
+        "raw_value": 79.83,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -949,16 +949,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 74.2
+    "care_quotient": 74.4
   },
   "cleveland": {
-    "pillar1_social_relational_care": 71.7,
+    "pillar1_social_relational_care": 72.2,
     "pillar2_institutional_care": 65.8,
     "pillar3_economic_access": 84.4,
     "metrics": {
       "Residential Stability": {
-        "score": 85.7,
-        "raw_value": 81.4,
+        "score": 86.6,
+        "raw_value": 82.31,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -1017,16 +1017,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 72.8
+    "care_quotient": 73.0
   },
   "colorado_springs": {
-    "pillar1_social_relational_care": 55.9,
+    "pillar1_social_relational_care": 56.4,
     "pillar2_institutional_care": 32.4,
     "pillar3_economic_access": 81.1,
     "metrics": {
       "Residential Stability": {
-        "score": 83.1,
-        "raw_value": 78.91,
+        "score": 84.1,
+        "raw_value": 79.88,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -1085,16 +1085,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.0
+    "care_quotient": 54.2
   },
   "columbus": {
-    "pillar1_social_relational_care": 59.6,
+    "pillar1_social_relational_care": 60.0,
     "pillar2_institutional_care": 39.4,
     "pillar3_economic_access": 76.6,
     "metrics": {
       "Residential Stability": {
-        "score": 83.1,
-        "raw_value": 78.92,
+        "score": 84.1,
+        "raw_value": 79.9,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -1153,16 +1153,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 56.8
+    "care_quotient": 56.9
   },
   "corpus_christi": {
-    "pillar1_social_relational_care": 54.1,
+    "pillar1_social_relational_care": 54.6,
     "pillar2_institutional_care": 31.2,
     "pillar3_economic_access": 75.1,
     "metrics": {
       "Residential Stability": {
-        "score": 87.2,
-        "raw_value": 82.82,
+        "score": 88.1,
+        "raw_value": 83.7,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -1221,16 +1221,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 51.3
+    "care_quotient": 51.5
   },
   "dallas": {
-    "pillar1_social_relational_care": 63.8,
+    "pillar1_social_relational_care": 64.4,
     "pillar2_institutional_care": 28.8,
     "pillar3_economic_access": 62.5,
     "metrics": {
       "Residential Stability": {
-        "score": 87.5,
-        "raw_value": 83.13,
+        "score": 88.7,
+        "raw_value": 84.3,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -1289,16 +1289,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 51.2
+    "care_quotient": 51.5
   },
   "denver": {
-    "pillar1_social_relational_care": 64.6,
+    "pillar1_social_relational_care": 65.0,
     "pillar2_institutional_care": 50.2,
     "pillar3_economic_access": 77.9,
     "metrics": {
       "Residential Stability": {
-        "score": 82.9,
-        "raw_value": 78.71,
+        "score": 83.7,
+        "raw_value": 79.56,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -1357,16 +1357,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 62.9
+    "care_quotient": 63.0
   },
   "des_moines": {
-    "pillar1_social_relational_care": 62.2,
+    "pillar1_social_relational_care": 62.6,
     "pillar2_institutional_care": 47.0,
     "pillar3_economic_access": 86.2,
     "metrics": {
       "Residential Stability": {
-        "score": 86.6,
-        "raw_value": 82.23,
+        "score": 87.5,
+        "raw_value": 83.13,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -1425,16 +1425,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 62.9
+    "care_quotient": 63.0
   },
   "detroit": {
-    "pillar1_social_relational_care": 74.1,
+    "pillar1_social_relational_care": 74.7,
     "pillar2_institutional_care": 54.0,
     "pillar3_economic_access": 86.8,
     "metrics": {
       "Residential Stability": {
-        "score": 91.8,
-        "raw_value": 87.18,
+        "score": 93.0,
+        "raw_value": 88.39,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -1493,16 +1493,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 70.2
+    "care_quotient": 70.5
   },
   "durham": {
-    "pillar1_social_relational_care": 62.8,
+    "pillar1_social_relational_care": 63.2,
     "pillar2_institutional_care": 34.2,
     "pillar3_economic_access": 69.7,
     "metrics": {
       "Residential Stability": {
-        "score": 85.5,
-        "raw_value": 81.21,
+        "score": 86.4,
+        "raw_value": 82.1,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -1561,16 +1561,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.5
+    "care_quotient": 54.7
   },
   "el_paso": {
-    "pillar1_social_relational_care": 54.2,
+    "pillar1_social_relational_care": 54.8,
     "pillar2_institutional_care": 32.9,
     "pillar3_economic_access": 70.4,
     "metrics": {
       "Residential Stability": {
-        "score": 90.0,
-        "raw_value": 85.53,
+        "score": 91.2,
+        "raw_value": 86.68,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -1629,16 +1629,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 50.8
+    "care_quotient": 51.0
   },
   "fort_worth": {
-    "pillar1_social_relational_care": 60.3,
+    "pillar1_social_relational_care": 60.8,
     "pillar2_institutional_care": 33.5,
     "pillar3_economic_access": 68.8,
     "metrics": {
       "Residential Stability": {
-        "score": 89.0,
-        "raw_value": 84.52,
+        "score": 90.0,
+        "raw_value": 85.53,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -1697,16 +1697,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.0
+    "care_quotient": 53.2
   },
   "fresno": {
-    "pillar1_social_relational_care": 60.2,
+    "pillar1_social_relational_care": 60.9,
     "pillar2_institutional_care": 43.7,
     "pillar3_economic_access": 82.0,
     "metrics": {
       "Residential Stability": {
-        "score": 90.6,
-        "raw_value": 86.11,
+        "score": 91.9,
+        "raw_value": 87.27,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -1765,16 +1765,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 59.9
+    "care_quotient": 60.2
   },
   "honolulu": {
-    "pillar1_social_relational_care": 78.9,
+    "pillar1_social_relational_care": 79.4,
     "pillar2_institutional_care": 58.8,
     "pillar3_economic_access": 82.7,
     "metrics": {
       "Residential Stability": {
-        "score": 89.8,
-        "raw_value": 85.27,
+        "score": 90.8,
+        "raw_value": 86.27,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -1833,16 +1833,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 72.8
+    "care_quotient": 73.0
   },
   "houston": {
-    "pillar1_social_relational_care": 61.2,
+    "pillar1_social_relational_care": 61.7,
     "pillar2_institutional_care": 28.4,
     "pillar3_economic_access": 64.9,
     "metrics": {
       "Residential Stability": {
-        "score": 87.2,
-        "raw_value": 82.82,
+        "score": 88.3,
+        "raw_value": 83.86,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -1901,16 +1901,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 50.6
+    "care_quotient": 50.8
   },
   "indianapolis": {
-    "pillar1_social_relational_care": 69.3,
+    "pillar1_social_relational_care": 69.9,
     "pillar2_institutional_care": 59.3,
     "pillar3_economic_access": 79.0,
     "metrics": {
       "Residential Stability": {
-        "score": 88.7,
-        "raw_value": 84.28,
+        "score": 89.8,
+        "raw_value": 85.35,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -1969,16 +1969,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 68.2
+    "care_quotient": 68.5
   },
   "jacksonville": {
-    "pillar1_social_relational_care": 62.3,
+    "pillar1_social_relational_care": 62.9,
     "pillar2_institutional_care": 29.8,
     "pillar3_economic_access": 76.5,
     "metrics": {
       "Residential Stability": {
-        "score": 86.5,
-        "raw_value": 82.13,
+        "score": 87.6,
+        "raw_value": 83.22,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -2037,16 +2037,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 54.5
+    "care_quotient": 54.7
   },
   "kansas_city": {
-    "pillar1_social_relational_care": 67.1,
+    "pillar1_social_relational_care": 67.6,
     "pillar2_institutional_care": 44.3,
     "pillar3_economic_access": 64.4,
     "metrics": {
       "Residential Stability": {
-        "score": 86.9,
-        "raw_value": 82.52,
+        "score": 87.9,
+        "raw_value": 83.51,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -2105,16 +2105,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 58.4
+    "care_quotient": 58.6
   },
   "las_vegas": {
-    "pillar1_social_relational_care": 62.0,
+    "pillar1_social_relational_care": 62.5,
     "pillar2_institutional_care": 23.6,
     "pillar3_economic_access": 76.2,
     "metrics": {
       "Residential Stability": {
-        "score": 88.3,
-        "raw_value": 83.89,
+        "score": 89.3,
+        "raw_value": 84.79,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -2173,16 +2173,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 52.1
+    "care_quotient": 52.3
   },
   "lexington": {
-    "pillar1_social_relational_care": 58.8,
+    "pillar1_social_relational_care": 59.2,
     "pillar2_institutional_care": 49.8,
     "pillar3_economic_access": 72.4,
     "metrics": {
       "Residential Stability": {
-        "score": 81.8,
-        "raw_value": 77.73,
+        "score": 82.7,
+        "raw_value": 78.59,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -2241,16 +2241,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 59.0
+    "care_quotient": 59.2
   },
   "los_angeles": {
-    "pillar1_social_relational_care": 63.1,
+    "pillar1_social_relational_care": 63.5,
     "pillar2_institutional_care": 46.7,
     "pillar3_economic_access": 73.0,
     "metrics": {
       "Residential Stability": {
-        "score": 92.5,
-        "raw_value": 87.84,
+        "score": 93.4,
+        "raw_value": 88.71,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -2309,16 +2309,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 59.8
+    "care_quotient": 60.0
   },
   "louisville": {
-    "pillar1_social_relational_care": 58.1,
+    "pillar1_social_relational_care": 58.8,
     "pillar2_institutional_care": 23.1,
     "pillar3_economic_access": 80.1,
     "metrics": {
       "Residential Stability": {
-        "score": 90.4,
-        "raw_value": 85.91,
+        "score": 91.7,
+        "raw_value": 87.09,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -2377,16 +2377,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 51.4
+    "care_quotient": 51.6
   },
   "madison": {
-    "pillar1_social_relational_care": 57.3,
+    "pillar1_social_relational_care": 57.6,
     "pillar2_institutional_care": 25.4,
     "pillar3_economic_access": 58.7,
     "metrics": {
       "Residential Stability": {
-        "score": 77.2,
-        "raw_value": 73.3,
+        "score": 77.8,
+        "raw_value": 73.9,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -2445,16 +2445,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 46.5
+    "care_quotient": 46.6
   },
   "memphis": {
-    "pillar1_social_relational_care": 70.3,
+    "pillar1_social_relational_care": 71.0,
     "pillar2_institutional_care": 34.2,
     "pillar3_economic_access": 72.9,
     "metrics": {
       "Residential Stability": {
-        "score": 89.4,
-        "raw_value": 84.91,
+        "score": 90.7,
+        "raw_value": 86.17,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -2513,16 +2513,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 58.3
+    "care_quotient": 58.6
   },
   "miami": {
-    "pillar1_social_relational_care": 60.8,
+    "pillar1_social_relational_care": 61.4,
     "pillar2_institutional_care": 39.0,
     "pillar3_economic_access": 70.7,
     "metrics": {
       "Residential Stability": {
-        "score": 86.6,
-        "raw_value": 82.31,
+        "score": 87.8,
+        "raw_value": 83.37,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -2581,16 +2581,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 55.6
+    "care_quotient": 55.9
   },
   "milwaukee": {
-    "pillar1_social_relational_care": 64.7,
+    "pillar1_social_relational_care": 65.2,
     "pillar2_institutional_care": 47.5,
     "pillar3_economic_access": 85.2,
     "metrics": {
       "Residential Stability": {
-        "score": 88.8,
-        "raw_value": 84.32,
+        "score": 89.8,
+        "raw_value": 85.35,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -2649,16 +2649,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 63.8
+    "care_quotient": 64.0
   },
   "minneapolis": {
-    "pillar1_social_relational_care": 63.9,
+    "pillar1_social_relational_care": 64.4,
     "pillar2_institutional_care": 59.6,
     "pillar3_economic_access": 79.2,
     "metrics": {
       "Residential Stability": {
-        "score": 80.6,
-        "raw_value": 76.53,
+        "score": 81.6,
+        "raw_value": 77.5,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -2717,16 +2717,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 66.2
+    "care_quotient": 66.4
   },
   "nashville": {
-    "pillar1_social_relational_care": 65.5,
+    "pillar1_social_relational_care": 66.1,
     "pillar2_institutional_care": 28.6,
     "pillar3_economic_access": 68.3,
     "metrics": {
       "Residential Stability": {
-        "score": 83.8,
-        "raw_value": 79.58,
+        "score": 85.0,
+        "raw_value": 80.76,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -2785,16 +2785,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 53.3
+    "care_quotient": 53.5
   },
   "new_orleans": {
-    "pillar1_social_relational_care": 70.8,
+    "pillar1_social_relational_care": 71.3,
     "pillar2_institutional_care": 68.2,
     "pillar3_economic_access": 76.8,
     "metrics": {
       "Residential Stability": {
-        "score": 90.4,
-        "raw_value": 85.91,
+        "score": 91.4,
+        "raw_value": 86.83,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -2853,16 +2853,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 71.4
+    "care_quotient": 71.6
   },
   "nyc": {
-    "pillar1_social_relational_care": 62.0,
+    "pillar1_social_relational_care": 62.6,
     "pillar2_institutional_care": 45.7,
     "pillar3_economic_access": 83.2,
     "metrics": {
       "Residential Stability": {
-        "score": 93.5,
-        "raw_value": 88.87,
+        "score": 94.7,
+        "raw_value": 89.93,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -2921,16 +2921,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 61.6
+    "care_quotient": 61.8
   },
   "oklahoma_city": {
-    "pillar1_social_relational_care": 60.4,
+    "pillar1_social_relational_care": 60.9,
     "pillar2_institutional_care": 41.2,
     "pillar3_economic_access": 74.4,
     "metrics": {
       "Residential Stability": {
-        "score": 86.1,
-        "raw_value": 81.83,
+        "score": 87.2,
+        "raw_value": 82.83,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -2989,16 +2989,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 57.2
+    "care_quotient": 57.4
   },
   "omaha": {
-    "pillar1_social_relational_care": 63.1,
+    "pillar1_social_relational_care": 63.8,
     "pillar2_institutional_care": 55.5,
     "pillar3_economic_access": 72.5,
     "metrics": {
       "Residential Stability": {
-        "score": 88.3,
-        "raw_value": 83.87,
+        "score": 89.6,
+        "raw_value": 85.08,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -3057,16 +3057,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 62.8
+    "care_quotient": 63.1
   },
   "philadelphia": {
-    "pillar1_social_relational_care": 65.0,
+    "pillar1_social_relational_care": 65.6,
     "pillar2_institutional_care": 47.2,
     "pillar3_economic_access": 87.0,
     "metrics": {
       "Residential Stability": {
-        "score": 89.6,
-        "raw_value": 85.08,
+        "score": 90.7,
+        "raw_value": 86.12,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -3125,16 +3125,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 64.3
+    "care_quotient": 64.5
   },
   "phoenix": {
-    "pillar1_social_relational_care": 57.8,
+    "pillar1_social_relational_care": 58.3,
     "pillar2_institutional_care": 27.3,
     "pillar3_economic_access": 79.8,
     "metrics": {
       "Residential Stability": {
-        "score": 88.6,
-        "raw_value": 84.14,
+        "score": 89.6,
+        "raw_value": 85.1,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -3193,16 +3193,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 52.6
+    "care_quotient": 52.8
   },
   "pittsburgh": {
-    "pillar1_social_relational_care": 75.5,
+    "pillar1_social_relational_care": 75.9,
     "pillar2_institutional_care": 54.6,
     "pillar3_economic_access": 74.9,
     "metrics": {
       "Residential Stability": {
-        "score": 82.6,
-        "raw_value": 78.48,
+        "score": 83.4,
+        "raw_value": 79.19,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -3261,16 +3261,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 68.0
+    "care_quotient": 68.2
   },
   "portland": {
-    "pillar1_social_relational_care": 62.2,
+    "pillar1_social_relational_care": 62.5,
     "pillar2_institutional_care": 55.3,
     "pillar3_economic_access": 85.2,
     "metrics": {
       "Residential Stability": {
-        "score": 86.5,
-        "raw_value": 82.17,
+        "score": 87.2,
+        "raw_value": 82.82,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -3329,16 +3329,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 65.5
+    "care_quotient": 65.7
   },
   "providence": {
-    "pillar1_social_relational_care": 67.4,
+    "pillar1_social_relational_care": 67.9,
     "pillar2_institutional_care": 54.2,
     "pillar3_economic_access": 88.7,
     "metrics": {
       "Residential Stability": {
-        "score": 88.1,
-        "raw_value": 83.71,
+        "score": 89.2,
+        "raw_value": 84.72,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -3397,16 +3397,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 68.1
+    "care_quotient": 68.3
   },
   "raleigh": {
-    "pillar1_social_relational_care": 60.9,
+    "pillar1_social_relational_care": 61.3,
     "pillar2_institutional_care": 25.3,
     "pillar3_economic_access": 74.5,
     "metrics": {
       "Residential Stability": {
-        "score": 85.1,
-        "raw_value": 80.82,
+        "score": 86.0,
+        "raw_value": 81.68,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -3465,16 +3465,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 51.8
+    "care_quotient": 52.0
   },
   "richmond": {
-    "pillar1_social_relational_care": 63.0,
+    "pillar1_social_relational_care": 63.4,
     "pillar2_institutional_care": 54.0,
     "pillar3_economic_access": 70.8,
     "metrics": {
       "Residential Stability": {
-        "score": 82.4,
-        "raw_value": 78.24,
+        "score": 83.2,
+        "raw_value": 79.04,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -3533,16 +3533,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 61.8
+    "care_quotient": 62.0
   },
   "rochester": {
-    "pillar1_social_relational_care": 63.6,
+    "pillar1_social_relational_care": 64.0,
     "pillar2_institutional_care": 72.9,
     "pillar3_economic_access": 83.9,
     "metrics": {
       "Residential Stability": {
-        "score": 85.5,
-        "raw_value": 81.21,
+        "score": 86.4,
+        "raw_value": 82.11,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -3601,16 +3601,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 71.9
+    "care_quotient": 72.1
   },
   "sacramento": {
-    "pillar1_social_relational_care": 70.0,
+    "pillar1_social_relational_care": 70.5,
     "pillar2_institutional_care": 42.9,
     "pillar3_economic_access": 80.5,
     "metrics": {
       "Residential Stability": {
-        "score": 88.9,
-        "raw_value": 84.49,
+        "score": 89.9,
+        "raw_value": 85.36,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -3669,16 +3669,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 63.1
+    "care_quotient": 63.3
   },
   "salt_lake_city": {
-    "pillar1_social_relational_care": 62.7,
+    "pillar1_social_relational_care": 63.2,
     "pillar2_institutional_care": 29.4,
     "pillar3_economic_access": 55.8,
     "metrics": {
       "Residential Stability": {
-        "score": 82.9,
-        "raw_value": 78.76,
+        "score": 83.8,
+        "raw_value": 79.64,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -3737,16 +3737,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 49.3
+    "care_quotient": 49.5
   },
   "san_antonio": {
-    "pillar1_social_relational_care": 55.3,
+    "pillar1_social_relational_care": 55.8,
     "pillar2_institutional_care": 37.6,
     "pillar3_economic_access": 69.7,
     "metrics": {
       "Residential Stability": {
-        "score": 86.1,
-        "raw_value": 81.78,
+        "score": 87.0,
+        "raw_value": 82.69,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -3805,16 +3805,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 52.7
+    "care_quotient": 52.9
   },
   "san_diego": {
-    "pillar1_social_relational_care": 58.8,
+    "pillar1_social_relational_care": 59.2,
     "pillar2_institutional_care": 36.4,
     "pillar3_economic_access": 75.3,
     "metrics": {
       "Residential Stability": {
-        "score": 87.6,
-        "raw_value": 83.22,
+        "score": 88.5,
+        "raw_value": 84.11,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -3873,16 +3873,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 55.1
+    "care_quotient": 55.2
   },
   "san_francisco": {
-    "pillar1_social_relational_care": 62.5,
+    "pillar1_social_relational_care": 62.9,
     "pillar2_institutional_care": 53.4,
     "pillar3_economic_access": 80.8,
     "metrics": {
       "Residential Stability": {
-        "score": 88.3,
-        "raw_value": 83.9,
+        "score": 89.1,
+        "raw_value": 84.67,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -3941,16 +3941,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 63.9
+    "care_quotient": 64.0
   },
   "san_jose": {
-    "pillar1_social_relational_care": 55.8,
+    "pillar1_social_relational_care": 56.2,
     "pillar2_institutional_care": 41.8,
     "pillar3_economic_access": 79.6,
     "metrics": {
       "Residential Stability": {
-        "score": 90.9,
-        "raw_value": 86.37,
+        "score": 91.8,
+        "raw_value": 87.22,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -4009,16 +4009,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 56.8
+    "care_quotient": 57.0
   },
   "seattle": {
-    "pillar1_social_relational_care": 58.4,
+    "pillar1_social_relational_care": 58.7,
     "pillar2_institutional_care": 55.4,
     "pillar3_economic_access": 77.0,
     "metrics": {
       "Residential Stability": {
-        "score": 79.9,
-        "raw_value": 75.89,
+        "score": 80.5,
+        "raw_value": 76.51,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -4077,16 +4077,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 62.0
+    "care_quotient": 62.1
   },
   "spokane": {
-    "pillar1_social_relational_care": 56.0,
+    "pillar1_social_relational_care": 56.4,
     "pillar2_institutional_care": 48.3,
     "pillar3_economic_access": 90.3,
     "metrics": {
       "Residential Stability": {
-        "score": 83.2,
-        "raw_value": 79.0,
+        "score": 84.1,
+        "raw_value": 79.85,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -4145,16 +4145,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 61.9
+    "care_quotient": 62.0
   },
   "st_louis": {
-    "pillar1_social_relational_care": 74.4,
+    "pillar1_social_relational_care": 75.0,
     "pillar2_institutional_care": 60.2,
     "pillar3_economic_access": 72.5,
     "metrics": {
       "Residential Stability": {
-        "score": 87.4,
-        "raw_value": 83.06,
+        "score": 88.6,
+        "raw_value": 84.16,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -4213,16 +4213,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 69.0
+    "care_quotient": 69.2
   },
   "st_paul": {
-    "pillar1_social_relational_care": 68.7,
+    "pillar1_social_relational_care": 69.3,
     "pillar2_institutional_care": 50.3,
     "pillar3_economic_access": 82.9,
     "metrics": {
       "Residential Stability": {
-        "score": 86.4,
-        "raw_value": 82.1,
+        "score": 87.6,
+        "raw_value": 83.24,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -4281,16 +4281,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 65.8
+    "care_quotient": 66.0
   },
   "stockton": {
-    "pillar1_social_relational_care": 56.8,
+    "pillar1_social_relational_care": 57.4,
     "pillar2_institutional_care": 57.9,
     "pillar3_economic_access": 86.4,
     "metrics": {
       "Residential Stability": {
-        "score": 92.3,
-        "raw_value": 87.67,
+        "score": 93.4,
+        "raw_value": 88.73,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -4349,16 +4349,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 64.6
+    "care_quotient": 64.8
   },
   "tampa": {
-    "pillar1_social_relational_care": 60.1,
+    "pillar1_social_relational_care": 60.5,
     "pillar2_institutional_care": 29.1,
     "pillar3_economic_access": 74.1,
     "metrics": {
       "Residential Stability": {
-        "score": 81.9,
-        "raw_value": 77.78,
+        "score": 82.7,
+        "raw_value": 78.56,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -4417,16 +4417,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 52.8
+    "care_quotient": 52.9
   },
   "tucson": {
-    "pillar1_social_relational_care": 54.5,
+    "pillar1_social_relational_care": 55.0,
     "pillar2_institutional_care": 30.6,
     "pillar3_economic_access": 75.6,
     "metrics": {
       "Residential Stability": {
-        "score": 82.6,
-        "raw_value": 78.48,
+        "score": 83.5,
+        "raw_value": 79.29,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -4485,16 +4485,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 51.4
+    "care_quotient": 51.6
   },
   "virginia_beach": {
-    "pillar1_social_relational_care": 58.8,
+    "pillar1_social_relational_care": 59.3,
     "pillar2_institutional_care": 21.6,
     "pillar3_economic_access": 71.2,
     "metrics": {
       "Residential Stability": {
-        "score": 87.1,
-        "raw_value": 82.76,
+        "score": 88.1,
+        "raw_value": 83.73,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -4553,16 +4553,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 48.9
+    "care_quotient": 49.1
   },
   "washington_dc": {
-    "pillar1_social_relational_care": 80.6,
+    "pillar1_social_relational_care": 81.1,
     "pillar2_institutional_care": 62.6,
     "pillar3_economic_access": 83.0,
     "metrics": {
       "Residential Stability": {
-        "score": 84.0,
-        "raw_value": 79.76,
+        "score": 85.0,
+        "raw_value": 80.77,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -4621,16 +4621,16 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 74.9
+    "care_quotient": 75.1
   },
   "wichita": {
-    "pillar1_social_relational_care": 58.7,
+    "pillar1_social_relational_care": 59.2,
     "pillar2_institutional_care": 32.2,
     "pillar3_economic_access": 72.6,
     "metrics": {
       "Residential Stability": {
-        "score": 85.7,
-        "raw_value": 81.4,
+        "score": 86.7,
+        "raw_value": 82.39,
         "benchmark": 95.0,
         "pillar": "Social & Relational Care"
       },
@@ -4689,6 +4689,6 @@
         "pillar": "Economic Access to Care"
       }
     },
-    "care_quotient": 52.9
+    "care_quotient": 53.1
   }
 }

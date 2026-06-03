@@ -1593,16 +1593,17 @@ function renderFindings(app) {
 
       '<hr>',
 
-      '<h2>1. The Rust Belt paradox</h2>',
+      '<h2>1. The Leading tier is not who you would expect</h2>',
 
       '<p>',
-        'Washington, DC (74.9) leads the index, followed by Cincinnati (74.2), Honolulu (72.8), Cleveland (72.8), ',
-        'and Rochester (71.9). New Orleans (71.4), Baton Rouge (71.2), and Detroit (70.2) round out the Leading tier.',
+        'Washington, DC (75.1) leads the index, followed by Cincinnati (74.4), Honolulu (73.0), Cleveland (73.0), ',
+        'and Rochester (72.1). New Orleans (71.6), Baton Rouge (71.4), and Detroit (70.5) round out the Leading tier.',
       '</p>',
 
       '<p>',
-        'These are cities that have absorbed decades of population loss, disinvestment, and a narrative ',
-        'of failure, yet they are leading on care capacity.',
+        'The tier is geographically diverse — DC (federal hub), Honolulu (Pacific), New Orleans and Baton Rouge (Gulf South), ',
+        'and four Rust Belt cities. What unites many of them is a legacy of dense public and nonprofit infrastructure ',
+        'built for larger or different populations. The Sun Belt cities people are moving to are largely absent.',
       '</p>',
 
       '<p>',
@@ -1616,14 +1617,14 @@ function renderFindings(app) {
       '</p>',
 
       '<p>',
-        'Residential stability is also extremely high, with Detroit at 91.8 and Cleveland at 85.7. ',
+        'Residential stability is also extremely high, with Detroit at 93.0 and Cleveland at 86.6. ',
         'People stay. Informal care benefits from the social ties that arise when people stay put. ',
         'And Ohio, Michigan, Pennsylvania, and New York all expanded Medicaid.',
       '</p>',
 
       '<p>',
-        'The inverse is visible too: the cities people are moving to, such as Austin (51.3), Raleigh (51.8), ',
-        'Charlotte (53.6), or Nashville (53.3), are in the bottom third. In this dataset, fast-growing cities ',
+        'The inverse is visible too: the cities people are moving to, such as Austin (51.5), Raleigh (52.0), ',
+        'Charlotte (53.8), or Nashville (53.5), are in the bottom third. In this dataset, fast-growing cities ',
         'tend to show thinner per-capita care infrastructure — though causation here is complex.',
       '</p>',
 
@@ -1638,18 +1639,18 @@ function renderFindings(app) {
       '<table class="findings-table">',
         '<thead><tr><th>City</th><th>CQ</th><th>Healthcare coverage score</th></tr></thead>',
         '<tbody>',
-          '<tr><td>Houston</td><td>50.6</td><td>66.7</td></tr>',
-          '<tr><td>Dallas</td><td>51.2</td><td>66.8</td></tr>',
-          '<tr><td>Fort Worth</td><td>53.0</td><td>70.5</td></tr>',
-          '<tr><td>San Antonio</td><td>52.7</td><td>71.8</td></tr>',
-          '<tr><td>Austin</td><td>51.3</td><td>60.2</td></tr>',
-          '<tr><td>El Paso</td><td>50.8</td><td>68.1</td></tr>',
+          '<tr><td>Houston</td><td>50.8</td><td>66.7</td></tr>',
+          '<tr><td>Dallas</td><td>51.5</td><td>66.8</td></tr>',
+          '<tr><td>Fort Worth</td><td>53.2</td><td>70.5</td></tr>',
+          '<tr><td>San Antonio</td><td>52.9</td><td>71.8</td></tr>',
+          '<tr><td>Austin</td><td>51.5</td><td>60.2</td></tr>',
+          '<tr><td>El Paso</td><td>51.0</td><td>68.1</td></tr>',
         '</tbody>',
       '</table>',
 
       '<p>',
-        'Compare to cities in expansion states with similar demographics: Albuquerque (55.8, coverage 100), ',
-        'Fresno (59.9, coverage 100), Stockton (64.6, coverage 100).',
+        'Compare to cities in expansion states with similar demographics: Albuquerque (55.9, coverage 100), ',
+        'Fresno (60.2, coverage 100), Stockton (64.8, coverage 100).',
       '</p>',
 
       '<p>',
@@ -1665,10 +1666,10 @@ function renderFindings(app) {
       '<h2>3. Wealth and care capacity diverge</h2>',
 
       '<ul class="findings-list">',
-        '<li>San Francisco: <strong>63.9.</strong> Same tier as Omaha (62.8) and Los Angeles (59.8).</li>',
-        '<li>New York City: <strong>61.6.</strong> Same tier as Fresno (59.9).</li>',
-        '<li>Seattle: <strong>62.0.</strong> Milwaukee: 63.8 — Milwaukee edges ahead.</li>',
-        '<li>Boston: <strong>67.0.</strong> Below Baton Rouge (71.2) and Detroit (70.2).</li>',
+        '<li>San Francisco: <strong>64.0.</strong> Same tier as Omaha (63.1) and Los Angeles (60.0).</li>',
+        '<li>New York City: <strong>61.8.</strong> Same tier as Fresno (60.2).</li>',
+        '<li>Seattle: <strong>62.1.</strong> Milwaukee: 64.0 — Milwaukee edges ahead.</li>',
+        '<li>Boston: <strong>67.2.</strong> Below Baton Rouge (71.4) and Detroit (70.5).</li>',
       '</ul>',
 
       '<p>',
@@ -1693,7 +1694,7 @@ function renderFindings(app) {
       '</p>',
 
       '<p>',
-        'Madison (46.5) is a related case: healthcare coverage scores 57.1 and SNAP scores 44.8. But Wisconsin ',
+        'Madison (46.6) is a related case: healthcare coverage scores 57.1 and SNAP scores 44.8. But Wisconsin ',
         'has not adopted ACA Medicaid expansion, so Madison should not be treated as an expansion-state ',
         'counterexample. The more cautious interpretation is that Madison combines a relatively affluent local ',
         'profile with surprisingly low formal safety-net reach in the CQ data. That could reflect state Medicaid ',
@@ -1710,13 +1711,13 @@ function renderFindings(app) {
       '<h2>5. Same score, different problem</h2>',
 
       '<p>',
-        'Memphis (58.3) and Lexington (59.0) score nearly identically. Memphis: Pillar 1 = 70.3, Pillar 2 = 34.2. ',
-        'Strong community ties, thin institutional care. Lexington: Pillar 1 = 58.8, Pillar 2 = 49.8. ',
+        'Memphis (58.6) and Lexington (59.2) score nearly identically. Memphis: Pillar 1 = 71.0, Pillar 2 = 34.2. ',
+        'Strong community ties, thin institutional care. Lexington: Pillar 1 = 59.2, Pillar 2 = 49.8. ',
         "Different care deficit, same summary score. The CQ's diagnostic value is in the pillars, not the headline number.",
       '</p>',
 
       '<p>',
-        'Atlanta (66.1): highest Pillar 1 in the dataset (83.5). Combined care nonprofit density of 86, ',
+        'Atlanta (66.3): highest Pillar 1 in the dataset (83.9). Combined care nonprofit density of 86, ',
         'potentially attributable to a legacy of historically Black colleges and universities (HBCUs), ',
         'civil rights organizations, and Black church networks. But Pillar 2 is 45.1 and ',
         'FQHC score is 32.1 for a city of 500k. Extraordinary relational infrastructure, thin institutional layer.',

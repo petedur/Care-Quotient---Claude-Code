@@ -10,6 +10,11 @@ their county.
 
 Data source: Census Bureau ACS 5-year estimates, Table B07003
   - API docs: https://api.census.gov/data/2022/acs/acs5/variables.html
+
+Denominator: B07003_001E (population 1 year and over) — the universe variable
+for B07003, which only covers people who could have a "residence 1 year ago."
+Using B01003_001E (total population) would include infants under 1 year old who
+cannot have moved, slightly deflating the measured stability rate.
 """
 
 import sys
@@ -29,8 +34,8 @@ def collect(city_key: str = "nyc") -> dict:
     city = CITIES[city_key]
     print(f"\n=== Residential Stability — {city['name']} ===")
 
-    same_house_var = CENSUS_ACS_VARIABLES["same_house_1yr"]
-    pop_var        = CENSUS_ACS_VARIABLES["total_population"]
+    same_house_var = CENSUS_ACS_VARIABLES["same_house_1yr"]  # B07003_004E
+    pop_1yr_var    = "B07003_001E"  # population 1 year and over (B07003 universe)
     state_fips     = city["state_fips"]
 
     city_zctas = city_to_zips(city_key)
@@ -38,7 +43,7 @@ def collect(city_key: str = "nyc") -> dict:
 
     zcta_rows = census_get_zctas(
         ACS_URL,
-        [same_house_var, pop_var],
+        [same_house_var, pop_1yr_var],
         state_fips,
         city_zctas,
         get_census_api_key(),
@@ -53,12 +58,12 @@ def collect(city_key: str = "nyc") -> dict:
     rows = []
     for r in zcta_rows:
         same_house = r[same_house_var]
-        total_pop  = r[pop_var]
-        pct = round(same_house / total_pop * 100, 2) if total_pop else 0
+        pop_1yr    = r[pop_1yr_var]
+        pct = round(same_house / pop_1yr * 100, 2) if pop_1yr else 0
         rows.append({
             "zcta":       r["zcta"],
             "same_house": same_house,
-            "population": total_pop,
+            "population": pop_1yr,
             "pct_stable": pct,
         })
 
