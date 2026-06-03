@@ -279,7 +279,23 @@ All metric scores are on a 0–100 scale against absolute benchmarks (Section 4)
 
 ---
 
-## 6. Diagnostic Metrics (Not Scored)
+## 6. Tier System
+
+Cities are assigned to one of four tiers based on their CQ score. Tier thresholds are derived from **Jenks natural breaks** applied to the 69-city CQ distribution. The Jenks algorithm partitions data into classes by minimizing within-class variance and maximizing between-class variance — it finds the breakpoints where the distribution thins most naturally, rather than imposing round-number cutoffs.
+
+| Tier | Threshold | Cities (V6) |
+|------|-----------|-------------|
+| Leading | ≥ 68.2 | 13 |
+| Established | 61.8 – 68.1 | 20 |
+| Growing | 54.7 – 61.7 | 14 |
+| Emerging | < 54.7 | 22 |
+
+**Tier boundary interpretation**: The scoring formula is `min(value / benchmark × 100, 100)`, producing continuous scores with no natural "tiers" in the underlying model. The tier labels are a communication device, not a categorical claim. **Cities within 2–3 points of a tier boundary should be treated as peers rather than categorically different** — a difference of 1–2 points can fall within ACS sampling variation or single-facility changes. Thresholds will shift if cities are added or removed from the index, as Jenks is a relative algorithm applied to the current distribution.
+
+---
+
+## 7. Diagnostic Metrics (Not Scored)
+
 
 The following metrics are collected and reported but excluded from pillar scores:
 
@@ -292,7 +308,7 @@ The following metrics are collected and reported but excluded from pillar scores
 
 ---
 
-## 7. What Is Excluded and Why
+## 8. What Is Excluded and Why
 
 | Category | Reason for exclusion |
 |----------|----------------------|
@@ -304,7 +320,7 @@ The following metrics are collected and reported but excluded from pillar scores
 
 ---
 
-## 8. Data Sources
+## 9. Data Sources
 
 | Source | Coverage | Update frequency | Access |
 |--------|----------|-----------------|--------|
@@ -318,7 +334,7 @@ All five sources are national, free, and scriptable. No city-specific open data 
 
 ---
 
-## 9. Known Limitations
+## 10. Known Limitations
 
 1. **Per-capita density systematically disadvantages large cities**: NYC has 437 FQHCs and thousands of nonprofits — enormous absolute capacity — but scores below the median on both density metrics because its population of 8.3M dilutes per-capita ratios. A city of 180k with 44 FQHCs scores higher per capita than a city of 8M with 437 FQHCs, even though the latter has roughly 10x the infrastructure. Whether this is correct depends on how access scales with density: in a compact, transit-connected city, per-capita ratios may overstate deprivation if geographic proximity compensates. This is not unique to NYC — all large dense cities (Chicago, Philadelphia, Los Angeles) face the same structural penalty. A future version may explore supplementing per-capita density with geographic access metrics (% of population within X distance of a facility). For now, scores for cities above ~1M population should be read with this caveat in mind.
 
@@ -352,7 +368,7 @@ All five sources are national, free, and scriptable. No city-specific open data 
 
 ---
 
-## 10. V3 Changes (Implemented)
+## 11. V3 Changes (Implemented)
 
 The following improvements were implemented in V3:
 
@@ -363,13 +379,13 @@ The following improvements were implemented in V3:
 - **Within-pillar weights revised**: Empirical factor loadings used to update weights. Residential stability raised from 48% to 65%; housing affordability raised from 12% to 35%; health insurance raised from 40% to 65%; SNAP lowered from 60% to 35%.
 - **NP benchmark raised**: Combined care NP benchmark raised from 15/10k to 25/10k to restore score discrimination after ZCTA-based filtering reduced county-inflated counts.
 
-## 11. V4 Changes (Implemented)
+## 12. V4 Changes (Implemented)
 
 - **Nursing home capacity added** (Section 3.6): CMS Care Compare Medicare/Medicaid certified nursing homes; certified beds per 1,000 residents 65+. Benchmark: 50/1k. Wired into all 68 cities.
 - **Pillar 2 weights revised**: Combined care NPs 50% → 35%, FQHC density 50% → 35%, nursing home capacity added at 30%. The previous 50/50 split is replaced by a 35/35/30 split to accommodate the new metric. Factor analysis confirms nursing home capacity is an independent dimension (loading 0.91 on its own factor) that is not captured by the existing Pillar 2 metrics.
 - **7-metric model**: CQ is now a composite of 7 scored metrics (previously 6).
 
-## 12. V5 Changes (Implemented)
+## 13. V5 Changes (Implemented)
 
 - **Pillar restructuring based on care theory**: Three new pillar names grounded in Tronto (1993), Putnam (2000), and Sampson et al. (1997): Social & Relational Care (40%), Institutional Care (35%), Economic Access to Care (25%). See Section 2.
 - **Library density promoted to scored metric** (Pillar 1, 15%): Public libraries are de facto community care infrastructure — distress absorption sites, information and service access points, and programming hubs for isolated populations. Benchmark: 5 per 100,000 (P90 across 68 cities). See Section 3.3.
@@ -382,7 +398,7 @@ The following improvements were implemented in V3:
 - **Need-adjusted shadow diagnostic added**: Combined care nonprofit density per 10,000 residents at 0–150% FPL reported as a diagnostic metric on city pages. Not scored pending validation.
 - **8-metric model**: CQ is now a composite of 8 scored metrics (previously 7 in V4, 6 in V3).
 
-## 13. V6 Changes (Implemented)
+## 14. V6 Changes (Implemented)
 
 - **Child care capacity metric added** (Section 3.7): Census CBP NAICS 624410 establishments per 1,000 children under 5. Pillar 2 at 20%; benchmark 15/1k under-5. Theoretical grounding: Folbre (2001), Kittay (1999).
 - **Religious organization density metric added** (Section 3.4): ARDA 2020 Religion Census congregations per 100,000 residents. Pillar 1 at 5%; benchmark 150/100k. Measures the religious-institution layer of social infrastructure. Decennial data source; no trend comparison until 2030.
@@ -390,12 +406,12 @@ The following improvements were implemented in V3:
 - **Pillar 2 weights revised**: FQHC density 55%→45%, nursing home capacity 45%→35%, child care added at 20%.
 - **Healthcare coverage metric replaced**: B27001 (any insurance, benchmark 95%) → C27007 (Medicaid/CHIP enrollment rate among 0–149% FPL population, benchmark 100%). Removes employer-insurance inflation; penalizes Medicaid non-expansion states for the right reason.
 - **Interactive map**: Leaflet map as primary home page interface; cities as circle markers colored by tier.
-- **Tier system**: Four absolute score bands — Leading (≥70), Established (≥62), Growing (≥53), Emerging (<53).
+- **Tier system**: Four score bands derived from Jenks natural breaks on the 69-city CQ distribution — Leading (≥68.2), Established (≥61.8), Growing (≥54.7), Emerging (<54.7). Jenks minimizes within-class variance, placing break points where the distribution thins most naturally. Cities within 2–3 points of a tier boundary should be treated as peers rather than categorically different.
 - **CDC PLACES diagnostics**: Mental distress, self-rated health, and depression prevalence as non-scored overlays on city pages.
 - **"What is Care?" theory page**: Full theoretical foundation at /theory, citing Tronto (1993), Putnam (2000), Sampson et al. (1997), Kittay (1999), Folbre (2001), Nussbaum (2006), Sen (1999), and others. Includes metric-to-theory mapping table.
 - **10-metric model**: CQ is now a composite of 10 scored metrics (previously 8 in V5).
 
-## 14. Trend Analysis
+## 15. Trend Analysis
 
 City pages display an ACS trend section showing 2020 → 2022 changes at the individual metric level. For each trendable metric, the display shows the prior value, the current value, and the point-change delta (e.g., "72% → 75%, +3pp"). There is no composite CQ trend arrow — because six of the ten metrics are cross-sectional, a single summary figure would reflect only the four ACS-based metrics anyway.
 
@@ -417,7 +433,7 @@ City pages display an ACS trend section showing 2020 → 2022 changes at the ind
 
 Because six of ten scored metrics are held constant, the trend section captures change in *economic access* and *residential stability* conditions only. It is an indication of directional momentum, not a full re-score on all dimensions. Cities without ACS 2020 trend data collected do not display a trend section.
 
-## 15. Planned V7 Improvements
+## 16. Planned V7 Improvements
 
 - **Mental health capacity**: NPPES behavioral health provider data. Collector built (`code/collectors/mental_health_capacity.py`) but not integrated — geographic spillover inflates ZCTA-based counts ~3–4x; needs methodology validation.
 - **Home health capacity**: CMS Care Compare home health dataset (6jpm-sxkc) — deferred because CMS attributes episodes to agency headquarters ZIP, not patient location.
@@ -428,7 +444,7 @@ Because six of ten scored metrics are held constant, the trend section captures 
 
 ---
 
-## 16. References
+## 17. References
 
 - Agha, G. et al. (2024). Housing stability and social capital: Mediation pathways. *American Journal of Community Psychology*.
 - Boris, E.T. & Steuerle, C.E. (2006). *Nonprofits and Government: Collaboration and Conflict*. Urban Institute Press.

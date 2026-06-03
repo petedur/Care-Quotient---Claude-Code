@@ -156,10 +156,10 @@ function initHomeMap(cities) {
 // Leading ≥70 | Established ≥62 | Growing ≥53 | Emerging <53
 
 var TIERS = [
-  { num: 1, label: 'Leading',     min: 70,  color: '#2d6a4f', textColor: '#fff',    desc: 'Score 70 or above' },
-  { num: 2, label: 'Established', min: 62,  color: '#74c490', textColor: '#1a3d28', desc: 'Score 62–69' },
-  { num: 3, label: 'Growing',     min: 53,  color: '#5aaccf', textColor: '#0c2d40', desc: 'Score 53–61' },
-  { num: 4, label: 'Emerging',    min: 0,   color: '#1e5799', textColor: '#fff',    desc: 'Score below 53' },
+  { num: 1, label: 'Leading',     min: 68.2, color: '#2d6a4f', textColor: '#fff',    desc: 'Score 68.2 or above' },
+  { num: 2, label: 'Established', min: 61.8, color: '#74c490', textColor: '#1a3d28', desc: 'Score 61.8–68.1' },
+  { num: 3, label: 'Growing',     min: 54.7, color: '#5aaccf', textColor: '#0c2d40', desc: 'Score 54.7–61.7' },
+  { num: 4, label: 'Emerging',    min: 0,    color: '#1e5799', textColor: '#fff',    desc: 'Score below 54.7' },
 ];
 
 function cqTier(score) {
@@ -1593,7 +1593,7 @@ function renderFindings(app) {
 
       '<hr>',
 
-      '<h2>1. The Leading tier is not who you would expect</h2>',
+      '<h2>1. The leading tier offers some surprises</h2>',
 
       '<p>',
         'Washington, DC (75.1) leads the index, followed by Cincinnati (74.4), Honolulu (73.0), Cleveland (73.0), ',
@@ -1601,7 +1601,7 @@ function renderFindings(app) {
       '</p>',
 
       '<p>',
-        'The tier is geographically diverse — DC (federal hub), Honolulu (Pacific), New Orleans and Baton Rouge (Gulf South), ',
+        'The tier is geographically diverse: DC (federal hub), Honolulu (Pacific), New Orleans and Baton Rouge (Gulf South), ',
         'and four Rust Belt cities. What unites many of them is a legacy of dense public and nonprofit infrastructure ',
         'built for larger or different populations. The Sun Belt cities people are moving to are largely absent.',
       '</p>',
@@ -1666,8 +1666,8 @@ function renderFindings(app) {
       '<h2>3. Wealth and care capacity diverge</h2>',
 
       '<ul class="findings-list">',
-        '<li>San Francisco: <strong>64.0.</strong> Same tier as Omaha (63.1) and Los Angeles (60.0).</li>',
-        '<li>New York City: <strong>61.8.</strong> Same tier as Fresno (60.2).</li>',
+        '<li>San Francisco: <strong>64.0.</strong> Same tier (Established) as Omaha (63.1). Los Angeles (60.0) is one tier lower in Growing.</li>',
+        '<li>New York City: <strong>61.8.</strong> Established — just above the Growing threshold. One tier above Fresno (60.2).</li>',
         '<li>Seattle: <strong>62.1.</strong> Milwaukee: 64.0 — Milwaukee edges ahead.</li>',
         '<li>Boston: <strong>67.2.</strong> Below Baton Rouge (71.4) and Detroit (70.5).</li>',
       '</ul>',

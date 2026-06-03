@@ -24,7 +24,7 @@ Pillar 3 — Economic Access to Care (25%): Whether economic conditions allow ca
 - Housing affordability (35%): % of residents NOT cost-burdened (housing <30% of income). Benchmark: 90%. Source: ACS B25070/B25091.
 - SNAP participation (25%): % of likely-eligible households receiving SNAP. Benchmark: 85%. Source: ACS B22001/C17002.
 
-TIERS: Leading ≥70 | Established 62–69 | Growing 53–61 | Emerging <53
+TIERS: Leading ≥68.2 | Established 61.8–68.1 | Growing 54.7–61.7 | Emerging <54.7. Thresholds derived from Jenks natural breaks on the 69-city CQ distribution. Cities within 2–3 points of a boundary are peers, not categorically different.
 
 WHAT THE INDEX EXCLUDES: income levels, crime rates, health outcomes, life expectancy, environmental quality, school quality. These are conditions — not the presence or absence of care. A city can score well on all of those and still have thin social infrastructure for its most vulnerable residents.
 
