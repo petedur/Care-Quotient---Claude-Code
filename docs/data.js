@@ -8,15 +8,15 @@ const CITIES = {
     "population": "565k residents",
     "lat": 35.0844,
     "lng": -106.6504,
-    "cq": 55.8,
-    "pillar1": 56.4,
+    "cq": 55.9,
+    "pillar1": 56.8,
     "pillar2": 35.0,
     "pillar3": 83.9,
     "metrics": {
       "residential_stability": {
-        "score": 88.5,
-        "raw": 84.04,
-        "rawFmt": "84.0%",
+        "score": 89.2,
+        "raw": 84.74,
+        "rawFmt": "84.7%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -113,8 +113,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 83.3,
-        "current": 84.0,
-        "delta": 0.8
+        "current": 84.7,
+        "delta": 1.5
       },
       "housing_cost_burden": {
         "prior": 66.8,
@@ -139,15 +139,15 @@ const CITIES = {
     "population": "291k residents",
     "lat": 61.2181,
     "lng": -149.9003,
-    "cq": 48.8,
-    "pillar1": 57.9,
+    "cq": 49.0,
+    "pillar1": 58.5,
     "pillar2": 14.1,
     "pillar3": 82.8,
     "metrics": {
       "residential_stability": {
-        "score": 86.8,
-        "raw": 82.46,
-        "rawFmt": "82.5%",
+        "score": 88.0,
+        "raw": 83.61,
+        "rawFmt": "83.6%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -244,8 +244,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 80.4,
-        "current": 82.5,
-        "delta": 2.1
+        "current": 83.6,
+        "delta": 3.2
       },
       "housing_cost_burden": {
         "prior": 67.8,
@@ -270,15 +270,15 @@ const CITIES = {
     "population": "499k residents",
     "lat": 33.749,
     "lng": -84.388,
-    "cq": 66.1,
-    "pillar1": 83.5,
+    "cq": 66.3,
+    "pillar1": 83.9,
     "pillar2": 45.1,
     "pillar3": 67.7,
     "metrics": {
       "residential_stability": {
-        "score": 84.2,
-        "raw": 80.01,
-        "rawFmt": "80.0%",
+        "score": 85.0,
+        "raw": 80.79,
+        "rawFmt": "80.8%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -375,8 +375,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 78.8,
-        "current": 80.0,
-        "delta": 1.2
+        "current": 80.8,
+        "delta": 1.9
       },
       "housing_cost_burden": {
         "prior": 63.3,
@@ -401,15 +401,15 @@ const CITIES = {
     "population": "367k residents",
     "lat": 39.7294,
     "lng": -104.8319,
-    "cq": 53.4,
-    "pillar1": 59.4,
+    "cq": 53.6,
+    "pillar1": 59.9,
     "pillar2": 28.0,
     "pillar3": 79.3,
     "metrics": {
       "residential_stability": {
-        "score": 85.8,
-        "raw": 81.54,
-        "rawFmt": "81.5%",
+        "score": 86.9,
+        "raw": 82.54,
+        "rawFmt": "82.5%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -506,8 +506,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 81.3,
-        "current": 81.5,
-        "delta": 0.3
+        "current": 82.5,
+        "delta": 1.3
       },
       "housing_cost_burden": {
         "prior": 62.2,
@@ -532,15 +532,15 @@ const CITIES = {
     "population": "962k residents",
     "lat": 30.2672,
     "lng": -97.7431,
-    "cq": 51.3,
-    "pillar1": 59.0,
+    "cq": 51.5,
+    "pillar1": 59.4,
     "pillar2": 37.1,
     "pillar3": 58.9,
     "metrics": {
       "residential_stability": {
-        "score": 82.0,
-        "raw": 77.86,
-        "rawFmt": "77.9%",
+        "score": 82.8,
+        "raw": 78.68,
+        "rawFmt": "78.7%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -637,8 +637,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 78.3,
-        "current": 77.9,
-        "delta": -0.5
+        "current": 78.7,
+        "delta": 0.4
       },
       "housing_cost_burden": {
         "prior": 64.6,
@@ -663,15 +663,15 @@ const CITIES = {
     "population": "407k residents",
     "lat": 35.3733,
     "lng": -119.0187,
-    "cq": 54.6,
-    "pillar1": 53.9,
+    "cq": 54.9,
+    "pillar1": 54.7,
     "pillar2": 36.5,
     "pillar3": 81.1,
     "metrics": {
       "residential_stability": {
-        "score": 90.9,
-        "raw": 86.31,
-        "rawFmt": "86.3%",
+        "score": 92.5,
+        "raw": 87.84,
+        "rawFmt": "87.8%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -768,8 +768,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 82.3,
-        "current": 86.3,
-        "delta": 4.0
+        "current": 87.8,
+        "delta": 5.5
       },
       "housing_cost_burden": {
         "prior": 58.7,
@@ -794,15 +794,15 @@ const CITIES = {
     "population": "586k residents",
     "lat": 39.2904,
     "lng": -76.6122,
-    "cq": 68.4,
-    "pillar1": 75.3,
+    "cq": 68.6,
+    "pillar1": 75.8,
     "pillar2": 46.8,
     "pillar3": 87.4,
     "metrics": {
       "residential_stability": {
-        "score": 89.2,
-        "raw": 84.72,
-        "rawFmt": "84.7%",
+        "score": 90.2,
+        "raw": 85.72,
+        "rawFmt": "85.7%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -899,8 +899,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 83.7,
-        "current": 84.7,
-        "delta": 1.0
+        "current": 85.7,
+        "delta": 2.0
       },
       "housing_cost_burden": {
         "prior": 62.2,
@@ -925,15 +925,15 @@ const CITIES = {
     "population": "228k residents",
     "lat": 30.4515,
     "lng": -91.1871,
-    "cq": 71.2,
-    "pillar1": 64.9,
+    "cq": 71.4,
+    "pillar1": 65.4,
     "pillar2": 75.5,
     "pillar3": 75.2,
     "metrics": {
       "residential_stability": {
-        "score": 83.5,
-        "raw": 79.35,
-        "rawFmt": "79.3%",
+        "score": 84.4,
+        "raw": 80.14,
+        "rawFmt": "80.1%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -1030,8 +1030,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 80.4,
-        "current": 79.3,
-        "delta": -1.1
+        "current": 80.1,
+        "delta": -0.3
       },
       "housing_cost_burden": {
         "prior": 62.4,
@@ -1056,15 +1056,15 @@ const CITIES = {
     "population": "212k residents",
     "lat": 33.5186,
     "lng": -86.8104,
-    "cq": 63.3,
-    "pillar1": 67.9,
+    "cq": 63.5,
+    "pillar1": 68.4,
     "pillar2": 52.5,
     "pillar3": 71.1,
     "metrics": {
       "residential_stability": {
-        "score": 85.1,
-        "raw": 80.8,
-        "rawFmt": "80.8%",
+        "score": 86.0,
+        "raw": 81.73,
+        "rawFmt": "81.7%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -1161,8 +1161,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 79.2,
-        "current": 80.8,
-        "delta": 1.6
+        "current": 81.7,
+        "delta": 2.5
       },
       "housing_cost_burden": {
         "prior": 59.6,
@@ -1187,15 +1187,15 @@ const CITIES = {
     "population": "676k residents",
     "lat": 42.3601,
     "lng": -71.0589,
-    "cq": 67.0,
-    "pillar1": 65.9,
+    "cq": 67.2,
+    "pillar1": 66.3,
     "pillar2": 56.4,
     "pillar3": 83.8,
     "metrics": {
       "residential_stability": {
-        "score": 83.8,
-        "raw": 79.63,
-        "rawFmt": "79.6%",
+        "score": 84.6,
+        "raw": 80.39,
+        "rawFmt": "80.4%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -1292,8 +1292,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 79.2,
-        "current": 79.6,
-        "delta": 0.4
+        "current": 80.4,
+        "delta": 1.2
       },
       "housing_cost_burden": {
         "prior": 58.5,
@@ -1318,15 +1318,15 @@ const CITIES = {
     "population": "278k residents",
     "lat": 42.8864,
     "lng": -78.8784,
-    "cq": 64.8,
-    "pillar1": 66.5,
+    "cq": 65.1,
+    "pillar1": 67.1,
     "pillar2": 47.0,
     "pillar3": 87.2,
     "metrics": {
       "residential_stability": {
-        "score": 88.9,
-        "raw": 84.5,
-        "rawFmt": "84.5%",
+        "score": 90.1,
+        "raw": 85.6,
+        "rawFmt": "85.6%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -1423,8 +1423,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 82.2,
-        "current": 84.5,
-        "delta": 2.2
+        "current": 85.6,
+        "delta": 3.3
       },
       "housing_cost_burden": {
         "prior": 63.9,
@@ -1449,15 +1449,15 @@ const CITIES = {
     "population": "875k residents",
     "lat": 35.2271,
     "lng": -80.8431,
-    "cq": 53.6,
-    "pillar1": 65.3,
+    "cq": 53.8,
+    "pillar1": 65.8,
     "pillar2": 27.2,
     "pillar3": 71.8,
     "metrics": {
       "residential_stability": {
-        "score": 86.6,
-        "raw": 82.23,
-        "rawFmt": "82.2%",
+        "score": 87.7,
+        "raw": 83.27,
+        "rawFmt": "83.3%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -1554,8 +1554,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 81.3,
-        "current": 82.2,
-        "delta": 0.9
+        "current": 83.3,
+        "delta": 2.0
       },
       "housing_cost_burden": {
         "prior": 67.5,
@@ -1580,15 +1580,15 @@ const CITIES = {
     "population": "2.7M residents",
     "lat": 41.8781,
     "lng": -87.6298,
-    "cq": 66.0,
-    "pillar1": 63.2,
+    "cq": 66.3,
+    "pillar1": 63.8,
     "pillar2": 57.5,
     "pillar3": 82.5,
     "metrics": {
       "residential_stability": {
-        "score": 88.9,
-        "raw": 84.47,
-        "rawFmt": "84.5%",
+        "score": 90.0,
+        "raw": 85.47,
+        "rawFmt": "85.5%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -1685,8 +1685,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 84.1,
-        "current": 84.5,
-        "delta": 0.4
+        "current": 85.5,
+        "delta": 1.4
       },
       "housing_cost_burden": {
         "prior": 60.8,
@@ -1711,15 +1711,15 @@ const CITIES = {
     "population": "309k residents",
     "lat": 39.1031,
     "lng": -84.512,
-    "cq": 74.2,
-    "pillar1": 70.0,
+    "cq": 74.4,
+    "pillar1": 70.6,
     "pillar2": 79.8,
     "pillar3": 73.0,
     "metrics": {
       "residential_stability": {
-        "score": 82.8,
-        "raw": 78.62,
-        "rawFmt": "78.6%",
+        "score": 84.0,
+        "raw": 79.83,
+        "rawFmt": "79.8%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -1816,8 +1816,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 76.2,
-        "current": 78.6,
-        "delta": 2.4
+        "current": 79.8,
+        "delta": 3.6
       },
       "housing_cost_burden": {
         "prior": 64.6,
@@ -1842,15 +1842,15 @@ const CITIES = {
     "population": "373k residents",
     "lat": 41.4993,
     "lng": -81.6944,
-    "cq": 72.8,
-    "pillar1": 71.7,
+    "cq": 73.0,
+    "pillar1": 72.2,
     "pillar2": 65.8,
     "pillar3": 84.4,
     "metrics": {
       "residential_stability": {
-        "score": 85.7,
-        "raw": 81.4,
-        "rawFmt": "81.4%",
+        "score": 86.6,
+        "raw": 82.31,
+        "rawFmt": "82.3%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -1947,8 +1947,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 81.0,
-        "current": 81.4,
-        "delta": 0.4
+        "current": 82.3,
+        "delta": 1.4
       },
       "housing_cost_burden": {
         "prior": 60.6,
@@ -1973,15 +1973,15 @@ const CITIES = {
     "population": "479k residents",
     "lat": 38.8339,
     "lng": -104.8214,
-    "cq": 54.0,
-    "pillar1": 55.9,
+    "cq": 54.2,
+    "pillar1": 56.4,
     "pillar2": 32.4,
     "pillar3": 81.1,
     "metrics": {
       "residential_stability": {
-        "score": 83.1,
-        "raw": 78.91,
-        "rawFmt": "78.9%",
+        "score": 84.1,
+        "raw": 79.88,
+        "rawFmt": "79.9%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -2078,8 +2078,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 77.1,
-        "current": 78.9,
-        "delta": 1.8
+        "current": 79.9,
+        "delta": 2.8
       },
       "housing_cost_burden": {
         "prior": 65.1,
@@ -2104,15 +2104,15 @@ const CITIES = {
     "population": "906k residents",
     "lat": 39.9612,
     "lng": -82.9988,
-    "cq": 56.8,
-    "pillar1": 59.6,
+    "cq": 56.9,
+    "pillar1": 60.0,
     "pillar2": 39.4,
     "pillar3": 76.6,
     "metrics": {
       "residential_stability": {
-        "score": 83.1,
-        "raw": 78.92,
-        "rawFmt": "78.9%",
+        "score": 84.1,
+        "raw": 79.9,
+        "rawFmt": "79.9%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -2209,8 +2209,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 78.0,
-        "current": 78.9,
-        "delta": 0.9
+        "current": 79.9,
+        "delta": 1.9
       },
       "housing_cost_burden": {
         "prior": 65.5,
@@ -2235,15 +2235,15 @@ const CITIES = {
     "population": "318k residents",
     "lat": 27.8006,
     "lng": -97.3964,
-    "cq": 51.3,
-    "pillar1": 54.1,
+    "cq": 51.5,
+    "pillar1": 54.6,
     "pillar2": 31.2,
     "pillar3": 75.1,
     "metrics": {
       "residential_stability": {
-        "score": 87.2,
-        "raw": 82.82,
-        "rawFmt": "82.8%",
+        "score": 88.1,
+        "raw": 83.7,
+        "rawFmt": "83.7%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -2340,8 +2340,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 81.6,
-        "current": 82.8,
-        "delta": 1.2
+        "current": 83.7,
+        "delta": 2.1
       },
       "housing_cost_burden": {
         "prior": 68.1,
@@ -2366,15 +2366,15 @@ const CITIES = {
     "population": "1.3M residents",
     "lat": 32.7767,
     "lng": -96.797,
-    "cq": 51.2,
-    "pillar1": 63.8,
+    "cq": 51.5,
+    "pillar1": 64.4,
     "pillar2": 28.8,
     "pillar3": 62.5,
     "metrics": {
       "residential_stability": {
-        "score": 87.5,
-        "raw": 83.13,
-        "rawFmt": "83.1%",
+        "score": 88.7,
+        "raw": 84.3,
+        "rawFmt": "84.3%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -2471,8 +2471,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 82.4,
-        "current": 83.1,
-        "delta": 0.7
+        "current": 84.3,
+        "delta": 1.9
       },
       "housing_cost_burden": {
         "prior": 62.4,
@@ -2497,15 +2497,15 @@ const CITIES = {
     "population": "716k residents",
     "lat": 39.7392,
     "lng": -104.9903,
-    "cq": 62.9,
-    "pillar1": 64.6,
+    "cq": 63.0,
+    "pillar1": 65.0,
     "pillar2": 50.2,
     "pillar3": 77.9,
     "metrics": {
       "residential_stability": {
-        "score": 82.9,
-        "raw": 78.71,
-        "rawFmt": "78.7%",
+        "score": 83.7,
+        "raw": 79.56,
+        "rawFmt": "79.6%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -2602,8 +2602,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 79.1,
-        "current": 78.7,
-        "delta": -0.4
+        "current": 79.6,
+        "delta": 0.5
       },
       "housing_cost_burden": {
         "prior": 64.8,
@@ -2628,15 +2628,15 @@ const CITIES = {
     "population": "214k residents",
     "lat": 41.5868,
     "lng": -93.625,
-    "cq": 62.9,
-    "pillar1": 62.2,
+    "cq": 63.0,
+    "pillar1": 62.6,
     "pillar2": 47.0,
     "pillar3": 86.2,
     "metrics": {
       "residential_stability": {
-        "score": 86.6,
-        "raw": 82.23,
-        "rawFmt": "82.2%",
+        "score": 87.5,
+        "raw": 83.13,
+        "rawFmt": "83.1%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -2733,8 +2733,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 81.2,
-        "current": 82.2,
-        "delta": 1.0
+        "current": 83.1,
+        "delta": 1.9
       },
       "housing_cost_burden": {
         "prior": 69.0,
@@ -2759,15 +2759,15 @@ const CITIES = {
     "population": "632k residents",
     "lat": 42.3314,
     "lng": -83.0458,
-    "cq": 70.2,
-    "pillar1": 74.1,
+    "cq": 70.5,
+    "pillar1": 74.7,
     "pillar2": 54.0,
     "pillar3": 86.8,
     "metrics": {
       "residential_stability": {
-        "score": 91.8,
-        "raw": 87.18,
-        "rawFmt": "87.2%",
+        "score": 93.0,
+        "raw": 88.39,
+        "rawFmt": "88.4%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -2864,8 +2864,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 84.8,
-        "current": 87.2,
-        "delta": 2.4
+        "current": 88.4,
+        "delta": 3.6
       },
       "housing_cost_burden": {
         "prior": 57.0,
@@ -2890,15 +2890,15 @@ const CITIES = {
     "population": "284k residents",
     "lat": 35.994,
     "lng": -78.8986,
-    "cq": 54.5,
-    "pillar1": 62.8,
+    "cq": 54.7,
+    "pillar1": 63.2,
     "pillar2": 34.2,
     "pillar3": 69.7,
     "metrics": {
       "residential_stability": {
-        "score": 85.5,
-        "raw": 81.21,
-        "rawFmt": "81.2%",
+        "score": 86.4,
+        "raw": 82.1,
+        "rawFmt": "82.1%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -2995,8 +2995,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 78.9,
-        "current": 81.2,
-        "delta": 2.3
+        "current": 82.1,
+        "delta": 3.2
       },
       "housing_cost_burden": {
         "prior": 67.5,
@@ -3021,15 +3021,15 @@ const CITIES = {
     "population": "679k residents",
     "lat": 31.7619,
     "lng": -106.485,
-    "cq": 50.8,
-    "pillar1": 54.2,
+    "cq": 51.0,
+    "pillar1": 54.8,
     "pillar2": 32.9,
     "pillar3": 70.4,
     "metrics": {
       "residential_stability": {
-        "score": 90.0,
-        "raw": 85.53,
-        "rawFmt": "85.5%",
+        "score": 91.2,
+        "raw": 86.68,
+        "rawFmt": "86.7%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -3126,8 +3126,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 83.8,
-        "current": 85.5,
-        "delta": 1.7
+        "current": 86.7,
+        "delta": 2.9
       },
       "housing_cost_burden": {
         "prior": 66.7,
@@ -3152,15 +3152,15 @@ const CITIES = {
     "population": "919k residents",
     "lat": 32.7555,
     "lng": -97.3308,
-    "cq": 53.0,
-    "pillar1": 60.3,
+    "cq": 53.2,
+    "pillar1": 60.8,
     "pillar2": 33.5,
     "pillar3": 68.8,
     "metrics": {
       "residential_stability": {
-        "score": 89.0,
-        "raw": 84.52,
-        "rawFmt": "84.5%",
+        "score": 90.0,
+        "raw": 85.53,
+        "rawFmt": "85.5%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -3257,8 +3257,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 82.8,
-        "current": 84.5,
-        "delta": 1.7
+        "current": 85.5,
+        "delta": 2.7
       },
       "housing_cost_burden": {
         "prior": 66.6,
@@ -3283,15 +3283,15 @@ const CITIES = {
     "population": "542k residents",
     "lat": 36.7378,
     "lng": -119.7871,
-    "cq": 59.9,
-    "pillar1": 60.2,
+    "cq": 60.2,
+    "pillar1": 60.9,
     "pillar2": 43.7,
     "pillar3": 82.0,
     "metrics": {
       "residential_stability": {
-        "score": 90.6,
-        "raw": 86.11,
-        "rawFmt": "86.1%",
+        "score": 91.9,
+        "raw": 87.27,
+        "rawFmt": "87.3%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -3388,8 +3388,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 84.1,
-        "current": 86.1,
-        "delta": 2.0
+        "current": 87.3,
+        "delta": 3.2
       },
       "housing_cost_burden": {
         "prior": 58.7,
@@ -3414,15 +3414,15 @@ const CITIES = {
     "population": "351k residents",
     "lat": 21.3069,
     "lng": -157.8583,
-    "cq": 72.8,
-    "pillar1": 78.9,
+    "cq": 73.0,
+    "pillar1": 79.4,
     "pillar2": 58.8,
     "pillar3": 82.7,
     "metrics": {
       "residential_stability": {
-        "score": 89.8,
-        "raw": 85.27,
-        "rawFmt": "85.3%",
+        "score": 90.8,
+        "raw": 86.27,
+        "rawFmt": "86.3%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -3519,8 +3519,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 85.1,
-        "current": 85.3,
-        "delta": 0.2
+        "current": 86.3,
+        "delta": 1.2
       },
       "housing_cost_burden": {
         "prior": 59.5,
@@ -3545,15 +3545,15 @@ const CITIES = {
     "population": "2.3M residents",
     "lat": 29.7604,
     "lng": -95.3698,
-    "cq": 50.6,
-    "pillar1": 61.2,
+    "cq": 50.8,
+    "pillar1": 61.7,
     "pillar2": 28.4,
     "pillar3": 64.9,
     "metrics": {
       "residential_stability": {
-        "score": 87.2,
-        "raw": 82.82,
-        "rawFmt": "82.8%",
+        "score": 88.3,
+        "raw": 83.86,
+        "rawFmt": "83.9%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -3650,8 +3650,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 81.9,
-        "current": 82.8,
-        "delta": 0.9
+        "current": 83.9,
+        "delta": 1.9
       },
       "housing_cost_burden": {
         "prior": 63.2,
@@ -3676,15 +3676,15 @@ const CITIES = {
     "population": "887k residents",
     "lat": 39.7684,
     "lng": -86.1581,
-    "cq": 68.2,
-    "pillar1": 69.3,
+    "cq": 68.5,
+    "pillar1": 69.9,
     "pillar2": 59.3,
     "pillar3": 79.0,
     "metrics": {
       "residential_stability": {
-        "score": 88.7,
-        "raw": 84.28,
-        "rawFmt": "84.3%",
+        "score": 89.8,
+        "raw": 85.35,
+        "rawFmt": "85.3%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -3781,8 +3781,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 84.1,
-        "current": 84.3,
-        "delta": 0.2
+        "current": 85.3,
+        "delta": 1.3
       },
       "housing_cost_burden": {
         "prior": 66.5,
@@ -3807,15 +3807,15 @@ const CITIES = {
     "population": "950k residents",
     "lat": 30.3322,
     "lng": -81.6557,
-    "cq": 54.5,
-    "pillar1": 62.3,
+    "cq": 54.7,
+    "pillar1": 62.9,
     "pillar2": 29.8,
     "pillar3": 76.5,
     "metrics": {
       "residential_stability": {
-        "score": 86.5,
-        "raw": 82.13,
-        "rawFmt": "82.1%",
+        "score": 87.6,
+        "raw": 83.22,
+        "rawFmt": "83.2%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -3912,8 +3912,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 80.7,
-        "current": 82.1,
-        "delta": 1.4
+        "current": 83.2,
+        "delta": 2.5
       },
       "housing_cost_burden": {
         "prior": 65.6,
@@ -3938,15 +3938,15 @@ const CITIES = {
     "population": "508k residents",
     "lat": 39.0997,
     "lng": -94.5786,
-    "cq": 58.4,
-    "pillar1": 67.1,
+    "cq": 58.6,
+    "pillar1": 67.6,
     "pillar2": 44.3,
     "pillar3": 64.4,
     "metrics": {
       "residential_stability": {
-        "score": 86.9,
-        "raw": 82.52,
-        "rawFmt": "82.5%",
+        "score": 87.9,
+        "raw": 83.51,
+        "rawFmt": "83.5%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -4043,8 +4043,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 81.6,
-        "current": 82.5,
-        "delta": 0.9
+        "current": 83.5,
+        "delta": 1.9
       },
       "housing_cost_burden": {
         "prior": 68.3,
@@ -4069,15 +4069,15 @@ const CITIES = {
     "population": "642k residents",
     "lat": 36.1699,
     "lng": -115.1398,
-    "cq": 52.1,
-    "pillar1": 62.0,
+    "cq": 52.3,
+    "pillar1": 62.5,
     "pillar2": 23.6,
     "pillar3": 76.2,
     "metrics": {
       "residential_stability": {
-        "score": 88.3,
-        "raw": 83.89,
-        "rawFmt": "83.9%",
+        "score": 89.3,
+        "raw": 84.79,
+        "rawFmt": "84.8%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -4174,8 +4174,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 82.0,
-        "current": 83.9,
-        "delta": 1.9
+        "current": 84.8,
+        "delta": 2.8
       },
       "housing_cost_burden": {
         "prior": 60.8,
@@ -4200,15 +4200,15 @@ const CITIES = {
     "population": "323k residents",
     "lat": 38.0406,
     "lng": -84.5037,
-    "cq": 59.0,
-    "pillar1": 58.8,
+    "cq": 59.2,
+    "pillar1": 59.2,
     "pillar2": 49.8,
     "pillar3": 72.4,
     "metrics": {
       "residential_stability": {
-        "score": 81.8,
-        "raw": 77.73,
-        "rawFmt": "77.7%",
+        "score": 82.7,
+        "raw": 78.59,
+        "rawFmt": "78.6%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -4305,8 +4305,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 76.6,
-        "current": 77.7,
-        "delta": 1.1
+        "current": 78.6,
+        "delta": 2.0
       },
       "housing_cost_burden": {
         "prior": 70.2,
@@ -4331,15 +4331,15 @@ const CITIES = {
     "population": "3.9M residents",
     "lat": 34.0522,
     "lng": -118.2437,
-    "cq": 59.8,
-    "pillar1": 63.1,
+    "cq": 60.0,
+    "pillar1": 63.5,
     "pillar2": 46.7,
     "pillar3": 73.0,
     "metrics": {
       "residential_stability": {
-        "score": 92.5,
-        "raw": 87.84,
-        "rawFmt": "87.8%",
+        "score": 93.4,
+        "raw": 88.71,
+        "rawFmt": "88.7%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -4436,8 +4436,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 87.8,
-        "current": 87.8,
-        "delta": 0.0
+        "current": 88.7,
+        "delta": 0.9
       },
       "housing_cost_burden": {
         "prior": 48.7,
@@ -4462,15 +4462,15 @@ const CITIES = {
     "population": "633k residents",
     "lat": 38.2527,
     "lng": -85.7585,
-    "cq": 51.4,
-    "pillar1": 58.1,
+    "cq": 51.6,
+    "pillar1": 58.8,
     "pillar2": 23.1,
     "pillar3": 80.1,
     "metrics": {
       "residential_stability": {
-        "score": 90.4,
-        "raw": 85.91,
-        "rawFmt": "85.9%",
+        "score": 91.7,
+        "raw": 87.09,
+        "rawFmt": "87.1%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -4567,8 +4567,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 85.4,
-        "current": 85.9,
-        "delta": 0.5
+        "current": 87.1,
+        "delta": 1.7
       },
       "housing_cost_burden": {
         "prior": 75.4,
@@ -4593,15 +4593,15 @@ const CITIES = {
     "population": "269k residents",
     "lat": 43.0731,
     "lng": -89.4012,
-    "cq": 46.5,
-    "pillar1": 57.3,
+    "cq": 46.6,
+    "pillar1": 57.6,
     "pillar2": 25.4,
     "pillar3": 58.7,
     "metrics": {
       "residential_stability": {
-        "score": 77.2,
-        "raw": 73.3,
-        "rawFmt": "73.3%",
+        "score": 77.8,
+        "raw": 73.9,
+        "rawFmt": "73.9%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -4698,8 +4698,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 73.6,
-        "current": 73.3,
-        "delta": -0.3
+        "current": 73.9,
+        "delta": 0.3
       },
       "housing_cost_burden": {
         "prior": 64.7,
@@ -4724,15 +4724,15 @@ const CITIES = {
     "population": "633k residents",
     "lat": 35.1495,
     "lng": -90.049,
-    "cq": 58.3,
-    "pillar1": 70.3,
+    "cq": 58.6,
+    "pillar1": 71.0,
     "pillar2": 34.2,
     "pillar3": 72.9,
     "metrics": {
       "residential_stability": {
-        "score": 89.4,
-        "raw": 84.91,
-        "rawFmt": "84.9%",
+        "score": 90.7,
+        "raw": 86.17,
+        "rawFmt": "86.2%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -4829,8 +4829,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 83.0,
-        "current": 84.9,
-        "delta": 1.9
+        "current": 86.2,
+        "delta": 3.2
       },
       "housing_cost_burden": {
         "prior": 60.7,
@@ -4855,15 +4855,15 @@ const CITIES = {
     "population": "450k residents",
     "lat": 25.7617,
     "lng": -80.1918,
-    "cq": 55.6,
-    "pillar1": 60.8,
+    "cq": 55.9,
+    "pillar1": 61.4,
     "pillar2": 39.0,
     "pillar3": 70.7,
     "metrics": {
       "residential_stability": {
-        "score": 86.6,
-        "raw": 82.31,
-        "rawFmt": "82.3%",
+        "score": 87.8,
+        "raw": 83.37,
+        "rawFmt": "83.4%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -4965,15 +4965,15 @@ const CITIES = {
     "population": "577k residents",
     "lat": 43.0389,
     "lng": -87.9065,
-    "cq": 63.8,
-    "pillar1": 64.7,
+    "cq": 64.0,
+    "pillar1": 65.2,
     "pillar2": 47.5,
     "pillar3": 85.2,
     "metrics": {
       "residential_stability": {
-        "score": 88.8,
-        "raw": 84.32,
-        "rawFmt": "84.3%",
+        "score": 89.8,
+        "raw": 85.35,
+        "rawFmt": "85.3%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -5070,8 +5070,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 82.7,
-        "current": 84.3,
-        "delta": 1.6
+        "current": 85.3,
+        "delta": 2.6
       },
       "housing_cost_burden": {
         "prior": 60.1,
@@ -5096,15 +5096,15 @@ const CITIES = {
     "population": "430k residents",
     "lat": 44.9778,
     "lng": -93.265,
-    "cq": 66.2,
-    "pillar1": 63.9,
+    "cq": 66.4,
+    "pillar1": 64.4,
     "pillar2": 59.6,
     "pillar3": 79.2,
     "metrics": {
       "residential_stability": {
-        "score": 80.6,
-        "raw": 76.53,
-        "rawFmt": "76.5%",
+        "score": 81.6,
+        "raw": 77.5,
+        "rawFmt": "77.5%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -5201,8 +5201,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 75.7,
-        "current": 76.5,
-        "delta": 0.8
+        "current": 77.5,
+        "delta": 1.8
       },
       "housing_cost_burden": {
         "prior": 66.7,
@@ -5227,15 +5227,15 @@ const CITIES = {
     "population": "689k residents",
     "lat": 36.1627,
     "lng": -86.7816,
-    "cq": 53.3,
-    "pillar1": 65.5,
+    "cq": 53.5,
+    "pillar1": 66.1,
     "pillar2": 28.6,
     "pillar3": 68.3,
     "metrics": {
       "residential_stability": {
-        "score": 83.8,
-        "raw": 79.58,
-        "rawFmt": "79.6%",
+        "score": 85.0,
+        "raw": 80.76,
+        "rawFmt": "80.8%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -5332,8 +5332,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 80.5,
-        "current": 79.6,
-        "delta": -0.9
+        "current": 80.8,
+        "delta": 0.3
       },
       "housing_cost_burden": {
         "prior": 66.2,
@@ -5358,15 +5358,15 @@ const CITIES = {
     "population": "384k residents",
     "lat": 29.9511,
     "lng": -90.0715,
-    "cq": 71.4,
-    "pillar1": 70.8,
+    "cq": 71.6,
+    "pillar1": 71.3,
     "pillar2": 68.2,
     "pillar3": 76.8,
     "metrics": {
       "residential_stability": {
-        "score": 90.4,
-        "raw": 85.91,
-        "rawFmt": "85.9%",
+        "score": 91.4,
+        "raw": 86.83,
+        "rawFmt": "86.8%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -5463,8 +5463,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 85.3,
-        "current": 85.9,
-        "delta": 0.6
+        "current": 86.8,
+        "delta": 1.6
       },
       "housing_cost_burden": {
         "prior": 55.1,
@@ -5489,15 +5489,15 @@ const CITIES = {
     "population": "8.3M residents",
     "lat": 40.7128,
     "lng": -74.006,
-    "cq": 61.6,
-    "pillar1": 62.0,
+    "cq": 61.8,
+    "pillar1": 62.6,
     "pillar2": 45.7,
     "pillar3": 83.2,
     "metrics": {
       "residential_stability": {
-        "score": 93.5,
-        "raw": 88.87,
-        "rawFmt": "88.9%",
+        "score": 94.7,
+        "raw": 89.93,
+        "rawFmt": "89.9%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -5594,8 +5594,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 89.0,
-        "current": 88.9,
-        "delta": -0.1
+        "current": 89.9,
+        "delta": 0.9
       },
       "housing_cost_burden": {
         "prior": 54.1,
@@ -5620,15 +5620,15 @@ const CITIES = {
     "population": "681k residents",
     "lat": 35.4676,
     "lng": -97.5164,
-    "cq": 57.2,
-    "pillar1": 60.4,
+    "cq": 57.4,
+    "pillar1": 60.9,
     "pillar2": 41.2,
     "pillar3": 74.4,
     "metrics": {
       "residential_stability": {
-        "score": 86.1,
-        "raw": 81.83,
-        "rawFmt": "81.8%",
+        "score": 87.2,
+        "raw": 82.83,
+        "rawFmt": "82.8%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -5725,8 +5725,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 81.2,
-        "current": 81.8,
-        "delta": 0.6
+        "current": 82.8,
+        "delta": 1.6
       },
       "housing_cost_burden": {
         "prior": 72.1,
@@ -5751,15 +5751,15 @@ const CITIES = {
     "population": "486k residents",
     "lat": 41.2565,
     "lng": -95.9345,
-    "cq": 62.8,
-    "pillar1": 63.1,
+    "cq": 63.1,
+    "pillar1": 63.8,
     "pillar2": 55.5,
     "pillar3": 72.5,
     "metrics": {
       "residential_stability": {
-        "score": 88.3,
-        "raw": 83.87,
-        "rawFmt": "83.9%",
+        "score": 89.6,
+        "raw": 85.08,
+        "rawFmt": "85.1%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -5856,8 +5856,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 82.8,
-        "current": 83.9,
-        "delta": 1.1
+        "current": 85.1,
+        "delta": 2.3
       },
       "housing_cost_burden": {
         "prior": 70.2,
@@ -5882,15 +5882,15 @@ const CITIES = {
     "population": "1.6M residents",
     "lat": 39.9526,
     "lng": -75.1652,
-    "cq": 64.3,
-    "pillar1": 65.0,
+    "cq": 64.5,
+    "pillar1": 65.6,
     "pillar2": 47.2,
     "pillar3": 87.0,
     "metrics": {
       "residential_stability": {
-        "score": 89.6,
-        "raw": 85.08,
-        "rawFmt": "85.1%",
+        "score": 90.7,
+        "raw": 86.12,
+        "rawFmt": "86.1%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -5987,8 +5987,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 84.6,
-        "current": 85.1,
-        "delta": 0.5
+        "current": 86.1,
+        "delta": 1.5
       },
       "housing_cost_burden": {
         "prior": 61.5,
@@ -6013,15 +6013,15 @@ const CITIES = {
     "population": "1.6M residents",
     "lat": 33.4484,
     "lng": -112.074,
-    "cq": 52.6,
-    "pillar1": 57.8,
+    "cq": 52.8,
+    "pillar1": 58.3,
     "pillar2": 27.3,
     "pillar3": 79.8,
     "metrics": {
       "residential_stability": {
-        "score": 88.6,
-        "raw": 84.14,
-        "rawFmt": "84.1%",
+        "score": 89.6,
+        "raw": 85.1,
+        "rawFmt": "85.1%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -6118,8 +6118,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 82.8,
-        "current": 84.1,
-        "delta": 1.3
+        "current": 85.1,
+        "delta": 2.3
       },
       "housing_cost_burden": {
         "prior": 66.5,
@@ -6144,15 +6144,15 @@ const CITIES = {
     "population": "303k residents",
     "lat": 40.4406,
     "lng": -79.9959,
-    "cq": 68.0,
-    "pillar1": 75.5,
+    "cq": 68.2,
+    "pillar1": 75.9,
     "pillar2": 54.6,
     "pillar3": 74.9,
     "metrics": {
       "residential_stability": {
-        "score": 82.6,
-        "raw": 78.48,
-        "rawFmt": "78.5%",
+        "score": 83.4,
+        "raw": 79.19,
+        "rawFmt": "79.2%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -6249,8 +6249,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 77.9,
-        "current": 78.5,
-        "delta": 0.6
+        "current": 79.2,
+        "delta": 1.3
       },
       "housing_cost_burden": {
         "prior": 67.0,
@@ -6275,15 +6275,15 @@ const CITIES = {
     "population": "653k residents",
     "lat": 45.5231,
     "lng": -122.6765,
-    "cq": 65.5,
-    "pillar1": 62.2,
+    "cq": 65.7,
+    "pillar1": 62.5,
     "pillar2": 55.3,
     "pillar3": 85.2,
     "metrics": {
       "residential_stability": {
-        "score": 86.5,
-        "raw": 82.17,
-        "rawFmt": "82.2%",
+        "score": 87.2,
+        "raw": 82.82,
+        "rawFmt": "82.8%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -6380,8 +6380,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 81.2,
-        "current": 82.2,
-        "delta": 0.9
+        "current": 82.8,
+        "delta": 1.6
       },
       "housing_cost_burden": {
         "prior": 62.2,
@@ -6406,15 +6406,15 @@ const CITIES = {
     "population": "191k residents",
     "lat": 41.824,
     "lng": -71.4128,
-    "cq": 68.1,
-    "pillar1": 67.4,
+    "cq": 68.3,
+    "pillar1": 67.9,
     "pillar2": 54.2,
     "pillar3": 88.7,
     "metrics": {
       "residential_stability": {
-        "score": 88.1,
-        "raw": 83.71,
-        "rawFmt": "83.7%",
+        "score": 89.2,
+        "raw": 84.72,
+        "rawFmt": "84.7%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -6511,8 +6511,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 82.3,
-        "current": 83.7,
-        "delta": 1.4
+        "current": 84.7,
+        "delta": 2.4
       },
       "housing_cost_burden": {
         "prior": 57.9,
@@ -6537,15 +6537,15 @@ const CITIES = {
     "population": "468k residents",
     "lat": 35.7796,
     "lng": -78.6382,
-    "cq": 51.8,
-    "pillar1": 60.9,
+    "cq": 52.0,
+    "pillar1": 61.3,
     "pillar2": 25.3,
     "pillar3": 74.5,
     "metrics": {
       "residential_stability": {
-        "score": 85.1,
-        "raw": 80.82,
-        "rawFmt": "80.8%",
+        "score": 86.0,
+        "raw": 81.68,
+        "rawFmt": "81.7%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -6642,8 +6642,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 80.5,
-        "current": 80.8,
-        "delta": 0.3
+        "current": 81.7,
+        "delta": 1.2
       },
       "housing_cost_burden": {
         "prior": 70.8,
@@ -6668,15 +6668,15 @@ const CITIES = {
     "population": "227k residents",
     "lat": 37.5407,
     "lng": -77.436,
-    "cq": 61.8,
-    "pillar1": 63.0,
+    "cq": 62.0,
+    "pillar1": 63.4,
     "pillar2": 54.0,
     "pillar3": 70.8,
     "metrics": {
       "residential_stability": {
-        "score": 82.4,
-        "raw": 78.24,
-        "rawFmt": "78.2%",
+        "score": 83.2,
+        "raw": 79.04,
+        "rawFmt": "79.0%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -6773,8 +6773,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 77.0,
-        "current": 78.2,
-        "delta": 1.2
+        "current": 79.0,
+        "delta": 2.0
       },
       "housing_cost_burden": {
         "prior": 59.9,
@@ -6799,15 +6799,15 @@ const CITIES = {
     "population": "211k residents",
     "lat": 43.1566,
     "lng": -77.6088,
-    "cq": 71.9,
-    "pillar1": 63.6,
+    "cq": 72.1,
+    "pillar1": 64.0,
     "pillar2": 72.9,
     "pillar3": 83.9,
     "metrics": {
       "residential_stability": {
-        "score": 85.5,
-        "raw": 81.21,
-        "rawFmt": "81.2%",
+        "score": 86.4,
+        "raw": 82.11,
+        "rawFmt": "82.1%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -6904,8 +6904,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 78.7,
-        "current": 81.2,
-        "delta": 2.6
+        "current": 82.1,
+        "delta": 3.5
       },
       "housing_cost_burden": {
         "prior": 59.0,
@@ -6930,15 +6930,15 @@ const CITIES = {
     "population": "525k residents",
     "lat": 38.5816,
     "lng": -121.4944,
-    "cq": 63.1,
-    "pillar1": 70.0,
+    "cq": 63.3,
+    "pillar1": 70.5,
     "pillar2": 42.9,
     "pillar3": 80.5,
     "metrics": {
       "residential_stability": {
-        "score": 88.9,
-        "raw": 84.49,
-        "rawFmt": "84.5%",
+        "score": 89.9,
+        "raw": 85.36,
+        "rawFmt": "85.4%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -7035,8 +7035,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 82.9,
-        "current": 84.5,
-        "delta": 1.6
+        "current": 85.4,
+        "delta": 2.5
       },
       "housing_cost_burden": {
         "prior": 60.0,
@@ -7061,15 +7061,15 @@ const CITIES = {
     "population": "201k residents",
     "lat": 40.7608,
     "lng": -111.891,
-    "cq": 49.3,
-    "pillar1": 62.7,
+    "cq": 49.5,
+    "pillar1": 63.2,
     "pillar2": 29.4,
     "pillar3": 55.8,
     "metrics": {
       "residential_stability": {
-        "score": 82.9,
-        "raw": 78.76,
-        "rawFmt": "78.8%",
+        "score": 83.8,
+        "raw": 79.64,
+        "rawFmt": "79.6%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -7166,8 +7166,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 78.7,
-        "current": 78.8,
-        "delta": 0.1
+        "current": 79.6,
+        "delta": 0.9
       },
       "housing_cost_burden": {
         "prior": 66.5,
@@ -7192,15 +7192,15 @@ const CITIES = {
     "population": "1.4M residents",
     "lat": 29.4241,
     "lng": -98.4936,
-    "cq": 52.7,
-    "pillar1": 55.3,
+    "cq": 52.9,
+    "pillar1": 55.8,
     "pillar2": 37.6,
     "pillar3": 69.7,
     "metrics": {
       "residential_stability": {
-        "score": 86.1,
-        "raw": 81.78,
-        "rawFmt": "81.8%",
+        "score": 87.0,
+        "raw": 82.69,
+        "rawFmt": "82.7%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -7297,8 +7297,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 82.8,
-        "current": 81.8,
-        "delta": -1.0
+        "current": 82.7,
+        "delta": -0.1
       },
       "housing_cost_burden": {
         "prior": 65.1,
@@ -7323,15 +7323,15 @@ const CITIES = {
     "population": "1.4M residents",
     "lat": 32.7157,
     "lng": -117.1611,
-    "cq": 55.1,
-    "pillar1": 58.8,
+    "cq": 55.2,
+    "pillar1": 59.2,
     "pillar2": 36.4,
     "pillar3": 75.3,
     "metrics": {
       "residential_stability": {
-        "score": 87.6,
-        "raw": 83.22,
-        "rawFmt": "83.2%",
+        "score": 88.5,
+        "raw": 84.11,
+        "rawFmt": "84.1%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -7428,8 +7428,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 82.2,
-        "current": 83.2,
-        "delta": 1.0
+        "current": 84.1,
+        "delta": 1.9
       },
       "housing_cost_burden": {
         "prior": 57.9,
@@ -7454,15 +7454,15 @@ const CITIES = {
     "population": "874k residents",
     "lat": 37.7749,
     "lng": -122.4194,
-    "cq": 63.9,
-    "pillar1": 62.5,
+    "cq": 64.0,
+    "pillar1": 62.9,
     "pillar2": 53.4,
     "pillar3": 80.8,
     "metrics": {
       "residential_stability": {
-        "score": 88.3,
-        "raw": 83.9,
-        "rawFmt": "83.9%",
+        "score": 89.1,
+        "raw": 84.67,
+        "rawFmt": "84.7%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -7559,8 +7559,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 84.6,
-        "current": 83.9,
-        "delta": -0.7
+        "current": 84.7,
+        "delta": 0.1
       },
       "housing_cost_burden": {
         "prior": 66.2,
@@ -7585,15 +7585,15 @@ const CITIES = {
     "population": "1.0M residents",
     "lat": 37.3382,
     "lng": -121.8863,
-    "cq": 56.8,
-    "pillar1": 55.8,
+    "cq": 57.0,
+    "pillar1": 56.2,
     "pillar2": 41.8,
     "pillar3": 79.6,
     "metrics": {
       "residential_stability": {
-        "score": 90.9,
-        "raw": 86.37,
-        "rawFmt": "86.4%",
+        "score": 91.8,
+        "raw": 87.22,
+        "rawFmt": "87.2%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -7690,8 +7690,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 85.8,
-        "current": 86.4,
-        "delta": 0.5
+        "current": 87.2,
+        "delta": 1.4
       },
       "housing_cost_burden": {
         "prior": 61.7,
@@ -7716,15 +7716,15 @@ const CITIES = {
     "population": "737k residents",
     "lat": 47.6062,
     "lng": -122.3321,
-    "cq": 62.0,
-    "pillar1": 58.4,
+    "cq": 62.1,
+    "pillar1": 58.7,
     "pillar2": 55.4,
     "pillar3": 77.0,
     "metrics": {
       "residential_stability": {
-        "score": 79.9,
-        "raw": 75.89,
-        "rawFmt": "75.9%",
+        "score": 80.5,
+        "raw": 76.51,
+        "rawFmt": "76.5%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -7821,8 +7821,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 76.3,
-        "current": 75.9,
-        "delta": -0.4
+        "current": 76.5,
+        "delta": 0.2
       },
       "housing_cost_burden": {
         "prior": 64.7,
@@ -7847,15 +7847,15 @@ const CITIES = {
     "population": "229k residents",
     "lat": 47.6587,
     "lng": -117.426,
-    "cq": 61.9,
-    "pillar1": 56.0,
+    "cq": 62.0,
+    "pillar1": 56.4,
     "pillar2": 48.3,
     "pillar3": 90.3,
     "metrics": {
       "residential_stability": {
-        "score": 83.2,
-        "raw": 79.0,
-        "rawFmt": "79.0%",
+        "score": 84.1,
+        "raw": 79.85,
+        "rawFmt": "79.8%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -7952,8 +7952,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 77.2,
-        "current": 79.0,
-        "delta": 1.8
+        "current": 79.8,
+        "delta": 2.6
       },
       "housing_cost_burden": {
         "prior": 63.9,
@@ -7978,15 +7978,15 @@ const CITIES = {
     "population": "302k residents",
     "lat": 38.627,
     "lng": -90.1994,
-    "cq": 69.0,
-    "pillar1": 74.4,
+    "cq": 69.2,
+    "pillar1": 75.0,
     "pillar2": 60.2,
     "pillar3": 72.5,
     "metrics": {
       "residential_stability": {
-        "score": 87.4,
-        "raw": 83.06,
-        "rawFmt": "83.1%",
+        "score": 88.6,
+        "raw": 84.16,
+        "rawFmt": "84.2%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -8083,8 +8083,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 81.5,
-        "current": 83.1,
-        "delta": 1.5
+        "current": 84.2,
+        "delta": 2.6
       },
       "housing_cost_burden": {
         "prior": 64.2,
@@ -8109,15 +8109,15 @@ const CITIES = {
     "population": "312k residents",
     "lat": 44.9537,
     "lng": -93.09,
-    "cq": 65.8,
-    "pillar1": 68.7,
+    "cq": 66.0,
+    "pillar1": 69.3,
     "pillar2": 50.3,
     "pillar3": 82.9,
     "metrics": {
       "residential_stability": {
-        "score": 86.4,
-        "raw": 82.1,
-        "rawFmt": "82.1%",
+        "score": 87.6,
+        "raw": 83.24,
+        "rawFmt": "83.2%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -8214,8 +8214,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 80.6,
-        "current": 82.1,
-        "delta": 1.5
+        "current": 83.2,
+        "delta": 2.6
       },
       "housing_cost_burden": {
         "prior": 66.9,
@@ -8240,15 +8240,15 @@ const CITIES = {
     "population": "321k residents",
     "lat": 37.9577,
     "lng": -121.2908,
-    "cq": 64.6,
-    "pillar1": 56.8,
+    "cq": 64.8,
+    "pillar1": 57.4,
     "pillar2": 57.9,
     "pillar3": 86.4,
     "metrics": {
       "residential_stability": {
-        "score": 92.3,
-        "raw": 87.67,
-        "rawFmt": "87.7%",
+        "score": 93.4,
+        "raw": 88.73,
+        "rawFmt": "88.7%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -8345,8 +8345,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 85.9,
-        "current": 87.7,
-        "delta": 1.8
+        "current": 88.7,
+        "delta": 2.9
       },
       "housing_cost_burden": {
         "prior": 56.0,
@@ -8371,15 +8371,15 @@ const CITIES = {
     "population": "403k residents",
     "lat": 27.9506,
     "lng": -82.4572,
-    "cq": 52.8,
-    "pillar1": 60.1,
+    "cq": 52.9,
+    "pillar1": 60.5,
     "pillar2": 29.1,
     "pillar3": 74.1,
     "metrics": {
       "residential_stability": {
-        "score": 81.9,
-        "raw": 77.78,
-        "rawFmt": "77.8%",
+        "score": 82.7,
+        "raw": 78.56,
+        "rawFmt": "78.6%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -8476,8 +8476,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 77.4,
-        "current": 77.8,
-        "delta": 0.4
+        "current": 78.6,
+        "delta": 1.2
       },
       "housing_cost_burden": {
         "prior": 62.0,
@@ -8502,15 +8502,15 @@ const CITIES = {
     "population": "543k residents",
     "lat": 32.2226,
     "lng": -110.9747,
-    "cq": 51.4,
-    "pillar1": 54.5,
+    "cq": 51.6,
+    "pillar1": 55.0,
     "pillar2": 30.6,
     "pillar3": 75.6,
     "metrics": {
       "residential_stability": {
-        "score": 82.6,
-        "raw": 78.48,
-        "rawFmt": "78.5%",
+        "score": 83.5,
+        "raw": 79.29,
+        "rawFmt": "79.3%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -8607,8 +8607,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 76.3,
-        "current": 78.5,
-        "delta": 2.1
+        "current": 79.3,
+        "delta": 3.0
       },
       "housing_cost_burden": {
         "prior": 62.3,
@@ -8633,15 +8633,15 @@ const CITIES = {
     "population": "459k residents",
     "lat": 36.8529,
     "lng": -75.978,
-    "cq": 48.9,
-    "pillar1": 58.8,
+    "cq": 49.1,
+    "pillar1": 59.3,
     "pillar2": 21.6,
     "pillar3": 71.2,
     "metrics": {
       "residential_stability": {
-        "score": 87.1,
-        "raw": 82.76,
-        "rawFmt": "82.8%",
+        "score": 88.1,
+        "raw": 83.73,
+        "rawFmt": "83.7%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -8738,8 +8738,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 82.0,
-        "current": 82.8,
-        "delta": 0.7
+        "current": 83.7,
+        "delta": 1.7
       },
       "housing_cost_burden": {
         "prior": 66.3,
@@ -8764,15 +8764,15 @@ const CITIES = {
     "population": "690k residents",
     "lat": 38.9072,
     "lng": -77.0369,
-    "cq": 74.9,
-    "pillar1": 80.6,
+    "cq": 75.1,
+    "pillar1": 81.1,
     "pillar2": 62.6,
     "pillar3": 83.0,
     "metrics": {
       "residential_stability": {
-        "score": 84.0,
-        "raw": 79.76,
-        "rawFmt": "79.8%",
+        "score": 85.0,
+        "raw": 80.77,
+        "rawFmt": "80.8%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -8869,8 +8869,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 79.7,
-        "current": 79.8,
-        "delta": 0.1
+        "current": 80.8,
+        "delta": 1.1
       },
       "housing_cost_burden": {
         "prior": 64.6,
@@ -8895,15 +8895,15 @@ const CITIES = {
     "population": "398k residents",
     "lat": 37.6872,
     "lng": -97.3301,
-    "cq": 52.9,
-    "pillar1": 58.7,
+    "cq": 53.1,
+    "pillar1": 59.2,
     "pillar2": 32.2,
     "pillar3": 72.6,
     "metrics": {
       "residential_stability": {
-        "score": 85.7,
-        "raw": 81.4,
-        "rawFmt": "81.4%",
+        "score": 86.7,
+        "raw": 82.39,
+        "rawFmt": "82.4%",
         "benchmark": "95%",
         "unit": "% same house 1+ yr"
       },
@@ -9000,8 +9000,8 @@ const CITIES = {
     "trend": {
       "residential_stability": {
         "prior": 80.7,
-        "current": 81.4,
-        "delta": 0.7
+        "current": 82.4,
+        "delta": 1.7
       },
       "housing_cost_burden": {
         "prior": 72.2,

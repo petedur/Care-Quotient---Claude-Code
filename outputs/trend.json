@@ -2,8 +2,8 @@
   "albuquerque": {
     "residential_stability": {
       "prior": 83.3,
-      "current": 84.0,
-      "delta": 0.8
+      "current": 84.7,
+      "delta": 1.5
     },
     "housing_cost_burden": {
       "prior": 66.8,
@@ -24,8 +24,8 @@
   "anchorage": {
     "residential_stability": {
       "prior": 80.4,
-      "current": 82.5,
-      "delta": 2.1
+      "current": 83.6,
+      "delta": 3.2
     },
     "housing_cost_burden": {
       "prior": 67.8,
@@ -46,8 +46,8 @@
   "atlanta": {
     "residential_stability": {
       "prior": 78.8,
-      "current": 80.0,
-      "delta": 1.2
+      "current": 80.8,
+      "delta": 1.9
     },
     "housing_cost_burden": {
       "prior": 63.3,
@@ -68,8 +68,8 @@
   "aurora": {
     "residential_stability": {
       "prior": 81.3,
-      "current": 81.5,
-      "delta": 0.3
+      "current": 82.5,
+      "delta": 1.3
     },
     "housing_cost_burden": {
       "prior": 62.2,
@@ -90,8 +90,8 @@
   "austin": {
     "residential_stability": {
       "prior": 78.3,
-      "current": 77.9,
-      "delta": -0.5
+      "current": 78.7,
+      "delta": 0.4
     },
     "housing_cost_burden": {
       "prior": 64.6,
@@ -112,8 +112,8 @@
   "bakersfield": {
     "residential_stability": {
       "prior": 82.3,
-      "current": 86.3,
-      "delta": 4.0
+      "current": 87.8,
+      "delta": 5.5
     },
     "housing_cost_burden": {
       "prior": 58.7,
@@ -134,8 +134,8 @@
   "baltimore": {
     "residential_stability": {
       "prior": 83.7,
-      "current": 84.7,
-      "delta": 1.0
+      "current": 85.7,
+      "delta": 2.0
     },
     "housing_cost_burden": {
       "prior": 62.2,
@@ -156,8 +156,8 @@
   "baton_rouge": {
     "residential_stability": {
       "prior": 80.4,
-      "current": 79.3,
-      "delta": -1.1
+      "current": 80.1,
+      "delta": -0.3
     },
     "housing_cost_burden": {
       "prior": 62.4,
@@ -178,8 +178,8 @@
   "birmingham": {
     "residential_stability": {
       "prior": 79.2,
-      "current": 80.8,
-      "delta": 1.6
+      "current": 81.7,
+      "delta": 2.5
     },
     "housing_cost_burden": {
       "prior": 59.6,
@@ -200,8 +200,8 @@
   "boston": {
     "residential_stability": {
       "prior": 79.2,
-      "current": 79.6,
-      "delta": 0.4
+      "current": 80.4,
+      "delta": 1.2
     },
     "housing_cost_burden": {
       "prior": 58.5,
@@ -222,8 +222,8 @@
   "buffalo": {
     "residential_stability": {
       "prior": 82.2,
-      "current": 84.5,
-      "delta": 2.2
+      "current": 85.6,
+      "delta": 3.3
     },
     "housing_cost_burden": {
       "prior": 63.9,
@@ -244,8 +244,8 @@
   "charlotte": {
     "residential_stability": {
       "prior": 81.3,
-      "current": 82.2,
-      "delta": 0.9
+      "current": 83.3,
+      "delta": 2.0
     },
     "housing_cost_burden": {
       "prior": 67.5,
@@ -266,8 +266,8 @@
   "chicago": {
     "residential_stability": {
       "prior": 84.1,
-      "current": 84.5,
-      "delta": 0.4
+      "current": 85.5,
+      "delta": 1.4
     },
     "housing_cost_burden": {
       "prior": 60.8,
@@ -288,8 +288,8 @@
   "cincinnati": {
     "residential_stability": {
       "prior": 76.2,
-      "current": 78.6,
-      "delta": 2.4
+      "current": 79.8,
+      "delta": 3.6
     },
     "housing_cost_burden": {
       "prior": 64.6,
@@ -310,8 +310,8 @@
   "cleveland": {
     "residential_stability": {
       "prior": 81.0,
-      "current": 81.4,
-      "delta": 0.4
+      "current": 82.3,
+      "delta": 1.4
     },
     "housing_cost_burden": {
       "prior": 60.6,
@@ -332,8 +332,8 @@
   "colorado_springs": {
     "residential_stability": {
       "prior": 77.1,
-      "current": 78.9,
-      "delta": 1.8
+      "current": 79.9,
+      "delta": 2.8
     },
     "housing_cost_burden": {
       "prior": 65.1,
@@ -354,8 +354,8 @@
   "columbus": {
     "residential_stability": {
       "prior": 78.0,
-      "current": 78.9,
-      "delta": 0.9
+      "current": 79.9,
+      "delta": 1.9
     },
     "housing_cost_burden": {
       "prior": 65.5,
@@ -376,8 +376,8 @@
   "corpus_christi": {
     "residential_stability": {
       "prior": 81.6,
-      "current": 82.8,
-      "delta": 1.2
+      "current": 83.7,
+      "delta": 2.1
     },
     "housing_cost_burden": {
       "prior": 68.1,
@@ -398,8 +398,8 @@
   "dallas": {
     "residential_stability": {
       "prior": 82.4,
-      "current": 83.1,
-      "delta": 0.7
+      "current": 84.3,
+      "delta": 1.9
     },
     "housing_cost_burden": {
       "prior": 62.4,
@@ -420,8 +420,8 @@
   "denver": {
     "residential_stability": {
       "prior": 79.1,
-      "current": 78.7,
-      "delta": -0.4
+      "current": 79.6,
+      "delta": 0.5
     },
     "housing_cost_burden": {
       "prior": 64.8,
@@ -442,8 +442,8 @@
   "des_moines": {
     "residential_stability": {
       "prior": 81.2,
-      "current": 82.2,
-      "delta": 1.0
+      "current": 83.1,
+      "delta": 1.9
     },
     "housing_cost_burden": {
       "prior": 69.0,
@@ -464,8 +464,8 @@
   "detroit": {
     "residential_stability": {
       "prior": 84.8,
-      "current": 87.2,
-      "delta": 2.4
+      "current": 88.4,
+      "delta": 3.6
     },
     "housing_cost_burden": {
       "prior": 57.0,
@@ -486,8 +486,8 @@
   "durham": {
     "residential_stability": {
       "prior": 78.9,
-      "current": 81.2,
-      "delta": 2.3
+      "current": 82.1,
+      "delta": 3.2
     },
     "housing_cost_burden": {
       "prior": 67.5,
@@ -508,8 +508,8 @@
   "el_paso": {
     "residential_stability": {
       "prior": 83.8,
-      "current": 85.5,
-      "delta": 1.7
+      "current": 86.7,
+      "delta": 2.9
     },
     "housing_cost_burden": {
       "prior": 66.7,
@@ -530,8 +530,8 @@
   "fort_worth": {
     "residential_stability": {
       "prior": 82.8,
-      "current": 84.5,
-      "delta": 1.7
+      "current": 85.5,
+      "delta": 2.7
     },
     "housing_cost_burden": {
       "prior": 66.6,
@@ -552,8 +552,8 @@
   "fresno": {
     "residential_stability": {
       "prior": 84.1,
-      "current": 86.1,
-      "delta": 2.0
+      "current": 87.3,
+      "delta": 3.2
     },
     "housing_cost_burden": {
       "prior": 58.7,
@@ -574,8 +574,8 @@
   "honolulu": {
     "residential_stability": {
       "prior": 85.1,
-      "current": 85.3,
-      "delta": 0.2
+      "current": 86.3,
+      "delta": 1.2
     },
     "housing_cost_burden": {
       "prior": 59.5,
@@ -596,8 +596,8 @@
   "houston": {
     "residential_stability": {
       "prior": 81.9,
-      "current": 82.8,
-      "delta": 0.9
+      "current": 83.9,
+      "delta": 1.9
     },
     "housing_cost_burden": {
       "prior": 63.2,
@@ -618,8 +618,8 @@
   "indianapolis": {
     "residential_stability": {
       "prior": 84.1,
-      "current": 84.3,
-      "delta": 0.2
+      "current": 85.3,
+      "delta": 1.3
     },
     "housing_cost_burden": {
       "prior": 66.5,
@@ -640,8 +640,8 @@
   "jacksonville": {
     "residential_stability": {
       "prior": 80.7,
-      "current": 82.1,
-      "delta": 1.4
+      "current": 83.2,
+      "delta": 2.5
     },
     "housing_cost_burden": {
       "prior": 65.6,
@@ -662,8 +662,8 @@
   "kansas_city": {
     "residential_stability": {
       "prior": 81.6,
-      "current": 82.5,
-      "delta": 0.9
+      "current": 83.5,
+      "delta": 1.9
     },
     "housing_cost_burden": {
       "prior": 68.3,
@@ -684,8 +684,8 @@
   "las_vegas": {
     "residential_stability": {
       "prior": 82.0,
-      "current": 83.9,
-      "delta": 1.9
+      "current": 84.8,
+      "delta": 2.8
     },
     "housing_cost_burden": {
       "prior": 60.8,
@@ -706,8 +706,8 @@
   "lexington": {
     "residential_stability": {
       "prior": 76.6,
-      "current": 77.7,
-      "delta": 1.1
+      "current": 78.6,
+      "delta": 2.0
     },
     "housing_cost_burden": {
       "prior": 70.2,
@@ -728,8 +728,8 @@
   "los_angeles": {
     "residential_stability": {
       "prior": 87.8,
-      "current": 87.8,
-      "delta": 0.0
+      "current": 88.7,
+      "delta": 0.9
     },
     "housing_cost_burden": {
       "prior": 48.7,
@@ -750,8 +750,8 @@
   "louisville": {
     "residential_stability": {
       "prior": 85.4,
-      "current": 85.9,
-      "delta": 0.5
+      "current": 87.1,
+      "delta": 1.7
     },
     "housing_cost_burden": {
       "prior": 75.4,
@@ -772,8 +772,8 @@
   "madison": {
     "residential_stability": {
       "prior": 73.6,
-      "current": 73.3,
-      "delta": -0.3
+      "current": 73.9,
+      "delta": 0.3
     },
     "housing_cost_burden": {
       "prior": 64.7,
@@ -794,8 +794,8 @@
   "memphis": {
     "residential_stability": {
       "prior": 83.0,
-      "current": 84.9,
-      "delta": 1.9
+      "current": 86.2,
+      "delta": 3.2
     },
     "housing_cost_burden": {
       "prior": 60.7,
@@ -816,8 +816,8 @@
   "milwaukee": {
     "residential_stability": {
       "prior": 82.7,
-      "current": 84.3,
-      "delta": 1.6
+      "current": 85.3,
+      "delta": 2.6
     },
     "housing_cost_burden": {
       "prior": 60.1,
@@ -838,8 +838,8 @@
   "minneapolis": {
     "residential_stability": {
       "prior": 75.7,
-      "current": 76.5,
-      "delta": 0.8
+      "current": 77.5,
+      "delta": 1.8
     },
     "housing_cost_burden": {
       "prior": 66.7,
@@ -860,8 +860,8 @@
   "nashville": {
     "residential_stability": {
       "prior": 80.5,
-      "current": 79.6,
-      "delta": -0.9
+      "current": 80.8,
+      "delta": 0.3
     },
     "housing_cost_burden": {
       "prior": 66.2,
@@ -882,8 +882,8 @@
   "new_orleans": {
     "residential_stability": {
       "prior": 85.3,
-      "current": 85.9,
-      "delta": 0.6
+      "current": 86.8,
+      "delta": 1.6
     },
     "housing_cost_burden": {
       "prior": 55.1,
@@ -904,8 +904,8 @@
   "nyc": {
     "residential_stability": {
       "prior": 89.0,
-      "current": 88.9,
-      "delta": -0.1
+      "current": 89.9,
+      "delta": 0.9
     },
     "housing_cost_burden": {
       "prior": 54.1,
@@ -926,8 +926,8 @@
   "oklahoma_city": {
     "residential_stability": {
       "prior": 81.2,
-      "current": 81.8,
-      "delta": 0.6
+      "current": 82.8,
+      "delta": 1.6
     },
     "housing_cost_burden": {
       "prior": 72.1,
@@ -948,8 +948,8 @@
   "omaha": {
     "residential_stability": {
       "prior": 82.8,
-      "current": 83.9,
-      "delta": 1.1
+      "current": 85.1,
+      "delta": 2.3
     },
     "housing_cost_burden": {
       "prior": 70.2,
@@ -970,8 +970,8 @@
   "philadelphia": {
     "residential_stability": {
       "prior": 84.6,
-      "current": 85.1,
-      "delta": 0.5
+      "current": 86.1,
+      "delta": 1.5
     },
     "housing_cost_burden": {
       "prior": 61.5,
@@ -992,8 +992,8 @@
   "phoenix": {
     "residential_stability": {
       "prior": 82.8,
-      "current": 84.1,
-      "delta": 1.3
+      "current": 85.1,
+      "delta": 2.3
     },
     "housing_cost_burden": {
       "prior": 66.5,
@@ -1014,8 +1014,8 @@
   "pittsburgh": {
     "residential_stability": {
       "prior": 77.9,
-      "current": 78.5,
-      "delta": 0.6
+      "current": 79.2,
+      "delta": 1.3
     },
     "housing_cost_burden": {
       "prior": 67.0,
@@ -1036,8 +1036,8 @@
   "portland": {
     "residential_stability": {
       "prior": 81.2,
-      "current": 82.2,
-      "delta": 0.9
+      "current": 82.8,
+      "delta": 1.6
     },
     "housing_cost_burden": {
       "prior": 62.2,
@@ -1058,8 +1058,8 @@
   "providence": {
     "residential_stability": {
       "prior": 82.3,
-      "current": 83.7,
-      "delta": 1.4
+      "current": 84.7,
+      "delta": 2.4
     },
     "housing_cost_burden": {
       "prior": 57.9,
@@ -1080,8 +1080,8 @@
   "raleigh": {
     "residential_stability": {
       "prior": 80.5,
-      "current": 80.8,
-      "delta": 0.3
+      "current": 81.7,
+      "delta": 1.2
     },
     "housing_cost_burden": {
       "prior": 70.8,
@@ -1102,8 +1102,8 @@
   "richmond": {
     "residential_stability": {
       "prior": 77.0,
-      "current": 78.2,
-      "delta": 1.2
+      "current": 79.0,
+      "delta": 2.0
     },
     "housing_cost_burden": {
       "prior": 59.9,
@@ -1124,8 +1124,8 @@
   "rochester": {
     "residential_stability": {
       "prior": 78.7,
-      "current": 81.2,
-      "delta": 2.6
+      "current": 82.1,
+      "delta": 3.5
     },
     "housing_cost_burden": {
       "prior": 59.0,
@@ -1146,8 +1146,8 @@
   "sacramento": {
     "residential_stability": {
       "prior": 82.9,
-      "current": 84.5,
-      "delta": 1.6
+      "current": 85.4,
+      "delta": 2.5
     },
     "housing_cost_burden": {
       "prior": 60.0,
@@ -1168,8 +1168,8 @@
   "salt_lake_city": {
     "residential_stability": {
       "prior": 78.7,
-      "current": 78.8,
-      "delta": 0.1
+      "current": 79.6,
+      "delta": 0.9
     },
     "housing_cost_burden": {
       "prior": 66.5,
@@ -1190,8 +1190,8 @@
   "san_antonio": {
     "residential_stability": {
       "prior": 82.8,
-      "current": 81.8,
-      "delta": -1.0
+      "current": 82.7,
+      "delta": -0.1
     },
     "housing_cost_burden": {
       "prior": 65.1,
@@ -1212,8 +1212,8 @@
   "san_diego": {
     "residential_stability": {
       "prior": 82.2,
-      "current": 83.2,
-      "delta": 1.0
+      "current": 84.1,
+      "delta": 1.9
     },
     "housing_cost_burden": {
       "prior": 57.9,
@@ -1234,8 +1234,8 @@
   "san_francisco": {
     "residential_stability": {
       "prior": 84.6,
-      "current": 83.9,
-      "delta": -0.7
+      "current": 84.7,
+      "delta": 0.1
     },
     "housing_cost_burden": {
       "prior": 66.2,
@@ -1256,8 +1256,8 @@
   "san_jose": {
     "residential_stability": {
       "prior": 85.8,
-      "current": 86.4,
-      "delta": 0.5
+      "current": 87.2,
+      "delta": 1.4
     },
     "housing_cost_burden": {
       "prior": 61.7,
@@ -1278,8 +1278,8 @@
   "seattle": {
     "residential_stability": {
       "prior": 76.3,
-      "current": 75.9,
-      "delta": -0.4
+      "current": 76.5,
+      "delta": 0.2
     },
     "housing_cost_burden": {
       "prior": 64.7,
@@ -1300,8 +1300,8 @@
   "spokane": {
     "residential_stability": {
       "prior": 77.2,
-      "current": 79.0,
-      "delta": 1.8
+      "current": 79.8,
+      "delta": 2.6
     },
     "housing_cost_burden": {
       "prior": 63.9,
@@ -1322,8 +1322,8 @@
   "st_louis": {
     "residential_stability": {
       "prior": 81.5,
-      "current": 83.1,
-      "delta": 1.5
+      "current": 84.2,
+      "delta": 2.6
     },
     "housing_cost_burden": {
       "prior": 64.2,
@@ -1344,8 +1344,8 @@
   "st_paul": {
     "residential_stability": {
       "prior": 80.6,
-      "current": 82.1,
-      "delta": 1.5
+      "current": 83.2,
+      "delta": 2.6
     },
     "housing_cost_burden": {
       "prior": 66.9,
@@ -1366,8 +1366,8 @@
   "stockton": {
     "residential_stability": {
       "prior": 85.9,
-      "current": 87.7,
-      "delta": 1.8
+      "current": 88.7,
+      "delta": 2.9
     },
     "housing_cost_burden": {
       "prior": 56.0,
@@ -1388,8 +1388,8 @@
   "tampa": {
     "residential_stability": {
       "prior": 77.4,
-      "current": 77.8,
-      "delta": 0.4
+      "current": 78.6,
+      "delta": 1.2
     },
     "housing_cost_burden": {
       "prior": 62.0,
@@ -1410,8 +1410,8 @@
   "tucson": {
     "residential_stability": {
       "prior": 76.3,
-      "current": 78.5,
-      "delta": 2.1
+      "current": 79.3,
+      "delta": 3.0
     },
     "housing_cost_burden": {
       "prior": 62.3,
@@ -1432,8 +1432,8 @@
   "virginia_beach": {
     "residential_stability": {
       "prior": 82.0,
-      "current": 82.8,
-      "delta": 0.7
+      "current": 83.7,
+      "delta": 1.7
     },
     "housing_cost_burden": {
       "prior": 66.3,
@@ -1454,8 +1454,8 @@
   "washington_dc": {
     "residential_stability": {
       "prior": 79.7,
-      "current": 79.8,
-      "delta": 0.1
+      "current": 80.8,
+      "delta": 1.1
     },
     "housing_cost_burden": {
       "prior": 64.6,
@@ -1476,8 +1476,8 @@
   "wichita": {
     "residential_stability": {
       "prior": 80.7,
-      "current": 81.4,
-      "delta": 0.7
+      "current": 82.4,
+      "delta": 1.7
     },
     "housing_cost_burden": {
       "prior": 72.2,
