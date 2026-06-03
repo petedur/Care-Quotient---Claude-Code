@@ -232,6 +232,18 @@ function renderHome(app) {
         'This is a data-driven index measuring the social ties, institutions, and access conditions ',
         'that determine whether people can get help when they need it.',
       '</p>',
+      '<div class="chat-prompts">',
+        '<span class="chat-prompts-label">Ask the Index (AI):</span>',
+        '<a class="chat-prompt-pill" href="#/chat"',
+          ' data-prefill="Why does Cincinnati rank above New York City?"',
+          ' data-autosend="true">Why does Cincinnati rank above NYC?</a>',
+        '<a class="chat-prompt-pill" href="#/chat"',
+          ' data-prefill="What policies could improve a city\'s Economic Access to Care score?"',
+          ' data-autosend="true">What policies improve Economic Access to Care?</a>',
+        '<a class="chat-prompt-pill" href="#/chat"',
+          ' data-prefill="Which cities punch above their weight on Social &amp; Relational Care?"',
+          ' data-autosend="true">Which cities lead on Social &amp; Relational Care?</a>',
+      '</div>',
     '</section>',
 
     // ── Map ───────────────────────────────────────────────────────────────
@@ -871,6 +883,11 @@ function renderCity(app, key) {
         ' &nbsp;&middot;&nbsp; ', city.population,
         ' &nbsp;&middot;&nbsp; <a href="#/compare" class="compare-inline-link">Compare with another city</a>',
       '</div>',
+      '<div class="ask-city-wrap">',
+        '<a class="ask-city-link" href="#/chat"',
+          ' data-prefill="Tell me about ', city.name, '\'s care infrastructure — what\'s driving its score and what stands out?"',
+          ' data-autosend="false">Ask the Index about ', city.name, ' →</a>',
+      '</div>',
 
       '<div class="cq-display">',
         '<div class="cq-number">', fmt(city.cq), '</div>',
@@ -1477,6 +1494,19 @@ var _chatState = {
   cityContext: null,
 };
 
+// Pre-fill a question when navigating to chat from a prompt pill or city link.
+// Set before hash change; renderChat reads and clears it.
+var _chatPrefill = null;
+
+document.addEventListener('click', function(e) {
+  var el = e.target.closest('[data-prefill]');
+  if (!el) return;
+  _chatPrefill = {
+    text:     el.dataset.prefill,
+    autoSend: el.dataset.autosend !== 'false',
+  };
+});
+
 function buildCityContext() {
   if (_chatState.cityContext) return _chatState.cityContext;
   var cities = getCitiesSorted();
@@ -1868,6 +1898,20 @@ function renderChat(app) {
       sendChatMessage(btn.dataset.prompt);
     });
   });
+
+  // Handle pre-filled question from prompt pills or city page links
+  if (_chatPrefill) {
+    var prefill = _chatPrefill;
+    _chatPrefill = null;
+    if (prefill.autoSend) {
+      setTimeout(function() { sendChatMessage(prefill.text); }, 150);
+    } else {
+      input.value = prefill.text;
+      input.dispatchEvent(new Event('input'));
+      input.focus();
+      input.setSelectionRange(input.value.length, input.value.length);
+    }
+  }
 }
 
 // ── Footer ──────────────────────────────────────────────────────────────────

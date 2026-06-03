@@ -81,6 +81,65 @@ body {
 }
 .site-nav a:hover { color: var(--ink); }
 
+.nav-chat-btn {
+  background: var(--p2) !important;
+  color: #fff !important;
+  padding: 5px 13px !important;
+  border-radius: 20px;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.01em !important;
+  transition: background 0.15s !important;
+}
+.nav-chat-btn:hover { background: #1e4437 !important; color: #fff !important; }
+
+/* Home page chat prompts */
+.chat-prompts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.75rem;
+}
+.chat-prompts-label {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--ink-mid);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-right: 0.25rem;
+  white-space: nowrap;
+}
+.chat-prompt-pill {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--ink-mid);
+  border: 1px solid var(--ink-faint);
+  border-radius: 20px;
+  padding: 4px 13px;
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+  cursor: pointer;
+}
+.chat-prompt-pill:hover {
+  border-color: var(--p2);
+  background: var(--p2-bg);
+  color: var(--p2);
+  text-decoration: none;
+}
+
+/* City page ask link */
+.ask-city-wrap { margin-top: 0.5rem; }
+.ask-city-link {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--p2);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s;
+}
+.ask-city-link:hover { border-bottom-color: var(--p2); }
+
 .version-badge {
   font-family: var(--mono);
   font-size: 0.65rem;
