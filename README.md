@@ -66,6 +66,7 @@ You also need:
 - IRS EO BMF regional CSVs in `Downloaded Data/IRS EO BMF/` ([download from IRS](https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf))
 - HRSA FQHC site file (`Health_Center_Service_Delivery_and_LookAlike_Sites.xlsx`) in `Downloaded Data/` ([download from HRSA](https://data.hrsa.gov/data/download))
 - IMLS Public Libraries Survey files in `Downloaded Data/Public Libraries Survey (PLS)/`
+- ARDA 2020 Religion Census county file (`arda_2020_county.xlsx`) in `data/reference/` ([download from ARDA](https://www.usreligioncensus.org/node/1639) — "2020 U.S. Religion Census: County File")
 
 ### Full run (all 69 cities)
 
