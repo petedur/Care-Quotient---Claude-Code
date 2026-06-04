@@ -44,7 +44,7 @@ care-capacity-index/
 ├── data/
 │   ├── cities.csv           # 69 cities with FIPS codes and populations
 │   └── care_capacity.duckdb # Pipeline output: metrics + scores tables
-├── docs/                    # GitHub Pages site (served from /docs on master)
+├── docs/                    # Vercel-deployed site
 │   ├── index.html
 │   ├── app.js
 │   ├── styles.css

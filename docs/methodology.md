@@ -183,13 +183,13 @@ V4 factor analysis showed nursing home capacity loading 0.91 on its own isolated
 **Source**: U.S. Census Bureau, ACS 5-year estimates (2022). C27007 (Medicaid/means-tested public coverage by sex by age) for enrollment; C17002 (ratio of income to poverty level) for the 0–149% FPL eligibility denominator.  
 **Unit**: % coverage rate (higher = better).  
 **Weight within Pillar 3**: **40%**  
-**Benchmark**: 100% — the score equals the raw coverage rate directly. A city where enrolled = eligible scores 100; cities below that score their literal percentage.
+**Benchmark**: 100% — the score equals the raw ACS-based coverage reach rate directly. A city whose survey-reported enrollee count meets or exceeds the estimated eligible population scores 100; cities below that score their estimated reach percentage.
 
 **Rationale**: Healthcare coverage measures whether people can enter the care system when they need it. The metric isolates the public safety net signal: it counts Medicaid and CHIP enrollees (the deliberate care system for vulnerable people) rather than all insurance (which includes employer-sponsored coverage that reflects labor market conditions, not care infrastructure). A tech-industry city where 95% of residents have employer insurance scores no differently on this metric than a city where 95% of residents couldn't afford care at all — both would score 0 on Medicaid reach if none of their low-income residents were enrolled. Conversely, cities in generous Medicaid expansion states score high because the system is actually reaching the people it was designed to serve.
 
 The eligibility-rate denominator (0–149% FPL, using ACS C17002) mirrors the SNAP coverage formula. This means non-expansion states score lower for the right reason: people who would be eligible for Medicaid in an expansion state are in the denominator but can't enroll, directly penalizing the policy failure. It also means wealthy cities with few low-income residents score neither inflated nor penalized — what matters is whether the people who could use Medicaid are actually enrolled.
 
-**V6 note**: Previous versions used B27001 (any health insurance) with a benchmark of 95%, which bundled employer-sponsored coverage with Medicaid/CHIP and inflated scores for prosperous cities. V6 switches to C27007 (Medicaid/means-tested public coverage), which isolates the public safety-net signal. Benchmark is 100%: a city where enrolled = eligible scores 100; cities below that score their literal coverage percentage. This makes the metric directly analogous to the SNAP coverage formula.
+**V6 note**: Previous versions used B27001 (any health insurance) with a benchmark of 95%, which bundled employer-sponsored coverage with Medicaid/CHIP and inflated scores for prosperous cities. V6 switches to C27007 (Medicaid/means-tested public coverage), which isolates the public safety-net signal. Benchmark is 100%: a city whose ACS-reported enrollee count meets or exceeds the estimated eligible population scores 100; cities below that score their estimated reach percentage. This makes the metric directly analogous to the SNAP coverage formula.
 
 **Relationship to FQHC density**: See Section 3.5 for the FQHC/coverage mismatch interpretation table. The two metrics are kept separate because FQHCs are specifically designed to serve Medicaid and uninsured populations — combining them would invert FQHC's intent.
 
@@ -322,15 +322,18 @@ The following metrics are collected and reported but excluded from pillar scores
 
 ## 9. Data Sources
 
-| Source | Coverage | Update frequency | Access |
-|--------|----------|-----------------|--------|
-| IRS EO BMF | All 50 states | Periodic (check IRS site) | Public download |
-| Census ACS 5-year | All counties | Annual | Free API |
-| IMLS Public Libraries Survey | National | Annual | Public download |
-| HRSA Health Center Service Delivery | National | Periodic | Public download |
-| ARDA U.S. Religion Census | National | Decennial (2020) | Public download |
+| Source | Metrics | Coverage | Update frequency | Access |
+|--------|---------|----------|-----------------|--------|
+| IRS EO BMF | Care nonprofit density | All 50 states | Periodic | Public download |
+| Census ACS 5-year | Residential stability, housing affordability, SNAP coverage, healthcare coverage | All counties | Annual | Free API |
+| Census CBP | Child care capacity | County level | Annual | Public download |
+| HRSA Health Center Service Delivery | FQHC density | National | Periodic | Public download |
+| IMLS Public Libraries Survey | Library density | National | Annual | Public download |
+| CMS Care Compare | Nursing home capacity | National | Rolling | Free API |
+| ARDA U.S. Religion Census | Religious organization density | National | Decennial (2020) | Public download |
+| CDC PLACES | Community wellbeing diagnostics (not scored) | Census tract | Annual | Public download |
 
-All five sources are national, free, and scriptable. No city-specific open data portals are required for the V2 scored baseline.
+All sources are national, free, and scriptable. No city-specific open data portals are required for the scored metrics.
 
 ---
 
@@ -344,7 +347,7 @@ All five sources are national, free, and scriptable. No city-specific open data 
 
 4. **Geographic filtering**: Most data sources use the Census 2020 ZCTA-to-Place relationship file to define city boundaries. A ZCTA is assigned to a city if ≥40% of its land area falls within the Census incorporated place boundary. This threshold was lowered from 50% (used in V3.0–V3.1) after auditing confirmed that several FQHCs serving Raleigh and Fort Worth residents were in ZCTAs with 41–49% land-area overlap with the city boundary — near-urban-core locations excluded by the stricter cutoff. The 40% threshold includes ZCTAs where a meaningful plurality of land is within the city; all ZCTAs added by this change fell in the 40–49% band. Land-area overlap is an imperfect proxy for population served; ZCTAs at the urban fringe often have their population concentrated in the urban portion. This methodology may still undercount services for cities with irregular boundaries or large rural annexations.
 
-    **4b. County-level source data (exception)**: Two metrics use county-level source data rather than ZCTA boundaries: **child care capacity** (Census County Business Patterns) and **religious organization density** (ARDA 2020 Religion Census). Both sources publish at the county level and cannot be disaggregated to ZCTAs. Establishment and congregation counts are assigned to cities using the county FIPS codes in config.py. The population denominator for each metric still uses the city's ZCTA-based geography. This means the numerator reflects the full county while the denominator reflects only the city — potentially overstating density for cities that represent a small fraction of their county's population. This affects all 69 cities; severity is proportional to the gap between city and county population. Miami (city ~16% of Miami-Dade County) is the most extreme case; cities that are geographically coextensive with their county (e.g., San Francisco, Denver) are unaffected.
+    **4b. County-level source data (exception)**: Two metrics use county-level data for both numerator and denominator: **child care capacity** (Census County Business Patterns) and **religious organization density** (ARDA 2020 Religion Census). Both sources publish at the county level and cannot be disaggregated to ZCTAs. For child care, establishment counts come from CBP by county FIPS and the under-5 population denominator comes from ACS queried at the same county level. For religious density, congregation counts and the population denominator both come from ARDA's 2020 county file. For cities coextensive with their county (San Francisco, Denver), the county score is equivalent to a city score. For cities that represent a small fraction of their county (Miami at roughly 16% of Miami-Dade County), the score reflects county-wide density rather than the city's specific care infrastructure — which may be higher or lower than a city-specific measure, depending on where facilities and congregations are geographically concentrated.
 
 5. **Honolulu geography**: Hawaii has no incorporated municipalities — Honolulu is a Census Designated Place (CDP) absent from the ZCTA-to-Place crosswalk. The pipeline falls back to a county-based boundary (Honolulu County, ~1M residents), which is substantially larger than the urban core (~350k). All ZCTA-based per-capita density metrics for Honolulu use city population as the denominator while org/facility counts reflect the broader county geography. Honolulu's scores should be interpreted with this caveat: density metrics may be modestly overstated relative to incorporated cities of similar size. Note: for the two county-level metrics (child care and religious org density), Honolulu and all other cities are on comparable footing — county-level source data is used regardless of city type.
 

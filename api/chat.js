@@ -1,4 +1,6 @@
 const Anthropic = require('@anthropic-ai/sdk');
+const fs        = require('fs');
+const path      = require('path');
 
 const SYSTEM_PROMPT = `You are an expert analyst for the Care Quotient (CQ) — a data-driven index measuring care capacity across 69 American cities.
 
@@ -20,7 +22,7 @@ Pillar 2 — Institutional Care (35%): Formal institutions designed to absorb di
 - Child care capacity (20%): licensed establishments per 1,000 residents under 5. Benchmark: 15/1k. Source: Census CBP NAICS 624410.
 
 Pillar 3 — Economic Access to Care (25%): Whether economic conditions allow care to reach people who need it.
-- Medicaid/CHIP coverage (40%): % of income-eligible residents enrolled. Benchmark: 100%. Source: ACS C27007.
+- Medicaid/CHIP coverage (40%): ACS-based public coverage reach estimate among 0–149% FPL residents. Benchmark: 100%. Source: ACS C27007. Note: 31 of 69 cities score 100 due to CHIP enrollment exceeding the FPL denominator — this metric is near-binary in expansion states.
 - Housing affordability (35%): % of residents NOT cost-burdened (housing <30% of income). Benchmark: 90%. Source: ACS B25070/B25091.
 - SNAP participation (25%): % of likely-eligible households receiving SNAP. Benchmark: 85%. Source: ACS B22001/C17002.
 
@@ -31,8 +33,6 @@ WHAT THE INDEX EXCLUDES: income levels, crime rates, health outcomes, life expec
 POLICY NOTE: A state's decision not to expand Medicaid is reflected in lower scores for cities in that state. This is intentional — it is a real policy barrier to care access.
 
 THEORY: Grounded in Joan Tronto's care ethics (1993), Putnam's social capital theory (2000), Sampson et al.'s collective efficacy (1997), Kittay's dependency theory (1999), Folbre's care economics (2001), Nussbaum's capabilities approach (2006), and Sen's development as freedom (1999). Pillar weights (40/35/25) are a normative commitment to relational primacy — factor analysis yields ~48/35/17 empirically.
-
-ORIGIN: Created by Peter Durand in collaboration with Professor King, who coined "Care Quotient / Durand Caring Quotient." King's framing: "Where do we want to raise children? Where do we want to retire?" He explicitly endorsed including faith-based organizations. The index's deeper ambition: if you can make a metric, it can help define what societies value.
 
 GEOGRAPHIC METHODOLOGY: ZCTA-to-place crosswalk using Census 2020 boundaries. A ZIP Code Tabulation Area is assigned to a city if ≥40% of its land area falls within the city's incorporated place boundary. Honolulu uses county boundaries as a fallback (no incorporated municipality in Hawaii). IMPORTANT EXCEPTION: two metrics use county-level data for BOTH numerator and denominator, because their source datasets (Census CBP for child care, ARDA for religious density) do not report below the county level. These metrics reflect county-wide density, not city-specific density. For cities that are a small fraction of their county population (e.g., Miami at ~16% of Miami-Dade), this means the density is measured for the broader county area.
 
@@ -51,6 +51,36 @@ Write like a direct analyst, not a chatbot. Specific rules:
 - Don't structure every response as intro → bullet list → conclusion. Mix it up.
 - Formatting: use markdown sparingly. Bold specific data points or metric names, not generic emphasis. Horizontal rules (---) are fine to separate sections. Don't over-format.`;
 
+// Build city context from the authoritative scores CSV at deploy time.
+// Cached after first call. Ignores any client-supplied city data.
+let _cityContext = null;
+function buildCityContext() {
+  if (_cityContext) return _cityContext;
+  const csvPath = path.join(__dirname, '..', 'outputs', 'care_capacity_scores.csv');
+  const csv = fs.readFileSync(csvPath, 'utf8');
+  const lines = csv.trim().split('\n');
+  const headers = lines[0].split(',');
+  const col = (name) => headers.indexOf(name);
+
+  const rows = lines.slice(1).map(line => {
+    const c = line.split(',');
+    return {
+      city: c[col('city')],
+      cq:   c[col('Care Quotient')],
+      p1:   c[col('Social & Relational Care')],
+      p2:   c[col('Institutional Care')],
+      p3:   c[col('Economic Access to Care')],
+      metrics: headers.slice(4).map((h, i) => `${h}: ${c[i + 4]}`).join(' | '),
+    };
+  });
+
+  rows.sort((a, b) => parseFloat(b.cq) - parseFloat(a.cq));
+  _cityContext = rows.map(r =>
+    `${r.city} | CQ: ${r.cq} | P1: ${r.p1} | P2: ${r.p2} | P3: ${r.p3} | ${r.metrics}`
+  ).join('\n');
+  return _cityContext;
+}
+
 module.exports = async function handler(req, res) {
   if (req.method === 'OPTIONS') {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -63,17 +93,23 @@ module.exports = async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { messages, cityContext } = req.body;
+  // Accept only messages — city data is always built server-side
+  const { messages } = req.body;
   if (!messages || !Array.isArray(messages) || messages.length === 0) {
     return res.status(400).json({ error: 'messages array required' });
-  }
-  if (cityContext !== undefined && (typeof cityContext !== 'string' || cityContext.length > 50000)) {
-    return res.status(400).json({ error: 'invalid cityContext' });
   }
 
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
     return res.status(500).json({ error: 'API key not configured' });
+  }
+
+  let cityContext;
+  try {
+    cityContext = buildCityContext();
+  } catch (err) {
+    console.error('Failed to build city context:', err.message);
+    cityContext = null;
   }
 
   const system = cityContext

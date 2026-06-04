@@ -14,7 +14,7 @@
 
   --p1:          #8B3A2A;   /* Social Fabric — terracotta */
   --p2:          #2D5F4E;   /* Institutions  — deep green */
-  --p2-dark:     var(--p2-dark);   /* Institutions hover/active  */
+  --p2-dark:     #1e4235;          /* Institutions hover/active  */
   --p3:          #4A6FA5;   /* Reach         — slate blue */
 
   --p2-bg:       #E8F0EC;
@@ -205,6 +205,16 @@ body {
   letter-spacing: 0.06em;
   color: var(--ink-muted);
   margin-top: 1.25rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* ── Section shared ─────────────────────────────────────────────────────── */
