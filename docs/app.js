@@ -1687,9 +1687,9 @@ function renderFindings(app) {
 
       '<p>',
         'One note on Washington, DC specifically. DC\'s care nonprofit density score (78.1/10k) is among the highest in the ',
-        'dataset, and it leads on residential stability and healthcare coverage as well. But DC is structurally unusual: it hosts ',
-        'a significant concentration of nationally-focused organizations &mdash; federal advocacy groups, health policy bodies, ',
-        'public interest law firms &mdash; that file under the same NTEE P, E, and F codes used to measure locally-serving care ',
+        'dataset, and it leads on residential stability and healthcare coverage as well. However, DC is structurally unusual in that it hosts ',
+        'a significant concentration of nationally-focused organizations (e.g. federal advocacy groups, health policy bodies, ',
+        'public interest law firms) that file under the same NTEE P, E, and F codes used to measure locally-serving care ',
         'nonprofits. The NTEE filter excludes arts and education, but it cannot distinguish a neighborhood food bank ',
         'from a national health policy organization headquartered in Dupont Circle. DC\'s care infrastructure is genuine; ',
         'its nonprofit density score likely reflects some share of national-organization presence that other cities\' scores do not.',
