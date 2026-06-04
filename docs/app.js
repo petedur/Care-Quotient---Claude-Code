@@ -44,9 +44,10 @@ function route() {
   } else if (hash === '/theory') {
     destroyHomeMap();
     renderTheory(app);
-  } else if (hash === '/compare') {
+  } else if (hash === '/compare' || hash.indexOf('/compare/') === 0) {
     destroyHomeMap();
-    renderCompare(app);
+    var preselect = hash.indexOf('/compare/') === 0 ? hash.slice(9) : null;
+    renderCompare(app, preselect);
   } else if (hash === '/findings') {
     destroyHomeMap();
     renderFindings(app);
@@ -232,6 +233,7 @@ function renderHome(app) {
         'This is a data-driven index measuring the social ties, institutions, and access conditions ',
         'that determine whether people can get help when they need it.',
       '</p>',
+      '<p class="hero-meta">V6 &middot; 69 cities &middot; 2022 ACS data &middot; May 2026</p>',
     '</section>',
 
     // ── Map ───────────────────────────────────────────────────────────────
@@ -885,7 +887,7 @@ function renderCity(app, key) {
       '<div class="city-meta">',
         city.state,
         ' &nbsp;&middot;&nbsp; ', city.population,
-        ' &nbsp;&middot;&nbsp; <a href="#/compare" class="compare-inline-link">Compare with another city</a>',
+        ' &nbsp;&middot;&nbsp; <a href="#/compare/', key, '" class="compare-inline-link">Compare with another city</a>',
       '</div>',
       '<div class="ask-city-wrap">',
         '<a class="ask-city-link" href="#/chat"',
@@ -1031,9 +1033,9 @@ function renderCompareTable(keyA, keyB) {
   ].join('');
 }
 
-function renderCompare(app) {
-  var defaultA = 'nyc';
-  var defaultB = 'chicago';
+function renderCompare(app, preselect) {
+  var defaultA = (preselect && CITIES[preselect]) ? preselect : 'nyc';
+  var defaultB = defaultA === 'chicago' ? 'nyc' : 'chicago';
 
   app.innerHTML = [
     '<div class="compare-page">',
@@ -1684,6 +1686,16 @@ function renderFindings(app) {
       '</p>',
 
       '<p>',
+        'One note on Washington, DC specifically. DC\'s care nonprofit density score (78.1/10k) is among the highest in the ',
+        'dataset, and it leads on residential stability and healthcare coverage as well. But DC is structurally unusual: it hosts ',
+        'a significant concentration of nationally-focused organizations &mdash; federal advocacy groups, health policy bodies, ',
+        'public interest law firms &mdash; that file under the same NTEE P, E, and F codes used to measure locally-serving care ',
+        'nonprofits. The NTEE filter excludes arts and education, but it cannot distinguish a neighborhood food bank ',
+        'from a national health policy organization headquartered in Dupont Circle. DC\'s care infrastructure is genuine; ',
+        'its nonprofit density score likely reflects some share of national-organization presence that other cities\' scores do not.',
+      '</p>',
+
+      '<p>',
         "Cincinnati's Pillar 2 score is 79.8, among the highest institutional care scores in the dataset. ",
         'Nursing homes at 100, FQHCs at 81.9. ',
         'One plausible explanation is that some of this reflects legacy infrastructure built for a larger ',
@@ -1812,6 +1824,27 @@ function renderFindings(app) {
         'is strong and formal program participation is low will score lower than their actual care capacity.',
       '</p>',
 
+      '<hr>',
+
+      '<h2>7. The large-city per-capita penalty</h2>',
+
+      '<p>',
+        'NYC has more federally qualified health centers by absolute count than any other city in the dataset. ',
+        'Its per-capita FQHC score is 35.2, because the denominator is 8.3 million people. ',
+        'Los Angeles (60.0), Chicago (66.3), and Philadelphia (64.5) face the same structural pattern: ',
+        'large absolute care infrastructure, average-to-below-average per-capita ratios on most density metrics.',
+      '</p>',
+
+      '<p>',
+        'This index uses total population as the denominator for all density metrics. That is a real and ',
+        'meaningful measure &mdash; supply relative to population &mdash; but it may understate access in dense, ',
+        'transit-connected cities where a resident can reach multiple facilities they nominally &ldquo;share&rdquo; with millions. ',
+        'Whether per-capita density or geographic accessibility is the right framing is an open methodological question. ',
+        'For cities above roughly 1 million residents, CQ density scores capture supply per resident, ',
+        'not whether any given resident can actually reach that supply. The absolute care infrastructure in ',
+        'NYC, LA, and Chicago is not captured in these numbers.',
+      '</p>',
+
     '</div>',
   ].join('');
 }
@@ -1928,7 +1961,8 @@ function renderFooter() {
     '<footer class="site-footer">',
       '<div class="footer-copy">',
         'Care Quotient &nbsp;&middot;&nbsp; 69 American Cities &nbsp;&middot;&nbsp; May 2026<br>',
-        'Data: IRS EO BMF &middot; Census ACS 2022 &middot; Census CBP &middot; HRSA &middot; IMLS &middot; CMS Care Compare &middot; ARDA 2020 &middot; CDC PLACES',
+        'Data: IRS EO BMF &middot; Census ACS 2022 &middot; Census CBP &middot; HRSA &middot; IMLS &middot; CMS Care Compare &middot; ARDA 2020 &middot; CDC PLACES<br>',
+        'Cite: <em>Care Quotient</em> (2026). Measuring Care Capacity Across American Cities, V6. care-quotient.vercel.app',
       '</div>',
       '<div class="footer-links">',
         '<a href="#/theory">What is Care?</a>',
@@ -1936,6 +1970,7 @@ function renderFooter() {
         '<a href="#/findings">Findings</a>',
         '<a href="#/compare">Compare</a>',
         '<a href="#/">Index</a>',
+        '<a href="https://raw.githubusercontent.com/petedur/Care-Quotient---Claude-Code/master/outputs/care_capacity_scores.csv" target="_blank" rel="noopener">Download data (CSV)</a>',
         '<a href="https://github.com/petedur/Care-Quotient---Claude-Code" target="_blank" rel="noopener">GitHub</a>',
       '</div>',
     '</footer>',

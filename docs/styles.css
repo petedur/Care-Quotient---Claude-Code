@@ -199,6 +199,14 @@ body {
   font-weight: 300;
 }
 
+.hero-meta {
+  font-family: var(--mono);
+  font-size: 0.67rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  margin-top: 1.25rem;
+}
+
 /* ── Section shared ─────────────────────────────────────────────────────── */
 .section-wrap {
   border-top: 1px solid var(--ink-faint);
