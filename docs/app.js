@@ -544,6 +544,47 @@ var CITY_CONTEXT = {
       'See <a href="#/methodology">Methodology &sect;9</a>.',
     ].join(''),
   },
+  washington_dc: {
+    type: 'info',
+    text: [
+      '<strong>Scope note:</strong> DC leads the index on care nonprofit density (78.1/10k), residential stability, and healthcare coverage. ',
+      'DC is structurally unusual: it hosts a significant concentration of nationally-focused organizations that file under ',
+      'the same NTEE P, E, and F codes used to measure locally-serving care nonprofits. The NTEE filter excludes arts and ',
+      'education, but cannot distinguish a neighborhood food bank from a national health policy organization headquartered downtown. ',
+      'DC&rsquo;s underlying care infrastructure is genuine; its nonprofit density score likely reflects some national-organization ',
+      'presence that other cities\' scores do not.',
+    ].join(''),
+  },
+  atlanta: {
+    type: 'info',
+    text: [
+      '<strong>Pillar divergence:</strong> Atlanta has the highest Social &amp; Relational Care score in the dataset (83.9), ',
+      'driven by exceptionally dense care nonprofit infrastructure (86.0/10k). ',
+      'Institutional care is comparatively thin &mdash; Pillar 2 scores 45.1, and FQHC density is 32.1 for a city of 500k. ',
+      'Atlanta illustrates that relational and institutional care capacity can diverge sharply within the same city.',
+    ].join(''),
+  },
+  salt_lake_city: {
+    type: 'info',
+    text: [
+      '<strong>SNAP coverage note:</strong> Salt Lake City has the lowest SNAP coverage rate in the dataset (34.9). ',
+      'The metric estimates participation among likely-eligible households; a score of 34.9 suggests roughly 30% of ',
+      'eligible households are enrolled. One plausible explanation is that informal mutual aid networks in Salt Lake City ',
+      'partially substitute for formal SNAP participation in ways this index cannot measure. ',
+      'See <a href="#/findings">Findings &sect;4</a> for context.',
+    ].join(''),
+  },
+  madison: {
+    type: 'info',
+    text: [
+      '<strong>Last in the dataset:</strong> Madison (46.6) is the lowest-scoring city in the index. ',
+      'Healthcare coverage scores 57.1 because Wisconsin has not adopted ACA Medicaid expansion &mdash; ',
+      'residents who would qualify in expansion states are counted in the denominator but cannot enroll. ',
+      'SNAP scores 44.8. Madison&rsquo;s relatively affluent and student-heavy population may also reduce the ',
+      'number of likely-eligible households, making the SNAP and coverage estimates less stable than in other cities. ',
+      'These scores reflect state policy and demographic composition as much as local care infrastructure.',
+    ].join(''),
+  },
 };
 
 // ── City page ───────────────────────────────────────────────────────────────
@@ -1036,11 +1077,14 @@ function renderCompareTable(keyA, keyB) {
 function renderCompare(app, preselect) {
   var defaultA = (preselect && CITIES[preselect]) ? preselect : 'nyc';
   var defaultB = defaultA === 'chicago' ? 'nyc' : 'chicago';
+  var backLink = (preselect && CITIES[preselect])
+    ? '<a href="#/city/' + preselect + '" class="back-link">&#8592; Back to ' + CITIES[preselect].name + '</a>'
+    : '<a href="#/" class="back-link">&#8592; Home</a>';
 
   app.innerHTML = [
     '<div class="compare-page">',
 
-      '<a href="#/" class="back-link">&#8592; All cities</a>',
+      backLink,
 
       '<div class="compare-header">',
         '<div class="compare-eyebrow">Compare</div>',
@@ -1104,7 +1148,7 @@ function renderMethodology(app) {
   app.innerHTML = [
     '<div class="method-page">',
 
-      '<a href="#/" class="back-link">&#8592; All cities</a>',
+      '<a href="#/" class="back-link">&#8592; Home</a>',
 
       '<div class="method-eyebrow">Methodology</div>',
       '<h1>How the Care Quotient is built</h1>',
@@ -1284,7 +1328,7 @@ function renderTheory(app) {
   app.innerHTML = [
     '<div class="method-page">',
 
-      '<a href="#/" class="back-link">&#8592; All cities</a>',
+      '<a href="#/" class="back-link">&#8592; Home</a>',
 
       '<div class="method-eyebrow">Theoretical Foundation</div>',
       '<h1>What is Care?</h1>',
@@ -1480,7 +1524,7 @@ function renderTheory(app) {
         '<li>Nussbaum, M.C. (2006). <em>Frontiers of Justice: Disability, Nationality, Species Membership</em>. Harvard University Press.</li>',
         '<li>OECD (2017). <em>Trust and Public Policy: How Better Governance Can Help Rebuild Public Trust</em>. OECD Publishing.</li>',
         '<li>Putnam, R.D. (2000). <em>Bowling Alone: The Collapse and Revival of American Community</em>. Simon &amp; Schuster.</li>',
-        '<li>Rosenbaum, S., et al. (2011). National security and U.S. child health policy: The origins and continuing role of Medicaid and CHIP. <em>Annual Review of Public Health</em>, 32, 345&ndash;361.</li>',
+        '<li>Rosenbaum, S., et al. (2011). <em>Health Centers: An American Success Story</em>. George Washington University School of Public Health.</li>',
         '<li>Salamon, L.M. & Anheier, H.K. (1998). Social origins of civil society: Explaining the nonprofit sector cross-nationally. <em>Voluntas</em>, 9(3), 213&ndash;248.</li>',
         '<li>Sampson, R.J., Raudenbush, S.W., & Earls, F. (1997). Neighborhoods and violent crime: A multilevel study of collective efficacy. <em>Science</em>, 277(5328), 918&ndash;924.</li>',
         '<li>Sen, A. (1999). <em>Development as Freedom</em>. Anchor Books.</li>',
@@ -1648,7 +1692,7 @@ function renderFindings(app) {
   app.innerHTML = [
     '<div class="method-page findings-page">',
 
-      '<a href="#/" class="back-link">&#8592; All cities</a>',
+      '<a href="#/" class="back-link">&#8592; Home</a>',
 
       '<div class="method-eyebrow">Findings</div>',
       '<h1>What the data shows</h1>',
@@ -1748,6 +1792,18 @@ function renderFindings(app) {
         'The FQHC system is designed to serve the population that lacks Medicaid. ',
         'Texas non-expansion may weaken the financing environment for safety-net primary care, ',
         'but this index cannot establish that causal channel on its own.',
+      '</p>',
+
+      '<p>',
+        'One caveat on the healthcare coverage metric itself: 31 of 69 cities (45%) score exactly 100.0. ',
+        'The cause is a denominator mismatch: the numerator counts all Medicaid and CHIP enrollees, ',
+        'including children covered by CHIP whose household income may be above the 150% FPL eligibility ceiling ',
+        'used in the denominator. In high-expansion states with strong CHIP enrollment, the numerator can exceed ',
+        'the denominator, producing a raw rate above 100% that is capped at 100. The practical effect: in expansion ',
+        'states, healthcare coverage functions as a near-binary indicator rather than a continuous measure. ',
+        'Two cities in the same expansion state, both scoring 100.0, may have meaningfully different actual enrollment ',
+        'rates &mdash; the metric cannot distinguish them. Cities in non-expansion states, where the gap between ',
+        'enrolled and eligible is real, are where this metric carries the clearest signal.',
       '</p>',
 
       '<hr>',
@@ -1858,7 +1914,7 @@ function renderChat(app) {
 
   app.innerHTML = [
     '<div class="chat-page">',
-      '<a href="#/" class="back-link">&#8592; All cities</a>',
+      '<a href="#/" class="back-link">&#8592; Home</a>',
 
       '<div class="chat-header">',
         '<div class="chat-eyebrow">Ask the Data</div>',
