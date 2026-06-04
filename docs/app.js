@@ -1836,9 +1836,9 @@ function renderFindings(app) {
       '</p>',
 
       '<p>',
-        'This index uses total population as the denominator for all density metrics. That is a real and ',
-        'meaningful measure &mdash; supply relative to population &mdash; but it may understate access in dense, ',
-        'transit-connected cities where a resident can reach multiple facilities they nominally &ldquo;share&rdquo; with millions. ',
+        'This index uses total population as the denominator for all density metrics. That is a clear measure of ',
+        'supply relative to population but it may understate access in dense, ',
+        'transit-connected cities where a resident can reach multiple facilities they nominally &ldquo;share&rdquo; with many others. ',
         'Whether per-capita density or geographic accessibility is the right framing is an open methodological question. ',
         'For cities above roughly 1 million residents, CQ density scores capture supply per resident, ',
         'not whether any given resident can actually reach that supply. The absolute care infrastructure in ',
