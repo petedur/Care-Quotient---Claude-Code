@@ -1797,24 +1797,7 @@ function renderFindings(app) {
 
       '<hr>',
 
-      '<h2>5. Same score, different problem</h2>',
-
-      '<p>',
-        'Memphis (58.6) and Lexington (59.2) score nearly identically. Memphis: Pillar 1 = 71.0, Pillar 2 = 34.2. ',
-        'Strong community ties, thin institutional care. Lexington: Pillar 1 = 59.2, Pillar 2 = 49.8. ',
-        "Different care deficit, same summary score. The CQ's diagnostic value is in the pillars, not the headline number.",
-      '</p>',
-
-      '<p>',
-        'Atlanta (66.3): highest Pillar 1 in the dataset (83.9). Combined care nonprofit density of 86, ',
-        'potentially attributable to a legacy of historically Black colleges and universities (HBCUs), ',
-        'civil rights organizations, and Black church networks. But Pillar 2 is 45.1 and ',
-        'FQHC score is 32.1 for a city of 500k. Extraordinary relational infrastructure, thin institutional layer.',
-      '</p>',
-
-      '<hr>',
-
-      '<h2>6. What the index cannot see</h2>',
+      '<h2>5. What the index cannot see</h2>',
 
       '<p>',
         'The Care Quotient measures care capacity as it appears in public administrative data &mdash; ',
@@ -1826,7 +1809,7 @@ function renderFindings(app) {
 
       '<hr>',
 
-      '<h2>7. The large-city per-capita penalty</h2>',
+      '<h2>6. The large-city per-capita penalty</h2>',
 
       '<p>',
         'NYC has more federally qualified health centers by absolute count than any other city in the dataset. ',
