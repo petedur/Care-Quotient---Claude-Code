@@ -135,7 +135,7 @@ module.exports = async function handler(req, res) {
   }
 
   const system = cityContext
-    ? SYSTEM_PROMPT + '\n\nCITY DATA (all 69 scored cities, sorted by CQ descending):\n' + cityContext
+    ? SYSTEM_PROMPT + '\n\nCITY DATA (all 69 scored cities, sorted by CQ descending):\nNOTE: All metric values in city data rows are normalized 0-100 scores against benchmarks, not raw rates. A score of 78 means the city reaches 78% of that metric\'s benchmark.\n' + cityContext
     : SYSTEM_PROMPT;
 
   res.setHeader('Content-Type', 'text/event-stream; charset=utf-8');

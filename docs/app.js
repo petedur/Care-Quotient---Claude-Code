@@ -547,7 +547,7 @@ var CITY_CONTEXT = {
   washington_dc: {
     type: 'info',
     text: [
-      '<strong>Scope note:</strong> DC leads the index on care nonprofit density (78.1/10k), residential stability, and healthcare coverage. ',
+      '<strong>Scope note:</strong> DC leads the index on care nonprofit density (score: 78.1 out of 100) and healthcare coverage. ',
       'DC is structurally unusual: it hosts a significant concentration of nationally-focused organizations that file under ',
       'the same NTEE P, E, and F codes used to measure locally-serving care nonprofits. The NTEE filter excludes arts and ',
       'education, but cannot distinguish a neighborhood food bank from a national health policy organization headquartered downtown. ',
@@ -559,7 +559,7 @@ var CITY_CONTEXT = {
     type: 'info',
     text: [
       '<strong>Pillar divergence:</strong> Atlanta has the highest Social &amp; Relational Care score in the dataset (83.9), ',
-      'driven by exceptionally dense care nonprofit infrastructure (86.0/10k). ',
+      'driven by exceptionally dense care nonprofit infrastructure (score: 86.0 out of 100). ',
       'Institutional care is comparatively thin: Pillar 2 scores 45.1, and FQHC density is 32.1 for a city of 500k. ',
       'Atlanta illustrates that relational and institutional care capacity can diverge sharply within the same city.',
     ].join(''),
@@ -1523,7 +1523,7 @@ function renderTheory(app) {
       '<h2>References</h2>',
 
       '<ul class="theory-refs">',
-        '<li>Agha, G., et al. (2024). Housing cost burden and health care utilization. <em>JAMA Internal Medicine</em>.</li>',
+        '<li>Agha, G., et al. (2024). Housing stability and social capital: Mediation pathways. <em>American Journal of Community Psychology</em>.</li>',
         '<li>Aknin, L.B., et al. (2013). Prosocial spending and well-being: Cross-cultural evidence for a psychological universal. <em>Journal of Personality and Social Psychology</em>, 104(4), 635&ndash;652.</li>',
         '<li>Desmond, M. & Bell, M. (2015). Housing, poverty, and the law. <em>Annual Review of Law and Social Science</em>, 11, 15&ndash;35.</li>',
         '<li>Folbre, N. (2001). <em>The Invisible Heart: Economics and Family Values</em>. New Press.</li>',
@@ -1736,11 +1736,11 @@ function renderFindings(app) {
         'The tier is geographically diverse: DC (federal hub), Honolulu (Pacific), two Gulf South cities (New Orleans, Baton Rouge), ',
         'five Rust Belt cities (Cincinnati, Cleveland, Rochester, Detroit, Pittsburgh), plus Baltimore, Indianapolis, ',
         'Providence, and St. Louis. What unites many of them is a legacy of dense public and nonprofit infrastructure ',
-        'built for larger or different populations. The Sun Belt cities people are moving to are largely absent.',
+        'built for larger or different populations. The fastest-growing Sun Belt cities are largely absent from the leading tier.',
       '</p>',
 
       '<p>',
-        'One note on Washington, DC specifically. DC\'s care nonprofit density score (78.1/10k) is among the highest in the ',
+        'One note on Washington, DC specifically. DC\'s care nonprofit density score (78.1 out of 100) is among the highest in the ',
         'dataset, DC also scores solidly on housing affordability (71.0) and healthcare coverage (100.0), so its #1 ranking is not driven by nonprofit density alone. However, DC is structurally unusual in that it hosts ',
         'a significant concentration of nationally-focused organizations (e.g. federal advocacy groups, health policy bodies, ',
         'public interest law firms) that file under the same NTEE P, E, and F codes used to measure locally-serving care ',
@@ -1822,7 +1822,7 @@ function renderFindings(app) {
 
       '<p>',
         'The cities gaining population and wealth are largely absent from the top half of this index. ',
-        'The cities with the strongest care infrastructure are often the ones people are leaving.',
+        'In this dataset, cities with the strongest care infrastructure tend to be those experiencing long-term population decline, while fast-growing cities tend to score lower.',
       '</p>',
 
       '<ul class="findings-list">',
@@ -1850,8 +1850,8 @@ function renderFindings(app) {
         'Because the SNAP benchmark is 85%, a score of 34.9 corresponds to estimated raw SNAP reach of ',
         'roughly 30% of likely-eligible households. The SNAP metric is directional, not a precise participation ',
         'rate; the eligibility denominator is estimated from ACS income data. One plausible explanation for ',
-        'low take-up is that Latter-day Saint (LDS) mutual aid partially substitutes for formal SNAP participation. ',
-        'The Care Quotient cannot measure that kind of informal care, which is a real limit of what the index can see.',
+        'low take-up is that informal community and religious mutual aid networks partially substitute for formal SNAP enrollment in ways this index cannot measure. ',
+        'This is a real limit of what the index can see.',
       '</p>',
 
       '<p>',
@@ -2019,6 +2019,7 @@ function renderFooter() {
         'Care Quotient &nbsp;&middot;&nbsp; 69 American Cities &nbsp;&middot;&nbsp; May 2026<br>',
         'Data: IRS EO BMF &middot; Census ACS 2022 &middot; Census CBP &middot; HRSA &middot; IMLS &middot; CMS Care Compare &middot; ARDA 2020 &middot; CDC PLACES<br>',
         'Cite: <em>Care Quotient</em> (2026). Measuring Care Capacity Across American Cities, V6. care-quotient.vercel.app',
+        '<a href="/care_capacity_scores.csv" class="footer-link">Download data (CSV)</a>',
       '</div>',
       '<div class="footer-links">',
         '<a href="#/theory">What is Care?</a>',

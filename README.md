@@ -31,7 +31,7 @@ care-capacity-index/
 │   │   ├── residential_stability.py  (Census ACS B07003)
 │   │   ├── housing_cost_burden.py    (Census ACS B25070/B25091)
 │   │   ├── snap_participation.py     (Census ACS B22001/C17002)
-│   │   ├── health_insurance.py       (Census ACS C27007 — Medicaid/CHIP)
+│   │   ├── health_insurance_coverage.py (Census ACS C27007 — Medicaid/CHIP)
 │   │   ├── library_density.py        (IMLS Public Libraries Survey)
 │   │   ├── religious_institutions.py (ARDA 2020 Religion Census)
 │   │   ├── nursing_homes.py          (CMS Care Compare)

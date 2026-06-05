@@ -14,7 +14,7 @@ This is explicitly **not** a quality-of-life index. A city can score well on inc
 
 The question is whether a city can show up. Not on paper — in practice.
 
-**V6 scope**: This document describes V6, covering 69 US cities across 10 scored metrics organized into 3 theoretically-grounded pillars. V6 adds child care capacity as the third Pillar 2 metric (20% weight), revises FQHC density from 55% to 45% and nursing home capacity from 45% to 35% within Pillar 2, and replaces the health insurance coverage metric (B27001, any coverage) with a Medicaid/CHIP enrollment rate (C27007) that isolates the public safety-net signal. V5 restructured the pillar architecture based on care ethics theory: library density promoted to scored metric; combined care nonprofit density moved to Pillar 1; housing cost burden moved to Pillar 3. V4 added nursing home capacity. V3 scaled from 5 to 68 cities via ZCTA-to-place crosswalk filtering, corrected the SNAP eligibility denominator, and collapsed NTEE P and E/F/K into a single combined care metric (r=0.85 correlation). V3.2 lowered the ZCTA overlap threshold from 50% to 40% after a geographic audit confirmed FQHCs in Raleigh and Fort Worth were excluded by the stricter cutoff. Scores should be read as "this city has stronger or weaker care capacity than the benchmark" rather than as definitive rankings.
+**V6 scope**: This document describes V6, covering 69 US cities across 10 scored metrics organized into 3 theoretically-grounded pillars. V6 adds child care capacity as the third Pillar 2 metric (20% weight), revises FQHC density from 55% to 45% and nursing home capacity from 45% to 35% within Pillar 2, and replaces the health insurance coverage metric (B27001, any coverage) with a public coverage reach proxy (C27007) that isolates the public safety-net signal. V5 restructured the pillar architecture based on care ethics theory: library density promoted to scored metric; combined care nonprofit density moved to Pillar 1; housing cost burden moved to Pillar 3. V4 added nursing home capacity. V3 scaled from 5 to 68 cities via ZCTA-to-place crosswalk filtering, corrected the SNAP eligibility denominator, and collapsed NTEE P and E/F/K into a single combined care metric (r=0.85 correlation). V3.2 lowered the ZCTA overlap threshold from 50% to 40% after a geographic audit confirmed FQHCs in Raleigh and Fort Worth were excluded by the stricter cutoff. Scores should be read as "this city has stronger or weaker care capacity than the benchmark" rather than as definitive rankings.
 
 ---
 
@@ -117,7 +117,7 @@ The 5% weight reflects genuine uncertainty about measurement completeness and he
 **Unit**: FQHCs per 100,000 residents (higher = better).  
 **Weight within Pillar 2**: **45%** (revised from 55% in V5; weight shifted to child care capacity)
 
-**Rationale**: FQHCs carry the strongest evidence base of any metric in this index. Rosenbaum et al. (2011) demonstrate that FQHC access significantly reduces emergency room utilization among low-income and uninsured patients. Shi and colleagues (multiple studies, 2001–2017) link FQHC access to reduced mortality from chronic disease, improved preventive care uptake, and reduced health disparities across racial and income lines. Congressional Budget Office analyses consistently find that FQHCs save approximately $2,371 per user in avoided emergency care costs. Unlike density measures for nonprofits, FQHCs have federal funding and reporting requirements that make their service delivery more verifiable.
+**Rationale**: FQHCs carry the strongest evidence base of any metric in this index. Rosenbaum et al. (2011) demonstrate that FQHC access significantly reduces emergency room utilization among low-income and uninsured patients. Shi and colleagues (multiple studies, 2001–2017) link FQHC access to reduced mortality from chronic disease, improved preventive care uptake, and reduced health disparities across racial and income lines. Congressional Budget Office analyses have found significant cost savings per FQHC user through avoided emergency care costs. Unlike density measures for nonprofits, FQHCs have federal funding and reporting requirements that make their service delivery more verifiable.
 
 **Relationship to health insurance coverage (Section 3.9)**: FQHC density and health insurance coverage are kept as separate metrics in separate pillars because their interaction is interpretively informative rather than redundant. FQHCs are specifically designed to serve Medicaid and uninsured populations — their federal mandate and funding model is built around exactly the populations that lack private insurance. A proposal to adjust FQHC density by the insurance rate would therefore penalize cities for serving uninsured residents, inverting the metric's intent.
 
@@ -243,7 +243,7 @@ A city at or above the benchmark receives 100. A city at half the benchmark rece
 | FQHC density | 15 per 100,000 | Eliminates HRSA shortage designation plus geographic redundancy |
 | Nursing home capacity | 50 per 1,000 residents 65+ | ~5% of elderly in skilled nursing at any one time; modestly above CMS national average (~42/1k) |
 | Child care capacity | 15 per 1,000 children under 5 | Well-supplied urban child care market; national median across 69 cities is approximately 8–10/1k |
-| Healthcare coverage (Medicaid/CHIP) | 100% | Score equals raw coverage rate directly; enrolled = eligible → 100 |
+| Healthcare coverage (public coverage reach proxy) | 100% | Score equals the ACS-based coverage reach rate; cities where survey-reported enrollees meet or exceed the estimated eligible population score 100 (see ceiling-effect note, Section 12) |
 | Housing affordability | 90% not burdened | 10% cost-burden ceiling; only the least-burdened US cities achieve this |
 | SNAP coverage rate | 85% | USDA FNS national SNAP participation target among eligible households |
 
@@ -399,7 +399,7 @@ The following improvements were implemented in V3:
 - **Pillar 1 weights revised**: Residential stability 65% → 50%; combined care nonprofits 35% (unchanged but now in a 3-metric pillar); library density 15% (new).
 - **Pillar 2 simplified to two institutional metrics**: FQHC density (55%) and nursing home capacity (45%). Weights revised from V4's 35/35/30.
 - **Pillar 3 expanded to three metrics**: Healthcare coverage (40%), housing affordability (35%), SNAP coverage (25%).
-- **Healthcare coverage renamed and regrounded**: "Health Insurance Coverage" (B27001, any coverage) → "Healthcare Coverage Rate" (C27007, Medicaid/CHIP specifically). New metric measures fraction of the 0–149% FPL population enrolled in Medicaid/means-tested public coverage, analogous to the SNAP coverage formula. Benchmark: 85%. This removes the employer-insurance inflation in wealthy cities and penalizes Medicaid non-expansion states for the right reason.
+- **Healthcare coverage renamed and regrounded**: "Health Insurance Coverage" (B27001, any coverage) → "Healthcare Coverage Rate" (C27007, Medicaid/CHIP specifically). New metric measures fraction of the 0–149% FPL population enrolled in Medicaid/means-tested public coverage, analogous to the SNAP coverage formula. Benchmark: 85% (revised to 100% in V6 with the C27007 change). This removes the employer-insurance inflation in wealthy cities and penalizes Medicaid non-expansion states for the right reason.
 - **Need-adjusted shadow diagnostic added**: Combined care nonprofit density per 10,000 residents at 0–150% FPL reported as a diagnostic metric on city pages. Not scored pending validation.
 - **8-metric model**: CQ is now a composite of 8 scored metrics (previously 7 in V4, 6 in V3).
 
@@ -451,7 +451,7 @@ Because six of ten scored metrics are held constant, the trend section captures 
 
 ## 17. References
 
-- Agha, G. et al. (2024). Housing stability and social capital: Mediation pathways. *American Journal of Community Psychology*.
+- Agha, G., et al. (2024). Housing stability and social capital: Mediation pathways. *American Journal of Community Psychology*.
 - Boris, E.T. & Steuerle, C.E. (2006). *Nonprofits and Government: Collaboration and Conflict*. Urban Institute Press.
 - Briggs, X. de S. (1998). Brown kids in white suburbs: Housing mobility and the many faces of social capital. *Housing Policy Debate*, 9(1), 177–221.
 - Chaves, M. & Tsitsos, W. (2001). Congregations and social services: What they do, how they do it, and with whom. *Nonprofit and Voluntary Sector Quarterly*, 30(4), 660–683.

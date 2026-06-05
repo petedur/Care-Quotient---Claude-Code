@@ -138,16 +138,17 @@ PILLAR_LABELS = {
 
 # Human-readable metric labels for output
 METRIC_LABELS = {
-    "residential_stability.pct_same_house":        "Residential Stability",
-    "nonprofit_density.combined_care":             "Care Nonprofits (P+E+F+K per 10k)",
-    "library_density.density_per_100k":            "Library Density (per 100k residents)",
-    "religious_density.congregations_per_100k":    "Religious Institution Density (congregations/100k)",
-    "health_center_density.density_per_100k":      "FQHCs (per 100k)",
-    "nursing_home_capacity.beds_per_1k_65plus":    "Nursing Home Capacity (beds/1k 65+)",
-    "child_care_capacity.establishments_per_1k_under5": "Child Care Capacity (establishments/1k under-5)",
-    "health_insurance_coverage.coverage_rate":       "Healthcare Coverage Rate",
-    "housing_cost_burden.pct_not_burdened":        "Housing Affordability (% not cost-burdened)",
-    "snap_participation.coverage_rate":            "SNAP Coverage Rate",
+    # All score columns are normalized 0-100 values against benchmarks, not raw rates.
+    "residential_stability.pct_same_house":        "Residential Stability Score (0-100)",
+    "nonprofit_density.combined_care":             "Care Nonprofits Score (0-100)",
+    "library_density.density_per_100k":            "Library Density Score (0-100)",
+    "religious_density.congregations_per_100k":    "Religious Institution Density Score (0-100)",
+    "health_center_density.density_per_100k":      "FQHC Density Score (0-100)",
+    "nursing_home_capacity.beds_per_1k_65plus":    "Nursing Home Capacity Score (0-100)",
+    "child_care_capacity.establishments_per_1k_under5": "Child Care Capacity Score (0-100)",
+    "health_insurance_coverage.coverage_rate":     "Healthcare Coverage Score (0-100)",
+    "housing_cost_burden.pct_not_burdened":        "Housing Affordability Score (0-100)",
+    "snap_participation.coverage_rate":            "SNAP Coverage Score (0-100)",
     # Diagnostic only (not scored)
     "nonprofit_density.social_support":            "Human Services Nonprofits (NTEE P, per 10k)",
     "nonprofit_density.care_institutions":         "Health/MH/Food Nonprofits (NTEE E/F/K, per 10k)",
