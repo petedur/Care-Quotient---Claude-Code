@@ -164,6 +164,8 @@ V4 factor analysis showed nursing home capacity loading 0.91 on its own isolated
 
 **V6 note**: Added in V6 as the third Pillar 2 metric. Within-Pillar 2 weights revised from V5's two-metric structure (FQHC 55%, nursing homes 45%) to a three-metric structure (FQHC 45%, nursing homes 35%, child care 20%).
 
+**Affluence correlation caveat**: Licensed child care establishment density may partly reflect household purchasing power rather than care infrastructure for families who need it. Cities with high median incomes and large professional workforces score highest on this metric: San Francisco (72.5) and Portland (66.1) lead the dataset. Whether high density in affluent cities represents genuine care capacity for vulnerable families, or primarily reflects a market response to dual-income households who can afford licensed care, is an open question. A need-adjusted version of this metric (establishments per 1,000 children in households below 150% FPL) would be a more direct test of the Kittay/Folbre argument but is not available at city level from current public sources. The current metric measures licensed supply relative to the total under-5 population. High scores in high-income cities should be read with this in mind.
+
 ---
 
 #### 3.8 Faith-Based Human Services — Diagnostic Only (Not Scored)

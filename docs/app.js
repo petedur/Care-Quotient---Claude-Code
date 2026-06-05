@@ -585,6 +585,18 @@ var CITY_CONTEXT = {
       'These scores reflect state policy and demographic composition as much as local care infrastructure.',
     ].join(''),
   },
+  anchorage: {
+    type: 'info',
+    text: [
+      '<strong>Regional care hub:</strong> Anchorage has the lowest Institutional Care score in the dataset (14.1), ',
+      'driven by thin nursing home capacity (14.9) and sparse FQHC density (9.1) relative to population. ',
+      "Part of this reflects Anchorage's role as a regional hub serving a much larger surrounding area.",
+      'Facilities here absorb patients from across rural Alaska, making per-capita density measures ',
+      'structurally lower than comparably-sized cities elsewhere. ',
+      'Healthcare coverage scores 100.0 because Alaska expanded Medicaid, which substantially lifts the overall score, ',
+      'but the access infrastructure itself is notably thin relative to population.',
+    ].join(''),
+  },
 };
 
 // ── City page ───────────────────────────────────────────────────────────────
@@ -1809,6 +1821,7 @@ function renderFindings(app) {
       '<h2>3. Wealth and care capacity diverge</h2>',
 
       '<ul class="findings-list">',
+        '<li>Austin: <strong>51.5.</strong> Stockton: 64.8. Austin is one of the fastest-growing, highest-income cities in the country. Stockton is among the poorest large cities in California. Stockton leads by 13 points.</li>',
         '<li>San Francisco: <strong>64.0.</strong> Same tier (Established) as Omaha (63.1). Los Angeles (60.0) is one tier lower in Growing.</li>',
         '<li>New York City: <strong>61.8.</strong> Established — the lowest score in the Established tier. One tier above Fresno (60.2).</li>',
         '<li>Seattle: <strong>62.1.</strong> Milwaukee: 64.0 — Milwaukee edges ahead.</li>',

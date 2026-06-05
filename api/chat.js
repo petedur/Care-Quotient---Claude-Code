@@ -30,7 +30,7 @@ TIERS: Leading ≥68.2 | Established 61.8–68.1 | Growing 54.7–61.7 | Emergin
 
 WHAT THE INDEX EXCLUDES: income levels, crime rates, health outcomes, life expectancy, environmental quality, school quality. These are conditions — not the presence or absence of care. A city can score well on all of those and still have thin social infrastructure for its most vulnerable residents.
 
-POLICY NOTE: A state's decision not to expand Medicaid is reflected in lower scores for cities in that state. This is intentional — it is a real policy barrier to care access.
+POLICY NOTE: A state's decision not to expand Medicaid is reflected in lower scores for cities in that state. This is intentional as it is a real policy barrier to care access.
 
 THEORY: Grounded in Joan Tronto's care ethics (1993), Putnam's social capital theory (2000), Sampson et al.'s collective efficacy (1997), Kittay's dependency theory (1999), Folbre's care economics (2001), Nussbaum's capabilities approach (2006), and Sen's development as freedom (1999). Pillar weights (40/35/25) are a normative commitment to relational primacy — factor analysis yields ~48/35/17 empirically.
 
