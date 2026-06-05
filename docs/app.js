@@ -516,7 +516,7 @@ var CITY_CONTEXT = {
     type: 'info',
     text: [
       '<strong>Texas and Medicaid:</strong> Texas has not expanded Medicaid under the Affordable Care Act. ',
-      'Houston&rsquo;s healthcare coverage score is notably below the national benchmark, reflecting this state policy gap. ',
+      'Houston&rsquo;s healthcare coverage score is 66.7, reflecting this state policy gap directly. ',
       'The city&rsquo;s large and fast-growing population also means nonprofit and FQHC density trails ',
       'slower-growing cities with comparable total counts.',
     ].join(''),
@@ -594,7 +594,7 @@ var CITY_CONTEXT = {
       'Facilities here absorb patients from across rural Alaska, making per-capita density measures ',
       'structurally lower than comparably-sized cities elsewhere. ',
       'Healthcare coverage scores 100.0 because Alaska expanded Medicaid, which substantially lifts the overall score, ',
-      'but the access infrastructure itself is notably thin relative to population.',
+      'but the access infrastructure itself is thin relative to population.',
     ].join(''),
   },
 };
@@ -1741,7 +1741,7 @@ function renderFindings(app) {
 
       '<p>',
         'One note on Washington, DC specifically. DC\'s care nonprofit density score (78.1/10k) is among the highest in the ',
-        'dataset, and it leads on residential stability and healthcare coverage as well. However, DC is structurally unusual in that it hosts ',
+        'dataset, DC also scores solidly on housing affordability (71.0) and healthcare coverage (100.0), so its #1 ranking is not driven by nonprofit density alone. However, DC is structurally unusual in that it hosts ',
         'a significant concentration of nationally-focused organizations (e.g. federal advocacy groups, health policy bodies, ',
         'public interest law firms) that file under the same NTEE P, E, and F codes used to measure locally-serving care ',
         'nonprofits. The NTEE filter excludes arts and education, but it cannot distinguish a neighborhood food bank ',
@@ -1820,6 +1820,11 @@ function renderFindings(app) {
 
       '<h2>3. Wealth and care capacity diverge</h2>',
 
+      '<p>',
+        'The cities gaining population and wealth are largely absent from the top half of this index. ',
+        'The cities with the strongest care infrastructure are often the ones people are leaving.',
+      '</p>',
+
       '<ul class="findings-list">',
         '<li>Austin: <strong>51.5.</strong> Stockton: 64.8. Austin is one of the fastest-growing, highest-income cities in the country. Stockton is among the poorest large cities in California. Stockton leads by 13 points.</li>',
         '<li>San Francisco: <strong>64.0.</strong> Same tier (Established) as Omaha (63.1). Los Angeles (60.0) is one tier lower in Growing.</li>',
@@ -1841,7 +1846,7 @@ function renderFindings(app) {
 
       '<p>',
         '<strong>Salt Lake City Supplemental Nutrition Assistance Program (SNAP) score: 34.9.</strong> ',
-        'This is the lowest food security program reach in the dataset by a wide margin. ',
+        'This is the lowest food security program reach in the dataset. ',
         'Because the SNAP benchmark is 85%, a score of 34.9 corresponds to estimated raw SNAP reach of ',
         'roughly 30% of likely-eligible households. The SNAP metric is directional, not a precise participation ',
         'rate; the eligibility denominator is estimated from ACS income data. One plausible explanation for ',
