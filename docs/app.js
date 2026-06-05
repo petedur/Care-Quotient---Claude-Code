@@ -1908,7 +1908,7 @@ function renderChat(app) {
     'Why does ' + topCity.name + ' rank #1?',
     'Which city has the weakest care infrastructure overall?',
     'What\'s the difference between care capacity and quality of life?',
-    'What could ' + bottomCity.name + ' do to improve its score?',
+    'What policies could ' + bottomCity.name + ' implement to improve its score?',
   ];
 
   var willAutoSend = _chatPrefill && _chatPrefill.autoSend;
