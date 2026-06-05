@@ -233,7 +233,7 @@ function renderHome(app) {
         'This is a data-driven index measuring the social ties, institutions, and access conditions ',
         'that determine whether people can get help when they need it.',
       '</p>',
-      '<p class="hero-meta">V6 &middot; 69 cities &middot; 2022 ACS data &middot; May 2026</p>',
+      '<p class="hero-meta">V6 &middot; 69 cities &middot; May 2026</p>',
     '</section>',
 
     // ── Map ───────────────────────────────────────────────────────────────
