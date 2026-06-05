@@ -1233,7 +1233,7 @@ function renderMethodology(app) {
           '<tr><td>FQHC Density</td>               <td>15 per 100,000 residents</td>                     <td>HRSA Health Center Data</td></tr>',
           '<tr><td>Nursing Home Capacity</td>       <td>50 beds per 1,000 residents 65+</td>              <td>CMS Care Compare</td></tr>',
           '<tr><td>Child Care Capacity</td>         <td>15 establishments per 1,000 children under 5</td><td>Census CBP NAICS 624410</td></tr>',
-          '<tr><td>Healthcare Coverage (Medicaid/CHIP)</td><td>Survey-reported coverage rate among 0–149% FPL residents (benchmark: 100%)</td><td>Census ACS C27007</td></tr>',
+          '<tr><td>Healthcare Coverage (Medicaid/CHIP)</td><td>Survey-reported coverage rate among 0–149% FPL residents (benchmark: 100%). <em>Note: 31 of 69 cities (45%) score exactly 100 due to CHIP enrollment exceeding the FPL denominator — the metric is near-binary in expansion states.</em></td><td>Census ACS C27007</td></tr>',
           '<tr><td>Housing Affordability</td>       <td>90% not cost-burdened</td>                        <td>Census ACS B25070, B25091</td></tr>',
           '<tr><td>SNAP Coverage Rate</td>          <td>85% of likely-eligible</td>                       <td>Census ACS B22001, C17002</td></tr>',
         '</tbody>',
@@ -1928,6 +1928,7 @@ function renderFindings(app) {
       '</p>',
 
     '</div>',
+    renderFooter(),
   ].join('');
 }
 
@@ -2045,7 +2046,12 @@ function renderFooter() {
       '<div class="footer-copy">',
         'Care Quotient &nbsp;&middot;&nbsp; 69 American Cities &nbsp;&middot;&nbsp; May 2026<br>',
         'Data: IRS EO BMF &middot; Census ACS 2022 &middot; Census CBP &middot; HRSA &middot; IMLS &middot; CMS Care Compare &middot; ARDA 2020 &middot; CDC PLACES<br>',
-        'Cite: <em>Care Quotient</em> (2026). Measuring Care Capacity Across American Cities, V6. care-quotient.vercel.app &nbsp;&nbsp;&middot;&nbsp;&nbsp; <a href="/care_capacity_scores.csv" class="footer-link">Download data (CSV)</a>',
+        'Cite: <em>Care Quotient</em> (2026). Measuring Care Capacity Across American Cities, V6. care-quotient.vercel.app<br>',
+        '<a href="/care_capacity_scores.csv" class="footer-link">Download scores (CSV)</a>',
+        ' &nbsp;&middot;&nbsp; ',
+        '<a href="/care_capacity_data.csv" class="footer-link">Download full data with raw values (CSV)</a>',
+        ' &nbsp;&middot;&nbsp; ',
+        '<a href="#/license" class="footer-link">CC BY 4.0</a>',
       '</div>',
     '</footer>',
   ].join('');
