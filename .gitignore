@@ -32,5 +32,8 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Node
+node_modules/
+
 # Local dashboard copy (canonical site lives in docs/ for GitHub Pages)
 dashboard/

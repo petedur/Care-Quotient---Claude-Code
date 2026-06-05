@@ -17,8 +17,18 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Python dependencies
         run: pip install pandas duckdb pytest python-dotenv
 
-      - name: Run tests
+      - name: Run Python tests
         run: pytest code/tests/ -v
+
+      - name: Check JS syntax
+        run: node --check docs/app.js docs/data.js
+
+      - name: Validate CSV headers and data parity
+        run: python code/ci_checks.py

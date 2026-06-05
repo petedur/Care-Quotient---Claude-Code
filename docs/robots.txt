@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://care-quotient.vercel.app/sitemap.xml

@@ -48,6 +48,9 @@ function route() {
     destroyHomeMap();
     var preselect = hash.indexOf('/compare/') === 0 ? hash.slice(9) : null;
     renderCompare(app, preselect);
+  } else if (hash === '/license') {
+    destroyHomeMap();
+    renderLicense(app);
   } else if (hash === '/findings') {
     destroyHomeMap();
     renderFindings(app);
@@ -690,9 +693,9 @@ var METRIC_META = {
     desc:   'Licensed child care establishments per 1,000 children under 5',
   },
   health_insurance: {
-    label:  'Healthcare Coverage',
+    label:  'Public Coverage Reach Proxy',
     pillar: 'pillar3',
-    desc:   'Survey-reported Medicaid/CHIP coverage rate among income-eligible residents (0–149% FPL)',
+    desc:   'ACS-based Medicaid/CHIP coverage rate among income-eligible residents (0–149% FPL)',
   },
   housing_cost_burden: {
     label:  'Housing Affordability',
@@ -723,7 +726,7 @@ var TREND_METRIC_LABELS = {
   residential_stability:    'Residential Stability',
   housing_cost_burden:      'Housing Cost Burden',
   snap_participation:       'SNAP Coverage',
-  health_insurance_coverage: 'Medicaid/CHIP Coverage',
+  health_insurance_coverage: 'Public Coverage Reach Proxy',
 };
 
 function renderCityTrend(city) {
@@ -1183,7 +1186,7 @@ function renderMethodology(app) {
         'The CQ is a weighted composite of ten scored metrics organized into three pillars. ',
         'Pillar weights prioritize the relational layer (care ethics tradition) over the institutional ',
         'and access dimensions, representing a normative commitment as opposed to an empirical finding. ',
-        'Within-pillar weights draw on factor analysis across the 69 cities.',
+        'Within-pillar weights reflect both factor analysis and theoretical commitments. Inter-pillar weights (40/35/25) are explicitly theory-first, not empirically derived.',
       '</p>',
 
       '<table class="method-table">',
@@ -1698,6 +1701,30 @@ function sendChatMessage(text) {
   });
 }
 
+function renderLicense(app) {
+  app.innerHTML = [
+    '<div class="method-page">',
+      '<a href="#/" class="back-link">&#8592; Home</a>',
+      '<div class="method-eyebrow">License</div>',
+      '<h1>Creative Commons Attribution 4.0</h1>',
+      '<p>',
+        'The Care Quotient index, methodology, scoring, and compiled dataset are released under ',
+        '<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. ',
+        'You are free to share, adapt, and use the material for any purpose, including commercially, ',
+        'provided you give appropriate credit.',
+      '</p>',
+      '<p>',
+        'Suggested citation: <em>Care Quotient</em> (2026). Measuring Care Capacity Across American Cities, V6. care-quotient.vercel.app',
+      '</p>',
+      '<p>',
+        'The underlying government data sources (Census ACS, IRS EO BMF, HRSA, IMLS, CMS, ARDA, CDC PLACES, Census CBP) ',
+        'are public domain and are not subject to this license.',
+      '</p>',
+    '</div>',
+    renderFooter(),
+  ].join('');
+}
+
 function renderFindings(app) {
   app.innerHTML = [
     '<div class="method-page findings-page">',
@@ -1766,9 +1793,9 @@ function renderFindings(app) {
       '</p>',
 
       '<p>',
-        'The inverse is visible too: the cities people are moving to, such as Austin (51.5), Raleigh (52.0), ',
-        'Charlotte (53.8), or Nashville (53.5), are in the bottom third. In this dataset, fast-growing cities ',
-        'tend to show thinner per-capita care infrastructure, though causation here is complex.',
+        'The inverse is visible too: fast-growing cities — Austin (51.5), Raleigh (52.0), ',
+        'Charlotte (53.8), Nashville (53.5) — are in the bottom third. In this dataset, cities with ',
+        'rapid recent growth tend to show thinner per-capita care infrastructure, though causation here is complex.',
       '</p>',
 
       '<hr>',
@@ -1826,7 +1853,7 @@ function renderFindings(app) {
       '</p>',
 
       '<ul class="findings-list">',
-        '<li>Austin: <strong>51.5.</strong> Stockton: 64.8. Austin is one of the fastest-growing, highest-income cities in the country. Stockton is among the poorest large cities in California. Stockton leads by 13 points.</li>',
+        '<li>Austin: <strong>51.5.</strong> Stockton: 64.8. Austin is one of the fastest-growing and most prosperous cities in the country. Stockton is among the poorest large cities in California. Stockton leads by 13 points.</li>',
         '<li>San Francisco: <strong>64.0.</strong> Same tier (Established) as Omaha (63.1). Los Angeles (60.0) is one tier lower in Growing.</li>',
         '<li>New York City: <strong>61.8.</strong> Established, the lowest score in the Established tier. One tier above Fresno (60.2).</li>',
         '<li>Seattle: <strong>62.1.</strong> Milwaukee: 64.0. Milwaukee edges ahead.</li>',
@@ -2019,13 +2046,6 @@ function renderFooter() {
         'Care Quotient &nbsp;&middot;&nbsp; 69 American Cities &nbsp;&middot;&nbsp; May 2026<br>',
         'Data: IRS EO BMF &middot; Census ACS 2022 &middot; Census CBP &middot; HRSA &middot; IMLS &middot; CMS Care Compare &middot; ARDA 2020 &middot; CDC PLACES<br>',
         'Cite: <em>Care Quotient</em> (2026). Measuring Care Capacity Across American Cities, V6. care-quotient.vercel.app &nbsp;&nbsp;&middot;&nbsp;&nbsp; <a href="/care_capacity_scores.csv" class="footer-link">Download data (CSV)</a>',
-      '</div>',
-      '<div class="footer-links">',
-        '<a href="#/theory">What is Care?</a>',
-        '<a href="#/methodology">Methodology</a>',
-        '<a href="#/findings">Findings</a>',
-        '<a href="#/compare">Compare</a>',
-        '<a href="#/">Index</a>',
       '</div>',
     '</footer>',
   ].join('');
