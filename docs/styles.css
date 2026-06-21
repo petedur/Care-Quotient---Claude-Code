@@ -292,6 +292,7 @@ body {
 .ranking-row:hover  { background: var(--accent-bg); }
 .ranking-row:focus  { outline: 2px solid var(--accent); outline-offset: 1px; }
 .ranking-row.hidden { display: none; }
+#ranking-table.ranking-expanded .ranking-row-overflow.hidden { display: none; }
 
 .r-rank {
   font-family: var(--mono);
