@@ -2,6 +2,25 @@ const Anthropic = require('@anthropic-ai/sdk');
 const fs        = require('fs');
 const path      = require('path');
 
+// Per-IP rate limiter: 10 requests per 60 seconds per function instance.
+// Vercel may spin up multiple instances under load, so this is per-instance,
+// not globally enforced — but it blocks the vast majority of casual abuse.
+const RATE_WINDOW_MS = 60 * 1000;
+const RATE_MAX       = 10;
+const _rateStore     = new Map();
+
+function checkRateLimit(ip) {
+  const now    = Date.now();
+  const record = _rateStore.get(ip);
+  if (!record || now > record.resetAt) {
+    _rateStore.set(ip, { count: 1, resetAt: now + RATE_WINDOW_MS });
+    return true;
+  }
+  if (record.count >= RATE_MAX) return false;
+  record.count++;
+  return true;
+}
+
 const SYSTEM_PROMPT = `You are an expert analyst for the Care Quotient (CQ) — a data-driven index measuring care capacity across 69 American cities.
 
 WHAT THE CQ MEASURES:
@@ -113,6 +132,13 @@ module.exports = async function handler(req, res) {
 
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
+  }
+
+  const ip = (req.headers['x-forwarded-for'] || '').split(',')[0].trim()
+             || req.socket?.remoteAddress
+             || 'unknown';
+  if (!checkRateLimit(ip)) {
+    return res.status(429).json({ error: 'Too many requests — please wait a minute before trying again.' });
   }
 
   // Accept only messages — city data is always built server-side

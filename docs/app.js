@@ -57,6 +57,9 @@ function route() {
   } else if (hash === '/chat') {
     destroyHomeMap();
     renderChat(app);
+  } else if (hash === '/brief') {
+    destroyHomeMap();
+    renderBrief(app);
   } else {
     app.innerHTML = [
       '<div class="not-found">',
@@ -444,7 +447,7 @@ var CITY_CONTEXT = {
       'per-capita scores are calculated against a larger base than comparable cities. ',
       'Honolulu&rsquo;s high overall ranking should be read with this in mind: it reflects ',
       'genuine care infrastructure, but the county boundary makes direct comparisons imprecise. ',
-      'See <a href="#/methodology">Methodology &sect;9</a>.',
+      'See <a href="#/methodology">Methodology &rarr; Geographic Boundaries</a>.',
     ].join(''),
   },
   nyc: {
@@ -544,7 +547,7 @@ var CITY_CONTEXT = {
       'Because the City of Miami represents roughly 16% of Miami-Dade County&rsquo;s population, ',
       'those two scores are likely elevated relative to the city&rsquo;s actual capacity. ',
       'Florida has not expanded Medicaid, which contributes to a lower healthcare coverage score. ',
-      'See <a href="#/methodology">Methodology &sect;9</a>.',
+      'See <a href="#/methodology">Methodology &rarr; Geographic Boundaries</a>.',
     ].join(''),
   },
   washington_dc: {
@@ -898,7 +901,7 @@ function renderCity(app, key) {
           'These are outcome measures from CDC PLACES (BRFSS-modeled estimates, 2022/2023), ',
           'reported as community need context, not scored. High values indicate greater ',
           'need for care infrastructure, not lesser capacity. ',
-          'See <a href="#/methodology">Methodology &sect;4</a>.',
+          'See <a href="#/methodology">Methodology &rarr; What this index does not measure</a>.',
         '</p>',
       '</div>',
     ].join('');
@@ -926,7 +929,7 @@ function renderCity(app, key) {
           'most likely to need care-related services. A large gap between the two figures means ',
           'the city looks different under a need-adjusted denominator. It does not by itself prove ',
           'that nonprofits are geographically concentrated in lower-income areas. ',
-          'See <a href="#/methodology">Methodology &sect;3.3</a>.',
+          'See <a href="#/methodology">Methodology &rarr; Benchmarks</a>.',
         '</p>',
       '</div>',
     ].join('');
@@ -2040,6 +2043,94 @@ function renderChat(app) {
 
 // ── Footer ──────────────────────────────────────────────────────────────────
 
+function renderBrief(app) {
+  app.innerHTML = [
+    '<div class="method-page">',
+
+      '<a href="#/" class="back-link">&#8592; Home</a>',
+      '<div class="method-eyebrow">Reporter Brief</div>',
+      '<h1>Care Quotient — Press Overview</h1>',
+
+      '<h2>What it is</h2>',
+      '<p>',
+        'The Care Quotient (CQ) is a composite index measuring <strong>care capacity</strong> across 69 American cities. ',
+        'Care capacity is the presence or absence of the social ties, institutions, and safety-net conditions that determine ',
+        'whether people get help when they need it. It is explicitly <em>not</em> a quality-of-life index. ',
+        'A city can be prosperous, safe, and growing while scoring poorly on care.',
+      '</p>',
+      '<p>',
+        'The index covers 10 scored metrics across three pillars: Social &amp; Relational Care (40%), ',
+        'Institutional Care (35%), and Economic Access to Care (25%). Each metric is scored against an absolute benchmark — ',
+        'cities are measured against a standard, not ranked against each other. Source data: ',
+        'IRS EO BMF, Census ACS 2022, Census CBP, HRSA, IMLS, CMS Care Compare, ARDA 2020, CDC PLACES.',
+      '</p>',
+
+      '<hr>',
+
+      '<h2>Five key findings</h2>',
+
+      '<p><strong>1. Wealth and care capacity diverge sharply.</strong><br>',
+        'Stockton, CA — one of the poorest large cities in California — outscores Austin, TX by 13 points (64.8 vs. 51.5). ',
+        'San Francisco and Omaha land in the same tier. Boston (67.2) scores below Baton Rouge (71.4) and Detroit (70.5). ',
+        'Prosperity and care capacity are empirically separate dimensions.',
+      '</p>',
+
+      '<p><strong>2. A state\'s Medicaid decision is visible in every city within it.</strong><br>',
+        'Texas did not expand Medicaid. That decision shows up directly: Houston scores 50.8, Dallas 51.5, Austin 51.5, El Paso 51.0. ',
+        'Fort Worth scores 1.5 out of 100 on federally qualified health center density — one of the largest cities in the country, ',
+        'with almost no safety-net primary care per capita. Compare to Albuquerque (55.9) and Fresno (60.2), ',
+        'both in Medicaid expansion states with similar demographics.',
+      '</p>',
+
+      '<p><strong>3. Fast-growing cities are not building care infrastructure fast enough.</strong><br>',
+        'Austin, Raleigh (52.0), Charlotte (53.8), and Nashville (53.5) are all in the bottom third. ',
+        'The nonprofits, clinics, and social networks that make care possible accumulate over decades. ',
+        'Rapid population growth dilutes per-capita care infrastructure faster than cities can build it.',
+      '</p>',
+
+      '<p><strong>4. Older industrial cities retain infrastructure built for larger populations.</strong><br>',
+        'Washington DC (75.1), Cincinnati (74.4), Cleveland (73.0), and Detroit (70.5) lead the index. ',
+        'These cities demonstrate that high care capacity and low economic prosperity are not contradictions. ',
+        'Institutions and stable neighborhoods persist even as populations shrink.',
+      '</p>',
+
+      '<p><strong>5. The healthcare coverage metric exposes the Medicaid map directly.</strong><br>',
+        '31 of 69 cities (45%) score exactly 100 on healthcare coverage because they are in Medicaid expansion states. ',
+        'The metric functions as near-binary: the meaningful variation is between expansion and non-expansion states, ',
+        'not within them. Non-expansion state cities carry a structural care access deficit that no local policy can fully offset.',
+      '</p>',
+
+      '<hr>',
+
+      '<h2>Five caveats</h2>',
+
+      '<ol class="findings-list">',
+        '<li><strong>Per-capita density penalizes large, dense cities.</strong> NYC has more federally qualified health centers than any city in the dataset in absolute terms; its per-capita score is 35.2 because the denominator is 8.3 million people. The index measures supply per resident, not geographic accessibility.</li>',
+        '<li><strong>Informal care is invisible.</strong> LDS mutual aid networks in Salt Lake City, immigrant family care networks in LA and Houston, and faith-based informal provision are not captured by federal registries. Cities where informal care substitutes for formal enrollment will score lower than their actual care capacity.</li>',
+        '<li><strong>Two metrics use county-level data.</strong> Child care capacity (Census CBP) and religious organization density (ARDA) are only available at the county level. For cities that represent a small share of their county — Miami at roughly 16% of Miami-Dade — those scores reflect county-wide density, not the city itself.</li>',
+        '<li><strong>DC\'s nonprofit score includes nationally-focused organizations.</strong> NTEE codes cannot distinguish a neighborhood food bank from a national health policy organization headquartered downtown. DC\'s #1 ranking reflects genuine local care infrastructure plus some share of national-organization presence that other cities\' scores do not include.</li>',
+        '<li><strong>Healthcare coverage is near-binary in expansion states.</strong> 31/69 cities score exactly 100. Two cities in the same expansion state, both at 100, may have meaningfully different actual enrollment rates — the metric cannot distinguish them at the ceiling.</li>',
+      '</ol>',
+
+      '<hr>',
+
+      '<h2>Data &amp; reproducibility</h2>',
+      '<table class="method-table">',
+        '<tbody>',
+          '<tr><td>Scores (CSV)</td><td><a href="/care_capacity_scores.csv">care-quotient.vercel.app/care_capacity_scores.csv</a></td></tr>',
+          '<tr><td>Full data — raw values, benchmarks, sources, vintages (CSV)</td><td><a href="/care_capacity_data.csv">care-quotient.vercel.app/care_capacity_data.csv</a></td></tr>',
+          '<tr><td>Methodology</td><td><a href="#/methodology">care-quotient.vercel.app/#/methodology</a></td></tr>',
+          '<tr><td>Source code</td><td><a href="https://github.com/petedur/Care-Quotient---Claude-Code" target="_blank" rel="noopener">github.com/petedur/Care-Quotient---Claude-Code</a></td></tr>',
+          '<tr><td>License</td><td><a href="#/license">CC BY 4.0</a> — free to use, adapt, and publish with attribution</td></tr>',
+        '</tbody>',
+      '</table>',
+      '<p><strong>Cite as:</strong> <em>Care Quotient</em> (2026). Measuring Care Capacity Across American Cities, V6. care-quotient.vercel.app</p>',
+
+    '</div>',
+    renderFooter(),
+  ].join('');
+}
+
 function renderFooter() {
   return [
     '<footer class="site-footer">',
@@ -2047,6 +2138,8 @@ function renderFooter() {
         'Care Quotient &nbsp;&middot;&nbsp; 69 American Cities &nbsp;&middot;&nbsp; May 2026<br>',
         'Data: IRS EO BMF &middot; Census ACS 2022 &middot; Census CBP &middot; HRSA &middot; IMLS &middot; CMS Care Compare &middot; ARDA 2020 &middot; CDC PLACES<br>',
         'Cite: <em>Care Quotient</em> (2026). Measuring Care Capacity Across American Cities, V6. care-quotient.vercel.app<br>',
+        '<a href="#/brief" class="footer-link">Reporter brief</a>',
+        ' &nbsp;&middot;&nbsp; ',
         '<a href="/care_capacity_scores.csv" class="footer-link">Download scores (CSV)</a>',
         ' &nbsp;&middot;&nbsp; ',
         '<a href="/care_capacity_data.csv" class="footer-link">Download full data with raw values (CSV)</a>',
