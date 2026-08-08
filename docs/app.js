@@ -237,7 +237,7 @@ function renderHome(app) {
       '<div class="hero-rule"></div>',
       '<p class="hero-subhead">',
         'This is a data-driven index measuring the social ties, institutions, and access conditions ',
-        'that determine whether people can get help when they need it.',
+        'that measure a city\'s capacity to care.',
       '</p>',
       '<p class="hero-meta">V6 &middot; 69 cities &middot; August 2026</p>',
     '</section>',
@@ -284,7 +284,7 @@ function renderHome(app) {
       '</button>',
 
       '<p class="bands-note">',
-        'Scores are measured against absolute benchmarks, not relative to other cities. ',
+        'Scores are measured against absolute benchmarks. ',
         'Cities within 3 to 4 points should be read as rough peers. Small differences ',
         'may fall within data collection variance. Click any city for a full breakdown.',
       '</p>',
@@ -350,10 +350,10 @@ function renderHome(app) {
         '<div class="what-is-col">',
           '<div class="what-is-heading what-is-yes">What the CQ measures</div>',
           '<ul class="what-is-list">',
-            '<li>Whether stable social networks exist for people to lean on</li>',
-            '<li>Whether nonprofits and health centers are present relative to population need</li>',
-            '<li>Whether safety-net programs are reaching the people they&rsquo;re designed for</li>',
-            '<li>Whether the organizations, health centers, and systems to support people in difficulty exist at the scale the population needs</li>',
+            '<li>Do stable social networks exist for people to lean on?</li>',
+            '<li>Are nonprofits and health centers present relative to population need?</li>',
+            '<li>Are safety-net programs reaching the people they&rsquo;re designed for?</li>',
+            '<li>Do the organizations, health centers, and systems to support people in difficulty exist at the scale the population needs?</li>',
           '</ul>',
         '</div>',
 
@@ -1303,6 +1303,13 @@ function renderMethodology(app) {
         '<em>specific</em> metrics drive a city&rsquo;s score, and tracking change over time.',
       '</p>',
 
+      '<h2>What this index measures, precisely</h2>',
+
+      '<p>',
+        'The Care Quotient measures whether a city has the social ties, institutions, and access conditions ',
+        'that enable care to reach people.',
+      '</p>',
+
       '<h2>What this index does not measure</h2>',
 
       '<p>',
@@ -1352,16 +1359,16 @@ function renderTheory(app) {
       '<p>',
         'Care is the set of practices and relationships through which people maintain, continue, and ',
         'repair the world so that they can live in it as well as possible. That definition, from ',
-        'Joan Tronto, gives this project its basic orientation. The question here is narrower: does a ',
-        'city&rsquo;s infrastructure make that kind of living easier or harder?',
+        'Joan Tronto, gives this project its basic orientation. Our question is whether the infrastructure ',
+        'exists to enable that kind of care.',
       '</p>',
 
       '<h2>Why care about care?</h2>',
 
-      '<p>We should care about care for two big reasons.</p>',
+      '<p>Two reasons.</p>',
 
       '<p>',
-        'First, care helps societies do hard things together. Trust and social capital make cooperation ',
+        'First, care enables us to work together. Trust and social capital make cooperation ',
         'broader, steadier, and easier to sustain over time. The OECD treats trust as a key ingredient ',
         'of growth, social cohesion, well-being, and governance, and the National Academies describes ',
         'social capital and connectedness as community assets that help communities function and recover ',
@@ -1374,7 +1381,7 @@ function renderTheory(app) {
       '</p>',
 
       '<p>',
-        'Second, caring seems to be good for the person doing it. There is evidence that prosocial ',
+        'Second, caring is good for us. There is evidence that prosocial ',
         'behavior is associated with higher well-being, and in some cases seems to improve it directly. ',
         'Lara Aknin and her coauthors, using survey data from 136 countries, found that spending money on ',
         'others was consistently associated with greater happiness, and experiments in both Canada and ',
@@ -1383,7 +1390,7 @@ function renderTheory(app) {
         'connection, and a healthier sense of self.',
       '</p>',
 
-      '<h2>Care starts in relationship</h2>',
+      '<h2>Care starts with relationships</h2>',
 
       '<p>',
         'People have to be able to notice one another before they can really respond to one another. ',
@@ -1403,8 +1410,6 @@ function renderTheory(app) {
 
       '<h2>Care also has to be organized</h2>',
 
-      '<p>Care lives in relationships, and it also has to be built into institutions.</p>',
-
       '<p>',
         'People need places to go, professionals who can help, and organizations that can absorb ',
         'distress when informal networks are not enough. Federally qualified health centers, nonprofit ',
@@ -1416,8 +1421,6 @@ function renderTheory(app) {
       '</p>',
 
       '<h2>Access matters as much as presence</h2>',
-
-      '<p>Having care infrastructure on paper is one thing. People still need a path to it.</p>',
 
       '<p>',
         'The index includes measures like health coverage, housing affordability, and safety-net reach ',
@@ -1460,8 +1463,8 @@ function renderTheory(app) {
 
       '<p>',
         'This project makes a narrower claim. It asks whether a city has built the social ties, ',
-        'organizations, and access conditions that make it easier for people to get help when they ',
-        'need it. The point is to make that capacity easier to see, compare, and improve.',
+        'organizations, and access conditions that enable care to reach people. The point is to make ',
+        'care visible and something we can improve on.',
       '</p>',
 
       '<h2>Theory-to-metric mapping</h2>',
@@ -1765,7 +1768,7 @@ function renderFindings(app) {
       '<p>',
         'The tier is geographically diverse: DC (federal hub), Honolulu (Pacific), two Gulf South cities (New Orleans, Baton Rouge), ',
         'five Rust Belt cities (Cincinnati, Cleveland, Rochester, Detroit, Pittsburgh), plus Baltimore, Indianapolis, ',
-        'Providence, and St. Louis. What unites many of them is a legacy of dense public and nonprofit infrastructure ',
+        'Providence, and St. Louis. They are united by a legacy of dense public and nonprofit infrastructure ',
         'built for larger or different populations. The fastest-growing Sun Belt cities are largely absent from the leading tier.',
       '</p>',
 
@@ -1796,8 +1799,8 @@ function renderFindings(app) {
       '</p>',
 
       '<p>',
-        'The inverse is visible too: fast-growing cities — Austin (51.5), Raleigh (52.0), ',
-        'Charlotte (53.8), Nashville (53.5) — are in the bottom third. In this dataset, cities with ',
+        'The inverse is also visible. Fast-growing cities, like Austin (51.5), Raleigh (52.0), ',
+        'Charlotte (53.8), and Nashville (53.5), are in the bottom third. In this dataset, cities with ',
         'rapid recent growth tend to show thinner per-capita care infrastructure, though causation here is complex.',
       '</p>',
 
@@ -1835,15 +1838,15 @@ function renderFindings(app) {
       '</p>',
 
       '<p>',
-        'One caveat on the healthcare coverage metric itself: 31 of 69 cities (45%) score exactly 100.0. ',
-        'The cause is a denominator mismatch: the numerator counts all Medicaid and CHIP enrollees, ',
-        'including children covered by CHIP whose household income may be above the 150% FPL eligibility ceiling ',
-        'used in the denominator. In high-expansion states with strong CHIP enrollment, the numerator can exceed ',
-        'the denominator, producing a raw rate above 100% that is capped at 100. The practical effect: in expansion ',
-        'states, healthcare coverage functions as a near-binary indicator rather than a continuous measure. ',
-        'Two cities in the same expansion state, both scoring 100.0, may have meaningfully different actual enrollment ',
-        'rates; the metric cannot distinguish them. Cities in non-expansion states, where the gap between ',
-        'enrolled and eligible is real, are where this metric carries the clearest signal.',
+        'One caveat on the healthcare coverage metric itself — 31 of 69 cities (45%) score exactly 100.0. ',
+        'This is based on the denominator, which is set at the eligibility ceiling. The numerator counts all ',
+        'Medicaid and CHIP enrollees, including children covered by CHIP whose household income may be above ',
+        'the 150% FPL eligibility ceiling used in the denominator. In high-expansion states with strong CHIP ',
+        'enrollment, the numerator can exceed the denominator, producing a raw rate above 100% that is capped at 100. ',
+        'The practical effect: in expansion states, healthcare coverage functions as a near-binary indicator rather ',
+        'than a continuous measure. Two cities in the same expansion state, both scoring 100.0, may have meaningfully ',
+        'different actual enrollment rates; the metric cannot distinguish them. Cities in non-expansion states, where ',
+        'the gap between enrolled and eligible is real, are where this metric carries the clearest signal.',
       '</p>',
 
       '<hr>',
@@ -1885,7 +1888,7 @@ function renderFindings(app) {
       '</p>',
 
       '<p>',
-        'Madison (46.6) is a related case: healthcare coverage scores 57.1 and SNAP scores 44.8. But Wisconsin ',
+        'Madison (46.6) is a related case. Madison healthcare coverage scores 57.1 and SNAP scores 44.8. But Wisconsin ',
         'has not adopted ACA Medicaid expansion, so Madison should not be treated as an expansion-state ',
         'counterexample. The more cautious interpretation is that Madison combines a relatively affluent local ',
         'profile with surprisingly low formal safety-net reach in the CQ data. That could reflect state Medicaid ',
@@ -1916,8 +1919,8 @@ function renderFindings(app) {
       '<p>',
         'NYC has more federally qualified health centers by absolute count than any other city in the dataset. ',
         'Its per-capita FQHC score is 35.2, because the denominator is 8.3 million people. ',
-        'Los Angeles (60.0), Chicago (66.3), and Philadelphia (64.5) face the same structural pattern: ',
-        'large absolute care infrastructure, average-to-below-average per-capita ratios on most density metrics.',
+        'Los Angeles (60.0), Chicago (66.3), and Philadelphia (64.5) face the same structural pattern featuring ',
+        'large absolute care infrastructure with average-to-below-average per-capita ratios on most density metrics.',
       '</p>',
 
       '<p>',
@@ -1925,9 +1928,7 @@ function renderFindings(app) {
         'supply relative to population but it may understate access in dense, ',
         'transit-connected cities where a resident can reach multiple facilities they nominally &ldquo;share&rdquo; with many others. ',
         'Whether per-capita density or geographic accessibility is the right framing is an open methodological question. ',
-        'For cities above roughly 1 million residents, CQ density scores capture supply per resident, ',
-        'not whether any given resident can actually reach that supply. The absolute care infrastructure in ',
-        'NYC, LA, and Chicago is not captured in these numbers.',
+        'For cities above roughly 1 million residents, CQ density scores capture supply per resident.',
       '</p>',
 
     '</div>',
