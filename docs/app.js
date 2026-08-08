@@ -239,7 +239,7 @@ function renderHome(app) {
         'This is a data-driven index measuring the social ties, institutions, and access conditions ',
         'that determine whether people can get help when they need it.',
       '</p>',
-      '<p class="hero-meta">V6 &middot; 69 cities &middot; May 2026</p>',
+      '<p class="hero-meta">V6 &middot; 69 cities &middot; August 2026</p>',
     '</section>',
 
     // ── Map ───────────────────────────────────────────────────────────────
@@ -1327,7 +1327,7 @@ function renderMethodology(app) {
 
       '<h3>Version &amp; Data</h3>',
       '<p>',
-        'May 2026. 69 cities. ',
+        'August 2026. 69 cities. ',
         'Data sources: IRS EO BMF &middot; Census ACS 2022 5-year estimates &middot; Census CBP 2022 &middot; ',
         'HRSA Health Center Service Delivery &middot; IMLS Public Libraries Survey FY2023 &middot; ',
         'CMS Care Compare Nursing Home Provider Information &middot; ARDA 2020 Religion Census &middot; CDC PLACES (2022/2023).',
@@ -2135,7 +2135,7 @@ function renderFooter() {
   return [
     '<footer class="site-footer">',
       '<div class="footer-copy">',
-        'Care Quotient &nbsp;&middot;&nbsp; 69 American Cities &nbsp;&middot;&nbsp; May 2026<br>',
+        'Care Quotient &nbsp;&middot;&nbsp; 69 American Cities &nbsp;&middot;&nbsp; August 2026<br>',
         'Data: IRS EO BMF &middot; Census ACS 2022 &middot; Census CBP &middot; HRSA &middot; IMLS &middot; CMS Care Compare &middot; ARDA 2020 &middot; CDC PLACES<br>',
         'Cite: <em>Care Quotient</em> (2026). Measuring Care Capacity Across American Cities, V6. care-quotient.vercel.app<br>',
         '<a href="#/brief" class="footer-link">Reporter brief</a>',

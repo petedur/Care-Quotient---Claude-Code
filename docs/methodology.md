@@ -1,7 +1,7 @@
 # Care Quotient: Methodology
 
 **Version**: 6.0 (V6)
-**Date**: May 2026  
+**Date**: August 2026  
 **Author**: Peter Durand
 
 ---
