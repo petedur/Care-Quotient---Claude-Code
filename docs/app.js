@@ -2061,9 +2061,8 @@ function renderBrief(app) {
       '</p>',
       '<p>',
         'The index covers 10 scored metrics across three pillars: Social &amp; Relational Care (40%), ',
-        'Institutional Care (35%), and Economic Access to Care (25%). Each metric is scored against an absolute benchmark — ',
-        'cities are measured against a standard, not ranked against each other. Source data: ',
-        'IRS EO BMF, Census ACS 2022, Census CBP, HRSA, IMLS, CMS Care Compare, ARDA 2020, CDC PLACES.',
+        'Institutional Care (35%), and Economic Access to Care (25%). Each metric is scored against an absolute benchmark. ',
+        'Source data: IRS EO BMF, Census ACS 2022, Census CBP, HRSA, IMLS, CMS Care Compare, ARDA 2020, CDC PLACES.',
       '</p>',
 
       '<hr>',
@@ -2071,7 +2070,7 @@ function renderBrief(app) {
       '<h2>Five key findings</h2>',
 
       '<p><strong>1. Wealth and care capacity diverge sharply.</strong><br>',
-        'Stockton, CA — one of the poorest large cities in California — outscores Austin, TX by 13 points (64.8 vs. 51.5). ',
+        'Stockton, CA, one of the poorest large cities in California, outscores Austin, TX by 13 points (64.8 vs. 51.5). ',
         'San Francisco and Omaha land in the same tier. Boston (67.2) scores below Baton Rouge (71.4) and Detroit (70.5). ',
         'Prosperity and care capacity are empirically separate dimensions.',
       '</p>',
