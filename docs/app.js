@@ -2070,9 +2070,16 @@ function renderBrief(app) {
       '<h2>Five key findings</h2>',
 
       '<p><strong>1. Wealth and care capacity diverge sharply.</strong><br>',
-        'Stockton, CA, one of the poorest large cities in California, outscores Austin, TX by 13 points (64.8 vs. 51.5). ',
-        'San Francisco and Omaha land in the same tier. Boston (67.2) scores below Baton Rouge (71.4) and Detroit (70.5). ',
-        'Prosperity and care capacity are empirically separate dimensions.',
+        'Stockton, CA, one of California\'s less affluent cities, outscores Austin, TX by 13 points (64.8 vs. 51.5). ',
+        'San Francisco and Omaha land in the same tier. Boston (67.2) scores below Baton Rouge (71.4) and Detroit (70.5).',
+      '</p>',
+
+      '<p>',
+        '<strong>Why?</strong> First, care infrastructure requires time to develop. Nonprofits, health centers, and libraries are built institutions that accumulate over decades. Fast-growing cities are adding capacity, but population growth outpaces institutional growth. In cities like Detroit (93&percnt; residential stability) and Cleveland (87&percnt;), residents have remained in place long enough for dense organizational ecosystems to develop.',
+      '</p>',
+
+      '<p>',
+        'Second, the index measures public and nonprofit provision because that is what determines whether cities can show up for all of its residents. When Austin, one of the country&rsquo;s fastest-growing and most prosperous cities, scores 51.5 while Stockton scores 64.8, the gap reflects that Stockton has built and maintained the public infrastructure that Austin has not. Prosperity and care capacity are empirically separate because wealth does not necessarily create public responsibility.',
       '</p>',
 
       '<p><strong>2. A state\'s Medicaid decision is visible in every city within it.</strong><br>',
@@ -2107,7 +2114,7 @@ function renderBrief(app) {
       '<ol class="findings-list">',
         '<li><strong>Per-capita density penalizes large, dense cities.</strong> NYC has more federally qualified health centers than any city in the dataset in absolute terms; its per-capita score is 35.2 because the denominator is 8.3 million people. The index measures supply per resident, not geographic accessibility.</li>',
         '<li><strong>Informal care is invisible.</strong> LDS mutual aid networks in Salt Lake City, immigrant family care networks in LA and Houston, and faith-based informal provision are not captured by federal registries. Cities where informal care substitutes for formal enrollment will score lower than their actual care capacity.</li>',
-        '<li><strong>Two metrics use county-level data.</strong> Child care capacity (Census CBP) and religious organization density (ARDA) are only available at the county level. For cities that represent a small share of their county — Miami at roughly 16% of Miami-Dade — those scores reflect county-wide density, not the city itself.</li>',
+        '<li><strong>Two metrics use county-level data.</strong> Child care capacity (Census CBP) and religious organization density (ARDA) are only available at the county level. For cities that represent a small share of their county, like Miami at roughly 16% of Miami-Dade, those scores reflect county-wide density, not the city itself.</li>',
         '<li><strong>DC\'s nonprofit score includes nationally-focused organizations.</strong> NTEE codes cannot distinguish a neighborhood food bank from a national health policy organization headquartered downtown. DC\'s #1 ranking reflects genuine local care infrastructure plus some share of national-organization presence that other cities\' scores do not include.</li>',
         '<li><strong>Healthcare coverage is near-binary in expansion states.</strong> 31/69 cities score exactly 100. Two cities in the same expansion state, both at 100, may have meaningfully different actual enrollment rates — the metric cannot distinguish them at the ceiling.</li>',
       '</ol>',
